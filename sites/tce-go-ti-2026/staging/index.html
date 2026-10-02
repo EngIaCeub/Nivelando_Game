@@ -33,6 +33,7 @@
       <section id="plan" class="card" aria-labelledby="plan-title">
         <h2 id="plan-title">Plano</h2>
         <p>O plano será calculado a partir do Exam Pack ativo.</p>
+        <div id="today-dashboard" aria-live="polite"></div>
       </section>
       <section id="subjects" class="card" aria-labelledby="subjects-title">
         <h2 id="subjects-title">Matérias</h2>
@@ -53,6 +54,6 @@
       <output id="session-status" class="status" role="status" aria-live="polite"></output>
     <section id="curriculum" class="card"><h2>Currículo</h2><p>Currículo do Exam Pack ativo.</p></section><section id="diagnostic" class="card"><h2>Diagnóstico</h2><p><a href="./diagnostic.html">Abrir diagnóstico O1</a>.</p></section><section id="settings" class="card"><h2>Configurações</h2><p>Preferências da prévia.</p></section></main>
     <script type="module" src="./app.js"></script>
-    <script type="module" src="./site-app.js"></script>
+      <script type="module" src="./site-app.js?o2=1"></script>
   </body>
 </html>

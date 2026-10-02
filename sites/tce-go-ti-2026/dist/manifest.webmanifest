@@ -1,14 +1,11 @@
 {
   "name": "StudyOS — TCE-GO TI 2026",
   "short_name": "StudyOS TCE-GO",
-  "id": "./",
   "start_url": "./",
-  "scope": "./",
-  "lang": "pt-BR",
   "display": "standalone",
   "background_color": "#f4f7f9",
   "theme_color": "#16324f",
-  "description": "StudyOS standalone para o Exam Pack TCE-GO TI 2026",
+  "description": "Motor de estudo gamificado baseado em Exam Packs",
   "icons": [
     {
       "src": "./icon.svg",
@@ -16,5 +13,7 @@
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "id": "./",
+  "scope": "./"
 }

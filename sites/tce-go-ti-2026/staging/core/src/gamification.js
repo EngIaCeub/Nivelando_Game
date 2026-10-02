@@ -4,7 +4,10 @@ const XP_BY_EVENT = Object.freeze({
   resource_opened: 1,
   question_answered: 5,
   review_completed: 8,
-  simulation_finished: 15
+  simulation_finished: 15,
+  activity_completed: 5,
+  daily_goal_completed: 25,
+  extra_study_started: 1
 });
 
 export class GamificationEngine {

@@ -1,0 +1,588 @@
+{
+  "examId": "tce-go-ti-2026",
+  "generatedAt": "2026-10-02",
+  "officialStructure": {
+    "sourceRef": "official-edital-01-2026",
+    "objectiveQuestions": 70,
+    "generalQuestions": 25,
+    "specificQuestions": 45,
+    "durationMinutes": 270,
+    "generalWeight": 1,
+    "specificWeight": 2
+  },
+  "simulations": [
+    {
+      "id": "sim-discipline-lingua-portuguesa",
+      "type": "discipline-simulation",
+      "title": "Simulado — Língua Portuguesa",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.lingua-portuguesa",
+      "questionIds": [
+        "q-tcego-o3-lp-texto-01",
+        "q-tcego-o3-lp-texto-02",
+        "q-tcego-o3-lp-texto-03",
+        "q-tcego-o3-lp-morfossintaxe-01",
+        "q-tcego-o3-lp-morfossintaxe-02",
+        "q-tcego-o3-lp-morfossintaxe-03"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-lingua-portuguesa",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-matematica-raciocinio-logico",
+      "type": "discipline-simulation",
+      "title": "Simulado — Matemática e Raciocínio Lógico",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.matematica-raciocinio-logico",
+      "questionIds": [
+        "q-tcego-o3-mrl-aritmetica-01",
+        "q-tcego-o3-mrl-aritmetica-02",
+        "q-tcego-o3-mrl-aritmetica-03",
+        "q-tcego-o3-mrl-proporcoes-01",
+        "q-tcego-o3-mrl-proporcoes-02",
+        "q-tcego-o3-mrl-proporcoes-03"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-matematica-raciocinio-logico",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-legislacao-institucional",
+      "type": "discipline-simulation",
+      "title": "Simulado — Legislação Institucional",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.legislacao-institucional",
+      "questionIds": [
+        "q-tcego-o3-leginst-constituicao-01",
+        "q-tcego-o3-leginst-constituicao-02",
+        "q-tcego-o3-leginst-constituicao-03",
+        "q-tcego-o3-leginst-tce-01",
+        "q-tcego-o3-leginst-tce-02",
+        "q-tcego-o3-leginst-tce-03"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-legislacao-institucional",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-engenharia-de-software",
+      "type": "discipline-simulation",
+      "title": "Simulado — Engenharia de Software",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.engenharia-de-software",
+      "questionIds": [
+        "q-tcego-o3-engsoft-ciclos-01",
+        "q-tcego-o3-engsoft-ciclos-02",
+        "q-tcego-o3-engsoft-ciclos-03",
+        "q-tcego-o3-engsoft-ciclos-04",
+        "q-tcego-o3-engsoft-ciclos-05",
+        "q-tcego-o3-engsoft-ciclos-06"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-engenharia-de-software",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-desenvolvimento-de-sistemas",
+      "type": "discipline-simulation",
+      "title": "Simulado — Desenvolvimento de Sistemas",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.desenvolvimento-de-sistemas",
+      "questionIds": [
+        "q-tcego-o3-devsistemas-fundamentos-01",
+        "q-tcego-o3-devsistemas-fundamentos-02",
+        "q-tcego-o3-devsistemas-fundamentos-03",
+        "q-tcego-o3-devsistemas-fundamentos-04",
+        "q-tcego-o3-devsistemas-fundamentos-05",
+        "q-tcego-o3-devsistemas-fundamentos-06"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-desenvolvimento-de-sistemas",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-ia-assistida-e-sistemas-agentivos",
+      "type": "discipline-simulation",
+      "title": "Simulado — Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.ia-assistida-e-sistemas-agentivos",
+      "questionIds": [
+        "q-tcego-o3-ia-agentivos-llm-01",
+        "q-tcego-o3-ia-agentivos-llm-02",
+        "q-tcego-o3-ia-agentivos-llm-03",
+        "q-tcego-o3-ia-agentivos-contexto-01",
+        "q-tcego-o3-ia-agentivos-contexto-02",
+        "q-tcego-o3-ia-agentivos-contexto-03"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-ia-assistida-e-sistemas-agentivos",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-devops-plataforma-entrega",
+      "type": "discipline-simulation",
+      "title": "Simulado — DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.devops-plataforma-entrega",
+      "questionIds": [
+        "q-tcego-b02-006",
+        "q-tcego-o3-devops-cicd-01",
+        "q-tcego-o3-devops-cicd-02",
+        "q-tcego-o3-devops-cicd-03",
+        "q-tcego-o3-devops-cicd-04",
+        "q-tcego-o3-devops-cicd-05"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-devops-plataforma-entrega",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-banco-de-dados",
+      "type": "discipline-simulation",
+      "title": "Simulado — Banco de Dados",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.banco-de-dados",
+      "questionIds": [
+        "q-tcego-o3-bd-modelagem-01",
+        "q-tcego-o3-bd-modelagem-02",
+        "q-tcego-o3-bd-modelagem-03",
+        "q-tcego-o3-bd-modelagem-04",
+        "q-tcego-o3-bd-modelagem-05",
+        "q-tcego-o3-bd-modelagem-06"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-banco-de-dados",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-ia-ciencia-dados-automacao",
+      "type": "discipline-simulation",
+      "title": "Simulado — Inteligência Artificial, Ciência de Dados e Automação",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.ia-ciencia-dados-automacao",
+      "questionIds": [
+        "q-tcego-o3-ia-dados-ml-01",
+        "q-tcego-o3-ia-dados-ml-02",
+        "q-tcego-o3-ia-dados-ml-03",
+        "q-tcego-o3-ia-dados-ml-04",
+        "q-tcego-o3-ia-dados-ml-05",
+        "q-tcego-o3-ia-dados-ml-06"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-ia-ciencia-dados-automacao",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-seguranca-da-informacao",
+      "type": "discipline-simulation",
+      "title": "Simulado — Segurança da Informação",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.seguranca-da-informacao",
+      "questionIds": [
+        "q-tcego-b02-005",
+        "q-tcego-o3-seguranca-principios-01",
+        "q-tcego-o3-seguranca-principios-02",
+        "q-tcego-o3-seguranca-principios-03",
+        "q-tcego-o3-seguranca-principios-04",
+        "q-tcego-o3-seguranca-principios-05"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-seguranca-da-informacao",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-sistemas-redes-nuvem",
+      "type": "discipline-simulation",
+      "title": "Simulado — Sistemas Operacionais, Redes e Computação em Nuvem",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.sistemas-redes-nuvem",
+      "questionIds": [
+        "q-tcego-o3-sistemas-os-shell-01",
+        "q-tcego-o3-sistemas-os-shell-02",
+        "q-tcego-o3-sistemas-os-shell-03",
+        "q-tcego-o3-sistemas-os-shell-04",
+        "q-tcego-o3-sistemas-os-shell-05",
+        "q-tcego-o3-sistemas-os-shell-06",
+        "q-tcego-o3-sistemas-diretorios-01",
+        "q-tcego-o3-sistemas-diretorios-02"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-sistemas-redes-nuvem",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-governanca-de-ti",
+      "type": "discipline-simulation",
+      "title": "Simulado — Governança de Tecnologia da Informação",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.governanca-de-ti",
+      "questionIds": [
+        "q-tcego-o3-governanca-alinhamento-01",
+        "q-tcego-o3-governanca-alinhamento-02",
+        "q-tcego-o3-governanca-alinhamento-03",
+        "q-tcego-o3-governanca-alinhamento-04",
+        "q-tcego-o3-governanca-alinhamento-05",
+        "q-tcego-o3-governanca-alinhamento-06",
+        "q-tcego-o3-governanca-servicos-01",
+        "q-tcego-o3-governanca-servicos-02"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-governanca-de-ti",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-legislacao-aplicada-ti",
+      "type": "discipline-simulation",
+      "title": "Simulado — Legislação Aplicada à Tecnologia da Informação",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.legislacao-aplicada-ti",
+      "questionIds": [
+        "q-tcego-b02-004",
+        "q-tcego-o3-legti-lgpd-01",
+        "q-tcego-o3-legti-lgpd-02",
+        "q-tcego-o3-legti-lgpd-03",
+        "q-tcego-o3-legti-lgpd-04",
+        "q-tcego-o3-legti-lgpd-05",
+        "q-tcego-o3-legti-lgpd-06",
+        "q-tcego-o3-legti-lgpd-07"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-legislacao-aplicada-ti",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-discipline-lingua-inglesa-tecnica",
+      "type": "discipline-simulation",
+      "title": "Simulado — Língua Inglesa (Leitura Técnica)",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.lingua-inglesa-tecnica",
+      "questionIds": [
+        "q-tcego-o3-ingles-compreensao-01",
+        "q-tcego-o3-ingles-compreensao-02",
+        "q-tcego-o3-ingles-compreensao-03",
+        "q-tcego-o3-ingles-estrategias-01",
+        "q-tcego-o3-ingles-estrategias-02",
+        "q-tcego-o3-ingles-estrategias-03"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-lingua-inglesa-tecnica",
+        "balancedBy": [
+          "topic",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-mini-mixed-o3",
+      "type": "mini-simulation",
+      "title": "Mini-simulado misto — 20 questões",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.mixed",
+      "questionIds": [
+        "q-tcego-b02-001",
+        "q-tcego-b02-002",
+        "q-tcego-b02-003",
+        "q-tcego-b02-004",
+        "q-tcego-b02-005",
+        "q-tcego-b02-006",
+        "q-tcego-b02-007",
+        "q-tcego-b02-008",
+        "q-tcego-b02-009",
+        "q-tcego-b02-010",
+        "q-tcego-o3-lp-texto-01",
+        "q-tcego-o3-lp-texto-02",
+        "q-tcego-o3-lp-texto-03",
+        "q-tcego-o3-lp-morfossintaxe-01",
+        "q-tcego-o3-lp-morfossintaxe-02",
+        "q-tcego-o3-lp-morfossintaxe-03",
+        "q-tcego-o3-lp-sintaxe-redacao-01",
+        "q-tcego-o3-lp-sintaxe-redacao-02",
+        "q-tcego-o3-lp-sintaxe-redacao-03",
+        "q-tcego-o3-mrl-aritmetica-01"
+      ],
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-mini-1",
+        "balancedBy": [
+          "discipline",
+          "difficulty"
+        ]
+      },
+      "status": "validated",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      }
+    },
+    {
+      "id": "sim-full-tce-go-ti-2026",
+      "type": "full-simulation",
+      "title": "Simulado completo — estrutura objetiva oficial",
+      "examId": "tce-go-ti-2026",
+      "pool": "pool.full-objective",
+      "questionIds": [
+        "q-tcego-o3-lp-texto-01",
+        "q-tcego-o3-lp-texto-02",
+        "q-tcego-o3-lp-texto-03",
+        "q-tcego-o3-lp-morfossintaxe-01",
+        "q-tcego-o3-lp-morfossintaxe-02",
+        "q-tcego-o3-lp-morfossintaxe-03",
+        "q-tcego-o3-lp-sintaxe-redacao-01",
+        "q-tcego-o3-lp-sintaxe-redacao-02",
+        "q-tcego-o3-lp-sintaxe-redacao-03",
+        "q-tcego-o3-mrl-aritmetica-01",
+        "q-tcego-o3-mrl-aritmetica-02",
+        "q-tcego-o3-mrl-aritmetica-03",
+        "q-tcego-o3-mrl-proporcoes-01",
+        "q-tcego-o3-mrl-proporcoes-02",
+        "q-tcego-o3-mrl-proporcoes-03",
+        "q-tcego-o3-mrl-logica-01",
+        "q-tcego-o3-mrl-logica-02",
+        "q-tcego-o3-mrl-logica-03",
+        "q-tcego-o3-leginst-constituicao-01",
+        "q-tcego-o3-leginst-constituicao-02",
+        "q-tcego-o3-leginst-constituicao-03",
+        "q-tcego-o3-leginst-tce-01",
+        "q-tcego-o3-leginst-tce-02",
+        "q-tcego-o3-leginst-tce-03",
+        "q-tcego-o3-leginst-servidor-01",
+        "q-tcego-o3-engsoft-ciclos-01",
+        "q-tcego-o3-engsoft-ciclos-02",
+        "q-tcego-o3-engsoft-ciclos-03",
+        "q-tcego-o3-engsoft-ciclos-04",
+        "q-tcego-o3-engsoft-ciclos-05",
+        "q-tcego-o3-engsoft-ciclos-06",
+        "q-tcego-b02-001",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-01",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-02",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-03",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-04",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-05",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-06",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-07",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-08",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-09",
+        "q-tcego-o3-engsoft-requisitos-arquitetura-10",
+        "q-tcego-b02-010",
+        "q-tcego-o3-engsoft-modelagem-qualidade-01",
+        "q-tcego-o3-engsoft-modelagem-qualidade-02",
+        "q-tcego-o3-engsoft-modelagem-qualidade-03",
+        "q-tcego-o3-engsoft-modelagem-qualidade-04",
+        "q-tcego-o3-engsoft-modelagem-qualidade-05",
+        "q-tcego-o3-engsoft-modelagem-qualidade-06",
+        "q-tcego-o3-engsoft-modelagem-qualidade-07",
+        "q-tcego-o3-engsoft-modelagem-qualidade-08",
+        "q-tcego-o3-engsoft-modelagem-qualidade-09",
+        "q-tcego-o3-engsoft-modelagem-qualidade-10",
+        "q-tcego-o3-devsistemas-fundamentos-01",
+        "q-tcego-o3-devsistemas-fundamentos-02",
+        "q-tcego-o3-devsistemas-fundamentos-03",
+        "q-tcego-o3-devsistemas-fundamentos-04",
+        "q-tcego-o3-devsistemas-fundamentos-05",
+        "q-tcego-o3-devsistemas-fundamentos-06",
+        "q-tcego-o3-devsistemas-linguagens-web-01",
+        "q-tcego-o3-devsistemas-linguagens-web-02",
+        "q-tcego-o3-devsistemas-linguagens-web-03",
+        "q-tcego-o3-devsistemas-linguagens-web-04",
+        "q-tcego-o3-devsistemas-linguagens-web-05",
+        "q-tcego-o3-devsistemas-linguagens-web-06",
+        "q-tcego-b02-009",
+        "q-tcego-o3-devsistemas-apis-identidade-01",
+        "q-tcego-o3-devsistemas-apis-identidade-02",
+        "q-tcego-o3-devsistemas-apis-identidade-03",
+        "q-tcego-o3-devsistemas-apis-identidade-04"
+      ],
+      "durationMinutes": 270,
+      "distribution": {
+        "generalQuestions": 25,
+        "specificQuestions": 45,
+        "generalWeight": 1,
+        "specificWeight": 2
+      },
+      "sourceRef": "official-edital-01-2026",
+      "status": "validated",
+      "selection": {
+        "method": "stable-seed",
+        "seed": "o3-full-1",
+        "balancedBy": [
+          "officialSection",
+          "discipline",
+          "difficulty"
+        ]
+      },
+      "provenance": {
+        "status": "verified",
+        "source": "official-edital-01-2026 plus StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "estrutura oficial; questões originais StudyOS"
+      }
+    }
+  ]
+}

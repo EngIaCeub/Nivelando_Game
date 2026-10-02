@@ -1,0 +1,2150 @@
+{
+  "examId": "tce-go-ti-2026",
+  "generatedAt": "2026-10-02",
+  "cards": [
+    {
+      "id": "fc-lp-texto-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-texto"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.orthography",
+        "language.reading.comprehension"
+      ],
+      "front": "Qual é a ideia central de Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade?",
+      "back": "Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade deve ser estudado por meio de language.portuguese.orthography, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-lp-texto-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-texto"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.orthography",
+        "language.reading.comprehension"
+      ],
+      "front": "Revisão rápida: Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade",
+      "back": "Explique language.portuguese.orthography com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-lp-morfossintaxe-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-morfossintaxe"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.morphosyntax"
+      ],
+      "front": "Qual é a ideia central de Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem?",
+      "back": "Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem deve ser estudado por meio de language.portuguese.morphosyntax, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-lp-morfossintaxe-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-morfossintaxe"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.morphosyntax"
+      ],
+      "front": "Revisão rápida: Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem",
+      "back": "Explique language.portuguese.morphosyntax com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-lp-sintaxe-redacao-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-sintaxe-redacao"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.syntax",
+        "language.portuguese.writing"
+      ],
+      "front": "Qual é a ideia central de Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural?",
+      "back": "Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural deve ser estudado por meio de language.portuguese.syntax, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-lp-sintaxe-redacao-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-sintaxe-redacao"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.syntax",
+        "language.portuguese.writing"
+      ],
+      "front": "Revisão rápida: Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural",
+      "back": "Explique language.portuguese.syntax com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-aritmetica-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-aritmetica"
+      ],
+      "canonicalConceptIds": [
+        "math.arithmetic"
+      ],
+      "front": "Qual é a ideia central de Números, operações, expressões, múltiplos, divisores, frações e problemas?",
+      "back": "Números, operações, expressões, múltiplos, divisores, frações e problemas deve ser estudado por meio de math.arithmetic, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-aritmetica-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-aritmetica"
+      ],
+      "canonicalConceptIds": [
+        "math.arithmetic"
+      ],
+      "front": "Revisão rápida: Números, operações, expressões, múltiplos, divisores, frações e problemas",
+      "back": "Explique math.arithmetic com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-proporcoes-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-proporcoes"
+      ],
+      "canonicalConceptIds": [
+        "math.proportionality"
+      ],
+      "front": "Qual é a ideia central de Razões, proporções, regra de três, porcentagens, acréscimos e descontos?",
+      "back": "Razões, proporções, regra de três, porcentagens, acréscimos e descontos deve ser estudado por meio de math.proportionality, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-proporcoes-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-proporcoes"
+      ],
+      "canonicalConceptIds": [
+        "math.proportionality"
+      ],
+      "front": "Revisão rápida: Razões, proporções, regra de três, porcentagens, acréscimos e descontos",
+      "back": "Explique math.proportionality com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-logica-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-logica"
+      ],
+      "canonicalConceptIds": [
+        "logic.deduction"
+      ],
+      "front": "Qual é a ideia central de Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo?",
+      "back": "Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo deve ser estudado por meio de logic.deduction, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-mrl-logica-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-logica"
+      ],
+      "canonicalConceptIds": [
+        "logic.deduction"
+      ],
+      "front": "Revisão rápida: Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo",
+      "back": "Explique logic.deduction com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-constituicao-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-constituicao"
+      ],
+      "canonicalConceptIds": [
+        "public-law.constitutional.control"
+      ],
+      "front": "Qual é a ideia central de Constituição Federal, Administração Pública, fiscalização, controle interno e externo?",
+      "back": "Constituição Federal, Administração Pública, fiscalização, controle interno e externo deve ser estudado por meio de public-law.constitutional.control, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-constituicao-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-constituicao"
+      ],
+      "canonicalConceptIds": [
+        "public-law.constitutional.control"
+      ],
+      "front": "Revisão rápida: Constituição Federal, Administração Pública, fiscalização, controle interno e externo",
+      "back": "Explique public-law.constitutional.control com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-tce-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-tce"
+      ],
+      "canonicalConceptIds": [
+        "public-law.audit-courts"
+      ],
+      "front": "Qual é a ideia central de Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal?",
+      "back": "Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal deve ser estudado por meio de public-law.audit-courts, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-tce-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-tce"
+      ],
+      "canonicalConceptIds": [
+        "public-law.audit-courts"
+      ],
+      "front": "Revisão rápida: Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal",
+      "back": "Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-servidor-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-servidor"
+      ],
+      "canonicalConceptIds": [
+        "public-law.public-service"
+      ],
+      "front": "Qual é a ideia central de Plano de cargos, regime jurídico, ética e políticas institucionais?",
+      "back": "Plano de cargos, regime jurídico, ética e políticas institucionais deve ser estudado por meio de public-law.public-service, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-leginst-servidor-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-servidor"
+      ],
+      "canonicalConceptIds": [
+        "public-law.public-service"
+      ],
+      "front": "Revisão rápida: Plano de cargos, regime jurídico, ética e políticas institucionais",
+      "back": "Explique public-law.public-service com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-ciclos-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "front": "Qual é a ideia central de Ciclos de vida, Scrum, Kanban, Lean e XP?",
+      "back": "Ciclos de vida, Scrum, Kanban, Lean e XP deve ser estudado por meio de software.lifecycle, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-ciclos-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "front": "Revisão rápida: Ciclos de vida, Scrum, Kanban, Lean e XP",
+      "back": "Explique software.lifecycle com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-requisitos-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "software.requirements",
+        "software.architecture"
+      ],
+      "front": "Qual é a ideia central de Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI?",
+      "back": "Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI deve ser estudado por meio de software.requirements, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-requisitos-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "software.requirements",
+        "software.architecture"
+      ],
+      "front": "Revisão rápida: Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI",
+      "back": "Explique software.requirements com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-requisitos-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "software.requirements",
+        "software.architecture"
+      ],
+      "front": "Revisão rápida: Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI",
+      "back": "Explique software.requirements com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-modelagem-qualidade"
+      ],
+      "canonicalConceptIds": [
+        "software.modeling",
+        "software.design-patterns",
+        "software.testing"
+      ],
+      "front": "Qual é a ideia central de UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica?",
+      "back": "UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica deve ser estudado por meio de software.modeling, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-modelagem-qualidade"
+      ],
+      "canonicalConceptIds": [
+        "software.modeling",
+        "software.design-patterns",
+        "software.testing"
+      ],
+      "front": "Revisão rápida: UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica",
+      "back": "Explique software.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-modelagem-qualidade"
+      ],
+      "canonicalConceptIds": [
+        "software.modeling",
+        "software.design-patterns",
+        "software.testing"
+      ],
+      "front": "Revisão rápida: UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica",
+      "back": "Explique software.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-fundamentos-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-fundamentos"
+      ],
+      "canonicalConceptIds": [
+        "programming.algorithms",
+        "programming.data-structures"
+      ],
+      "front": "Qual é a ideia central de Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional?",
+      "back": "Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional deve ser estudado por meio de programming.algorithms, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-fundamentos-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-fundamentos"
+      ],
+      "canonicalConceptIds": [
+        "programming.algorithms",
+        "programming.data-structures"
+      ],
+      "front": "Revisão rápida: Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional",
+      "back": "Explique programming.algorithms com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-linguagens-web-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-linguagens-web"
+      ],
+      "canonicalConceptIds": [
+        "programming.languages",
+        "web.frontend"
+      ],
+      "front": "Qual é a ideia central de Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript?",
+      "back": "Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript deve ser estudado por meio de programming.languages, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-linguagens-web-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-linguagens-web"
+      ],
+      "canonicalConceptIds": [
+        "programming.languages",
+        "web.frontend"
+      ],
+      "front": "Revisão rápida: Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript",
+      "back": "Explique programming.languages com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Qual é a ideia central de APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação?",
+      "back": "APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação deve ser estudado por meio de web.apis, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Revisão rápida: APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação",
+      "back": "Explique web.apis com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Revisão rápida: APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação",
+      "back": "Explique web.apis com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-llm-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-llm"
+      ],
+      "canonicalConceptIds": [
+        "ai.llm",
+        "ai.software-development"
+      ],
+      "front": "Qual é a ideia central de IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção?",
+      "back": "IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção deve ser estudado por meio de ai.llm, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-llm-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-llm"
+      ],
+      "canonicalConceptIds": [
+        "ai.llm",
+        "ai.software-development"
+      ],
+      "front": "Revisão rápida: IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção",
+      "back": "Explique ai.llm com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-contexto-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-contexto"
+      ],
+      "canonicalConceptIds": [
+        "ai.prompt-engineering",
+        "ai.context-engineering"
+      ],
+      "front": "Qual é a ideia central de Engenharia de contexto e prompts no desenvolvimento de software?",
+      "back": "Engenharia de contexto e prompts no desenvolvimento de software deve ser estudado por meio de ai.prompt-engineering, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-contexto-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-contexto"
+      ],
+      "canonicalConceptIds": [
+        "ai.prompt-engineering",
+        "ai.context-engineering"
+      ],
+      "front": "Revisão rápida: Engenharia de contexto e prompts no desenvolvimento de software",
+      "back": "Explique ai.prompt-engineering com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "Qual é a ideia central de Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual?",
+      "back": "Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual deve ser estudado por meio de ai.agentic-workflows, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "Revisão rápida: Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual",
+      "back": "Explique ai.agentic-workflows com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "Revisão rápida: Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual",
+      "back": "Explique ai.agentic-workflows com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-cicd-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-cicd"
+      ],
+      "canonicalConceptIds": [
+        "devops.cicd"
+      ],
+      "front": "Qual é a ideia central de CI/CD, pipelines de desenvolvimento, automação de build e testes?",
+      "back": "CI/CD, pipelines de desenvolvimento, automação de build e testes deve ser estudado por meio de devops.cicd, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-cicd-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-cicd"
+      ],
+      "canonicalConceptIds": [
+        "devops.cicd"
+      ],
+      "front": "Revisão rápida: CI/CD, pipelines de desenvolvimento, automação de build e testes",
+      "back": "Explique devops.cicd com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-iac-observabilidade-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "canonicalConceptIds": [
+        "devops.infrastructure-as-code",
+        "devops.observability"
+      ],
+      "front": "Qual é a ideia central de Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas?",
+      "back": "Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas deve ser estudado por meio de devops.infrastructure-as-code, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-iac-observabilidade-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "canonicalConceptIds": [
+        "devops.infrastructure-as-code",
+        "devops.observability"
+      ],
+      "front": "Revisão rápida: Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas",
+      "back": "Explique devops.infrastructure-as-code com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-git-containers-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Qual é a ideia central de Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes?",
+      "back": "Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes deve ser estudado por meio de devops.git, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-devops-git-containers-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Revisão rápida: Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes",
+      "back": "Explique devops.git com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-modelagem-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-modelagem"
+      ],
+      "canonicalConceptIds": [
+        "database.modeling",
+        "database.normalization"
+      ],
+      "front": "Qual é a ideia central de Modelo entidade-relacionamento, normalização e desnormalização?",
+      "back": "Modelo entidade-relacionamento, normalização e desnormalização deve ser estudado por meio de database.modeling, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-modelagem-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-modelagem"
+      ],
+      "canonicalConceptIds": [
+        "database.modeling",
+        "database.normalization"
+      ],
+      "front": "Revisão rápida: Modelo entidade-relacionamento, normalização e desnormalização",
+      "back": "Explique database.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-sql-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Qual é a ideia central de SQL, álgebra relacional, transações, ACID, índices e otimização?",
+      "back": "SQL, álgebra relacional, transações, ACID, índices e otimização deve ser estudado por meio de database.sql, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-sql-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Revisão rápida: SQL, álgebra relacional, transações, ACID, índices e otimização",
+      "back": "Explique database.sql com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-sql-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Revisão rápida: SQL, álgebra relacional, transações, ACID, índices e otimização",
+      "back": "Explique database.sql com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-tecnologias-operacao-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-tecnologias-operacao"
+      ],
+      "canonicalConceptIds": [
+        "database.relational",
+        "database.nosql",
+        "database.vector",
+        "database.reliability"
+      ],
+      "front": "Qual é a ideia central de PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança?",
+      "back": "PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança deve ser estudado por meio de database.relational, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-bd-tecnologias-operacao-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-tecnologias-operacao"
+      ],
+      "canonicalConceptIds": [
+        "database.relational",
+        "database.nosql",
+        "database.vector",
+        "database.reliability"
+      ],
+      "front": "Revisão rápida: PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança",
+      "back": "Explique database.relational com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-ml-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-ml"
+      ],
+      "canonicalConceptIds": [
+        "ai.machine-learning"
+      ],
+      "front": "Qual é a ideia central de IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais?",
+      "back": "IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais deve ser estudado por meio de ai.machine-learning, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-ml-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-ml"
+      ],
+      "canonicalConceptIds": [
+        "ai.machine-learning"
+      ],
+      "front": "Revisão rápida: IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais",
+      "back": "Explique ai.machine-learning com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-generativa-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-generativa"
+      ],
+      "canonicalConceptIds": [
+        "ai.generative",
+        "ai.nlp",
+        "ai.multimodal"
+      ],
+      "front": "Qual é a ideia central de PLN, IA generativa, agentes inteligentes e modelos multimodais?",
+      "back": "PLN, IA generativa, agentes inteligentes e modelos multimodais deve ser estudado por meio de ai.generative, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-generativa-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-generativa"
+      ],
+      "canonicalConceptIds": [
+        "ai.generative",
+        "ai.nlp",
+        "ai.multimodal"
+      ],
+      "front": "Revisão rápida: PLN, IA generativa, agentes inteligentes e modelos multimodais",
+      "back": "Explique ai.generative com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "front": "Qual é a ideia central de Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data?",
+      "back": "Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data deve ser estudado por meio de ai.responsible-ai, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "front": "Revisão rápida: Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data",
+      "back": "Explique ai.responsible-ai com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "front": "Revisão rápida: Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data",
+      "back": "Explique ai.responsible-ai com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-principios-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-principios"
+      ],
+      "canonicalConceptIds": [
+        "security.fundamentals",
+        "security.risk"
+      ],
+      "front": "Qual é a ideia central de Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades?",
+      "back": "Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades deve ser estudado por meio de security.fundamentals, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-principios-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-principios"
+      ],
+      "canonicalConceptIds": [
+        "security.fundamentals",
+        "security.risk"
+      ],
+      "front": "Revisão rápida: Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades",
+      "back": "Explique security.fundamentals com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "front": "Qual é a ideia central de Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital?",
+      "back": "Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital deve ser estudado por meio de security.cryptography, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "front": "Revisão rápida: Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital",
+      "back": "Explique security.cryptography com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "front": "Revisão rápida: Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital",
+      "back": "Explique security.cryptography com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "front": "Qual é a ideia central de OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000?",
+      "back": "OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000 deve ser estudado por meio de security.application, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "front": "Revisão rápida: OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000",
+      "back": "Explique security.application com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "front": "Revisão rápida: OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000",
+      "back": "Explique security.application com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-sistemas-os-shell-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "sistemas-os-shell"
+      ],
+      "canonicalConceptIds": [
+        "systems.operating-systems",
+        "systems.shell"
+      ],
+      "front": "Qual é a ideia central de Windows, Linux, processos, memória, arquivos, shell e PowerShell?",
+      "back": "Windows, Linux, processos, memória, arquivos, shell e PowerShell deve ser estudado por meio de systems.operating-systems, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-sistemas-os-shell-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "sistemas-os-shell"
+      ],
+      "canonicalConceptIds": [
+        "systems.operating-systems",
+        "systems.shell"
+      ],
+      "front": "Revisão rápida: Windows, Linux, processos, memória, arquivos, shell e PowerShell",
+      "back": "Explique systems.operating-systems com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-sistemas-diretorios-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "sistemas-diretorios"
+      ],
+      "canonicalConceptIds": [
+        "systems.directory-services",
+        "devops.containers"
+      ],
+      "front": "Qual é a ideia central de Active Directory, LDAP, virtualização e containers?",
+      "back": "Active Directory, LDAP, virtualização e containers deve ser estudado por meio de systems.directory-services, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-sistemas-diretorios-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "sistemas-diretorios"
+      ],
+      "canonicalConceptIds": [
+        "systems.directory-services",
+        "devops.containers"
+      ],
+      "front": "Revisão rápida: Active Directory, LDAP, virtualização e containers",
+      "back": "Explique systems.directory-services com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-redes-protocolos-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "front": "Qual é a ideia central de TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies?",
+      "back": "TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies deve ser estudado por meio de networking.tcp-ip, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-redes-protocolos-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "front": "Revisão rápida: TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies",
+      "back": "Explique networking.tcp-ip com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-redes-protocolos-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "front": "Revisão rápida: TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies",
+      "back": "Explique networking.tcp-ip com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-nuvem-arquitetura-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "front": "Qual é a ideia central de Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento?",
+      "back": "Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento deve ser estudado por meio de cloud.computing, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-nuvem-arquitetura-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "front": "Revisão rápida: Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento",
+      "back": "Explique cloud.computing com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-alinhamento-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-alinhamento"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.alignment"
+      ],
+      "front": "Qual é a ideia central de Estratégia de TI e alinhamento aos objetivos institucionais?",
+      "back": "Estratégia de TI e alinhamento aos objetivos institucionais deve ser estudado por meio de it-governance.alignment, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-alinhamento-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-alinhamento"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.alignment"
+      ],
+      "front": "Revisão rápida: Estratégia de TI e alinhamento aos objetivos institucionais",
+      "back": "Explique it-governance.alignment com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-servicos-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-servicos"
+      ],
+      "canonicalConceptIds": [
+        "it-service-management.itil",
+        "it-governance.portfolio"
+      ],
+      "front": "Qual é a ideia central de Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade?",
+      "back": "Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade deve ser estudado por meio de it-service-management.itil, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-servicos-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-servicos"
+      ],
+      "canonicalConceptIds": [
+        "it-service-management.itil",
+        "it-governance.portfolio"
+      ],
+      "front": "Revisão rápida: Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade",
+      "back": "Explique it-service-management.itil com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-modelos-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-modelos"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.cobit",
+        "it-governance.itil",
+        "project-management.fundamentals"
+      ],
+      "front": "Qual é a ideia central de COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis?",
+      "back": "COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis deve ser estudado por meio de it-governance.cobit, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-modelos-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-modelos"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.cobit",
+        "it-governance.itil",
+        "project-management.fundamentals"
+      ],
+      "front": "Revisão rápida: COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis",
+      "back": "Explique it-governance.cobit com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-modelos-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-modelos"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.cobit",
+        "it-governance.itil",
+        "project-management.fundamentals"
+      ],
+      "front": "Revisão rápida: COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis",
+      "back": "Explique it-governance.cobit com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-publica-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-publica"
+      ],
+      "canonicalConceptIds": [
+        "public-sector.digital-government",
+        "it-governance.procurement"
+      ],
+      "front": "Qual é a ideia central de Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital?",
+      "back": "Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital deve ser estudado por meio de public-sector.digital-government, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-governanca-publica-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-publica"
+      ],
+      "canonicalConceptIds": [
+        "public-sector.digital-government",
+        "it-governance.procurement"
+      ],
+      "front": "Revisão rápida: Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital",
+      "back": "Explique public-sector.digital-government com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-lgpd-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Qual é a ideia central de LGPD, privacy by design, minimização, anonimização e pseudonimização?",
+      "back": "LGPD, privacy by design, minimização, anonimização e pseudonimização deve ser estudado por meio de law.data-protection, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-lgpd-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Revisão rápida: LGPD, privacy by design, minimização, anonimização e pseudonimização",
+      "back": "Explique law.data-protection com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-lgpd-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Revisão rápida: LGPD, privacy by design, minimização, anonimização e pseudonimização",
+      "back": "Explique law.data-protection com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-marco-civil-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-marco-civil"
+      ],
+      "canonicalConceptIds": [
+        "law.internet"
+      ],
+      "front": "Qual é a ideia central de Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros?",
+      "back": "Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros deve ser estudado por meio de law.internet, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-marco-civil-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-marco-civil"
+      ],
+      "canonicalConceptIds": [
+        "law.internet"
+      ],
+      "front": "Revisão rápida: Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros",
+      "back": "Explique law.internet com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-normas-tce-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-normas-tce"
+      ],
+      "canonicalConceptIds": [
+        "public-law.audit-courts",
+        "it-governance.public-policy"
+      ],
+      "front": "Qual é a ideia central de Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI?",
+      "back": "Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI deve ser estudado por meio de public-law.audit-courts, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-normas-tce-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-normas-tce"
+      ],
+      "canonicalConceptIds": [
+        "public-law.audit-courts",
+        "it-governance.public-policy"
+      ],
+      "front": "Revisão rápida: Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI",
+      "back": "Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-normas-tce-review-2",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-normas-tce"
+      ],
+      "canonicalConceptIds": [
+        "public-law.audit-courts",
+        "it-governance.public-policy"
+      ],
+      "front": "Revisão rápida: Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI",
+      "back": "Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-pdti-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-pdti"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.planning",
+        "it-governance.security-policy"
+      ],
+      "front": "Qual é a ideia central de CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026?",
+      "back": "CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026 deve ser estudado por meio de it-governance.planning, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-legti-pdti-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-pdti"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.planning",
+        "it-governance.security-policy"
+      ],
+      "front": "Revisão rápida: CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026",
+      "back": "Explique it-governance.planning com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-compreensao-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-compreensao"
+      ],
+      "canonicalConceptIds": [
+        "language.english.technical-reading"
+      ],
+      "front": "Qual é a ideia central de Compreensão de textos técnicos e científicos de Tecnologia da Informação?",
+      "back": "Compreensão de textos técnicos e científicos de Tecnologia da Informação deve ser estudado por meio de language.english.technical-reading, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-compreensao-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-compreensao"
+      ],
+      "canonicalConceptIds": [
+        "language.english.technical-reading"
+      ],
+      "front": "Revisão rápida: Compreensão de textos técnicos e científicos de Tecnologia da Informação",
+      "back": "Explique language.english.technical-reading com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-estrategias-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-estrategias"
+      ],
+      "canonicalConceptIds": [
+        "language.reading.strategies"
+      ],
+      "front": "Qual é a ideia central de Ideia principal, localização de informações e estratégias de leitura?",
+      "back": "Ideia principal, localização de informações e estratégias de leitura deve ser estudado por meio de language.reading.strategies, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-estrategias-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-estrategias"
+      ],
+      "canonicalConceptIds": [
+        "language.reading.strategies"
+      ],
+      "front": "Revisão rápida: Ideia principal, localização de informações e estratégias de leitura",
+      "back": "Explique language.reading.strategies com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-documentacao-concept",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-documentacao"
+      ],
+      "canonicalConceptIds": [
+        "language.english.it-vocabulary"
+      ],
+      "front": "Qual é a ideia central de Vocabulário técnico, manuais, documentação de software, artigos e APIs?",
+      "back": "Vocabulário técnico, manuais, documentação de software, artigos e APIs deve ser estudado por meio de language.english.it-vocabulary, sua finalidade, limites, dependências e aplicação em cenário.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "fc-ingles-documentacao-review-1",
+      "type": "definition_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-documentacao"
+      ],
+      "canonicalConceptIds": [
+        "language.english.it-vocabulary"
+      ],
+      "front": "Revisão rápida: Vocabulário técnico, manuais, documentação de software, artigos e APIs",
+      "back": "Explique language.english.it-vocabulary com um exemplo, um risco de confusão e um critério para verificar a resposta.",
+      "provenance": {
+        "status": "derived",
+        "source": "StudyOS original generator",
+        "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+        "license": "conteúdo original StudyOS"
+      },
+      "status": "validated"
+    }
+  ]
+}

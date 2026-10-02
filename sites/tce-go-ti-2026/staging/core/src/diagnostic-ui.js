@@ -62,7 +62,7 @@ export class DiagnosticUI {
     for (const option of question.options ?? []) screen.append(this.#button(option.text, async () => {
       const correct = option.id === question.correctOptionId;
       this.#run = await this.#engine.answer({ examId: this.#examId, assessmentRunId: this.#run.assessmentRunId, questionId: question.id, canonicalConceptIds: question.canonicalConceptIds, correct });
-      this.#renderQuestion();
+      this.#renderFeedback(correct);
     }));
     screen.append(this.#button('Pausar e continuar depois', () => this.#renderProgress()));
   }
@@ -70,6 +70,11 @@ export class DiagnosticUI {
   #renderProgress() {
     const screen = this.#screen('Diagnóstico pausado', `Sua avaliação foi salva com ${this.#run.responses.length} resposta(s).`);
     screen.append(this.#button('Continuar', () => this.#renderQuestion()), this.#button('Reiniciar com nova avaliação', async () => { this.#run = await this.#engine.restart({ examId: this.#examId, questions: this.#questions }); this.#renderIntro(); }));
+  }
+
+  #renderFeedback(correct) {
+    const screen = this.#screen(correct ? 'Resposta correta' : 'Resposta incorreta', 'A resposta foi registrada como evidência diagnóstica; ela não altera o simulatedScore.');
+    screen.append(this.#button('Continuar diagnóstico', () => this.#renderQuestion()));
   }
 
   async #renderResult() {
