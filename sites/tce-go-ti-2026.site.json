@@ -1,0 +1,9 @@
+{
+  "siteId": "tce-go-ti-2026",
+  "mode": "standalone",
+  "examIds": [
+    "tce-go-ti-2026"
+  ],
+  "basePath": "./",
+  "title": "StudyOS — TCE-GO TI"
+}

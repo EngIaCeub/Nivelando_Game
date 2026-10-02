@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExamManifest",
+  "type": "object",
+  "required": [
+    "examId",
+    "title",
+    "status",
+    "sourceRefs",
+    "buildModes"
+  ],
+  "properties": {
+    "examId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "board": {
+      "type": "string"
+    },
+    "examDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "validated",
+        "released"
+      ]
+    },
+    "sourceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "buildModes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "standalone",
+          "hub"
+        ]
+      }
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

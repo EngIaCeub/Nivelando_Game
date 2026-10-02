@@ -1,0 +1,10 @@
+{
+  "buildVersion": "o1.5-staging",
+  "commitSha": "precommit-local-validation",
+  "buildTimestamp": "2026-10-02T00:00:00.000Z",
+  "repository": "Nivelando_Game",
+  "examId": "tce-go-ti-2026",
+  "schemaVersions": "mastery:1, diagnostic-run:1",
+  "storageVersion": 1,
+  "basePath": "/Nivelando_Game/"
+}

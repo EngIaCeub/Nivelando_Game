@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"MasteryRecord",
+  "type":"object",
+  "required":["canonicalConceptId","masteryEstimate","confidence","source","assessedAt","questionCount","firstTryCorrect","firstTryWrong","reviewStatus","schemaVersion"],
+  "properties":{
+    "canonicalConceptId":{"type":"string"},
+    "masteryEstimate":{"type":"number","minimum":0,"maximum":1},
+    "confidence":{"type":"number","minimum":0,"maximum":1},
+    "source":{"type":"string"},
+    "assessedAt":{"type":"string"},
+    "questionCount":{"type":"integer","minimum":0},
+    "firstTryCorrect":{"type":"integer","minimum":0},
+    "firstTryWrong":{"type":"integer","minimum":0},
+    "selfAssessment":{"type":["number","null"],"minimum":0,"maximum":1},
+    "reviewStatus":{"type":"string"},
+    "schemaVersion":{"type":"integer","minimum":1}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"DiagnosticRun",
+  "type":"object",
+  "required":["assessmentRunId","examId","status","questionIds","responses","schemaVersion"],
+  "properties":{
+    "assessmentRunId":{"type":"string"},
+    "examId":{"type":"string"},
+    "status":{"enum":["in_progress","completed"]},
+    "questionIds":{"type":"array","items":{"type":"string"}},
+    "responses":{"type":"array"},
+    "schemaVersion":{"type":"integer","minimum":1}
+  }
+}

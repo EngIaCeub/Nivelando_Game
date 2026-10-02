@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#16324f">
+    <meta name="description" content="Motor de estudo gamificado baseado em Exam Packs">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./styles.css">
+    <title>StudyOS</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="app-header">
+      <a class="brand" href="./" aria-label="StudyOS, início">StudyOS</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" aria-label="Navegação principal">
+        <a href="#today">Hoje</a>
+        <a href="#plan">Plano</a>
+        <a href="#subjects">Matérias</a>
+        <a href="#questions">Questões</a>
+        <a href="#reviews">Revisões</a>
+        <a href="#progress">Progresso</a>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section id="today" class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Trilha de estudo</p>
+        <h1 id="page-title">Seu estudo de hoje</h1>
+        <p id="pack-status">Carregue um Exam Pack para começar.</p>
+        <button id="start-button" type="button">Começar sessão</button>
+      </section>
+      <section id="plan" class="card" aria-labelledby="plan-title">
+        <h2 id="plan-title">Plano</h2>
+        <p>O plano será calculado a partir do Exam Pack ativo.</p>
+      </section>
+      <section id="subjects" class="card" aria-labelledby="subjects-title">
+        <h2 id="subjects-title">Matérias</h2>
+        <p>Nenhum currículo carregado.</p>
+      </section>
+      <section id="questions" class="card" aria-labelledby="questions-title">
+        <h2 id="questions-title">Questões</h2>
+        <p>Escolha uma atividade do plano para responder questões.</p>
+      </section>
+      <section id="reviews" class="card" aria-labelledby="reviews-title">
+        <h2 id="reviews-title">Revisões</h2>
+        <p>Suas revisões vencidas aparecerão aqui.</p>
+      </section>
+      <section id="progress" class="card" aria-labelledby="progress-title">
+        <h2 id="progress-title">Progresso</h2>
+        <p>O progresso será exibido por tópico e disciplina.</p>
+      </section>
+      <output id="session-status" class="status" role="status" aria-live="polite"></output>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

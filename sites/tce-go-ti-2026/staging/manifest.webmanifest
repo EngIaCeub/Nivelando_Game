@@ -1,0 +1,20 @@
+{
+  "name": "StudyOS — STAGING / PREVIEW — TCE-GO TI 2026",
+  "short_name": "StudyOS STAGING",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "lang": "pt-BR",
+  "display": "standalone",
+  "background_color": "#f4f7f9",
+  "theme_color": "#16324f",
+  "description": "StudyOS standalone para o Exam Pack TCE-GO TI 2026",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

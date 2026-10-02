@@ -1,0 +1,11 @@
+{
+  "examId": "tce-go-ti-2026",
+  "sources": [
+    {"id":"official-edital-01-2026","sourceType":"official-edital","title":"Edital nº 01/2026 — Abertura de Inscrições","url":"https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306","file":"edital-01-2026-oficial.pdf","retrievedAt":"2026-10-02","locator":"Documento completo, 25 páginas","sha256":"20FF3CBC8E0684E6B3D43D2F5B726FC5110F503087EF86E140ED8E8AB72F2B01"},
+    {"id":"official-tce-news-2026","sourceType":"official-news","title":"TCE-GO abre concurso público para Técnico de Controle Externo","url":"https://portal.tce.go.gov.br/-/tce-go-abre-concurso-publico-para-tecnico-de-controle-externo","file":null,"retrievedAt":"2026-10-02","locator":"notícia publicada em 25/08/2026 e atualizada em 02/09/2026"}
+  ],
+  "mappings": [
+    {"factIds":["organization","cargo","specialty","option_code","board","education","vacancies_total","vacancies_general","vacancies_disability","vacancies_black_candidates","salary","application_fee","registration_period","payment_deadline","exam_city","exam_date","objective_structure","objective_duration","objective_approval","case_study","case_study_approval","final_score","critical_content_cutoff"],"sourceId":"official-edital-01-2026"},
+    {"factIds":["known_content"],"sourceId":null,"status":"assumption","note":"Não fornecido pelo usuário."}
+  ]
+}

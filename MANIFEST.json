@@ -1,0 +1,397 @@
+{
+  "name": "StudyOS Agentic Factory",
+  "version": "2.0.0",
+  "generated": "2026-10-02",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 51,
+      "sha256": "b6036c5b28453d75d69928d9db27fad6ab3c4769a41396cb4d514137a0fc8608"
+    },
+    {
+      "path": ".mcp.json",
+      "bytes": 131,
+      "sha256": "bb806b0b4c771c0153dbd77b5380b471a89911a0c1a178c297380d72e6e16f64"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2440,
+      "sha256": "d9c17f25e307ccd423edcb5380fdb1ac2f811d9d21d361a63e136aaacff71803"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1483,
+      "sha256": "d04685b658139c1b85c90eadb6e02c01dd98a646336df47b2c287a591133f83e"
+    },
+    {
+      "path": "agents/ANALYTICS.md",
+      "bytes": 189,
+      "sha256": "5e3774aa0932cd0291e7997b27807c29cd1f42b9d725cab82a00872a04745937"
+    },
+    {
+      "path": "agents/ARCHITECT.md",
+      "bytes": 266,
+      "sha256": "1145ec28b33168adcd657a7c5b12225c649241dea4a6e0295b021f1351b05aa9"
+    },
+    {
+      "path": "agents/CURRICULUM.md",
+      "bytes": 279,
+      "sha256": "76e93acd6c391117511a701247fe0f27fc054ad11eadb9bad9048d1f6e14a1ff"
+    },
+    {
+      "path": "agents/EXAM_INTAKE.md",
+      "bytes": 316,
+      "sha256": "13ff582e6748b089d6c71d8e4594bdb99d65da1efd77f26a174269d76003e598"
+    },
+    {
+      "path": "agents/EXAM_PACK_GENERATOR.md",
+      "bytes": 216,
+      "sha256": "ca458edcb63cf0874e13e8780d43182188c8c5aac7add78a2c1ad6915e4b96a1"
+    },
+    {
+      "path": "agents/FRONTEND.md",
+      "bytes": 241,
+      "sha256": "1c8e9374b5a52ebfddf0b58d8edc9c741241db4a5ff65bc0926b738bffb57604"
+    },
+    {
+      "path": "agents/GAMIFICATION.md",
+      "bytes": 228,
+      "sha256": "95f3469d6dc1bbdf176de8c79108547054837eaedd76140b84e0b806c55bc2dd"
+    },
+    {
+      "path": "agents/LEARNING_ENGINE.md",
+      "bytes": 256,
+      "sha256": "4d55a3a717ce982c174d99c5712380c73a40698e65a053c6ef5c30cde604943a"
+    },
+    {
+      "path": "agents/ORCHESTRATOR.md",
+      "bytes": 304,
+      "sha256": "1620a632e08b5199f12e8a513b4abe71524d2d5f33fdc61f7e3383d9ae51ce9d"
+    },
+    {
+      "path": "agents/PLANNER.md",
+      "bytes": 298,
+      "sha256": "913cc30dc84c948574949c817f161af688042240e8f37f79f6a4320f98c9cc78"
+    },
+    {
+      "path": "agents/QA.md",
+      "bytes": 226,
+      "sha256": "7e7b9cd36e875062b62daac0a46230e7f0851ecc7e0f55a18984fca1b7ed9384"
+    },
+    {
+      "path": "agents/QUESTION_INGESTOR.md",
+      "bytes": 271,
+      "sha256": "0376c35f610ce92e32acf5cc4188fe98c76ef3bbfc02f3da41326eff429d83e4"
+    },
+    {
+      "path": "agents/RELEASE.md",
+      "bytes": 144,
+      "sha256": "e79b1a19d62793f403aa232922a50a0a0ad3bd3e522ccaee2bd34e843de9e138"
+    },
+    {
+      "path": "agents/RESOURCE_CURATOR.md",
+      "bytes": 250,
+      "sha256": "e41b062b81b4356fa48db29cfbbde3742c2958db90401d91627efa9b98b47e59"
+    },
+    {
+      "path": "agents/REVISION_ENGINE.md",
+      "bytes": 219,
+      "sha256": "17fd3baf87e87e8c6d926fe08df7110c456afe4106f17068c402f1c81cbc6328"
+    },
+    {
+      "path": "contracts/CORE_BOUNDARY.md",
+      "bytes": 374,
+      "sha256": "e8dc5ff9de99911f7625218931e81c49fb44f99cb14be01f0692efb2d7e87a44"
+    },
+    {
+      "path": "contracts/EVENTS.md",
+      "bytes": 329,
+      "sha256": "f6bffbc920be3ebe7abaeafb95c5f75d7350a15c1c4c3b37ddb5678e042a8813"
+    },
+    {
+      "path": "contracts/GAMIFICATION.md",
+      "bytes": 207,
+      "sha256": "e7e01250ed92f0afc980d0c4abd440b3c5b55b3e967249010e9f60a9804ee44f"
+    },
+    {
+      "path": "contracts/PROVENANCE.md",
+      "bytes": 317,
+      "sha256": "95edc6f73c012b903e8c633bb97b9f917fa588a579938b64c2f5863c12ccff38"
+    },
+    {
+      "path": "contracts/SCORING.md",
+      "bytes": 380,
+      "sha256": "7aa9b8385ec3a629a513afdabf4e984e4e235c5d12d952efc22cc391c04f9694"
+    },
+    {
+      "path": "contracts/STORAGE.md",
+      "bytes": 279,
+      "sha256": "70695c393f58340949a1eb42233a995cfd149be9524e66de17e79200d55ac49d"
+    },
+    {
+      "path": "core/README.md",
+      "bytes": 88,
+      "sha256": "09506aeb19a09a87d21a94d4b71cf8314d60f820353de21793ae07e8294e0be9"
+    },
+    {
+      "path": "core/tests/ARCHITECTURE_TESTS.md",
+      "bytes": 189,
+      "sha256": "e04462063e871232ae90f192752312e5a8e03074eed167e93c4c22036285f68b"
+    },
+    {
+      "path": "docs/FACTORY_WORKFLOW.md",
+      "bytes": 657,
+      "sha256": "8a6f16e59acde4f890a442794ee141635293f04dde7e4827e7b7527ade6bd0d5"
+    },
+    {
+      "path": "docs/MODEL_ROUTING.md",
+      "bytes": 1614,
+      "sha256": "49773562105b78564268b40b3261db41c030bc2d7c98b663feecffbe0d82c7a0"
+    },
+    {
+      "path": "docs/PRODUCT_SPEC.md",
+      "bytes": 1837,
+      "sha256": "863eebcce15ed5a4d89970c17cddfc0cd951155fd5df2f2d9c055b58f6e9bc08"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 172,
+      "sha256": "116865a2d835a281777a45fe4472c3c52a393260bfa76d1e90ce95be1814326e"
+    },
+    {
+      "path": "docs/adr/000-template.md",
+      "bytes": 118,
+      "sha256": "4146b06e2fb88f5b603e92adb1ee1d2f76bbc3f0fa4f13887625261e4633992c"
+    },
+    {
+      "path": "docs/runbooks/NEW_EXAM_ACCEPTANCE.md",
+      "bytes": 472,
+      "sha256": "d41b7c4b473b1f7e9a29f91dbae9f3ffff9f6764f86d2e7300ded1e8bc8886c8"
+    },
+    {
+      "path": "docs/runbooks/SECOND_EXAM_DRY_RUN.md",
+      "bytes": 357,
+      "sha256": "cf9a9b0ebb07e0b7226ec7f4f57b86c05b2fd10fd658f6ca9de606d64da08413"
+    },
+    {
+      "path": "exam-packs/_template/README.md",
+      "bytes": 124,
+      "sha256": "dc4aec5e93558a6faa62b269dddc551e5592f953fc20b541020610acdeac5229"
+    },
+    {
+      "path": "exam-packs/_template/curriculum.json",
+      "bytes": 41,
+      "sha256": "9346e5a131fc77cb83ea4368ce68fbd2b196d3aa8d25e6c5b1678721aad0981d"
+    },
+    {
+      "path": "exam-packs/_template/facts.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/_template/manifest.json",
+      "bytes": 241,
+      "sha256": "590cfe6ac9fa94fc5080e00d95378ad4a69b7d356fba5c2859078e3cd5be5f1b"
+    },
+    {
+      "path": "exam-packs/_template/questions.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/_template/resources.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/_template/source-map.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/_template/study-plan.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/README.md",
+      "bytes": 372,
+      "sha256": "2f9a03fdce63c0eb7841e0127f5315e9a2fe4de3a388b49bd9d1211121172d8b"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/curriculum.json",
+      "bytes": 45,
+      "sha256": "7e23ade9a7cdaad88d811fd602dcfa5774d6c4690286e07cff579e026c7de36d"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/facts.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/manifest.json",
+      "bytes": 451,
+      "sha256": "7c1ef75a18da3f359ee1020db1e2759c4ae84a03dcb6065fbf33b03203ef5f86"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/questions.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/resources.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/source-map.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "exam-packs/tce-go-ti-2026/study-plan.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "prompts/00-bootstrap-factory.md",
+      "bytes": 422,
+      "sha256": "1b3d0173db4be1618047e0559b7743d7dbc8e4bff72e9d18689d2dea9471e2aa"
+    },
+    {
+      "path": "prompts/01-build-core.md",
+      "bytes": 170,
+      "sha256": "a975247a5d2e6faddbc2600caa52463d151e0bd72c4cf60824865b4a7f7455a4"
+    },
+    {
+      "path": "prompts/10-build-tce-go-first-pack.md",
+      "bytes": 556,
+      "sha256": "aff301d668dcd446bce4e6a47027b73540b254465e758125175e398ce7d427b5"
+    },
+    {
+      "path": "prompts/20-create-new-exam-from-edital.md",
+      "bytes": 689,
+      "sha256": "27bc0491aec228fcd5623f444ea2e25e47c74448bab911dae58ca247259900ac"
+    },
+    {
+      "path": "prompts/21-add-exam-to-hub.md",
+      "bytes": 210,
+      "sha256": "71ec1c1d5b2604744fb0f4f88fcb85b70316ecf7e5461725e424161f9edfb9bf"
+    },
+    {
+      "path": "prompts/30-release-standalone.md",
+      "bytes": 180,
+      "sha256": "b7d76c4981bb30d887f27920a83529c3edbfcaeeeb65511a2a4a0cf5022f0195"
+    },
+    {
+      "path": "prompts/40-hardening.md",
+      "bytes": 197,
+      "sha256": "72b1beb4ab377d231bbe907d1ba22d81036c8d415d0638b2e52aa04d9642785f"
+    },
+    {
+      "path": "schemas/curriculum.schema.json",
+      "bytes": 2371,
+      "sha256": "b51bdb2644d3eb4d58b7587df0447c50cb972b63811cad8da68179b77a951a7a"
+    },
+    {
+      "path": "schemas/exam-manifest.schema.json",
+      "bytes": 1021,
+      "sha256": "e6711b4b4bcdd506c486424ec24f90f9d8185c8a96a2c5e29d38835be0246a6b"
+    },
+    {
+      "path": "schemas/question.schema.json",
+      "bytes": 1568,
+      "sha256": "81e4d92af2e868c5f744f61120a9bd8a30153d09d6fdc5459f8f4fe000c4cad4"
+    },
+    {
+      "path": "schemas/resource.schema.json",
+      "bytes": 903,
+      "sha256": "87b95d002f3d0d547a10a2963975c288be5395e3257d1711d6973436c06521cd"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 130,
+      "sha256": "70d16da82e0020046a65d1c32fefc3b194914ddd3f5ec44c9873a65ca39731b8"
+    },
+    {
+      "path": "sites/README.md",
+      "bytes": 198,
+      "sha256": "4f8dbd0f3509b9d660cf97b5a945cbc87a87b1496e14e7682ec098b1ae95ec33"
+    },
+    {
+      "path": "sites/tce-go-ti-2026.site.json",
+      "bytes": 153,
+      "sha256": "44d24ba37039a8e2a804ceb32df0f9fae6ab93f1c87ca01dc1f3eada55960f52"
+    },
+    {
+      "path": "skills/accessibility/SKILL.md",
+      "bytes": 197,
+      "sha256": "d3d3b9f2224954fc1ef227e56ff4efed84d219f65f579a4fc9ec79634732a12d"
+    },
+    {
+      "path": "skills/analytics/SKILL.md",
+      "bytes": 212,
+      "sha256": "401463f8d75f4924e44ca1a45e8c8c6c8506a8b8bf3454cce5237cfc491b0760"
+    },
+    {
+      "path": "skills/curriculum-modeling/SKILL.md",
+      "bytes": 242,
+      "sha256": "b6eb2c1bac662a23c6857a7a3557a22aeba8aa5d45f6edd16cc16fc3fe9a5ae1"
+    },
+    {
+      "path": "skills/exam-ingestion/SKILL.md",
+      "bytes": 282,
+      "sha256": "57250594eda3ca4fea406c27f5f548ca124581cd47a4cd6a5af100e172a3dbf8"
+    },
+    {
+      "path": "skills/exam-pack-generator/SKILL.md",
+      "bytes": 242,
+      "sha256": "3b838b5fac8de1fb7260d1ab2f056409c7ff3b7c454a27519a013683ebf9ee85"
+    },
+    {
+      "path": "skills/frontend/SKILL.md",
+      "bytes": 172,
+      "sha256": "5a63cd5fb673df0c641477f691981d6acfcce8e0eebed3f7e8cd72fa9b0528f0"
+    },
+    {
+      "path": "skills/gamification/SKILL.md",
+      "bytes": 213,
+      "sha256": "c4a6890cae8a5abb14eeb52523819680078ddcb835de4b200fd5195ff8dda4cb"
+    },
+    {
+      "path": "skills/learning-engine/SKILL.md",
+      "bytes": 245,
+      "sha256": "00b11c1b3b217e919662a6fd667ae9e91f215cf3175fc8815429a870f30a4847"
+    },
+    {
+      "path": "skills/qa/SKILL.md",
+      "bytes": 200,
+      "sha256": "f930d165eeab88f1453b317cbc512c05f58008ce60392212b4080b32ae52bfba"
+    },
+    {
+      "path": "skills/question-ingestion/SKILL.md",
+      "bytes": 248,
+      "sha256": "1d29fa28b5f967fecfb4854570cfcd958c276a0480222856cda63280a5846ff3"
+    },
+    {
+      "path": "skills/release/SKILL.md",
+      "bytes": 178,
+      "sha256": "d8b4ec4209c26e84d3bc0dc24959eca484fdca928c29e559a1053abc12f9413a"
+    },
+    {
+      "path": "skills/resource-curation/SKILL.md",
+      "bytes": 267,
+      "sha256": "b961ab8c349598747b67e099813199b8866532179dc4e13fd3141d38dc632de3"
+    },
+    {
+      "path": "skills/revision-engine/SKILL.md",
+      "bytes": 238,
+      "sha256": "6c14315c44213b222dfcb73b1d82e79553d2e4dbe35803ecdd327762bf80f118"
+    },
+    {
+      "path": "skills/system-architecture/SKILL.md",
+      "bytes": 281,
+      "sha256": "d4f87d0824638b569304099009c3c5db9d055e8c2736b6530d19f4970ced9860"
+    }
+  ]
+}

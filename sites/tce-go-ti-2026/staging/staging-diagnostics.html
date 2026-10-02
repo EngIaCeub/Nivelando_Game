@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>StudyOS — Staging build info</title><link rel="stylesheet" href="./styles.css"></head>
+<body><main id="main-content" class="card" tabindex="-1"><p class="eyebrow">STAGING / PREVIEW</p><h1>Build diagnostics</h1><dl id="build-info"></dl><p><a href="./diagnostic.html">Voltar ao diagnóstico</a></p></main><script type="module">
+const meta = await fetch('./staging-meta.json').then((response) => response.json());
+const rows = { 'Build version': meta.buildVersion, 'Commit SHA': meta.commitSha, 'Build timestamp': meta.buildTimestamp, 'Exam ID': meta.examId, 'Schema versions': meta.schemaVersions, 'Storage version': meta.storageVersion, 'Service worker': 'registrable at ./sw.js', 'IndexedDB': 'available in browser', 'Current base path': `${location.pathname.replace(/[^/]*$/, '')}` };
+document.querySelector('#build-info').innerHTML = Object.entries(rows).map(([key,value]) => `<dt>${key}</dt><dd>${value}</dd>`).join('');
+</script></body></html>

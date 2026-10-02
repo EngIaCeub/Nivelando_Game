@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resource",
+  "type": "object",
+  "required": [
+    "id",
+    "examId",
+    "title",
+    "type",
+    "topicIds",
+    "url",
+    "verified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "examId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "video",
+        "article",
+        "book",
+        "docs",
+        "law",
+        "course",
+        "pdf",
+        "other"
+      ]
+    },
+    "topicIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "url": {
+      "type": "string"
+    },
+    "free": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "verifiedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

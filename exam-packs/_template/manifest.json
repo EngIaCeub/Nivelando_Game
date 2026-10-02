@@ -1,0 +1,15 @@
+{
+  "examId": "replace-me",
+  "title": "Novo concurso",
+  "organization": "",
+  "role": "",
+  "board": "",
+  "examDate": null,
+  "status": "draft",
+  "sourceRefs": [],
+  "buildModes": [
+    "standalone",
+    "hub"
+  ],
+  "schemaVersion": 1
+}
