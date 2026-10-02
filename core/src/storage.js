@@ -34,11 +34,18 @@ export class MemoryStore {
   }
   async export(examId) {
     requireExamId(examId);
+    const collections = {};
+    for (const [key, value] of this.#records.entries()) {
+      if (!key.startsWith(`${examId}::`)) continue;
+      const [, collection, id] = key.split('::');
+      (collections[collection] ??= []).push({ id, value: clone(value) });
+    }
     return {
       version: EXPORT_VERSION,
       examId,
       records: await this.query(examId, 'progress'),
-      events: await this.query(examId, 'events')
+      events: await this.query(examId, 'events'),
+      collections
     };
   }
   async import(examId, payload) {
@@ -48,6 +55,9 @@ export class MemoryStore {
     }
     for (const record of payload.records ?? []) await this.put(examId, 'progress', record.id, record);
     for (const event of payload.events ?? []) await this.put(examId, 'events', event.eventId, event);
+    for (const [collection, records] of Object.entries(payload.collections ?? {})) {
+      for (const record of records ?? []) await this.put(examId, collection, record.id, record.value);
+    }
   }
   async migrate() { return EXPORT_VERSION; }
 }
@@ -93,11 +103,25 @@ export class IndexedDbStore {
     return records.filter((record) => record.collection === collection).map((record) => clone(record.value));
   }
   async transaction(examId, callback) { requireExamId(examId); return callback(this); }
-  async export(examId) { return { version: EXPORT_VERSION, examId, records: await this.query(examId, 'progress'), events: await this.query(examId, 'events') }; }
+  async export(examId) {
+    const namespace = requireExamId(examId);
+    const db = await this.#dbPromise;
+    const records = await new Promise((resolve, reject) => {
+      const request = db.transaction('records', 'readonly').objectStore('records').index('namespace').getAll(namespace);
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    const collections = {};
+    for (const record of records) (collections[record.collection] ??= []).push({ id: record.key.split('::').at(-1), value: clone(record.value) });
+    return { version: EXPORT_VERSION, examId, records: await this.query(examId, 'progress'), events: await this.query(examId, 'events'), collections };
+  }
   async import(examId, payload) {
     if (!payload || payload.version !== EXPORT_VERSION || payload.examId !== requireExamId(examId)) throw new Error('unsupported or mismatched export');
     for (const record of payload.records ?? []) await this.put(examId, 'progress', record.id, record);
     for (const event of payload.events ?? []) await this.put(examId, 'events', event.eventId, event);
+    for (const [collection, records] of Object.entries(payload.collections ?? {})) {
+      for (const record of records ?? []) await this.put(examId, collection, record.id, record.value);
+    }
   }
   async migrate() { return EXPORT_VERSION; }
 }

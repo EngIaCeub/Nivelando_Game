@@ -13,15 +13,16 @@ Objetivo: preparar e publicar, após autenticação e remote disponíveis, uma p
 TCE-GO identificada como `STAGING / PREVIEW`, com diagnóstico técnico, base path, PWA,
 offline e validação browser.
 
-Status: build e workflow preparados; publicação real bloqueada porque este workspace não contém
-`.git`, remote, branch ou credenciais GitHub.
+Status: concluído e aprovado no O1.5; publicação real validada no GitHub Pages.
 
 ## O2 — Dashboard Hoje e planner adaptativo
 
 Objetivo: expor a fila diária, o resultado do diagnóstico, revisões vencidas e plano adaptativo
 em uma experiência operacional integrada.
 
-Status: planejado; não iniciado nesta execução.
+Status: implementação concluída; aguardando validação de release e smoke remoto.
+
+Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 
 ## O3 — Expansão de conteúdo real do TCE-GO
 

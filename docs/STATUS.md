@@ -222,3 +222,23 @@ Validação O1: aprovada. O2 não iniciado.
 - O2 não iniciado. Relatório: `docs/O1_5_STAGING_REPORT.md`.
 
 Validação O1.5: publicação remota aprovada; documentação final pendente apenas do commit/tag de encerramento.
+
+## O2 — Dashboard Hoje e planner adaptativo
+
+- Implementado `TodayPlan` genérico namespaced por `examId` e data, com algoritmo determinístico
+  versionado (`today-v1`), orçamento diário, diversidade, dependências, retenção, erros,
+  confiança, mastery, ritmo e razões observáveis.
+- Dashboard integrado ao standalone: countdown, meta diária, fila, razões, início/pausa/
+  retomada/conclusão, revisão de erros, questões, replanejamento, `ESTUDAR MAIS`, visão semanal,
+  XP e sequência configurável.
+- Persistência e isolamento: planos/atividades em IndexedDB, export/import namespaced,
+  `simulatedScore` imutável e retentativas separadas; mastery permanece global.
+- Schemas adicionados: `schemas/today-plan.schema.json` e `schemas/activity-state.schema.json`.
+  Eventos O2 documentados em `contracts/EVENTS.md`.
+- Build reproduzível em `scripts/build-standalone.mjs`, incluindo runtime genérico, pack,
+  manifest e service worker relativos; nenhum dado TCE-GO entrou em `core/`.
+- Suíte local desta etapa: 36/36 testes aprovados, 0 falhas. Publicação/smoke remoto do O2
+  ainda pendentes; O3 não iniciado.
+- Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
+
+Validação O2: implementação concluída; aguardando release remoto.

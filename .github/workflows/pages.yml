@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Build standalone
+        run: node scripts/build-standalone.mjs
       - name: Run complete test suite
         run: node --test
       - name: Build staging

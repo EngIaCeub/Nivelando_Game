@@ -1,0 +1,10 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"TodayPlan",
+  "type":"object",
+  "required":["planId","examId","date","availableMinutes","generatedAt","algorithmVersion","activities","plannedMinutes","completedMinutes","status","reasonSummary"],
+  "properties":{
+    "planId":{"type":"string"},"examId":{"type":"string"},"date":{"type":"string","format":"date"},"availableMinutes":{"type":"number","minimum":0},"generatedAt":{"type":"string"},"algorithmVersion":{"type":"string"},"activities":{"type":"array"},"plannedMinutes":{"type":"number","minimum":0},"completedMinutes":{"type":"number","minimum":0},"status":{"enum":["ready","active","complete"]},"reasonSummary":{"type":"string"}
+  }
+}
+

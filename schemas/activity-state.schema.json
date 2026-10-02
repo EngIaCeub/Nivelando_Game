@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"ActivityState",
+  "type":"object",
+  "required":["activityId","planId","status","estimatedMinutes","actualMinutes","updatedAt"],
+  "properties":{"activityId":{"type":"string"},"planId":{"type":"string"},"status":{"enum":["planned","in_progress","paused","completed","skipped"]},"estimatedMinutes":{"type":"number","minimum":0},"actualMinutes":{"type":"number","minimum":0},"updatedAt":{"type":"string"}}
+}

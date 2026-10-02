@@ -7,7 +7,9 @@ Consumidores idempotentes por eventId.
 Tipos iniciais:
 topic_started, topic_completed, resource_opened, question_answered,
 review_completed, simulation_started, simulation_finished, xp_awarded,
-plan_rebalanced.
+plan_rebalanced, today_plan_generated, activity_started, activity_paused,
+activity_resumed, activity_completed, today_plan_rebalanced,
+daily_goal_completed, extra_study_started.
 
 Diagnóstico V1 também pode emitir `diagnostic_started`, `diagnostic_answered`,
 `diagnostic_completed`, `mastery_updated` e `study_plan_rebalanced`. Esses eventos mantêm

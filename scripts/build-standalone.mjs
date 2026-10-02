@@ -1,0 +1,24 @@
+import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const root = fileURLToPath(new URL('..', import.meta.url));
+const dist = resolve(root, process.env.STUDYOS_DIST_DIR || 'sites/tce-go-ti-2026/dist');
+const core = resolve(root, 'core');
+const pack = resolve(root, 'exam-packs/tce-go-ti-2026');
+await mkdir(resolve(dist, 'core/src'), { recursive: true });
+await mkdir(resolve(dist, 'exam-pack'), { recursive: true });
+for (const file of ['index.html', 'manifest.webmanifest', 'styles.css', 'app.js']) await cp(resolve(core, file), resolve(dist, file));
+for (const file of ['analytics.js', 'curriculum.js', 'diagnostic-ui.js', 'diagnostics.js', 'factory.js', 'gamification.js', 'index.js', 'mastery.js', 'revision.js', 'scoring.js', 'storage.js', 'today-planner.js', 'today-ui.js']) await cp(resolve(core, 'src', file), resolve(dist, 'core/src', file));
+await cp(resolve(root, 'sites/tce-go-ti-2026/site-app.js'), resolve(dist, 'site-app.js'));
+for (const file of ['manifest.json', 'facts.json', 'source-map.json', 'curriculum.json', 'resources.json', 'questions.json', 'study-plan.json']) await cp(resolve(pack, file), resolve(dist, 'exam-pack', file));
+const indexPath = resolve(dist, 'index.html');
+const index = await readFile(indexPath, 'utf8');
+await writeFile(indexPath, index.includes('./site-app.js') ? index : index.replace('</body>', '    <script type="module" src="./site-app.js"></script>\n  </body>'));
+const manifestPath = resolve(dist, 'manifest.webmanifest');
+const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+manifest.icons = [{ src: './icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }];
+manifest.id = './';
+await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+await writeFile(resolve(dist, 'sw.js'), `const CACHE_NAME = 'studyos-tce-go-o2-v1';\nconst APP_SHELL = ['./', './index.html', './styles.css', './app.js', './site-app.js', './manifest.webmanifest', './icon.svg', './release-diagnostics.html', './release-diagnostics.js', './o1-diagnostics.html', './o1-diagnostics.js', './core/src/index.js', './core/src/storage.js', './core/src/scoring.js', './core/src/gamification.js', './core/src/mastery.js', './core/src/diagnostics.js', './core/src/diagnostic-ui.js', './core/src/today-planner.js', './core/src/today-ui.js', './exam-pack/manifest.json', './exam-pack/facts.json', './exam-pack/source-map.json', './exam-pack/curriculum.json', './exam-pack/resources.json', './exam-pack/questions.json', './exam-pack/study-plan.json'];\nself.addEventListener('install', (event) => { event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL))); self.skipWaiting(); });\nself.addEventListener('activate', (event) => { event.waitUntil(self.clients.claim()); });\nself.addEventListener('fetch', (event) => { event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request))); });\n`);
+console.log(`standalone build ready: ${dist}`);
