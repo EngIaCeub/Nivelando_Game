@@ -248,3 +248,18 @@ Validação O1.5: publicação remota aprovada; documentação final pendente ap
 
 Validação O2: aprovada. Tag `o2-today-planner-stable` aponta para o commit publicado e validado.
 O3 não iniciado.
+
+## O3 — Expansão e curadoria do conteúdo real TCE-GO
+
+- Inventário criado para os 45 tópicos em `exam-packs/tce-go-ti-2026/content-coverage.json`;
+  classificação: 12 P1, 20 P2, 4 P3 e 9 P4.
+- Pack expandido com 20 recursos verificados, 1 videoaula pública verificada, 289 questões
+  originais com fingerprint e explicações, 102 flashcards e 16 simulados com pools e seeds.
+- Simulado completo preserva a estrutura oficial: 25 questões gerais + 45 específicas, pesos
+  1/2 e 270 minutos. `simulatedScore` e contratos de scoring não foram alterados.
+- Todos os 45 tópicos têm recurso, questões, revisão e explicação; nenhum tópico `EMPTY`.
+  A matriz classifica o lote como `MEDIUM` por manter metas progressivas sem redundância.
+- Suíte local O3: 59/59 testes aprovados, 0 falhas. Core sem dados específicos do TCE-GO.
+- Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
+
+Validação O3: conteúdo local aprovado; publicação e smoke remoto pendentes. O4 não iniciado.

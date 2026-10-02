@@ -1,0 +1,1169 @@
+{
+  "examId": "tce-go-ti-2026",
+  "generatedAt": "2026-10-02",
+  "sourceRefs": [
+    "official-edital-01-2026"
+  ],
+  "priorityMethod": "priority edital + peso + transversalidade + dependências; classes P1/P2/P3/P4",
+  "topics": [
+    {
+      "topicId": "lp-texto",
+      "disciplineId": "lingua-portuguesa",
+      "discipline": "Língua Portuguesa",
+      "moduleId": "lp-conteudo",
+      "canonicalConceptIds": [
+        "language.portuguese.orthography",
+        "language.reading.comprehension"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.3,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-lingua-portuguesa",
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "lp-morfossintaxe",
+      "disciplineId": "lingua-portuguesa",
+      "discipline": "Língua Portuguesa",
+      "moduleId": "lp-conteudo",
+      "canonicalConceptIds": [
+        "language.portuguese.morphosyntax"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.2,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-lingua-portuguesa",
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "lp-sintaxe-redacao",
+      "disciplineId": "lingua-portuguesa",
+      "discipline": "Língua Portuguesa",
+      "moduleId": "lp-conteudo",
+      "canonicalConceptIds": [
+        "language.portuguese.syntax",
+        "language.portuguese.writing"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.4,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "mrl-aritmetica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "discipline": "Matemática e Raciocínio Lógico",
+      "moduleId": "mrl-conteudo",
+      "canonicalConceptIds": [
+        "math.arithmetic"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.2,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-matematica-raciocinio-logico",
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "mrl-proporcoes",
+      "disciplineId": "matematica-raciocinio-logico",
+      "discipline": "Matemática e Raciocínio Lógico",
+      "moduleId": "mrl-conteudo",
+      "canonicalConceptIds": [
+        "math.proportionality"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.3,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-matematica-raciocinio-logico",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "mrl-logica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "discipline": "Matemática e Raciocínio Lógico",
+      "moduleId": "mrl-conteudo",
+      "canonicalConceptIds": [
+        "logic.deduction"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.4,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "leginst-constituicao",
+      "disciplineId": "legislacao-institucional",
+      "discipline": "Legislação Institucional",
+      "moduleId": "leginst-conteudo",
+      "canonicalConceptIds": [
+        "public-law.constitutional.control"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.4,
+      "weight": 1,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-legislacao-institucional",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "leginst-tce",
+      "disciplineId": "legislacao-institucional",
+      "discipline": "Legislação Institucional",
+      "moduleId": "leginst-conteudo",
+      "canonicalConceptIds": [
+        "public-law.audit-courts"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.5,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-legislacao-institucional",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "leginst-servidor",
+      "disciplineId": "legislacao-institucional",
+      "discipline": "Legislação Institucional",
+      "moduleId": "leginst-conteudo",
+      "canonicalConceptIds": [
+        "public-law.public-service"
+      ],
+      "priority": "P4",
+      "priorityScore": 1.2,
+      "weight": 1,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "engsoft-ciclos",
+      "disciplineId": "engenharia-de-software",
+      "discipline": "Engenharia de Software",
+      "moduleId": "engsoft-conteudo",
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-engenharia-de-software",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "engsoft-requisitos-arquitetura",
+      "disciplineId": "engenharia-de-software",
+      "discipline": "Engenharia de Software",
+      "moduleId": "engsoft-conteudo",
+      "canonicalConceptIds": [
+        "software.requirements",
+        "software.architecture"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "engsoft-modelagem-qualidade",
+      "disciplineId": "engenharia-de-software",
+      "discipline": "Engenharia de Software",
+      "moduleId": "engsoft-conteudo",
+      "canonicalConceptIds": [
+        "software.modeling",
+        "software.design-patterns",
+        "software.testing"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devsistemas-fundamentos",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "discipline": "Desenvolvimento de Sistemas",
+      "moduleId": "devsistemas-conteudo",
+      "canonicalConceptIds": [
+        "programming.algorithms",
+        "programming.data-structures"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.3,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-desenvolvimento-de-sistemas",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devsistemas-linguagens-web",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "discipline": "Desenvolvimento de Sistemas",
+      "moduleId": "devsistemas-conteudo",
+      "canonicalConceptIds": [
+        "programming.languages",
+        "web.frontend"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 5,
+      "videoCount": 1,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devsistemas-apis-identidade",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "discipline": "Desenvolvimento de Sistemas",
+      "moduleId": "devsistemas-conteudo",
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3",
+        "sim-full-tce-go-ti-2026"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-agentivos-llm",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "discipline": "Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "moduleId": "ia-agentivos-conteudo",
+      "canonicalConceptIds": [
+        "ai.llm",
+        "ai.software-development"
+      ],
+      "priority": "P3",
+      "priorityScore": 2.1,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-ia-assistida-e-sistemas-agentivos"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-agentivos-contexto",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "discipline": "Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "moduleId": "ia-agentivos-conteudo",
+      "canonicalConceptIds": [
+        "ai.prompt-engineering",
+        "ai.context-engineering"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.3,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-ia-assistida-e-sistemas-agentivos"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "discipline": "Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "moduleId": "ia-agentivos-conteudo",
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devops-cicd",
+      "disciplineId": "devops-plataforma-entrega",
+      "discipline": "DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "moduleId": "devops-conteudo",
+      "canonicalConceptIds": [
+        "devops.cicd"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.3,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 7,
+      "originalQuestionCount": 7,
+      "reviewQuestionCount": 7,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-devops-plataforma-entrega",
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devops-iac-observabilidade",
+      "disciplineId": "devops-plataforma-entrega",
+      "discipline": "DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "moduleId": "devops-conteudo",
+      "canonicalConceptIds": [
+        "devops.infrastructure-as-code",
+        "devops.observability"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "devops-git-containers",
+      "disciplineId": "devops-plataforma-entrega",
+      "discipline": "DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "moduleId": "devops-conteudo",
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 4,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "bd-modelagem",
+      "disciplineId": "banco-de-dados",
+      "discipline": "Banco de Dados",
+      "moduleId": "bd-conteudo",
+      "canonicalConceptIds": [
+        "database.modeling",
+        "database.normalization"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-banco-de-dados"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "bd-sql",
+      "disciplineId": "banco-de-dados",
+      "discipline": "Banco de Dados",
+      "moduleId": "bd-conteudo",
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "bd-tecnologias-operacao",
+      "disciplineId": "banco-de-dados",
+      "discipline": "Banco de Dados",
+      "moduleId": "bd-conteudo",
+      "canonicalConceptIds": [
+        "database.relational",
+        "database.nosql",
+        "database.vector",
+        "database.reliability"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-dados-ml",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "discipline": "Inteligência Artificial, Ciência de Dados e Automação",
+      "moduleId": "ia-dados-conteudo",
+      "canonicalConceptIds": [
+        "ai.machine-learning"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.3,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-ia-ciencia-dados-automacao"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-dados-generativa",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "discipline": "Inteligência Artificial, Ciência de Dados e Automação",
+      "moduleId": "ia-dados-conteudo",
+      "canonicalConceptIds": [
+        "ai.generative",
+        "ai.nlp",
+        "ai.multimodal"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ia-dados-rag-etica",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "discipline": "Inteligência Artificial, Ciência de Dados e Automação",
+      "moduleId": "ia-dados-conteudo",
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 10,
+      "originalQuestionCount": 10,
+      "reviewQuestionCount": 10,
+      "flashcardCount": 3,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "seguranca-principios",
+      "disciplineId": "seguranca-da-informacao",
+      "discipline": "Segurança da Informação",
+      "moduleId": "seguranca-conteudo",
+      "canonicalConceptIds": [
+        "security.fundamentals",
+        "security.risk"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 7,
+      "originalQuestionCount": 7,
+      "reviewQuestionCount": 7,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-seguranca-da-informacao",
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "seguranca-cripto-identidade",
+      "disciplineId": "seguranca-da-informacao",
+      "discipline": "Segurança da Informação",
+      "moduleId": "seguranca-conteudo",
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 10,
+      "originalQuestionCount": 10,
+      "reviewQuestionCount": 10,
+      "flashcardCount": 3,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "disciplineId": "seguranca-da-informacao",
+      "discipline": "Segurança da Informação",
+      "moduleId": "seguranca-conteudo",
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 3,
+      "videoCount": 0,
+      "questionCount": 10,
+      "originalQuestionCount": 10,
+      "reviewQuestionCount": 10,
+      "flashcardCount": 3,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "sistemas-os-shell",
+      "disciplineId": "sistemas-redes-nuvem",
+      "discipline": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "moduleId": "sistemas-redes-conteudo",
+      "canonicalConceptIds": [
+        "systems.operating-systems",
+        "systems.shell"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.3,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-sistemas-redes-nuvem"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "sistemas-diretorios",
+      "disciplineId": "sistemas-redes-nuvem",
+      "discipline": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "moduleId": "sistemas-redes-conteudo",
+      "canonicalConceptIds": [
+        "systems.directory-services",
+        "devops.containers"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 3,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-sistemas-redes-nuvem"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "redes-protocolos",
+      "disciplineId": "sistemas-redes-nuvem",
+      "discipline": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "moduleId": "sistemas-redes-conteudo",
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "nuvem-arquitetura",
+      "disciplineId": "sistemas-redes-nuvem",
+      "discipline": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "moduleId": "sistemas-redes-conteudo",
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 7,
+      "originalQuestionCount": 7,
+      "reviewQuestionCount": 7,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "governanca-alinhamento",
+      "disciplineId": "governanca-de-ti",
+      "discipline": "Governança de Tecnologia da Informação",
+      "moduleId": "governanca-conteudo",
+      "canonicalConceptIds": [
+        "it-governance.alignment"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-governanca-de-ti"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "governanca-servicos",
+      "disciplineId": "governanca-de-ti",
+      "discipline": "Governança de Tecnologia da Informação",
+      "moduleId": "governanca-conteudo",
+      "canonicalConceptIds": [
+        "it-service-management.itil",
+        "it-governance.portfolio"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-governanca-de-ti"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "governanca-modelos",
+      "disciplineId": "governanca-de-ti",
+      "discipline": "Governança de Tecnologia da Informação",
+      "moduleId": "governanca-conteudo",
+      "canonicalConceptIds": [
+        "it-governance.cobit",
+        "it-governance.itil",
+        "project-management.fundamentals"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 10,
+      "originalQuestionCount": 10,
+      "reviewQuestionCount": 10,
+      "flashcardCount": 3,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "governanca-publica",
+      "disciplineId": "governanca-de-ti",
+      "discipline": "Governança de Tecnologia da Informação",
+      "moduleId": "governanca-conteudo",
+      "canonicalConceptIds": [
+        "public-sector.digital-government",
+        "it-governance.procurement"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "legti-lgpd",
+      "disciplineId": "legislacao-aplicada-ti",
+      "discipline": "Legislação Aplicada à Tecnologia da Informação",
+      "moduleId": "legti-conteudo",
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 11,
+      "originalQuestionCount": 11,
+      "reviewQuestionCount": 11,
+      "flashcardCount": 3,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-legislacao-aplicada-ti",
+        "sim-mini-mixed-o3"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "legti-marco-civil",
+      "disciplineId": "legislacao-aplicada-ti",
+      "discipline": "Legislação Aplicada à Tecnologia da Informação",
+      "moduleId": "legti-conteudo",
+      "canonicalConceptIds": [
+        "law.internet"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.2,
+      "weight": 2,
+      "resourceCount": 2,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "legti-normas-tce",
+      "disciplineId": "legislacao-aplicada-ti",
+      "discipline": "Legislação Aplicada à Tecnologia da Informação",
+      "moduleId": "legti-conteudo",
+      "canonicalConceptIds": [
+        "public-law.audit-courts",
+        "it-governance.public-policy"
+      ],
+      "priority": "P1",
+      "priorityScore": 2.5,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 10,
+      "originalQuestionCount": 10,
+      "reviewQuestionCount": 10,
+      "flashcardCount": 3,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "legti-pdti",
+      "disciplineId": "legislacao-aplicada-ti",
+      "discipline": "Legislação Aplicada à Tecnologia da Informação",
+      "moduleId": "legti-conteudo",
+      "canonicalConceptIds": [
+        "it-governance.planning",
+        "it-governance.security-policy"
+      ],
+      "priority": "P2",
+      "priorityScore": 2.4,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 6,
+      "originalQuestionCount": 6,
+      "reviewQuestionCount": 6,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ingles-compreensao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "discipline": "Língua Inglesa (Leitura Técnica)",
+      "moduleId": "ingles-conteudo",
+      "canonicalConceptIds": [
+        "language.english.technical-reading"
+      ],
+      "priority": "P3",
+      "priorityScore": 1.8,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-lingua-inglesa-tecnica"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ingles-estrategias",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "discipline": "Língua Inglesa (Leitura Técnica)",
+      "moduleId": "ingles-conteudo",
+      "canonicalConceptIds": [
+        "language.reading.strategies"
+      ],
+      "priority": "P3",
+      "priorityScore": 1.8,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "sim-discipline-lingua-inglesa-tecnica"
+      ],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    },
+    {
+      "topicId": "ingles-documentacao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "discipline": "Língua Inglesa (Leitura Técnica)",
+      "moduleId": "ingles-conteudo",
+      "canonicalConceptIds": [
+        "language.english.it-vocabulary"
+      ],
+      "priority": "P3",
+      "priorityScore": 1.9,
+      "weight": 2,
+      "resourceCount": 1,
+      "videoCount": 0,
+      "questionCount": 3,
+      "originalQuestionCount": 3,
+      "reviewQuestionCount": 3,
+      "flashcardCount": 2,
+      "presentInSimulation": false,
+      "simulationIds": [],
+      "explanationPresent": true,
+      "coverageStatus": "MEDIUM",
+      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+    }
+  ]
+}

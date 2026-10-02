@@ -20,7 +20,8 @@ Status: concluído e aprovado no O1.5; publicação real validada no GitHub Page
 Objetivo: expor a fila diária, o resultado do diagnóstico, revisões vencidas e plano adaptativo
 em uma experiência operacional integrada.
 
-Status: implementação concluída; aguardando validação de release e smoke remoto.
+Status: concluído em implementação; conteúdo O3 curado e validado localmente, aguardando
+publicação e smoke remoto do lote final.
 
 Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 
@@ -29,7 +30,9 @@ Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 Objetivo: ampliar questões, recursos autorizados e trilhas de estudo do pack TCE-GO com
 proveniência e QA contínuos.
 
-Status: planejado; não iniciado.
+Status: em execução no O3; cobertura operacional local concluída, release remoto pendente.
+
+Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 
 ## O4 — Release real no GitHub Pages
 
