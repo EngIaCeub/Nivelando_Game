@@ -107,4 +107,4 @@ async function renderHome() {
   new TodayDashboard({ root: dashboardRoot, onStart: startActivity, onMinutes: async (minutes) => { localStorage.setItem(preferenceKey, String(minutes)); await plans.replan({ ...await context(minutes), availableMinutes: minutes }); await renderHome(); }, onExtra: async () => { const topic = pack.curriculum.disciplines.flatMap((discipline) => discipline.topics ?? [])[0]; await plans.addExtraActivity({ examId, date: input.date, topicId: topic?.id, minutes: 15 }); await renderHome(); } }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes });
 }
 
-loadPack().then(renderHome).catch(() => { status.textContent = 'Não foi possível carregar o Exam Pack neste momento.'; });
+loadPack().then(renderHome).catch((error) => { console.error('StudyOS Today dashboard failed', error); status.textContent = `Não foi possível carregar o painel Hoje: ${error.message}`; });
