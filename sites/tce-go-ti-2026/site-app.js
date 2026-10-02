@@ -96,10 +96,13 @@ async function startActivity(activity) {
 }
 
 async function renderHome() {
+  status.dataset.todayState = 'starting';
   const availableMinutes = Number(localStorage.getItem(preferenceKey) ?? 120);
   const input = await context(availableMinutes);
+  status.dataset.todayState = 'context-ready';
   let plan = await plans.get(examId, input.date);
   if (!plan || plan.availableMinutes !== availableMinutes) plan = await plans.generate(input);
+  status.dataset.todayState = 'plan-ready';
   const summary = await plans.dailySummary(examId, input.date, availableMinutes);
   const weekly = await plans.weeklySummary(examId, input.date);
   const streak = await plans.streak(examId, availableMinutes, .6, input.date);
