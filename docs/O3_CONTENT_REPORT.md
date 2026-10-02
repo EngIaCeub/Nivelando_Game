@@ -60,4 +60,4 @@ passar por nova quarentena pedagógica antes de publicação.
 - A correção final isolou o cache por versão e remove caches antigos na ativação; isso evita que
   o banco histórico de 10 questões seja servido sobre o conteúdo O3.
 
-Tag planejada após este commit: `o3-content-stable`.
+Tag de encerramento: `o3-content-stable`.

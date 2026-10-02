@@ -267,4 +267,4 @@ O3 não iniciado.
 - Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 
 Validação O3: aprovada; conteúdo publicado e smoke remoto aprovado. Tag `o3-content-stable`
-será criada somente após o commit final desta documentação passar no Actions. O4 não iniciado.
+publicada após o Actions final. O4 não iniciado.
