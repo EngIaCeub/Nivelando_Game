@@ -1,6 +1,6 @@
 # O2 — Dashboard Hoje e planner adaptativo
 
-Status: implementação concluída; aguardando validação de release e smoke remoto.
+Status: aprovado; publicado e validado remotamente em 2026-10-02.
 
 ## Escopo
 
@@ -30,6 +30,30 @@ Foram adicionados `schemas/today-plan.schema.json` e `schemas/activity-state.sch
 
 ## Validação
 
-Suíte local atual: 36 testes aprovados, 0 falhas. A validação remota e a tag `o2-today-planner-stable` permanecem pendentes até o build O2 ser publicado.
+Suíte local: 52 testes aprovados, 0 falhas. O workflow GitHub Actions #12
+(`36983657539`) concluiu com sucesso para o commit `44dddca4c32bea186214ca66844ae4ecd64a731e`.
+
+Smoke remoto aprovado em [https://engiaceub.github.io/Nivelando_Game/](https://engiaceub.github.io/Nivelando_Game/):
+
+- o shell, assets, Exam Pack e base path carregaram;
+- hash route `#questions` funcionou;
+- o Dashboard Hoje exibiu meta de 120 minutos, agenda, prioridade explicável e ação `COMEÇAR`;
+- uma questão foi respondida e concluída; a agenda passou para `completed`, mastery/cobertura
+  foram atualizados e o próximo item foi replanejado;
+- reload preservou a atividade concluída via IndexedDB;
+- manifest relativo e service worker foram carregados; o cache publicado contém o script
+  versionado `site-app.js?o2=1`;
+- não foram observados erros críticos no smoke.
+
+O motor local também validou pausa/retomada, XP idempotente, simulatedScore imutável,
+export/import e isolamento por `examId`. A página remota de diagnóstico confirmou os
+checks de score, retentativa, XP e export/import; o check sintético de IndexedDB dessa
+página requer estado previamente criado por ela e não substitui a persistência observada
+no fluxo Hoje.
+
+Tag de encerramento: `o2-today-planner-stable`, apontando para o commit publicado e validado.
+
+Limitação: não há controle de rede offline exposto pelo navegador automatizado nesta execução;
+o contrato do service worker/cache foi validado estaticamente e pelos testes automatizados.
 
 Limitação conhecida: o diretório `sites/tce-go-ti-2026/dist/` legado está bloqueado por um processo externo neste ambiente; o build é reproduzível em checkout limpo pelo workflow.

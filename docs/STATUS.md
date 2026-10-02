@@ -237,8 +237,14 @@ Validação O1.5: publicação remota aprovada; documentação final pendente ap
   Eventos O2 documentados em `contracts/EVENTS.md`.
 - Build reproduzível em `scripts/build-standalone.mjs`, incluindo runtime genérico, pack,
   manifest e service worker relativos; nenhum dado TCE-GO entrou em `core/`.
-- Suíte local desta etapa: 36/36 testes aprovados, 0 falhas. Publicação/smoke remoto do O2
-  ainda pendentes; O3 não iniciado.
+- Suíte local desta etapa: 52/52 testes aprovados, 0 falhas. Workflow Pages #12 verde
+  (`36983657539`) no commit `44dddca4c32bea186214ca66844ae4ecd64a731e`.
+- Smoke remoto aprovado em `https://engiaceub.github.io/Nivelando_Game/`: Dashboard Hoje,
+  Exam Pack, hash route, resposta/conclusão, mastery, replanejamento, persistência após
+  reload, manifest relativo e service worker versionado validados. O contrato offline foi
+  validado por testes/cache; o navegador automatizado não expôs uma chave de rede para
+  executar um corte offline real nesta sessão.
 - Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 
-Validação O2: implementação concluída; aguardando release remoto.
+Validação O2: aprovada. Tag `o2-today-planner-stable` aponta para o commit publicado e validado.
+O3 não iniciado.
