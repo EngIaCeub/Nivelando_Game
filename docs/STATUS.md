@@ -217,8 +217,8 @@ Validação O1: aprovada. O2 não iniciado.
   `/service-worker.js` não existe; o nome canônico publicado é `sw.js`.
 - Score: diagnóstico concluído sem alteração de `simulatedScore`; a separação é coberta pela suíte.
 - Suíte final: 41/41 testes aprovados; staging: 3/3 aprovados; nenhum secret staged.
-- Tag de encerramento será criada somente após este registro ser publicado e o SHA final ser
-  novamente validado pelo Actions/Pages.
+- Tag de encerramento criada e publicada: `o1-5-staging-stable`, apontando para o SHA publicado
+  e validado remotamente.
 - O2 não iniciado. Relatório: `docs/O1_5_STAGING_REPORT.md`.
 
 Validação O1.5: publicação remota aprovada; documentação final pendente apenas do commit/tag de encerramento.

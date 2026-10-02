@@ -42,6 +42,7 @@ deploy.
 
 URL pública oficial: https://engiaceub.github.io/Nivelando_Game/
 Base path confirmado: `/Nivelando_Game/`.
+Tag de encerramento: `o1-5-staging-stable`, apontando para o commit publicado e validado.
 
 Smoke remoto aprovado: aplicação, CSS/JS, título e Exam Pack TCE-GO com 14 disciplinas, hash
 routes, diagnóstico, resposta de questão, pausa, reload e retomada do mesmo assessmentRun. O
