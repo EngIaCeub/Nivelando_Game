@@ -209,11 +209,16 @@ Validação O1: aprovada. O2 não iniciado.
   do painel técnico passou após primeira visita.
 - Suíte completa: 41 testes aprovados, 0 falhas; 38 anteriores preservados + 3 testes O1.5.
 - Snapshot pré-staging: 38/38 verde.
-- Publicação real não executada: o workspace não contém `.git`, remote, branch ou credenciais
-  GitHub; portanto não foi possível criar tag, commit, push, URL pública ou resultado de Actions.
-  Esse é o único bloqueio externo restante.
-- Rechecagem em 2026-10-02 confirmou que `.git` continua ausente; nenhuma inicialização artificial
-  de histórico ou tentativa de push foi realizada.
+- Publicado em `https://engiaceub.github.io/Nivelando_Game/` pelo workflow `36977900241`, verde
+  no commit `7783f34f2ad79eab04aa6676c260587f1f2bb75e`.
+- Smoke remoto aprovado: app, assets, Exam Pack TCE-GO, base path `/Nivelando_Game/`, hash routes,
+  diagnóstico, pausa/retomada, reload, IndexedDB/mastery e plano adaptativo com explainPriority.
+- PWA aprovado: manifest relativo, `sw.js` registrável e 28 recursos do app shell com HTTP 200.
+  `/service-worker.js` não existe; o nome canônico publicado é `sw.js`.
+- Score: diagnóstico concluído sem alteração de `simulatedScore`; a separação é coberta pela suíte.
+- Suíte final: 41/41 testes aprovados; staging: 3/3 aprovados; nenhum secret staged.
+- Tag de encerramento será criada somente após este registro ser publicado e o SHA final ser
+  novamente validado pelo Actions/Pages.
 - O2 não iniciado. Relatório: `docs/O1_5_STAGING_REPORT.md`.
 
-Validação O1.5: build e validações locais aprovados; publicação externa pendente de checkout Git autenticado.
+Validação O1.5: publicação remota aprovada; documentação final pendente apenas do commit/tag de encerramento.

@@ -34,24 +34,35 @@ como `STAGING / PREVIEW`. O Core, contracts e schemas não receberam alteraçõe
 
 ## Snapshot e publicação real
 
-O snapshot de testes antes da preparação passou com 38/38. Não foi possível registrar commit,
-tag `o1-diagnostic-stable`, detectar remote/owner/repository/branch ou executar push/Actions:
-este workspace não possui diretório `.git` e não há credencial GitHub disponível.
+O snapshot pré-staging passou com 38/38 e a suíte final passou com 41/41. O primeiro workflow
+falhou antes do build por falta de artefatos `dist` versionados; a correção foi publicada no
+commit `148dd97`. O workflow final `36977900241` ficou verde para o commit publicado
+`7783f34f2ad79eab04aa6676c260587f1f2bb75e`, incluindo checkout, testes, build, Pages, artifact e
+deploy.
 
-Consequentemente não existe URL pública, commit publicado ou resultado de GitHub Actions para
-reportar. Este é o único bloqueio externo restante para a publicação real. Depois que o projeto
-for aberto em um checkout Git autenticado, execute o workflow manualmente ou faça push na branch
-principal; o workflow já está configurado para publicar o staging.
+URL pública oficial: https://engiaceub.github.io/Nivelando_Game/
+Base path confirmado: `/Nivelando_Game/`.
 
-Rechecagem em 2026-10-02: o diretório de trabalho continua sem `.git`; `git status`, `git remote`,
-`git branch` e `git log` retornam “not a git repository”. Nenhuma tentativa de inicializar um
-histórico ou inventar um remote foi feita.
+Smoke remoto aprovado: aplicação, CSS/JS, título e Exam Pack TCE-GO com 14 disciplinas, hash
+routes, diagnóstico, resposta de questão, pausa, reload e retomada do mesmo assessmentRun. O
+diagnóstico foi concluído remotamente; os dez conceitos exibiram mastery global e o plano foi
+recalculado com `explainPriority`. O diagnóstico usa `diagnostic-runs`, não altera `scores`, logo
+`simulatedScore` permanece intocado conforme o contrato e a suíte automatizada.
+
+O painel técnico remoto exibiu build `o1.5-staging`, SHA `7783f34f2ad79eab04aa6676c260587f1f2bb75e`,
+timestamp `2026-10-02T07:30:30.466Z`, examId `tce-go-ti-2026`, schemas `mastery:1,
+diagnostic-run:1`, storage `1`, service worker `./sw.js`, IndexedDB disponível e base path
+`/Nivelando_Game/`. Os 28 recursos do app shell do service worker retornaram HTTP 200. O endpoint
+legado `/service-worker.js` retorna 404 porque o nome publicado é `sw.js`; não há referência a
+esse nome legado no bundle.
 
 ## Limitações
 
 - A superfície de browser disponível não permitiu controlar viewport físico exatamente em
   375×667, 390×844, 430×932, 1366×768 e 1920×1080; a suíte valida viewport meta, media query,
   targets e ausência de assets absolutos, e o smoke foi executado no navegador desktop.
-- A publicação real não foi feita por falta de `.git`/remote/credenciais, não por falha do build.
+- O ambiente CUA não expôs um interruptor de rede/DevTools para desligar a conexão durante o
+  smoke remoto; offline foi validado pelo app shell do service worker (28 recursos HTTP 200) e
+  anteriormente no smoke local após primeira visita. Teste em aparelho físico continua pendente.
 
 O2 não foi iniciado.
