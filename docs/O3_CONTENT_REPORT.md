@@ -1,6 +1,6 @@
 # O3 — Relatório de expansão e curadoria TCE-GO
 
-Status: conteúdo operacional publicado no pack; aguardando validação de release remoto do O3.
+Status: aprovado; conteúdo operacional publicado e validado remotamente em 2026-10-02.
 
 ## Resultado do lote
 
@@ -45,3 +45,19 @@ Error Review por questionId, invariantes de scoring e leakage do Core.
 Limitação de curadoria: a cobertura é operacional, não representa ainda a meta final de 30–50
 questões P1 nem 20–30 P2. O próximo lote de conteúdo deve ampliar diversidade por subtema e
 passar por nova quarentena pedagógica antes de publicação.
+
+## Release e smoke remoto
+
+- GitHub Actions #15 (`36985780849`): verde no commit `572a872d22af4137d425b770d0cb8a40b1584023`.
+- URL pública: [https://engiaceub.github.io/Nivelando_Game/](https://engiaceub.github.io/Nivelando_Game/).
+- Aplicação, assets, base path `/Nivelando_Game/`, hash routes, Exam Pack e Dashboard Hoje:
+  aprovados.
+- Atividade de questões: iniciada remotamente e exibida com enunciado, cinco alternativas e
+  botão de conclusão.
+- Payload sem query após nova ativação do worker: 45 tópicos, 289 questões, 102 flashcards e
+  16 simulados; simulado completo com 70 itens.
+- Manifest, service worker, cache do pack e console sem erro crítico: aprovados.
+- A correção final isolou o cache por versão e remove caches antigos na ativação; isso evita que
+  o banco histórico de 10 questões seja servido sobre o conteúdo O3.
+
+Tag planejada após este commit: `o3-content-stable`.

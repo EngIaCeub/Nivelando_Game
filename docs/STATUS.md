@@ -260,6 +260,11 @@ O3 não iniciado.
 - Todos os 45 tópicos têm recurso, questões, revisão e explicação; nenhum tópico `EMPTY`.
   A matriz classifica o lote como `MEDIUM` por manter metas progressivas sem redundância.
 - Suíte local O3: 59/59 testes aprovados, 0 falhas. Core sem dados específicos do TCE-GO.
+- Workflow Pages #15 (`36985780849`) verde no commit `572a872d22af4137d425b770d0cb8a40b1584023`.
+- Smoke remoto em `https://engiaceub.github.io/Nivelando_Game/` aprovado: aplicação, assets,
+  base path, hash routes, Dashboard Hoje, questão, manifest, service worker, payload expandido
+  sem query e console sem erro crítico. Cache antigo foi isolado por versão e removido na ativação.
 - Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 
-Validação O3: conteúdo local aprovado; publicação e smoke remoto pendentes. O4 não iniciado.
+Validação O3: aprovada; conteúdo publicado e smoke remoto aprovado. Tag `o3-content-stable`
+será criada somente após o commit final desta documentação passar no Actions. O4 não iniciado.

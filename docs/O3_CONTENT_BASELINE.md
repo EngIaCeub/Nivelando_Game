@@ -1,6 +1,6 @@
 # O3 — Baseline de cobertura de conteúdo
 
-Data da curadoria: 2026-10-02  
+Data da curadoria: 2026-10-02
 Fonte primária: Edital nº 01/2026 do TCE-GO, especialmente Anexo II, pp. 19–22.
 
 ## Inventário inicial
