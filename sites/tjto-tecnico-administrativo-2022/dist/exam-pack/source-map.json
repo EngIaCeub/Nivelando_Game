@@ -1,0 +1,10 @@
+{
+  "examId":"tjto-tecnico-administrativo-2022",
+  "sources":[
+    {"id":"official-tjto-edital-01-2022-retificado","sourceType":"official-edital","title":"Edital nº 01/2022 — TJTO, retificado em 21/11/2022","url":"https://conhecimento.fgv.br/sites/default/files/concursos/tjto_-_edital_de_abertura_retificado_007_em_21-11-2022.pdf","file":"edital-01-2022-retificado.pdf","retrievedAt":"2026-10-02","locator":"35 páginas","sha256":"FD995C92DE2BF353CD13F4AE63106B4D250586974D627446A4DF16E0C0084F21"}
+  ],
+  "mappings":[
+    {"factIds":["organization","role","specialty","board","requirement","vacancies","salary","exam_date","objective_structure","essay_structure","approval"],"sourceId":"official-tjto-edital-01-2022-retificado"},
+    {"factIds":["known_content"],"sourceId":null,"status":"assumption","note":"Não fornecido pelo usuário."}
+  ]
+}

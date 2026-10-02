@@ -1,0 +1,13 @@
+{
+  "examId": "tjto-tecnico-administrativo-2022",
+  "title": "TJTO — Técnico Judiciário — Apoio Judiciário e Administrativo",
+  "organization": "Tribunal de Justiça do Estado do Tocantins",
+  "role": "Técnico Judiciário",
+  "specialty": "Apoio Judiciário e Administrativo",
+  "board": "Fundação Getulio Vargas (FGV)",
+  "examDate": "2022-06-26",
+  "status": "validated",
+  "sourceRefs": ["official-tjto-edital-01-2022-retificado"],
+  "buildModes": ["standalone", "hub"],
+  "schemaVersion": 1
+}

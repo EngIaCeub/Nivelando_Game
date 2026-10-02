@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>StudyOS — Hub</title></head>
+  <body><main id="main-content"><h1>StudyOS — Hub de Exam Packs</h1><ul id="packs"></ul></main><script type="module">
+    const packs = await fetch('./catalog.json').then((response) => response.json());
+    document.querySelector('#packs').innerHTML = packs.map((pack) => `<li><a href="../../${pack.examId}/dist/">${pack.title}</a> — ${pack.status}</li>`).join('');
+  </script></body>
+</html>

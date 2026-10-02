@@ -1,0 +1,14 @@
+{
+  "examId": "tce-go-ti-2026",
+  "title": "TCE-GO — Técnico de Controle Externo — Tecnologia da Informação",
+  "organization": "Tribunal de Contas do Estado de Goiás",
+  "role": "Técnico de Controle Externo",
+  "specialty": "Tecnologia da Informação",
+  "board": "Fundação Carlos Chagas (FCC)",
+  "optionCode": "B02",
+  "examDate": "2027-01-17",
+  "status": "validated",
+  "sourceRefs": ["official-edital-01-2026", "official-tce-news-2026"],
+  "buildModes": ["standalone", "hub"],
+  "schemaVersion": 1
+}

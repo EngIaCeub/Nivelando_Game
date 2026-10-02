@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="StudyOS">
+  <rect width="512" height="512" rx="96" fill="#16324f"/>
+  <path d="M116 142h280v52H116zm0 88h210v52H116zm0 88h280v52H116z" fill="#f4f7f9"/>
+  <circle cx="376" cy="256" r="44" fill="#e0a458"/>
+</svg>

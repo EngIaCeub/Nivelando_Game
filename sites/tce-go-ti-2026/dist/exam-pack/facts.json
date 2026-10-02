@@ -1,0 +1,30 @@
+{
+  "examId": "tce-go-ti-2026",
+  "facts": [
+    {"id":"organization","label":"Órgão","value":"Tribunal de Contas do Estado de Goiás","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, título e preâmbulo"},
+    {"id":"cargo","label":"Cargo","value":"Técnico de Controle Externo","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 2.1; p. 18, Anexo I"},
+    {"id":"specialty","label":"Especialidade","value":"Tecnologia da Informação","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 2.1, opção B02"},
+    {"id":"option_code","label":"Código da opção","value":"B02","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, tabela do item 2.1"},
+    {"id":"board","label":"Banca","value":"Fundação Carlos Chagas (FCC)","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 1.1"},
+    {"id":"education","label":"Escolaridade e pré-requisito","value":"Ensino médio completo ou curso profissionalizante com habilitação regular de ensino médio, reconhecido pelo MEC","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 2.1"},
+    {"id":"vacancies_total","label":"Vagas totais da especialidade","value":10,"classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, tabela do item 2.1"},
+    {"id":"vacancies_general","label":"Vagas de ampla concorrência","value":7,"classification":"derived","derivation":"10 vagas totais menos 1 vaga PcD e 2 vagas reservadas a candidatos negros","sourceRef":"official-edital-01-2026","locator":"p. 1, tabela do item 2.1"},
+    {"id":"vacancies_disability","label":"Vagas reservadas a PcD","value":1,"classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, tabela do item 2.1; p. 5, item 5.2"},
+    {"id":"vacancies_black_candidates","label":"Vagas reservadas a candidatos negros","value":2,"classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, tabela do item 2.1; p. 7, item 6.1"},
+    {"id":"salary","label":"Vencimento inicial","value":"R$ 11.862,19","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 2.1"},
+    {"id":"application_fee","label":"Valor da inscrição","value":"R$ 100,00","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 1, item 2.1; p. 2, item 4.4.2.3.1"},
+    {"id":"registration_period","label":"Período de inscrições","value":"05/10/2026 a 06/11/2026","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 2, item 4.3; p. 23, item 6"},
+    {"id":"payment_deadline","label":"Último dia para pagamento","value":"09/11/2026","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 2, item 4.4.2.3.1; p. 23, item 7"},
+    {"id":"exam_city","label":"Cidade prevista da prova","value":"Goiânia/GO","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 8, item 8.1"},
+    {"id":"exam_date","label":"Data prevista da prova","value":"17/01/2027","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 8, item 8.1.1; p. 23, item 12"},
+    {"id":"objective_structure","label":"Estrutura objetiva","value":"25 questões de Conhecimentos Gerais, peso 1; 45 questões de Conhecimentos Específicos, peso 2; cinco alternativas por questão","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 8, item 7.1–7.2"},
+    {"id":"objective_duration","label":"Duração das provas","value":"4 horas e 30 minutos","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 8, item 7.1"},
+    {"id":"objective_approval","label":"Habilitação objetiva","value":"Somatório das notas padronizadas das provas objetivas igual ou superior a 150","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 12, item 9.5"},
+    {"id":"case_study","label":"Prova discursiva","value":"Um estudo de caso, de caráter eliminatório e classificatório, avaliado de 0 a 100 pontos","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 13, itens 11.4 e 11.8"},
+    {"id":"case_study_approval","label":"Habilitação no estudo de caso","value":"Nota igual ou superior a 50 pontos","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 13, item 11.9"},
+    {"id":"final_score","label":"Nota final","value":"Soma das notas ponderadas de Conhecimentos Gerais e Específicos acrescida da nota do Estudo de Caso","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 14, item 12.2"},
+    {"id":"relevant_rules","label":"Regras relevantes de aplicação","value":["não há segunda chamada ou repetição de prova","não são permitidas consulta, comunicação, calculadora ou aparelhos eletrônicos durante a prova","o candidato pode sair levando o caderno após permanência mínima de 3 horas","recursos são interpostos exclusivamente pela internet no site da FCC"],"classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 8, itens 7.2 e 8.9; p. 9–10, itens 8.15, 8.20–8.21 e 8.33; p. 15, itens 13.1–13.9"},
+    {"id":"critical_content_cutoff","label":"Data de atualização normativa do conteúdo","value":"Legislação, jurisprudência e orientações vigentes até a data de publicação do edital","classification":"verified_fact","sourceRef":"official-edital-01-2026","locator":"p. 19, Observação 1 do Anexo II"},
+    {"id":"known_content","label":"Conteúdo previamente conhecido","value":null,"classification":"assumption","sourceRef":null,"locator":null,"notes":"Nenhuma informação de diagnóstico do estudante foi fornecida; o plano inicia sem abatimento de conteúdo."}
+  ]
+}

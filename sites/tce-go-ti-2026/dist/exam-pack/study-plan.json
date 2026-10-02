@@ -1,0 +1,38 @@
+{
+  "examId":"tce-go-ti-2026","generatedAt":"2026-10-02","targetDate":"2027-01-17","planningHorizonDays":107,"dailyMinutes":120,
+  "assumptions":["Nenhum diagnóstico de conhecimento prévio foi fornecido; todas as disciplinas começam sem abatimento.","A disponibilidade é aproximadamente 2 horas por dia.","A prioridade usa peso do edital, extensão, dependências e prática; não é uma nota composta."],
+  "examConstraints":{"objectiveQuestions":70,"generalQuestions":25,"specificQuestions":45,"generalWeight":1,"specificWeight":2,"durationMinutes":270,"discursiveType":"case-study","discursiveMinimum":50,"objectiveMinimumStandardizedSum":150},
+  "dependencies":[{"from":"legti-lgpd","to":"leginst-constituicao","reason":"bases institucionais antes da aplicação normativa"},{"from":"devsistemas-apis-identidade","to":"devsistemas-fundamentos","reason":"APIs dependem de fundamentos"},{"from":"ia-agentivos-ciclo-mcp","to":"ia-agentivos-contexto","reason":"ciclo agentivo exige contexto e prompts"},{"from":"bd-sql","to":"bd-modelagem","reason":"SQL após modelagem relacional"},{"from":"governanca-servicos","to":"governanca-alinhamento","reason":"serviços dependem do alinhamento estratégico"}],
+  "priorityExplanations":[
+    {"disciplineId":"lingua-portuguesa","priority":1.3,"reason":"Conhecimentos Gerais tem peso 1; prática recorrente sustenta leitura e desempenho transversal."},
+    {"disciplineId":"matematica-raciocinio-logico","priority":1.3,"reason":"Conhecimentos Gerais tem peso 1; exercícios distribuídos reduzem esquecimento de procedimentos."},
+    {"disciplineId":"legislacao-institucional","priority":1.4,"reason":"Conhecimentos Gerais tem peso 1; legislação específica exige revisões cumulativas."},
+    {"disciplineId":"engenharia-de-software","priority":2.5,"reason":"Conhecimentos Específicos tem peso 2 e reúne fundamentos, arquitetura e qualidade."},
+    {"disciplineId":"desenvolvimento-de-sistemas","priority":2.5,"reason":"Peso 2 e grande amplitude tecnológica; alternar fundamentos, web, APIs e identidade evita lacunas."},
+    {"disciplineId":"ia-assistida-e-sistemas-agentivos","priority":2.5,"reason":"Peso 2 e conteúdo explicitamente cobrado; estudo de caso reforça aplicação."},
+    {"disciplineId":"devops-plataforma-entrega","priority":2.4,"reason":"Peso 2 e integração entre CI/CD, observabilidade, Git e containers."},
+    {"disciplineId":"banco-de-dados","priority":2.5,"reason":"Peso 2 e tópicos operacionais recorrentes; SQL e transações recebem prática."},
+    {"disciplineId":"ia-ciencia-dados-automacao","priority":2.4,"reason":"Peso 2 e amplitude conceitual; combinar fundamentos com governança e aplicação."},
+    {"disciplineId":"seguranca-da-informacao","priority":2.5,"reason":"Peso 2, conteúdo denso e transversal; priorizar fundamentos, identidade e aplicação."},
+    {"disciplineId":"sistemas-redes-nuvem","priority":2.5,"reason":"Peso 2 e muitos protocolos/modelos; comparação e prática são eficientes."},
+    {"disciplineId":"governanca-de-ti","priority":2.4,"reason":"Peso 2 e modelos nomeados no edital; revisões de contraste reduzem confusões."},
+    {"disciplineId":"legislacao-aplicada-ti","priority":2.5,"reason":"Peso 2 e normativos com corte temporal; fontes devem ser revistas antes das revisões."},
+    {"disciplineId":"lingua-inglesa-tecnica","priority":1.9,"reason":"Peso 2, mas escopo de leitura; sessões curtas frequentes favorecem retenção."}
+  ],
+  "weeklyTemplate":[
+    {"day":"segunda","minutes":120,"activities":["conteúdo específico prioritário","10 questões originais ou autorizadas","revisão curta"]},
+    {"day":"terça","minutes":120,"activities":["conteúdo específico","questões e caderno de erros","leitura técnica em inglês"]},
+    {"day":"quarta","minutes":120,"activities":["Conhecimentos Gerais","questões","revisão vencida"]},
+    {"day":"quinta","minutes":120,"activities":["conteúdo específico","questões interdisciplinares","revisão vencida"]},
+    {"day":"sexta","minutes":120,"activities":["legislação ou conteúdo específico","questões","resumo de erros"]},
+    {"day":"sábado","minutes":120,"activities":["questões misturadas","estudo de caso escrito","correção"]},
+    {"day":"domingo","minutes":120,"activities":["simulado ou bloco cronometrado","análise","replanejamento"]}
+  ],
+  "phases":[
+    {"id":"base","period":"2026-10-02/2026-11-15","goal":"primeira passagem por todos os tópicos, começando pelos específicos de maior prioridade"},
+    {"id":"consolidacao","period":"2026-11-16/2026-12-20","goal":"segunda passagem, questões, revisões e estudo de caso semanal"},
+    {"id":"reta-final","period":"2026-12-21/2027-01-16","goal":"simulados, erros, legislação atualizada e redução de conteúdo novo"}
+  ],
+  "reviewPolicy":{"firstReviewDays":1,"secondReviewDays":3,"laterReviews":"usar mastery e dueAt do RevisionEngine","errorNotebook":"revisar cada erro antes de novo conteúdo"},
+  "simulationPolicy":{"frequency":"semanal a partir da segunda fase","objectiveFormat":"25 gerais + 45 específicos, peso 1/2","discursiveFormat":"1 estudo de caso escrito com rubrica própria; não simula nota oficial"}
+}

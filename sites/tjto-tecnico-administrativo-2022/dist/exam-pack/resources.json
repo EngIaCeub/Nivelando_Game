@@ -1,0 +1,4 @@
+[
+  {"id":"tjto-resource-edital","examId":"tjto-tecnico-administrativo-2022","title":"Edital oficial TJTO 2022 retificado","type":"pdf","topicIds":["tjto-legis-constituicao","tjto-redacao-estrutura"],"url":"https://conhecimento.fgv.br/sites/default/files/concursos/tjto_-_edital_de_abertura_retificado_007_em_21-11-2022.pdf","source":"official-tjto-edital-01-2022-retificado","free":true,"verified":true,"verifiedAt":"2026-10-02"},
+  {"id":"tjto-resource-concurso","examId":"tjto-tecnico-administrativo-2022","title":"Página oficial do concurso TJTO na FGV","type":"docs","topicIds":["tjto-legis-constituicao","tjto-redacao-estrutura"],"url":"https://conhecimento.fgv.br/concursos/tjto22","source":"official-fgv-tjto22","free":true,"verified":true,"verifiedAt":"2026-10-02"}
+]

@@ -4,3 +4,11 @@ coverage/
 .env
 *.log
 .DS_Store
+
+# Release artifacts required by the standalone and genericity acceptance tests.
+!sites/tce-go-ti-2026/dist/
+!sites/tce-go-ti-2026/dist/**
+!sites/tjto-tecnico-administrativo-2022/dist/
+!sites/tjto-tecnico-administrativo-2022/dist/**
+!sites/hub/dist/
+!sites/hub/dist/**
