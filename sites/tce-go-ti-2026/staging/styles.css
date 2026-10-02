@@ -29,6 +29,10 @@ progress { width: 100%; min-height: 1rem; accent-color: #075985; }
 .today-next h3 { margin-top: 0; }
 select, input { min-height: 2.75rem; padding: .45rem; margin: .4rem; font: inherit; }
 details { margin-top: 1rem; padding: .75rem; background: #f4f7f9; }
+.update-banner { position: sticky; top: 0; z-index: 4; padding: .75rem 1rem; color: #17202a; background: #fef3c7; border-bottom: 1px solid #d97706; }
+.settings-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.settings-actions input[type="file"] { max-width: 100%; }
+.onboarding { border-left: .35rem solid #075985; padding-left: .75rem; }
 @media (max-width: 42rem) {
   .menu-toggle { display: block; margin-left: auto; }
   nav { display: none; width: 100%; margin-left: 0; }

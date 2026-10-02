@@ -31,7 +31,7 @@ manifest.id = './';
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 const swPath = resolve(staging, 'sw.js');
 const sw = await readFile(swPath, 'utf8');
-await writeFile(swPath, sw.replace(/studyos-tce-go-(?:f10|o2)-v1/g, cacheName).replace("'./o1-diagnostics.html', './o1-diagnostics.js',", "'./o1-diagnostics.html', './o1-diagnostics.js', './diagnostic.html', './diagnostic.js', './staging-diagnostics.html', './staging-meta.json',"));
+await writeFile(swPath, sw.replace(/const CACHE_NAME = '[^']+'/g, `const CACHE_NAME = '${cacheName}'`).replace("'./o1-diagnostics.html', './o1-diagnostics.js',", "'./o1-diagnostics.html', './o1-diagnostics.js', './diagnostic.html', './diagnostic.js', './staging-diagnostics.html', './staging-meta.json',"));
 await writeFile(resolve(staging, 'staging-meta.json'), `${JSON.stringify({ buildVersion: 'o1.5-staging', commitSha, buildTimestamp, repository: repository || 'unavailable-local-repository', examId: 'tce-go-ti-2026', schemaVersions: 'mastery:1, diagnostic-run:1', storageVersion: 1, basePath: repository ? `/${repository}/` : './' }, null, 2)}\n`);
 if (!repository) console.warn('GITHUB_REPOSITORY unavailable; local preview metadata uses relative base path.');
 console.log(`staging build ready: ${staging}`);

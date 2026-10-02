@@ -39,13 +39,13 @@ Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 Objetivo: publicar o standalone validado, configurar automação de deploy e observar base path,
 offline e integridade dos assets em produção.
 
-Status: planejado; não iniciado.
+Status: implementação local concluída; publicação, smoke remoto e tag `v1.0.0` pendentes.
 
 ## O5 — Validação em uso real e hardening
 
 Objetivo: observar uso real, corrigir problemas de acessibilidade, persistência, performance e
 conteúdo, preservando os contratos do Core.
 
-Status: planejado; não iniciado.
+Status: planejado; não iniciar durante O4.
 
 Regra de fase: não criar novos gates arquiteturais Fxx durante StudyOS V1.

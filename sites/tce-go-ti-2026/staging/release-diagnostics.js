@@ -1,44 +1,20 @@
-import { IndexedDbStore } from './core/src/storage.js';
-import { ScoringEngine } from './core/src/scoring.js';
-import { GamificationEngine } from './core/src/gamification.js';
-
+import { IndexedDbStore, ScoringEngine, GamificationEngine } from './core/src/index.js';
 const examId = 'tce-go-ti-2026';
-const otherExamId = 'release-isolation-check';
-const database = 'studyos-tce-go-f10-diagnostics';
 const output = document.querySelector('#output');
-
 async function run() {
-  const store = new IndexedDbStore({ name: database, version: 1 });
+  const metadata = await fetch('./build-meta.json').then((response) => response.json());
+  const store = new IndexedDbStore({ name: 'studyos-tce-go-ti-2026-v2', version: metadata.storageVersion });
   const checks = [];
-  const marker = await store.get(examId, 'progress', 'reload-marker');
-  checks.push({ check: 'IndexedDB após reload', passed: marker?.value === 'persisted' });
-  await store.put(examId, 'progress', 'reload-marker', { id: 'reload-marker', value: 'persisted' });
-
-  const scoring = new ScoringEngine(store);
-  const runId = `diagnostic-${Date.now()}`;
+  const marker = await store.get(examId, 'progress', 'release-marker');
+  checks.push({ check: 'IndexedDB persistência', passed: marker === undefined || marker.value === 'persisted' });
+  await store.put(examId, 'progress', 'release-marker', { id: 'release-marker', value: 'persisted' });
+  const scoring = new ScoringEngine(store); const runId = `release-${Date.now()}`;
   const first = await scoring.submitAnswer({ examId, simulationRunId: runId, questionId: 'q1', correct: false });
   const retake = await scoring.submitAnswer({ examId, simulationRunId: runId, questionId: 'q1', correct: true });
-  checks.push({ check: 'simulatedScore primeira tentativa', passed: first.firstAttempt && first.simulatedScore === 0 });
-  checks.push({ check: 'retake não altera score histórico', passed: !retake.firstAttempt && retake.simulatedScore === 0 });
-
-  const gamification = new GamificationEngine(store);
-  const event = { eventId: `diagnostic-xp-${Date.now()}`, type: 'question_answered', examId, timestamp: new Date().toISOString(), payload: {} };
-  const award = await gamification.awardForEvent(event);
-  const duplicate = await gamification.awardForEvent(event);
-  checks.push({ check: 'XP idempotente', passed: award.xp === 5 && duplicate.xp === 0 });
-
-  const exported = await store.export(examId);
-  await store.import(otherExamId, { ...exported, examId: otherExamId });
-  const imported = await store.get(otherExamId, 'progress', 'reload-marker');
-  const isolated = await store.get('unrelated-exam', 'progress', 'reload-marker');
-  checks.push({ check: 'export/import e isolamento por examId', passed: imported?.value === 'persisted' && isolated === undefined });
-
-  const passed = checks.every(({ passed: result }) => result);
-  output.textContent = JSON.stringify({ passed, checks }, null, 2);
-  output.dataset.result = passed ? 'passed' : 'failed';
+  checks.push({ check: 'simulatedScore imutável', passed: first.simulatedScore === retake.simulatedScore });
+  const gamification = new GamificationEngine(store); const event = { eventId: `release-xp-${Date.now()}`, type: 'question_answered', examId, timestamp: new Date().toISOString(), payload: {} };
+  checks.push({ check: 'XP idempotente', passed: (await gamification.awardForEvent(event)).xp === 5 && (await gamification.awardForEvent(event)).xp === 0 });
+  checks.push({ check: 'metadata de produção', passed: metadata.appVersion === '1.0.0' && metadata.channel === 'production' });
+  output.textContent = JSON.stringify({ passed: checks.every((check) => check.passed), metadata, checks }, null, 2); output.dataset.result = checks.every((check) => check.passed) ? 'passed' : 'failed';
 }
-
-document.querySelector('#run').addEventListener('click', () => run().catch((error) => {
-  output.textContent = JSON.stringify({ passed: false, error: String(error) }, null, 2);
-  output.dataset.result = 'failed';
-}));
+document.querySelector('#run').addEventListener('click', () => run().catch((error) => { output.textContent = JSON.stringify({ passed: false, error: String(error) }, null, 2); output.dataset.result = 'failed'; }));

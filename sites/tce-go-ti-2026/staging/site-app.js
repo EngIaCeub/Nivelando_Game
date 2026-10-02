@@ -1,10 +1,11 @@
-import { IndexedDbStore, EventLog, ScoringEngine, RevisionEngine, GamificationEngine, MasteryStore, TodayPlanEngine, TodayDashboard, calculateAnalytics } from './core/src/index.js';
+import { IndexedDbStore, EventLog, ScoringEngine, RevisionEngine, GamificationEngine, MasteryStore, TodayPlanEngine, TodayDashboard, calculateAnalytics, createBackupPayload, validateBackupPayload, resetStore } from './core/src/index.js';
 
 const examId = 'tce-go-ti-2026';
 const status = document.querySelector('#pack-status');
 const subjects = document.querySelector('#subjects p');
 const dashboardRoot = document.querySelector('#today-dashboard');
 const questionsRoot = document.querySelector('#questions');
+const settingsRoot = document.querySelector('#production-settings');
 const storage = new IndexedDbStore({ name: 'studyos-tce-go-ti-2026-v2', version: 2 });
 const plans = new TodayPlanEngine(storage);
 const masteryStore = new MasteryStore(storage);
@@ -15,18 +16,57 @@ const gamification = new GamificationEngine(storage);
 const today = () => new Date().toISOString().slice(0, 10);
 const preferenceKey = `studyos-daily-minutes:${examId}`;
 let pack;
+let metadata;
+
+function downloadJson(filename, payload) {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
+  const link = document.createElement('a'); link.href = url; link.download = filename; link.click(); URL.revokeObjectURL(url);
+}
+
+function showSettings() {
+  settingsRoot.replaceChildren();
+  const about = document.createElement('div'); about.className = 'onboarding';
+  const aboutTitle = document.createElement('h3'); aboutTitle.textContent = 'Nivelando Game';
+  const aboutText = document.createElement('p'); aboutText.textContent = `StudyOS Engine · versão ${metadata.appVersion} · dados armazenados neste dispositivo.`;
+  const guide = document.createElement('p'); guide.textContent = 'Comece pelo diagnóstico, use Hoje para sua agenda, responda questões e revise seus pontos fracos. Você pode pular o diagnóstico, mas o plano será menos personalizado.';
+  about.append(aboutTitle, aboutText, guide);
+  const actions = document.createElement('div'); actions.className = 'settings-actions';
+  const exportButton = document.createElement('button'); exportButton.type = 'button'; exportButton.textContent = 'Exportar meus dados';
+  exportButton.addEventListener('click', async () => downloadJson(`studyos-backup-${examId}.json`, createBackupPayload({ examId, exported: await storage.export(examId), metadata })));
+  const file = document.createElement('input'); file.type = 'file'; file.accept = 'application/json,.json'; file.setAttribute('aria-label', 'Selecionar backup JSON');
+  const importButton = document.createElement('button'); importButton.type = 'button'; importButton.textContent = 'Importar backup';
+  const message = document.createElement('p'); message.className = 'status'; message.setAttribute('role', 'status');
+  importButton.addEventListener('click', async () => {
+    try {
+      if (!file.files?.[0]) throw new Error('selecione um arquivo JSON');
+      const payload = JSON.parse(await file.files[0].text()); validateBackupPayload(payload, { examId });
+      const summary = `backup de ${payload.exportedAt}, ${Object.keys(payload.data.collections ?? {}).length} coleções`;
+      if (!window.confirm(`Importar ${summary}? O estado atual será salvo como backup automático.`)) return;
+      localStorage.setItem(`studyos-auto-backup:${examId}`, JSON.stringify(createBackupPayload({ examId, exported: await storage.export(examId), metadata })));
+      await storage.import(examId, payload.data); message.textContent = 'Backup importado. Recarregando…'; window.location.reload();
+    } catch (error) { message.textContent = `Importação recusada: ${error.message}`; }
+  });
+  const resetButton = document.createElement('button'); resetButton.type = 'button'; resetButton.textContent = 'Resetar meus dados'; resetButton.title = 'Exige confirmação digitando RESETAR';
+  resetButton.addEventListener('click', async () => { if (window.prompt('Para confirmar, digite RESETAR') !== 'RESETAR') { message.textContent = 'Reset cancelado.'; return; } await resetStore(storage, examId); message.textContent = 'Dados do Exam Pack removidos. Recarregando…'; window.location.reload(); });
+  actions.append(exportButton, file, importButton, resetButton);
+  const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = 'Detalhes técnicos'; const technical = document.createElement('p'); technical.textContent = `buildId ${metadata.buildId} · commit ${metadata.commitSha} · canal ${metadata.channel} · pack ${metadata.examPackVersion} · storage ${metadata.storageVersion}`; details.append(summary, technical);
+  settingsRoot.append(about, actions, message, details);
+}
 
 async function loadPack() {
-  const [manifest, curriculum, questions, resources] = await Promise.all([
+  const [manifest, curriculum, questions, resources, buildMetadata] = await Promise.all([
     fetch('./exam-pack/manifest.json').then((response) => response.json()),
     fetch('./exam-pack/curriculum.json').then((response) => response.json()),
     fetch('./exam-pack/questions.json').then((response) => response.json()),
-    fetch('./exam-pack/resources.json').then((response) => response.json())
+    fetch('./exam-pack/resources.json').then((response) => response.json()),
+    fetch('./build-meta.json').then((response) => response.json())
   ]);
+  metadata = buildMetadata;
   pack = { manifest, curriculum, questions, resources };
   document.title = `StudyOS — ${manifest.title}`;
-  status.textContent = `${manifest.title} · prova prevista em ${manifest.examDate} · pacote ${manifest.status}.`;
+  status.textContent = `${manifest.title} · prova prevista em ${manifest.examDate} · versão ${metadata.appVersion} · pacote ${manifest.status}.`;
   subjects.textContent = `${curriculum.disciplines.length} disciplinas carregadas. A agenda de hoje é calculada automaticamente.`;
+  showSettings();
 }
 
 async function context(availableMinutes) {

@@ -268,3 +268,15 @@ O3 não iniciado.
 
 Validação O3: aprovada; conteúdo publicado e smoke remoto aprovado. Tag `o3-content-stable`
 publicada após o Actions final. O4 não iniciado.
+
+## O4 — Production Release / StudyOS V1.0
+
+- Baseline O3 confirmado em `c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe`, tag
+  `o3-content-stable`, working tree limpo e 59/59 testes preservados.
+- Implementação local: metadata formal `1.0.0`/`production`, Exam Pack versionado,
+  backup/restore validado, reset protegido, migration registry genérico, cache PWA
+  versionado, atualização discreta, ajuda e workflow de release.
+- Suíte local após O4: 65/65 testes aprovados; scan de secrets aprovado.
+- Relatórios: `docs/O4_RELEASE_BASELINE.md`, `docs/O4_PRODUCTION_RELEASE_REPORT.md`,
+  `docs/V1_RELEASE_CHECKLIST.md`, `docs/USER_GUIDE.md` e `docs/RELEASE_NOTES_1.0.0.md`.
+- Deploy e smoke remoto ainda pendentes. O5 não iniciado.

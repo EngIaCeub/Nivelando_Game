@@ -1,4 +1,4 @@
-name: StudyOS staging Pages
+name: StudyOS production Pages
 
 on:
   workflow_dispatch:
@@ -28,9 +28,13 @@ jobs:
         run: node scripts/build-standalone.mjs
       - name: Run complete test suite
         run: node --test
-      - name: Build staging
+      - name: Run production release checks
+        run: node --test sites/tce-go-ti-2026/tests/o4-production.test.mjs
+      - name: Security scan
+        run: node scripts/security-scan.mjs
+      - name: Build preview tooling
         run: node scripts/build-staging.mjs
-      - name: Validate staging build
+      - name: Validate preview tooling
         run: node --test sites/tce-go-ti-2026/tests/staging.test.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -39,7 +43,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: sites/tce-go-ti-2026/staging
+          path: sites/tce-go-ti-2026/dist
 
   deploy:
     needs: build

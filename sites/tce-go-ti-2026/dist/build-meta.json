@@ -1,0 +1,11 @@
+{
+  "metadataVersion": 1,
+  "appVersion": "1.0.0",
+  "buildId": "local-20261002090419",
+  "commitSha": "local",
+  "buildTimestamp": "2026-10-02T09:04:19.719Z",
+  "channel": "production",
+  "examPackVersion": "1.0.0",
+  "schemaVersion": 1,
+  "storageVersion": 2
+}

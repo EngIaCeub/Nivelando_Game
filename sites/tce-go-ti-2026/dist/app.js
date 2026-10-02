@@ -14,7 +14,22 @@ startButton?.addEventListener('click', () => {
 });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').catch(() => {
+  navigator.serviceWorker.register('./sw.js').then((registration) => {
+    registration.addEventListener('updatefound', () => {
+      const worker = registration.installing;
+      worker?.addEventListener('statechange', () => {
+        if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+          const banner = document.querySelector('#update-banner');
+          if (!banner) return;
+          banner.hidden = false;
+          banner.textContent = 'Nova versão disponível. ';
+          const button = document.createElement('button'); button.type = 'button'; button.textContent = 'Atualizar agora';
+          button.addEventListener('click', () => window.location.reload());
+          banner.append(button);
+        }
+      });
+    });
+  }).catch(() => {
     sessionStatus.textContent = 'Modo offline indisponível neste contexto.';
   });
 }

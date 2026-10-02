@@ -46,3 +46,9 @@ Cada novo edital vira um **pacote de dados e configuração**, não um novo sist
 A UI e os algoritmos pertencem ao `core/`.
 Conteúdo de concurso pertence a `exam-packs/<exam-id>/`.
 Nunca copie regras específicas de um edital para o Core.
+
+## StudyOS V1.0
+
+A release de produção usa IndexedDB local, PWA/offline após a primeira carga e backup JSON
+em Configurações / Sobre. Consulte [docs/USER_GUIDE.md](docs/USER_GUIDE.md) e
+[docs/RELEASE_NOTES_1.0.0.md](docs/RELEASE_NOTES_1.0.0.md).
