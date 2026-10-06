@@ -4,7 +4,27 @@
   "type":"object",
   "required":["planId","examId","date","availableMinutes","generatedAt","algorithmVersion","activities","plannedMinutes","completedMinutes","status","reasonSummary"],
   "properties":{
-    "planId":{"type":"string"},"examId":{"type":"string"},"date":{"type":"string","format":"date"},"availableMinutes":{"type":"number","minimum":0},"generatedAt":{"type":"string"},"algorithmVersion":{"type":"string"},"activities":{"type":"array"},"plannedMinutes":{"type":"number","minimum":0},"completedMinutes":{"type":"number","minimum":0},"status":{"enum":["ready","active","complete"]},"reasonSummary":{"type":"string"}
+    "planId":{"type":"string","minLength":1},"examId":{"type":"string","minLength":1},"date":{"type":"string","format":"date"},"availableMinutes":{"type":"number","minimum":0},"generatedAt":{"type":"string","format":"date-time"},"algorithmVersion":{"type":"string","minLength":1},"activities":{"type":"array","items":{"$ref":"#/$defs/activity"}},"plannedMinutes":{"type":"number","minimum":0},"completedMinutes":{"type":"number","minimum":0},"status":{"enum":["ready","active","complete"]},"reasonSummary":{"type":"string"}
+  },
+  "$defs": {
+    "activity": {
+      "type":"object",
+      "required":["activityId","type","estimatedMinutes"],
+      "properties": {
+        "activityId":{"type":"string","minLength":1},
+        "type":{"enum":["theory","questions","review","error_review","simulation","reading","diagnostic_check"]},
+        "topicId":{"type":"string","minLength":1},
+        "canonicalConceptIds":{"type":"array","items":{"type":"string","minLength":1}},
+        "estimatedMinutes":{"type":"number","minimum":0},"actualMinutes":{"type":"number","minimum":0},"priority":{"type":"number"},
+        "reason":{"type":"string"},"status":{"enum":["planned","in_progress","paused","completed","skipped"]},
+        "source":{"type":"string","minLength":1},"resourceId":{"type":["string","null"],"minLength":1},
+        "questionIds":{"type":"array","items":{"type":"string","minLength":1}},
+        "reviewIds":{"type":"array","items":{"type":"string","minLength":1}},
+        "dependencies":{"type":"array","items":{"type":"string","minLength":1}},
+        "createdAt":{"type":"string","format":"date-time"},"completedAt":{"type":["string","null"],"format":"date-time"}
+      },
+      "additionalProperties":true
+    }
   }
 }
 

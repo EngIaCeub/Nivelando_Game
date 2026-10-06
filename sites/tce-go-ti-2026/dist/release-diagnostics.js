@@ -1,20 +1,75 @@
-import { IndexedDbStore, ScoringEngine, GamificationEngine } from './core/src/index.js';
-const examId = 'tce-go-ti-2026';
-const output = document.querySelector('#output');
-async function run() {
-  const metadata = await fetch('./build-meta.json').then((response) => response.json());
-  const store = new IndexedDbStore({ name: 'studyos-tce-go-ti-2026-v2', version: metadata.storageVersion });
-  const checks = [];
-  const marker = await store.get(examId, 'progress', 'release-marker');
-  checks.push({ check: 'IndexedDB persistência', passed: marker === undefined || marker.value === 'persisted' });
-  await store.put(examId, 'progress', 'release-marker', { id: 'release-marker', value: 'persisted' });
-  const scoring = new ScoringEngine(store); const runId = `release-${Date.now()}`;
-  const first = await scoring.submitAnswer({ examId, simulationRunId: runId, questionId: 'q1', correct: false });
-  const retake = await scoring.submitAnswer({ examId, simulationRunId: runId, questionId: 'q1', correct: true });
-  checks.push({ check: 'simulatedScore imutável', passed: first.simulatedScore === retake.simulatedScore });
-  const gamification = new GamificationEngine(store); const event = { eventId: `release-xp-${Date.now()}`, type: 'question_answered', examId, timestamp: new Date().toISOString(), payload: {} };
-  checks.push({ check: 'XP idempotente', passed: (await gamification.awardForEvent(event)).xp === 5 && (await gamification.awardForEvent(event)).xp === 0 });
-  checks.push({ check: 'metadata de produção', passed: metadata.appVersion === '1.0.0' && metadata.channel === 'production' });
-  output.textContent = JSON.stringify({ passed: checks.every((check) => check.passed), metadata, checks }, null, 2); output.dataset.result = checks.every((check) => check.passed) ? 'passed' : 'failed';
+export async function inspectIndexedDB(api, metadata) {
+  if (!api) return { available: false, status: 'unavailable' };
+  if (!api.databases) return { available: true, status: 'enumeration-unsupported' };
+  const name = `studyos-${metadata.examId}-v${metadata.storageVersion}`;
+  // Enumeration does not create or upgrade a database. Never open an absent DB.
+  const database = (await api.databases()).find((item) => item.name === name);
+  if (!database) return { available: true, status: 'not-created', name };
+  return new Promise((resolve) => {
+    const request = api.open(name); // No version supplied: no requested migration.
+    let settled = false;
+    const finish = (result) => { if (!settled) { settled = true; clearTimeout(timeout); resolve(result); } };
+    const timeout = setTimeout(() => finish({ available: true, status: 'timeout', name }), 2000);
+    request.onupgradeneeded = () => request.transaction.abort(); // Deletion race.
+    request.onerror = () => finish({ available: true, status: 'unreadable', name });
+    request.onblocked = () => finish({ available: true, status: 'blocked', name });
+    request.onsuccess = () => {
+      const db = request.result;
+      const stores = [...db.objectStoreNames], version = db.version;
+      db.close();
+      finish({ available: true, status: 'readable', name, version, stores });
+    };
+  });
 }
-document.querySelector('#run').addEventListener('click', () => run().catch((error) => { output.textContent = JSON.stringify({ passed: false, error: String(error) }, null, 2); output.dataset.result = 'failed'; }));
+
+export async function inspectWorker(worker) {
+  if (!worker || typeof MessageChannel === 'undefined') return null;
+  return new Promise((resolve) => {
+    const channel = new MessageChannel();
+    const finish = (value) => { clearTimeout(timeout); channel.port1.close(); channel.port2.close(); resolve(value); };
+    const timeout = setTimeout(() => finish(null), 2000);
+    channel.port1.onmessage = (event) => finish(event.data);
+    try { worker.postMessage({ type: 'STUDYOS_HEALTH' }, [channel.port2]); }
+    catch { finish(null); }
+  });
+}
+
+export async function collectHealth({ base = new URL('./', import.meta.url), fetcher = fetch, nav = navigator, cacheStorage = globalThis.caches, idb = globalThis.indexedDB } = {}) {
+  const readJSON = async (name) => {
+    const response = await fetcher(new URL(name, base));
+    if (!response.ok) throw new Error(`Não foi possível consultar ${name}: HTTP ${response.status}`);
+    return response.json();
+  };
+  const [metadata, pack] = await Promise.all([readJSON('build-meta.json'), readJSON('exam-pack/manifest.json')]);
+  const registration = await nav.serviceWorker?.getRegistration(base.href);
+  const controller = nav.serviceWorker?.controller;
+  const worker = await inspectWorker(controller ?? registration?.active);
+  const cachePrefix = `studyos-scope:${encodeURIComponent(base.href)}:`;
+  const cacheNames = cacheStorage ? (await cacheStorage.keys()).filter((name) => name.startsWith(cachePrefix)) : [];
+  const indexedDB = await inspectIndexedDB(idb, metadata);
+  const checks = [
+    { check: 'metadata corresponde ao Exam Pack', passed: metadata.examId === pack.examId && metadata.examPackVersion === pack.version && metadata.schemaVersion === pack.schemaVersion },
+    { check: 'base path do service worker', passed: registration?.scope === base.href },
+    { check: 'worker controla esta versão', passed: Boolean(controller && worker?.buildId === metadata.buildId && worker?.appVersion === metadata.appVersion) },
+    { check: 'cache desta versão', passed: Boolean(worker && cacheNames.includes(worker.cacheName)) },
+    { check: 'IndexedDB disponível', passed: indexedDB.available && !['unreadable', 'blocked', 'timeout'].includes(indexedDB.status) }
+  ];
+  return { passed: checks.every((check) => check.passed), metadata, basePath: base.pathname, indexedDB,
+    serviceWorker: { supported: Boolean(nav.serviceWorker), scope: registration?.scope ?? null, controlled: Boolean(controller), active: registration?.active?.state ?? null, waiting: registration?.waiting?.state ?? null, worker },
+    cache: { supported: Boolean(cacheStorage), names: cacheNames }, checks };
+}
+
+if (typeof document !== 'undefined') {
+  const output = document.querySelector('#output'), button = document.querySelector('#run');
+  button?.addEventListener('click', async () => {
+    button.disabled = true;
+    try {
+      const health = await collectHealth();
+      output.textContent = JSON.stringify(health, null, 2);
+      output.dataset.result = health.passed ? 'passed' : 'failed';
+    } catch (error) {
+      output.textContent = JSON.stringify({ passed: false, error: error.message }, null, 2);
+      output.dataset.result = 'failed';
+    } finally { button.disabled = false; }
+  });
+}

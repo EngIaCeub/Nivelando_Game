@@ -9,6 +9,11 @@
     "status":{"enum":["in_progress","completed"]},
     "questionIds":{"type":"array","items":{"type":"string"}},
     "responses":{"type":"array"},
-    "schemaVersion":{"type":"integer","minimum":1}
+    "schemaVersion":{"type":"integer","minimum":1},
+    "result":{"$ref":"#/$defs/result"}
+  },
+  "$defs":{
+    "masteryProjection":{"type":"object","required":["canonicalConceptId","masteryEstimate"],"properties":{"canonicalConceptId":{"type":"string","minLength":1,"pattern":"\\S"},"masteryEstimate":{"type":"number","minimum":0,"maximum":1}}},
+    "result":{"type":"object","required":["concepts","questionCount"],"properties":{"concepts":{"type":"array","items":{"type":"string","minLength":1}},"questionCount":{"type":"integer","minimum":0},"mastery":{"type":"array","description":"canonicalConceptId deve ser único; a unicidade por propriedade é verificada semanticamente pelo validador de backup do Core.","items":{"$ref":"#/$defs/masteryProjection"}}}}
   }
 }

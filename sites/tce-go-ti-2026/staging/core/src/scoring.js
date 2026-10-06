@@ -7,18 +7,11 @@ export class ScoringEngine {
   #store;
   constructor(store) { this.#store = store; }
 
-  async submitAnswer({ examId, simulationRunId, questionId, correct, timestamp = new Date().toISOString() }) {
+  async submitAnswer({ examId, simulationRunId, questionId, correct, timestamp = new Date().toISOString(), operationId = null }) {
     if (typeof correct !== 'boolean') throw new TypeError('correct must be boolean');
     const recordKey = key(simulationRunId, questionId);
-    const existing = await this.#store.get(examId, 'scores', recordKey);
-    if (!existing) {
-      const firstAttempt = { simulationRunId, questionId, correct, answeredAt: timestamp, attempts: 1 };
-      await this.#store.put(examId, 'scores', recordKey, firstAttempt);
-      return { firstAttempt: true, simulatedScore: await this.getScore(examId, simulationRunId), record: firstAttempt };
-    }
-    const updated = { ...existing, attempts: existing.attempts + 1, lastAttemptCorrect: correct, lastAttemptAt: timestamp };
-    await this.#store.put(examId, 'retakes', `${recordKey}::${updated.attempts}`, updated);
-    return { firstAttempt: false, simulatedScore: await this.getScore(examId, simulationRunId), record: existing };
+    const result = await this.#store.recordScoreAttempt(examId, simulationRunId, questionId, correct, timestamp, operationId);
+    return { ...result, simulatedScore: await this.getScore(examId, simulationRunId) };
   }
 
   async getScore(examId, simulationRunId) {

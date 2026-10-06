@@ -3,6 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "validate:content": "node scripts/validate-content.mjs",
+    "test:browser": "node scripts/o4-browser-check.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "playwright": "1.62.1"
   }
 }

@@ -33,6 +33,20 @@ details { margin-top: 1rem; padding: .75rem; background: #f4f7f9; }
 .settings-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
 .settings-actions input[type="file"] { max-width: 100%; }
 .onboarding { border-left: .35rem solid #075985; padding-left: .75rem; }
+section { scroll-margin-top: 1rem; }
+.question-options { display: grid; gap: .65rem; margin: 1rem 0; }
+.question-options button { text-align: left; white-space: normal; }
+.study-feedback, .flashcard-answer { padding: 1rem; background: #e0f2fe; border-left: .3rem solid #075985; }
+.topic-card { border-top: 1px solid #d7e0e8; padding: .75rem 0; }
+.topic-card button, #study-resume button, #diagnostic-panel button, #flashcards-panel button, #questions > button, #simulations-panel button, #study-onboarding button { margin: .3rem; }
+.topic-card a, #questions > a { display: block; margin: .6rem 0; }
+.danger-zone { margin-top: 2rem; border: 2px solid #9f1239; }
+.danger-zone button { background: #9f1239; }
+button:disabled { opacity: .65; cursor: default; }
+input:focus-visible, select:focus-visible, summary:focus-visible, h2:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+main, section, article, details, p, button, a { overflow-wrap: anywhere; min-width: 0; }
+input, select { max-width: 100%; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media (max-width: 42rem) {
   .menu-toggle { display: block; margin-left: auto; }
   nav { display: none; width: 100%; margin-left: 0; }

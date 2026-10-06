@@ -20,8 +20,7 @@ Status: concluído e aprovado no O1.5; publicação real validada no GitHub Page
 Objetivo: expor a fila diária, o resultado do diagnóstico, revisões vencidas e plano adaptativo
 em uma experiência operacional integrada.
 
-Status: concluído em implementação; conteúdo O3 curado e validado localmente, aguardando
-publicação e smoke remoto do lote final.
+Status: concluído e aprovado; baseline publicado preservado.
 
 Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 
@@ -30,7 +29,7 @@ Relatório: `docs/O2_TODAY_PLANNER_REPORT.md`.
 Objetivo: ampliar questões, recursos autorizados e trilhas de estudo do pack TCE-GO com
 proveniência e QA contínuos.
 
-Status: em execução no O3; cobertura operacional local concluída, release remoto pendente.
+Status: concluído e aprovado; tag `o3-content-stable` preservada como baseline.
 
 Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 
@@ -39,13 +38,16 @@ Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 Objetivo: publicar o standalone validado, configurar automação de deploy e observar base path,
 offline e integridade dos assets em produção.
 
-Status: implementação local concluída; publicação, smoke remoto e tag `v1.0.0` pendentes.
+Status: em correção após reprovação independente Astra; publicação, smoke remoto e tag
+`v1.0.0` dependem da resolução de todos os blockers.
 
 ## O5 — Validação em uso real e hardening
 
 Objetivo: observar uso real, corrigir problemas de acessibilidade, persistência, performance e
 conteúdo, preservando os contratos do Core.
 
-Status: planejado; não iniciar durante O4.
+Status: autorizado pelo usuário em 2026-10-03; executar somente após aprovação O4.
+Validação automatizada com estado isolado e revisão independente `gpt-6.1-sol/high`; não representa
+acompanhamento longitudinal de estudantes humanos.
 
 Regra de fase: não criar novos gates arquiteturais Fxx durante StudyOS V1.

@@ -16,42 +16,56 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0 # Include o3-content-stable for the real O3→V1 browser upgrade gate.
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7.0.0
         with:
           node-version: 22
+          package-manager-cache: false
+      - name: Install pinned browser test dependencies
+        run: |
+          npm install --global pnpm@11.25.0
+          pnpm install --frozen-lockfile
+          pnpm exec playwright install --with-deps chromium
+      - name: Test source baseline
+        run: node --test core/tests/*.mjs exam-packs/*/tests/*.mjs
+      - name: Validate content schemas
+        run: node scripts/validate-content.mjs
       - name: Build standalone
         run: node scripts/build-standalone.mjs
+      - name: Build preview tooling
+        run: node scripts/build-staging.mjs
       - name: Run complete test suite
         run: node --test
       - name: Run production release checks
         run: node --test sites/tce-go-ti-2026/tests/o4-production.test.mjs
+      - name: Browser release gate (isolated state)
+        run: node scripts/o4-browser-check.mjs
       - name: Security scan
         run: node scripts/security-scan.mjs
-      - name: Build preview tooling
-        run: node scripts/build-staging.mjs
       - name: Validate preview tooling
         run: node --test sites/tce-go-ti-2026/tests/staging.test.mjs
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6.0.0
         with:
           enablement: true
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: sites/tce-go-ti-2026/dist
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1

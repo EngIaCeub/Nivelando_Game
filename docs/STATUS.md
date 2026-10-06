@@ -5,6 +5,9 @@ Primeiro Exam Pack: TCE-GO TI 2026
 Fase atual: StudyOS V1 — Operationalization
 Último gate aprovado: F11
 
+Resumo operacional atual (2026-10-06): O1–O3 aprovados; O4 em revisão independente
+Sol 6.1/high após correções de concorrência e restore. O5 não iniciado.
+
 ## Bootstrap F0
 
 - `AGENTS.md`, Product Spec, Factory Workflow, Model Routing, contratos, schemas e papéis
@@ -276,7 +279,207 @@ publicada após o Actions final. O4 não iniciado.
 - Implementação local: metadata formal `1.0.0`/`production`, Exam Pack versionado,
   backup/restore validado, reset protegido, migration registry genérico, cache PWA
   versionado, atualização discreta, ajuda e workflow de release.
-- Suíte local após O4: 65/65 testes aprovados; scan de secrets aprovado.
+- Após reprovação inicial, nova análise encontrou corrida que podia sobrescrever a primeira
+  tentativa e preferências inválidas que podiam interromper o bootstrap após restore. Ambos
+  corrigidos: score/retentativas são gravados em uma transação atômica; backups validam as
+  preferências declaradas e as embutidas no storage antes de alterar qualquer namespace.
+- Suíte local integrada: 96/96 testes aprovados; JSON Schema 2020-12/factory válidos para os
+  packs TCE-GO, TJTO e template; scan de secrets passou (277 arquivos).
+- Browser smoke local: 20/20 checks aprovados. Inclui cenário O3→V1 nativo, dados IndexedDB
+  legados, import inválido sem mutação, score concorrente, export/import, offline, mobile,
+  teclado, fluxo de estudo e console/requisições sem erros.
+- Revisor adicional confirmou os dois fixes. Revisões seguintes foram interrompidas por
+  autodescrição genérica GPT-6, interpretada incorretamente como falha de roteamento.
+  A nova sessão Meitner tem `model: gpt-6-astra`, `effort: high` confirmados no registro
+  `turn_context`. Parecer FAIL: backup com atividade nula quebra bootstrap; conclusões
+  concorrentes perdem progresso; recuperação de retentativa pode duplicar o registro.
+  A execução anterior de Dirac/Raman foi interrompida pelo limite de uso. Na retomada,
+  Hume assume backup e Fermat concorrência/recuperação, ambos com Luna e ownership separado.
+- Retomada: Hume/Fermat entregaram correções; integração passou 103/103 testes sem
+  skips (81/81 Core/Exam Packs), schema/factory dos três packs e scan de 278 arquivos.
+  Builds standalone/staging regenerados; smoke browser 20/20 após corrigir suporte
+  a schema no próprio teste. Laplace/Astra reprovou quatro grupos de restore inválido.
+  Hume implementou as validações e regressões, e o teste de arquitetura levou a mover
+  a fixture para `core/tests/fixtures/`. Nova integração: 127/127 testes, smoke local
+  21/21, três schemas/factory válidos e scan de 279 arquivos sem achados. Nova revisão
+  independente Astra em andamento. Ainda não há commit, deploy ou tag; O5 não iniciado.
 - Relatórios: `docs/O4_RELEASE_BASELINE.md`, `docs/O4_PRODUCTION_RELEASE_REPORT.md`,
   `docs/V1_RELEASE_CHECKLIST.md`, `docs/USER_GUIDE.md` e `docs/RELEASE_NOTES_1.0.0.md`.
-- Deploy e smoke remoto ainda pendentes. O5 não iniciado.
+- Working tree local ainda não commitada; deploy e smoke remoto pendentes. Aguardar parecer
+  QA independente; não iniciar O5 até O4 aprovado.
+
+Atualização 2026-10-03: usuário autorizou execução autônoma do roadmap restante,
+incluindo aprovação independente Astra no lugar de validação humana. QA Astra
+reprovou o candidato O4 após reproduzir falhas de backup, score após restore, cache,
+atualização PWA, diagnóstico/UX, XP duplicado e replanejamento. Correções em andamento;
+os blockers da primeira rodada foram corrigidos, mas a revisão Meitner reproduziu três
+novas falhas de backup, concorrência e replay. Os resultados 96/96 e 20/20 precedem essas
+correções e não aprovam o candidato atual. Publicação aguarda correções, novas evidências
+e novo parecer independente Astra; O5 aguarda O4 aprovado.
+
+### Retomada 2026-10-04 — validação local
+
+- Corrigida a recuperação de armazenamento corrompido: captura bruta em envelope separado,
+  transacional com substituição; importação normal rejeita esse envelope. Regressões cobrem
+  invalid states, rollback e IndexedDB nativo.
+- Suíte total: 135/135 testes aprovados, zero falhas/skip, usando Edge nativo.
+- Validação de conteúdo/schema/factory: TCE-GO (289 questões), TJTO (3) e template válidos.
+- Browser smoke local: 21/21 checks aprovados, incluindo recuperação, score/retake/XP,
+  offline real, bancos O3 v1/v2, diagnóstico somente leitura, layouts móveis e teclado.
+  Evidência: `docs/O4_BROWSER_EVIDENCE_FINAL.json` (build local).
+- Scan por padrões de secrets: zero correspondências; `git diff --check` aprovado.
+- O browser harness foi corrigido para servir o entry HTML de produção nos cenários que
+  dependem do registro do service worker; os testes anteriores estavam removendo `app.js`.
+- QA independente `gpt-6-astra/high` está revisando o candidato integrado. O4 permanece
+  **pendente**, sem commit/deploy/tag; aguardar veredito antes de publicar. O5 não iniciado.
+
+### Reprovações Astra e correções em curso — 2026-10-04
+
+- Revisor Astra `gpt-6-astra/high` reprovou a rodada por aceitar questão executável
+  inválida em backup de diagnóstico (P1); também reportou captura de outro exame no
+  download de recovery (P2) e interceptação local no checker remoto (P2).
+- Regressões/correções: `diagnostic-question-bank` valida schema e semântica antes do
+  restore; capture export filtra pelo `examId`; smoke `--url` não intercepta páginas locais.
+- Revisão independente paralela também reproduziu perda de mastery/revisão quando uma
+  resposta pendente é retomada após outra sessão ter atualizado o mesmo conceito (P1).
+  `operationId` agora protege updates atômicos por registro e o replay mescla com estado
+  atual, preservando contagens/histórico e evitando duplicidade.
+- Após as correções, suíte total: 135/135; casos focados: 50/50; schemas/factory dos três
+  packs válidos; browser smoke local: 21/21. Build standalone e staging regenerados.
+- Uma nova revisão Astra independente ainda é obrigatória; portanto O4 segue **não
+  aprovado** e sem publicação. Smoke remoto, Actions, tag e O5 continuam pendentes.
+
+### Continuação 2026-10-04 — verificações e QA pendente
+
+- Suíte integrada repetida após cobrir colisão de `operationId` legado entre sessões:
+  **136/136 testes**, zero falhas e zero skips.
+- Standalone e staging regenerados; schema/factory TCE-GO (289 questões), TJTO (3) e
+  template válidos.
+- Browser smoke local repetido: **21/21 checks**, incluindo offline, persistência, restore,
+  score/retake, diagnóstico, IndexedDB O3 v1/v2, teclado e quatro larguras. Evidência usa
+  metadata `commitSha: local`; não é evidência de release publicada.
+- Scan de padrões de secrets sem correspondências; `git diff --check` passou.
+- Revisão Astra `gpt-6-astra/high` não iniciou por limite de uso reportado pelo agente.
+  O FAIL anterior segue vigente: candidato ainda não aprovado. Sem commit, push, deploy ou
+  tag; O5 não iniciado. Aguardar QA Astra independente.
+
+### Segunda correção O4 — 2026-10-04
+
+- Após revisão Astra FAIL, respostas de estudo agora adquirem pendência por update atômico
+  da sessão; efeitos usam o resultado authoritative de `recordScoreAttempt`; finalização
+  mescla resposta na sessão atual. Teste nativo com duas conexões IDB confirma primeira
+  tentativa única e retentativa concorrente idempotente, sem alteração do score/XP.
+- Conclusão diagnóstica agora combina a resposta com o mastery atual dentro de update
+  atômico, grava recibo por `examId + assessmentRunId + canonicalConceptId` e suporta retry
+  depois de falha antes de marcar assessment concluído. Testes cobrem interleaving, replay
+  após falha e reutilização de ID entre exames.
+- A falha da regressão de backup/replay foi corrigida na injeção da falha, agora direcionada
+  ao update atômico de sessão; a asserção de rejeição continua intacta.
+- Suíte integrada: **140/140**, zero falhas/skip; schema/factory dos três packs válidos;
+  standalone/staging regenerados. Smoke browser local: **21/21**, metadata `commitSha: local`.
+- Segunda revisão Astra independente `gpt-6-astra/high` está em andamento. Até o veredito,
+  O4 segue sem aprovação/publicação/tag; O5 não iniciado.
+
+### Terceira rodada de correções O4 — 2026-10-04
+
+- Transições `pause`, `next`, `resume`, `finish` e revelação de flashcard usam atualizações
+  atômicas da sessão atual. Pendência concorrente é aplicada antes de pausar/concluir; uma
+  falha após commit do score é recuperada sem apagar resposta, mastery ou XP.
+- Export de backup agora captura `examId` e namespace global na mesma transação IndexedDB
+  readonly. Teste de duas conexões reproduz o snapshot inconsistente antigo; Exam B permanece
+  isolado. Schema/runtime também validam projeção `result.mastery` de diagnóstico.
+- Retry de diagnóstico concluído repara eventos ausentes `diagnostic_completed` e
+  `mastery_updated` sem duplicação; valores históricos do evento ficam no assessment.
+- Suíte completa: **145/145**, zero falhas/skip. TCE-GO (289 questões), TJTO (3) e template
+  válidos; builds regenerados e browser smoke local **21/21** (`commitSha: local`).
+- Nova revisão Astra independente será solicitada sobre este candidato integrado. O4 ainda
+  não aprovado; sem commit/deploy/tag e sem iniciar O5 até PASS e validação remota.
+
+### Quarta rodada de correções O4 — 2026-10-04
+
+- Nova reprovação Astra identificou perda de respostas/queue em duas respostas
+  diagnósticas concorrentes e gravação obsoleta de resposta depois de restore.
+- `DiagnosticEngine.answer` agora mescla a resposta e calcula expansão da amostra
+  dentro do update atômico do run vigente; retry de evento permanece idempotente.
+- Operações StudySession são serializadas entre abas via Web Locks. Restore/reset
+  exigem coordenação cross-tab; substituição de namespaces incrementa geração na
+  mesma transação e instâncias antigas falham fechadas antes de mutar dados.
+- Regressões reais Chromium/IndexedDB/Web Locks: diagnóstico concorrente, restore
+  contra resposta em andamento, transições pause/next/finish e respostas/retakes
+  simultâneos passaram **4/4**. Suíte integrada passou **147/147**, zero falhas e
+  zero skips; schema/factory e `git diff --check` passaram.
+- Standalone e staging regenerados; schema/factory de TCE-GO (289), TJTO (3) e
+  template aprovados. Browser smoke: **20/21**; os 20 checks funcionais passaram
+  (diagnóstico, score/XP, backup/import, recovery, offline, migração O3, saúde,
+  teclado/mobile). O único FAIL é deliberado no gate de metadata: build local usa
+  `commitSha: local`, não SHA exato de release. Evidência em
+  `docs/O4_BROWSER_EVIDENCE_FINAL.json`.
+- Scan de secrets sem achados; `git diff --check` aprovado. Nova revisão independente
+  Astra `gpt-6-astra/high` permanecia pendente por indisponibilidade da delegação;
+  O4 continua **não aprovado**, sem commit/deploy/tag. O5 não iniciado.
+
+### Revisão independente Harvey — retomada
+
+- Delegação restabelecida: Harvey foi invocado explicitamente com `gpt-6-astra/high`.
+  Veredito **FAIL local**, apesar de confirmar 147/147 testes e schemas válidos.
+- Reproduções demonstram mutações após restore por `StudySession.start/save`,
+  planner e API direta de diagnóstico; erros de leitura da geração eram tratados
+  como zero; checker comparava metadados internos de forma assimétrica.
+- Correções em andamento: Bacon/Luna (storage fail-closed e regressões), Rawls/Luna
+  (checker de restores repetidos), Maxwell/Sol (fronteiras dos comandos e contexto
+  explícito entre engines/UI). Nova revisão Astra obrigatória após integração.
+- Scan do projeto passou em 288 arquivos e módulos Core correspondiam aos dois
+  builds antes destas correções. Evidências anteriores não aprovam o novo candidato.
+- Sem commit, push, publicação ou tag; O5 permanece pendente de O4 aprovado.
+
+### Continuação após interrupção dos agentes por limite de uso
+
+- Rawls/Luna concluiu o checker: projeção simétrica, dois restores consecutivos e
+  geração +1 em cada restore; sintaxe validada, smoke novo ainda não executado.
+- Bacon/Luna e Maxwell/Sol foram interrompidos por limite de uso. O orquestrador
+  corrigiu os fixtures incompletos e integrou checagem de geração na própria
+  transação de put/delete, putIfAbsent, update e scoring do IndexedDB. Import usa
+  essas primitivas. Erros de leitura/capacidade e geração malformada rejeitam.
+- Regressão Chromium confirma que seis caminhos primitivos de escrita por conexão
+  obsoleta rejeitam sem alterar dados nem executar updater. Suíte: **152/152**,
+  zero falhas/skip. Essa evidência não resolve todos os requisitos do parecer.
+- `core/src/mutation-context.js` foi iniciado pelo agente, mas ainda NÃO está
+  integrado às engines/UI. Falta terminar a fronteira por comando, seus testes,
+  regenerar dist/staging e repetir smoke e QA Astra. Builds e evidência browser
+  existentes precedem estas últimas alterações e não validam o candidato atual.
+- FAIL Harvey permanece vigente; sem commit/push/deploy/tag ou início de O5.
+
+### Alteração do modelo de aprovação — 2026-10-06
+
+- Usuário alterou a aprovação independente de gates/releases para **`gpt-6.1-sol/high`**.
+  Políticas AGENTS, MODEL_ROUTING, QA, AUTONOMOUS_VALIDATION, checklist e ADR alinhados.
+- Modelos de implementação e arquitetura permanecem inalterados. Pareceres históricos
+  Astra conservam sua autoria; o FAIL anterior exige reavaliação independente das correções.
+- Esta troca não aprova O4, não autoriza pular testes e não inicia O5.
+
+### Retomada da integração O4 — 2026-10-06
+
+- Coordenação por comando integrada em StudySession, DiagnosticEngine, TodayPlanEngine,
+  preferências, leitura e import/reset. Contextos explícitos têm store e duração restritos;
+  transações rejeitam instâncias obsoletas e gerações inválidas.
+- Suíte completa repetida: **175/175**, zero falhas e zero skips. A primeira execução
+  restrita não acessou o Chromium instalado; a repetição com acesso autorizado passou.
+- Schemas/factory: três packs válidos; scan de secrets: 294 arquivos, sem achados.
+  Git do checkout oficial e diff-check confirmados com acesso autorizado, sem recriar repositório.
+- Smoke local completo: **20/21**. Os 20 fluxos funcionais passaram, incluindo duas
+  restaurações consecutivas, igualdade de dados e geração +1. Única falha é o check
+  de SHA publicado, esperado no build local (`commitSha: local`); precisa ser validado
+  depois de commit e deploy. Evidência: `docs/O4_BROWSER_EVIDENCE_FINAL.json`.
+- Checker corrigido: ausência legítima do contador antes do primeiro restore significa
+  geração 0; contador malformado continua rejeitado. Não houve redução das asserções.
+- Revisor independente Gauss (**gpt-6.1-sol/high**) emitiu **PASS local** após a correção
+  das preferências. A revisão confirmou a falha com controle negativo, resultado corrigido
+  90/90/90, 160 exports concorrentes com 120 gravações atômicas sem snapshot misturado,
+  e os invariantes de score, XP, replay, rollback e fencing. A revisão não alterou checkout.
+- Reavaliação encontrou e reproduziu divergência de preferências entre abas: envelope do
+  backup podia divergir das preferências dentro do snapshot IDB. Exportação agora usa a
+  preferência persistida no snapshot coerente. Regressão real em duas abas e suíte completa
+  passaram (**177/177**, zero falhas/skip). Smoke local após o fix: **20/21**; 20 fluxos
+  funcionais passaram e só o SHA de release falha por ser build local. Parecer independente
+  revisão independente confirmou detecção do defeito antigo e ausência de mistura em
+  concorrência. O4 local aprovado; publicação e smoke remoto do SHA definitivo pendentes.

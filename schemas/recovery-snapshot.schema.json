@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StudyOS Recovery Snapshot",
+  "description": "Recovery-only raw namespace capture. This envelope is not a production backup and must never be accepted by normal import.",
+  "type": "object",
+  "required": ["kind", "recoveryVersion", "recoveryOnly", "captureId", "capturedAt", "namespaceIds", "metadata", "rawSettings", "rows"],
+  "properties": {
+    "kind": {"const": "studyos-recovery"},
+    "recoveryVersion": {"const": 1},
+    "recoveryOnly": {"const": true},
+    "captureId": {"type": "string", "minLength": 1},
+    "capturedAt": {"type": "string", "format": "date-time"},
+    "namespaceIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "metadata": {"type": "object", "propertyNames": {"not": {"enum": ["__proto__", "prototype", "constructor"]}}, "additionalProperties": {"$ref": "#/$defs/json"}},
+    "rawSettings": {"$ref": "#/$defs/json"},
+    "rows": {"type": "array", "items": {"$ref": "#/$defs/row"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "json": {"anyOf": [{"type": ["null", "boolean", "number", "string"]}, {"type": "array", "items": {"$ref": "#/$defs/json"}}, {"type": "object", "propertyNames": {"not": {"enum": ["__proto__", "prototype", "constructor"]}}, "additionalProperties": {"$ref": "#/$defs/json"}}]},
+    "row": {
+      "type": "object",
+      "required": ["key", "namespace", "collection", "value"],
+      "properties": {
+        "key": {"type": "string", "minLength": 1},
+        "namespace": {"type": "string", "minLength": 1},
+        "collection": {"type": "string", "minLength": 1},
+        "value": {"$ref": "#/$defs/json"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

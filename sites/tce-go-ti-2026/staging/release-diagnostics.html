@@ -1,2 +1,21 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>StudyOS — Release diagnostics</title><link rel="stylesheet" href="./styles.css"></head><body><main id="main-content" class="card" tabindex="-1"><h1>Release diagnostics</h1><p>Diagnóstico técnico local do runtime, persistência e invariantes da versão publicada.</p><button id="run" type="button">Executar diagnósticos</button><pre id="output" aria-live="polite">Aguardando execução…</pre></main><script type="module" src="./release-diagnostics.js"></script></body></html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyOS — Saúde da versão</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; }</style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <main id="main-content" class="card" tabindex="-1">
+      <h1>Saúde da versão</h1>
+      <p>Consulta técnica somente de leitura. Não altera progresso, score ou XP e não exibe dados pessoais.</p>
+      <button id="run" type="button">Consultar diagnóstico</button>
+      <pre id="output" role="status" aria-live="polite">Aguardando execução…</pre>
+      <p><a href="./">Voltar ao aplicativo</a></p>
+    </main>
+    <script type="module" src="./release-diagnostics.js"></script>
+  </body>
+</html>

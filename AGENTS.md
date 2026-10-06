@@ -47,6 +47,27 @@ dependente desse concurso.
 
 O Orchestrator é o único agente que pode alterar o escopo global.
 Subagentes recebem ownership explícito e devem evitar editar arquivos fora do seu domínio.
+As atribuições de modelo e esforço por agente estão em `docs/MODEL_ROUTING.md` e são
+normativas: tarefas de implementação/arquivos usam primeiro o modelo econômico; Astra
+fica para arquitetura crítica e `gpt-6.1-sol/high` para aprovação independente de gates.
+Ao delegar, configurar `model`
+e `thinking` explicitamente quando a plataforma suportar esses parâmetros. Registrar
+quando o fallback por indisponibilidade for usado; registrar apenas o modelo efetivamente
+invocado em cada validação.
+
+## Aprovação autônoma (autorização do usuário em 2026-10-03)
+
+- Gates anteriormente humanos passam por avaliação independente de QA/Architect com
+  `gpt-6.1-sol/high`, conforme alteração autorizada em 2026-10-06; o Orchestrator integra
+  a avaliação e registra as evidências e o veredito. Pareceres anteriores mantêm seu modelo original.
+- Corrigir falhas recuperáveis e repetir testes autonomamente. Nenhum gate é aprovado
+  apenas por documentação, contagem de testes ou parecer sem evidência executável.
+- Publicação GitHub Pages e tags de release estão autorizadas após validação local,
+  QA independente e smoke remoto. Preservar tags de baseline e histórico Git.
+- Notificar conclusão de cada etapa e falhas fatais/autenticação/permissões que impeçam
+  progresso. Autonomia não autoriza apagar dados reais de usuário nem reduzir invariantes.
+- Concluir O4 antes de O5. O5 usa observação automatizada com estado de teste isolado;
+  não alegar estudo longitudinal com pessoas quando só houver teste automatizado.
 
 ## Gates
 

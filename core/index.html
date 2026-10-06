@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#16324f">
     <meta name="description" content="Motor de estudo gamificado baseado em Exam Packs">
     <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./styles.css">
     <title>StudyOS</title>
   </head>
@@ -19,8 +20,12 @@
         <a href="#plan">Plano</a>
         <a href="#subjects">Matérias</a>
         <a href="#questions">Questões</a>
+        <a href="#diagnostic">Diagnóstico</a>
+        <a href="#flashcards">Flashcards</a>
+        <a href="#simulations">Simulados</a>
         <a href="#reviews">Revisões</a>
         <a href="#progress">Progresso</a>
+        <a href="#settings">Configurações</a>
       </nav>
     </header>
     <main id="main-content" tabindex="-1">
@@ -29,6 +34,8 @@
         <h1 id="page-title">Seu estudo de hoje</h1>
         <p id="pack-status">Carregue um Exam Pack para começar.</p>
         <button id="start-button" type="button">Começar sessão</button>
+        <div id="study-onboarding"></div>
+        <div id="study-resume" aria-label="Sessões pendentes"></div>
       </section>
       <section id="plan" class="card" aria-labelledby="plan-title">
         <h2 id="plan-title">Plano</h2>
@@ -47,6 +54,9 @@
         <h2 id="reviews-title">Revisões</h2>
         <p>Suas revisões vencidas aparecerão aqui.</p>
       </section>
+      <section id="diagnostic" class="card" aria-label="Diagnóstico inicial"><h2>Diagnóstico inicial</h2><div id="diagnostic-panel"></div></section>
+      <section id="flashcards" class="card" aria-label="Flashcards"><h2>Flashcards</h2><div id="flashcards-panel"></div></section>
+      <section id="simulations" class="card" aria-label="Simulados"><h2>Simulados</h2><div id="simulations-panel"></div></section>
       <section id="progress" class="card" aria-labelledby="progress-title">
         <h2 id="progress-title">Progresso</h2>
         <p>O progresso será exibido por tópico e disciplina.</p>

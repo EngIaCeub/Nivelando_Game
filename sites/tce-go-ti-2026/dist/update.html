@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>StudyOS — Atualizar versão</title>
+<style>body{font:1rem system-ui;max-width:42rem;margin:2rem auto;padding:1rem;color:#16324f}button,input{min-height:2.75rem}button{padding:.5rem 1rem}:focus-visible{outline:3px solid #16324f;outline-offset:3px}label{display:flex;align-items:center;gap:.75rem}p{line-height:1.6}</style></head>
+<body><main><h1>Atualizar StudyOS</h1>
+<p>Se a versão antiga não mostrar um aviso, abra <code>./update.html</code> dentro da pasta do aplicativo. Esta página verifica a nova versão sem alterar seus dados.</p>
+<p>Antes de atualizar, pause e salve suas sessões no aplicativo e feche as outras abas StudyOS. Se a versão antiga não permitir pausar, conclua a atividade e confira se o progresso foi salvo.</p>
+<button id="check" type="button">Verificar atualização</button>
+<p id="status" role="status" aria-live="polite">Aguardando verificação.</p>
+<label><input id="safe" type="checkbox">Pausei ou concluí e salvei todas as sessões e fechei as outras abas StudyOS.</label>
+<button id="apply" type="button" disabled>Atualizar agora</button>
+<p><a href="./">Voltar ao aplicativo</a></p></main>
+<script>
+(() => {
+  const status = document.querySelector('#status'), check = document.querySelector('#check'), apply = document.querySelector('#apply'), safe = document.querySelector('#safe');
+  const base = new URL('./', window.location.href);
+  let registration, requested = false, navigated = false;
+  const show = () => { apply.disabled = requested || !registration?.waiting || !safe.checked; if (registration?.waiting && !requested) status.textContent = 'Nova versão disponível. Confirme a pausa segura para atualizar.'; };
+  safe.addEventListener('change', show);
+  if (!('serviceWorker' in navigator)) { status.textContent = 'Service worker indisponível. Abra em HTTPS ou localhost.'; check.disabled = true; return; }
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (requested && !navigated) { navigated = true; window.location.assign(base.href); }
+  });
+  const watch = () => {
+    const worker = registration.installing;
+    worker?.addEventListener('statechange', () => { if (worker.state === 'installed') show(); });
+    show();
+  };
+  check.addEventListener('click', async () => {
+    check.disabled = true; status.textContent = 'Verificando atualização…';
+    try {
+      registration = await navigator.serviceWorker.getRegistration(base.href);
+      if (!registration) registration = await navigator.serviceWorker.register(new URL('sw.js', base).href, { scope: base.href, updateViaCache: 'none' });
+      if (registration.scope !== base.href) throw new Error('O service worker não pertence a esta pasta.');
+      registration.addEventListener('updatefound', watch);
+      watch(); await registration.update(); show();
+      if (!registration.waiting) status.textContent = registration.installing ? 'Nova versão sendo preparada. Aguarde…' : 'Nenhuma atualização aguardando ativação.';
+    } catch (error) { status.textContent = 'Não foi possível verificar: ' + error.message; }
+    finally { check.disabled = false; }
+  });
+  apply.addEventListener('click', () => {
+    if (requested || !registration?.waiting || !safe.checked || document.documentElement.dataset.studyActive === 'true') return;
+    if (!window.confirm('Confirmar atualização? Todas as sessões devem estar pausadas ou concluídas e salvas, e as outras abas StudyOS fechadas.')) return;
+    requested = true; apply.disabled = true; status.textContent = 'Atualizando…';
+    try { registration.waiting.postMessage({ type: 'SKIP_WAITING' }); }
+    catch (error) { requested = false; status.textContent = 'Não foi possível atualizar: ' + error.message; show(); }
+  });
+})();
+</script></body></html>

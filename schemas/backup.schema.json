@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductionBackup",
+  "description": "Complete production snapshot. Runtime validation also checks namespace identity, IDs unique within each collection, and matching records/events projections. Legacy createBackupPayload envelopes are validated separately and cannot perform a complete production restore.",
+  "type": "object",
+  "required": ["backupVersion", "exportedAt", "appVersion", "storageVersion", "examId", "data", "globalData", "settings"],
+  "properties": {
+    "backupVersion": {"const": 1},
+    "exportedAt": {"type": "string", "format": "date-time"},
+    "appVersion": {"type": "string", "minLength": 1},
+    "storageVersion": {"enum": [1, 2]},
+    "examId": {"type": "string", "minLength": 1, "pattern": "^[^:]+$", "not": {"enum": ["__studyos_global__", "__studyos_backups__"]}},
+    "data": {"$ref": "#/$defs/export"},
+    "globalData": {"allOf": [{"$ref": "#/$defs/export"}, {"properties": {"examId": {"const": "__studyos_global__"}}}]},
+    "settings": {"$ref": "#/$defs/settings"}
+  },
+  "$defs": {
+    "json": {"anyOf": [{"type": ["null", "boolean", "number", "string"]}, {"type": "array", "items": {"$ref": "#/$defs/json"}}, {"type": "object", "propertyNames": {"not": {"enum": ["__proto__", "prototype", "constructor"]}}, "additionalProperties": {"$ref": "#/$defs/json"}}]},
+    "settings": {"type": "object", "additionalProperties": false, "properties": {"dailyMinutes": {"type": "integer", "minimum": 1, "maximum": 720}, "onboardingSkipped": {"type": "boolean"}, "diagnosticCompleted": {"type": "boolean"}}},
+    "record": {"type": "object", "required": ["id", "value"], "properties": {"id": {"type": "string", "minLength": 1, "pattern": "\\S"}, "value": {"type": "object", "properties": {"schemaVersion": {"const": 1}}, "additionalProperties": {"$ref": "#/$defs/json"}}}},
+    "event": {
+      "type": "object", "required": ["eventId", "type", "timestamp", "examId", "entityId", "payload", "schemaVersion"],
+      "properties": {
+        "eventId": {"type": "string", "minLength": 1}, "examId": {"type": "string", "minLength": 1}, "entityId": {"type": "string", "minLength": 1},
+        "timestamp": {"type": "string", "format": "date-time"}, "schemaVersion": {"const": 1}, "payload": {"type": "object", "additionalProperties": {"$ref": "#/$defs/json"}},
+        "type": {"enum": ["topic_started", "topic_completed", "resource_opened", "question_answered", "review_completed", "simulation_started", "simulation_finished", "xp_awarded", "plan_rebalanced", "today_plan_generated", "activity_started", "activity_paused", "activity_resumed", "activity_completed", "today_plan_rebalanced", "daily_goal_completed", "extra_study_started", "diagnostic_started", "diagnostic_answered", "diagnostic_completed", "mastery_updated", "study_plan_rebalanced"]}
+      }
+    },
+    "diagnosticResponse": {
+      "type": "object", "required": ["questionId", "canonicalConceptIds", "correct", "answeredAt"],
+      "properties": {
+        "questionId": {"type": "string", "minLength": 1},
+        "canonicalConceptIds": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "correct": {"type": "boolean"}, "selfAssessment": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "answeredAt": {"type": "string", "format": "date-time"}
+      }
+    },
+    "studyResponse": {
+      "type": "object", "required": ["itemId", "correct"],
+      "properties": {
+        "itemId": {"type": "string", "minLength": 1}, "optionId": {"type": ["string", "null"]},
+        "correct": {"type": "boolean"}, "retake": {"type": "boolean"}, "timestamp": {"type": "string", "format": "date-time"},
+        "quality": {"enum": [2, 4]}
+      }
+    },
+    "studySession": {
+      "type": "object", "required": ["id", "kind", "status", "cursor", "responses"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "examId": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["quiz", "simulation", "diagnostic", "flashcards"]},
+        "title": {"type": "string"}, "status": {"enum": ["pending", "in_progress", "paused", "completed"]},
+        "cursor": {"type": "integer", "minimum": 0}, "questionIds": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "cardIds": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "responses": {"type": "array", "items": {"$ref": "#/$defs/studyResponse"}},
+        "revealedIds": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "date": {"type": ["string", "null"], "format": "date"},
+        "activity": {"type": ["object", "null"], "required": ["activityId", "topicId"], "properties": {"activityId": {"type": "string", "minLength": 1}, "topicId": {"type": "string", "minLength": 1}}},
+        "startedAt": {"type": "string", "format": "date-time"}, "completedAt": {"type": "string", "format": "date-time"},
+        "pending": {"type": "object", "required": ["item", "response"], "properties": {
+          "item": {"type": "object", "required": ["id"], "properties": {"id": {"type": "string", "minLength": 1}, "canonicalConceptIds": {"type": "array", "items": {"type": "string", "minLength": 1}}, "topicIds": {"type": "array", "items": {"type": "string", "minLength": 1}}, "options": {"type": "array", "items": {"type": "object", "required": ["id"], "properties": {"id": {"type": "string", "minLength": 1}}}}, "correctOptionId": {"type": "string", "minLength": 1}}},
+          "response": {"allOf": [{"$ref": "#/$defs/studyResponse"}, {"required": ["timestamp", "retake"]}]}, "targets": {"type": "array", "items": {"$ref": "#/$defs/masteryTarget"}},
+          "reviewTargets": {"type": "array", "items": {"$ref": "#/$defs/reviewTarget"}},
+          "operationId": {"type": "string", "minLength": 1}
+        }}
+      },
+      "allOf": [
+        {"if": {"required": ["activity"], "properties": {"activity": {"type": "object"}}}, "then": {"required": ["date"], "properties": {"date": {"type": "string", "format": "date"}}}},
+        {"if": {"properties": {"kind": {"enum": ["quiz", "simulation", "flashcards"]}}, "required": ["kind"]}, "then": {"properties": {"pending": {"required": ["targets", "reviewTargets"]}}}},
+        {"if": {"properties": {"kind": {"const": "flashcards"}}, "required": ["kind"]}, "then": {"required": ["cardIds", "revealedIds"]}},
+        {"if": {"properties": {"kind": {"enum": ["quiz", "simulation", "diagnostic"]}}, "required": ["kind"]}, "then": {"required": ["questionIds"]}}
+      ]
+    },
+    "retakeOperation": {
+      "allOf": [
+        {"$ref": "#/$defs/record"},
+        {"properties": {"value": {"type": "object", "required": ["operationId", "simulationRunId", "questionId", "correct", "timestamp", "scoreId", "attempts", "firstAttempt"], "properties": {
+          "operationId": {"type": "string", "minLength": 1}, "simulationRunId": {"type": "string", "minLength": 1}, "questionId": {"type": "string", "minLength": 1}, "correct": {"type": "boolean"}, "timestamp": {"type": "string", "format": "date-time"},
+          "scoreId": {"type": "string", "minLength": 1}, "attempts": {"type": "integer", "minimum": 1}, "firstAttempt": {"type": "boolean"}
+        }}}}
+      ],
+      "if": {"properties": {"value": {"properties": {"attempts": {"const": 1}}}}},
+      "then": {"properties": {"value": {"required": ["firstAttempt"], "properties": {"firstAttempt": {"const": true}}}}},
+      "else": {"properties": {"value": {"properties": {"firstAttempt": {"const": false}}}}}
+    },
+    "masteryTarget": {
+      "type": "object", "required": ["canonicalConceptId", "masteryEstimate", "confidence", "source", "assessedAt", "questionCount", "firstTryCorrect", "firstTryWrong", "reviewStatus"],
+      "properties": {
+        "canonicalConceptId": {"type": "string", "minLength": 1}, "masteryEstimate": {"type": "number", "minimum": 0, "maximum": 1}, "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "source": {"type": "string", "minLength": 1}, "assessedAt": {"type": "string", "format": "date-time"}, "questionCount": {"type": "integer", "minimum": 0}, "firstTryCorrect": {"type": "integer", "minimum": 0}, "firstTryWrong": {"type": "integer", "minimum": 0}, "reviewStatus": {"type": "string", "minLength": 1}
+      }
+    },
+    "reviewTarget": {
+      "type": "object", "required": ["topicId", "interval", "mastery", "ease", "dueAt", "history"],
+      "properties": {
+        "topicId": {"type": "string", "minLength": 1}, "interval": {"type": "integer", "minimum": 0}, "mastery": {"type": "number", "minimum": 0, "maximum": 1}, "ease": {"type": "number", "minimum": 1}, "dueAt": {"type": "string", "format": "date-time"},
+        "history": {"type": "array", "items": {"type": "object", "required": ["reviewedAt", "quality"], "properties": {"reviewedAt": {"type": "string", "format": "date-time"}, "quality": {"type": "integer", "minimum": 0, "maximum": 5}, "operationId": {"type": "string", "minLength": 1, "pattern": "\\S"}}}}
+      }
+    },
+    "export": {
+      "type": "object", "required": ["version", "examId", "records", "events", "collections"],
+      "properties": {
+        "version": {"const": 1}, "examId": {"type": "string", "minLength": 1},
+        "records": {"type": "array", "items": {"type": "object"}}, "events": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+        "collections": {
+          "type": "object", "propertyNames": {"minLength": 1, "pattern": "^[^:]+$", "not": {"enum": ["__proto__", "prototype", "constructor"]}},
+          "additionalProperties": {"type": "array", "items": {"$ref": "#/$defs/record"}},
+          "properties": {
+            "events": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"$ref": "#/$defs/event"}}}]}},
+            "mastery": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"allOf": [{"$ref": "mastery.schema.json"}, {"properties": {"schemaVersion": {"const": 1}}}]}}}]}},
+            "revisions": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"$ref": "#/$defs/reviewTarget"}}}]}},
+            "diagnostic-runs": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {"$ref": "#/$defs/record"},
+                  {"properties": {"value": {"allOf": [
+                    {"$ref": "diagnostic-run.schema.json"},
+                    {"properties": {
+                      "schemaVersion": {"const": 1},
+                      "questionIds": {"uniqueItems": true},
+                      "responses": {"type": "array", "items": {"$ref": "#/$defs/diagnosticResponse"}},
+                      "groups": {"type": "array", "items": {"type": "string", "minLength": 1}},
+                      "config": {"type": "object", "properties": {"initialQuestionsPerConcept": {"type": "integer", "minimum": 1}, "maxQuestionsPerConcept": {"type": "integer", "minimum": 1}, "highAccuracy": {"type": "number", "minimum": 0, "maximum": 1}, "intermediateAccuracy": {"type": "number", "minimum": 0, "maximum": 1}}},
+                      "result": {"type": "object", "required": ["concepts", "questionCount"], "properties": {"concepts": {"type": "array", "items": {"type": "string", "minLength": 1}}, "questionCount": {"type": "integer", "minimum": 0}, "mastery": {"type": "array", "description": "canonicalConceptId deve ser único; a unicidade por propriedade é verificada semanticamente pelo validador de backup do Core.", "uniqueItems": true, "items": {"$ref": "diagnostic-run.schema.json#/$defs/masteryProjection"}}}}
+                    }}
+                  ]}}}
+                ]
+              }
+            },
+            "study-sessions": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"$ref": "#/$defs/studySession"}}}]}},
+            "study-reading": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"type": "object", "required": ["id", "activity", "date", "status", "completedAt"], "properties": {
+              "id": {"type": "string", "minLength": 1}, "activity": {"allOf": [{"$ref": "today-plan.schema.json#/$defs/activity"}, {"required": ["topicId"]}]}, "date": {"type": "string", "format": "date"}, "status": {"enum": ["in_progress", "paused", "completed"]}, "completedAt": {"type": ["string", "null"], "format": "date-time"}
+            }}}}]}},
+            "diagnostic-question-bank": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"allOf": [{"$ref": "question.schema.json"}, {"properties": {"id": {"type": "string", "minLength": 1, "pattern": "\\S"}, "examId": {"type": "string", "minLength": 1, "pattern": "\\S"}, "stem": {"type": "string", "minLength": 1, "pattern": "\\S"}, "options": {"type": "array", "minItems": 2, "items": {"type": "object", "required": ["id", "text"], "properties": {"id": {"type": "string", "minLength": 1, "pattern": "\\S"}, "text": {"type": "string", "minLength": 1, "pattern": "\\S"}}}}, "correctOptionId": {"type": "string", "minLength": 1, "pattern": "\\S"}, "canonicalConceptIds": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}}, "topicIds": {"type": "array", "items": {"type": "string"}}}}]}}}]}},
+            "retake-operations": {"type": "array", "items": {"$ref": "#/$defs/retakeOperation"}},
+            "today-plans": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"allOf": [{"$ref": "today-plan.schema.json"}, {"properties": {"schemaVersion": {"const": 1}}}]}}}]}},
+            "activity-state": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"value": {"allOf": [{"$ref": "activity-state.schema.json"}, {"properties": {"schemaVersion": {"const": 1}}}]}}}]}},
+            "user-settings": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/record"}, {"properties": {"id": {"const": "preferences"}, "value": {"$ref": "#/$defs/settings"}}}]}}
+          }
+        }
+      }
+    }
+  }
+}

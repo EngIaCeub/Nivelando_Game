@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BuildMetadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["metadataVersion", "appVersion", "buildId", "commitSha", "buildTimestamp", "channel", "examPackVersion", "schemaVersion", "storageVersion", "examId"],
+  "properties": {
+    "metadataVersion": { "type": "integer", "const": 1 },
+    "appVersion": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9.+-]+$" },
+    "buildId": { "type": "string", "minLength": 1 },
+    "commitSha": { "type": "string", "minLength": 1 },
+    "buildTimestamp": { "type": "string", "format": "date-time" },
+    "channel": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
+    "examPackVersion": { "type": "string", "minLength": 1 },
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "storageVersion": { "type": "integer", "minimum": 1 },
+    "examId": { "type": "string", "pattern": "^[a-z0-9-]+$", "minLength": 1 }
+  }
+}

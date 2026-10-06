@@ -18,7 +18,12 @@ await cp(resolve(root, 'sites/tce-go-ti-2026/staging-source/staging-diagnostics.
 const indexPath = resolve(staging, 'index.html');
 const index = await readFile(indexPath, 'utf8');
 const stagingNav = '<nav aria-label="Staging navigation"><a href="#today">Hoje</a> <a href="#curriculum">Currículo</a> <a href="#diagnostic">Diagnóstico</a> <a href="#questions">Questões</a> <a href="#reviews">Revisões</a> <a href="#progress">Progresso</a> <a href="#settings">Configurações</a></nav>';
-const stagingSections = '<section id="curriculum" class="card"><h2>Currículo</h2><p>Currículo do Exam Pack ativo.</p></section><section id="diagnostic" class="card"><h2>Diagnóstico</h2><p><a href="./diagnostic.html">Abrir diagnóstico O1</a>.</p></section><section id="settings" class="card"><h2>Configurações</h2><p>Preferências da prévia.</p></section>';
+const previewSections = {
+  curriculum: '<section id="curriculum" class="card"><h2>Currículo</h2><p><a href="#subjects">Abrir currículo do Exam Pack ativo</a>.</p></section>',
+  diagnostic: '<section id="diagnostic" class="card"><h2>Diagnóstico</h2><p><a href="./diagnostic.html">Abrir diagnóstico O1 isolado da prévia</a>.</p></section>',
+  settings: '<section id="settings" class="card"><h2>Configurações</h2><p>Preferências da prévia.</p></section>',
+};
+const stagingSections = Object.entries(previewSections).filter(([id]) => !index.includes(`id="${id}"`)).map(([, section]) => section).join('');
 await writeFile(indexPath, index.replace('<body>', '<body><div class="staging-ribbon" role="status">STAGING / PREVIEW</div>').replace('<header', `${stagingNav}<header`).replace('</main>', `${stagingSections}</main>`));
 const stylesPath = resolve(staging, 'styles.css');
 const styles = await readFile(stylesPath, 'utf8');
@@ -31,7 +36,10 @@ manifest.id = './';
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 const swPath = resolve(staging, 'sw.js');
 const sw = await readFile(swPath, 'utf8');
-await writeFile(swPath, sw.replace(/const CACHE_NAME = '[^']+'/g, `const CACHE_NAME = '${cacheName}'`).replace("'./o1-diagnostics.html', './o1-diagnostics.js',", "'./o1-diagnostics.html', './o1-diagnostics.js', './diagnostic.html', './diagnostic.js', './staging-diagnostics.html', './staging-meta.json',"));
+const shellMatch = sw.match(/const APP_SHELL = (\[[^\n]+\]);/);
+if (!shellMatch) throw new Error('Standalone service worker APP_SHELL format unsupported; refusing incomplete preview cache.');
+const previewShell = [...new Set([...JSON.parse(shellMatch[1]), './diagnostic.html', './diagnostic.js', './staging-diagnostics.html', './staging-meta.json'])];
+await writeFile(swPath, sw.replace(/const CACHE_NAME = '[^']+'/g, `const CACHE_NAME = '${cacheName}'`).replace(shellMatch[0], `const APP_SHELL = ${JSON.stringify(previewShell)};`));
 await writeFile(resolve(staging, 'staging-meta.json'), `${JSON.stringify({ buildVersion: 'o1.5-staging', commitSha, buildTimestamp, repository: repository || 'unavailable-local-repository', examId: 'tce-go-ti-2026', schemaVersions: 'mastery:1, diagnostic-run:1', storageVersion: 1, basePath: repository ? `/${repository}/` : './' }, null, 2)}\n`);
 if (!repository) console.warn('GITHUB_REPOSITORY unavailable; local preview metadata uses relative base path.');
 console.log(`staging build ready: ${staging}`);

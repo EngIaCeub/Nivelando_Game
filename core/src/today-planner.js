@@ -1,6 +1,7 @@
 import { EventLog } from './storage.js';
 import { GamificationEngine } from './gamification.js';
 import { explainPriority, flattenTopics } from './curriculum.js';
+import { runMutation } from './mutation-context.js';
 
 export const TODAY_PLAN_SCHEMA_VERSION = 1;
 export const TODAY_PLAN_ALGORITHM_VERSION = 'today-v1';
@@ -128,76 +129,130 @@ export class TodayPlanEngine {
   #gamification;
   constructor(store) { this.#store = store; this.#events = new EventLog(store); this.#gamification = new GamificationEngine(store); }
   async get(examId, date = dateKey()) { return this.#store.get(examId, 'today-plans', date); }
-  async save(plan) { return this.#store.put(plan.examId, 'today-plans', plan.date, plan); }
-  async generate(input) {
+  async save(plan, context) {
+    return runMutation(this.#store, context, () => this.#store.put(plan.examId, 'today-plans', plan.date, plan));
+  }
+  async #updatePlan(examId, date, updater) {
+    return this.#store.update(examId, 'today-plans', date, updater);
+  }
+  async generate(input, context) {
+    return runMutation(this.#store, context, () => this.#generate(input));
+  }
+  async #generate(input) {
     const plan = createTodayPlan(input);
-    await this.save(plan);
-    await this.#events.append({ eventId: `today-plan-generated:${plan.planId}`, type: 'today_plan_generated', timestamp: plan.generatedAt, examId: plan.examId, entityId: plan.planId, payload: { plannedMinutes: plan.plannedMinutes, activityCount: plan.activities.length }, schemaVersion: 1 });
-    return clone(plan);
+    const result = await this.#updatePlan(plan.examId, plan.date, current => current ?? plan);
+    const saved = result.value;
+    if (!result.previous) await this.#events.append({ eventId: `today-plan-generated:${saved.planId}`, type: 'today_plan_generated', timestamp: saved.generatedAt, examId: saved.examId, entityId: saved.planId, payload: { plannedMinutes: saved.plannedMinutes, activityCount: saved.activities.length }, schemaVersion: 1 });
+    return clone(saved);
   }
   async #transition({ examId, date, activityId, status, eventType = null, timestamp = new Date().toISOString(), actualMinutes = null }) {
-    const plan = await this.get(examId, date);
+    if (actualMinutes != null && (!Number.isFinite(actualMinutes) || actualMinutes < 0)) throw new RangeError('actualMinutes must be non-negative');
+    const result = await this.#updatePlan(examId, date, current => {
+      if (!current) throw new Error('today plan not found');
+      const plan = clone(current);
+      const activity = plan.activities.find(item => item.activityId === activityId);
+      if (!activity) throw new Error('activity not found');
+      if (activity.status === 'completed' && status !== 'completed') return undefined;
+      if (activity.status === 'completed') {
+        timestamp = activity.completedAt;
+        actualMinutes = activity.actualMinutes ?? activity.estimatedMinutes;
+      } else {
+        activity.status = status;
+        if (status === 'completed') activity.completedAt = timestamp;
+      }
+      const minutes = actualMinutes ?? activity.estimatedMinutes;
+      if (status === 'completed') activity.actualMinutes = minutes;
+      plan.completedMinutes = plan.activities.filter(item => item.status === 'completed').reduce((sum, item) => sum + Number(item.actualMinutes ?? item.estimatedMinutes), 0);
+      if (plan.completedMinutes >= plan.availableMinutes || plan.activities.every(item => item.status === 'completed')) plan.status = 'complete';
+      else if (status === 'in_progress' || status === 'paused') plan.status = 'active';
+      return plan;
+    });
+    const plan = result.value ?? result.previous;
     if (!plan) throw new Error('today plan not found');
-    const activity = plan.activities.find((item) => item.activityId === activityId);
-    if (!activity) throw new Error('activity not found');
-    activity.status = status;
-    if (status === 'completed') activity.completedAt = timestamp;
-    const state = { activityId, planId: plan.planId, status, estimatedMinutes: activity.estimatedMinutes, actualMinutes: actualMinutes ?? activity.estimatedMinutes, updatedAt: timestamp };
-    if (status === 'completed') activity.actualMinutes = state.actualMinutes;
+    const activity = plan.activities.find(item => item.activityId === activityId);
+    if (activity.status === 'completed' && status !== 'completed') return { plan: clone(plan), activity: clone(activity), state: await this.#store.get(examId, 'activity-state', activityId) };
+    const state = { activityId, planId: plan.planId, status: activity.status, estimatedMinutes: activity.estimatedMinutes, actualMinutes: activity.actualMinutes ?? activity.estimatedMinutes, updatedAt: activity.completedAt ?? timestamp };
     await this.#store.put(examId, 'activity-state', activityId, state);
-    plan.completedMinutes = plan.activities.filter((item) => item.status === 'completed').reduce((sum, item) => sum + Number(item.actualMinutes ?? item.estimatedMinutes), 0);
-    if (plan.completedMinutes >= plan.availableMinutes || plan.activities.every((item) => item.status === 'completed')) plan.status = 'complete';
-    else if (status === 'in_progress' || status === 'paused') plan.status = 'active';
-    await this.save(plan);
     const type = eventType ?? (status === 'in_progress' ? 'activity_started' : status === 'paused' ? 'activity_paused' : status === 'completed' ? 'activity_completed' : 'activity_resumed');
-    const event = { eventId: `${type}:${plan.planId}:${activityId}:${timestamp}`, type, timestamp, examId, entityId: activityId, payload: { planId: plan.planId, activityType: activity.type, estimatedMinutes: activity.estimatedMinutes, actualMinutes: state.actualMinutes }, schemaVersion: 1 };
+    const event = { eventId: status === 'completed' ? `${type}:${plan.planId}:${activityId}` : `${type}:${plan.planId}:${activityId}:${timestamp}`, type, timestamp, examId, entityId: activityId, payload: { planId: plan.planId, activityType: activity.type, estimatedMinutes: activity.estimatedMinutes, actualMinutes: state.actualMinutes }, schemaVersion: 1 };
     const appended = await this.#events.append(event);
     if (status === 'completed') {
-      await this.#gamification.awardForEvent(event);
+      // Preserve historical timestamp-keyed awards from older builds too.
+      const awards = await this.#store.query(examId, 'xp-awards');
+      const legacyPrefix = `${type}:${plan.planId}:${activityId}:`;
+      if (!awards.some((award) => award.eventId.startsWith(legacyPrefix))) await this.#gamification.awardForEvent(event);
       if (plan.completedMinutes >= plan.availableMinutes) {
         const goalEvent = { eventId: `daily-goal-completed:${plan.planId}`, type: 'daily_goal_completed', timestamp, examId, entityId: plan.planId, payload: { minutes: plan.completedMinutes }, schemaVersion: 1 };
         const goal = await this.#events.append(goalEvent);
-        if (goal.appended) await this.#gamification.awardForEvent(goalEvent);
+        await this.#gamification.awardForEvent(goal.event);
       }
     }
     return { plan: clone(plan), activity: clone(activity), state, event: appended.event };
   }
-  async startActivity(args) { return this.#transition({ ...args, status: 'in_progress' }); }
-  async pauseActivity(args) { return this.#transition({ ...args, status: 'paused' }); }
-  async resumeActivity(args) { return this.#transition({ ...args, status: 'in_progress', eventType: 'activity_resumed' }); }
-  async completeActivity(args) { return this.#transition({ ...args, status: 'completed' }); }
-  async addExtraActivity({ examId, date = dateKey(), topicId, minutes = 15, reason = 'Estudo extra solicitado pelo estudante.' }) {
-    const plan = await this.get(examId, date);
-    if (!plan) throw new Error('today plan not found');
-    const activity = {
-      activityId: `${plan.planId}-extra-${plan.activities.length + 1}`,
-      type: 'reading', topicId, canonicalConceptIds: [], estimatedMinutes: Math.max(5, Math.round(minutes)),
-      priority: 0, reason, status: 'planned', source: 'extra-study', resourceId: null, questionIds: [], reviewIds: [], dependencies: [], createdAt: new Date().toISOString(), completedAt: null
-    };
-    plan.activities.push(activity);
-    plan.plannedMinutes += activity.estimatedMinutes;
-    plan.status = 'active';
-    await this.save(plan);
-    await this.#events.append({ eventId: `extra-study:${activity.activityId}`, type: 'extra_study_started', timestamp: activity.createdAt, examId, entityId: activity.activityId, payload: { minutes: activity.estimatedMinutes }, schemaVersion: 1 });
-    return clone(plan);
+  async startActivity(args, context) { return runMutation(this.#store, context, () => this.#transition({ ...args, status: 'in_progress' })); }
+  async pauseActivity(args, context) { return runMutation(this.#store, context, () => this.#transition({ ...args, status: 'paused' })); }
+  async resumeActivity(args, context) { return runMutation(this.#store, context, () => this.#transition({ ...args, status: 'in_progress', eventType: 'activity_resumed' })); }
+  async completeActivity(args, context) { return runMutation(this.#store, context, () => this.#transition({ ...args, status: 'completed' })); }
+  async addExtraActivity(args, context) {
+    return runMutation(this.#store, context, () => this.#addExtraActivity(args));
   }
-  async replan({ ...input }) {
-    const current = await this.get(input.examId, input.date);
-    const completedMinutes = current?.completedMinutes ?? 0;
-    const remaining = Math.max(0, Number(input.availableMinutes) - completedMinutes);
-    const completedTopicIds = [...new Set([
-      ...(input.completedTopicIds ?? []),
-      ...(current?.activities ?? []).filter((activity) => activity.status === 'completed').map((activity) => activity.topicId).filter(Boolean)
-    ])];
-    const replacement = createTodayPlan({ ...input, availableMinutes: remaining, completedTopicIds });
-    if (current) {
-      replacement.activities = [...current.activities.filter((activity) => activity.status === 'completed'), ...replacement.activities];
-      replacement.plannedMinutes = replacement.activities.reduce((sum, activity) => sum + activity.estimatedMinutes, 0);
-      replacement.completedMinutes = completedMinutes;
-      replacement.status = replacement.activities.length ? 'active' : 'complete';
-    }
-    await this.save(replacement);
-    await this.#events.append({ eventId: `today-plan-rebalanced:${replacement.planId}:${replacement.generatedAt}`, type: 'today_plan_rebalanced', timestamp: replacement.generatedAt, examId: replacement.examId, entityId: replacement.planId, payload: { remainingMinutes: remaining, completedMinutes }, schemaVersion: 1 });
+  async #addExtraActivity({ examId, date = dateKey(), topicId, minutes = 15, reason = 'Estudo extra solicitado pelo estudante.' }) {
+    const createdAt = new Date().toISOString();
+    let activity;
+    const result = await this.#updatePlan(examId, date, current => {
+      if (!current) throw new Error('today plan not found');
+      const plan = clone(current);
+      const next = plan.activities.filter(item => item.source === 'extra-study').length + 1;
+      let activityId = `${plan.planId}-extra-${next}`;
+      while (plan.activities.some(item => item.activityId === activityId)) activityId += '-next';
+      activity = {
+        activityId, type: 'reading', topicId, canonicalConceptIds: [], estimatedMinutes: Math.max(5, Math.round(minutes)),
+        priority: 0, reason, status: 'planned', source: 'extra-study', resourceId: null, questionIds: [], reviewIds: [], dependencies: [], createdAt, completedAt: null
+      };
+      plan.activities.push(activity);
+      plan.plannedMinutes += activity.estimatedMinutes;
+      if (plan.status !== 'complete') plan.status = 'active';
+      return plan;
+    });
+    if (!result.value) throw new Error('today plan not found');
+    await this.#events.append({ eventId: `extra-study:${activity.activityId}`, type: 'extra_study_started', timestamp: activity.createdAt, examId, entityId: activity.activityId, payload: { minutes: activity.estimatedMinutes }, schemaVersion: 1 });
+    return clone(result.value);
+  }
+  async replan(input, context) {
+    return runMutation(this.#store, context, () => this.#replan(input));
+  }
+  async #replan({ ...input }) {
+    let remaining = 0;
+    const result = await this.#updatePlan(input.examId, input.date, current => {
+      const completedMinutes = current?.completedMinutes ?? 0;
+      const preserved = (current?.activities ?? []).filter(activity => ['completed', 'in_progress', 'paused'].includes(activity.status) || activity.source === 'extra-study');
+      const reservedMinutes = preserved.filter(activity => activity.status !== 'completed').reduce((sum, activity) => sum + activity.estimatedMinutes, 0);
+      remaining = Math.max(0, Number(input.availableMinutes) - completedMinutes - reservedMinutes);
+      const completedTopicIds = [...new Set([
+        ...(input.completedTopicIds ?? []),
+        ...(current?.activities ?? []).filter(activity => activity.status === 'completed').map(activity => activity.topicId).filter(Boolean)
+      ])];
+      const replacement = createTodayPlan({ ...input, availableMinutes: remaining, completedTopicIds });
+      replacement.availableMinutes = input.availableMinutes;
+      replacement.remainingMinutes = remaining;
+      const generation = (current?.replanGeneration ?? 0) + 1;
+      replacement.replanGeneration = generation;
+      const used = new Set((current?.activities ?? []).map(activity => activity.activityId));
+      replacement.activities.forEach((activity, index) => {
+        let id = `${replacement.planId}-replan-${generation}-${index + 1}`;
+        while (used.has(id)) id += '-next';
+        activity.activityId = id; used.add(id);
+      });
+      if (current) {
+        replacement.activities = [...preserved, ...replacement.activities];
+        replacement.plannedMinutes = replacement.activities.reduce((sum, activity) => sum + activity.estimatedMinutes, 0);
+        replacement.completedMinutes = completedMinutes;
+        replacement.status = replacement.activities.some(activity => activity.status !== 'completed') ? 'active' : 'complete';
+      }
+      return replacement;
+    });
+    const replacement = result.value;
+    await this.#events.append({ eventId: `today-plan-rebalanced:${replacement.planId}:${replacement.generatedAt}`, type: 'today_plan_rebalanced', timestamp: replacement.generatedAt, examId: replacement.examId, entityId: replacement.planId, payload: { remainingMinutes: remaining, completedMinutes: replacement.completedMinutes }, schemaVersion: 1 });
     return clone(replacement);
   }
   async dailySummary(examId, date = dateKey(), dailyGoalMinutes = 120) {

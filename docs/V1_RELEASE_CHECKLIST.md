@@ -2,17 +2,24 @@
 
 ## BLOCKER
 
-- [x] Suíte completa verde.
+- [x] Suíte completa do candidato integrado: 177/177 em 2026-10-06,
+      zero falhas/skip; coordenação por comando integrada.
 - [x] Build de produção sem `STAGING`/`PREVIEW BUILD`.
 - [x] Metadata de app, build, commit, timestamp, canal, pack/schema/storage presentes.
 - [x] Base path e PWA relativos.
-- [x] Service worker versionado e caches obsoletos removidos com segurança.
-- [x] Backup JSON validado e backup automático antes de restore.
+- [x] Service worker com atualização adiada, bridge legada explícita e limpeza restrita ao escopo StudyOS.
+- [x] Backup/restore protege writers obsoletos; snapshot e preferências coerentes entre abas.
+      Regressões locais e QA independente Sol 6.1/high aprovados.
 - [x] Reset protegido por confirmação explícita.
-- [x] Score histórico, mastery e XP preservados.
+- [x] Score da primeira tentativa imutável; regressões para concorrência, replay de retentativa e XP idempotente.
 - [x] Core sem conteúdo específico de edital.
 - [x] Scan de secrets sem achados.
-- [ ] Deploy e smoke remoto da V1 ainda pendentes até a publicação deste commit.
+- [ ] Deploy e smoke remoto da V1 pendentes.
+- [x] Fluxos operacionais diagnóstico, flashcards, simulado, revisões e analytics.
+- [x] Browser real local: offline, mobile, teclado, restore repetido e upgrade O3→V1.
+      20/21; único FAIL é SHA local, que exige deploy do commit definitivo.
+- [x] Reavaliação independente `gpt-6.1-sol/high` aprovada sem blocker; revisão corrigiu
+      preferência entre abas, e concluiu 177/177 com 160 exports concorrentes.
 
 ## WARNING
 
@@ -22,5 +29,5 @@
 
 ## INFO
 
-- [x] Guia de usuário e release notes publicados.
+- [x] Guia de usuário e release notes preparados localmente; publicação V1 pendente.
 - [x] Staging permanece disponível como ferramenta de prévia, não como artefato V1.

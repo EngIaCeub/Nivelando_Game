@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-10-03T05:20:02.515Z",
+  "results": [
+    {
+      "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+      "status": 200,
+      "finalUrl": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://portal.tce.go.gov.br/concursos",
+      "status": 200,
+      "finalUrl": "https://portal.tce.go.gov.br/concursos",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://www.concursosfcc.com.br/",
+      "status": 200,
+      "finalUrl": "https://www.concursosfcc.com.br/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+      "status": 200,
+      "finalUrl": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://owasp.org/www-project-top-ten/",
+      "status": 200,
+      "finalUrl": "https://owasp.org/projects/top-ten",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/",
+      "status": 200,
+      "finalUrl": "https://www.postgresql.org/docs/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://docs.python.org/3/",
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://docs.docker.com/",
+      "status": 200,
+      "finalUrl": "https://docs.docker.com/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://spec.openapis.org/oas/latest.html",
+      "status": 200,
+      "finalUrl": "https://spec.openapis.org/oas/latest.html",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://git-scm.com/doc",
+      "status": 200,
+      "finalUrl": "https://git-scm.com/doc",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://learn.microsoft.com/pt-br/powershell/",
+      "status": 200,
+      "finalUrl": "https://learn.microsoft.com/pt-br/powershell/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRIÇÕES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+      "status": 200,
+      "finalUrl": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "checkResult": "unverified-this-run",
+      "error": "TypeError"
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "checkResult": "unverified-this-run",
+      "error": "TypeError"
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+      "checkResult": "unverified-this-run",
+      "error": "TypeError"
+    },
+    {
+      "url": "https://www.w3.org/standards/webdesign/htmlcss",
+      "status": 200,
+      "finalUrl": "https://www.w3.org/standards/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "status": 200,
+      "finalUrl": "https://scrumguides.org/scrum-guide.html",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/cyberframework",
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/cyberframework",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://kubernetes.io/docs/home/",
+      "status": 200,
+      "finalUrl": "https://kubernetes.io/docs/home/",
+      "checkResult": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CJtrNuTTs4Q",
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=CJtrNuTTs4Q",
+      "checkResult": "reachable"
+    }
+  ],
+  "policy": "Availability checks only; verified provenance classification was not changed."
+}

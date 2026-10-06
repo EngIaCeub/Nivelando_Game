@@ -13,7 +13,7 @@ test('O4 production metadata and migration registry are deterministic', async ()
 test('O4 backup round-trip validates and reset is explicit at the store layer', async () => {
   const store = new MemoryStore();
   await store.put('exam-a', 'progress', 'p1', { id: 'p1', mastery: .5 });
-  await store.put('exam-a', 'events', 'e1', { eventId: 'e1', type: 'study', examId: 'exam-a' });
+  await store.put('exam-a', 'events', 'e1', { eventId: 'e1', type: 'topic_started', examId: 'exam-a', timestamp: '2026-10-02T00:00:00.000Z', entityId: 'p1', payload: {}, schemaVersion: 1 });
   const payload = createBackupPayload({ examId: 'exam-a', exported: await store.export('exam-a'), metadata: { appVersion: '1.0.0', storageVersion: 2 }, exportedAt: '2026-10-02T00:00:00.000Z' });
   assert.equal(validateBackupPayload(payload, { examId: 'exam-a' }), true);
   await store.import('exam-b', { ...payload.data, examId: 'exam-b' });

@@ -14,6 +14,7 @@
     "firstTryWrong":{"type":"integer","minimum":0},
     "selfAssessment":{"type":["number","null"],"minimum":0,"maximum":1},
     "reviewStatus":{"type":"string"},
+    "appliedStudyOperations":{"type":"array","items":{"type":"string","minLength":1,"pattern":"\\S"},"uniqueItems":true},
     "schemaVersion":{"type":"integer","minimum":1}
   }
 }
