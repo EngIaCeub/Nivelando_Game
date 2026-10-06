@@ -1,0 +1,91 @@
+{
+  "evidenceVersion": 1,
+  "mode": "synthetic-isolated-browser-contexts",
+  "baseUrl": "https://engiaceub.github.io/Nivelando_Game/",
+  "expectedCommit": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+  "profiles": [
+    {
+      "profile": "synthetic-1",
+      "startedAt": "2026-10-06T04:30:56.325Z",
+      "dailyMinutes": 60,
+      "isolatedFreshStorage": true,
+      "immutableScore": true,
+      "retakeXpIdempotent": true,
+      "pauseReloadResume": true,
+      "noConsoleOrHttpErrors": true,
+      "noThirdPartyTelemetry": true,
+      "performance": {
+        "navigation": {
+          "domContentLoadedMs": 126,
+          "loadMs": 126.2000000178814
+        },
+        "encodedBytes": 100769,
+        "decodedBytes": 1077247
+      },
+      "viewport": "1280x900"
+    },
+    {
+      "profile": "synthetic-2",
+      "startedAt": "2026-10-06T04:30:57.282Z",
+      "dailyMinutes": 90,
+      "isolatedFreshStorage": true,
+      "immutableScore": true,
+      "retakeXpIdempotent": true,
+      "pauseReloadResume": true,
+      "noConsoleOrHttpErrors": true,
+      "noThirdPartyTelemetry": true,
+      "performance": {
+        "navigation": {
+          "domContentLoadedMs": 83.19999998807907,
+          "loadMs": 83.19999998807907
+        },
+        "encodedBytes": 100769,
+        "decodedBytes": 1077247
+      },
+      "viewport": "375x812"
+    },
+    {
+      "profile": "synthetic-3",
+      "startedAt": "2026-10-06T04:30:58.218Z",
+      "dailyMinutes": 120,
+      "isolatedFreshStorage": true,
+      "immutableScore": true,
+      "retakeXpIdempotent": true,
+      "pauseReloadResume": true,
+      "noConsoleOrHttpErrors": true,
+      "noThirdPartyTelemetry": true,
+      "performance": {
+        "navigation": {
+          "domContentLoadedMs": 80.59999999403954,
+          "loadMs": 80.7999999821186
+        },
+        "encodedBytes": 100769,
+        "decodedBytes": 1077247
+      },
+      "viewport": "1280x900"
+    }
+  ],
+  "privacy": {
+    "realStudentData": false,
+    "telemetrySent": false
+  },
+  "metadata": {
+    "metadataVersion": 1,
+    "appVersion": "1.0.0",
+    "buildId": "44d3d0672535-20261006041614644",
+    "commitSha": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+    "buildTimestamp": "2026-10-06T04:16:14.644Z",
+    "channel": "production",
+    "examPackVersion": "1.0.0",
+    "schemaVersion": 1,
+    "storageVersion": 2,
+    "examId": "tce-go-ti-2026"
+  },
+  "offline": {
+    "serviceWorkerNavigation": true,
+    "dashboardPreserved": true,
+    "persistentSnapshotPreserved": true
+  },
+  "finishedAt": "2026-10-06T04:30:59.186Z",
+  "passed": true
+}

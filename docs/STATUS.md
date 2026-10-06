@@ -6,7 +6,7 @@ Fase atual: StudyOS V1 — Operationalization
 Último gate aprovado: F11
 
 Resumo operacional atual (2026-10-06): O1–O4 aprovados; O4 publicado e marcado `v1.0.0`.
-O5 é o próximo gate operacional e ainda não começou.
+O5 hardening automatizado concluído no escopo sintético, com revisão independente aprovada.
 
 ## Bootstrap F0
 
@@ -497,4 +497,22 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
   `2026-10-06T04:16:14.644Z`, examId `tce-go-ti-2026`, schema 1, storage 2, canal production.
 - Tag anotada `v1.0.0` aponta exatamente para o commit publicado e validado.
 - Evidências: `docs/O4_BROWSER_EVIDENCE_REMOTE.json`, relatório O4 e link Actions acima.
-- O5 permanece pendente de início; O4 está formalmente encerrado.
+- O5 foi iniciado após o encerramento formal O4 e está concluído; detalhes e parecer na seção O5 abaixo.
+
+## O5 — Hardening operacional (concluído no escopo sintético)
+
+- Critério: perfis de teste isolados, sem dados pessoais e sem envio de telemetria; observar
+  persistência, score/XP, recuperação por reload, acessibilidade básica, requests e offline.
+- Execução repetida do harness corrigido contra o SHA publicado: **3/3 perfis sintéticos passaram**
+  em desktop/mobile; metadata completa conferida, score inicial imutável, XP/sessão após retomada e
+  snapshot persistente comparado após navegação offline via Service Worker. Zero erro HTTP/console
+  e nenhuma solicitação a terceiros observada nos três perfis.
+- Performance observada no browser headless: 1,077,247 bytes decodificados e 100,769 bytes
+  codificados dos recursos por contexto; DCL medido 80–126 ms nesta amostra. São medições sintéticas,
+  não métricas de usuários reais.
+- Evidência: `docs/O5_SYNTHETIC_USAGE_EVIDENCE.json`; harness: `scripts/o5-operational-check.mjs`.
+- Revisores independentes `gpt-6.1-sol/high`: **PASS** para execução e encerramento sintético
+  (3/3 perfis; zero falhas). Suíte local 177/177, schemas 3 packs válidos e security scan 299
+  arquivos sem achados. Limitações: cobertura sintética, a11y básica, cache offline provisionado e
+  amostra de desempenho que não
+  representa métricas reais. Nenhuma alegação de estudo longitudinal/uso real.

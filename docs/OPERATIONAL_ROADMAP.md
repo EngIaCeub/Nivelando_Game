@@ -38,16 +38,19 @@ Relatórios: `docs/O3_CONTENT_BASELINE.md` e `docs/O3_CONTENT_REPORT.md`.
 Objetivo: publicar o standalone validado, configurar automação de deploy e observar base path,
 offline e integridade dos assets em produção.
 
-Status: em correção após reprovação independente Astra; publicação, smoke remoto e tag
-`v1.0.0` dependem da resolução de todos os blockers.
+Status: concluído e aprovado em 2026-10-06. Commit `44d3d06725354d5a737588ac51aca88afc2a4a00`,
+tag `v1.0.0`, Actions verde e smoke remoto 21/21 no GitHub Pages.
+Relatório: `docs/O4_PRODUCTION_RELEASE_REPORT.md`.
 
-## O5 — Validação em uso real e hardening
+## O5 — Validação sintética e hardening operacional
 
-Objetivo: observar uso real, corrigir problemas de acessibilidade, persistência, performance e
-conteúdo, preservando os contratos do Core.
+Objetivo: executar jornadas sintéticas automatizadas para identificar riscos operacionais em
+acessibilidade básica, persistência e performance, preservando os contratos do Core.
 
-Status: autorizado pelo usuário em 2026-10-03; executar somente após aprovação O4.
-Validação automatizada com estado isolado e revisão independente `gpt-6.1-sol/high`; não representa
-acompanhamento longitudinal de estudantes humanos.
+Status: concluído em 2026-10-06 para o escopo sintético aprovado.
+Validação automatizada com três perfis sintéticos isolados e revisão independente `gpt-6.1-sol/high`;
+não representa acompanhamento longitudinal nem uso por estudantes humanos.
+Plano, limites e evidência automatizada (sem alegação de estudo humano longitudinal):
+`docs/O5_OPERATIONAL_HARDENING_REPORT.md`.
 
 Regra de fase: não criar novos gates arquiteturais Fxx durante StudyOS V1.
