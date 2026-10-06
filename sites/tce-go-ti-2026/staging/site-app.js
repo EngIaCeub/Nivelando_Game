@@ -93,6 +93,7 @@ async function loadPack() {
     fetchJson('./exam-pack/manifest.json'), fetchJson('./exam-pack/curriculum.json'), fetchJson('./exam-pack/resources.json'), fetchJson('./build-meta.json')
   ]);
   metadata = buildMetadata; pack = { manifest, curriculum, resources };
+  const topicTitles = new Map(flattenTopics(curriculum).map(topic => [topic.id, topic.title]));
   document.title = 'StudyOS — ' + manifest.title;
   status.textContent = manifest.title + ' · prova prevista em ' + manifest.examDate + ' · versão ' + metadata.appVersion + '.';
   storage = new IndexedDbStore({ name: 'studyos-tce-go-ti-2026-v2', version: 2 });
@@ -114,7 +115,7 @@ async function loadPack() {
   };
   diagnosticUI = new StudyUI({ root: diagnosticRoot, session, ensureQuestions, ensureCards, report, onComplete });
   quizUI = new StudyUI({ root: questionsRoot, session, ensureQuestions, ensureCards, report, onComplete });
-  flashcardUI = new StudyUI({ root: flashcardsRoot, session, ensureQuestions, ensureCards, report, onComplete });
+  flashcardUI = new StudyUI({ root: flashcardsRoot, session, ensureQuestions, ensureCards, report, onComplete, topicTitleFor: topicId => topicTitles.get(topicId) ?? topicId });
   const oldStart = document.querySelector('#start-button');
   const start = button('Começar sessão', async () => {
     const current = await plans.get(examId, today());
@@ -159,7 +160,7 @@ async function renderHome() {
     requirePaused(); const topic = flattenTopics(pack.curriculum)[0];
     if (!topic) throw new Error('Não há tópicos para estudo extra.');
     await plans.addExtraActivity({ examId, date: today(), topicId: topic.id, minutes: 15 }); await renderHome();
-  }) }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes });
+  }) }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes, topics: flattenTopics(pack.curriculum) });
   status.dataset.todayState = 'plan-ready';
 }
 async function openSession(ui, run) { requirePaused(); await ui.open(run.id); }
@@ -202,22 +203,31 @@ async function showTheory(activity, date) {
   questionsRoot.scrollIntoView();
 }
 function renderCurriculum() {
-  const root = document.querySelector('#subjects'); root.replaceChildren(node('h2', 'Matérias'));
-  if (!pack.curriculum.disciplines.length) root.append(node('p', 'Nenhum currículo disponível neste pacote.'));
+  const root = document.querySelector('#subjects');
+  root.replaceChildren(node('h2', 'Matérias'));
+  if (!pack.curriculum.disciplines.length) {
+    const empty = node('p', 'Nenhum currículo disponível neste pacote.', 'pixel-panel');
+    root.append(empty);
+  }
   for (const discipline of pack.curriculum.disciplines) {
-    const details = node('details'); details.append(node('summary', discipline.title));
+    const details = node('details', undefined, 'pixel-panel curriculum-campaign');
+    const summary = node('summary', discipline.title);
+    details.append(summary);
     for (const module of discipline.modules) {
-      details.append(node('h3', module.title));
+      const questLine = node('section', undefined, 'curriculum-quest-line');
+      questLine.append(node('h3', module.title));
       for (const topic of module.topics) {
-        const article = node('article', undefined, 'topic-card'); article.append(node('h4', topic.title));
+        const article = node('article', undefined, 'topic-card pixel-panel pixel-panel--compact');
+        article.append(node('h4', topic.title));
         for (const resource of pack.resources.filter(item => item.topicIds?.includes(topic.id))) article.append(safeResourceLink(resource), node('p', 'Recurso externo · exige internet.'));
         article.append(button('Praticar questões', async () => {
           requirePaused(); const questions = (await ensureQuestions()).filter(item => item.topicIds?.includes(topic.id));
           const existing = (await session.list()).find(run => run.kind === 'quiz' && run.title === topic.title && run.status !== 'completed');
           if (existing) await openSession(quizUI, existing); else await startQuiz({ questions, title: topic.title });
         }), button('Revisar flashcards', () => startCards(topic.id)));
-        details.append(article);
+        questLine.append(article);
       }
+      details.append(questLine);
     }
     root.append(details);
   }
@@ -250,12 +260,18 @@ async function renderResume() {
 async function renderReviews() {
   const root = document.querySelector('#reviews'); root.replaceChildren(node('h2', 'Revisões'));
   const records = await storage.query(examId, 'revisions'); const due = records.filter(record => Date.parse(record.dueAt) <= Date.now());
-  if (!records.length) root.append(node('p', 'Sem revisões ainda. Responda questões ou avalie um flashcard para agendar a primeira revisão.'));
-  else if (!due.length) root.append(node('p', 'Nenhuma revisão vencida. A próxima revisão aparece na data agendada.'));
+  const list = node('div', undefined, 'pixel-grid reviews-list');
+  if (!records.length) root.append(node('p', 'Sem revisões ainda. Responda questões ou avalie um flashcard para agendar a primeira revisão.', 'pixel-panel'));
+  else if (!due.length) root.append(node('p', 'Nenhuma revisão vencida. A próxima revisão aparece na data agendada.', 'pixel-panel'));
   for (const record of records) {
     const title = flattenTopics(pack.curriculum).find(topic => topic.id === record.topicId)?.title ?? record.topicId;
-    const row = node('article'); row.append(node('p', title + ' · ' + (due.includes(record) ? 'Vencida' : 'Agendada') + ' · ' + new Date(record.dueAt).toLocaleDateString()), button('Revisar tópico', () => startCards(record.topicId))); root.append(row);
+    const overdue = due.includes(record);
+    const row = node('article', undefined, 'pixel-panel pixel-panel--compact review-quest' + (overdue ? ' review-quest--due' : ''));
+    const label = node('p', title + ' · ' + (overdue ? 'Vencida' : 'Agendada') + ' · ' + new Date(record.dueAt).toLocaleDateString());
+    row.append(label, button('Revisar tópico', () => startCards(record.topicId)));
+    list.append(row);
   }
+  if (records.length) root.append(list);
   root.append(button('Ver erros da primeira tentativa', async () => {
     requirePaused(); const errors = (await storage.query(examId, 'scores')).filter(score => !score.correct);
     if (!errors.length) { notice.textContent = 'Sem erros registrados na primeira tentativa.'; return; }
@@ -285,12 +301,18 @@ async function renderSimulations() {
 async function renderAnalytics() {
   const root = document.querySelector('#progress'); const input = await context(settings.dailyMinutes);
   const xp = await gamification.snapshot(examId); const scores = await storage.query(examId, 'scores'); const history = await events.list(examId);
-  root.replaceChildren(node('h2', 'Progresso'), node('p', 'Cobertura: ' + Math.round((input.metric.coverage.rate ?? 0) * 100) + '% · XP: ' + xp.xp + ' · Nível: ' + xp.level));
-  root.append(node('p', input.metric.mastery.average == null ? 'Sem mastery estimado. Faça o diagnóstico ou responda questões.' : 'Domínio médio: ' + Math.round(input.metric.mastery.average * 100) + '%'));
-  root.append(node('p', scores.length ? 'Primeira tentativa: ' + Math.round(input.metric.firstTryAccuracy.rate * 100) + '% em ' + scores.length + ' resposta(s).' : 'Sem primeiras tentativas de questões ou simulados.'));
-  root.append(node('p', history.some(event => ['topic_completed', 'question_answered', 'review_completed', 'diagnostic_completed'].includes(event.type)) ? 'Histórico de estudo preservado neste dispositivo.' : 'Sem histórico de estudo concluído.'));
-  root.append(node('p', scores.some(score => !score.correct) ? scores.filter(score => !score.correct).length + ' erro(s) da primeira tentativa. Use Revisões para praticar.' : 'Sem erros registrados na primeira tentativa.'));
-  root.append(node('p', xp.awards.length ? xp.awards.length + ' recompensa(s) de estudo registradas.' : 'Sem recompensas ainda. Conclua atividades para ganhar XP.'));
+  root.replaceChildren(node('h2', 'Progresso'));
+  const stats = node('div', undefined, 'pixel-grid pixel-grid--stats analytics-stats');
+  stats.append(node('p', 'Cobertura: ' + Math.round((input.metric.coverage.rate ?? 0) * 100) + '%', 'pixel-panel pixel-stat'));
+  stats.append(node('p', 'XP: ' + xp.xp + ' · Nível: ' + xp.level, 'pixel-panel pixel-stat'));
+  root.append(stats);
+  const details = node('div', undefined, 'pixel-grid analytics-details');
+  details.append(node('p', input.metric.mastery.average == null ? 'Sem mastery estimado. Faça o diagnóstico ou responda questões.' : 'Domínio médio: ' + Math.round(input.metric.mastery.average * 100) + '%', 'pixel-panel'));
+  details.append(node('p', scores.length ? 'Primeira tentativa: ' + Math.round(input.metric.firstTryAccuracy.rate * 100) + '% em ' + scores.length + ' resposta(s).' : 'Sem primeiras tentativas de questões ou simulados.', 'pixel-panel'));
+  details.append(node('p', history.some(event => ['topic_completed', 'question_answered', 'review_completed', 'diagnostic_completed'].includes(event.type)) ? 'Histórico de estudo preservado neste dispositivo.' : 'Sem histórico de estudo concluído.', 'pixel-panel'));
+  details.append(node('p', scores.some(score => !score.correct) ? scores.filter(score => !score.correct).length + ' erro(s) da primeira tentativa. Use Revisões para praticar.' : 'Sem erros registrados na primeira tentativa.', 'pixel-panel'));
+  details.append(node('p', xp.awards.length ? xp.awards.length + ' recompensa(s) de estudo registradas.' : 'Sem recompensas ainda. Conclua atividades para ganhar XP.', 'pixel-panel'));
+  root.append(details);
 }
 async function refreshPanels() {
   await renderHome(); await renderOnboarding(); await renderResume(); await renderReviews(); await renderAnalytics(); await renderSimulations();
@@ -298,11 +320,13 @@ async function refreshPanels() {
   if (!flashcardsRoot.childElementCount) flashcardsRoot.append(node('p', 'Revele a resposta antes de avaliar sua lembrança.'), button('Estudar flashcards', () => startCards()));
 }
 async function showSettings() {
-  settingsRoot.replaceChildren(node('h3', 'Nivelando Game'), node('p', 'StudyOS Engine · versão ' + metadata.appVersion + ' · dados armazenados neste dispositivo.'), node('p', 'Escolha a meta diária, faça o diagnóstico e siga Hoje. Questões, flashcards e simulados usam conteúdo local; links externos precisam de internet. Exporte backups para manter uma cópia fora deste navegador.'));
-  const actions = node('div', undefined, 'settings-actions');
+  const overview = node('div', undefined, 'pixel-panel settings-overview');
+  overview.append(node('h3', 'Nivelando Game'), node('p', 'StudyOS Engine · versão ' + metadata.appVersion + ' · dados armazenados neste dispositivo.'), node('p', 'Escolha a meta diária, faça o diagnóstico e siga Hoje. Questões, flashcards e simulados usam conteúdo local; links externos precisam de internet. Exporte backups para manter uma cópia fora deste navegador.'));
+  settingsRoot.replaceChildren(overview);
+  const actions = node('div', undefined, 'pixel-panel settings-actions');
   const file = node('input'); file.type = 'file'; file.accept = 'application/json,.json'; file.setAttribute('aria-label', 'Selecionar backup JSON');
-  const message = node('p', '', 'status'); message.setAttribute('role', 'status');
-  const recoveryNote = node('p', 'Snapshot bruto de recuperação: dados não validados, apenas para análise ou suporte. Este arquivo não pode ser importado como backup normal.', 'status');
+  const message = node('p', '', 'status settings-message'); message.setAttribute('role', 'status');
+  const recoveryNote = node('p', 'Snapshot bruto de recuperação: dados não validados, apenas para análise ou suporte. Este arquivo não pode ser importado como backup normal.', 'status settings-recovery-note');
   recoveryNote.setAttribute('role', 'note');
   actions.append(button('Exportar meus dados', async () => { requirePaused(); downloadJson('studyos-backup-' + examId + '.json', await exportProductionBackup(storage, examId, metadata, settings)); message.textContent = 'Backup completo preparado para download.'; }), file, button('Importar backup', async () => {
     requirePaused(); if (!file.files?.[0]) throw new Error('Selecione um arquivo JSON.');
@@ -328,8 +352,8 @@ async function showSettings() {
     message.textContent = 'Snapshot bruto baixado. Não foi validado e não pode ser importado como backup normal.';
   }));
   settingsRoot.append(actions, recoveryNote, message);
-  const legacy = node('details'); legacy.append(node('summary', 'Recuperar diagnóstico do staging anterior'), node('p', 'Importa somente registros ausentes. Preserva o banco legado e os dados atuais.'), button('Importar diagnóstico legado', importLegacyDiagnostic)); settingsRoot.append(legacy);
-  const danger = node('details', undefined, 'danger-zone'); danger.append(node('summary', 'Área de risco: resetar dados'), node('p', 'Remove os dados deste concurso e o domínio global, afetando mastery de outros packs. Os históricos dos outros concursos e o banco legado são preservados.'), button('Resetar meus dados', async () => {
+  const legacy = node('details', undefined, 'pixel-panel settings-disclosure'); legacy.append(node('summary', 'Recuperar diagnóstico do staging anterior'), node('p', 'Importa somente registros ausentes. Preserva o banco legado e os dados atuais.'), button('Importar diagnóstico legado', importLegacyDiagnostic)); settingsRoot.append(legacy);
+  const danger = node('details', undefined, 'pixel-panel settings-disclosure settings-danger danger-zone'); danger.append(node('summary', 'Área de risco: resetar dados'), node('p', 'Remove os dados deste concurso e o domínio global, afetando mastery de outros packs. Os históricos dos outros concursos e o banco legado são preservados.'), button('Resetar meus dados', async () => {
     requirePaused(); if (window.prompt('Remove os dados deste concurso e mastery GLOBAL, inclusive domínio usado em outros packs. Para confirmar, digite RESETAR') !== 'RESETAR') { message.textContent = 'Reset cancelado.'; return; }
     await runMutation(storage, undefined, async ctx => {
       const result = await resetProductionStore(storage, examId, { confirmation: 'RESETAR', metadata, currentSettings: settings }, ctx);
@@ -337,7 +361,7 @@ async function showSettings() {
     });
     message.textContent = 'Dados removidos. Backup automático disponível para recuperação. Recarregando…'; window.location.reload();
   })); settingsRoot.append(danger);
-  const technical = node('details'); technical.append(node('summary', 'Detalhes técnicos'), node('p', 'buildId ' + metadata.buildId + ' · commit ' + metadata.commitSha + ' · canal ' + metadata.channel + ' · pack ' + metadata.examPackVersion + ' · storage ' + metadata.storageVersion)); settingsRoot.append(technical);
+  const technical = node('details', undefined, 'pixel-panel settings-disclosure settings-technical'); technical.append(node('summary', 'Detalhes técnicos'), node('p', 'buildId ' + metadata.buildId + ' · commit ' + metadata.commitSha + ' · canal ' + metadata.channel + ' · pack ' + metadata.examPackVersion + ' · storage ' + metadata.storageVersion)); settingsRoot.append(technical);
 }
 async function importLegacyDiagnostic() {
   requirePaused();

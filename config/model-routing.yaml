@@ -1,0 +1,48 @@
+# Human- and agent-readable routing policy.
+# This file is referenced by AGENTS.md. It is not assumed to be a native
+# automatic Codex router unless your runtime explicitly supports such routing.
+
+routing:
+  basic:
+    model: gpt-6-luna
+    reasoning: low
+
+  intermediate:
+    model: gpt-6-luna
+    reasoning: medium
+
+  intermediate_hard:
+    primary_if_available: gpt-6-terra
+    current_bounded: gpt-6-luna
+    current_bounded_reasoning: high
+    escalate_to: gpt-6.1-sol
+    escalate_when: cross_subsystem_or_architectural_or_material_regression_risk
+    note: >
+      If Terra is unavailable, use Luna high while the task remains bounded; otherwise
+      use GPT-6.1 Sol. Do not call gpt-6-terra unless it is present in the runtime.
+
+  complex:
+    model: gpt-6.1-sol
+    reasoning: high
+
+protected_domains:
+  - storage
+  - indexeddb
+  - backup_restore
+  - stale_connection_protection
+  - quiz_first_attempt
+  - xp_idempotency
+  - spaced_repetition
+  - mastery
+  - simulated_score
+  - curriculum_schema
+  - pwa_offline_cache
+
+escalation:
+  to_complex_when:
+    - cross_subsystem_change
+    - architecture_decision
+    - protected_domain_change
+    - unclear_regression
+    - repeated_failed_fix
+    - multi_agent_integration

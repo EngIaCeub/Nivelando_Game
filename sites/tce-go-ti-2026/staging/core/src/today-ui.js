@@ -1,3 +1,19 @@
+import { PixelBadge, PixelButton, PixelMeter, PixelPanel, PixelProgress, PixelStat } from './pixel-ui.js';
+
+const ACTIVITY_LABELS = Object.freeze({
+  theory: 'Leitura guiada', questions: 'Questões', review: 'Revisão vencida',
+  error_review: 'Revisão de erros', simulation: 'Simulado', reading: 'Leitura',
+  diagnostic_check: 'Diagnóstico'
+});
+const STATUS_LABELS = Object.freeze({ planned: 'Planejada', in_progress: 'Em andamento', paused: 'Pausada', completed: 'Concluída', skipped: 'Ignorada' });
+
+const make = (tag, className, text) => {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined && text !== null) node.textContent = String(text);
+  return node;
+};
+
 export class TodayDashboard {
   #root;
   #onStart;
@@ -7,32 +23,105 @@ export class TodayDashboard {
     if (!root) throw new TypeError('root is required');
     this.#root = root; this.#onStart = onStart; this.#onMinutes = onMinutes; this.#onExtra = onExtra;
   }
-  render({ exam = {}, plan, summary = {}, weekly = {}, metrics = {}, streak = 0, xp = 0, availableMinutes = 120 }) {
+  render({ exam = {}, plan, summary = {}, weekly = {}, metrics = {}, streak = 0, xp = 0, availableMinutes = 120, topics = [] }) {
     this.#root.replaceChildren();
-    const title = document.createElement('h2'); title.textContent = exam.title ?? 'Hoje'; this.#root.append(title);
-    if (exam.examDate) { const countdown = document.createElement('p'); const days = Math.max(0, Math.ceil((Date.parse(exam.examDate) - Date.now()) / 86_400_000)); countdown.textContent = `Prova em ${days} dias`; this.#root.append(countdown); }
-    const goal = document.createElement('p'); goal.textContent = `Meta diária: ${availableMinutes} min · ${summary.completedMinutes ?? 0} / ${availableMinutes} min`; this.#root.append(goal);
-    const progress = document.createElement('progress'); progress.max = availableMinutes; progress.value = Math.min(availableMinutes, summary.completedMinutes ?? 0); progress.setAttribute('aria-label', 'Progresso de estudo de hoje'); this.#root.append(progress);
-    const next = plan?.activities?.find((activity) => activity.status !== 'completed');
+    const heading = make('h2', '', exam.title ?? 'Hoje');
+    this.#root.append(heading);
+
+    const hud = make('div', 'pixel-grid pixel-grid--stats');
+    const safeXp = Math.max(0, Number(xp) || 0);
+    const level = Math.floor(safeXp / 100) + 1;
+    const levelProgress = safeXp % 100;
+    const xpPanel = PixelPanel({ className: 'pixel-panel--compact', children: [
+      make('h3', '', 'Experiência'),
+      PixelBadge(`Nível ${level}`, 'info'),
+      PixelProgress({ label: `${safeXp} XP · próximo nível`, current: levelProgress, max: 100, valueText: `${levelProgress}/100 XP` })
+    ] });
+    const mastery = metrics.mastery?.average;
+    const masteryValue = mastery == null ? null : Math.round(Math.min(1, Math.max(0, Number(mastery))) * 100);
+    const masteryPanel = PixelPanel({ className: 'pixel-panel--compact', children: [
+      make('h3', '', 'Domínio médio'),
+      PixelMeter({ label: 'Domínio estimado', value: masteryValue, state: masteryValue == null ? 'unknown' : masteryValue >= 80 ? 'mastered' : masteryValue >= 50 ? 'reviewing' : 'learning', valueText: masteryValue == null ? 'Sem dados ainda' : `${masteryValue}%` })
+    ] });
+    const streakPanel = PixelStat({ label: 'Sequência de estudo', value: `${Math.max(0, Number(streak) || 0)} dias` });
+    hud.append(xpPanel, masteryPanel, streakPanel);
+    this.#root.append(hud);
+
+    if (exam.examDate) {
+      const days = Math.max(0, Math.ceil((Date.parse(exam.examDate) - Date.now()) / 86_400_000));
+      this.#root.append(PixelBadge(`Prova em ${days} dias`, 'warning'));
+    }
+
+    const currentMinutes = Math.max(0, Number(summary.completedMinutes) || 0);
+    const dailyGoal = Math.max(0, Number(availableMinutes) || 0);
+    this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [
+      make('h3', '', `Meta diária: ${dailyGoal} min`),
+      PixelProgress({ label: 'Tempo de estudo', current: currentMinutes, max: dailyGoal, valueText: `${currentMinutes} / ${dailyGoal} min` })
+    ] }));
+
+    const activityList = make('ol', 'pixel-quest-list');
+    activityList.setAttribute('aria-label', 'Agenda de hoje');
+    const topicTitles = new Map(topics.map((topic) => [topic.id, topic.title ?? topic.id]));
+    for (const activity of plan?.activities ?? []) {
+      const item = make('li', `pixel-quest${activity.status === 'completed' ? ' pixel-quest--completed' : ['in_progress', 'paused'].includes(activity.status) ? ' pixel-quest--active' : ''}`);
+      const content = make('div');
+      const topic = activity.topicId ? topicTitles.get(activity.topicId) ?? activity.topicId : 'Estudo do dia';
+      const activityLabel = ACTIVITY_LABELS[activity.type] ?? activity.type;
+      content.append(make('p', 'pixel-quest__name', topic));
+      content.append(make('p', 'pixel-quest__meta', `${activityLabel} · ${activity.estimatedMinutes} min`));
+      if (activity.reason) content.append(make('p', 'pixel-quest__meta', activity.reason));
+      const statusTone = activity.status === 'completed' ? 'success' : ['in_progress', 'paused'].includes(activity.status) ? 'info' : 'neutral';
+      item.append(content, PixelBadge(STATUS_LABELS[activity.status] ?? activity.status, statusTone));
+      activityList.append(item);
+    }
+
+    const next = plan?.activities?.find((activity) => activity.status !== 'completed' && activity.status !== 'skipped');
     if (next) {
-      const card = document.createElement('article'); card.className = 'today-next card';
-      const heading = document.createElement('h3'); heading.textContent = 'Próxima atividade';
-      const name = document.createElement('p'); name.textContent = `${next.type}: ${next.topicId ?? 'atividade'} — ${next.estimatedMinutes} min`;
-      const reason = document.createElement('p'); reason.textContent = next.reason;
-      const button = document.createElement('button'); button.type = 'button'; button.textContent = 'COMEÇAR'; button.addEventListener('click', () => this.#onStart(next));
-      card.append(heading, name, reason, button); this.#root.append(card);
-    } else { const done = document.createElement('p'); done.textContent = 'Meta diária concluída.'; const extra = document.createElement('button'); extra.type = 'button'; extra.textContent = 'ESTUDAR MAIS'; extra.addEventListener('click', () => this.#onExtra()); this.#root.append(done, extra); }
-    const list = document.createElement('ol'); list.setAttribute('aria-label', 'Agenda de hoje');
-    for (const activity of plan?.activities ?? []) { const item = document.createElement('li'); item.textContent = `${activity.topicId ?? activity.type} — ${activity.estimatedMinutes} min · ${activity.status}`; list.append(item); }
-    this.#root.append(list);
-    const settings = document.createElement('label'); settings.textContent = 'Hoje tenho: '; const select = document.createElement('select'); select.setAttribute('aria-label', 'Minutos disponíveis hoje');
-    for (const minutes of [30, 60, 90, 120]) { const option = new Option(`${minutes} min`, String(minutes), false, minutes === availableMinutes); select.add(option); }
-    select.add(new Option('Personalizado', 'custom')); select.addEventListener('change', () => { if (select.value !== 'custom') this.#onMinutes(Number(select.value)); }); settings.append(select); this.#root.append(settings);
+      const topic = next.topicId ? topicTitles.get(next.topicId) ?? next.topicId : 'atividade de hoje';
+      const heading = make('h3', '', 'Próxima missão de estudo');
+      const card = PixelPanel({ className: 'today-next pixel-panel--selected', children: [
+        heading,
+        make('p', '', `${topic} · ${ACTIVITY_LABELS[next.type] ?? next.type} · ${next.estimatedMinutes} min`),
+        ...(next.reason ? [make('p', '', next.reason)] : []),
+        PixelButton({ label: 'COMEÇAR', onClick: () => this.#onStart(next) })
+      ] });
+      this.#root.append(card);
+    } else {
+      const goalComplete = Boolean(summary.goalCompleted);
+      this.#root.append(PixelPanel({ className: 'pixel-panel--selected', children: [
+        make('h3', '', goalComplete ? 'Meta diária concluída' : 'Sem atividades programadas'),
+        make('p', '', goalComplete ? 'A meta de estudo de hoje foi alcançada.' : 'O plano de hoje não tem atividades pendentes.'),
+        PixelButton({ label: 'ESTUDAR MAIS', variant: 'secondary', onClick: () => this.#onExtra() })
+      ] }));
+    }
+
+    if (activityList.childElementCount) {
+      const questPanel = PixelPanel({ children: [make('h3', '', 'Linha de missões · Agenda de hoje'), activityList] });
+      this.#root.append(questPanel);
+    } else {
+      this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [make('p', '', 'Nenhuma missão foi adicionada ao plano de hoje.')] }));
+    }
+
+    const settings = make('label', 'pixel-settings');
+    settings.append(document.createTextNode('Hoje tenho: '));
+    const select = document.createElement('select');
+    select.setAttribute('aria-label', 'Minutos disponíveis hoje');
+    for (const minutes of [30, 60, 90, 120]) select.add(new Option(`${minutes} min`, String(minutes), false, minutes === availableMinutes));
+    select.add(new Option('Personalizado', 'custom'));
+    select.addEventListener('change', () => { if (select.value !== 'custom') this.#onMinutes(Number(select.value)); });
+    settings.append(select);
     const custom = document.createElement('input'); custom.type = 'number'; custom.min = '1'; custom.max = '720'; custom.placeholder = 'minutos'; custom.setAttribute('aria-label', 'Minutos personalizados'); custom.hidden = true;
-    const apply = document.createElement('button'); apply.type = 'button'; apply.textContent = 'Aplicar'; apply.hidden = true; apply.addEventListener('click', () => { if (Number(custom.value) > 0) this.#onMinutes(Number(custom.value)); });
-    select.addEventListener('change', () => { custom.hidden = select.value !== 'custom'; apply.hidden = custom.hidden; }); settings.append(custom, apply); this.#root.append(settings);
-    const metricsText = document.createElement('p'); metricsText.textContent = `Sequência: ${streak} dias · XP: ${xp} · Cobertura: ${Math.round((metrics.coverage?.rate ?? 0) * 100)}% · Mastery médio: ${metrics.mastery?.average == null ? 'n/d' : `${Math.round(metrics.mastery.average * 100)}%`}`; this.#root.append(metricsText);
-    const week = document.createElement('details'); const summaryNode = document.createElement('summary'); summaryNode.textContent = 'Semana'; const weekText = document.createElement('p'); weekText.textContent = `${weekly.completedMinutes ?? 0} / ${weekly.plannedMinutes ?? 0} min realizados · ${weekly.questionActivities ?? 0} atividades de questões · ${weekly.reviewActivities ?? 0} revisões`; week.append(summaryNode, weekText); this.#root.append(week);
+    const apply = PixelButton({ label: 'Aplicar', variant: 'secondary', onClick: () => { if (Number(custom.value) > 0) this.#onMinutes(Number(custom.value)); } }); apply.hidden = true;
+    select.addEventListener('change', () => { custom.hidden = select.value !== 'custom'; apply.hidden = custom.hidden; });
+    settings.append(custom, apply);
+    this.#root.append(settings);
+
+    const coverage = metrics.coverage?.rate;
+    const coverageLabel = coverage == null ? 'Sem dados' : `${Math.round(Math.min(1, Math.max(0, Number(coverage))) * 100)}%`;
+    this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [
+      make('h3', '', 'Visão da semana'),
+      make('p', '', `Cobertura do currículo: ${coverageLabel}`),
+      (() => { const details = make('details'); const summaryNode = make('summary', '', 'Resumo semanal'); const text = make('p', '', `${weekly.completedMinutes ?? 0} / ${weekly.plannedMinutes ?? 0} min realizados · ${weekly.questionActivities ?? 0} atividades de questões · ${weekly.reviewActivities ?? 0} revisões`); details.append(summaryNode, text); return details; })()
+    ] }));
   }
 }
-

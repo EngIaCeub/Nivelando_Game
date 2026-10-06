@@ -6,6 +6,7 @@ import { GamificationEngine } from './gamification.js';
 import { RevisionEngine } from './revision.js';
 import { TodayPlanEngine } from './today-planner.js';
 import { runMutation, requireMutationContext } from './mutation-context.js';
+import { PixelBadge, PixelPanel, PixelProgress } from './pixel-ui.js';
 
 // One cached promise per bank, with retry after a failed request.
 export function lazyQuestions(load) {
@@ -340,10 +341,24 @@ export class StudySession {
 }
 
 export class StudyUI {
-  constructor({ root, session, ensureQuestions, ensureCards, report, onComplete = async () => {} }) {
-    Object.assign(this, { root, session, ensureQuestions, ensureCards, report, onComplete });
+  constructor({ root, session, ensureQuestions, ensureCards, report, onComplete = async () => {}, topicTitleFor = (id) => id }) {
+    Object.assign(this, { root, session, ensureQuestions, ensureCards, report, onComplete, topicTitleFor });
   }
   button(label, handler) { return action(label, handler, this.report); }
+  async flashcardReviewState(item, response) {
+    const [revisions, mastery] = await Promise.all([
+      Promise.all((item.topicIds ?? []).map((topicId) => this.session.revisions.get(this.session.examId, topicId))),
+      Promise.all((item.canonicalConceptIds ?? []).map((conceptId) => this.session.mastery.get(conceptId)))
+    ]);
+    const records = mastery.filter(Boolean);
+    const now = Date.now();
+    if (revisions.some((revision) => revision && Date.parse(revision.dueAt) <= now)) return 'overdue';
+    if (records.some((record) => record.reviewStatus === 'needs-review')) return 'learning';
+    if (revisions.some(Boolean)) return 'reviewing';
+    if (records.length && records.every((record) => record.reviewStatus === 'stable')) return 'mastered';
+    if (records.length || response) return 'learning';
+    return 'unseen';
+  }
   async open(id) {
     if (document.documentElement.dataset.studyActive === 'true') throw new Error('Pause a sessão atual antes de retomar outra.');
     this.retake = false;
@@ -356,14 +371,19 @@ export class StudyUI {
     this.root.replaceChildren(node('h2', run.title));
     const heading = this.root.querySelector('h2'); heading.tabIndex = -1; heading.focus();
     const ids = run.kind === 'flashcards' ? run.cardIds : run.questionIds;
+    const answeredCount = new Set(run.responses.filter((saved) => ids.includes(saved.itemId)).map((saved) => saved.itemId)).size;
     if (run.cursor >= ids.length) {
-      this.root.append(node('p', 'Todas as respostas registradas. Finalize para atualizar a agenda.'), this.button('Finalizar sessão', async () => {
+      const finish = this.button('Finalizar sessão', async () => {
         this.run = await this.session.finish(run.id);
         document.documentElement.dataset.studyActive = 'false';
         const score = ['quiz', 'simulation'].includes(run.kind) ? await this.session.scoring.getScore(this.session.examId, run.id) : null;
-        this.root.replaceChildren(node('h2', 'Sessão concluída'), node('p', score == null ? 'Revisão e domínio atualizados.' : `Score da primeira tentativa: ${Math.round(score)}%. Retentativas preservam este resultado.`));
+        const result = node('p', score == null ? 'Revisão e domínio atualizados.' : `Score da primeira tentativa: ${Math.round(score)}%. Retentativas preservam este resultado.`);
+        this.root.replaceChildren(node('h2', 'Sessão concluída'), run.kind === 'flashcards' ? result : PixelPanel({ as: 'div', className: 'quiz-result', children: [PixelBadge('Sessão concluída', 'success'), result] }));
         await this.onComplete(this.run);
-      }));
+      });
+      const message = node('p', 'Todas as respostas registradas. Finalize para atualizar a agenda.');
+      if (run.kind === 'flashcards') this.root.append(message, finish);
+      else this.root.append(PixelPanel({ as: 'div', className: 'quiz-result', children: [PixelBadge('Respostas registradas', 'success'), PixelProgress({ label: 'Questões respondidas', current: answeredCount, max: ids.length, valueText: `${answeredCount} / ${ids.length}` }), message, finish] }));
       return;
     }
     const items = run.kind === 'flashcards' ? await this.ensureCards() : await this.ensureQuestions();
@@ -371,31 +391,68 @@ export class StudyUI {
     if (!item) throw new Error('Conteúdo desta sessão indisponível. Importe um backup ou use a versão correspondente do pacote.');
     const responses = run.responses.filter((response) => response.itemId === item.id);
     const response = responses.at(-1);
-    this.root.append(node('p', `${run.cursor + 1} / ${ids.length} · ${run.status === 'completed' ? 'Revisão da sessão' : 'Sessão em andamento'}`), node('p', item.front ?? item.stem));
     if (run.kind === 'flashcards') {
+      const state = await this.flashcardReviewState(item, response);
+      const stateLabels = { unseen: 'Não visto', learning: 'Aprendendo', reviewing: 'Em revisão', mastered: 'Domínio estável', overdue: 'Revisão vencida' };
+      const card = node('article', undefined, `flashcard-card pixel-panel flashcard-card--${state}`);
+      card.setAttribute('data-review-state', state);
+      const metadata = node('div', undefined, 'flashcard-card__metadata');
+      const subject = [item.subjectTitle, item.subject, item.disciplineTitle, item.discipline].find((value) => typeof value === 'string' && value.trim());
+      if (subject) metadata.append(node('span', subject, 'pixel-badge'));
+      const topicTitles = Array.isArray(item.topicTitles) ? item.topicTitles : (item.topicIds ?? []).map((topicId) => this.topicTitleFor(topicId));
+      const topics = topicTitles;
+      if (topics.length) metadata.append(node('span', `Tópico: ${topics.join(', ')}`, 'flashcard-card__topic'));
+      const badge = node('span', `Estado: ${stateLabels[state]}`, `pixel-badge flashcard-card__state flashcard-card__state--${state}`);
+      metadata.append(badge);
+      card.append(metadata,
+        node('p', `${run.cursor + 1} / ${ids.length} · ${run.status === 'completed' ? 'Revisão da sessão' : 'Sessão em andamento'}`, 'flashcard-card__progress'),
+        node('p', item.front ?? item.stem, 'flashcard-card__front'));
+      this.root.append(card);
       if (!run.revealedIds.includes(item.id)) this.root.append(this.button('Revelar resposta', async () => { this.run = await this.session.reveal(run.id, item.id); await this.render(); }));
       else {
         this.root.append(node('p', item.back, 'flashcard-answer'));
         if (!response) for (const [label, quality] of [['Preciso revisar', 2], ['Lembrei', 4]]) this.root.append(this.button(label, async () => { this.run = await this.session.answer(run.id, item, null, { quality }); await this.render(); }));
       }
     } else {
-      const options = node('div', undefined, 'question-options'); options.setAttribute('role', 'group'); options.setAttribute('aria-label', 'Alternativas');
-      for (const option of item.options ?? []) {
+      const locked = Boolean(response && !this.retake);
+      const firstResponse = responses.find((saved) => saved.retake !== true);
+      const question = PixelPanel({ as: 'article', className: `quiz-question${locked ? ' quiz-question--locked' : ''}`, label: `Questão ${run.cursor + 1} de ${ids.length}` });
+      const metadata = node('div', undefined, 'quiz-question__metadata');
+      metadata.append(PixelBadge(run.kind === 'diagnostic' ? 'Diagnóstico' : run.kind === 'simulation' ? 'Simulado' : 'Questões', 'info'), node('span', `${run.cursor + 1} / ${ids.length} · ${run.status === 'completed' ? 'Revisão da sessão' : 'Sessão em andamento'}`, 'quiz-question__position'));
+      question.append(metadata, PixelProgress({ label: 'Questões respondidas', current: answeredCount, max: ids.length, valueText: `${answeredCount} / ${ids.length}` }), node('p', item.front ?? item.stem, 'quiz-question__stem'));
+      if (firstResponse) {
+        const firstOption = item.options?.find((option) => option.id === firstResponse.optionId);
+        question.append(node('p', `Primeira tentativa registrada e bloqueada: ${firstOption?.text ?? firstResponse.optionId}. ${firstResponse.correct ? 'Correta.' : 'Precisa revisar.'}${run.kind === 'diagnostic' ? '' : ' O score e o XP desta tentativa são preservados.'}`, 'quiz-question__record'));
+      }
+      question.append(node('p', this.retake ? 'Retentativa de aprendizagem · selecione uma alternativa. O score e o XP da primeira tentativa são preservados.' : locked ? 'Resposta registrada · alternativas bloqueadas.' : 'Selecione uma alternativa para registrar sua resposta.', 'quiz-question__instruction'));
+      const options = node('div', undefined, `question-options quiz-options${locked ? ' quiz-options--locked' : ''}`); options.setAttribute('role', 'group'); options.setAttribute('aria-label', 'Alternativas');
+      for (const [index, option] of (item.options ?? []).entries()) {
         const button = this.button(option.text, async () => {
           this.run = await this.session.answer(run.id, item, option.id, { retake: this.retake === true });
           this.retake = false; await this.render();
         });
-        button.disabled = Boolean(response && !this.retake); button.setAttribute('aria-pressed', String(response?.optionId === option.id)); options.append(button);
+        const selected = locked && response.optionId === option.id;
+        const correct = locked && option.id === item.correctOptionId;
+        button.className = `pixel-button quiz-option${selected ? ' quiz-option--selected' : ''}${correct ? ' quiz-option--correct' : selected ? ' quiz-option--incorrect' : ''}`;
+        const marker = node('span', String.fromCharCode(65 + index), 'quiz-option__marker'); marker.setAttribute('aria-hidden', 'true');
+        // Decorative markers and state captions preserve the answer's accessible name.
+        button.replaceChildren(marker, node('span', option.text, 'quiz-option__text'));
+        if (locked && (selected || correct)) {
+          const state = node('span', correct ? `${selected ? 'Sua resposta · ' : ''}Correta` : 'Sua resposta · Precisa revisar', 'quiz-option__state'); state.setAttribute('aria-hidden', 'true'); button.append(state);
+        }
+        if (locked) button.setAttribute('aria-description', `Alternativa bloqueada.${correct ? ' Resposta correta.' : ''}${selected ? ` Sua resposta registrada.${response.correct ? '' : ' Precisa revisar.'}` : ''}`);
+        button.disabled = locked; button.setAttribute('aria-pressed', String(response?.optionId === option.id)); options.append(button);
       }
-      this.root.append(options);
+      question.append(options); this.root.append(question);
     }
     if (response && !this.retake) {
-      const feedback = node('p', `${response.correct ? 'Correta.' : 'Precisa revisar.'} ${item.explanationByOption?.[response.optionId] ?? item.explanation ?? ''} Resposta registrada.`, 'study-feedback'); feedback.setAttribute('role', 'status'); this.root.append(feedback);
+      const feedback = node('p', `${response.correct ? 'Correta.' : 'Precisa revisar.'} ${item.explanationByOption?.[response.optionId] ?? item.explanation ?? ''} Resposta registrada.`, `study-feedback${run.kind === 'flashcards' ? '' : ` quiz-feedback quiz-feedback--${response.correct ? 'correct' : 'incorrect'}`}`); feedback.setAttribute('role', 'status'); this.root.append(feedback);
       if (run.kind !== 'diagnostic' && run.kind !== 'flashcards') this.root.append(this.button('Tentar novamente (preserva score e XP)', async () => { this.retake = true; await this.render(); }));
       this.root.append(this.button('Continuar', async () => { this.run = await this.session.next(run.id); await this.render(); }));
     }
     if (item.provenance) {
       const source = node('details'); source.append(node('summary', 'Fonte e proveniência'), node('p', `${item.provenance.source ?? ''} · ${item.provenance.license ?? ''}`));
+      if (run.kind === 'flashcards') source.open = true;
       if (item.provenance.url) source.append(safeResourceLink({ title: 'Abrir fonte (internet)', url: item.provenance.url }));
       this.root.append(source);
     }

@@ -47,13 +47,13 @@ dependente desse concurso.
 
 O Orchestrator é o único agente que pode alterar o escopo global.
 Subagentes recebem ownership explícito e devem evitar editar arquivos fora do seu domínio.
-As atribuições de modelo e esforço por agente estão em `docs/MODEL_ROUTING.md` e são
-normativas: tarefas de implementação/arquivos usam primeiro o modelo econômico; Astra
-fica para arquitetura crítica e `gpt-6.1-sol/high` para aprovação independente de gates.
-Ao delegar, configurar `model`
-e `thinking` explicitamente quando a plataforma suportar esses parâmetros. Registrar
-quando o fallback por indisponibilidade for usado; registrar apenas o modelo efetivamente
-invocado em cada validação.
+Classifique cada tarefa e siga `docs/ai/MODEL_ROUTING.md` e
+`docs/ai/TASK_CLASSIFICATION.md`: GPT-6 Luna para BASIC/INTERMEDIATE, Luna high em
+ADVANCED_INTERMEDIATE bem delimitado, GPT-6.1 Sol para COMPLEX e para tarefas avançadas
+com risco arquitetural, regressão relevante ou vários subsistemas. GPT-6 Terra só pode ser
+usado se estiver disponível no runtime. Ao delegar, configurar `model` e `thinking`
+explicitamente quando a plataforma suportar esses parâmetros; registrar fallback e modelo
+efetivamente usado.
 
 ## Aprovação autônoma (autorização do usuário em 2026-10-03)
 
@@ -98,3 +98,29 @@ O gate F11 é obrigatório: o projeto só é considerado realmente genérico dep
 - nenhuma dependência específica de edital no Core;
 - proveniência presente;
 - documentação e STATUS atualizados.
+
+## Pixel UI — camada de apresentação
+
+StudyOS/Nivelando_Game pode usar uma linguagem visual moderna de pixel art / RPG retrô, mantendo-se uma plataforma séria de estudo. Para tarefas de UI, UX, styling, componentes, dashboard, quiz, flashcards e progresso:
+
+- Leia `skills/studyos-pixel-ui/SKILL.md` e apenas as referências relevantes.
+- Siga `docs/design/PIXEL_UI_SYSTEM.md` e `docs/design/COMPONENTS.md`.
+- Preserve os contratos funcionais existentes; pixel art é somente apresentação.
+- Reutilize tokens e primitives compartilhados; não crie sistemas visuais paralelos.
+- Nunca invente XP, nível, mastery, streak, conquistas, progresso, score, conclusão ou revisão. Valores visuais derivados devem ser determinísticos.
+- Preserve legibilidade, HTML semântico, teclado, leitores de tela, contraste, responsividade e previsibilidade dos controles.
+- Faça mudanças em etapas: tokens e primitives antes de migrar uma tela; valide o piloto antes de seguir para outras telas.
+- Não altere IndexedDB, storage, backup/restore, proteção de conexões após restore, first quiz attempt, XP idempotency, spaced repetition, mastery engine, simulatedScore, schemas de currículo ou PWA/offline/cache para viabilizar redesign visual sem reclassificar e analisar como COMPLEX.
+
+### Roteamento para tarefas Pixel UI
+
+- BASIC: GPT-6 Luna.
+- INTERMEDIATE: GPT-6 Luna, reasoning médio/alto conforme escopo.
+- ADVANCED_INTERMEDIATE: GPT-6 Terra apenas se disponível no runtime; caso contrário Luna high se delimitado, ou GPT-6.1 Sol se envolver arquitetura, regressão relevante, múltiplos subsistemas ou fronteira UI/negócio.
+- COMPLEX: GPT-6.1 Sol.
+
+Não invente nem invoque identificadores de modelos indisponíveis. Consulte `docs/ai/MODEL_ROUTING.md` e `docs/ai/TASK_CLASSIFICATION.md` para os critérios completos. O coordenador integra e valida resultados; não permita edição concorrente dos mesmos arquivos.
+
+### QA visual
+
+Para alterações visuais relevantes, inspecione a renderização em desktop e viewport estreito, navegação/foco por teclado, estados loading/empty/error/disabled/locked/completed e reduced-motion quando aplicável. Não declare inspeção visual sem executá-la.
