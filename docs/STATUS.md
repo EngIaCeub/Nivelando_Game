@@ -561,7 +561,7 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
 - Um achado LOW de especificidade (`.status:not(:empty)` sobre a nota de snapshot) foi corrigido e as capturas confirmam o estado. Permanecem regras antigas e novas de shell sobrepostas em CSS, sem comportamento incorreto observado; consolidação pode ser feita em uma limpeza futura.
 - Verificação final do candidato: build standalone e staging; suíte `pnpm test` **177/177**; `pnpm validate:content` 3/3 packs (TCE-GO 289, TJTO 3, template 0); security scan 325 arquivos, sem achados; `git diff --check` e sintaxe dos módulos alterados passaram; browser QA **21/21** após Settings e correção da nota, com restore, offline, teclado e layouts 375×667, 390×844, 430×932 e 1280×900. Evidência: `docs/PIXEL_UI_BROWSER_EVIDENCE.json`.
 - Revisão independente de release Pixel UI GPT-6.1 Sol/high: **PASS local**, sem BLOCKER/HIGH/MEDIUM pendentes. Foco tem contraste verificado em superfícies claras e header escuro; feedback quiz textual e estados acessíveis; progresso, XP, domínio e revisões continuam baseados nos dados/engines existentes.
-- Artefatos gerados em `dist/` e `staging/` correspondiam ao candidato local no encerramento desta implementação. A solicitação posterior de publicação será executada pelo workflow de GitHub Pages autorizado em `main`; este histórico não registra um deploy antes dessa autorização.
+- Artefatos gerados em `dist/` e `staging/` correspondiam ao candidato validado; a publicação posterior pelo workflow de GitHub Pages está registrada abaixo.
 
 ### Pixel UI — Currículo, Revisões, Analytics e QA final — 2026-10-06
 
@@ -571,4 +571,12 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
 - Revisão independente GPT-6.1 Sol/high: **PASS para integração local**, nenhum BLOCKER/HIGH. Três achados MEDIUM foram corrigidos: regra `[hidden]` agora vence `display` de PixelButton; grupos de analytics têm espaçamento; foco em superfície clara usa `#92400e` (7,09:1 sobre branco) e cabeçalho escuro mantém âmbar (6,10:1). Uma observação LOW sobre regras de shell duplicadas por cascata permanece para futura manutenção, sem regressão funcional detectada.
 - Capturas finais renovadas após as correções: Dashboard (ação Aplicar corretamente oculta), Flashcards com títulos reais, Analytics espaçado, Quiz e menu. `pixel-ui-diagnostic-*` é explicitamente evidência da tela de staging, não da composição principal.
 - Validação final após correções: `pnpm test` **177/177**, zero falhas/cancelamentos/skips; `pnpm validate:content` passou em TCE-GO (289), TJTO (3) e template (0); `security-scan` aprovou 325 arquivos; standalone/staging builds concluídos; browser checker **21/21**. Relatório local: `docs/PIXEL_UI_BROWSER_EVIDENCE.json`. `git diff --check` e verificações de sintaxe passaram.
-- Sem deploy, push, commit ou tag. Settings e backup/restore não foram redesenhados; backup/restore e PWA/offline foram cobertos pelo QA existente e permaneceram funcionalmente intactos.
+- Settings recebeu mudanças somente de apresentação. Backup/restore e PWA/offline foram cobertos pelo QA existente e permaneceram funcionalmente intactos.
+
+### Pixel UI — Publicação GitHub Pages — 2026-10-06
+
+- Push autorizado do código validado: commit `a90dd8200f203d67c3ba169a36b0c4d81ad47026` (`feat: apply Pixel UI across StudyOS`).
+- Workflow Pages `37533529815`: **success**. Todos os passos verdes — suíte, schemas, builds standalone/staging, production release checks, browser release gate, security scan, staging validation e deploy.
+- Site: https://engiaceub.github.io/Nivelando_Game/.
+- Smoke remoto com `--expected-commit a90dd8200f203d67c3ba169a36b0c4d81ad47026`: **21/21**, incluindo metadata/SHA, score/XP e retakes, flashcards, backup/import/restore, offline, console/HTTP/telemetria, teclado e layouts 375/390/430/1280. Evidência: `docs/PIXEL_UI_BROWSER_EVIDENCE_REMOTE.json`.
+- GitHub Pages serviu o SHA esperado. Nenhuma tag foi criada.
