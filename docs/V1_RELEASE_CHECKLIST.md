@@ -14,10 +14,10 @@
 - [x] Score da primeira tentativa imutável; regressões para concorrência, replay de retentativa e XP idempotente.
 - [x] Core sem conteúdo específico de edital.
 - [x] Scan de secrets sem achados.
-- [ ] Deploy e smoke remoto da V1 pendentes.
+- [x] Deploy de produção e smoke remoto 21/21 no SHA publicado; Actions verde; tag `v1.0.0` aponta para o SHA validado.
 - [x] Fluxos operacionais diagnóstico, flashcards, simulado, revisões e analytics.
-- [x] Browser real local: offline, mobile, teclado, restore repetido e upgrade O3→V1.
-      20/21; único FAIL é SHA local, que exige deploy do commit definitivo.
+- [x] Browser local: offline, mobile, teclado, restore repetido e upgrade O3→V1 (20 fluxos).
+- [x] Browser remoto em Pages: 21/21, inclusive metadata do SHA, offline, mobile/teclado e diagnóstico; evidência `O4_BROWSER_EVIDENCE_REMOTE.json`.
 - [x] Reavaliação independente `gpt-6.1-sol/high` aprovada sem blocker; revisão corrigiu
       preferência entre abas, e concluiu 177/177 com 160 exports concorrentes.
 

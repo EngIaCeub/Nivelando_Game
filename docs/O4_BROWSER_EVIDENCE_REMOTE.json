@@ -1,0 +1,974 @@
+{
+  "evidenceVersion": 1,
+  "startedAt": "2026-10-06T04:19:51.843Z",
+  "mode": "remote",
+  "isolation": "headless browser.newContext; no persistent profile",
+  "checks": [
+    {
+      "name": "build metadata identifies tested commit",
+      "passed": true,
+      "durationMs": 303,
+      "evidence": {
+        "metadataVersion": 1,
+        "appVersion": "1.0.0",
+        "buildId": "44d3d0672535-20261006041614644",
+        "commitSha": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+        "buildTimestamp": "2026-10-06T04:16:14.644Z",
+        "channel": "production",
+        "examPackVersion": "1.0.0",
+        "schemaVersion": 1,
+        "storageVersion": 2,
+        "examId": "tce-go-ti-2026"
+      }
+    },
+    {
+      "name": "first-run onboarding and today",
+      "passed": true,
+      "durationMs": 1634,
+      "evidence": {
+        "todayPlans": 1,
+        "onboarding": "Faça seu diagnóstico inicial\n\nTCE-GO — Técnico de Controle Externo — Tecnologia da Informação. Escolha sua meta diária, responda o diagnóstico e siga a agenda Hoje. Progresso mostra domínio, revisões e primeiras tentativas.\n\nMeta diária em minutosSalvar meta diáriaFazer diagnósticoPular e estudar agora"
+      }
+    },
+    {
+      "name": "bootstrap requests and performance bytes",
+      "passed": true,
+      "durationMs": 3,
+      "evidence": {
+        "navigation": [
+          {
+            "domContentLoadedMs": 735.5999999940395,
+            "loadMs": 735.6999999880791,
+            "transferSize": 1620
+          }
+        ],
+        "resources": [
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/styles.css",
+            "transferSize": 1614,
+            "encodedBodySize": 1314,
+            "decodedBodySize": 3558,
+            "durationMs": 149.09999999403954
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644",
+            "transferSize": 8912,
+            "encodedBodySize": 8612,
+            "decodedBodySize": 30503,
+            "durationMs": 164.60000002384186
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/app.js",
+            "transferSize": 1828,
+            "encodedBodySize": 1528,
+            "decodedBodySize": 4043,
+            "durationMs": 170.80000001192093
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/index.js",
+            "transferSize": 445,
+            "encodedBodySize": 145,
+            "decodedBodySize": 421,
+            "durationMs": 151.40000000596046
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/production.js",
+            "transferSize": 8998,
+            "encodedBodySize": 8698,
+            "decodedBodySize": 35958,
+            "durationMs": 159.30000001192093
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js",
+            "transferSize": 6349,
+            "encodedBodySize": 6049,
+            "decodedBodySize": 24324,
+            "durationMs": 166.09999999403954
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/mutation-context.js",
+            "transferSize": 878,
+            "encodedBodySize": 578,
+            "decodedBodySize": 1209,
+            "durationMs": 172.39999997615814
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/curriculum.js",
+            "transferSize": 1871,
+            "encodedBodySize": 1571,
+            "decodedBodySize": 4555,
+            "durationMs": 145.2000000178814
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/scoring.js",
+            "transferSize": 797,
+            "encodedBodySize": 497,
+            "decodedBodySize": 1288,
+            "durationMs": 152.90000000596046
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/storage.js",
+            "transferSize": 6642,
+            "encodedBodySize": 6342,
+            "decodedBodySize": 33485,
+            "durationMs": 202.7000000178814
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/revision.js",
+            "transferSize": 1294,
+            "encodedBodySize": 994,
+            "decodedBodySize": 3231,
+            "durationMs": 212.30000001192093
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/factory.js",
+            "transferSize": 1571,
+            "encodedBodySize": 1271,
+            "decodedBodySize": 4093,
+            "durationMs": 150.5
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/gamification.js",
+            "transferSize": 961,
+            "encodedBodySize": 661,
+            "decodedBodySize": 1500,
+            "durationMs": 162.2999999821186
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/analytics.js",
+            "transferSize": 989,
+            "encodedBodySize": 689,
+            "decodedBodySize": 1758,
+            "durationMs": 200.39999997615814
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/mastery.js",
+            "transferSize": 2068,
+            "encodedBodySize": 1768,
+            "decodedBodySize": 6715,
+            "durationMs": 157.59999999403954
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostics.js",
+            "transferSize": 3036,
+            "encodedBodySize": 2736,
+            "decodedBodySize": 10152,
+            "durationMs": 159.69999998807907
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostic-ui.js",
+            "transferSize": 1665,
+            "encodedBodySize": 1365,
+            "decodedBodySize": 4323,
+            "durationMs": 162
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/today-planner.js",
+            "transferSize": 5540,
+            "encodedBodySize": 5240,
+            "decodedBodySize": 19506,
+            "durationMs": 212.59999999403954
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/core/src/today-ui.js",
+            "transferSize": 1886,
+            "encodedBodySize": 1586,
+            "decodedBodySize": 4779,
+            "durationMs": 172.40000000596046
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/exam-pack/manifest.json",
+            "transferSize": 637,
+            "encodedBodySize": 337,
+            "decodedBodySize": 540,
+            "durationMs": 143.90000000596046
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/exam-pack/curriculum.json",
+            "transferSize": 0,
+            "encodedBodySize": 3888,
+            "decodedBodySize": 12835,
+            "durationMs": 163.90000000596046
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/exam-pack/resources.json",
+            "transferSize": 3728,
+            "encodedBodySize": 3428,
+            "decodedBodySize": 21519,
+            "durationMs": 143.2999999821186
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/build-meta.json",
+            "transferSize": 0,
+            "encodedBodySize": 220,
+            "decodedBodySize": 338,
+            "durationMs": 0.5
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/icon.svg",
+            "transferSize": 525,
+            "encodedBodySize": 225,
+            "decodedBodySize": 286,
+            "durationMs": 150.39999997615814
+          },
+          {
+            "name": "https://engiaceub.github.io/Nivelando_Game/exam-pack/questions.json",
+            "transferSize": 41327,
+            "encodedBodySize": 41027,
+            "decodedBodySize": 846328,
+            "durationMs": 151.40000000596046
+          }
+        ],
+        "bytes": 100769,
+        "questionBankRequests": 1,
+        "requestCount": 68,
+        "requests": [
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/",
+            "resourceType": "document"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/styles.css",
+            "resourceType": "stylesheet"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/app.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/index.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/production.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/mutation-context.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/sw.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/storage.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/curriculum.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/scoring.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/revision.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/gamification.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/analytics.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/factory.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/mastery.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostics.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostic-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/today-planner.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/today-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/app.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/build-meta.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/analytics.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/curriculum.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostic-ui.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/diagnostics.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/factory.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/gamification.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/index.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/mastery.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/mutation-context.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/production.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/revision.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/scoring.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/storage.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/today-planner.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/core/src/today-ui.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/content-coverage.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/curriculum.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/edital-01-2026-oficial.pdf",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/facts.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/flashcards.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/manifest.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/questions.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/resources.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/simulations.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/source-map.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/study-plan.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/icon-192.png",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/icon-512.png",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/icon.svg",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/index.html",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/manifest.webmanifest",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/release-diagnostics.html",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/release-diagnostics.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/site-app.js",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/styles.css",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/update.html",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/manifest.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/curriculum.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/resources.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/build-meta.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/icon.svg",
+            "resourceType": "other"
+          },
+          {
+            "url": "https://engiaceub.github.io/Nivelando_Game/exam-pack/questions.json",
+            "resourceType": "fetch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "quiz feedback, retake immutable score/XP, pause and reload",
+      "passed": true,
+      "durationMs": 641,
+      "evidence": {
+        "sessionId": "today-2026-10-06-today-tce-go-ti-2026-2026-10-06-activity-1",
+        "firstScore": [
+          {
+            "simulationRunId": "today-2026-10-06-today-tce-go-ti-2026-2026-10-06-activity-1",
+            "questionId": "q-tcego-b02-002",
+            "correct": false,
+            "answeredAt": "2026-10-06T04:19:55.010Z",
+            "attempts": 1
+          }
+        ],
+        "xp": 5,
+        "retakes": 1
+      }
+    },
+    {
+      "name": "complete today activity twice awards XP once",
+      "passed": true,
+      "durationMs": 721,
+      "evidence": {
+        "xpBefore": 45,
+        "xpAfter": 45,
+        "completedMinutes": 30
+      }
+    },
+    {
+      "name": "daily minute replan preserves completed progress through reload",
+      "passed": true,
+      "durationMs": 181,
+      "evidence": {
+        "completedMinutes": 30,
+        "availableMinutes": 90
+      }
+    },
+    {
+      "name": "diagnostic answers and completion never change score or XP",
+      "passed": true,
+      "durationMs": 27807,
+      "evidence": {
+        "scoreRows": 8,
+        "xp": 45,
+        "completedRuns": 1
+      }
+    },
+    {
+      "name": "flashcards reveal, review and persistence",
+      "passed": true,
+      "durationMs": 1101,
+      "evidence": {
+        "reviewEvents": 1,
+        "xpDelta": 8
+      }
+    },
+    {
+      "name": "simulation complete with immutable first-attempt score",
+      "passed": true,
+      "durationMs": 971,
+      "evidence": {
+        "sessionId": "study-ccae985d-6258-41fa-abd0-2544327e0a50",
+        "answered": 6,
+        "scorePercent": 0
+      }
+    },
+    {
+      "name": "backup download schema and UI import round-trip",
+      "passed": true,
+      "durationMs": 3892,
+      "evidence": {
+        "filename": "studyos-backup-tce-go-ti-2026.json",
+        "schemaValidated": true,
+        "rowCount": 826,
+        "globalMasteryCount": 82,
+        "restoreGenerationDeltas": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "invalid import fixtures reject without any state mutation",
+      "passed": true,
+      "durationMs": 40590,
+      "evidence": {
+        "rejectedFixtures": [
+          "malformed JSON",
+          "unsupported backup version",
+          "foreign exam",
+          "missing global mastery",
+          "incompatible score schema",
+          "duplicate compound score IDs",
+          "truncated compound score ID",
+          "invalid global mastery",
+          "inconsistent event projection",
+          "incompatible storage version",
+          "invalid daily goal",
+          "invalid embedded user settings",
+          "unsafe settings key",
+          "null today-plan activity",
+          "malformed diagnostic response",
+          "malformed study-session pending",
+          "orphaned retake operation receipt"
+        ],
+        "stateUnchanged": true
+      }
+    },
+    {
+      "name": "console, HTTP and telemetry audit",
+      "passed": true,
+      "durationMs": 1,
+      "evidence": {
+        "consoleErrors": [],
+        "expectedInvalidImportMessages": [
+          "StudyOS operation failed SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at JSON.parse (<anonymous>)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:26\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup inválido ou incompatível\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:378:69)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup pertence a outro Exam Pack\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:379:50)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup de produção incompleto\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:384:146)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém schema incompatível\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:256:71)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém IDs duplicados\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:352:31)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém score inválido\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:275:221)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém mastery/schema inválido\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:269:236)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:385:45)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém projeções inconsistentes\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:360:134)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup inválido ou incompatível\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:382:98)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: dailyMinutes deve ser inteiro entre 1 e 720\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:27:91)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:386:43)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: dailyMinutes deve ser inteiro entre 1 e 720\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:27:91)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:262:63)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém preferência desconhecida: __proto__\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:26:28)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:386:43)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém plano/schema inválido\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:289:147)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém resposta diagnóstica inválida\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateDiagnosticRun (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:131:120)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:278:41)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém cursor de sessão inválido\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateStudySession (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:184:70)\n    at validateRecord (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:280:40)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)",
+          "StudyOS operation failed Error: backup contém recibo de tentativa inválido\n    at invalid (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:21:71)\n    at validateRetakeOperations (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:222:106)\n    at validateExport (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:358:3)\n    at validateBackupPayload (https://engiaceub.github.io/Nivelando_Game/core/src/production.js:380:3)\n    at https://engiaceub.github.io/Nivelando_Game/site-app.js?v=44d3d0672535-20261006041614644:310:61\n    at async HTMLButtonElement.<anonymous> (https://engiaceub.github.io/Nivelando_Game/core/src/study-ui.js:41:11)"
+        ],
+        "httpErrors": [],
+        "failedRequests": [],
+        "externalRequests": [],
+        "requestCount": 251
+      }
+    },
+    {
+      "name": "corrupt-state recovery download is separate and valid backup import restores readiness",
+      "passed": true,
+      "durationMs": 3279,
+      "evidence": {
+        "recoveryControlsAvailable": true,
+        "existingCorruptionReported": true,
+        "confirmationSeen": true,
+        "validBackupRestored": true,
+        "readyAfterReload": true,
+        "recoveryFilename": "studyos-raw-recovery-only-tce-go-ti-2026.json",
+        "rawSnapshotIsRecoveryOnly": true,
+        "rawSnapshotKeys": [
+          "kind",
+          "recoveryVersion",
+          "recoveryOnly",
+          "captureId",
+          "capturedAt",
+          "namespaceIds",
+          "metadata",
+          "rawSettings",
+          "rows"
+        ]
+      }
+    },
+    {
+      "name": "real service worker offline reload and study",
+      "passed": true,
+      "durationMs": 528,
+      "evidence": {
+        "offline": true,
+        "serviceWorkerNavigation": true,
+        "studyContentRendered": true
+      }
+    },
+    {
+      "name": "O3 database 2 load/upgrade preserves every seeded row and settings",
+      "passed": true,
+      "durationMs": 1303,
+      "evidence": {
+        "examId": "tce-go-ti-2026",
+        "dbVersion": 2,
+        "questionId": "q-tcego-b02-001",
+        "topicId": "engsoft-requisitos-arquitetura",
+        "sourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+        "rowCount": 19,
+        "collections": [
+          "mastery",
+          "activity-state",
+          "diagnostic-question-bank",
+          "diagnostic-runs",
+          "events",
+          "progress",
+          "retakes",
+          "revisions",
+          "scores",
+          "today-plans",
+          "xp-awards"
+        ],
+        "fullKeySnapshot": [
+          "__studyos_global__::mastery::software.architecture",
+          "tce-go-ti-2026::activity-state::today-tce-go-ti-2026-2026-09-25-activity-1",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-001",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-002",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-003",
+          "tce-go-ti-2026::diagnostic-runs::o3-diagnostic",
+          "tce-go-ti-2026::events::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::activity_started:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::o3-diagnostic:answered:q-tcego-b02-001",
+          "tce-go-ti-2026::events::o3-diagnostic:started",
+          "tce-go-ti-2026::events::o3-event::compound",
+          "tce-go-ti-2026::events::today-plan-generated:today-tce-go-ti-2026-2026-09-25",
+          "tce-go-ti-2026::progress::o3-progress",
+          "tce-go-ti-2026::retakes::o3::historical-run::q-tcego-b02-001::2",
+          "tce-go-ti-2026::revisions::engsoft-requisitos-arquitetura",
+          "tce-go-ti-2026::scores::o3::historical-run::q-tcego-b02-001",
+          "tce-go-ti-2026::today-plans::2026-09-25",
+          "tce-go-ti-2026::xp-awards::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::xp-awards::o3-event::compound"
+        ],
+        "exportedScoreId": "o3::historical-run::q-tcego-b02-001",
+        "loadedDatabaseVersion": 2
+      }
+    },
+    {
+      "name": "O3 database 1 load/upgrade preserves every seeded row and settings",
+      "passed": true,
+      "durationMs": 1243,
+      "evidence": {
+        "examId": "tce-go-ti-2026",
+        "dbVersion": 1,
+        "questionId": "q-tcego-b02-001",
+        "topicId": "engsoft-requisitos-arquitetura",
+        "sourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+        "rowCount": 19,
+        "collections": [
+          "mastery",
+          "activity-state",
+          "diagnostic-question-bank",
+          "diagnostic-runs",
+          "events",
+          "progress",
+          "retakes",
+          "revisions",
+          "scores",
+          "today-plans",
+          "xp-awards"
+        ],
+        "fullKeySnapshot": [
+          "__studyos_global__::mastery::software.architecture",
+          "tce-go-ti-2026::activity-state::today-tce-go-ti-2026-2026-09-25-activity-1",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-001",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-002",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-003",
+          "tce-go-ti-2026::diagnostic-runs::o3-diagnostic",
+          "tce-go-ti-2026::events::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::activity_started:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::o3-diagnostic:answered:q-tcego-b02-001",
+          "tce-go-ti-2026::events::o3-diagnostic:started",
+          "tce-go-ti-2026::events::o3-event::compound",
+          "tce-go-ti-2026::events::today-plan-generated:today-tce-go-ti-2026-2026-09-25",
+          "tce-go-ti-2026::progress::o3-progress",
+          "tce-go-ti-2026::retakes::o3::historical-run::q-tcego-b02-001::2",
+          "tce-go-ti-2026::revisions::engsoft-requisitos-arquitetura",
+          "tce-go-ti-2026::scores::o3::historical-run::q-tcego-b02-001",
+          "tce-go-ti-2026::today-plans::2026-09-25",
+          "tce-go-ti-2026::xp-awards::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::xp-awards::o3-event::compound"
+        ],
+        "exportedScoreId": "o3::historical-run::q-tcego-b02-001",
+        "loadedDatabaseVersion": 2
+      }
+    },
+    {
+      "name": "technical health page",
+      "passed": true,
+      "durationMs": 446,
+      "evidence": {
+        "passed": true,
+        "metadata": {
+          "metadataVersion": 1,
+          "appVersion": "1.0.0",
+          "buildId": "44d3d0672535-20261006041614644",
+          "commitSha": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+          "buildTimestamp": "2026-10-06T04:16:14.644Z",
+          "channel": "production",
+          "examPackVersion": "1.0.0",
+          "schemaVersion": 1,
+          "storageVersion": 2,
+          "examId": "tce-go-ti-2026"
+        },
+        "basePath": "/Nivelando_Game/",
+        "indexedDB": {
+          "available": true,
+          "status": "readable",
+          "name": "studyos-tce-go-ti-2026-v2",
+          "version": 2,
+          "stores": [
+            "records"
+          ]
+        },
+        "serviceWorker": {
+          "supported": true,
+          "scope": "https://engiaceub.github.io/Nivelando_Game/",
+          "controlled": true,
+          "active": "activated",
+          "waiting": null,
+          "worker": {
+            "cacheName": "studyos-scope:https%3A%2F%2Fengiaceub.github.io%2FNivelando_Game%2F:studyos-tce-go-production-1.0.0-092be0fa458409c29425",
+            "scope": "https://engiaceub.github.io/Nivelando_Game/",
+            "buildId": "44d3d0672535-20261006041614644",
+            "appVersion": "1.0.0",
+            "channel": "production"
+          }
+        },
+        "cache": {
+          "supported": true,
+          "names": [
+            "studyos-scope:https%3A%2F%2Fengiaceub.github.io%2FNivelando_Game%2F:studyos-tce-go-production-1.0.0-092be0fa458409c29425"
+          ]
+        },
+        "checks": [
+          {
+            "check": "metadata corresponde ao Exam Pack",
+            "passed": true
+          },
+          {
+            "check": "base path do service worker",
+            "passed": true
+          },
+          {
+            "check": "worker controla esta versão",
+            "passed": true
+          },
+          {
+            "check": "cache desta versão",
+            "passed": true
+          },
+          {
+            "check": "IndexedDB disponível",
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "layout and keyboard 375x667",
+      "passed": true,
+      "durationMs": 467,
+      "evidence": {
+        "before": {
+          "viewport": 375,
+          "document": 375,
+          "body": 375,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 375,
+          "document": 375,
+          "body": 375,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 390x844",
+      "passed": true,
+      "durationMs": 470,
+      "evidence": {
+        "before": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 430x932",
+      "passed": true,
+      "durationMs": 457,
+      "evidence": {
+        "before": {
+          "viewport": 430,
+          "document": 430,
+          "body": 430,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 430,
+          "document": 430,
+          "body": 430,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 1280x900",
+      "passed": true,
+      "durationMs": 435,
+      "evidence": {
+        "before": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "metadataVersion": 1,
+    "appVersion": "1.0.0",
+    "buildId": "44d3d0672535-20261006041614644",
+    "commitSha": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+    "buildTimestamp": "2026-10-06T04:16:14.644Z",
+    "channel": "production",
+    "examPackVersion": "1.0.0",
+    "schemaVersion": 1,
+    "storageVersion": 2,
+    "examId": "tce-go-ti-2026"
+  },
+  "checkoutCommit": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+  "checkoutDirty": [],
+  "o3SourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+  "baseNavigationInterception": {
+    "mode": "remote",
+    "localRoutesRegistered": 0
+  },
+  "url": "https://engiaceub.github.io/Nivelando_Game/",
+  "browser": {
+    "version": "154.0.4258.53",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+  },
+  "expectedCommit": "44d3d06725354d5a737588ac51aca88afc2a4a00",
+  "finishedAt": "2026-10-06T04:21:19.709Z",
+  "passed": true,
+  "summary": {
+    "passed": 21,
+    "failed": 0
+  }
+}

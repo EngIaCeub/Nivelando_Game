@@ -1,7 +1,8 @@
 # O4 — Production Release Report
 
-Status em 2026-10-06: correções integradas, 175/175 testes aprovados; revisão independente
-Sol 6.1/high em andamento. Publicação e smoke remoto pendentes. Histórico abaixo preservado.
+Status em 2026-10-06: **O4 aprovado e publicado**. Commit/tag `44d3d06725354d5a737588ac51aca88afc2a4a00` /
+`v1.0.0`; Actions verde; suíte 177/177; smoke remoto 21/21. URL:
+https://engiaceub.github.io/Nivelando_Game/. Histórico das revisões anteriores abaixo preservado.
 
 Após renovação do limite, Laplace concluiu a revisão: FAIL. Reproduziu leitura
 pausada com atividade nula aceita no restore, duração `actualMinutes` inválida,
@@ -227,7 +228,21 @@ O FAIL independente permanece vigente; nenhuma release foi aprovada ou publicada
   Controle negativo reproduziu o defeito antigo; candidato corrigido preservou a preferência
   90 no envelope, snapshot e estado restaurado. 160 exports concorrentes com 120 gravações
   atômicas não misturaram preferências, exame ou dados globais. Score, XP, replay, rollback,
-  fencing e geração inválida passaram. O4 aprovado localmente; release remota ainda pendente.
+  fencing e geração inválida passaram. O4 aprovado localmente antes do deploy descrito abaixo.
+- GitHub Actions `37412855831` concluiu todos os passos de build e deploy com sucesso:
+  baseline, schema, standalone/staging, suíte completa 177/177 (zero falhas/skips), release
+  checks 3/3, browser gate 21/21, security scan 295 arquivos, staging 3/3, artifact e deploy.
+- URL informada pelo passo deploy e confirmada pela API Pages:
+  https://engiaceub.github.io/Nivelando_Game/ (base `/Nivelando_Game/`).
+- Smoke remoto real: **21/21**, zero erros; evidência `docs/O4_BROWSER_EVIDENCE_REMOTE.json`.
+  Metadata: app 1.0.0, build `44d3d0672535-20261006041614644`, commit SHA exato
+  `44d3d06725354d5a737588ac51aca88afc2a4a00`, timestamp `2026-10-06T04:16:14.644Z`,
+  canal production, examId `tce-go-ti-2026`, schema 1, storage 2. Rotas, diagnóstico,
+  pausa/retomada, IndexedDB, mastery, planner, score imutável, PWA, SW, offline, teclado
+  e quatro larguras móveis passaram.
+- Tag anotada `v1.0.0` publicada e verificada apontando exatamente para o SHA acima.
+- Limitação conhecida: 17/20 links externos estavam acessíveis no último registro; três
+  páginas do Planalto excederam timeout/rede. Recursos locais e o edital empacotado passam.
 - A revisão reproduziu preferência diária desatualizada no envelope do backup quando outra
   aba salvava uma meta nova. Exportação agora prioriza a preferência incluída no snapshot
   consistente do IndexedDB; a regressão real de duas abas passou. Suíte completa atualizada:

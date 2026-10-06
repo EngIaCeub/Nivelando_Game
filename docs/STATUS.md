@@ -5,8 +5,8 @@ Primeiro Exam Pack: TCE-GO TI 2026
 Fase atual: StudyOS V1 — Operationalization
 Último gate aprovado: F11
 
-Resumo operacional atual (2026-10-06): O1–O3 aprovados; O4 em revisão independente
-Sol 6.1/high após correções de concorrência e restore. O5 não iniciado.
+Resumo operacional atual (2026-10-06): O1–O4 aprovados; O4 publicado e marcado `v1.0.0`.
+O5 é o próximo gate operacional e ainda não começou.
 
 ## Bootstrap F0
 
@@ -482,4 +482,19 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
   passaram (**177/177**, zero falhas/skip). Smoke local após o fix: **20/21**; 20 fluxos
   funcionais passaram e só o SHA de release falha por ser build local. Parecer independente
   revisão independente confirmou detecção do defeito antigo e ausência de mistura em
-  concorrência. O4 local aprovado; publicação e smoke remoto do SHA definitivo pendentes.
+  concorrência. O4 local aprovado.
+
+### Encerramento O4 — 2026-10-06
+
+- Commit publicado: `44d3d06725354d5a737588ac51aca88afc2a4a00`; Actions `37412855831`
+  verde; GitHub Pages: https://engiaceub.github.io/Nivelando_Game/.
+- Veredito independente: PASS `gpt-6.1-sol/high`; suíte completa 177/177, sem falhas
+  ou skips; schema/factory 3 packs válidos; scan 295 arquivos sem secrets; release checks 3/3.
+- Smoke remoto **21/21** no SHA publicado: aplicação/assets/base path, hash routes, TCE-GO,
+  diagnóstico/resposta/pausa/reload, assessmentRun e IndexedDB, mastery/planner/explainPriority,
+  simulatedScore intacto, manifest/SW/offline, console, teclado e layouts 375/390/430/1280.
+- Metadata remoto: build `44d3d0672535-20261006041614644`, timestamp
+  `2026-10-06T04:16:14.644Z`, examId `tce-go-ti-2026`, schema 1, storage 2, canal production.
+- Tag anotada `v1.0.0` aponta exatamente para o commit publicado e validado.
+- Evidências: `docs/O4_BROWSER_EVIDENCE_REMOTE.json`, relatório O4 e link Actions acima.
+- O5 permanece pendente de início; O4 está formalmente encerrado.
