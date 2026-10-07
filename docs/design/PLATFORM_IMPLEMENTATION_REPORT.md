@@ -1,7 +1,7 @@
 # Pixel plataforma — integração local
 
 Data: 2026-10-06. Checkout: `C:/CodexProjects/Nivelando_Game`.
-Status: implementação integrada localmente; publicação desta versão depende do workflow Pages e do smoke remoto do SHA candidato.
+Status: **publicado no GitHub Pages** em `5e4ab6b5b4c58f6de4467614125a49bfc024fb34`; workflow 37557567793 concluído com sucesso.
 
 ## Entrega
 
@@ -62,14 +62,15 @@ offline nesta integração. B2–B4, B6 e B7 permanecem trabalhos editoriais pr�
 As verificações de navegação/sessão ocorreram na origem de loopback, separada dos dados
 do site público. Um erro esperado da guarda de sessão foi observado; apresentação agora
 usa aviso de pausa, sem alegar falha de persistência para esse caso.
-`pnpm test` foi tentado, mas Windows sandbox/Edge falhou ao abrir perfis temporários
-de IndexedDB (ENOENT) e apontou defeitos de empacotamento, corrigidos depois. Gates
-direcionados atuais: PWA/Biblioteca 18/18; produção 3/3 e staging 3/3 são verificações
-anteriores à última correção da entrada shell; conteúdo 3 packs válidos; scanner final
-375 arquivos inspecionados. CI precisa validar o candidato completo. Resultados
-históricos 177/186 não aprovam o candidato atual. A inspeção CUA final confirmou cena
-carregada a 640 px, marca, sete ícones e 20 recursos. Workflow Pages precisa concluir
-suíte, browser gate e deploy; smoke remoto com o SHA esperado permanece pendente.
+`pnpm test` foi tentado localmente, mas Windows sandbox/Edge falhou ao abrir perfis
+temporários de IndexedDB (ENOENT). No CI Linux, o candidato final passou a suíte completa
+186/186, checks de produção, browser release gate responsivo, scanner e validação do
+staging; deploy do Pages concluído pelo workflow 37557567793. Build público `build-meta.json`
+confirma o SHA acima. Requisições públicas com cache-bust confirmaram HTML do shell,
+`platform-shell.js`, bundle da Biblioteca, layout Hoje, cenários, modo foco e estilos dos
+mundos. A aba pública de inspeção continuou exibindo um service worker antigo já instalado;
+nenhum dado local foi apagado nem a atualização foi forçada. Smoke remoto interativo em
+perfil limpo permanece distinto do browser release gate de CI.
 
 ## Revisão independente
 
@@ -77,9 +78,9 @@ GPT-6.1 Sol/high, ownership somente leitura: revisão estática inicial sem P0/P
 P2: foco no mesmo hash, retry global, rank de papel fora do filtro e URL com credenciais
 aceita pelo auditor. Os quatro foram corrigidos. Na revisão de release, o revisor encontrou
 inicialização ausente do shell e risco de omitir imports HTML do build genérico; ambos foram
-corrigidos. Parecer final: favorável à integração local, sem bloqueios de código; release
-condicionado à suíte completa no CI e ao smoke remoto do SHA publicado. Curadoria continua
-planned; B2–B4/B6/B7 não foram aprovados.
+corrigidos. Parecer final: favorável à integração local, sem bloqueios de código. Gates de
+release passaram no workflow Pages para o SHA publicado. Curadoria continua planned;
+B2–B4/B6/B7 não foram aprovados.
 
 ## Capturas locais
 
@@ -101,9 +102,7 @@ viewport foi restaurado após a inspeção. A prévia permanece no loopback para
 
 ## Gates restantes
 
-Antes de V6/publicação: regressão score/retakes/XP/SRS, export/import e restore completos,
-offline e atualização PWA, UI do segundo pack, zoom real/reduced-motion/estados de erro e
-loading, scanner final, parecer independente final e smoke remoto do SHA esperado. Push
-acionará o workflow Pages; só haverá deploy se os jobs passarem.
-V1–V5 têm código integrado; seus critérios de aceite não são todos declarados aprovados.
+V6 foi publicada depois dos gates automatizados e browser check do workflow. Revisão
+posterior deve cobrir perfil realmente limpo, zoom real/reduced-motion e segundo pack.
+V1–V5 estão integradas, sem declarar cada critério manual como auditado integralmente.
 Curadoria integral B6 exige fontes por recorte e revisão factual própria.

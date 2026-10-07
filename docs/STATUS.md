@@ -632,7 +632,7 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
   B2–B4/B6/B7 seguem pendentes. Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.
 - B2–B4/B6/B7 da biblioteca permanecem pendentes; a interface já expõe as lacunas reais.
 
-### Publicação Pixel plataforma + Biblioteca — release candidato
+### Publicação Pixel plataforma + Biblioteca — release concluído
 
 - Revisão independente final: favorável à integração local, sem bloqueios de código; release
   depende da suíte integral e do smoke remoto no SHA candidato.
@@ -641,4 +641,7 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
   sandbox; o workflow Pages é o gate completo.
 - Catálogo continua planned/pending (TCE-GO 0/45 unidades revisadas); a interface mostra
   explicitamente as lacunas e candidatos não entram no build público.
-- Commit/push e deploy desta integração ainda pendentes. Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.
+- Publicado: commit `5e4ab6b5b4c58f6de4467614125a49bfc024fb34`; workflow Pages `37557567793` success, incluindo suíte 186/186, browser gate, scanner, staging e deploy.
+- URL: https://engiaceub.github.io/Nivelando_Game/. Metadado público `build-meta.json` confirmou o SHA. HTML, bundle, shell, cenas e estilos novos conferidos por HTTP com cache-bust.
+- A aba de inspeção manteve um service worker antigo já instalado; dados locais não foram limpos nem atualização forçada. Smoke interativo em perfil limpo fica pendente de ambiente sem estado antigo.
+- Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.
