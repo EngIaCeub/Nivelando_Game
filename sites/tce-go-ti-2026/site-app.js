@@ -130,11 +130,15 @@ async function loadPack() {
   }); start.id = 'start-button'; oldStart.replaceWith(start);
   // Recovery controls must survive a failure rendering existing study records.
   await showSettings();
-  libraryUI = new LibraryUI({ root: document.querySelector('#library-panel'), pack, onPractice: guarded(practiceTopic), onCards: guarded(startCards), onRetry: async () => {
-    const [library, sourceMap] = await Promise.all([fetchJson('./exam-pack/library.json'), fetchJson('./exam-pack/source-map.json')]);
-    Object.assign(pack, { library, sourceMap, libraryError: '' });
-  } });
-  libraryUI.render(); renderCurriculum(); await refreshPanels();
+  const libraryRoot = document.querySelector('#library-panel');
+  if (libraryRoot) {
+    libraryUI = new LibraryUI({ root: libraryRoot, pack, onPractice: guarded(practiceTopic), onCards: guarded(startCards), onRetry: async () => {
+      const [library, sourceMap] = await Promise.all([fetchJson('./exam-pack/library.json'), fetchJson('./exam-pack/source-map.json')]);
+      Object.assign(pack, { library, sourceMap, libraryError: '' });
+    } });
+    libraryUI.render();
+  }
+  renderCurriculum(); await refreshPanels();
 }
 
 async function context(availableMinutes, withQuestions = false) {
