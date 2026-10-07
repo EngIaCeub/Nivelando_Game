@@ -52,3 +52,14 @@ Nunca copie regras específicas de um edital para o Core.
 A release de produção usa IndexedDB local, PWA/offline após a primeira carga e backup JSON
 em Configurações / Sobre. Consulte [docs/USER_GUIDE.md](docs/USER_GUIDE.md) e
 [docs/RELEASE_NOTES_1.0.0.md](docs/RELEASE_NOTES_1.0.0.md).
+
+Biblioteca didática: consulte docs/DIDACTIC_LIBRARY_PLAN.md, contracts/DIDACTIC_LIBRARY.md
+ e docs/DIDACTIC_LIBRARY_ARCHITECTURE_REPORT.md. Diagnóstico: node scripts/library-audit.mjs <exam-id>.
+
+## Prévia da implementação Pixel plataforma
+
+Na raiz deste checkout, execute `node scripts/build-standalone.mjs` e depois
+`node scripts/preview-standalone.mjs tce-go-ti-2026 4180`.
+Abra `http://127.0.0.1:4180/Nivelando_Game/`. Essa prévia usa dados locais do pack e um
+armazenamento de navegador separado da origem pública. Relatório de implementação:
+`docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`. A nova direção ainda não foi publicada.

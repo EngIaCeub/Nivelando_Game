@@ -9,8 +9,8 @@ Suggested semantic token families:
   --pixel-grid: 4px;
 
   --pixel-border-width: 2px;
-  --pixel-radius-sm: 2px;
-  --pixel-radius-md: 4px;
+  --pixel-radius-sm: 0;
+  --pixel-radius-md: 0;
 
   --pixel-shadow-x: 4px;
   --pixel-shadow-y: 4px;

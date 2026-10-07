@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-06",
+  "author": "Codex, criação original sob solicitação do responsável pelo StudyOS",
+  "license": "project-original",
+  "rightsNote": "Assets originais produzidos para uso e publicação neste projeto. Nenhuma licença de terceiros ou licença pública de redistribuição é atribuída ao repositório.",
+  "sources": ["islands.svg", "forest.svg", "observatory.svg", "../../src/pixel-ui.js"],
+  "assets": [
+    {"file":"islands.svg","width":640,"height":200,"use":"Cena Ilhas e regiões"},
+    {"file":"forest.svg","width":640,"height":200,"use":"Cena Bosque e regiões"},
+    {"file":"observatory.svg","width":640,"height":200,"use":"Cena Observatório e regiões"},
+    {"file":"../../src/pixel-ui.js","width":24,"height":24,"use":"Ícones decorativos SVG"}
+  ],
+  "references": "docs/design/PLATFORM_PIXEL_PLAN.md",
+  "thirdPartyAssets": false
+}

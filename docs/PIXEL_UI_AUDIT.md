@@ -1,5 +1,10 @@
 # Pixel UI — auditoria pré-implementação
 
+Documento histórico do baseline anterior à primeira migração. Tokens/primitives já
+foram implementados e publicados depois desta auditoria. Para a direção plataforma
+V2 e diagnóstico atual, consulte `design/PLATFORM_PIXEL_PLAN.md` e
+`design/PLATFORM_CONCEPT_REVIEW.md`.
+
 Data: 2026-10-06
 Checkout: `C:\CodexProjects\Nivelando_Game`
 Branch/commit da auditoria: `main` / `b9351ce2d0ad5f32fd6aef220c50987ebba0ff10`

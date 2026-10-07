@@ -54,3 +54,10 @@ Plano, limites e evidência automatizada (sem alegação de estudo humano longit
 `docs/O5_OPERATIONAL_HARDENING_REPORT.md`.
 
 Regra de fase: não criar novos gates arquiteturais Fxx durante StudyOS V1.
+
+## Biblioteca didática — B1–B7
+
+B1 arquitetura incorporada; B2 escopo, B3 piloto, B4 curadoria, B5 interface,
+B6 aceite integral/segundo pack e B7 manutenção permanecem pendentes.
+Ordem e critérios: `docs/DIDACTIC_LIBRARY_PLAN.md`. São milestones de conteúdo,
+não novos gates Fxx. Aprovação de O3 não significa completude pedagógica da biblioteca.

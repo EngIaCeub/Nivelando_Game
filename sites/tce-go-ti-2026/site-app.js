@@ -2,6 +2,8 @@ import { IndexedDbStore, EventLog, MasteryStore, TodayPlanEngine, TodayDashboard
 import { exportProductionBackup, exportRecoverySnapshot, restoreProductionBackup, validateBackupPayload, resetProductionStore, updateProductionSettings, bootstrapProductionSettings, importLegacyDiagnostic as migrateLegacyDiagnostic } from './core/src/production.js';
 import { StudySession, StudyUI, action, node, safeResourceLink, lazyQuestions, selectSimulationQuestions } from './core/src/study-ui.js';
 import { runMutation } from './core/src/mutation-context.js';
+import { LibraryUI } from './core/src/library-ui.js';
+import { PixelWorldTile } from './core/src/pixel-ui.js';
 
 const examId = 'tce-go-ti-2026';
 const preferenceKey = 'studyos-daily-minutes:' + examId;
@@ -16,17 +18,18 @@ const flashcardsRoot = document.querySelector('#flashcards-panel');
 const simulationsRoot = document.querySelector('#simulations-panel');
 const today = () => { const d = new Date(); return [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-'); };
 let storage, session, plans, masteryStore, events, gamification, pack, metadata, settings;
-let diagnosticUI, quizUI, flashcardUI;
+let diagnosticUI, quizUI, flashcardUI, libraryUI;
 document.documentElement.dataset.studyActive = 'false';
 
 function report(error) {
+  if (error?.code === 'STUDY_ACTIVE') { notice.textContent = error.message; notice.setAttribute('role', 'status'); return; }
   console.error('StudyOS operation failed', error);
   notice.textContent = 'Não foi possível concluir a operação. O progresso pode não ter sido salvo. Confira o armazenamento e tente novamente. ' + (error?.message ?? '');
   notice.setAttribute('role', 'alert');
 }
 const button = (label, handler) => action(label, handler, report);
 const guarded = handler => (...args) => Promise.resolve().then(() => handler(...args)).catch(report);
-function requirePaused() { if (document.documentElement.dataset.studyActive === 'true') throw new Error('Pause a sessão antes de importar, reiniciar ou trocar de atividade.'); }
+function requirePaused() { if (document.documentElement.dataset.studyActive === 'true') throw Object.assign(new Error('Pause a sessão antes de importar, reiniciar ou trocar de atividade.'), { code: 'STUDY_ACTIVE' }); }
 async function fetchJson(path) {
   const response = await fetch(path);
   if (!response.ok) throw new Error('Conteúdo indisponível. Tente novamente com internet.');
@@ -89,10 +92,13 @@ async function saveSettings(patch, context) {
 }
 
 async function loadPack() {
-  const [manifest, curriculum, resources, buildMetadata] = await Promise.all([
-    fetchJson('./exam-pack/manifest.json'), fetchJson('./exam-pack/curriculum.json'), fetchJson('./exam-pack/resources.json'), fetchJson('./build-meta.json')
+  let libraryError = '';
+  const [manifest, curriculum, resources, buildMetadata, library, sourceMap] = await Promise.all([
+    fetchJson('./exam-pack/manifest.json'), fetchJson('./exam-pack/curriculum.json'), fetchJson('./exam-pack/resources.json'), fetchJson('./build-meta.json'),
+    fetchJson('./exam-pack/library.json').catch(() => { libraryError = 'As unidades didáticas não puderam ser carregadas. As referências existentes continuam disponíveis; a cobertura editorial não foi confirmada.'; return null; }),
+    fetchJson('./exam-pack/source-map.json').catch(() => ({ sources: [] }))
   ]);
-  metadata = buildMetadata; pack = { manifest, curriculum, resources };
+  metadata = buildMetadata; pack = { manifest, curriculum, resources, library, sourceMap, libraryError };
   const topicTitles = new Map(flattenTopics(curriculum).map(topic => [topic.id, topic.title]));
   document.title = 'StudyOS — ' + manifest.title;
   status.textContent = manifest.title + ' · prova prevista em ' + manifest.examDate + ' · versão ' + metadata.appVersion + '.';
@@ -123,7 +129,12 @@ async function loadPack() {
     if (activity) await startActivity(activity); else { notice.textContent = 'Agenda concluída. Escolha um tópico ou simulado para estudar mais.'; document.querySelector('#subjects').scrollIntoView(); }
   }); start.id = 'start-button'; oldStart.replaceWith(start);
   // Recovery controls must survive a failure rendering existing study records.
-  await showSettings(); renderCurriculum(); await refreshPanels();
+  await showSettings();
+  libraryUI = new LibraryUI({ root: document.querySelector('#library-panel'), pack, onPractice: guarded(practiceTopic), onCards: guarded(startCards), onRetry: async () => {
+    const [library, sourceMap] = await Promise.all([fetchJson('./exam-pack/library.json'), fetchJson('./exam-pack/source-map.json')]);
+    Object.assign(pack, { library, sourceMap, libraryError: '' });
+  } });
+  libraryUI.render(); renderCurriculum(); await refreshPanels();
 }
 
 async function context(availableMinutes, withQuestions = false) {
@@ -160,10 +171,15 @@ async function renderHome() {
     requirePaused(); const topic = flattenTopics(pack.curriculum)[0];
     if (!topic) throw new Error('Não há tópicos para estudo extra.');
     await plans.addExtraActivity({ examId, date: today(), topicId: topic.id, minutes: 15 }); await renderHome();
-  }) }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes, topics: flattenTopics(pack.curriculum) });
+  }), onLibrary: openLibrary }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes, topics: flattenTopics(pack.curriculum) });
   status.dataset.todayState = 'plan-ready';
 }
-async function openSession(ui, run) { requirePaused(); await ui.open(run.id); }
+async function openSession(ui, run) {
+  requirePaused();
+  const destination = ui.root.closest('section[id]');
+  if (destination) location.hash = '#' + destination.id;
+  await ui.open(run.id);
+}
 async function startQuiz({ questions, title = 'Questões', kind = 'quiz', id, activity = null, date = null }) {
   requirePaused();
   const run = await session.start({ id, kind, questions, title, activity, date, contentVersion: metadata.examPackVersion });
@@ -189,6 +205,7 @@ async function showTheory(activity, date) {
   const reading = await session.startReading({ activity, date });
   if (reading.status === 'completed') { notice.textContent = 'Leitura já concluída.'; return; }
   document.documentElement.dataset.studyActive = 'true';
+  location.hash = '#questions';
   questionsRoot.replaceChildren(node('h2', 'Teoria / leitura'), node('p', activity.reason), node('p', 'Recursos externos precisam de internet. Ao concluir a leitura, registre a atividade abaixo.'));
   const resources = pack.resources.filter(resource => resource.id === activity.resourceId || resource.topicIds?.includes(activity.topicId));
   for (const resource of resources) questionsRoot.append(safeResourceLink(resource));
@@ -201,6 +218,7 @@ async function showTheory(activity, date) {
     document.documentElement.dataset.studyActive = 'false'; questionsRoot.replaceChildren(node('h2', 'Leitura pausada'), button('Retomar leitura', async () => { requirePaused(); await showTheory(activity, date); }));
   }));
   questionsRoot.scrollIntoView();
+  const heading = questionsRoot.querySelector('h2'); heading.tabIndex = -1; heading.focus({ preventScroll: true });
 }
 function renderCurriculum() {
   const root = document.querySelector('#subjects');
@@ -209,9 +227,19 @@ function renderCurriculum() {
     const empty = node('p', 'Nenhum currículo disponível neste pacote.', 'pixel-panel');
     root.append(empty);
   }
+  const regions = node('div', undefined, 'pixel-worlds');
+  pack.curriculum.disciplines.forEach((discipline, index) => {
+    const tile = PixelWorldTile({ title: discipline.title, description: `${discipline.modules.length} ${discipline.modules.length === 1 ? 'módulo' : 'módulos'} · explorar conteúdos`, variant: ['coast', 'forest', 'night'][index % 3], onClick: () => {
+      const destination = document.getElementById('region-' + discipline.id);
+      if (destination) { destination.open = true; destination.scrollIntoView({ block: 'start' }); destination.querySelector('summary')?.focus({ preventScroll: true }); }
+    } });
+    regions.append(tile);
+  });
+  root.append(regions);
   for (const discipline of pack.curriculum.disciplines) {
     const details = node('details', undefined, 'pixel-panel curriculum-campaign');
     const summary = node('summary', discipline.title);
+    details.id = 'region-' + discipline.id;
     details.append(summary);
     for (const module of discipline.modules) {
       const questLine = node('section', undefined, 'curriculum-quest-line');
@@ -220,17 +248,27 @@ function renderCurriculum() {
         const article = node('article', undefined, 'topic-card pixel-panel pixel-panel--compact');
         article.append(node('h4', topic.title));
         for (const resource of pack.resources.filter(item => item.topicIds?.includes(topic.id))) article.append(safeResourceLink(resource), node('p', 'Recurso externo · exige internet.'));
-        article.append(button('Praticar questões', async () => {
-          requirePaused(); const questions = (await ensureQuestions()).filter(item => item.topicIds?.includes(topic.id));
-          const existing = (await session.list()).find(run => run.kind === 'quiz' && run.title === topic.title && run.status !== 'completed');
-          if (existing) await openSession(quizUI, existing); else await startQuiz({ questions, title: topic.title });
-        }), button('Revisar flashcards', () => startCards(topic.id)));
+        const materials = node('a', 'Abrir biblioteca deste conteúdo', 'library-topic-link');
+        materials.href = '#library'; materials.addEventListener('click', event => { event.preventDefault(); openLibrary(topic.id); });
+        article.append(materials, button('Praticar questões', () => practiceTopic(topic.id)), button('Revisar flashcards', () => startCards(topic.id)));
         questLine.append(article);
       }
       details.append(questLine);
     }
     root.append(details);
   }
+}
+function openLibrary(topicId) {
+  libraryUI?.showTopic(topicId); location.hash = '#library';
+  const destination = document.querySelector('#library');
+  destination?.scrollIntoView({ block: 'start' }); destination?.focus({ preventScroll: true });
+}
+async function practiceTopic(topicId) {
+  requirePaused(); const topic = flattenTopics(pack.curriculum).find(item => item.id === topicId);
+  if (!topic) throw new Error('Conteúdo não encontrado neste pacote.');
+  const questions = (await ensureQuestions()).filter(item => item.topicIds?.includes(topic.id));
+  const existing = (await session.list()).find(run => run.kind === 'quiz' && run.title === topic.title && run.status !== 'completed');
+  if (existing) await openSession(quizUI, existing); else await startQuiz({ questions, title: topic.title });
 }
 async function startCards(topicId = null) {
   requirePaused(); const cards = (await ensureCards()).filter(card => !topicId || card.topicIds?.includes(topicId));
@@ -242,6 +280,8 @@ async function startCards(topicId = null) {
 async function renderOnboarding() {
   onboardingRoot.replaceChildren();
   const completed = (await storage.query(examId, 'diagnostic-runs')).some(run => run.status === 'completed');
+  const disclosure = onboardingRoot.closest('details');
+  if (disclosure) { disclosure.hidden = completed; disclosure.open = !settings.onboardingSkipped; }
   if (completed) return;
   onboardingRoot.append(node('h2', 'Faça seu diagnóstico inicial'), node('p', pack.manifest.title + '. Escolha sua meta diária, responda o diagnóstico e siga a agenda Hoje. Progresso mostra domínio, revisões e primeiras tentativas.'));
   const label = node('label', 'Meta diária em minutos'); const input = node('input'); input.type = 'number'; input.min = '1'; input.max = '720'; input.value = String(settings.dailyMinutes); label.append(input);
@@ -253,7 +293,9 @@ async function renderResume() {
   const root = document.querySelector('#study-resume'); root.replaceChildren();
   const runs = (await session.list()).filter(run => run.status !== 'completed');
   const readings = (await storage.query(examId, 'study-reading')).filter(run => run.status !== 'completed');
-  for (const run of runs) root.append(button('Retomar ' + run.title + ' · ' + run.status, () => openSession(run.kind === 'diagnostic' ? diagnosticUI : run.kind === 'flashcards' ? flashcardUI : quizUI, run)));
+  root.hidden = !runs.length && !readings.length;
+  if (runs.length || readings.length) root.append(node('h2', 'Continue de onde parou'));
+  for (const run of runs) root.append(button('Retomar ' + run.title + ' · ' + ({ paused: 'pausada', active: 'em andamento', 'in-progress': 'em andamento' }[run.status] ?? 'pendente'), () => openSession(run.kind === 'diagnostic' ? diagnosticUI : run.kind === 'flashcards' ? flashcardUI : quizUI, run)));
   for (const run of readings) root.append(button('Retomar leitura · ' + run.activity.topicId, async () => { requirePaused(); await showTheory(run.activity, run.date); }));
   if (!runs.length && !readings.length) root.append(node('p', 'Nenhuma sessão pendente. Comece pela agenda Hoje ou escolha um tópico.'));
 }

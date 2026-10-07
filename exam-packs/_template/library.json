@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "examId": "replace-me",
+  "status": "planned",
+  "scopeReview": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewedAt": null,
+    "evidence": ""
+  },
+  "policy": {
+    "reviewIntervalDays": 90,
+    "freePrimaryRequired": true,
+    "allowRegistration": true,
+    "preferredLanguages": [
+      "pt-BR"
+    ]
+  },
+  "pilotDisciplineIds": [],
+  "units": []
+}

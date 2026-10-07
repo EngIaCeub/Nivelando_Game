@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nivelando — estudo visual de plataforma</title><link rel="stylesheet" href="./concept.css"></head>
+<body data-biome="coast">
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="book" viewBox="0 0 24 24"><path fill="currentColor" d="M2 4h8v2h4V4h8v16h-8v2h-4v-2H2z"/><path fill="#fff8e7" d="M4 6h6v12H4zm10 0h6v12h-6z"/><path fill="#e47a53" d="M6 8h2v2H6zm10 0h2v2h-2z"/></symbol>
+<symbol id="flag" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2h2v20H4zM6 2h14v8H6z"/><path fill="#f9cd66" d="M8 4h10v4H8z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M10 2h4v6h6v4h-4v8h-4v-4H8v4H4v-8H2V8h8z"/><path fill="#f9cd66" d="M10 8h4v8h-4z"/></symbol>
+<symbol id="avatar" viewBox="0 0 32 40"><path fill="#213a40" d="M10 2h14v4h4v18h-4v6H8v-6H4V8h6zM8 30h6v8H6v-4zm12 0h6v8h-8v-4z"/><path fill="#ffd676" d="M10 6h14v18H8V10h2z"/><path fill="#fff8e7" d="M12 8h10v12H10V10h2z"/><path fill="#213a40" d="M12 12h2v4h-2zm6 0h2v4h-2z"/><path fill="#ed7f5e" d="M6 22h22v6H6zm18 6h6v4h-6z"/><path fill="#e9b95d" d="M8 28h16v4H8z"/></symbol>
+</defs></svg>
+<div class="preview-notice">ESTUDO VISUAL • DADOS ILUSTRATIVOS • SEU PROGRESSO NÃO É UTILIZADO</div>
+<a class="skip" href="#content">Pular para o conteúdo</a>
+<div class="app">
+<aside class="sidebar">
+<a class="brand" href="#today"><svg aria-hidden="true" focusable="false" class="brand-icon"><use href="#book"/></svg><span>NIVELANDO<small>STUDYOS · PLATAFORMA DE ESTUDO</small></span></a>
+<p class="nav-title">SUA JORNADA</p>
+<nav aria-label="Telas do conceito">
+<button data-screen="today" aria-current="page"><svg aria-hidden="true" focusable="false"><use href="#flag"/></svg>Hoje<span>01</span></button>
+<button data-screen="library"><svg aria-hidden="true" focusable="false"><use href="#book"/></svg>Biblioteca<span>02</span></button>
+<button data-screen="quiz"><svg aria-hidden="true" focusable="false"><use href="#star"/></svg>Questões<span>03</span></button>
+</nav>
+<div class="side-note"><span class="pixel-label">MODO DE ESTUDO</span><p>Um conteúdo.<br>Um passo de cada vez.</p><svg aria-hidden="true" focusable="false" class="mascot"><use href="#avatar"/></svg><small>Arte original de demonstração</small></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div><span class="pixel-label">DIREÇÃO VISUAL</span><strong>Expedição do conhecimento</strong></div>
+<div class="tools"><label for="biome">Cenário<select id="biome"><option value="coast">Ilhas</option><option value="forest">Bosque</option><option value="night">Observatório</option></select></label><button id="focus" aria-pressed="false">Modo foco</button></div></header>
+<main id="content" tabindex="-1">
+<section id="today" class="screen" aria-labelledby="today-title">
+<div class="hero">
+<svg class="landscape" viewBox="0 0 640 200" preserveAspectRatio="xMaxYMid slice" shape-rendering="crispEdges" aria-hidden="true">
+<rect width="640" height="200" fill="var(--sky)"/>
+<g fill="var(--cloud)"><path d="M330 24h20V14h40v10h20v12h-80zM498 58h16V48h32v10h20v12h-68zM594 20h12V8h34v28h-46z"/></g>
+<path fill="var(--sun)" d="M470 18h24v6h6v24h-6v6h-24v-6h-6V24h6z"/>
+<path fill="var(--far)" d="M280 140v-20h16v-16h20V88h32v16h16v20h20v16h48V96h16V76h20V64h36v16h20v20h16v20h16v20h16v-32h16V92h20V80h24v18h16v18h12v84H280z"/>
+<path fill="var(--middle)" d="M320 180v-24h20v-20h24v-16h40v16h20v20h20v24h20v-30h20v-20h40v20h20v14h20v16h80v20H320z"/>
+<path fill="var(--water)" d="M0 180h640v20H0z"/>
+<g fill="var(--cloud)" opacity=".5"><path d="M360 190h42v2h-42zm96-5h18v2h-18zm84 10h34v2h-34z"/></g>
+<path fill="var(--earth)" d="M432 158h82v26h-10v10h-62v-10h-10zm126-14h82v36h-10v10h-62v-10h-10z"/>
+<path fill="var(--grass)" d="M428 152h90v8h-90zm126-14h86v8h-86z"/>
+<path fill="var(--grass-light)" d="M430 152h14v4h-14zm24 0h8v4h-8zm18 0h14v4h-14zm86-14h16v4h-16zm24 0h8v4h-8z"/>
+<g fill="var(--earth-light)"><path d="M444 166h12v4h-12zm34 10h10v4h-10zm108-18h12v4h-12zm34 12h10v4h-10z"/></g>
+<g class="vegetation"><path fill="var(--earth)" d="M588 138V96h6v42z"/><path fill="var(--grass)" d="M566 92h18V80h18v12h16v16h-20v12h-16v-12h-16z"/></g>
+<use href="#avatar" x="458" y="106" width="36" height="46"/>
+<path fill="#213a40" d="M540 88h4v58h-4z"/><path fill="var(--banner)" d="M544 90h28v16h-28z"/><path fill="#fff8e7" d="M550 94h4v8h-4zm8 0h4v8h-4z"/>
+<g class="stars" fill="#fff5c9"><path d="M386 20h4v4h-4zm200 62h4v4h-4zm-24-34h4v4h-4z"/></g>
+</svg>
+<div class="hero-copy"><span class="eyebrow">UMA NOVA ETAPA, TODO DIA</span><h1 id="today-title">Hoje é dia<br>de avançar.</h1><p>Sua trilha de estudo, no seu ritmo.</p></div>
+<div class="hero-label">ILUSTRAÇÃO · CENÁRIO ORIGINAL</div>
+</div>
+<div class="hud"><div><svg aria-hidden="true" focusable="false"><use href="#star"/></svg><span><small>Experiência · exemplo</small><strong>420 XP <span>· Nível 3</span></strong></span></div><div><span><small>Estudo hoje · exemplo</small><strong>30 <span>/ 60 min</span></strong></span><progress max="60" value="30" aria-label="Tempo de estudo ilustrativo"></progress></div><div><span><small>Revisões · exemplo</small><strong>2 <span>para hoje</span></strong></span></div></div>
+<div class="dashboard-grid">
+<article class="panel next"><div class="panel-top"><span class="eyebrow">PRÓXIMO PASSO</span><span class="badge">Leitura · 20 min</span></div><h2>APIs e contratos</h2><p>Entenda os conceitos e avance para a prática.</p><div class="meta"><span>Desenvolvimento de Sistemas</span><details><summary>Por que estudar agora?</summary><p>Exemplo de justificativa do planner: assunto com revisão pendente e pouco estudo recente.</p></details></div><button class="primary" data-go="library">Abrir material <span aria-hidden="true">→</span></button></article>
+<article class="panel agenda"><span class="eyebrow">AGENDA · EXEMPLO</span><h2>Pequenos passos.<br>Progresso consistente.</h2><ol><li><span class="step">1</span><span>APIs e contratos<small>Leitura · 20 min</small></span><span class="pill">Próxima</span></li><li><span class="step">2</span><span>SQL e transações<small>Revisão · 10 min</small></span></li><li><span class="step">3</span><span>Prática de questões<small>Questões · 10 min</small></span></li></ol></article>
+</div>
+<div class="section-heading"><div><span class="eyebrow">MAPA DE CONTEÚDOS</span><h2>Explore sua trilha</h2></div><span class="subtle">Sem bloqueios artificiais</span></div>
+<div class="worlds"><button data-go="library" class="world"><span class="tile tile-green"><svg aria-hidden="true" focusable="false"><use href="#book"/></svg></span><span><strong>Desenvolvimento</strong><small>Ilhas dos fundamentos · abrir materiais</small></span><span aria-hidden="true">↗</span></button><button data-go="quiz" class="world"><span class="tile tile-gold"><svg aria-hidden="true" focusable="false"><use href="#flag"/></svg></span><span><strong>APIs e contratos</strong><small>Estação de prática · abrir questão exemplo</small></span><span aria-hidden="true">↗</span></button></div>
+</section>
+<section id="library" class="screen" hidden aria-labelledby="library-title">
+<div class="section-heading"><div><span class="eyebrow">BIBLIOTECA · ESTUDO VISUAL</span><h1 id="library-title">O material certo.<br>Para o próximo passo.</h1><p>Desenvolvimento de Sistemas / APIs e contratos</p></div><svg aria-hidden="true" focusable="false" class="large-icon"><use href="#book"/></svg></div>
+<div class="library-toolbar"><label for="search">Buscar no exemplo<input id="search" type="search" placeholder="Título ou formato do material"></label><label for="format">Formato<select id="format"><option value="all">Todos os formatos</option><option value="docs">Documentação</option><option value="video">Videoaula</option></select></label></div>
+<p class="demo-message">Cards de exemplo para avaliar a interface; a curadoria desses materiais não foi realizada.</p>
+<div class="resources">
+<article class="panel resource" data-kind="docs"><div class="cover"><svg aria-hidden="true" focusable="false"><use href="#book"/></svg><span>GUIA<br>DE ESTUDO</span></div><div class="resource-copy"><div class="panel-top"><span class="badge">Principal</span><span>Gratuito · Português</span></div><h2>Entendendo APIs e contratos</h2><p>Capítulo 2 · HTTP, recursos e respostas. Recorte de leitura apresentado como exemplo.</p><small>Documentação · revisão editorial pendente</small><button class="secondary sample-read">Ver recorte ilustrativo</button></div></article>
+<article class="panel resource" data-kind="video"><div class="cover cover-video"><span class="play" aria-hidden="true">▶</span><span>AULA<br>PRÁTICA</span></div><div class="resource-copy"><div class="panel-top"><span class="badge">Complementar</span><span>Gratuito · Exemplo</span></div><h2>Do conceito ao exemplo</h2><p>Aula 3 · trecho 08:00–18:00. A página indica o conteúdo relevante, além de apontar o curso.</p><small>Videoaula · disponibilidade não verificada</small><button class="secondary sample-read">Ver recorte ilustrativo</button></div></article>
+</div><p id="no-results" role="status" hidden>Nenhum material corresponde ao filtro.</p>
+<div class="panel reader" id="sample-reader" tabindex="-1" hidden><h2>Recorte ilustrativo</h2><p>Uma API define como sistemas trocam solicitações e respostas. Um contrato documenta o que cada operação aceita e retorna.</p><p>Este texto demonstra a superfície de leitura do conceito visual.</p><button class="primary" data-go="quiz">Experimentar questão ilustrativa →</button></div>
+</section>
+<section id="quiz" class="screen quiz-screen" hidden aria-labelledby="quiz-title">
+<div class="section-heading"><div><span class="eyebrow">PRÁTICA · DADOS ILUSTRATIVOS</span><h1 id="quiz-title">Concentre-se no conteúdo.</h1><p>Desenvolvimento de Sistemas · APIs</p></div><button class="secondary" data-go="today">Voltar ao início</button></div>
+<article class="panel question"><div class="panel-top"><span>Questão ilustrativa 1 de 1</span><span class="badge">Prática</span></div><h2>Qual é a principal função de um contrato de API?</h2><p>Escolha uma alternativa. Este exercício é apenas uma demonstração visual e não salva respostas.</p><div class="answers" role="group" aria-label="Alternativas da demonstração"><button data-answer="a"><span>A</span>Documentar as operações e os formatos aceitos.</button><button data-answer="b"><span>B</span>Garantir acesso irrestrito a qualquer recurso.</button><button data-answer="c"><span>C</span>Substituir o código executado pelo servidor.</button></div><button id="confirm" class="primary" disabled>Confirmar resposta</button><div id="feedback" role="status" hidden></div></article>
+<div class="focus-note"><svg aria-hidden="true" focusable="false"><use href="#flag"/></svg>Durante a prática, o cenário dá espaço à leitura.</div>
+</section>
+<p class="footer">CONCEITO ORIGINAL · V2 PLATAFORMA · PROTÓTIPO SEM CONEXÃO COM O APP</p>
+</main></div></div><script src="./concept.js"></script></body></html>

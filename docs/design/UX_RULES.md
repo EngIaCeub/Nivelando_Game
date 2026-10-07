@@ -62,3 +62,13 @@ During active study:
 Use compact in-app feedback.
 
 Avoid modal interruptions for routine XP or progress updates.
+
+## Platform direction V2
+
+Follow `PLATFORM_PIXEL_PLAN.md` for the current composition and rollout.
+Scenery must not push the next study action out of reach on mobile; shorten scenery
+before shortening content. Offer a focus view with reduced decoration.
+Academic names and full unit titles remain accessible; recommendation reasoning may
+use a disclosure. World navigation has an equivalent semantic list and no invented locks.
+Group navigation only after auditing hash links, focus, mounts and active sessions.
+Library coverage describes editorial work, never learner mastery or completion.

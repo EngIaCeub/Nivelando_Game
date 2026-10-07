@@ -1,0 +1,745 @@
+{
+  "examId": "tce-go-ti-2026",
+  "checkedAt": "2026-10-06T22:09:13.844Z",
+  "configured": true,
+  "status": "planned",
+  "scopeReviewed": false,
+  "isComplete": false,
+  "errors": [],
+  "warnings": [
+    "Syllabus scope not reviewed; coverage is provisional",
+    "20 legacy resources excluded from didactic coverage"
+  ],
+  "legacyResources": 20,
+  "totals": {
+    "topics": 45,
+    "units": 45,
+    "coveredUnits": 0,
+    "coveredTopics": 0,
+    "v2Resources": 0
+  },
+  "disciplines": [
+    {
+      "disciplineId": "lingua-portuguesa",
+      "title": "Língua Portuguesa",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "matematica-raciocinio-logico",
+      "title": "Matemática e Raciocínio Lógico",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "legislacao-institucional",
+      "title": "Legislação Institucional",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "engenharia-de-software",
+      "title": "Engenharia de Software",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "title": "Desenvolvimento de Sistemas",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "title": "Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "devops-plataforma-entrega",
+      "title": "DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "banco-de-dados",
+      "title": "Banco de Dados",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "title": "Inteligência Artificial, Ciência de Dados e Automação",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "seguranca-da-informacao",
+      "title": "Segurança da Informação",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "sistemas-redes-nuvem",
+      "title": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "topics": 4,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "governanca-de-ti",
+      "title": "Governança de Tecnologia da Informação",
+      "topics": 4,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "legislacao-aplicada-ti",
+      "title": "Legislação Aplicada à Tecnologia da Informação",
+      "topics": 4,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "lingua-inglesa-tecnica",
+      "title": "Língua Inglesa (Leitura Técnica)",
+      "topics": 3,
+      "coveredTopics": 0
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "lp-texto",
+      "disciplineId": "lingua-portuguesa",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "lp-morfossintaxe",
+      "disciplineId": "lingua-portuguesa",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "lp-sintaxe-redacao",
+      "disciplineId": "lingua-portuguesa",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "mrl-aritmetica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "mrl-proporcoes",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "mrl-logica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-constituicao",
+      "disciplineId": "legislacao-institucional",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-tce",
+      "disciplineId": "legislacao-institucional",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-servidor",
+      "disciplineId": "legislacao-institucional",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-ciclos",
+      "disciplineId": "engenharia-de-software",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-requisitos-arquitetura",
+      "disciplineId": "engenharia-de-software",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-modelagem-qualidade",
+      "disciplineId": "engenharia-de-software",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devsistemas-fundamentos",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devsistemas-linguagens-web",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devsistemas-apis-identidade",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-llm",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-contexto",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devops-cicd",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devops-iac-observabilidade",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "devops-git-containers",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "bd-modelagem",
+      "disciplineId": "banco-de-dados",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "bd-sql",
+      "disciplineId": "banco-de-dados",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "bd-tecnologias-operacao",
+      "disciplineId": "banco-de-dados",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-ml",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-generativa",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-rag-etica",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-principios",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-cripto-identidade",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "sistemas-os-shell",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "sistemas-diretorios",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "redes-protocolos",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "nuvem-arquitetura",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-alinhamento",
+      "disciplineId": "governanca-de-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-servicos",
+      "disciplineId": "governanca-de-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-modelos",
+      "disciplineId": "governanca-de-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-publica",
+      "disciplineId": "governanca-de-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "legti-lgpd",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "legti-marco-civil",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "legti-normas-tce",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "legti-pdti",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ingles-compreensao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ingles-estrategias",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ingles-documentacao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    }
+  ],
+  "units": [
+    {
+      "unitId": "lp-texto-study",
+      "topicId": "lp-texto",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "lp-morfossintaxe-study",
+      "topicId": "lp-morfossintaxe",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-study",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "mrl-aritmetica-study",
+      "topicId": "mrl-aritmetica",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "mrl-proporcoes-study",
+      "topicId": "mrl-proporcoes",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "mrl-logica-study",
+      "topicId": "mrl-logica",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "leginst-constituicao-study",
+      "topicId": "leginst-constituicao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "leginst-tce-study",
+      "topicId": "leginst-tce",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "leginst-servidor-study",
+      "topicId": "leginst-servidor",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-study",
+      "topicId": "engsoft-ciclos",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-study",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-study",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devsistemas-fundamentos-study",
+      "topicId": "devsistemas-fundamentos",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-study",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-study",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-agentivos-llm-study",
+      "topicId": "ia-agentivos-llm",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-agentivos-contexto-study",
+      "topicId": "ia-agentivos-contexto",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-study",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devops-cicd-study",
+      "topicId": "devops-cicd",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-study",
+      "topicId": "devops-iac-observabilidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "devops-git-containers-study",
+      "topicId": "devops-git-containers",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "bd-modelagem-study",
+      "topicId": "bd-modelagem",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "bd-sql-study",
+      "topicId": "bd-sql",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-study",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-study",
+      "topicId": "ia-dados-ml",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-study",
+      "topicId": "ia-dados-generativa",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-study",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "seguranca-principios-study",
+      "topicId": "seguranca-principios",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "seguranca-cripto-identidade-study",
+      "topicId": "seguranca-cripto-identidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-study",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "sistemas-os-shell-study",
+      "topicId": "sistemas-os-shell",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "sistemas-diretorios-study",
+      "topicId": "sistemas-diretorios",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "redes-protocolos-study",
+      "topicId": "redes-protocolos",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "nuvem-arquitetura-study",
+      "topicId": "nuvem-arquitetura",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "governanca-alinhamento-study",
+      "topicId": "governanca-alinhamento",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "governanca-servicos-study",
+      "topicId": "governanca-servicos",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "governanca-modelos-study",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "governanca-publica-study",
+      "topicId": "governanca-publica",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "legti-lgpd-study",
+      "topicId": "legti-lgpd",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "legti-marco-civil-study",
+      "topicId": "legti-marco-civil",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "legti-normas-tce-study",
+      "topicId": "legti-normas-tce",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "legti-pdti-study",
+      "topicId": "legti-pdti",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ingles-compreensao-study",
+      "topicId": "ingles-compreensao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ingles-estrategias-study",
+      "topicId": "ingles-estrategias",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "ingles-documentacao-study",
+      "topicId": "ingles-documentacao",
+      "covered": false,
+      "primaryResourceIds": []
+    }
+  ],
+  "resourceResults": [],
+  "missingUnitTopics": [],
+  "uncoveredUnitIds": [
+    "lp-texto-study",
+    "lp-morfossintaxe-study",
+    "lp-sintaxe-redacao-study",
+    "mrl-aritmetica-study",
+    "mrl-proporcoes-study",
+    "mrl-logica-study",
+    "leginst-constituicao-study",
+    "leginst-tce-study",
+    "leginst-servidor-study",
+    "engsoft-ciclos-study",
+    "engsoft-requisitos-arquitetura-study",
+    "engsoft-modelagem-qualidade-study",
+    "devsistemas-fundamentos-study",
+    "devsistemas-linguagens-web-study",
+    "devsistemas-apis-identidade-study",
+    "ia-agentivos-llm-study",
+    "ia-agentivos-contexto-study",
+    "ia-agentivos-ciclo-mcp-study",
+    "devops-cicd-study",
+    "devops-iac-observabilidade-study",
+    "devops-git-containers-study",
+    "bd-modelagem-study",
+    "bd-sql-study",
+    "bd-tecnologias-operacao-study",
+    "ia-dados-ml-study",
+    "ia-dados-generativa-study",
+    "ia-dados-rag-etica-study",
+    "seguranca-principios-study",
+    "seguranca-cripto-identidade-study",
+    "seguranca-aplicacoes-continuidade-study",
+    "sistemas-os-shell-study",
+    "sistemas-diretorios-study",
+    "redes-protocolos-study",
+    "nuvem-arquitetura-study",
+    "governanca-alinhamento-study",
+    "governanca-servicos-study",
+    "governanca-modelos-study",
+    "governanca-publica-study",
+    "legti-lgpd-study",
+    "legti-marco-civil-study",
+    "legti-normas-tce-study",
+    "legti-pdti-study",
+    "ingles-compreensao-study",
+    "ingles-estrategias-study",
+    "ingles-documentacao-study"
+  ]
+}

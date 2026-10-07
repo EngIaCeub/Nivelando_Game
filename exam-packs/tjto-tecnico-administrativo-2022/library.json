@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "examId": "tjto-tecnico-administrativo-2022",
+  "status": "planned",
+  "scopeReview": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewedAt": null,
+    "evidence": ""
+  },
+  "policy": {
+    "reviewIntervalDays": 90,
+    "freePrimaryRequired": true,
+    "allowRegistration": true,
+    "preferredLanguages": [
+      "pt-BR"
+    ]
+  },
+  "pilotDisciplineIds": [],
+  "units": [
+    {
+      "id": "tjto-port-compreensao-study",
+      "topicId": "tjto-port-compreensao",
+      "title": "Compreensão e interpretação de textos",
+      "learningObjectives": [
+        "Compreender e aplicar: Compreensão e interpretação de textos"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-port-sintaxe-study",
+      "topicId": "tjto-port-sintaxe",
+      "title": "Sintaxe, morfologia e pontuação",
+      "learningObjectives": [
+        "Compreender e aplicar: Sintaxe, morfologia e pontuação"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-legis-constituicao-study",
+      "topicId": "tjto-legis-constituicao",
+      "title": "Constituição do Estado",
+      "learningObjectives": [
+        "Compreender e aplicar: Constituição do Estado"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-legis-regime-study",
+      "topicId": "tjto-legis-regime",
+      "title": "Regime jurídico e ética dos servidores",
+      "learningObjectives": [
+        "Compreender e aplicar: Regime jurídico e ética dos servidores"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-adm-processo-study",
+      "topicId": "tjto-adm-processo",
+      "title": "Processo administrativo e funções da administração",
+      "learningObjectives": [
+        "Compreender e aplicar: Processo administrativo e funções da administração"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-adm-qualidade-study",
+      "topicId": "tjto-adm-qualidade",
+      "title": "Gestão da qualidade e PDCA",
+      "learningObjectives": [
+        "Compreender e aplicar: Gestão da qualidade e PDCA"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-adm-materiais-study",
+      "topicId": "tjto-adm-materiais",
+      "title": "Administração de materiais e curva ABC",
+      "learningObjectives": [
+        "Compreender e aplicar: Administração de materiais e curva ABC"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-direito-constitucional-study",
+      "topicId": "tjto-direito-constitucional",
+      "title": "Direito Constitucional e Poder Judiciário",
+      "learningObjectives": [
+        "Compreender e aplicar: Direito Constitucional e Poder Judiciário"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-direito-administrativo-study",
+      "topicId": "tjto-direito-administrativo",
+      "title": "Direito Administrativo, atos e licitações",
+      "learningObjectives": [
+        "Compreender e aplicar: Direito Administrativo, atos e licitações"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-direito-civil-study",
+      "topicId": "tjto-direito-civil",
+      "title": "Noções de Direito Civil",
+      "learningObjectives": [
+        "Compreender e aplicar: Noções de Direito Civil"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-direito-processual-study",
+      "topicId": "tjto-direito-processual",
+      "title": "Processo Civil e atos processuais",
+      "learningObjectives": [
+        "Compreender e aplicar: Processo Civil e atos processuais"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-direito-penal-study",
+      "topicId": "tjto-direito-penal",
+      "title": "Direito Penal e Processo Penal",
+      "learningObjectives": [
+        "Compreender e aplicar: Direito Penal e Processo Penal"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "tjto-redacao-estrutura-study",
+      "topicId": "tjto-redacao-estrutura",
+      "title": "Abordagem, progressão textual e correção gramatical",
+      "learningObjectives": [
+        "Compreender e aplicar: Abordagem, progressão textual e correção gramatical"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    }
+  ]
+}

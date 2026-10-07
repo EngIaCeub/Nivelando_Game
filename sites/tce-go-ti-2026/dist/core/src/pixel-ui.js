@@ -67,3 +67,42 @@ export function PixelStat({ label, value, className = '' } = {}) {
   stat.append(element('span', 'pixel-stat__value', value), element('span', 'pixel-stat__label', label));
   return stat;
 }
+
+const iconPaths = Object.freeze({
+  book: 'M2 4h8v2h4V4h8v16h-8v2h-4v-2H2zM4 6v12h6V6zm10 0v12h6V6z',
+  flag: 'M4 2h2v20H4zM6 2h14v8H6zM8 4v4h10V4z',
+  practice: 'M4 2h16v20H4zM6 4v16h12V4zM8 6h8v2H8zm0 4h8v2H8zm0 4h4v2H8z',
+  review: 'M6 4h12v2h2v12h-2v2H6v-2H4v-8H2V6h8v4H6v6h2v2h8v-2h2V8h-2V6H6z',
+  progress: 'M2 20h20v2H2zM4 14h4v4H4zm6-6h4v10h-4zm6-6h4v16h-4z',
+  settings: 'M10 2h4v4h4V4h4v6h-4v4h4v6h-4v-2h-4v4h-4v-4H6v2H2v-6h4v-4H2V4h4v2h4zM10 10v4h4v-4z'
+});
+
+export function PixelIcon(name = 'book') {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24'); svg.setAttribute('class', 'pixel-icon');
+  svg.setAttribute('aria-hidden', 'true'); svg.setAttribute('focusable', 'false');
+  const path = document.createElementNS(svg.namespaceURI, 'path');
+  path.setAttribute('d', iconPaths[name] ?? iconPaths.book); path.setAttribute('fill', 'currentColor');
+  path.setAttribute('fill-rule', 'evenodd'); svg.append(path); return svg;
+}
+
+const sceneAssets = Object.freeze({
+  coast: new URL('../assets/pixel/islands.svg', import.meta.url).href,
+  forest: new URL('../assets/pixel/forest.svg', import.meta.url).href,
+  night: new URL('../assets/pixel/observatory.svg', import.meta.url).href
+});
+export function PixelScene(variant = 'coast') {
+  const image = element('img', 'pixel-scene');
+  image.src = sceneAssets[variant] ?? sceneAssets.coast;
+  image.alt = ''; image.width = 640; image.height = 200;
+  image.setAttribute('aria-hidden', 'true'); return image;
+}
+
+export function PixelWorldTile({ title, description, onClick, variant = 'coast' }) {
+  const tile = PixelButton({ label: '', variant: 'secondary', onClick });
+  tile.className = 'pixel-world';
+  const image = PixelScene(variant); image.loading = 'lazy';
+  const copy = element('span', 'pixel-world__copy');
+  copy.append(element('strong', '', title), element('small', '', description));
+  tile.append(image, copy); return tile;
+}

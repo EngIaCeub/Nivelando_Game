@@ -123,4 +123,29 @@ Não invente nem invoque identificadores de modelos indisponíveis. Consulte `do
 
 ### QA visual
 
+Para evolução da direção plataforma de 16 bits, leia `docs/design/PLATFORM_PIXEL_PLAN.md`.
+O conceito isolado em `docs/design/platform-concept/` contém dados ilustrativos e não
+constitui implementação de produção. Siga V0–V6; reutilize tokens/primitives existentes,
+produza assets originais e priorize a ação de estudo no celular. Agrupamento de navegação
+é COMPLEX por envolver hashes, foco e sessões. Biblioteca visual depende de B5.
+
+A integração local da direção plataforma está em `core/src/platform-shell.js`,
+`core/src/library-catalog.js` e `core/src/library-ui.js`; evidências e limites estão em
+`docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`. Catálogo e CLI compartilham
+`core/src/library-coverage.js`: manter a mesma política de cobertura e URL segura.
+Não confundir implementação local com gates V6/B6 aprovados ou publicação realizada.
+
 Para alterações visuais relevantes, inspecione a renderização em desktop e viewport estreito, navegação/foco por teclado, estados loading/empty/error/disabled/locked/completed e reduced-motion quando aplicável. Não declare inspeção visual sem executá-la.
+
+## Biblioteca didática por conteúdo
+
+- Leia `contracts/DIDACTIC_LIBRARY.md`, `docs/DIDACTIC_LIBRARY_PLAN.md` e a ADR 004.
+- Em curadoria, aplique `skills/resource-curation/SKILL.md`; arquiteturas de biblioteca são COMPLEX.
+- Biblioteca fica no Exam Pack: `library.json`, recursos v2 e candidatos não publicados.
+- Refine unidades mantendo topicIds estáveis; revisão do escopo cobre todos os itens do edital.
+- Um link verificado não demonstra cobertura pedagógica; exigir recorte e revisão editorial.
+- Acesso gratuito e licença de reprodução são campos distintos; licença desconhecida só permite link.
+- Legado válido não recebe cobertura v2 presumida. Status partial/planned expõe lacunas.
+- Declare complete somente após auditoria integral e parecer independente conforme runbook.
+- Cobertura da biblioteca não equivale a progresso, mastery, XP ou score do aluno.
+- Mudanças runtime seguem os milestones B2–B7; catalogue offline e conteúdo externo exigem tratamento próprio.

@@ -1,0 +1,243 @@
+{
+  "examId": "tjto-tecnico-administrativo-2022",
+  "checkedAt": "2026-10-06T22:09:13.914Z",
+  "configured": true,
+  "status": "planned",
+  "scopeReviewed": false,
+  "isComplete": false,
+  "errors": [],
+  "warnings": [
+    "Syllabus scope not reviewed; coverage is provisional",
+    "2 legacy resources excluded from didactic coverage"
+  ],
+  "legacyResources": 2,
+  "totals": {
+    "topics": 13,
+    "units": 13,
+    "coveredUnits": 0,
+    "coveredTopics": 0,
+    "v2Resources": 0
+  },
+  "disciplines": [
+    {
+      "disciplineId": "tjto-lingua-portuguesa",
+      "title": "Língua Portuguesa",
+      "topics": 2,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "tjto-legislacao-especifica",
+      "title": "Legislação Específica",
+      "topics": 2,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "tjto-administracao",
+      "title": "Noções de Administração",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "tjto-direito",
+      "title": "Noções de Direito",
+      "topics": 5,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "tjto-redacao",
+      "title": "Redação",
+      "topics": 1,
+      "coveredTopics": 0
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "tjto-port-compreensao",
+      "disciplineId": "tjto-lingua-portuguesa",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-port-sintaxe",
+      "disciplineId": "tjto-lingua-portuguesa",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-legis-constituicao",
+      "disciplineId": "tjto-legislacao-especifica",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-legis-regime",
+      "disciplineId": "tjto-legislacao-especifica",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-adm-processo",
+      "disciplineId": "tjto-administracao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-adm-qualidade",
+      "disciplineId": "tjto-administracao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-adm-materiais",
+      "disciplineId": "tjto-administracao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-direito-constitucional",
+      "disciplineId": "tjto-direito",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-direito-administrativo",
+      "disciplineId": "tjto-direito",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-direito-civil",
+      "disciplineId": "tjto-direito",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-direito-processual",
+      "disciplineId": "tjto-direito",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-direito-penal",
+      "disciplineId": "tjto-direito",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "tjto-redacao-estrutura",
+      "disciplineId": "tjto-redacao",
+      "units": 1,
+      "coveredUnits": 0,
+      "covered": false
+    }
+  ],
+  "units": [
+    {
+      "unitId": "tjto-port-compreensao-study",
+      "topicId": "tjto-port-compreensao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-port-sintaxe-study",
+      "topicId": "tjto-port-sintaxe",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-legis-constituicao-study",
+      "topicId": "tjto-legis-constituicao",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-legis-regime-study",
+      "topicId": "tjto-legis-regime",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-adm-processo-study",
+      "topicId": "tjto-adm-processo",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-adm-qualidade-study",
+      "topicId": "tjto-adm-qualidade",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-adm-materiais-study",
+      "topicId": "tjto-adm-materiais",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-direito-constitucional-study",
+      "topicId": "tjto-direito-constitucional",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-direito-administrativo-study",
+      "topicId": "tjto-direito-administrativo",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-direito-civil-study",
+      "topicId": "tjto-direito-civil",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-direito-processual-study",
+      "topicId": "tjto-direito-processual",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-direito-penal-study",
+      "topicId": "tjto-direito-penal",
+      "covered": false,
+      "primaryResourceIds": []
+    },
+    {
+      "unitId": "tjto-redacao-estrutura-study",
+      "topicId": "tjto-redacao-estrutura",
+      "covered": false,
+      "primaryResourceIds": []
+    }
+  ],
+  "resourceResults": [],
+  "missingUnitTopics": [],
+  "uncoveredUnitIds": [
+    "tjto-port-compreensao-study",
+    "tjto-port-sintaxe-study",
+    "tjto-legis-constituicao-study",
+    "tjto-legis-regime-study",
+    "tjto-adm-processo-study",
+    "tjto-adm-qualidade-study",
+    "tjto-adm-materiais-study",
+    "tjto-direito-constitucional-study",
+    "tjto-direito-administrativo-study",
+    "tjto-direito-civil-study",
+    "tjto-direito-processual-study",
+    "tjto-direito-penal-study",
+    "tjto-redacao-estrutura-study"
+  ]
+}

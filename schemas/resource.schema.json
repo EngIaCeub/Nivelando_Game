@@ -56,6 +56,290 @@
         "string",
         "null"
       ]
+    },
+    "libraryVersion": {
+      "const": 2
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "libraryVersion"
+        ]
+      },
+      "then": {
+        "required": [
+          "provider",
+          "authors",
+          "language",
+          "difficulty",
+          "estimatedMinutes",
+          "status",
+          "access",
+          "rights",
+          "verification",
+          "editorialReview",
+          "coverage",
+          "provenance"
+        ],
+        "properties": {
+          "libraryVersion": {
+            "const": 2
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "language": {
+            "type": "string",
+            "minLength": 1
+          },
+          "difficulty": {
+            "enum": [
+              "beginner",
+              "intermediate",
+              "advanced"
+            ]
+          },
+          "estimatedMinutes": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "active",
+              "archived",
+              "broken"
+            ]
+          },
+          "access": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "enum": [
+                  "free",
+                  "registration",
+                  "paid",
+                  "mixed"
+                ]
+              },
+              "requiresRegistration": {
+                "type": "boolean"
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "mode",
+              "requiresRegistration",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "rights": {
+            "type": "object",
+            "properties": {
+              "license": {
+                "type": "string",
+                "minLength": 1
+              },
+              "delivery": {
+                "const": "link",
+                "description": "B1 supports external references. Embed/bundle and local verification require B5 implementation."
+              },
+              "evidenceUrl": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "format": "uri",
+                    "pattern": "^https?://"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "license",
+              "delivery",
+              "evidenceUrl"
+            ],
+            "additionalProperties": false
+          },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "enum": [
+                  "reachable",
+                  "blocked",
+                  "broken",
+                  "unknown"
+                ]
+              },
+              "checkedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "finalUrl": {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri",
+                "pattern": "^https?://"
+              },
+              "method": {
+                "enum": [
+                  "HEAD",
+                  "GET",
+                  "browser"
+                ]
+              }
+            },
+            "required": [
+              "result",
+              "checkedAt",
+              "finalUrl",
+              "method"
+            ],
+            "additionalProperties": false
+          },
+          "editorialReview": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": [
+                  "pending",
+                  "approved",
+                  "rejected"
+                ]
+              },
+              "reviewer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reviewedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "status",
+              "reviewer",
+              "reviewedAt",
+              "evidence"
+            ],
+            "additionalProperties": false
+          },
+          "coverage": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "role": {
+                  "enum": [
+                    "primary",
+                    "reference",
+                    "video",
+                    "complementary"
+                  ]
+                },
+                "extent": {
+                  "enum": [
+                    "full",
+                    "partial"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "unitId",
+                "role",
+                "extent",
+                "locator"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "required": [
+              "sourceType",
+              "title",
+              "url",
+              "retrievedAt",
+              "locator"
+            ],
+            "properties": {
+              "sourceType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri",
+                "pattern": "^https?://"
+              },
+              "retrievedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "versionNotes": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    }
+  ]
 }

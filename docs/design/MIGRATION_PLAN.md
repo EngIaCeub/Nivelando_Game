@@ -1,5 +1,16 @@
 # Pixel UI Migration Plan
 
+## Current baseline and platform V2
+
+The initial Pixel UI migration below is the historical rollout, already published
+on 2026-10-06. It is not a fresh TODO list. The next rollout is defined in
+`PLATFORM_PIXEL_PLAN.md`: V0 concept, V1 shared foundation/assets, V2 Today pilot,
+V3 navigation, V4 library, V5 study views and V6 release validation.
+
+Keep each stage reviewable. Navigation is a separate COMPLEX change. Library UI
+depends on B5 of the didactic-library plan and must expose planned/partial coverage.
+The concept is isolated and does not approve production release.
+
 ## Phase 0 — Audit
 
 Goal:

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#16324f">
+    <meta name="theme-color" content="#203640">
     <meta name="description" content="Motor de estudo gamificado baseado em Exam Packs">
     <link rel="manifest" href="./manifest.webmanifest">
     <link rel="icon" href="./icon.svg" type="image/svg+xml">
@@ -17,30 +17,40 @@
       <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav" aria-label="Navegação principal">
         <a href="#today">Hoje</a>
+        <details class="nav-group"><summary>Conteúdos</summary><div>
+          <a href="#subjects">Matérias</a><a href="#library">Biblioteca</a>
+        </div></details>
+        <details class="nav-group"><summary>Prática</summary><div>
+          <a href="#questions">Questões</a><a href="#reviews">Revisões</a>
+          <a href="#flashcards">Flashcards</a><a href="#diagnostic">Diagnóstico</a>
+          <a href="#simulations">Simulados</a>
+        </div></details>
         <a href="#plan">Plano</a>
-        <a href="#subjects">Matérias</a>
-        <a href="#questions">Questões</a>
-        <a href="#diagnostic">Diagnóstico</a>
-        <a href="#flashcards">Flashcards</a>
-        <a href="#simulations">Simulados</a>
-        <a href="#reviews">Revisões</a>
         <a href="#progress">Progresso</a>
         <a href="#settings">Configurações</a>
       </nav>
     </header>
     <main id="main-content" tabindex="-1">
       <section id="today" class="hero" aria-labelledby="page-title">
+        <div class="platform-hero">
+        <div class="platform-hero__copy">
         <p class="eyebrow">Trilha de estudo</p>
-        <h1 id="page-title">Seu estudo de hoje</h1>
+        <h1 id="page-title">Seu próximo passo</h1>
         <p id="pack-status">Carregue um Exam Pack para começar.</p>
-        <button id="start-button" type="button">Começar sessão</button>
-        <div id="study-onboarding"></div>
+        </div><div id="platform-scene" aria-hidden="true"></div></div>
+        <div class="platform-tools"><label>Cenário <select id="scene-select"><option value="coast">Ilhas</option><option value="forest">Bosque</option><option value="night">Observatório</option></select></label><button id="focus-toggle" type="button" aria-pressed="false">Modo foco</button></div>
         <div id="study-resume" aria-label="Sessões pendentes"></div>
+        <div id="today-dashboard" aria-live="polite"><p role="status">Preparando sua agenda…</p></div>
+        <details class="onboarding-disclosure" open><summary>Diagnóstico e meta diária</summary><div id="study-onboarding"></div></details>
       </section>
       <section id="plan" class="card" aria-labelledby="plan-title">
         <h2 id="plan-title">Plano</h2>
-        <p>O plano será calculado a partir do Exam Pack ativo.</p>
-        <div id="today-dashboard" aria-live="polite"></div>
+        <p>Ajuste os minutos disponíveis e acompanhe a agenda na tela Hoje.</p>
+        <button id="start-button" type="button">Começar sessão</button>
+      </section>
+      <section id="library" class="card" aria-labelledby="library-title">
+        <h2 id="library-title">Biblioteca de conteúdos</h2>
+        <div id="library-panel"><p role="status">Carregando o catálogo…</p></div>
       </section>
       <section id="subjects" class="card" aria-labelledby="subjects-title">
         <h2 id="subjects-title">Matérias</h2>
@@ -68,7 +78,8 @@
     <div id="update-banner" class="update-banner" role="status" hidden></div>
       <output id="session-status" class="status" role="status" aria-live="polite"></output>
     </main>
+    <script type="module" src="./core/src/platform-shell.js"></script>
     <script type="module" src="./app.js"></script>
-      <script type="module" src="./site-app.js?v=local-20261006211716595"></script>
+      <script type="module" src="./site-app.js?v=local-20261007000927441"></script>
   </body>
 </html>

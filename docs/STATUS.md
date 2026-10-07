@@ -580,3 +580,65 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
 - Site: https://engiaceub.github.io/Nivelando_Game/.
 - Smoke remoto com `--expected-commit a90dd8200f203d67c3ba169a36b0c4d81ad47026`: **21/21**, incluindo metadata/SHA, score/XP e retakes, flashcards, backup/import/restore, offline, console/HTTP/telemetria, teclado e layouts 375/390/430/1280. Evidência: `docs/PIXEL_UI_BROWSER_EVIDENCE_REMOTE.json`.
 - GitHub Pages serviu o SHA esperado. Nenhuma tag foi criada.
+
+## Biblioteca didática — B1 arquitetura — 2026-10-06
+
+- Contrato DIDACTIC_LIBRARY, ADR 004, plano B1–B7, schemas aditivos, papéis, skill e
+  prompts incorporados. Relatório: docs/DIDACTIC_LIBRARY_ARCHITECTURE_REPORT.md.
+- Packs reais/template têm library.json planned e escopo pending; IDs existentes
+  preservados. Recursos legados não são considerados curadoria v2 automaticamente.
+- Auditoria reproduzível por unidade e candidato; completude bloqueada com lacunas.
+- QA/Architect independente GPT-6.1 Sol/high: B1 aprovado sem blockers. Milestones
+  B2–B7 permanecem pendentes; biblioteca completa e UI ainda não foram entregues.
+- Checkout publicado: suite final 186/186, schemas 3/3, security scan 347 arquivos.
+  Cópia anterior: suite 47/47 e schema final 3/3 conferido via validador compartilhado.
+- Baselines de cobertura: DIDACTIC_LIBRARY_BASELINE_TCE_GO/SECOND_PACK.json. Zero
+  cobertura v2 indica revisão pendente, não ausência de links existentes.
+
+## Pixel plataforma — planejamento V0 — 2026-10-06
+
+- UI/UX atual revisada com pesquisa de referências oficiais Nintendo/SEGA e MDN/W3C.
+- Direção Expedição do conhecimento, original e inspirada em plataformas de 16 bits,
+  registrada em docs/design/PLATFORM_PIXEL_PLAN.md; fases V0–V6, assets e aceite.
+- Sistema visual, regras UX, componentes, migration plan, AGENTS, Frontend, skill e
+  prompt 52 conectados ao plano. Conceito isolado Hoje/Biblioteca/Questões com dados
+  ilustrativos; nenhum acesso ao progresso nem mudança no runtime de produção.
+- Render inspecionado em 1280×900, 390×844, 375×667 e reflow 640×450; busca/filtros,
+  navegação, teclado/skip/disclosure, modo foco, paletas e bloqueio da resposta conferidos.
+- Revisão independente GPT-6.1 Sol/high aprovou planejamento e composição V0;
+  ajustes de rótulo, aria-hidden e autoria documentados. Evidências e limites:
+  docs/design/PLATFORM_CONCEPT_REVIEW.md. Sintaxe JS/servidor e diff check passaram.
+- V1–V6 pendentes; zoom real, QA completo de acessibilidade, regressão, offline,
+  restore e segundo pack pertencem à implementação/release. Nova direção não publicada.
+
+## Pixel plataforma — implementação local V1–V5/B5 — 2026-10-06
+
+- Runtime standalone integrado: tokens, ícones/cenários originais, Hoje reorganizado,
+  modo foco, grupos de navegação nativos, regiões curriculares e Biblioteca por tópico.
+- Consulta/coverage genéricas no Core; dados de edital continuam nos packs. Biblioteca
+  mostra 20 referências legadas e 0/45 unidades TCE-GO com principal revisado; não
+  declara completude nem converte cobertura editorial em progresso.
+- Build, sintaxe e validação schema/factory de três packs concluídos. Auditorias TCE-GO
+  e TJTO sem erros estruturais, ambas planned/pending. Assets: 2.686 bytes gzip somados.
+- Render CUA desktop/celular/reflow, filtros/vazio, teclado/Escape, hash/history e
+  sessão isolada pausa/reload/retomada inspecionados. Engines/storage não alterados.
+- Revisão independente encontrou quatro P2 e depois dois problemas de entrada/build; todos
+  foram corrigidos. Parecer final e workflow remoto ainda pendentes.
+- `pnpm test` tentou executar a suíte completa e falhou no sandbox Windows/Edge ao abrir
+  perfis temporários IndexedDB (ENOENT), além de detectar falhas de build depois corrigidas.
+  Direcionados: PWA/Biblioteca 18/18, produção 3/3, staging 3/3; validação de conteúdo
+  3/3 packs; scanner 377 arquivos aprovado. CI e smoke remoto do SHA esperado pendentes.
+- Aceite V1–V5/B5 e release V6 não aprovados. Nenhum commit, push ou publicação ocorreu.
+  B2–B4/B6/B7 seguem pendentes. Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.
+- B2–B4/B6/B7 da biblioteca permanecem pendentes; a interface já expõe as lacunas reais.
+
+### Publicação Pixel plataforma + Biblioteca — release candidato
+
+- Revisão independente final: favorável à integração local, sem bloqueios de código; release
+  depende da suíte integral e do smoke remoto no SHA candidato.
+- Verificações direcionadas: PWA/Biblioteca 18/18; validação de conteúdo 3 packs; scanner
+  375 arquivos. A suíte Windows completa não passou por limitações de IndexedDB/Edge no
+  sandbox; o workflow Pages é o gate completo.
+- Catálogo continua planned/pending (TCE-GO 0/45 unidades revisadas); a interface mostra
+  explicitamente as lacunas e candidatos não entram no build público.
+- Commit/push e deploy desta integração ainda pendentes. Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.

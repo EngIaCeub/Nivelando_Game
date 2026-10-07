@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "examId": "tce-go-ti-2026",
+  "status": "planned",
+  "scopeReview": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewedAt": null,
+    "evidence": ""
+  },
+  "policy": {
+    "reviewIntervalDays": 90,
+    "freePrimaryRequired": true,
+    "allowRegistration": true,
+    "preferredLanguages": [
+      "pt-BR"
+    ]
+  },
+  "pilotDisciplineIds": [
+    "lingua-portuguesa",
+    "desenvolvimento-de-sistemas"
+  ],
+  "units": [
+    {
+      "id": "lp-texto-study",
+      "topicId": "lp-texto",
+      "title": "Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade",
+      "learningObjectives": [
+        "Compreender e aplicar: Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "lp-morfossintaxe-study",
+      "topicId": "lp-morfossintaxe",
+      "title": "Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem",
+      "learningObjectives": [
+        "Compreender e aplicar: Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "lp-sintaxe-redacao-study",
+      "topicId": "lp-sintaxe-redacao",
+      "title": "Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural",
+      "learningObjectives": [
+        "Compreender e aplicar: Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "mrl-aritmetica-study",
+      "topicId": "mrl-aritmetica",
+      "title": "Números, operações, expressões, múltiplos, divisores, frações e problemas",
+      "learningObjectives": [
+        "Compreender e aplicar: Números, operações, expressões, múltiplos, divisores, frações e problemas"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "mrl-proporcoes-study",
+      "topicId": "mrl-proporcoes",
+      "title": "Razões, proporções, regra de três, porcentagens, acréscimos e descontos",
+      "learningObjectives": [
+        "Compreender e aplicar: Razões, proporções, regra de três, porcentagens, acréscimos e descontos"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "mrl-logica-study",
+      "topicId": "mrl-logica",
+      "title": "Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo",
+      "learningObjectives": [
+        "Compreender e aplicar: Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "leginst-constituicao-study",
+      "topicId": "leginst-constituicao",
+      "title": "Constituição Federal, Administração Pública, fiscalização, controle interno e externo",
+      "learningObjectives": [
+        "Compreender e aplicar: Constituição Federal, Administração Pública, fiscalização, controle interno e externo"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "leginst-tce-study",
+      "topicId": "leginst-tce",
+      "title": "Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal",
+      "learningObjectives": [
+        "Compreender e aplicar: Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "leginst-servidor-study",
+      "topicId": "leginst-servidor",
+      "title": "Plano de cargos, regime jurídico, ética e políticas institucionais",
+      "learningObjectives": [
+        "Compreender e aplicar: Plano de cargos, regime jurídico, ética e políticas institucionais"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "engsoft-ciclos-study",
+      "topicId": "engsoft-ciclos",
+      "title": "Ciclos de vida, Scrum, Kanban, Lean e XP",
+      "learningObjectives": [
+        "Compreender e aplicar: Ciclos de vida, Scrum, Kanban, Lean e XP"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "engsoft-requisitos-arquitetura-study",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "title": "Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI",
+      "learningObjectives": [
+        "Compreender e aplicar: Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "engsoft-modelagem-qualidade-study",
+      "topicId": "engsoft-modelagem-qualidade",
+      "title": "UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica",
+      "learningObjectives": [
+        "Compreender e aplicar: UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devsistemas-fundamentos-study",
+      "topicId": "devsistemas-fundamentos",
+      "title": "Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional",
+      "learningObjectives": [
+        "Compreender e aplicar: Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devsistemas-linguagens-web-study",
+      "topicId": "devsistemas-linguagens-web",
+      "title": "Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript",
+      "learningObjectives": [
+        "Compreender e aplicar: Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devsistemas-apis-identidade-study",
+      "topicId": "devsistemas-apis-identidade",
+      "title": "APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação",
+      "learningObjectives": [
+        "Compreender e aplicar: APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-agentivos-llm-study",
+      "topicId": "ia-agentivos-llm",
+      "title": "IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção",
+      "learningObjectives": [
+        "Compreender e aplicar: IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-agentivos-contexto-study",
+      "topicId": "ia-agentivos-contexto",
+      "title": "Engenharia de contexto e prompts no desenvolvimento de software",
+      "learningObjectives": [
+        "Compreender e aplicar: Engenharia de contexto e prompts no desenvolvimento de software"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-agentivos-ciclo-mcp-study",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "title": "Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual",
+      "learningObjectives": [
+        "Compreender e aplicar: Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devops-cicd-study",
+      "topicId": "devops-cicd",
+      "title": "CI/CD, pipelines de desenvolvimento, automação de build e testes",
+      "learningObjectives": [
+        "Compreender e aplicar: CI/CD, pipelines de desenvolvimento, automação de build e testes"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devops-iac-observabilidade-study",
+      "topicId": "devops-iac-observabilidade",
+      "title": "Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas",
+      "learningObjectives": [
+        "Compreender e aplicar: Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "devops-git-containers-study",
+      "topicId": "devops-git-containers",
+      "title": "Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes",
+      "learningObjectives": [
+        "Compreender e aplicar: Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "bd-modelagem-study",
+      "topicId": "bd-modelagem",
+      "title": "Modelo entidade-relacionamento, normalização e desnormalização",
+      "learningObjectives": [
+        "Compreender e aplicar: Modelo entidade-relacionamento, normalização e desnormalização"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "bd-sql-study",
+      "topicId": "bd-sql",
+      "title": "SQL, álgebra relacional, transações, ACID, índices e otimização",
+      "learningObjectives": [
+        "Compreender e aplicar: SQL, álgebra relacional, transações, ACID, índices e otimização"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "bd-tecnologias-operacao-study",
+      "topicId": "bd-tecnologias-operacao",
+      "title": "PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança",
+      "learningObjectives": [
+        "Compreender e aplicar: PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-dados-ml-study",
+      "topicId": "ia-dados-ml",
+      "title": "IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais",
+      "learningObjectives": [
+        "Compreender e aplicar: IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-dados-generativa-study",
+      "topicId": "ia-dados-generativa",
+      "title": "PLN, IA generativa, agentes inteligentes e modelos multimodais",
+      "learningObjectives": [
+        "Compreender e aplicar: PLN, IA generativa, agentes inteligentes e modelos multimodais"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ia-dados-rag-etica-study",
+      "topicId": "ia-dados-rag-etica",
+      "title": "Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data",
+      "learningObjectives": [
+        "Compreender e aplicar: Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "seguranca-principios-study",
+      "topicId": "seguranca-principios",
+      "title": "Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades",
+      "learningObjectives": [
+        "Compreender e aplicar: Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "seguranca-cripto-identidade-study",
+      "topicId": "seguranca-cripto-identidade",
+      "title": "Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital",
+      "learningObjectives": [
+        "Compreender e aplicar: Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "seguranca-aplicacoes-continuidade-study",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "title": "OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000",
+      "learningObjectives": [
+        "Compreender e aplicar: OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "sistemas-os-shell-study",
+      "topicId": "sistemas-os-shell",
+      "title": "Windows, Linux, processos, memória, arquivos, shell e PowerShell",
+      "learningObjectives": [
+        "Compreender e aplicar: Windows, Linux, processos, memória, arquivos, shell e PowerShell"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "sistemas-diretorios-study",
+      "topicId": "sistemas-diretorios",
+      "title": "Active Directory, LDAP, virtualização e containers",
+      "learningObjectives": [
+        "Compreender e aplicar: Active Directory, LDAP, virtualização e containers"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "redes-protocolos-study",
+      "topicId": "redes-protocolos",
+      "title": "TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies",
+      "learningObjectives": [
+        "Compreender e aplicar: TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "nuvem-arquitetura-study",
+      "topicId": "nuvem-arquitetura",
+      "title": "Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento",
+      "learningObjectives": [
+        "Compreender e aplicar: Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "governanca-alinhamento-study",
+      "topicId": "governanca-alinhamento",
+      "title": "Estratégia de TI e alinhamento aos objetivos institucionais",
+      "learningObjectives": [
+        "Compreender e aplicar: Estratégia de TI e alinhamento aos objetivos institucionais"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "governanca-servicos-study",
+      "topicId": "governanca-servicos",
+      "title": "Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade",
+      "learningObjectives": [
+        "Compreender e aplicar: Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "governanca-modelos-study",
+      "topicId": "governanca-modelos",
+      "title": "COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis",
+      "learningObjectives": [
+        "Compreender e aplicar: COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "governanca-publica-study",
+      "topicId": "governanca-publica",
+      "title": "Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital",
+      "learningObjectives": [
+        "Compreender e aplicar: Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "legti-lgpd-study",
+      "topicId": "legti-lgpd",
+      "title": "LGPD, privacy by design, minimização, anonimização e pseudonimização",
+      "learningObjectives": [
+        "Compreender e aplicar: LGPD, privacy by design, minimização, anonimização e pseudonimização"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "legti-marco-civil-study",
+      "topicId": "legti-marco-civil",
+      "title": "Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros",
+      "learningObjectives": [
+        "Compreender e aplicar: Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "legti-normas-tce-study",
+      "topicId": "legti-normas-tce",
+      "title": "Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI",
+      "learningObjectives": [
+        "Compreender e aplicar: Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "legti-pdti-study",
+      "topicId": "legti-pdti",
+      "title": "CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026",
+      "learningObjectives": [
+        "Compreender e aplicar: CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ingles-compreensao-study",
+      "topicId": "ingles-compreensao",
+      "title": "Compreensão de textos técnicos e científicos de Tecnologia da Informação",
+      "learningObjectives": [
+        "Compreender e aplicar: Compreensão de textos técnicos e científicos de Tecnologia da Informação"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ingles-estrategias-study",
+      "topicId": "ingles-estrategias",
+      "title": "Ideia principal, localização de informações e estratégias de leitura",
+      "learningObjectives": [
+        "Compreender e aplicar: Ideia principal, localização de informações e estratégias de leitura"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    },
+    {
+      "id": "ingles-documentacao-study",
+      "topicId": "ingles-documentacao",
+      "title": "Vocabulário técnico, manuais, documentação de software, artigos e APIs",
+      "learningObjectives": [
+        "Compreender e aplicar: Vocabulário técnico, manuais, documentação de software, artigos e APIs"
+      ],
+      "syllabusRefs": [],
+      "prerequisiteUnitIds": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Didactic library candidates",
+  "type": "array",
+  "items": {
+    "allOf": [
+      {
+        "$ref": "resource.schema.json"
+      },
+      {
+        "type": "object",
+        "required": [
+          "libraryVersion"
+        ],
+        "properties": {
+          "libraryVersion": {
+            "const": 2
+          }
+        }
+      }
+    ]
+  }
+}

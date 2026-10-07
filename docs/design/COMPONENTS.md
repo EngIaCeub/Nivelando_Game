@@ -130,3 +130,17 @@ Badges should have:
 - locked state.
 
 No purely cosmetic fake achievements on the production progress screen.
+
+## Platform composition V2 (planned)
+
+Extend existing primitives in `core/src/pixel-ui.js`; these additions are planned:
+
+- Scene: original static layered artwork, reserved dimensions, `aria-hidden` when decorative;
+  compact/absent in focus mode and narrow study views.
+- CompactHud: actual state and accessible labels; no placeholder values in production.
+- WorldTile: academic title and accessible action; optional scenery thumbnail, generic fallback.
+- Trail: curriculum order and real state; accessible list alternative, no artificial eligibility.
+- ResourceCard: format, source, access, license, recorte and editorial state from real metadata.
+
+Contracts, state mapping, sequencing and acceptance criteria: `PLATFORM_PIXEL_PLAN.md`.
+Reuse Panel/Button/Badge/Progress/Meter/Stat; standalone concept CSS is not production code.

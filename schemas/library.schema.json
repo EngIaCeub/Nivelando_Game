@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Didactic library",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "examId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "partial",
+        "complete"
+      ]
+    },
+    "scopeReview": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "reviewed"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewedAt",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "reviewIntervalDays": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "freePrimaryRequired": {
+          "const": true
+        },
+        "allowRegistration": {
+          "type": "boolean"
+        },
+        "preferredLanguages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "reviewIntervalDays",
+        "freePrimaryRequired",
+        "allowRegistration",
+        "preferredLanguages"
+      ],
+      "additionalProperties": false
+    },
+    "pilotDisciplineIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "topicId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "learningObjectives": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "syllabusRefs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source",
+                "locator"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "prerequisiteUnitIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "topicId",
+          "title",
+          "learningObjectives",
+          "syllabusRefs",
+          "prerequisiteUnitIds"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "examId",
+    "status",
+    "scopeReview",
+    "policy",
+    "pilotDisciplineIds",
+    "units"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "scopeReview": {
+            "properties": {
+              "status": {
+                "const": "reviewed"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "scopeReview": {
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "units": {
+            "items": {
+              "properties": {
+                "syllabusRefs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

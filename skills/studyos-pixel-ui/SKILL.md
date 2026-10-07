@@ -1,6 +1,6 @@
 ---
 name: studyos-pixel-ui
-description: Design, implement, migrate and review StudyOS/Nivelando_Game interfaces using the project's modern pixel-art and retro-RPG visual language. Use for UI components, dashboards, navigation, progress, XP, mastery, flashcards, quizzes, achievements, responsive styling, visual QA and accessibility.
+description: Design, implement, migrate and review StudyOS/Nivelando_Game interfaces using its pixel-art system, retro platform scenery and readable study surfaces. Use for UI components, dashboards, navigation, progress, flashcards, quizzes, responsive styling, visual QA and accessibility.
 ---
 
 # StudyOS Pixel UI Skill
@@ -14,6 +14,7 @@ Read only the supporting reference needed for the current task:
 - `references/tokens.md` for visual tokens.
 - `references/state-mapping.md` for mapping study data to game visuals.
 - `references/qa-checklist.md` for review/testing.
+- `../../../docs/design/PLATFORM_PIXEL_PLAN.md` for platform-game art direction, scenery, navigation planning and the V2 rollout.
 - `../../../docs/design/PIXEL_UI_SYSTEM.md` for the full visual language.
 - `../../../docs/design/COMPONENTS.md` for component conventions.
 - `../../../docs/ai/MODEL_ROUTING.md` before delegating substantial work.
@@ -46,6 +47,19 @@ Prefer:
 - existing semantic state.
 
 Do not create a one-off pixel theme per page.
+
+For the platform direction, begin with a compact Dashboard scene and original assets.
+Keep study text on quiet surfaces; treat biome colors as decoration and consume real state.
+The isolated `docs/design/platform-concept/` uses illustrative data and standalone CSS;
+do not move its sample metrics or parallel CSS system into production.
+Navigation regrouping crosses hash/focus/session boundaries and is a separate COMPLEX task.
+
+Production composition now uses `core/src/platform-shell.js`, the existing Today dashboard,
+and `LibraryUI`/`createLibraryCatalog`. Keep native anchors and explicit destination focus,
+including links to the current hash. Library retry must refresh only the catalog, preserving
+study forms/sessions. Rank resource roles within the selected topic/discipline. The CLI and
+runtime share `library-coverage.js`; do not fork eligibility or safe external URL policies.
+Read `../../../docs/design/PLATFORM_IMPLEMENTATION_REPORT.md` for the current acceptance limits.
 
 ### 4. Preserve semantics
 

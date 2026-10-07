@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node --test",
     "validate:content": "node scripts/validate-content.mjs",
-    "test:browser": "node scripts/o4-browser-check.mjs"
+    "test:browser": "node scripts/o4-browser-check.mjs",
+    "audit:library": "node scripts/library-audit.mjs"
   },
   "devDependencies": {
     "ajv": "8.17.1",

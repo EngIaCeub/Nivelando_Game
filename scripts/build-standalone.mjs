@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { access, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { deflateSync } from 'node:zlib';
@@ -124,12 +124,25 @@ export async function buildStandalone(options = {}) {
   };
   for (const file of ['index.html', 'manifest.webmanifest', 'styles.css', 'app.js']) await copy(resolve(core, file), file);
   await copyTree(resolve(core, 'src'), 'core/src', () => true);
-  await copyTree(pack, 'exam-pack', (name) => /\.(json|png|svg|jpg|webp|pdf)$/i.test(name));
+  try { await access(resolve(core, 'assets')); await copyTree(resolve(core, 'assets'), 'core/assets', (name) => /\.(svg|png|webp|json)$/i.test(name)); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  try {
+    await access(resolve(core, 'src/platform-shell.js'));
+    const index = (await readFile(resolve(dist, 'index.html'), 'utf8')).replace('src="./src/platform-shell.js"', 'src="./core/src/platform-shell.js"');
+    await emit('index.html', index);
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+    const index = (await readFile(resolve(dist, 'index.html'), 'utf8')).replace(/\s*<script type="module" src="\.\/src\/platform-shell\.js"><\/script>/, '');
+    await emit('index.html', index);
+  }
+  // Curatorial drafts are never a public payload, even when empty in a new pack.
+  await rm(resolve(dist, 'exam-pack', 'library-candidates.json'), { force: true });
+  await copyTree(pack, 'exam-pack', (name) => name !== 'library-candidates.json' && /\.(json|png|svg|jpg|webp|pdf)$/i.test(name));
   for (const entry of await readdir(site, { withFileTypes: true })) if (entry.isFile() && /\.(html|js|mjs|css)$/.test(entry.name)) await copy(resolve(site, entry.name), entry.name);
   // Follow relative imports/assets so new nested runtime modules join the build automatically.
   for (const [name, source] of sources) {
     if (!/\.(js|mjs|html|css)$/.test(name)) continue;
-    const text = await readFile(source, 'utf8');
+    const text = await readFile(name === 'index.html' ? resolve(dist, name) : source, 'utf8');
     const refs = [...text.matchAll(/(?:\bfrom\s*|\bimport\s*(?:\(\s*)?|\b(?:src|href)\s*=\s*|\burl\(\s*)['"](\.[^'"#?]*)(?:[?#][^'"]*)?['"]/g)];
     for (const [, ref] of refs) {
       const destination = new URL(ref, `https://build.invalid/${name}`).pathname.slice(1);

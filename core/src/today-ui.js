@@ -1,4 +1,4 @@
-import { PixelBadge, PixelButton, PixelMeter, PixelPanel, PixelProgress, PixelStat } from './pixel-ui.js';
+import { PixelBadge, PixelButton, PixelMeter, PixelPanel, PixelProgress, PixelStat, PixelWorldTile } from './pixel-ui.js';
 
 const ACTIVITY_LABELS = Object.freeze({
   theory: 'Leitura guiada', questions: 'Questões', review: 'Revisão vencida',
@@ -19,16 +19,18 @@ export class TodayDashboard {
   #onStart;
   #onMinutes;
   #onExtra;
-  constructor({ root, onStart = () => {}, onMinutes = () => {}, onExtra = () => {} }) {
+  #onLibrary;
+  constructor({ root, onStart = () => {}, onMinutes = () => {}, onExtra = () => {}, onLibrary = null }) {
     if (!root) throw new TypeError('root is required');
     this.#root = root; this.#onStart = onStart; this.#onMinutes = onMinutes; this.#onExtra = onExtra;
+    this.#onLibrary = onLibrary;
   }
   render({ exam = {}, plan, summary = {}, weekly = {}, metrics = {}, streak = 0, xp = 0, availableMinutes = 120, topics = [] }) {
     this.#root.replaceChildren();
-    const heading = make('h2', '', exam.title ?? 'Hoje');
+    const heading = make('h2', 'today-heading', 'Sua agenda de hoje');
     this.#root.append(heading);
 
-    const hud = make('div', 'pixel-grid pixel-grid--stats');
+    const hud = make('div', 'pixel-grid pixel-grid--stats today-hud');
     const safeXp = Math.max(0, Number(xp) || 0);
     const level = Math.floor(safeXp / 100) + 1;
     const levelProgress = safeXp % 100;
@@ -45,7 +47,6 @@ export class TodayDashboard {
     ] });
     const streakPanel = PixelStat({ label: 'Sequência de estudo', value: `${Math.max(0, Number(streak) || 0)} dias` });
     hud.append(xpPanel, masteryPanel, streakPanel);
-    this.#root.append(hud);
 
     if (exam.examDate) {
       const days = Math.max(0, Math.ceil((Date.parse(exam.examDate) - Date.now()) / 86_400_000));
@@ -54,10 +55,10 @@ export class TodayDashboard {
 
     const currentMinutes = Math.max(0, Number(summary.completedMinutes) || 0);
     const dailyGoal = Math.max(0, Number(availableMinutes) || 0);
-    this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [
+    const goalPanel = PixelPanel({ className: 'pixel-panel--compact today-goal', children: [
       make('h3', '', `Meta diária: ${dailyGoal} min`),
       PixelProgress({ label: 'Tempo de estudo', current: currentMinutes, max: dailyGoal, valueText: `${currentMinutes} / ${dailyGoal} min` })
-    ] }));
+    ] });
 
     const activityList = make('ol', 'pixel-quest-list');
     activityList.setAttribute('aria-label', 'Agenda de hoje');
@@ -69,7 +70,7 @@ export class TodayDashboard {
       const activityLabel = ACTIVITY_LABELS[activity.type] ?? activity.type;
       content.append(make('p', 'pixel-quest__name', topic));
       content.append(make('p', 'pixel-quest__meta', `${activityLabel} · ${activity.estimatedMinutes} min`));
-      if (activity.reason) content.append(make('p', 'pixel-quest__meta', activity.reason));
+      if (activity.reason) { const details = make('details', 'quest-reason'); details.append(make('summary', '', 'Motivo da atividade'), make('p', 'pixel-quest__meta', activity.reason)); content.append(details); }
       const statusTone = activity.status === 'completed' ? 'success' : ['in_progress', 'paused'].includes(activity.status) ? 'info' : 'neutral';
       item.append(content, PixelBadge(STATUS_LABELS[activity.status] ?? activity.status, statusTone));
       activityList.append(item);
@@ -78,13 +79,15 @@ export class TodayDashboard {
     const next = plan?.activities?.find((activity) => activity.status !== 'completed' && activity.status !== 'skipped');
     if (next) {
       const topic = next.topicId ? topicTitles.get(next.topicId) ?? next.topicId : 'atividade de hoje';
-      const heading = make('h3', '', 'Próxima missão de estudo');
+      const heading = make('h3', 'eyebrow', ['paused', 'in_progress'].includes(next.status) ? 'Atividade pendente' : 'Próximo passo');
       const card = PixelPanel({ className: 'today-next pixel-panel--selected', children: [
         heading,
-        make('p', '', `${topic} · ${ACTIVITY_LABELS[next.type] ?? next.type} · ${next.estimatedMinutes} min`),
-        ...(next.reason ? [make('p', '', next.reason)] : []),
+        make('p', 'today-next__topic', topic),
+        make('p', 'today-next__meta', `${ACTIVITY_LABELS[next.type] ?? next.type} · estimativa de ${next.estimatedMinutes} min`),
+        ...(next.reason ? [(() => { const detail = make('details', 'quest-reason'); detail.append(make('summary', '', 'Por que estudar agora?'), make('p', '', next.reason)); return detail; })()] : []),
         PixelButton({ label: 'COMEÇAR', onClick: () => this.#onStart(next) })
       ] });
+      if (this.#onLibrary && next.topicId) card.append(PixelButton({ label: 'Ver materiais', variant: 'secondary', onClick: () => this.#onLibrary(next.topicId) }));
       this.#root.append(card);
     } else {
       const goalComplete = Boolean(summary.goalCompleted);
@@ -94,6 +97,8 @@ export class TodayDashboard {
         PixelButton({ label: 'ESTUDAR MAIS', variant: 'secondary', onClick: () => this.#onExtra() })
       ] }));
     }
+
+    this.#root.append(hud, goalPanel);
 
     if (activityList.childElementCount) {
       const questPanel = PixelPanel({ children: [make('h3', '', 'Linha de missões · Agenda de hoje'), activityList] });

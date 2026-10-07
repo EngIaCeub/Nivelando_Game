@@ -62,3 +62,16 @@ sincronização multi-dispositivo.
 
 HTML5, CSS moderno, JavaScript/TypeScript modular se justificado, IndexedDB, Service Worker,
 JSON Schema e testes automatizados. Framework só entra via ADR se reduzir complexidade.
+
+## Biblioteca didática
+
+RF21 biblioteca pesquisável por disciplina, tópico, unidade, formato, idioma e acesso.
+RF22 recursos com capítulos/seções/aulas, objetivos, autoria, versão e licença.
+RF23 distinguir cobertura editorial da biblioteca e aprendizagem do estudante.
+RF24 mostrar lacunas, material pago/cadastro e necessidade de internet explicitamente.
+RF25 revisão de links/edições conforme política do pack e relatório reproduzível.
+RF26 biblioteca complete exige cobertura primária revisada de todo o edital e segundo pack.
+
+Contrato: `contracts/DIDACTIC_LIBRARY.md`; execução: `docs/DIDACTIC_LIBRARY_PLAN.md`.
+Biblioteca é opcional para packs legados. Conteúdo público pode ser referenciado;
+incorporação exige direitos. Ingestão/curadoria ocorre antes do build, sem IA obrigatória.

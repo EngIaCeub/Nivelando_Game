@@ -2,17 +2,22 @@
 
 ## 1. Visual goal
 
-Create a modern, readable, professional study application that borrows the visual grammar of pixel-art RPGs and classic game interfaces.
+Create a readable study application with original pixel art inspired by classic 2D platform games: layered scenery, modular terrain, clear silhouettes and compact progression feedback. The platform direction and staged implementation are in `PLATFORM_PIXEL_PLAN.md`.
 
 The target is not an exact recreation of an old console UI.
 
 Desired blend:
 - modern productivity/study UX;
-- retro RPG progression feedback;
+- platform-game exploration and restrained progression feedback;
 - pixel-art geometry;
 - disciplined spacing;
 - strong hierarchy;
 - restrained animation.
+
+Use richer scenery in exploration views and quiet surfaces in reading and practice.
+Use original assets; franchise references guide composition and never supply sprites,
+characters, logos or audio. The previous Pixel UI foundation already exists.
+Extend its tokens/primitives; do not create another production theme layer.
 
 ## 2. Core visual vocabulary
 
