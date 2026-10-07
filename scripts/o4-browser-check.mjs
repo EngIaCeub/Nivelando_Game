@@ -380,6 +380,7 @@ try {
       const menu = page.locator('#menu-toggle');
       if (await menu.isVisible()) {
         await menu.focus(); await page.keyboard.press('Enter'); assert.equal(await menu.getAttribute('aria-expanded'), 'true');
+        await page.getByRole('navigation').locator('.nav-group summary').filter({ hasText: 'Prática' }).click();
         await page.getByRole('navigation').getByRole('link', { name: 'Questões', exact: true }).click();
       }
       await page.locator('#today-dashboard').getByRole('button', { name: 'COMEÇAR', exact: true }).click();
