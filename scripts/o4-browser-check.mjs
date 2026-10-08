@@ -95,9 +95,14 @@ async function isolated(viewport = { width: 1280, height: 900 }) {
   return { context, page };
 }
 async function close(context) { await context.close(); contexts.delete(context); }
+async function showView(page, id) {
+  await page.evaluate(viewId => { if (location.hash !== `#${viewId}`) location.hash = `#${viewId}`; }, id);
+  await page.locator(`#${id}`).waitFor({ state: 'visible' });
+}
 async function ready(page) {
+  await showView(page, 'today');
   await page.locator('#today-dashboard select[aria-label="Minutos disponíveis hoje"]').waitFor();
-  await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor({ state: 'attached' });
 }
 async function open(page) { await page.goto(base); await ready(page); }
 async function snapshot(page) {
@@ -138,13 +143,17 @@ async function waitState(page, predicate) {
   throw new Error('Persistent state did not reach expected condition');
 }
 async function download(page) {
+  const previousView = (await page.evaluate(() => location.hash.slice(1))) || 'today';
+  await showView(page, 'settings');
   const pending = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).click();
   const file = await pending;
   assert.equal(await file.failure(), null);
+  await showView(page, previousView);
   return { filename: file.suggestedFilename(), payload: JSON.parse(await readFile(await file.path(), 'utf8')) };
 }
 async function importFile(page, payload) {
+  await showView(page, 'settings');
   await page.getByLabel('Selecionar backup JSON', { exact: true }).setInputFiles({ name: 'o4-fixture.json', mimeType: 'application/json', buffer: Buffer.from(typeof payload === 'string' ? payload : JSON.stringify(payload)) });
   await page.getByRole('button', { name: 'Importar backup', exact: true }).click();
 }
@@ -271,6 +280,7 @@ try {
       });
       await recoveryPage.reload();
       await recoveryPage.locator('#session-status[role="alert"]').waitFor();
+      await showView(recoveryPage, 'settings');
       for (const name of ['Exportar meus dados', 'Importar backup', 'Baixar snapshot bruto de recuperação']) {
         await recoveryPage.getByRole('button', { name, exact: true }).waitFor({ state: 'visible' });
       }
@@ -288,6 +298,7 @@ try {
       assert(rows(restored, 'today-plans').length, 'Valid backup plan was not restored');
       assert(!rows(restored, 'study-reading').some(row => row.key.includes('corrupt-reading')), 'Corrupt reading survived valid backup restore');
 
+      await showView(recoveryPage, 'settings');
       const recoveryDownload = recoveryPage.waitForEvent('download');
       await recoveryPage.getByRole('button', { name: 'Baixar snapshot bruto de recuperação', exact: true }).click();
       const file = await recoveryDownload;
@@ -323,6 +334,7 @@ try {
       assert(response?.fromServiceWorker(), 'Offline navigation did not come from service worker');
       await ready(offlinePage);
       preserved(online, await snapshot(offlinePage));
+      await showView(offlinePage, 'flashcards');
       await offlinePage.locator('#flashcards-panel').getByRole('button').first().click();
       await offlinePage.getByRole('button', { name: 'Revelar resposta', exact: true }).click();
       await offlinePage.locator('.flashcard-answer').waitFor();
@@ -383,6 +395,7 @@ try {
         await page.getByRole('navigation').locator('.nav-group summary').filter({ hasText: 'Prática' }).click();
         await page.getByRole('navigation').getByRole('link', { name: 'Questões', exact: true }).click();
       }
+      await showView(page, 'today');
       await page.locator('#today-dashboard').getByRole('button', { name: 'COMEÇAR', exact: true }).click();
       await page.locator('.question-options button').first().waitFor();
       const after = await overflow(); assert(after.document <= viewport.width + 1 && after.body <= viewport.width + 1, JSON.stringify(after));
@@ -455,6 +468,7 @@ async function runUiChecks(page) {
     return { xpBefore: xp(before), xpAfter: xp(after), completedMinutes: result.completedMinutes };
   });
   await check('daily minute replan preserves completed progress through reload', async () => {
+    await showView(page, 'today');
     const before = await snapshot(page);
     const plan = rows(before, 'today-plans').find(r => r.value.completedMinutes > 0)?.value; assert(plan);
     await page.getByLabel('Minutos disponíveis hoje', { exact: true }).selectOption('90');
@@ -471,6 +485,7 @@ async function runUiChecks(page) {
   });
   await check('diagnostic answers and completion never change score or XP', async () => {
     const before = await snapshot(page);
+    await showView(page, 'diagnostic');
     await page.locator('#diagnostic-panel').getByRole('button').first().click();
     await finishVisible(page);
     const after = await snapshot(page);
@@ -480,6 +495,7 @@ async function runUiChecks(page) {
   });
   await check('flashcards reveal, review and persistence', async () => {
     const before = await snapshot(page);
+    await showView(page, 'flashcards');
     await page.locator('#flashcards-panel').getByRole('button').first().click();
     await page.getByRole('button', { name: 'Revelar resposta', exact: true }).click();
     await page.locator('.flashcard-answer').waitFor();
@@ -493,6 +509,7 @@ async function runUiChecks(page) {
     return { reviewEvents: rows(after, 'events').filter(r => r.value.type === 'review_completed').length, xpDelta: xp(after) - xp(before) };
   });
   await check('simulation complete with immutable first-attempt score', async () => {
+    await showView(page, 'simulations');
     await page.locator('#simulations-panel').getByRole('button', { name: 'Escolher simulado', exact: true }).click();
     await page.locator('#simulations-panel').getByRole('button').first().click();
     await finishVisible(page);
