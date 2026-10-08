@@ -64,7 +64,7 @@ export class LibraryUI {
   }
   updateTopicOptions() {
     const control=this.topicIdControl;if(!control)return;control.replaceChildren(new Option('Todos os conteúdos',''));
-    for(const topic of this.catalog.topics.filter(t=>!this.filters.disciplineId||t.disciplineId===this.filters.disciplineId))control.add(new Option(topic.title,topic.id));
+    for(const topic of this.catalog.topics.filter(t=>!this.filters.disciplineId||t.disciplineId===this.filters.disciplineId))control.add(new Option(topic.displayTitle??topic.title,topic.id));
     control.value=this.filters.topicId;
   }
   showTopic(topicId) {
@@ -80,7 +80,8 @@ export class LibraryUI {
     this.resultStatus.textContent=[countLabel(resources.length,'material','materiais'),countLabel(paths.length,'percurso','percursos')].join(' · ')+'.';
     const topic=this.catalog.topicById.get(this.filters.topicId);
     if(topic) {
-      const panel=PixelPanel({className:'library-unit',children:[make('h3',topic.title),make('p',topic.disciplineTitle+' / '+topic.moduleTitle)]});
+      const panel=PixelPanel({className:'library-unit',children:[make('h3',topic.displayTitle??topic.title),make('p',topic.disciplineTitle+' / '+topic.moduleTitle)]});
+      if(topic.displayTitle&&topic.displayTitle!==topic.title){const detail=make('details');detail.append(make('summary','Conteúdo completo'),make('p',topic.title));panel.append(detail);}
       const units=this.catalog.units.filter(u=>u.topicId===topic.id);
       for(const unit of units) {
         if(units.length>1||unit.title!==topic.title)panel.append(make('h4',unit.title));

@@ -1,0 +1,16 @@
+{
+  "isolation": "new browser context; synthetic data",
+  "checks": [
+    "same agenda; change minutes syncs Hoje; Enter starts activity; pause/reload/resume preserves answers/cursor/score/XP; mobile/desktop",
+    "short title in Hoje/Plano/Questões/Library; full curriculum remains keyboard-expandable",
+    "real SW offline reload of Plano with pending session"
+  ],
+  "fixtures": {
+    "empty": true,
+    "completedNoStart": true,
+    "missing": true,
+    "completed": true
+  },
+  "base": "http://127.0.0.1:52410/study/",
+  "passed": true
+}

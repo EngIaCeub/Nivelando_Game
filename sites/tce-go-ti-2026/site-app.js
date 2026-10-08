@@ -133,14 +133,14 @@ async function loadPack() {
   };
   const historicalBanks = { ensureQuestions: ensureHistoricalQuestions, ensureCards: ensureHistoricalCards };
   diagnosticUI = new StudyUI({ root: diagnosticRoot, session, ...historicalBanks, report, onComplete });
-  quizUI = new StudyUI({ root: questionsRoot, session, ...historicalBanks, report, onComplete });
+  quizUI = new StudyUI({ root: questionsRoot, session, ...historicalBanks, report, onComplete, runTitleFor: run => { const topic = flattenTopics(pack.curriculum).find(t => t.id === run.activity?.topicId || t.title === run.title); return topic?.displayTitle ?? run.title; } });
   flashcardUI = new StudyUI({ root: flashcardsRoot, session, ...historicalBanks, report, onComplete, topicTitleFor: topicId => topicTitles.get(topicId) ?? topicId });
   const oldStart = document.querySelector('#start-button');
   const start = button('Começar sessão', async () => {
     const current = await plans.get(examId, today());
     const activity = current?.activities.find(item => item.status !== 'completed');
     if (activity) await startActivity(activity); else { notice.textContent = 'Agenda concluída. Escolha um tópico ou simulado para estudar mais.'; document.querySelector('#subjects').scrollIntoView(); }
-  }); start.id = 'start-button'; oldStart.replaceWith(start);
+  }); start.id = 'start-button'; oldStart?.replaceWith(start);
   // Recovery controls must survive a failure rendering existing study records.
   await showSettings();
   const libraryRoot = document.querySelector('#library-panel');
@@ -182,13 +182,21 @@ async function renderHome() {
   if (!plan || plan.availableMinutes !== availableMinutes) plan = await regeneratePlan();
   const input = await context(availableMinutes);
   const [summary, weekly, streak, xp] = await Promise.all([plans.dailySummary(examId, today(), availableMinutes), plans.weeklySummary(examId, today()), plans.streak(examId, availableMinutes, .6, today()), gamification.snapshot(examId)]);
-  new TodayDashboard({ root: document.querySelector('#today-dashboard'), onStart: guarded(startActivity), onMinutes: guarded(async minutes => {
+  const dashboardOptions = { onStart: guarded(startActivity), onMinutes: guarded(async minutes => {
     requirePaused(); await runMutation(storage, undefined, async ctx => { await saveSettings({ dailyMinutes: minutes }, ctx); await regeneratePlan(ctx); }); await refreshPanels();
   }), onExtra: guarded(async () => {
     requirePaused(); const topic = flattenTopics(pack.curriculum)[0];
     if (!topic) throw new Error('Não há tópicos para estudo extra.');
     await plans.addExtraActivity({ examId, date: today(), topicId: topic.id, minutes: 15 }); await renderHome();
-  }), onLibrary: openLibrary }).render({ exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes, topics: flattenTopics(pack.curriculum) });
+  }), onLibrary: openLibrary };
+  const dashboardState = { exam: pack.manifest, plan, summary, weekly, metrics: input.metric, streak, xp: xp.xp, availableMinutes, topics: flattenTopics(pack.curriculum), resourceTopicIds: [...new Set(pack.resources.flatMap(r => r.topicIds ?? []))] };
+  new TodayDashboard({ root: document.querySelector('#today-dashboard'), ...dashboardOptions }).render(dashboardState);
+  const planRoot = document.querySelector('#plan');
+  if (planRoot) {
+  planRoot.replaceChildren(node('h2', 'Plano'), node('p', 'Escolha uma atividade abaixo. Esta é a mesma agenda da tela Hoje; os tempos são estimativas de estudo, não um cronômetro.'), node('div'));
+  planRoot.querySelector('h2').id = 'plan-title';
+  new TodayDashboard({ root: planRoot.querySelector('div'), ...dashboardOptions }).render({ ...dashboardState, mode: 'plan' });
+  }
   status.dataset.todayState = 'plan-ready';
 }
 async function openSession(ui, run) {
@@ -242,7 +250,7 @@ async function showTheory(activity, date) {
   }), button('Pausar leitura', async () => {
     await session.pauseReading(id);
     document.documentElement.dataset.studyActive = 'false'; questionsRoot.replaceChildren(node('h2', 'Leitura pausada'), button('Retomar leitura', async () => { requirePaused(); await showTheory(activity, date); }));
-    await renderResume();
+    await renderResume(); await renderHome();
   }));
   questionsRoot.scrollIntoView();
   const heading = questionsRoot.querySelector('h2'); heading.tabIndex = -1; heading.focus({ preventScroll: true });
@@ -658,7 +666,7 @@ window.addEventListener('hashchange', () => {
   if ((authSession || guestMode) && accountRoute) location.hash = '#today';
 });
 window.addEventListener('studyos:session-paused', () => {
-  void renderResume().catch(report);
+  void (async () => { await renderResume(); await renderHome(); })().catch(report);
   if (authSession) void syncWorkspace({ manual: false }).catch(error => syncStatus(error.message, 'alert'));
 });
 bootStudyOS().catch(error => { report(error); status.textContent = 'Não foi possível iniciar o estudo. Verifique a conexão e o armazenamento do navegador. Nenhum salvamento foi confirmado.'; });

@@ -64,6 +64,12 @@
                       "title": {
                         "type": "string"
                       },
+                      "displayTitle": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80,
+                        "description": "Optional concise presentation title; title retains the full curricular scope."
+                      },
                       "canonicalConceptIds": {
                         "type": "array",
                         "items": {

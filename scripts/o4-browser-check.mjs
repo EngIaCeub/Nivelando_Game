@@ -405,6 +405,10 @@ try {
       assert.equal(await page.evaluate(() => document.activeElement?.tagName), 'H2');
       const focus = await page.evaluate(() => { const style = getComputedStyle(document.activeElement); return { outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth }; });
       await page.keyboard.press('Tab');
+      assert.equal(await page.evaluate(() => document.activeElement?.tagName), 'SUMMARY');
+      await page.keyboard.press('Enter');
+      assert.equal(await page.evaluate(() => document.activeElement.parentElement.open), true);
+      await page.keyboard.press('Tab');
       assert.equal(await page.evaluate(() => document.activeElement?.tagName), 'BUTTON');
       await page.keyboard.press('Enter'); await page.locator('.study-feedback').waitFor();
       return { before, after, keyboardAnswer: true, headingFocus: focus };
@@ -474,7 +478,7 @@ async function runUiChecks(page) {
     await showView(page, 'today');
     const before = await snapshot(page);
     const plan = rows(before, 'today-plans').find(r => r.value.completedMinutes > 0)?.value; assert(plan);
-    await page.getByLabel('Minutos disponíveis hoje', { exact: true }).selectOption('90');
+    await page.locator('#today-dashboard').getByLabel('Minutos disponíveis hoje', { exact: true }).selectOption('90');
     const after = await waitState(page, state => rows(state, 'today-plans').some(r => r.value.date === plan.date && r.value.availableMinutes === 90));
     const changed = rows(after, 'today-plans').find(r => r.value.date === plan.date).value;
     assert.equal(changed.completedMinutes, plan.completedMinutes);
@@ -483,7 +487,7 @@ async function runUiChecks(page) {
     await page.reload(); await ready(page);
     const reloaded = rows(await snapshot(page), 'today-plans').find(r => r.value.date === plan.date).value;
     assert.equal(reloaded.availableMinutes, 90); assert.equal(reloaded.completedMinutes, plan.completedMinutes);
-    assert.equal(await page.getByLabel('Minutos disponíveis hoje', { exact: true }).inputValue(), '90');
+    assert.equal(await page.locator('#today-dashboard').getByLabel('Minutos disponíveis hoje', { exact: true }).inputValue(), '90');
     return { completedMinutes: plan.completedMinutes, availableMinutes: reloaded.availableMinutes };
   });
   await check('diagnostic answers and completion never change score or XP', async () => {

@@ -1,0 +1,981 @@
+{
+  "evidenceVersion": 1,
+  "startedAt": "2026-10-08T21:39:58.308Z",
+  "mode": "local",
+  "isolation": "headless browser.newContext; no persistent profile",
+  "checks": [
+    {
+      "name": "build metadata identifies tested commit",
+      "passed": true,
+      "durationMs": 31,
+      "evidence": {
+        "metadataVersion": 1,
+        "appVersion": "1.0.0",
+        "buildId": "a53e83ed09b6-20261008213957854",
+        "commitSha": "a53e83ed09b661340f1b5c2aec67e11e25ec8d83",
+        "buildTimestamp": "2026-10-08T21:39:57.854Z",
+        "channel": "production",
+        "examPackVersion": "1.0.0",
+        "schemaVersion": 1,
+        "storageVersion": 2,
+        "examId": "tce-go-ti-2026"
+      }
+    },
+    {
+      "name": "first-run onboarding and today",
+      "passed": true,
+      "durationMs": 516,
+      "evidence": {
+        "todayPlans": 1,
+        "onboarding": "Faça seu diagnóstico inicial\n\nTCE-GO — Técnico de Controle Externo — Tecnologia da Informação. Escolha sua meta diária, responda o diagnóstico e siga a agenda Hoje. Progresso mostra domínio, revisões e primeiras tentativas.\n\nMeta diária em minutosSalvar meta diáriaFazer diagnósticoPular e estudar agora"
+      }
+    },
+    {
+      "name": "bootstrap requests and performance bytes",
+      "passed": true,
+      "durationMs": 6,
+      "evidence": {
+        "navigation": [
+          {
+            "domContentLoadedMs": 147.69999998807907,
+            "loadMs": 150.60000002384186,
+            "transferSize": 7396
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/styles.css",
+            "transferSize": 33958,
+            "encodedBodySize": 33658,
+            "decodedBodySize": 33658,
+            "durationMs": 33.39999997615814
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/platform-shell.js",
+            "transferSize": 3535,
+            "encodedBodySize": 3235,
+            "decodedBodySize": 3235,
+            "durationMs": 17.200000047683716
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854",
+            "transferSize": 52129,
+            "encodedBodySize": 51829,
+            "decodedBodySize": 51829,
+            "durationMs": 17.19999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/pixel-ui.js",
+            "transferSize": 5622,
+            "encodedBodySize": 5322,
+            "decodedBodySize": 5322,
+            "durationMs": 3.100000023841858
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/view-router.js",
+            "transferSize": 840,
+            "encodedBodySize": 540,
+            "decodedBodySize": 540,
+            "durationMs": 3.300000011920929
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/index.js",
+            "transferSize": 752,
+            "encodedBodySize": 452,
+            "decodedBodySize": 452,
+            "durationMs": 10.199999988079071
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/production.js",
+            "transferSize": 36754,
+            "encodedBodySize": 36454,
+            "decodedBodySize": 36454,
+            "durationMs": 15.5
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js",
+            "transferSize": 30957,
+            "encodedBodySize": 30657,
+            "decodedBodySize": 30657,
+            "durationMs": 15.600000023841858
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/mutation-context.js",
+            "transferSize": 1509,
+            "encodedBodySize": 1209,
+            "decodedBodySize": 1209,
+            "durationMs": 14.699999988079071
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-ui.js",
+            "transferSize": 15751,
+            "encodedBodySize": 15451,
+            "decodedBodySize": 15451,
+            "durationMs": 15.899999976158142
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/identity.js",
+            "transferSize": 765,
+            "encodedBodySize": 465,
+            "decodedBodySize": 465,
+            "durationMs": 20.69999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/supabase-sync.js",
+            "transferSize": 1928,
+            "encodedBodySize": 1628,
+            "decodedBodySize": 1628,
+            "durationMs": 22
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/supabase-auth.js",
+            "transferSize": 6567,
+            "encodedBodySize": 6267,
+            "decodedBodySize": 6267,
+            "durationMs": 25.19999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/content-bank.js",
+            "transferSize": 675,
+            "encodedBodySize": 375,
+            "decodedBodySize": 375,
+            "durationMs": 23.899999976158142
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/storage.js",
+            "transferSize": 33785,
+            "encodedBodySize": 33485,
+            "decodedBodySize": 33485,
+            "durationMs": 13
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/curriculum.js",
+            "transferSize": 4855,
+            "encodedBodySize": 4555,
+            "decodedBodySize": 4555,
+            "durationMs": 13.599999964237213
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/revision.js",
+            "transferSize": 3531,
+            "encodedBodySize": 3231,
+            "decodedBodySize": 3231,
+            "durationMs": 15.400000035762787
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/scoring.js",
+            "transferSize": 1588,
+            "encodedBodySize": 1288,
+            "decodedBodySize": 1288,
+            "durationMs": 15.199999988079071
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/gamification.js",
+            "transferSize": 1800,
+            "encodedBodySize": 1500,
+            "decodedBodySize": 1500,
+            "durationMs": 16.30000001192093
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/analytics.js",
+            "transferSize": 2058,
+            "encodedBodySize": 1758,
+            "decodedBodySize": 1758,
+            "durationMs": 16.400000035762787
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/factory.js",
+            "transferSize": 4393,
+            "encodedBodySize": 4093,
+            "decodedBodySize": 4093,
+            "durationMs": 17
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/mastery.js",
+            "transferSize": 7015,
+            "encodedBodySize": 6715,
+            "decodedBodySize": 6715,
+            "durationMs": 17.5
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/diagnostics.js",
+            "transferSize": 10452,
+            "encodedBodySize": 10152,
+            "decodedBodySize": 10152,
+            "durationMs": 17.599999964237213
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/diagnostic-ui.js",
+            "transferSize": 6403,
+            "encodedBodySize": 6103,
+            "decodedBodySize": 6103,
+            "durationMs": 17.80000001192093
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/today-planner.js",
+            "transferSize": 19806,
+            "encodedBodySize": 19506,
+            "decodedBodySize": 19506,
+            "durationMs": 18.100000023841858
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/today-ui.js",
+            "transferSize": 10898,
+            "encodedBodySize": 10598,
+            "decodedBodySize": 10598,
+            "durationMs": 18.099999964237213
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/assets/pixel/islands.svg",
+            "transferSize": 2201,
+            "encodedBodySize": 1901,
+            "decodedBodySize": 1901,
+            "durationMs": 10.199999988079071
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-catalog.js",
+            "transferSize": 4029,
+            "encodedBodySize": 3729,
+            "decodedBodySize": 3729,
+            "durationMs": 11.100000023841858
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-coverage.js",
+            "transferSize": 12694,
+            "encodedBodySize": 12394,
+            "decodedBodySize": 12394,
+            "durationMs": 2.800000011920929
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/auth-config.json",
+            "transferSize": 396,
+            "encodedBodySize": 96,
+            "decodedBodySize": 96,
+            "durationMs": 2.399999976158142
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/manifest.json",
+            "transferSize": 840,
+            "encodedBodySize": 540,
+            "decodedBodySize": 540,
+            "durationMs": 20.600000023841858
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/curriculum.json",
+            "transferSize": 15346,
+            "encodedBodySize": 15046,
+            "decodedBodySize": 15046,
+            "durationMs": 21.69999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/resources.json",
+            "transferSize": 800570,
+            "encodedBodySize": 800270,
+            "decodedBodySize": 800270,
+            "durationMs": 26
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/build-meta.json",
+            "transferSize": 638,
+            "encodedBodySize": 338,
+            "decodedBodySize": 338,
+            "durationMs": 20.69999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/library.json",
+            "transferSize": 222843,
+            "encodedBodySize": 222543,
+            "decodedBodySize": 222543,
+            "durationMs": 37.69999998807907
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/source-map.json",
+            "transferSize": 156703,
+            "encodedBodySize": 156403,
+            "decodedBodySize": 156403,
+            "durationMs": 38.89999997615814
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/icon.svg",
+            "transferSize": 586,
+            "encodedBodySize": 286,
+            "decodedBodySize": 286,
+            "durationMs": 30.30000001192093
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/icon.svg",
+            "transferSize": 586,
+            "encodedBodySize": 286,
+            "decodedBodySize": 286,
+            "durationMs": 16.5
+          },
+          {
+            "name": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/questions.json",
+            "transferSize": 136546,
+            "encodedBodySize": 136246,
+            "decodedBodySize": 136246,
+            "durationMs": 21.5
+          }
+        ],
+        "bytes": 1640604,
+        "questionBankRequests": 1,
+        "requestCount": 40,
+        "requests": [
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/",
+            "resourceType": "document"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/styles.css",
+            "resourceType": "stylesheet"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/platform-shell.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/pixel-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/view-router.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/index.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/production.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/mutation-context.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/identity.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/supabase-sync.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/supabase-auth.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/content-bank.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/storage.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/curriculum.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/scoring.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/revision.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/gamification.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/analytics.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/factory.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/mastery.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/diagnostics.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/diagnostic-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/today-planner.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/today-ui.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/assets/pixel/islands.svg",
+            "resourceType": "image"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-catalog.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/core/src/library-coverage.js",
+            "resourceType": "script"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/auth-config.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/manifest.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/curriculum.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/resources.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/build-meta.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/library.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/source-map.json",
+            "resourceType": "fetch"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/icon.svg",
+            "resourceType": "other"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/icon.svg",
+            "resourceType": "other"
+          },
+          {
+            "url": "http://127.0.0.1:49909/Nivelando_Game/exam-pack/questions.json",
+            "resourceType": "fetch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "quiz feedback, retake immutable score/XP, pause and reload",
+      "passed": true,
+      "durationMs": 1071,
+      "evidence": {
+        "sessionId": "today-2026-10-08-today-tce-go-ti-2026-2026-10-08-activity-1",
+        "firstScore": [
+          {
+            "simulationRunId": "today-2026-10-08-today-tce-go-ti-2026-2026-10-08-activity-1",
+            "questionId": "q-tcego-b02-002-r2",
+            "correct": false,
+            "answeredAt": "2026-10-08T21:40:00.463Z",
+            "attempts": 1
+          }
+        ],
+        "xp": 5,
+        "retakes": 1
+      }
+    },
+    {
+      "name": "complete today activity twice awards XP once",
+      "passed": true,
+      "durationMs": 262,
+      "evidence": {
+        "xpBefore": 10,
+        "xpAfter": 10,
+        "completedMinutes": 30
+      }
+    },
+    {
+      "name": "daily minute replan preserves completed progress through reload",
+      "passed": true,
+      "durationMs": 397,
+      "evidence": {
+        "completedMinutes": 30,
+        "availableMinutes": 90
+      }
+    },
+    {
+      "name": "diagnostic answers and completion never change score or XP",
+      "passed": true,
+      "durationMs": 9271,
+      "evidence": {
+        "scoreRows": 1,
+        "xp": 10,
+        "completedRuns": 1
+      }
+    },
+    {
+      "name": "flashcards reveal, review and persistence",
+      "passed": true,
+      "durationMs": 992,
+      "evidence": {
+        "reviewEvents": 1,
+        "xpDelta": 8
+      }
+    },
+    {
+      "name": "simulation complete with immutable first-attempt score",
+      "passed": true,
+      "durationMs": 2543,
+      "evidence": {
+        "sessionId": "study-fb74d6d9-d19a-40e4-8bfe-36a5f7035ea4",
+        "answered": 10,
+        "scorePercent": 50
+      }
+    },
+    {
+      "name": "backup download schema and UI import round-trip",
+      "passed": true,
+      "durationMs": 3024,
+      "evidence": {
+        "filename": "studyos-backup-tce-go-ti-2026.json",
+        "schemaValidated": true,
+        "rowCount": 310,
+        "globalMasteryCount": 72,
+        "restoreGenerationDeltas": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "invalid import fixtures reject without any state mutation",
+      "passed": true,
+      "durationMs": 21756,
+      "evidence": {
+        "rejectedFixtures": [
+          "malformed JSON",
+          "unsupported backup version",
+          "foreign exam",
+          "missing global mastery",
+          "incompatible score schema",
+          "duplicate compound score IDs",
+          "truncated compound score ID",
+          "invalid global mastery",
+          "inconsistent event projection",
+          "incompatible storage version",
+          "invalid daily goal",
+          "invalid embedded user settings",
+          "unsafe settings key",
+          "null today-plan activity",
+          "malformed diagnostic response",
+          "malformed study-session pending",
+          "orphaned retake operation receipt"
+        ],
+        "stateUnchanged": true
+      }
+    },
+    {
+      "name": "console, HTTP and telemetry audit",
+      "passed": true,
+      "durationMs": 1,
+      "evidence": {
+        "consoleErrors": [],
+        "expectedInvalidImportMessages": [
+          "StudyOS operation failed SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at JSON.parse (<anonymous>)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:26\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup inválido ou incompatível\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:382:69)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup pertence a outro Exam Pack\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:384:50)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup de produção incompleto\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:389:146)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém schema incompatível\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:256:71)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém IDs duplicados\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:352:31)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém score inválido\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:275:221)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém mastery/schema inválido\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:269:236)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:390:45)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém projeções inconsistentes\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:360:134)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup inválido ou incompatível\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:387:98)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: dailyMinutes deve ser inteiro entre 1 e 720\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:27:91)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:391:43)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: dailyMinutes deve ser inteiro entre 1 e 720\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:27:91)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:262:63)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém preferência desconhecida: __proto__\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateBackupSettings (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:26:28)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:391:43)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém plano/schema inválido\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:289:147)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém resposta diagnóstica inválida\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateDiagnosticRun (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:131:120)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:278:41)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém cursor de sessão inválido\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateStudySession (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:184:70)\n    at validateRecord (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:280:40)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:354:7)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)",
+          "StudyOS operation failed Error: backup contém recibo de tentativa inválido\n    at invalid (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:21:71)\n    at validateRetakeOperations (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:222:106)\n    at validateExport (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:358:3)\n    at validateBackupPayload (http://127.0.0.1:49909/Nivelando_Game/core/src/production.js:385:3)\n    at http://127.0.0.1:49909/Nivelando_Game/site-app.js?v=a53e83ed09b6-20261008213957854:426:61\n    at async HTMLButtonElement.<anonymous> (http://127.0.0.1:49909/Nivelando_Game/core/src/study-ui.js:42:11)"
+        ],
+        "httpErrors": [],
+        "failedRequests": [],
+        "externalRequests": [],
+        "requestCount": 324
+      }
+    },
+    {
+      "name": "corrupt-state recovery download is separate and valid backup import restores readiness",
+      "passed": true,
+      "durationMs": 2908,
+      "evidence": {
+        "recoveryControlsAvailable": true,
+        "existingCorruptionReported": true,
+        "confirmationSeen": true,
+        "validBackupRestored": true,
+        "readyAfterReload": true,
+        "recoveryFilename": "studyos-raw-recovery-only-tce-go-ti-2026.json",
+        "rawSnapshotIsRecoveryOnly": true,
+        "rawSnapshotKeys": [
+          "kind",
+          "recoveryVersion",
+          "recoveryOnly",
+          "captureId",
+          "capturedAt",
+          "namespaceIds",
+          "metadata",
+          "rawSettings",
+          "rows"
+        ]
+      }
+    },
+    {
+      "name": "real service worker offline reload and study",
+      "passed": true,
+      "durationMs": 1091,
+      "evidence": {
+        "offline": true,
+        "serviceWorkerNavigation": true,
+        "studyContentRendered": true
+      }
+    },
+    {
+      "name": "O3 database 2 load/upgrade preserves every seeded row and settings",
+      "passed": true,
+      "durationMs": 2492,
+      "evidence": {
+        "examId": "tce-go-ti-2026",
+        "dbVersion": 2,
+        "questionId": "q-tcego-b02-001",
+        "topicId": "engsoft-requisitos-arquitetura",
+        "sourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+        "rowCount": 19,
+        "collections": [
+          "mastery",
+          "activity-state",
+          "diagnostic-question-bank",
+          "diagnostic-runs",
+          "events",
+          "progress",
+          "retakes",
+          "revisions",
+          "scores",
+          "today-plans",
+          "xp-awards"
+        ],
+        "fullKeySnapshot": [
+          "__studyos_global__::mastery::software.architecture",
+          "tce-go-ti-2026::activity-state::today-tce-go-ti-2026-2026-09-25-activity-1",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-001",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-002",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-003",
+          "tce-go-ti-2026::diagnostic-runs::o3-diagnostic",
+          "tce-go-ti-2026::events::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::activity_started:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::o3-diagnostic:answered:q-tcego-b02-001",
+          "tce-go-ti-2026::events::o3-diagnostic:started",
+          "tce-go-ti-2026::events::o3-event::compound",
+          "tce-go-ti-2026::events::today-plan-generated:today-tce-go-ti-2026-2026-09-25",
+          "tce-go-ti-2026::progress::o3-progress",
+          "tce-go-ti-2026::retakes::o3::historical-run::q-tcego-b02-001::2",
+          "tce-go-ti-2026::revisions::engsoft-requisitos-arquitetura",
+          "tce-go-ti-2026::scores::o3::historical-run::q-tcego-b02-001",
+          "tce-go-ti-2026::today-plans::2026-09-25",
+          "tce-go-ti-2026::xp-awards::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::xp-awards::o3-event::compound"
+        ],
+        "exportedScoreId": "o3::historical-run::q-tcego-b02-001",
+        "loadedDatabaseVersion": 2
+      }
+    },
+    {
+      "name": "O3 database 1 load/upgrade preserves every seeded row and settings",
+      "passed": true,
+      "durationMs": 2426,
+      "evidence": {
+        "examId": "tce-go-ti-2026",
+        "dbVersion": 1,
+        "questionId": "q-tcego-b02-001",
+        "topicId": "engsoft-requisitos-arquitetura",
+        "sourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+        "rowCount": 19,
+        "collections": [
+          "mastery",
+          "activity-state",
+          "diagnostic-question-bank",
+          "diagnostic-runs",
+          "events",
+          "progress",
+          "retakes",
+          "revisions",
+          "scores",
+          "today-plans",
+          "xp-awards"
+        ],
+        "fullKeySnapshot": [
+          "__studyos_global__::mastery::software.architecture",
+          "tce-go-ti-2026::activity-state::today-tce-go-ti-2026-2026-09-25-activity-1",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-001",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-002",
+          "tce-go-ti-2026::diagnostic-question-bank::q-tcego-b02-003",
+          "tce-go-ti-2026::diagnostic-runs::o3-diagnostic",
+          "tce-go-ti-2026::events::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::activity_started:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::events::o3-diagnostic:answered:q-tcego-b02-001",
+          "tce-go-ti-2026::events::o3-diagnostic:started",
+          "tce-go-ti-2026::events::o3-event::compound",
+          "tce-go-ti-2026::events::today-plan-generated:today-tce-go-ti-2026-2026-09-25",
+          "tce-go-ti-2026::progress::o3-progress",
+          "tce-go-ti-2026::retakes::o3::historical-run::q-tcego-b02-001::2",
+          "tce-go-ti-2026::revisions::engsoft-requisitos-arquitetura",
+          "tce-go-ti-2026::scores::o3::historical-run::q-tcego-b02-001",
+          "tce-go-ti-2026::today-plans::2026-09-25",
+          "tce-go-ti-2026::xp-awards::activity_completed:today-tce-go-ti-2026-2026-09-25:today-tce-go-ti-2026-2026-09-25-activity-1:2026-09-25T12:00:00.000Z",
+          "tce-go-ti-2026::xp-awards::o3-event::compound"
+        ],
+        "exportedScoreId": "o3::historical-run::q-tcego-b02-001",
+        "loadedDatabaseVersion": 2
+      }
+    },
+    {
+      "name": "technical health page",
+      "passed": true,
+      "durationMs": 851,
+      "evidence": {
+        "passed": true,
+        "metadata": {
+          "metadataVersion": 1,
+          "appVersion": "1.0.0",
+          "buildId": "a53e83ed09b6-20261008213957854",
+          "commitSha": "a53e83ed09b661340f1b5c2aec67e11e25ec8d83",
+          "buildTimestamp": "2026-10-08T21:39:57.854Z",
+          "channel": "production",
+          "examPackVersion": "1.0.0",
+          "schemaVersion": 1,
+          "storageVersion": 2,
+          "examId": "tce-go-ti-2026"
+        },
+        "basePath": "/Nivelando_Game/",
+        "indexedDB": {
+          "available": true,
+          "status": "readable",
+          "name": "studyos-tce-go-ti-2026-v2",
+          "version": 2,
+          "stores": [
+            "records"
+          ]
+        },
+        "serviceWorker": {
+          "supported": true,
+          "scope": "http://127.0.0.1:49909/Nivelando_Game/",
+          "controlled": true,
+          "active": "activated",
+          "waiting": null,
+          "worker": {
+            "cacheName": "studyos-scope:http%3A%2F%2F127.0.0.1%3A49909%2FNivelando_Game%2F:studyos-tce-go-production-1.0.0-cdb5548470eb236886a7",
+            "scope": "http://127.0.0.1:49909/Nivelando_Game/",
+            "buildId": "a53e83ed09b6-20261008213957854",
+            "appVersion": "1.0.0",
+            "channel": "production"
+          }
+        },
+        "cache": {
+          "supported": true,
+          "names": [
+            "studyos-scope:http%3A%2F%2F127.0.0.1%3A49909%2FNivelando_Game%2F:studyos-tce-go-production-1.0.0-cdb5548470eb236886a7"
+          ]
+        },
+        "checks": [
+          {
+            "check": "metadata corresponde ao Exam Pack",
+            "passed": true
+          },
+          {
+            "check": "base path do service worker",
+            "passed": true
+          },
+          {
+            "check": "worker controla esta versão",
+            "passed": true
+          },
+          {
+            "check": "cache desta versão",
+            "passed": true
+          },
+          {
+            "check": "IndexedDB disponível",
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "layout and keyboard 375x667",
+      "passed": true,
+      "durationMs": 1080,
+      "evidence": {
+        "before": {
+          "viewport": 375,
+          "document": 375,
+          "body": 375,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 375,
+          "document": 375,
+          "body": 375,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 390x844",
+      "passed": true,
+      "durationMs": 1104,
+      "evidence": {
+        "before": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 430x932",
+      "passed": true,
+      "durationMs": 1098,
+      "evidence": {
+        "before": {
+          "viewport": 430,
+          "document": 430,
+          "body": 430,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 430,
+          "document": 430,
+          "body": 430,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    },
+    {
+      "name": "layout and keyboard 1280x900",
+      "passed": true,
+      "durationMs": 954,
+      "evidence": {
+        "before": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280,
+          "offenders": []
+        },
+        "after": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280,
+          "offenders": []
+        },
+        "keyboardAnswer": true,
+        "headingFocus": {
+          "outlineStyle": "none",
+          "outlineWidth": "3px"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "metadataVersion": 1,
+    "appVersion": "1.0.0",
+    "buildId": "a53e83ed09b6-20261008213957854",
+    "commitSha": "a53e83ed09b661340f1b5c2aec67e11e25ec8d83",
+    "buildTimestamp": "2026-10-08T21:39:57.854Z",
+    "channel": "production",
+    "examPackVersion": "1.0.0",
+    "schemaVersion": 1,
+    "storageVersion": 2,
+    "examId": "tce-go-ti-2026"
+  },
+  "checkoutCommit": "a53e83ed09b661340f1b5c2aec67e11e25ec8d83",
+  "checkoutDirty": [
+    " M core/src/library-ui.js",
+    " M core/src/study-ui.js",
+    " M core/src/today-ui.js",
+    " M exam-packs/tce-go-ti-2026/curriculum.json",
+    " M schemas/curriculum.schema.json",
+    " M scripts/o4-browser-check.mjs",
+    " M sites/tce-go-ti-2026/dist/build-meta.json",
+    " M sites/tce-go-ti-2026/dist/core/src/library-ui.js",
+    " M sites/tce-go-ti-2026/dist/core/src/study-ui.js",
+    " M sites/tce-go-ti-2026/dist/core/src/today-ui.js",
+    " M sites/tce-go-ti-2026/dist/exam-pack/curriculum.json",
+    " M sites/tce-go-ti-2026/dist/index.html",
+    " M sites/tce-go-ti-2026/dist/site-app.js",
+    " M sites/tce-go-ti-2026/dist/sw.js",
+    " M sites/tce-go-ti-2026/site-app.js",
+    "?? docs/UX_P2_PLAN_1280.png",
+    "?? docs/UX_P2_PLAN_390.png",
+    "?? docs/UX_P2_PLAN_BROWSER.json",
+    "?? docs/UX_P2_RELEASE_BROWSER.json",
+    "?? scripts/p2-plan-check.mjs"
+  ],
+  "o3SourceCommit": "c56ffbc15ff02b8ca86aa8884fa39344c5bc3ffe",
+  "baseNavigationInterception": {
+    "mode": "local",
+    "localRoutesRegistered": 6
+  },
+  "url": "http://127.0.0.1:49909/Nivelando_Game/",
+  "browser": {
+    "version": "154.0.4258.62",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+  },
+  "expectedCommit": "a53e83ed09b661340f1b5c2aec67e11e25ec8d83",
+  "finishedAt": "2026-10-08T21:40:53.957Z",
+  "passed": true,
+  "summary": {
+    "passed": 21,
+    "failed": 0
+  }
+}

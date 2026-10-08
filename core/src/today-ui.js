@@ -25,9 +25,10 @@ export class TodayDashboard {
     this.#root = root; this.#onStart = onStart; this.#onMinutes = onMinutes; this.#onExtra = onExtra;
     this.#onLibrary = onLibrary;
   }
-  render({ exam = {}, plan, summary = {}, weekly = {}, metrics = {}, streak = 0, xp = 0, availableMinutes = 120, topics = [] }) {
+  render({ exam = {}, plan, summary = {}, weekly = {}, metrics = {}, streak = 0, xp = 0, availableMinutes = 120, topics = [], mode = 'today', resourceTopicIds = [] }) {
     this.#root.replaceChildren();
-    const heading = make('h2', 'today-heading', 'Sua agenda de hoje');
+    const isPlan = mode === 'plan';
+    const heading = make(isPlan ? 'h3' : 'h2', 'today-heading', isPlan ? 'O que estudar hoje' : 'Sua agenda de hoje');
     this.#root.append(heading);
 
     const hud = make('div', 'pixel-grid pixel-grid--stats today-hud');
@@ -62,17 +63,24 @@ export class TodayDashboard {
 
     const activityList = make('ol', 'pixel-quest-list');
     activityList.setAttribute('aria-label', 'Agenda de hoje');
-    const topicTitles = new Map(topics.map((topic) => [topic.id, topic.title ?? topic.id]));
+    const topicTitles = new Map(topics.map((topic) => [topic.id, topic.displayTitle ?? topic.title ?? topic.id]));
+    const fullTitles = new Map(topics.map(topic => [topic.id, topic.title]));
     for (const activity of plan?.activities ?? []) {
       const item = make('li', `pixel-quest${activity.status === 'completed' ? ' pixel-quest--completed' : ['in_progress', 'paused'].includes(activity.status) ? ' pixel-quest--active' : ''}`);
       const content = make('div');
       const topic = activity.topicId ? topicTitles.get(activity.topicId) ?? activity.topicId : 'Estudo do dia';
       const activityLabel = ACTIVITY_LABELS[activity.type] ?? activity.type;
       content.append(make('p', 'pixel-quest__name', topic));
+      if (fullTitles.get(activity.topicId) && fullTitles.get(activity.topicId) !== topic) { const detail = make('details', 'quest-reason'); detail.append(make('summary', '', 'Conteúdo completo'), make('p', '', fullTitles.get(activity.topicId))); content.append(detail); }
       content.append(make('p', 'pixel-quest__meta', `${activityLabel} · ${activity.estimatedMinutes} min`));
-      if (activity.reason) { const details = make('details', 'quest-reason'); details.append(make('summary', '', 'Motivo da atividade'), make('p', 'pixel-quest__meta', activity.reason)); content.append(details); }
+      if (activity.reason) { const details = make('details', 'quest-reason'); details.append(make('summary', '', 'Por que estudar agora?'), make('p', 'pixel-quest__meta', activity.reason)); content.append(details); }
       const statusTone = activity.status === 'completed' ? 'success' : ['in_progress', 'paused'].includes(activity.status) ? 'info' : 'neutral';
       item.append(content, PixelBadge(STATUS_LABELS[activity.status] ?? activity.status, statusTone));
+      if (isPlan) {
+        if (!['completed', 'skipped'].includes(activity.status)) item.append(PixelButton({ label: ['paused', 'in_progress'].includes(activity.status) ? 'Retomar atividade' : 'Iniciar atividade', onClick: () => this.#onStart(activity) }));
+        if (this.#onLibrary && activity.topicId) content.append(PixelButton({ label: resourceTopicIds.includes(activity.topicId) ? 'Ver materiais' : 'Consultar lacuna de material', variant: 'secondary', onClick: () => this.#onLibrary(activity.topicId) }));
+        if (['theory', 'reading'].includes(activity.type) && !resourceTopicIds.includes(activity.topicId)) content.append(make('p', 'pixel-quest__meta', 'Sem material associado neste catálogo. Consulte a biblioteca para ver a lacuna.'));
+      }
       activityList.append(item);
     }
 
@@ -83,9 +91,10 @@ export class TodayDashboard {
       const card = PixelPanel({ className: 'today-next pixel-panel--selected', children: [
         heading,
         make('p', 'today-next__topic', topic),
+        ...(fullTitles.get(next.topicId) && fullTitles.get(next.topicId) !== topic ? [(() => { const detail = make('details', 'quest-reason'); detail.append(make('summary', '', 'Conteúdo completo'), make('p', '', fullTitles.get(next.topicId))); return detail; })()] : []),
         make('p', 'today-next__meta', `${ACTIVITY_LABELS[next.type] ?? next.type} · estimativa de ${next.estimatedMinutes} min`),
         ...(next.reason ? [(() => { const detail = make('details', 'quest-reason'); detail.append(make('summary', '', 'Por que estudar agora?'), make('p', '', next.reason)); return detail; })()] : []),
-        PixelButton({ label: 'COMEÇAR', onClick: () => this.#onStart(next) })
+        PixelButton({ label: isPlan && ['paused', 'in_progress'].includes(next.status) ? 'RETOMAR' : 'COMEÇAR', onClick: () => this.#onStart(next) })
       ] });
       if (this.#onLibrary && next.topicId) card.append(PixelButton({ label: 'Ver materiais', variant: 'secondary', onClick: () => this.#onLibrary(next.topicId) }));
       this.#root.append(card);
@@ -98,7 +107,7 @@ export class TodayDashboard {
       ] }));
     }
 
-    this.#root.append(hud, goalPanel);
+    this.#root.append(...(isPlan ? [make('p', '', `Disponível hoje: ${dailyGoal} min · Agenda: ${(plan?.activities ?? []).filter(a => a.status !== 'skipped').reduce((total, a) => total + (Number(a.estimatedMinutes) || 0), 0)} min estimados · Concluídos: ${currentMinutes} min estimados`), goalPanel] : [hud, goalPanel]));
 
     if (activityList.childElementCount) {
       const questPanel = PixelPanel({ children: [make('h3', '', 'Linha de missões · Agenda de hoje'), activityList] });
@@ -123,7 +132,7 @@ export class TodayDashboard {
 
     const coverage = metrics.coverage?.rate;
     const coverageLabel = coverage == null ? 'Sem dados' : `${Math.round(Math.min(1, Math.max(0, Number(coverage))) * 100)}%`;
-    this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [
+    if (!isPlan) this.#root.append(PixelPanel({ className: 'pixel-panel--compact', children: [
       make('h3', '', 'Visão da semana'),
       make('p', '', `Cobertura do currículo: ${coverageLabel}`),
       (() => { const details = make('details'); const summaryNode = make('summary', '', 'Resumo semanal'); const text = make('p', '', `${weekly.completedMinutes ?? 0} / ${weekly.plannedMinutes ?? 0} min realizados · ${weekly.questionActivities ?? 0} atividades de questões · ${weekly.reviewActivities ?? 0} revisões`); details.append(summaryNode, text); return details; })()

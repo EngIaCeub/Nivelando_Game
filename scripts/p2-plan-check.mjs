@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import {mkdtemp,readFile,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,resolve,extname,sep} from 'node:path';
+import {createServer} from 'node:http';
+import {chromium} from 'playwright';
+import {buildStandalone} from './build-standalone.mjs';
+import {fileURLToPath} from 'node:url';
+import {existsSync} from 'node:fs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const dist=await mkdtemp(join(tmpdir(),'studyos-p2-'));
+await buildStandalone({root,examId:'tce-go-ti-2026',dist,buildId:'p2-plan-test',commitSha:'local-p2'});
+const server=createServer(async(req,res)=>{try{const p=resolve(dist,decodeURIComponent(new URL(req.url,'http://localhost').pathname.slice('/study/'.length))||'index.html');if(!p.startsWith(dist+sep))throw Error('path');res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css'})[extname(p)]??'application/octet-stream');res.end(await readFile(p));}catch{res.writeHead(404);res.end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const browser=await chromium.launch({headless:true,...(existsSync(edge)?{executablePath:edge}:{})});
+const context=await browser.newContext();const page=await context.newPage();page.setDefaultTimeout(10000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+const base=process.argv[2] ?? `http://127.0.0.1:${server.address().port}/study/`;
+const evidence={isolation:'new browser context; synthetic data',checks:[]};
+const snapshot=()=>page.evaluate(async()=>{const {IndexedDbStore}=await import('./core/src/storage.js');const s=new IndexedDbStore({name:'studyos-tce-go-ti-2026-v2',version:2});return {scores:await s.query('tce-go-ti-2026','scores'),xp:await s.query('tce-go-ti-2026','xp-awards')};});
+try{
+ await page.goto(base+'#plan');const plan=page.locator('#plan');
+ await plan.getByRole('heading',{name:'O que estudar hoje',exact:true}).waitFor();
+ const todayRows=await page.locator('#today-dashboard .pixel-quest__name').allTextContents();
+ assert.deepEqual(await plan.locator('.pixel-quest__name').allTextContents(),todayRows);
+ await plan.getByLabel('Minutos disponíveis hoje',{exact:true}).selectOption('30');
+ await plan.getByText('Disponível hoje: 30 min',{exact:false}).waitFor();
+ assert.match(await page.locator('#today-dashboard .today-goal').innerText(),/30 min/);
+ const row=plan.locator('.pixel-quest').filter({hasText:'Questões ·'}).first();
+ const activityTitle=await row.locator('.pixel-quest__name').innerText();assert.ok(activityTitle.length<=80);
+ await row.getByRole('button',{name:'Iniciar atividade',exact:true}).press('Enter');
+ const q=page.locator('#questions');await q.getByRole('heading',{name:activityTitle,exact:true}).waitFor();await q.locator('.quiz-option').first().click();await q.locator('.study-feedback').waitFor();
+ const answered=await page.evaluate(async()=>{const {IndexedDbStore}=await import('./core/src/storage.js');const s=new IndexedDbStore({name:'studyos-tce-go-ti-2026-v2',version:2});return s.query('tce-go-ti-2026','study-sessions');});
+ const before=await snapshot();
+ await q.getByRole('button',{name:'Pausar e continuar depois',exact:true}).click();
+ await page.getByRole('link',{name:'Plano',exact:true}).click();
+ await plan.getByRole('button',{name:'Retomar atividade',exact:true}).waitFor();
+ await page.reload();await plan.getByRole('button',{name:'Retomar atividade',exact:true}).press('Enter');
+ await q.locator('.study-feedback').waitFor();
+ const resumed=await page.evaluate(async()=>{const {IndexedDbStore}=await import('./core/src/storage.js');const s=new IndexedDbStore({name:'studyos-tce-go-ti-2026-v2',version:2});return s.query('tce-go-ti-2026','study-sessions');});
+ assert.deepEqual(resumed[0].responses,answered[0].responses);assert.equal(resumed[0].cursor,answered[0].cursor);assert.deepEqual(await snapshot(),before);
+ await q.getByRole('button',{name:'Pausar e continuar depois',exact:true}).click();await page.getByRole('link',{name:'Plano',exact:true}).click();
+ for(const width of [1280,390]){await page.setViewportSize({width,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:resolve(root,`docs/UX_P2_PLAN_${width}.png`)});}
+ await plan.locator('.today-next summary').filter({hasText:'Conteúdo completo'}).press('Enter');assert.ok(await plan.locator('.today-next details[open]').count());
+ evidence.checks.push('same agenda; change minutes syncs Hoje; Enter starts activity; pause/reload/resume preserves answers/cursor/score/XP; mobile/desktop');
+ const fixtures=await page.evaluate(async()=>{
+ const {TodayDashboard}=await import('./core/src/today-ui.js');const root=document.createElement('div');document.body.append(root);
+ const ui=new TodayDashboard({root,onLibrary:()=>{}});
+ ui.render({mode:'plan',plan:{activities:[]}});const empty=root.textContent.includes('Sem atividades programadas');
+ ui.render({mode:'plan',plan:{activities:[{activityId:'done',topicId:'demo',type:'theory',status:'completed',estimatedMinutes:15},{activityId:'missing',topicId:'demo',type:'theory',status:'planned',estimatedMinutes:15}]},topics:[{id:'demo',title:'Conteúdo de teste'}]});
+ const completedNoStart=![...root.querySelector('.pixel-quest--completed').querySelectorAll('button')].some(b=>/Iniciar|Retomar/.test(b.textContent));
+ const missing=root.textContent.includes('Sem material associado');const completed=root.textContent.includes('Concluída');root.remove();return {empty,completedNoStart,missing,completed};});
+ assert.ok(fixtures.empty&&fixtures.missing&&fixtures.completed&&fixtures.completedNoStart);evidence.fixtures=fixtures;
+ await page.goto(base+'#library');const lib=page.locator('#library');await lib.getByLabel('Conteúdo',{exact:true}).selectOption('bd-sql');await lib.getByRole('heading',{name:'SQL, transações e desempenho',exact:true}).waitFor();await lib.locator('.library-unit summary').filter({hasText:'Conteúdo completo'}).press('Enter');assert.match(await lib.locator('.library-unit details[open]').innerText(),/álgebra relacional/);evidence.checks.push('short title in Hoje/Plano/Questões/Library; full curriculum remains keyboard-expandable');
+ await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await page.reload();await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));await context.setOffline(true);await page.goto(base+'#plan');await plan.getByRole('heading',{name:'O que estudar hoje',exact:true}).waitFor();await plan.getByRole('button',{name:'Retomar atividade',exact:true}).waitFor();evidence.checks.push('real SW offline reload of Plano with pending session');
+ assert.deepEqual(errors,[]);evidence.base=base;evidence.passed=true;console.log(JSON.stringify(evidence));
+}catch(error){evidence.error=String(error.stack);console.error(error);process.exitCode=1;}finally{await writeFile(resolve(root,'docs/UX_P2_PLAN_BROWSER.json'),JSON.stringify(evidence,null,2));await context.close();await browser.close();server.closeAllConnections();await new Promise(r=>server.close(r));}

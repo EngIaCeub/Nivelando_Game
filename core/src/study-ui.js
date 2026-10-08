@@ -341,8 +341,8 @@ export class StudySession {
 }
 
 export class StudyUI {
-  constructor({ root, session, ensureQuestions, ensureCards, report, onComplete = async () => {}, topicTitleFor = (id) => id }) {
-    Object.assign(this, { root, session, ensureQuestions, ensureCards, report, onComplete, topicTitleFor });
+  constructor({ root, session, ensureQuestions, ensureCards, report, onComplete = async () => {}, topicTitleFor = (id) => id, runTitleFor = run => run.title }) {
+    Object.assign(this, { root, session, ensureQuestions, ensureCards, report, onComplete, topicTitleFor, runTitleFor });
   }
   button(label, handler) { return action(label, handler, this.report); }
   async flashcardReviewState(item, response) {
@@ -368,7 +368,9 @@ export class StudyUI {
   }
   async render() {
     const run = this.run;
-    this.root.replaceChildren(node('h2', run.title));
+    const displayTitle = this.runTitleFor(run);
+    this.root.replaceChildren(node('h2', displayTitle));
+    if (displayTitle !== run.title) { const detail = node('details'); detail.append(node('summary', 'Detalhes da atividade'), node('p', run.title)); this.root.append(detail); }
     const heading = this.root.querySelector('h2'); heading.tabIndex = -1; heading.focus();
     const ids = run.kind === 'flashcards' ? run.cardIds : run.questionIds;
     const answeredCount = new Set(run.responses.filter((saved) => ids.includes(saved.itemId)).map((saved) => saved.itemId)).size;
