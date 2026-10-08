@@ -102,7 +102,7 @@ async function showView(page, id) {
 async function ready(page) {
   await showView(page, 'today');
   await page.locator('#today-dashboard select[aria-label="Minutos disponíveis hoje"]').waitFor();
-  await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor({ state: 'attached' });
+  await page.locator('#production-settings button').first().waitFor({ state: 'attached' });
 }
 async function open(page) { await page.goto(base); await ready(page); }
 async function snapshot(page) {
