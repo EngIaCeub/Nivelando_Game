@@ -915,3 +915,5 @@ Continuidade publicada09418a7, Pages37846025510 success, smoke remoto aprovado. 
 
 ## UX P2 — Plano e títulos, 2026-10-08
 Implementação local e QA independente aprovados: Plano acionável usando a mesma agenda/callbacks de Hoje; estados e tempos estimados; títulos curtos45/45 no pack com conteúdo completo por teclado. Currículo original/IDs/sessões preservados. Suíte210/210, schemas3packs, security496, smoke P2 e release browser21/21 aprovados, incluindo offline e backup. Publicação/smoke remoto pendentes. Evidências e limites docs/UX_P2_ACCEPTANCE.md.
+
+P2 concluído/publicado: commit497fbb2, Pages37848531627 success, build-meta público exato e smoke remoto P2 aprovados. Plano/retomada, títulos, teclado e catálogo de agenda offline conferidos em contexto isolado; instalação existente atualizada via UI e inspecionada. Relatório docs/UX_P2_ACCEPTANCE.md.

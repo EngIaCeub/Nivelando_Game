@@ -1,7 +1,7 @@
 # UX P2 — Plano e clareza dos títulos
 
 Data: 2026-10-08. Checkout canônico: `C:\CodexProjects\Nivelando_Game`.
-Estado: implementação e QA local aprovados; gate amplo final e publicação pendentes.
+Estado: P2 concluído, publicado e conferido remotamente.
 
 ## Entrega
 
@@ -25,3 +25,6 @@ Evidência sintética em contextos descartáveis, sem pesquisa com usuários ou 
 
 ## Gate local final
 Release browser21/21 aprovado, inclusive layouts375/390/430/1280, teclado com expansão de detalhes, offline, migração O3 e export/import round-trip. Relatório identifica SHA base a53e83e com árvore modificada; CI reconstruirá o commit publicado.
+
+## Publicação e smoke remoto
+Commit497fbb21a23700f9d53437db7a8ca12c5ce15988 conferido no build-meta público. Pages run37848531627: build/deploy success, incluindo suíte e gate de navegador no commit exato. Smoke P2 repetido em https://engiaceub.github.io/Nivelando_Game/: todos os cenários passaram, inclusive Plano offline com sessão pendente. Evidência local preservada em UX_P2_PLAN_LOCAL_BROWSER.json; remoto em UX_P2_PLAN_BROWSER.json; metadata em UX_P2_REMOTE_BUILD.json. Screenshots390/1280 atualizados pelo smoke remoto. CUA conferiu instalação existente, atualização explícita e Plano novo com atividade pendente, título curto e botão RETOMAR. P2 aprovado no escopo das diretrizes; não é pesquisa longitudinal.

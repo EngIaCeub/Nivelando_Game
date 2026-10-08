@@ -1,0 +1,12 @@
+{
+  "metadataVersion": 1,
+  "appVersion": "1.0.0",
+  "buildId": "497fbb21a237-20261008214204362",
+  "commitSha": "497fbb21a23700f9d53437db7a8ca12c5ce15988",
+  "buildTimestamp": "2026-10-08T21:42:04.362Z",
+  "channel": "production",
+  "examPackVersion": "1.0.0",
+  "schemaVersion": 1,
+  "storageVersion": 2,
+  "examId": "tce-go-ti-2026"
+}
