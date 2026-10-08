@@ -1,0 +1,9 @@
+{
+  "isolation": "new browser context; synthetic data",
+  "checks": [
+    "answered active simulation → reload #questions → keyboard resume; responses/score/answer events/XP unchanged",
+    "pause → Hoje CTA → reload → resume retains cursor 1 without score/XP mutation",
+    "mobile pending CTA visible, no horizontal overflow"
+  ],
+  "passed": true
+}

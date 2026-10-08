@@ -242,6 +242,7 @@ async function showTheory(activity, date) {
   }), button('Pausar leitura', async () => {
     await session.pauseReading(id);
     document.documentElement.dataset.studyActive = 'false'; questionsRoot.replaceChildren(node('h2', 'Leitura pausada'), button('Retomar leitura', async () => { requirePaused(); await showTheory(activity, date); }));
+    await renderResume();
   }));
   questionsRoot.scrollIntoView();
   const heading = questionsRoot.querySelector('h2'); heading.tabIndex = -1; heading.focus({ preventScroll: true });
@@ -327,6 +328,18 @@ async function renderResume() {
   for (const run of runs) root.append(button('Retomar ' + run.title + ' · ' + ({ paused: 'pausada', active: 'em andamento', 'in-progress': 'em andamento' }[run.status] ?? 'pendente'), () => openSession(run.kind === 'diagnostic' ? diagnosticUI : run.kind === 'flashcards' ? flashcardUI : quizUI, run)));
   for (const run of readings) root.append(button('Retomar leitura · ' + run.activity.topicId, async () => { requirePaused(); await showTheory(run.activity, run.date); }));
   if (!runs.length && !readings.length) root.append(node('p', 'Nenhuma sessão pendente. Comece pela agenda Hoje ou escolha um tópico.'));
+  questionsRoot.querySelector('#questions-resume')?.remove();
+  if (document.documentElement.dataset.studyActive !== 'true') {
+    const questionRuns = runs.filter(run => ['quiz', 'simulation'].includes(run.kind));
+    if (questionRuns.length || readings.length) {
+      const pending = node('div'); pending.id = 'questions-resume';
+      pending.setAttribute('aria-label', 'Sessões pendentes de questões e leitura');
+      pending.append(node('h3', 'Continue de onde parou'));
+      for (const run of questionRuns) pending.append(button('Retomar ' + run.title, () => openSession(quizUI, run)));
+      for (const run of readings) pending.append(button('Retomar leitura · ' + run.activity.topicId, async () => { requirePaused(); await showTheory(run.activity, run.date); }));
+      questionsRoot.append(pending);
+    }
+  }
 }
 async function renderReviews() {
   const root = document.querySelector('#reviews'); root.replaceChildren(node('h2', 'Revisões'));
@@ -645,6 +658,7 @@ window.addEventListener('hashchange', () => {
   if ((authSession || guestMode) && accountRoute) location.hash = '#today';
 });
 window.addEventListener('studyos:session-paused', () => {
+  void renderResume().catch(report);
   if (authSession) void syncWorkspace({ manual: false }).catch(error => syncStatus(error.message, 'alert'));
 });
 bootStudyOS().catch(error => { report(error); status.textContent = 'Não foi possível iniciar o estudo. Verifique a conexão e o armazenamento do navegador. Nenhum salvamento foi confirmado.'; });
