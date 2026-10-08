@@ -1,3 +1,5 @@
+**Estado vigente conferido em 2026-10-08:** candidato4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639 aprovado e já integrado ao catálogo ativo; completeApproved=true. P1 UX remoto conferido; ver docs/UX_P1_ACCEPTANCE.md. Os estados pendentes abaixo são históricos, restritos aos hashes indicados.
+
 **Estado atual (2026-10-08):** reinspeção pendente para o `STAGED_PACK.json` SHA-256 `d7ef5d2e33a26b14851839da5c7294e9fec7cb731341d18c9572fb95335704f1`. O parecer parcial aprovado abaixo cobre somente o hash anterior `7d0b663ea92c3e6350b676f494e4bd54dac22f94e2130a18240837252db33bb8`, não se estende ao candidato atual. Candidato atual: 118/209 cobertas, 91 lacunas, 124 recursos ativos e 198 candidatos desconhecidos. `completeApproved=false`.
 
 ## Parecer anterior — candidato parcial 451157d6…

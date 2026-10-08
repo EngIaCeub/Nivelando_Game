@@ -23,3 +23,6 @@ P1 biblioteca é gate separado e não foi promovido por esta correção.
 
 ## Parecer e gate local
 QA independente /root/p1_review (GPT-6.1 Sol/high): aprovado no escopo de continuidade local, sem bloqueantes. Browser independente adicional abortado por sandbox; parecer baseado em inspeção e evidências reproduzíveis do coordenador. Gate amplo repetido com metadados Git: 21/21 aprovado; inclui offline, upgrade, backup, teclado e layouts. O SHA base no relatório identifica a árvore base com alteração local (checkoutDirty); publicação será conferida pelo SHA do novo commit e smoke remoto.
+
+## Publicação conferida
+Pages run 37846025510 success. Commit 09418a7d41087709b0e20b6d1ec6b07569d0bfc8 conferido em build-meta remoto. Smoke focal repetido na URL publicada: aprovado; respostas, cursor, score, XP, reload, Enter e mobile. Evidência sintética em contexto descartável. Gate P1 continuidade concluído.

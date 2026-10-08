@@ -907,3 +907,8 @@ P0 aprovado no escopo de qualidade do deck ativo e preservação histórica. QA 
 Retomada em Questões após reload implementada; listagem de Hoje atualiza após pausa. Teste focal em contexto descartável passou, preservando respostas, cursor, score, eventos de resposta e XP. Suíte completa 210/210; schemas de três packs e security scan aprovados. Gate amplo browser: 20 verificações funcionais aprovadas; metadata local requer regeneração com commit exato. QA final/publicação/smoke remoto pendentes. Evidências: docs/UX_P1_CONTINUITY.md e docs/UX_P1_RESUME_EVIDENCE.json. P1 biblioteca não promovido nesta etapa.
 
 P1 continuidade: QA independente aprovado; gate amplo repetido 21/21 com SHA base correto (árvore local modificada). Publicação e smoke remoto ainda pendentes.
+
+P1 continuidade concluído: Pages37846025510 success; commit09418a7 remoto conferido; smoke publicado aprovado.
+
+## UX P1 — aceite final 2026-10-08
+Continuidade publicada09418a7, Pages37846025510 success, smoke remoto aprovado. Biblioteca ativa já integrada:209/209 unidades,309 recursos,43 percursos; auditoria require-complete sem lacunas e QA independente conferido. Teste local/remoto da biblioteca aprovou filtros, teclado,390/1280, catálogo offline e score/XP invariantes. Suite210/210 após rebuild; schemas3packs. Detalhes/limites docs/UX_P1_ACCEPTANCE.md. P1 UX concluído; não declara B6/segundo pack ou B7; P2 não iniciado.

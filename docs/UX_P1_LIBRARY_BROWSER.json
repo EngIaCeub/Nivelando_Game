@@ -1,0 +1,9 @@
+{
+  "isolation": "new browser context; synthetic data",
+  "checks": [
+    "209/209 coverage; 309 resources/43 paths; topic objectives, safe links, empty search, keyboard clear",
+    "desktop/mobile without overflow; real SW offline catalog reload/filter; score/XP unchanged"
+  ],
+  "base": "https://engiaceub.github.io/Nivelando_Game/",
+  "passed": true
+}
