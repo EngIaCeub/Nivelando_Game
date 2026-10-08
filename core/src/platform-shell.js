@@ -42,7 +42,7 @@ export function setupPlatformShell() {
     if (moveFocus) {
       const destination = document.getElementById((hash.slice(1).split('?')[0]));
       const section = document.getElementById(activeRoute);
-      const focusTarget = destination?.closest('section') === section ? destination : section;
+      const focusTarget = destination?.id === 'main-content' || destination?.closest('section') === section ? destination : section;
       focusTarget?.focus({ preventScroll: true });
     }
   };

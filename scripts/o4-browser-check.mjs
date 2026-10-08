@@ -96,7 +96,10 @@ async function isolated(viewport = { width: 1280, height: 900 }) {
 }
 async function close(context) { await context.close(); contexts.delete(context); }
 async function showView(page, id) {
-  await page.evaluate(viewId => { if (location.hash !== `#${viewId}`) location.hash = `#${viewId}`; }, id);
+  await page.evaluate(viewId => {
+    if (!location.hash && viewId === 'today') history.replaceState(null, '', '#today');
+    else if (location.hash !== `#${viewId}`) location.hash = `#${viewId}`;
+  }, id);
   await page.locator(`#${id}`).waitFor({ state: 'visible' });
 }
 async function ready(page) {

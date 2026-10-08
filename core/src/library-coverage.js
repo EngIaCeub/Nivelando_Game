@@ -163,4 +163,3 @@ export function auditLibrary(pack, { now = new Date() } = {}) {
     uncoveredUnitIds: coveredUnits.filter(u => !u.covered).map(u => u.unitId)
   };
 }
-
