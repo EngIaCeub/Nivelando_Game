@@ -1,0 +1,2236 @@
+[
+  {
+    "id": "q-tcego-expanded-lp-texto-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "lp-texto"
+    ],
+    "canonicalConceptIds": [
+      "language.portuguese.orthography",
+      "language.reading.comprehension"
+    ],
+    "stem": "Texto original: “A atualização corrigiu a falha de acesso, mas a lentidão permaneceu.” Qual informação está explicitamente afirmada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A atualização introduziu uma nova falha de acesso."
+      },
+      {
+        "id": "b",
+        "text": "A atualização resolveu tanto o acesso quanto a lentidão."
+      },
+      {
+        "id": "c",
+        "text": "A lentidão foi resolvida antes da atualização."
+      },
+      {
+        "id": "d",
+        "text": "A falha de acesso foi causada pela lentidão."
+      },
+      {
+        "id": "e",
+        "text": "A falha de acesso foi corrigida, embora a lentidão tenha continuado."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "O texto afirma a correção do acesso e contrapõe a persistência da lentidão.",
+    "explanationByOption": {
+      "a": "O verbo corrigiu indica reparo da falha; não há afirmação de criação de outra.",
+      "b": "A segunda oração informa que a lentidão permaneceu, excluindo essa conclusão.",
+      "c": "Permaneceu indica continuidade, sem afirmar resolução anterior.",
+      "d": "O texto não estabelece relação de causa entre esses problemas.",
+      "e": "O texto afirma a correção do acesso e contrapõe a persistência da lentidão."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "5ae2afa30435fad82801324056e6e596f854d77827a8dff9962588d464eea2e2",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Compreensão literal, contraste introduzido por mas",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-lp-morfossintaxe-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "lp-morfossintaxe"
+    ],
+    "canonicalConceptIds": [
+      "language.portuguese.morphosyntax"
+    ],
+    "stem": "Na frase original “Os relatórios foram revisados pela equipe”, que construção verbal está presente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Voz reflexiva: os relatórios revisam a si próprios."
+      },
+      {
+        "id": "b",
+        "text": "Voz ativa: o sujeito relatórios executa a ação de revisar."
+      },
+      {
+        "id": "c",
+        "text": "Sujeito indeterminado: não há termo expresso na oração."
+      },
+      {
+        "id": "d",
+        "text": "Passiva sintética: a forma foram substitui a partícula se."
+      },
+      {
+        "id": "e",
+        "text": "Voz passiva analítica: o sujeito recebe a ação e a locução contém ser e particípio."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "Relatórios recebe a revisão; foram revisados contém auxiliar ser e particípio, com agente pela equipe.",
+    "explanationByOption": {
+      "a": "Não há pronome reflexivo nem ação do sujeito sobre si mesmo.",
+      "b": "Quem revisa é a equipe; relatórios é o paciente, não o agente.",
+      "c": "Os relatórios é sujeito expresso e concorda com foram.",
+      "d": "Passiva sintética usa se apassivador; essa frase usa locução ser + particípio.",
+      "e": "Relatórios recebe a revisão; foram revisados contém auxiliar ser e particípio, com agente pela equipe."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "e7558c6fed60ac940315362d219cd40ecc3e7d89b539039ebed8946937709fae",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Voz passiva analítica; auxiliar ser e particípio",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-lp-sintaxe-redacao-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "lp-sintaxe-redacao"
+    ],
+    "canonicalConceptIds": [
+      "language.portuguese.syntax",
+      "language.portuguese.writing"
+    ],
+    "stem": "Em “Ana, confira o relatório antes da reunião”, por que a vírgula após Ana é adequada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela separa obrigatoriamente o sujeito do predicado."
+      },
+      {
+        "id": "b",
+        "text": "Ela marca a omissão do verbo principal."
+      },
+      {
+        "id": "c",
+        "text": "Ela isola o vocativo, que identifica a pessoa a quem se dirige a ordem."
+      },
+      {
+        "id": "d",
+        "text": "Ela separa duas orações independentes já completas."
+      },
+      {
+        "id": "e",
+        "text": "Ela transforma Ana em objeto direto de conferir."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Ana é um chamamento ao destinatário da ordem; o vocativo deve ser isolado.",
+    "explanationByOption": {
+      "a": "Não se trata de separação entre sujeito e predicado; Ana funciona como vocativo.",
+      "b": "Confira é o verbo principal expresso; não ocorre elipse que explique a vírgula.",
+      "c": "Ana é um chamamento ao destinatário da ordem; o vocativo deve ser isolado.",
+      "d": "Ana não constitui uma oração completa nessa frase.",
+      "e": "O relatório é o objeto de conferir; Ana é destinatária do chamamento."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "0012ff98382597adf1789f52ec174e539dd16eb0f49fa6633f447351ef288a67",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "FUNAG Vírgula, vocativo",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-mrl-aritmetica-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "mrl-aritmetica"
+    ],
+    "canonicalConceptIds": [
+      "math.arithmetic"
+    ],
+    "stem": "Um reservatório contém 3/4 de sua capacidade. Retira-se 1/3 da capacidade total. Que fração da capacidade permanece?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5/12"
+      },
+      {
+        "id": "b",
+        "text": "2/3"
+      },
+      {
+        "id": "c",
+        "text": "1/4"
+      },
+      {
+        "id": "d",
+        "text": "2/1"
+      },
+      {
+        "id": "e",
+        "text": "1/2"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Usando denominador 12: 3/4 - 1/3 = 9/12 - 4/12 = 5/12.",
+    "explanationByOption": {
+      "a": "Usando denominador 12: 3/4 - 1/3 = 9/12 - 4/12 = 5/12.",
+      "b": "3/4 corresponde a 9/12, e a retirada de 4/12 deixa 5/12, não 8/12.",
+      "c": "1/4 seria retirar metade da capacidade; aqui a retirada é 1/3 da capacidade total.",
+      "d": "Subtrair numeradores e denominadores separadamente não é regra de subtração de frações.",
+      "e": "1/2 equivale a 6/12; a diferença calculada é 5/12."
+    },
+    "origin": "generated_original",
+    "difficulty": "medium",
+    "cognitiveLevel": "application",
+    "fingerprint": "5ac4c9f1f5ea6b607538948e3c4c200ff596b08118dddd560e3674f304c8bb4b",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Subtração de frações; denominador comum",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-mrl-proporcoes-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "mrl-proporcoes"
+    ],
+    "canonicalConceptIds": [
+      "math.proportionality"
+    ],
+    "stem": "Um orçamento de R$ 900 será dividido entre duas equipes na razão 2:3. Qual valor recebe a equipe correspondente a 2 partes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "R$ 600"
+      },
+      {
+        "id": "b",
+        "text": "R$ 450"
+      },
+      {
+        "id": "c",
+        "text": "R$ 180"
+      },
+      {
+        "id": "d",
+        "text": "R$ 540"
+      },
+      {
+        "id": "e",
+        "text": "R$ 360"
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "São cinco partes ao todo; cada uma vale 900/5=180. Duas partes valem 360.",
+    "explanationByOption": {
+      "a": "Multiplicar 900 por 2/3 usa a razão entre as equipes como fração do total; a fração correta é 2/5.",
+      "b": "Dividir igualmente ignora a razão 2:3.",
+      "c": "180 é o valor de uma parte, enquanto a equipe recebe duas.",
+      "d": "540 corresponde a três partes e é o valor da outra equipe.",
+      "e": "São cinco partes ao todo; cada uma vale 900/5=180. Duas partes valem 360."
+    },
+    "origin": "generated_original",
+    "difficulty": "medium",
+    "cognitiveLevel": "application",
+    "fingerprint": "3ececda6c780d44c24430216d0d5ca62f61c01973399084d35e0bafcf5e1f342",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Divisão diretamente proporcional, soma de partes",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-mrl-logica-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "mrl-logica"
+    ],
+    "canonicalConceptIds": [
+      "logic.deduction"
+    ],
+    "stem": "Três tarefas A, B e C serão executadas uma única vez. A deve vir antes de B e C deve vir depois de B. Qual sequência atende às duas condições?",
+    "options": [
+      {
+        "id": "a",
+        "text": "B, C, A"
+      },
+      {
+        "id": "b",
+        "text": "C, A, B"
+      },
+      {
+        "id": "c",
+        "text": "A, C, B"
+      },
+      {
+        "id": "d",
+        "text": "B, A, C"
+      },
+      {
+        "id": "e",
+        "text": "A, B, C"
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "As condições impõem A antes de B e B antes de C, formando a ordem A-B-C.",
+    "explanationByOption": {
+      "a": "A é colocada após B, contrariando a primeira condição.",
+      "b": "C ocorre antes de B, embora devesse ocorrer depois.",
+      "c": "C precede B, violando a segunda condição.",
+      "d": "B precede A, violando a primeira condição.",
+      "e": "As condições impõem A antes de B e B antes de C, formando a ordem A-B-C."
+    },
+    "origin": "generated_original",
+    "difficulty": "medium",
+    "cognitiveLevel": "application",
+    "fingerprint": "50165e2356dd09eb21e808087ce274fe1c3da8d5fe0cc0d08bf1887b3dc7b49b",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Dedução e ordenação com condições explícitas",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-leginst-constituicao-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "leginst-constituicao"
+    ],
+    "canonicalConceptIds": [
+      "public-law.constitutional.control"
+    ],
+    "stem": "No controle externo federal previsto no art. 71 da Constituição, qual relação institucional é estabelecida entre o Congresso Nacional e o TCU?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Congresso é órgão subordinado ao TCU no processo legislativo."
+      },
+      {
+        "id": "b",
+        "text": "O controle externo federal é exercido exclusivamente por tribunais estaduais."
+      },
+      {
+        "id": "c",
+        "text": "O Congresso exerce o controle externo com auxílio do TCU."
+      },
+      {
+        "id": "d",
+        "text": "O TCU exerce o controle externo mediante delegação de empresas privadas."
+      },
+      {
+        "id": "e",
+        "text": "O TCU substitui integralmente o Congresso no exercício de sua função legislativa."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "O art.71 atribui o controle externo ao Congresso Nacional e prevê o auxílio do TCU.",
+    "explanationByOption": {
+      "a": "O art.71 não estabelece subordinação legislativa do Congresso ao Tribunal.",
+      "b": "O dispositivo trata do Congresso Nacional com auxílio do Tribunal de Contas da União.",
+      "c": "O art.71 atribui o controle externo ao Congresso Nacional e prevê o auxílio do TCU.",
+      "d": "A relação prevista é entre órgãos constitucionais; a afirmação não consta no dispositivo.",
+      "e": "Auxílio no controle externo não transfere a função legislativa do Congresso."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "b3b022b5bdb9c1df13f6c23ee9c8029490e5141a99ed5ff3f69f7339f04bbd3e",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "CF art.71 caput, corte25/08/2026",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-leginst-tce-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "leginst-tce"
+    ],
+    "canonicalConceptIds": [
+      "public-law.audit-courts"
+    ],
+    "stem": "Segundo a Lei estadual nº 16.168/2007, o controle externo exercido pelo TCE-GO auxilia qual órgão legislativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma câmara municipal designada pelo governador."
+      },
+      {
+        "id": "b",
+        "text": "O Congresso Nacional em todas as contas da União."
+      },
+      {
+        "id": "c",
+        "text": "A Câmara dos Deputados no controle de empresas estrangeiras."
+      },
+      {
+        "id": "d",
+        "text": "O Senado Federal no julgamento de todas as contas municipais."
+      },
+      {
+        "id": "e",
+        "text": "A Assembleia Legislativa do Estado de Goiás."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "A Lei Orgânica situa o TCE-GO no auxílio ao controle externo da Assembleia Legislativa estadual.",
+    "explanationByOption": {
+      "a": "O auxílio do TCE-GO previsto na norma é à Assembleia Legislativa, sem essa designação.",
+      "b": "O controle externo federal envolve o TCU; o item trata da atuação estadual do TCE-GO.",
+      "c": "Esse órgão e esse âmbito não correspondem ao dispositivo estadual.",
+      "d": "A vinculação de auxílio indicada não é ao Senado Federal.",
+      "e": "A Lei Orgânica situa o TCE-GO no auxílio ao controle externo da Assembleia Legislativa estadual."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "bf4a40df607bf62965ca4c38914cd58cd42eb919402d64159aed742b8cde3d07",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Lei16.168/2007 art.1, ConstituiçãoGO controleexterno",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-leginst-servidor-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "leginst-servidor"
+    ],
+    "canonicalConceptIds": [
+      "public-law.public-service"
+    ],
+    "stem": "No regime estatutário estadual da Lei nº 20.756/2020, qual forma de provimento corresponde ao retorno do servidor estável ao cargo após invalidada sua demissão?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recondução por inabilitação em estágio probatório de outro cargo."
+      },
+      {
+        "id": "b",
+        "text": "Readaptação por limitação de capacidade."
+      },
+      {
+        "id": "c",
+        "text": "Nomeação inicial em novo concurso."
+      },
+      {
+        "id": "d",
+        "text": "Reversão de aposentadoria."
+      },
+      {
+        "id": "e",
+        "text": "Reintegração."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "A reintegração decorre da invalidação da demissão do servidor estável e restabelece sua investidura nos termos legais.",
+    "explanationByOption": {
+      "a": "Essa hipótese caracteriza recondução; o caso descrito é invalidação de demissão.",
+      "b": "Readaptação considera limitações de capacidade funcional; não é a causa informada.",
+      "c": "O retorno descrito restaura o vínculo atingido pela demissão, sem exigir nova nomeação por concurso.",
+      "d": "Reversão trata de retorno do aposentado, não da demissão invalidada.",
+      "e": "A reintegração decorre da invalidação da demissão do servidor estável e restabelece sua investidura nos termos legais."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "416af625882c9c6ff6b323368d227ce5cf02db7b817eb52da204b3335bf3f24b",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Lei20.756/2020 reintegração",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-engsoft-ciclos-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "engsoft-ciclos"
+    ],
+    "canonicalConceptIds": [
+      "software.lifecycle"
+    ],
+    "stem": "No Scrum Guide 2020, qual compromisso está associado ao Sprint Backlog?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Definition of Done."
+      },
+      {
+        "id": "b",
+        "text": "Uma lista fixa de tarefas imposta por outro time."
+      },
+      {
+        "id": "c",
+        "text": "Uma previsão obrigatória de orçamento anual."
+      },
+      {
+        "id": "d",
+        "text": "Sprint Goal."
+      },
+      {
+        "id": "e",
+        "text": "Product Goal."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "O Sprint Goal é o compromisso do Sprint Backlog; fornece o objetivo único do Sprint.",
+    "explanationByOption": {
+      "a": "Definition of Done é compromisso do Increment.",
+      "b": "O Sprint Backlog é plano dos Developers; a lista externa não é o compromisso formal definido.",
+      "c": "O guia não associa esse compromisso ao Sprint Backlog.",
+      "d": "O Sprint Goal é o compromisso do Sprint Backlog; fornece o objetivo único do Sprint.",
+      "e": "Product Goal é compromisso do Product Backlog, não do Sprint Backlog."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "7071afe33d1b422cd7a2850e63ec0be36e40c4f714816cd6decb2d028686ebd5",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "ScrumGuide2020 SprintBacklog commitment SprintGoal",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-devsistemas-fundamentos-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "devsistemas-fundamentos"
+    ],
+    "canonicalConceptIds": [
+      "programming.algorithms",
+      "programming.data-structures"
+    ],
+    "stem": "Uma pilha recebe, nesta ordem, os valores 10, 20 e 30. Qual valor deve ser removido na próxima operação pop?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhum valor, porque pop só pode inserir."
+      },
+      {
+        "id": "b",
+        "text": "30"
+      },
+      {
+        "id": "c",
+        "text": "Todos os valores simultaneamente."
+      },
+      {
+        "id": "d",
+        "text": "10"
+      },
+      {
+        "id": "e",
+        "text": "20"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pilha segue LIFO: o último valor inserido é o primeiro removido.",
+    "explanationByOption": {
+      "a": "Pop é operação de remoção; a inserção é usualmente denominada push.",
+      "b": "Pilha segue LIFO: o último valor inserido é o primeiro removido.",
+      "c": "Uma operação pop remove o elemento do topo; não esvazia automaticamente toda a pilha.",
+      "d": "10 seria o primeiro a sair em uma fila FIFO, não na pilha informada.",
+      "e": "20 fica abaixo de 30 e não é o topo após as três inserções."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "1aeb7a347642eb28206b3d83fc31f7386ed49fa6d968ca37918e058c3eab375d",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Python tutorial5.1.1 pilha LIFO",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-devsistemas-linguagens-web-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "devsistemas-linguagens-web"
+    ],
+    "canonicalConceptIds": [
+      "programming.languages",
+      "web.frontend"
+    ],
+    "stem": "Em JavaScript, uma função retorna outra função que utiliza uma variável do escopo exterior. Como se chama a combinação que permite esse acesso ao ambiente léxico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "DOM que armazena apenas variáveis locais de funções."
+      },
+      {
+        "id": "b",
+        "text": "Hoisting que copia todos os valores para um servidor."
+      },
+      {
+        "id": "c",
+        "text": "Coerção que transforma qualquer variável em constante."
+      },
+      {
+        "id": "d",
+        "text": "Garbage collection que proíbe funções aninhadas."
+      },
+      {
+        "id": "e",
+        "text": "Closure."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "Closure associa a função ao ambiente léxico em que foi criada, permitindo acesso a variáveis desse ambiente.",
+    "explanationByOption": {
+      "a": "DOM representa documentos; não é o mecanismo de closure.",
+      "b": "Hoisting trata de processamento de declarações; não é transferência de valores a um servidor.",
+      "c": "Coerção converte tipos; não define a associação entre função e ambiente léxico.",
+      "d": "Coleta de lixo gerencia memória e não proíbe funções aninhadas.",
+      "e": "Closure associa a função ao ambiente léxico em que foi criada, permitindo acesso a variáveis desse ambiente."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "10800fb1f7cdca2ed6cd95a434f44a6ed189c980a197936ee1ca8b567aeabad3",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "MDN Functions Closures",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ia-agentivos-llm-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ia-agentivos-llm"
+    ],
+    "canonicalConceptIds": [
+      "ai.llm",
+      "ai.software-development"
+    ],
+    "stem": "Na distinção de engenharia apresentada em Building effective agents, qual característica diferencia um agente de um workflow com caminhos predefinidos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um agente jamais utiliza ferramentas externas."
+      },
+      {
+        "id": "b",
+        "text": "Um agente garante automaticamente a verdade de toda resposta."
+      },
+      {
+        "id": "c",
+        "text": "O modelo dirige dinamicamente seu processo e o uso de ferramentas, dentro de limites definidos."
+      },
+      {
+        "id": "d",
+        "text": "Um workflow não pode utilizar modelos de linguagem."
+      },
+      {
+        "id": "e",
+        "text": "Todo workflow exige acesso irrestrito ao sistema operacional."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A fonte distingue agentes, em que o modelo dirige o processo, de workflows com caminhos definidos pelo código.",
+    "explanationByOption": {
+      "a": "Uso de ferramentas é parte possível do processo do agente; sua ausência não define a categoria.",
+      "b": "Autonomia de fluxo não garante correção factual; critérios, limites e avaliação continuam necessários.",
+      "c": "A fonte distingue agentes, em que o modelo dirige o processo, de workflows com caminhos definidos pelo código.",
+      "d": "Workflows podem utilizar LLMs em etapas predefinidas.",
+      "e": "O tipo de fluxo não exige acesso irrestrito; ferramentas e permissões são escolhas de projeto."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "15b11421221b95baf8541eb197df57a3d4cf6bcf6ff854ec9aee9377a8eade78",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Anthropic Buildingeffectiveagents Workflowsvsagents",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ia-agentivos-contexto-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ia-agentivos-contexto"
+    ],
+    "canonicalConceptIds": [
+      "ai.prompt-engineering",
+      "ai.context-engineering"
+    ],
+    "stem": "Um assistente recebe uma tarefa longa e complexa. Qual é a finalidade de dividi-la em uma cadeia de prompts para subtarefas verificáveis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Substituir toda avaliação por duplicação do mesmo prompt."
+      },
+      {
+        "id": "b",
+        "text": "Eliminar todos os critérios de aceite para reduzir tokens."
+      },
+      {
+        "id": "c",
+        "text": "Garantir que nenhuma etapa precise de contexto."
+      },
+      {
+        "id": "d",
+        "text": "Permitir etapas delimitadas, com verificações intermediárias antes de seguir."
+      },
+      {
+        "id": "e",
+        "text": "Conceder acesso a toda ferramenta existente sem autorização."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Prompt chaining decompõe a tarefa; verificações podem avaliar se uma etapa permite continuar.",
+    "explanationByOption": {
+      "a": "Repetição idêntica não demonstra qualidade nem corresponde à decomposição descrita.",
+      "b": "Sem critérios não há base para as verificações intermediárias propostas.",
+      "c": "Cada etapa precisa do contexto adequado, incluindo resultados anteriores quando necessários.",
+      "d": "Prompt chaining decompõe a tarefa; verificações podem avaliar se uma etapa permite continuar.",
+      "e": "Decompor prompts não implica ampliar permissões de ferramentas."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "4ca3ba54e053758a9c3b84a0a27220e7496fc20540801d3e8ec37e4aab4c1ff0",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Anthropic Promptchaining gate verificações",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-devops-iac-observabilidade-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "devops-iac-observabilidade"
+    ],
+    "canonicalConceptIds": [
+      "devops.infrastructure-as-code",
+      "devops.observability"
+    ],
+    "stem": "Uma investigação precisa acompanhar o caminho de uma requisição por vários serviços. Qual sinal de observabilidade descreve operações vinculadas nessa execução?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma métrica agregada sem identidade de execução."
+      },
+      {
+        "id": "b",
+        "text": "Trace, composto por spans relacionados."
+      },
+      {
+        "id": "c",
+        "text": "Somente uma configuração declarativa de infraestrutura."
+      },
+      {
+        "id": "d",
+        "text": "Um inventário de versões do repositório."
+      },
+      {
+        "id": "e",
+        "text": "Uma imagem de container sem instrumentação."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Um trace registra o percurso da requisição em operações representadas por spans e seus relacionamentos.",
+    "explanationByOption": {
+      "a": "Métricas agregam medidas, mas sozinhas não descrevem a sequência específica de operações dessa requisição.",
+      "b": "Um trace registra o percurso da requisição em operações representadas por spans e seus relacionamentos.",
+      "c": "Configuração de infraestrutura não é registro do percurso da requisição.",
+      "d": "O inventário de versões não representa os spans de uma requisição.",
+      "e": "A imagem empacota o software; não registra por si só operações de execução distribuída."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "b870b4c0847389a03422b9a3ba70469a58b1dadfb262caf993898121029c2816",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "OpenTelemetry signals traces spans",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-devops-git-containers-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "devops-git-containers"
+    ],
+    "canonicalConceptIds": [
+      "devops.git",
+      "devops.containers",
+      "devops.orchestration"
+    ],
+    "stem": "Sobre containers e máquinas virtuais, qual afirmação expressa a distinção básica de isolamento apresentada pela documentação Docker?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma imagem de container é sempre um sistema operacional físico completo."
+      },
+      {
+        "id": "b",
+        "text": "Todo container precisa executar um kernel convidado próprio."
+      },
+      {
+        "id": "c",
+        "text": "Containers não oferecem isolamento entre processos."
+      },
+      {
+        "id": "d",
+        "text": "Containers só funcionam quando o host não tem kernel."
+      },
+      {
+        "id": "e",
+        "text": "Containers isolam processos e compartilham o kernel do ambiente hospedeiro."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "Containers compartilham o kernel do host em que executam; esse ambiente pode ser uma VM, como em plataformas Desktop.",
+    "explanationByOption": {
+      "a": "Imagem é um pacote de execução do container, sem exigir sistema físico completo.",
+      "b": "Esse requisito é típico de uma VM com sistema convidado; não descreve o modelo básico de container.",
+      "c": "A documentação descreve processos isolados; compartilhar kernel não equivale à ausência de isolamento.",
+      "d": "Os processos precisam do kernel do ambiente hospedeiro; a afirmação inverte a relação.",
+      "e": "Containers compartilham o kernel do host em que executam; esse ambiente pode ser uma VM, como em plataformas Desktop."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "0d5aa2cf5f8c40ca575464a1b243831bcfaca8cba21b868ef208052fafe68b8a",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Docker whatisacontainer kernel VM",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-bd-modelagem-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "bd-modelagem"
+    ],
+    "canonicalConceptIds": [
+      "database.modeling",
+      "database.normalization"
+    ],
+    "stem": "Uma tabela de pedidos tem coluna cliente_id referenciando clientes.id. Qual restrição expressa a obrigação de referenciar um cliente existente para valores não nulos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chave estrangeira."
+      },
+      {
+        "id": "b",
+        "text": "A exclusão de todas as chaves primárias."
+      },
+      {
+        "id": "c",
+        "text": "Um índice não exclusivo, sem restrição referencial."
+      },
+      {
+        "id": "d",
+        "text": "Uma instrução SELECT sem restrição no schema."
+      },
+      {
+        "id": "e",
+        "text": "Uma ordenação alfabética da coluna."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A chave estrangeira estabelece integridade referencial; o tratamento de NULL depende das restrições e do modo de correspondência.",
+    "explanationByOption": {
+      "a": "A chave estrangeira estabelece integridade referencial; o tratamento de NULL depende das restrições e do modo de correspondência.",
+      "b": "Remover chaves não impõe a correspondência descrita.",
+      "c": "Índice sozinho não impõe a existência do cliente em outra tabela.",
+      "d": "Uma consulta isolada não cria a obrigação de integridade referencial para inserções futuras.",
+      "e": "Ordenar valores não verifica a existência da linha referenciada."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "a90cd716e3a06d08ed75c195877b79ba673c7cf333b0761aa465080b57244c07",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "PostgreSQL18 FK tutorial3.3 ddl5.5.5",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-bd-tecnologias-operacao-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "bd-tecnologias-operacao"
+    ],
+    "canonicalConceptIds": [
+      "database.relational",
+      "database.nosql",
+      "database.vector",
+      "database.reliability"
+    ],
+    "stem": "Na documentação PostgreSQL, qual abordagem combina backup-base com arquivos WAL para permitir recuperação a um ponto no tempo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apenas uma captura da tela de uma consulta."
+      },
+      {
+        "id": "b",
+        "text": "A remoção dos WAL antes da obtenção do backup-base."
+      },
+      {
+        "id": "c",
+        "text": "Somente um índice B-tree da tabela mais acessada."
+      },
+      {
+        "id": "d",
+        "text": "Arquivamento contínuo de WAL e recuperação a partir do backup-base."
+      },
+      {
+        "id": "e",
+        "text": "Um SQL dump isolado, sem histórico de WAL."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A sequência de WAL arquivados pode ser reproduzida a partir do backup-base até o ponto desejado, conforme os requisitos da recuperação.",
+    "explanationByOption": {
+      "a": "Uma imagem de tela não contém estado e registros necessários para recuperar o banco.",
+      "b": "Eliminar registros necessários compromete a recuperação pretendida.",
+      "c": "Índice não substitui backup-base e registros WAL para recuperar todo o banco.",
+      "d": "A sequência de WAL arquivados pode ser reproduzida a partir do backup-base até o ponto desejado, conforme os requisitos da recuperação.",
+      "e": "O dump representa uma exportação; sozinho não oferece a reprodução temporal da sequência WAL descrita."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "06c3603e79c76d0243fc5e442ecf43e81610aae5fd93adbe636370a9e6123511",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "PostgreSQL continuousarchiving PITR",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ia-dados-ml-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ia-dados-ml"
+    ],
+    "canonicalConceptIds": [
+      "ai.machine-learning"
+    ],
+    "stem": "Em um problema supervisionado, o alvo assume as categorias “fraude” ou “não fraude”. Qual tipo de tarefa é descrito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compressão que dispensa conjunto de treinamento."
+      },
+      {
+        "id": "b",
+        "text": "Agrupamento sem alvos conhecidos."
+      },
+      {
+        "id": "c",
+        "text": "Regressão de um valor contínuo."
+      },
+      {
+        "id": "d",
+        "text": "Classificação."
+      },
+      {
+        "id": "e",
+        "text": "Aprendizado por reforço com recompensa por ação."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Predizer uma categoria discreta do alvo corresponde à classificação supervisionada.",
+    "explanationByOption": {
+      "a": "Compressão não é o tipo de predição supervisionada solicitado.",
+      "b": "O caso é supervisionado e dispõe de categorias de referência; não é a descrição de clustering.",
+      "c": "Regressão contínua prevê valores numéricos, enquanto o alvo apresentado tem categorias.",
+      "d": "Predizer uma categoria discreta do alvo corresponde à classificação supervisionada.",
+      "e": "Não há agente, sequência de ações e recompensa na definição apresentada."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "b9162caf3d3697cf26ac416aa273437c7ecbc452f0372ea4014e635288dcbc6d",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "scikit-learn gettingstarted classificationregression",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ia-dados-generativa-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ia-dados-generativa"
+    ],
+    "canonicalConceptIds": [
+      "ai.generative",
+      "ai.nlp",
+      "ai.multimodal"
+    ],
+    "stem": "No modelo RAG do trabalho de Lewis e colaboradores, qual memória não paramétrica é consultada para obter contexto externo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma garantia matemática de que toda resposta será verdadeira."
+      },
+      {
+        "id": "b",
+        "text": "Apenas os pesos do modelo seq2seq, sem recuperação."
+      },
+      {
+        "id": "c",
+        "text": "Um sorteio de palavras sem documentos associados."
+      },
+      {
+        "id": "d",
+        "text": "Um índice vetorial de documentos consultado por um recuperador."
+      },
+      {
+        "id": "e",
+        "text": "Um registro que impede qualquer contexto adicional."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A proposta combina memória paramétrica do modelo com índice vetorial recuperável como memória não paramétrica.",
+    "explanationByOption": {
+      "a": "A arquitetura de recuperação não é garantia absoluta de correção factual.",
+      "b": "Os pesos correspondem à memória paramétrica; o item pergunta a componente não paramétrica.",
+      "c": "O recuperador consulta representações de documentos; não se resume a sorteio de palavras.",
+      "d": "A proposta combina memória paramétrica do modelo com índice vetorial recuperável como memória não paramétrica.",
+      "e": "A recuperação acrescenta contexto documental, em vez de proibi-lo."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "cc4d680cbadb0a8167d2df94fdce101ceba51c8d835f65dd33d6827e2972d1aa",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "RAGpaper2005.11401 abstractv4 indexvector",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ia-dados-rag-etica-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ia-dados-rag-etica"
+    ],
+    "canonicalConceptIds": [
+      "ai.responsible-ai",
+      "ai.rag",
+      "data-science.fundamentals",
+      "data-science.big-data"
+    ],
+    "stem": "Um pipeline calcula parâmetros de normalização usando treino e teste juntos antes de medir a qualidade do modelo. Que risco está presente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Redução garantida do erro em dados futuros, sem necessidade de avaliação."
+      },
+      {
+        "id": "b",
+        "text": "Transformação automática em aprendizado por reforço."
+      },
+      {
+        "id": "c",
+        "text": "Anonimização garantida dos dados pessoais utilizados."
+      },
+      {
+        "id": "d",
+        "text": "Vazamento de dados do teste para o treinamento ou pré-processamento."
+      },
+      {
+        "id": "e",
+        "text": "Separação adequada, porque qualquer pré-processamento é isento de vazamento."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Estimar parâmetros com dados de teste pode informar o processo de treino e produzir avaliação otimista; ajuste o transformador apenas no treino.",
+    "explanationByOption": {
+      "a": "O vazamento prejudica a confiabilidade da avaliação, sem garantir desempenho futuro.",
+      "b": "O vazamento não muda o tipo de aprendizado para reforço.",
+      "c": "Normalização e separação treino/teste não garantem anonimização.",
+      "d": "Estimar parâmetros com dados de teste pode informar o processo de treino e produzir avaliação otimista; ajuste o transformador apenas no treino.",
+      "e": "Pré-processamento aprendido dos dados também pode vazar informações do teste."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "c8c04ffa10d8c10117a321f177e960e03776af1401ec165f7e035bf917cb6f22",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "scikit-learn commonpitfalls12.2 dataleakage",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-seguranca-cripto-identidade-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "seguranca-cripto-identidade"
+    ],
+    "canonicalConceptIds": [
+      "security.cryptography",
+      "security.identity"
+    ],
+    "stem": "Uma política permite ao usuário autenticado consultar relatórios, mas impede excluí-los. Qual decisão diferencia essas duas operações?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uso de criptografia como substituto de todas as verificações de acesso."
+      },
+      {
+        "id": "b",
+        "text": "Compressão dos relatórios antes da leitura."
+      },
+      {
+        "id": "c",
+        "text": "Somente a confirmação da identidade, sem política de permissões."
+      },
+      {
+        "id": "d",
+        "text": "Mudança da cor da tela após o login."
+      },
+      {
+        "id": "e",
+        "text": "Autorização para cada recurso e operação."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "Autenticação reconhece a identidade; autorização aplica as permissões distintas de consulta e exclusão.",
+    "explanationByOption": {
+      "a": "Criptografia não substitui a aplicação da política de autorização por operação.",
+      "b": "Compressão não decide permissões para consultar ou excluir.",
+      "c": "Conhecer a identidade não implica que todas as operações estejam autorizadas.",
+      "d": "A aparência da interface não determina autorização no servidor.",
+      "e": "Autenticação reconhece a identidade; autorização aplica as permissões distintas de consulta e exclusão."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "0d0ea8842bf228003f6d575c73c21c4247be4a8140527354ada55267f9fff0a9",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "OWASP Authorizationcheatsheet permissions",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-seguranca-aplicacoes-continuidade-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "seguranca-aplicacoes-continuidade"
+    ],
+    "canonicalConceptIds": [
+      "security.application",
+      "security.zero-trust",
+      "security.continuity"
+    ],
+    "stem": "Uma aplicação concatena diretamente texto recebido do usuário em uma consulta SQL. Qual medida principal recomendada pela OWASP evita tratar esse texto como código SQL?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desativar os logs e conservar a consulta concatenada."
+      },
+      {
+        "id": "b",
+        "text": "Usar consultas parametrizadas com vinculação de parâmetros."
+      },
+      {
+        "id": "c",
+        "text": "Trocar apenas a mensagem de erro exibida ao usuário."
+      },
+      {
+        "id": "d",
+        "text": "Conceder privilégios administrativos à conexão da aplicação."
+      },
+      {
+        "id": "e",
+        "text": "Aceitar a entrada sem validação e sem parâmetros."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A parametrização mantém a separação entre a estrutura SQL e os dados fornecidos.",
+    "explanationByOption": {
+      "a": "Desativar logs não corrige a construção SQL vulnerável.",
+      "b": "A parametrização mantém a separação entre a estrutura SQL e os dados fornecidos.",
+      "c": "Ocultar mensagens não remove a concatenação insegura na construção da consulta.",
+      "d": "Privilégio excessivo aumenta o impacto de uma exploração e não separa código de dados.",
+      "e": "A proposta mantém o texto não confiável interpretável como parte da consulta."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "657f23357af3196cbb83e43aafe0247dabd6347c391ed927bae90a4933477672",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "OWASP SQLInjectionPrevention preparedstatements",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-sistemas-os-shell-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "sistemas-os-shell"
+    ],
+    "canonicalConceptIds": [
+      "systems.operating-systems",
+      "systems.shell"
+    ],
+    "stem": "No shell Bash, qual operador conecta a saída padrão de um comando à entrada padrão do seguinte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "|"
+      },
+      {
+        "id": "b",
+        "text": "#"
+      },
+      {
+        "id": "c",
+        "text": ">"
+      },
+      {
+        "id": "d",
+        "text": "<"
+      },
+      {
+        "id": "e",
+        "text": ";"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "O pipe conecta a saída padrão de um comando à entrada padrão do próximo na pipeline.",
+    "explanationByOption": {
+      "a": "O pipe conecta a saída padrão de um comando à entrada padrão do próximo na pipeline.",
+      "b": "Em contexto de comentário, # não conecta os fluxos de dois comandos.",
+      "c": "O operador > redireciona saída para arquivo; não é o conector de pipeline entre os comandos.",
+      "d": "O operador < redireciona entrada de arquivo para um comando.",
+      "e": "O ponto e vírgula separa comandos em sequência, sem conectar seus fluxos padrão."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "7948e57d5d8210ac7b5060f5aa4184a2cb3e64314a38543bf10206a584ad5750",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "GNU Bash manual pipelines3.2.3",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-sistemas-diretorios-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "canonicalConceptIds": [
+      "systems.directory-services",
+      "devops.containers"
+    ],
+    "stem": "No modelo LDAP, qual identificador localiza uma entrada por seu nome relativo e pela cadeia de entradas superiores?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um número de porta sem contexto de diretório."
+      },
+      {
+        "id": "b",
+        "text": "Somente o endereço MAC da máquina do usuário."
+      },
+      {
+        "id": "c",
+        "text": "A quantidade de processos ativos no servidor."
+      },
+      {
+        "id": "d",
+        "text": "Distinguished Name (DN)."
+      },
+      {
+        "id": "e",
+        "text": "O tamanho do arquivo de log de autenticação."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "DN reúne nomes relativos na hierarquia do diretório para identificar a entrada.",
+    "explanationByOption": {
+      "a": "Porta identifica um ponto de comunicação; não forma o nome da entrada LDAP.",
+      "b": "MAC identifica interface de rede; não é o nome hierárquico de uma entrada LDAP.",
+      "c": "Contagem de processos não identifica entrada no diretório.",
+      "d": "DN reúne nomes relativos na hierarquia do diretório para identificar a entrada.",
+      "e": "Tamanho do log não representa a posição hierárquica da entrada."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "c404b7c61ff0b3444ea987e0714e7c92d7a4e5a3300c72a8a1dae40eea479188",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "RFC4512 DistinguishedName DN RDN",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-governanca-alinhamento-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "governanca-alinhamento"
+    ],
+    "canonicalConceptIds": [
+      "it-governance.alignment"
+    ],
+    "stem": "Uma iniciativa de TI deve contribuir para o objetivo institucional de reduzir o prazo de atendimento. Qual informação demonstra melhor esse alinhamento no planejamento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A quantidade de reuniões técnicas, sem resultado de serviço associado."
+      },
+      {
+        "id": "b",
+        "text": "O número de arquivos criados, sem vínculo com o processo de atendimento."
+      },
+      {
+        "id": "c",
+        "text": "A relação entre a iniciativa, o resultado institucional esperado e um indicador de prazo."
+      },
+      {
+        "id": "d",
+        "text": "A aparência do logotipo do fornecedor, sem indicador institucional."
+      },
+      {
+        "id": "e",
+        "text": "A escolha da ferramenta mais recente, sem indicar o efeito no atendimento."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Relacionar iniciativa, objetivo e medida de resultado permite avaliar sua contribuição à estratégia.",
+    "explanationByOption": {
+      "a": "Uma atividade interna não demonstra por si só redução do prazo de atendimento.",
+      "b": "Volume de arquivos sem relação de resultado não demonstra o alinhamento requerido.",
+      "c": "Relacionar iniciativa, objetivo e medida de resultado permite avaliar sua contribuição à estratégia.",
+      "d": "Identidade visual do fornecedor não mede contribuição à estratégia institucional.",
+      "e": "Novidade da ferramenta, isoladamente, não demonstra contribuição ao objetivo declarado."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "c1d8ac1716e10520b54f03d9f9e826b27f3b95b064a7dd9d170a4aed5fe2e193",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "TCU ReferencialBásicoGovernança estratégia indicadores resultados",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-governanca-servicos-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "canonicalConceptIds": [
+      "it-service-management.itil",
+      "it-governance.portfolio"
+    ],
+    "stem": "Em gestão de serviços, a equipe restaura um serviço após uma interrupção e depois investiga sua causa para reduzir recorrências. A que práticas correspondem essas duas finalidades?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gestão de incidentes para restauração e gestão de problemas para causas e recorrências."
+      },
+      {
+        "id": "b",
+        "text": "Uma única ação de mudança de tema visual, sem analisar o serviço."
+      },
+      {
+        "id": "c",
+        "text": "Gestão de problemas exclusivamente para comprar equipamentos e incidentes para criar contratos."
+      },
+      {
+        "id": "d",
+        "text": "Gestão financeira para restauração e licenciamento para causa técnica."
+      },
+      {
+        "id": "e",
+        "text": "Catálogo de serviços para apagar a causa e orçamento para registrar a interrupção."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Incidentes priorizam restaurar o serviço; problemas tratam causas reais ou potenciais e seus efeitos recorrentes.",
+    "explanationByOption": {
+      "a": "Incidentes priorizam restaurar o serviço; problemas tratam causas reais ou potenciais e seus efeitos recorrentes.",
+      "b": "Alteração visual não corresponde às práticas de restauração e análise causal descritas.",
+      "c": "A descrição confunde práticas e desloca suas finalidades centrais.",
+      "d": "Essas práticas não descrevem diretamente as duas finalidades solicitadas.",
+      "e": "Catálogo descreve serviços; não substitui investigação causal e resposta ao incidente."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "db3a27d5b01138b6b9d5a9e1d552684e914cda634b79add74053916ae78864e9",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "ITIL4 incidentmanagement problemmanagement official",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-governanca-modelos-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "canonicalConceptIds": [
+      "it-governance.cobit",
+      "it-governance.itil",
+      "project-management.fundamentals"
+    ],
+    "stem": "No COBIT 2019, qual distinção organiza a relação entre governança e gestão?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Governança e gestão são conceitos sempre idênticos, sem responsabilidades distintas."
+      },
+      {
+        "id": "b",
+        "text": "Governança determina que toda organização adote as mesmas ferramentas e controles sem adaptação."
+      },
+      {
+        "id": "c",
+        "text": "Governança avalia, direciona e monitora; gestão planeja, constrói, executa e monitora conforme a direção."
+      },
+      {
+        "id": "d",
+        "text": "Gestão dispensa objetivos institucionais quando utiliza um framework internacional."
+      },
+      {
+        "id": "e",
+        "text": "Governança executa apenas suporte diário e gestão define exclusivamente a direção do conselho."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "COBIT separa o domínio EDM de governança dos domínios de gestão e das atividades correspondentes.",
+    "explanationByOption": {
+      "a": "O framework diferencia as atividades e responsabilidades desses componentes.",
+      "b": "O COBIT prevê desenho de sistema de governança segundo contexto e fatores de projeto.",
+      "c": "COBIT separa o domínio EDM de governança dos domínios de gestão e das atividades correspondentes.",
+      "d": "A gestão opera dentro da direção e dos objetivos; o framework não dispensa esse vínculo.",
+      "e": "A afirmação inverte as responsabilidades centrais de governança e gestão."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "519070c0b2501abe4625b1ab6543ba3e2419fa7c8d16ece1482ef10cf88a85c1",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "ISACA COBIT2019 governance EDM management APOBAIDSSDMEA",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-governanca-publica-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "governanca-publica"
+    ],
+    "canonicalConceptIds": [
+      "public-sector.digital-government",
+      "it-governance.procurement"
+    ],
+    "stem": "Pela Lei nº 14.133/2021, qual documento caracteriza a primeira etapa do planejamento de uma contratação, identificando o interesse público envolvido e sua melhor solução?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente uma lista de marcas indicadas por preferência pessoal."
+      },
+      {
+        "id": "b",
+        "text": "Uma ata de sorteio sem avaliação do interesse público."
+      },
+      {
+        "id": "c",
+        "text": "Estudo técnico preliminar (ETP)."
+      },
+      {
+        "id": "d",
+        "text": "Um comprovante de pagamento emitido após a execução."
+      },
+      {
+        "id": "e",
+        "text": "Uma nota fiscal do fornecedor escolhido antes do planejamento."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "O art.6º, XX define o ETP como documento da primeira etapa do planejamento e base para os artefatos posteriores quando a contratação se mostrar viável.",
+    "explanationByOption": {
+      "a": "Preferência de marcas sem análise não corresponde à definição legal de ETP.",
+      "b": "A definição legal demanda análise do interesse e da solução, não esse documento.",
+      "c": "O art.6º, XX define o ETP como documento da primeira etapa do planejamento e base para os artefatos posteriores quando a contratação se mostrar viável.",
+      "d": "O pagamento é posterior e não caracteriza a etapa de análise inicial da necessidade.",
+      "e": "Nota fiscal não substitui a análise preliminar da necessidade e solução."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "426d05af2938ff2e0ba4b874f52835736338ba41aadf54996e62551f84b00e45",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "Lei14133 art6XX estudo técnico preliminar",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-legti-marco-civil-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "legti-marco-civil"
+    ],
+    "canonicalConceptIds": [
+      "law.internet"
+    ],
+    "stem": "No art. 15 do Marco Civil, um provedor de aplicações pessoa jurídica, organizado profissionalmente e com fins econômicos, deve guardar registros de acesso às aplicações por qual prazo ordinário?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhum prazo, pois aplicações jamais geram obrigação de guarda."
+      },
+      {
+        "id": "b",
+        "text": "Prazo ilimitado para qualquer pessoa que acesse a internet."
+      },
+      {
+        "id": "c",
+        "text": "6 meses."
+      },
+      {
+        "id": "d",
+        "text": "1 ano, aplicando automaticamente o prazo dos registros de conexão."
+      },
+      {
+        "id": "e",
+        "text": "24 horas, sem sigilo ou controle de acesso."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "O art.15 caput prevê seis meses, sob sigilo e em ambiente controlado e de segurança, para o provedor com as características descritas.",
+    "explanationByOption": {
+      "a": "O art.15 estabelece expressamente a obrigação na hipótese descrita.",
+      "b": "A lei define um sujeito qualificado e prazo ordinário; não é obrigação irrestrita de todo usuário.",
+      "c": "O art.15 caput prevê seis meses, sob sigilo e em ambiente controlado e de segurança, para o provedor com as características descritas.",
+      "d": "O prazo anual do art.13 é de registros de conexão, com sujeito e obrigação diferentes.",
+      "e": "Esse prazo e essa forma de guarda não correspondem ao art.15."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "4c00bf45e6de54a673150ab5da3cdba671f7d32df9bb263e4d868ceff88fb548",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "MCI art15caput condições sujeitos prazo6meses",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-legti-normas-tce-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "legti-normas-tce"
+    ],
+    "canonicalConceptIds": [
+      "public-law.audit-courts",
+      "it-governance.public-policy"
+    ],
+    "stem": "Segundo a Lei Complementar estadual nº 205/2025, a que se refere a expressão inteligência artificial embarcada (Edge AI)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma obrigação de substituir todos os sistemas institucionais por serviços externos."
+      },
+      {
+        "id": "b",
+        "text": "Um banco de dados que proíbe o uso de algoritmos em dispositivos."
+      },
+      {
+        "id": "c",
+        "text": "Qualquer sistema que só funciona com envio permanente de todos os dados à nuvem."
+      },
+      {
+        "id": "d",
+        "text": "Uma modalidade exclusiva de licitação para serviços de datacenter."
+      },
+      {
+        "id": "e",
+        "text": "Sistemas de IA integrados a dispositivos físicos, operando localmente sem depender de comunicação contínua com a nuvem."
+      }
+    ],
+    "correctOptionId": "e",
+    "explanation": "A definição legal trata de integração em dispositivos e operação local, sem necessidade de comunicação externa contínua ou conexão permanente à nuvem.",
+    "explanationByOption": {
+      "a": "A definição não estabelece essa obrigação universal de substituição.",
+      "b": "A definição envolve sistemas de IA integrados a dispositivos, não essa proibição.",
+      "c": "Dependência permanente da nuvem contraria o elemento de operação local da definição.",
+      "d": "O termo descreve arquitetura de IA em dispositivos, não uma modalidade de licitação.",
+      "e": "A definição legal trata de integração em dispositivos e operação local, sem necessidade de comunicação externa contínua ou conexão permanente à nuvem."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "df462471e7e246e75166ad4d0fe915ba6965b6b19c1152709266e8028fc23e44",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "LC205/2025 definiçãoEdgeAI local semnuvemcontinua",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-legti-pdti-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "legti-pdti"
+    ],
+    "canonicalConceptIds": [
+      "it-governance.planning",
+      "it-governance.security-policy"
+    ],
+    "stem": "Na Política de Segurança da Informação do TCE-GO, RA nº 17/2024, as diretrizes abrangem apenas informações em ambiente informatizado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não. Abrangem também meios convencionais de processamento, comunicação e armazenamento."
+      },
+      {
+        "id": "b",
+        "text": "Sim. Informações em papel ficam integralmente fora das diretrizes."
+      },
+      {
+        "id": "c",
+        "text": "Não, porque a política se aplica exclusivamente a equipamentos pessoais sem relação institucional."
+      },
+      {
+        "id": "d",
+        "text": "Sim. A política vale apenas para servidores que desenvolvem software."
+      },
+      {
+        "id": "e",
+        "text": "Sim. A política exclui comunicação e armazenamento de informação."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "O art.5º inclui explicitamente ambiente informatizado e meios convencionais de tratamento da informação.",
+    "explanationByOption": {
+      "a": "O art.5º inclui explicitamente ambiente informatizado e meios convencionais de tratamento da informação.",
+      "b": "Meios convencionais também são abrangidos; o suporte papel não os exclui automaticamente.",
+      "c": "A abrangência não é exclusiva de equipamentos pessoais; trata de informação e processos do TCE-GO.",
+      "d": "A norma estabelece abrangência e responsabilidades para usuários e processos além de desenvolvedores.",
+      "e": "Processamento, comunicação e armazenamento constam expressamente da abrangência."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "ba81ad4c38b53d50440a8bd5d9330fc4c4353444674d2f647319a88247c1411a",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "RA17/2024 art5 ambientesinformatizados convencionais",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ingles-compreensao-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ingles-compreensao"
+    ],
+    "canonicalConceptIds": [
+      "language.english.technical-reading"
+    ],
+    "stem": "Texto técnico original: “The service stores encrypted backups every night. Recovery tests run once a month.” According to the text, how often are recovery tests performed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only when encryption fails."
+      },
+      {
+        "id": "b",
+        "text": "Every night."
+      },
+      {
+        "id": "c",
+        "text": "Once a month."
+      },
+      {
+        "id": "d",
+        "text": "Twice every day."
+      },
+      {
+        "id": "e",
+        "text": "Never, because the backups are encrypted."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A segunda frase informa expressamente a frequência dos testes de recuperação: uma vez por mês.",
+    "explanationByOption": {
+      "a": "O texto não condiciona os testes a falha de criptografia.",
+      "b": "Every night refere-se ao armazenamento de backups, não aos testes de recuperação.",
+      "c": "A segunda frase informa expressamente a frequência dos testes de recuperação: uma vez por mês.",
+      "d": "A frequência diária de duas vezes não aparece no texto.",
+      "e": "A segunda frase afirma que os testes ocorrem; criptografia não elimina essa afirmação."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "823f8470f5808ffcaa2145d4dda8148bbb761dd28a6f8676c7848ba4176be8a7",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "English technicalreading scanning informaçãoexplícita",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ingles-estrategias-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ingles-estrategias"
+    ],
+    "canonicalConceptIds": [
+      "language.reading.strategies"
+    ],
+    "stem": "Um manual em inglês contém várias páginas e você precisa localizar apenas o limite máximo de conexões. Qual estratégia de leitura busca essa informação específica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skimming exclusivamente para obter a ideia geral sem procurar o limite."
+      },
+      {
+        "id": "b",
+        "text": "Traduzir todas as palavras antes de procurar qualquer número."
+      },
+      {
+        "id": "c",
+        "text": "Ignorar títulos e tabelas mesmo que apresentem connection limit."
+      },
+      {
+        "id": "d",
+        "text": "Scanning: procurar termos, números e trechos relacionados ao limite solicitado."
+      },
+      {
+        "id": "e",
+        "text": "Escolher um valor sem consultar o contexto do manual."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Scanning busca informação específica; nesse caso, limite e conexões orientam a procura.",
+    "explanationByOption": {
+      "a": "Skimming busca visão geral; a pergunta exige localizar um dado específico.",
+      "b": "Tradução integral não é requisito da estratégia de localização de informação específica.",
+      "c": "Títulos e tabelas podem indicar precisamente a informação procurada.",
+      "d": "Scanning busca informação específica; nesse caso, limite e conexões orientam a procura.",
+      "e": "Uma leitura orientada por informação específica exige localizar e conferir o dado."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "00694d8b1d0257971c21b80c9defd38c041279d74a0ffaa8ca04ea7f7434450f",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "BritishCouncil readingexams scanningvs skimming",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  },
+  {
+    "id": "q-tcego-expanded-ingles-documentacao-01",
+    "examId": "tce-go-ti-2026",
+    "topicIds": [
+      "ingles-documentacao"
+    ],
+    "canonicalConceptIds": [
+      "language.english.it-vocabulary"
+    ],
+    "stem": "Em um manual de API, a instrução original diz: “Set timeout to 500 milliseconds.” Qual é a interpretação adequada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excluir qualquer limite de espera e bloquear a operação permanentemente."
+      },
+      {
+        "id": "b",
+        "text": "Alterar a porta de rede para o número 500."
+      },
+      {
+        "id": "c",
+        "text": "Configurar o limite de espera como 500 milissegundos, equivalentes a 0,5 segundo."
+      },
+      {
+        "id": "d",
+        "text": "Enviar obrigatoriamente 500 requisições por segundo."
+      },
+      {
+        "id": "e",
+        "text": "Configurar 500 segundos, porque milliseconds significa segundos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Timeout é limite de espera; 1000 milissegundos correspondem a um segundo.",
+    "explanationByOption": {
+      "a": "Set timeout especifica um limite; não manda eliminar a limitação.",
+      "b": "O parâmetro informado é timeout, não port.",
+      "c": "Timeout é limite de espera; 1000 milissegundos correspondem a um segundo.",
+      "d": "A instrução define espera, não taxa de requisições.",
+      "e": "Milliseconds são milissegundos, não segundos; a conversão proposta erra por fator 1000."
+    },
+    "origin": "generated_original",
+    "difficulty": "easy",
+    "cognitiveLevel": "application",
+    "fingerprint": "9c69037c0719a4fbcc889a401a4b03ae36016b792d26f257b9f40e1354ef4567",
+    "status": "draft",
+    "reviewStatus": "pending_review",
+    "contentVersion": 1,
+    "validAsOf": "2026-10-07",
+    "requestedEvidence": "English ITvocabulary timeout milliseconds unidades",
+    "sourceRefs": [],
+    "provenance": {
+      "status": "derived",
+      "source": "StudyOS authorial proposal; primary evidence pending independent review",
+      "license": "Formulação original StudyOS; não reproduz questão de banca."
+    },
+    "editorialReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "evidence": ""
+    }
+  }
+]

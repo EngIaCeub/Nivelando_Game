@@ -1,0 +1,178 @@
+{
+  "reviewer": "/root/language_security_completion (GPT-6.1 Sol / high)",
+  "reviewedAt": "2026-10-07T08:50:20Z",
+  "draftSha256": "9CF2A441F767479D5E901BC5140BBFAC98B978C2AF024605904DCD1A61B7405E",
+  "status": "approved_for_listed_original_questions",
+  "approvedQuestionIds": [
+    "q-tcego-expanded-lp-texto-01",
+    "q-tcego-expanded-lp-morfossintaxe-01",
+    "q-tcego-expanded-lp-sintaxe-redacao-01",
+    "q-tcego-expanded-mrl-aritmetica-01",
+    "q-tcego-expanded-mrl-proporcoes-01",
+    "q-tcego-expanded-mrl-logica-01",
+    "q-tcego-expanded-seguranca-cripto-identidade-01",
+    "q-tcego-expanded-seguranca-aplicacoes-continuidade-01",
+    "q-tcego-expanded-sistemas-os-shell-01",
+    "q-tcego-expanded-sistemas-diretorios-01",
+    "q-tcego-expanded-ingles-compreensao-01",
+    "q-tcego-expanded-ingles-estrategias-01",
+    "q-tcego-expanded-ingles-documentacao-01"
+  ],
+  "rejected": [],
+  "sourceRefsByQuestionId": {
+    "q-tcego-expanded-lp-texto-01": [
+      {
+        "title": "CEJA LP Unidade2, Linguagem, cultura e variação linguística",
+        "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_2.pdf",
+        "locator": "pp.52–53 impressas: texto A Norma Culta e atividades de localização de informação explícita",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-lp-morfossintaxe-01": [
+      {
+        "title": "SEDU-ES RPE Língua Portuguesa 8º ano, quinzena12/2025",
+        "url": "https://curriculo.sedu.es.gov.br/curriculo/wp-content/uploads/2025/06/RPE_LP_8_Q_12_08_05_25.pdf",
+        "locator": "pp.5–6: voz passiva analítica e agente; p.7 sintética; p.11 atividade3 D021_P",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-lp-sintaxe-redacao-01": [
+      {
+        "title": "Manual de Revisão FUNAG: Vírgula",
+        "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+        "locator": "I.2.b: isolamento do vocativo; conclusão sobre termos essenciais/integrantes",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-mrl-aritmetica-01": [
+      {
+        "title": "OpenStax Prealgebra 2e §4.5",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators",
+        "locator": "Convert Fractions to Equivalent Fractions with the LCD; Add and Subtract Fractions with Different Denominators",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-mrl-proporcoes-01": [
+      {
+        "title": "OpenStax Prealgebra 2e §6.5",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+        "locator": "Solve Proportions; aplicações de razões e proporções",
+        "checkedAt": "2026-10-07"
+      },
+      {
+        "title": "Stanford Introduction to Logic cap.1",
+        "url": "https://logical.stanford.edu/intrologic/chapters/chapter_01.html",
+        "locator": "§1.5 Symbolic Logic: modelar razão e soma em duas equações",
+        "checkedAt": "2026-10-07"
+      },
+      {
+        "title": "OBMEP Números Diretamente e Inversamente Proporcionais",
+        "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/c89zmw0n6cgks.pdf",
+        "locator": "§1 exercício3: repartição de total em partes diretamente proporcionais; excluir exercício6",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-mrl-logica-01": [
+      {
+        "title": "Stanford Introduction to Logic cap.1",
+        "url": "https://logical.stanford.edu/intrologic/chapters/chapter_01.html",
+        "locator": "§§1.2–1.5: restrições, modelos, consequência lógica e relações transitivas",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-seguranca-cripto-identidade-01": [
+      {
+        "title": "OWASP Authorization Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+        "locator": "Introduction; Enforce Least Privileges; Validate the Permissions on Every Request",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-seguranca-aplicacoes-continuidade-01": [
+      {
+        "title": "OWASP SQL Injection Prevention Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "locator": "Primary Defenses / Defense Option1: Prepared Statements (with Parameterized Queries); Least Privilege",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-sistemas-os-shell-01": [
+      {
+        "title": "GNU Bash Reference Manual (arquivo histórico oficial)",
+        "url": "https://ftp.gnu.org/old-gnu/Manuals/bash/html_chapter/bashref_3.html",
+        "locator": "§3.2.2 Pipelines; §3.2.3 Lists of Commands; §3.1.3 Comments; §3.6 Redirections",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-sistemas-diretorios-01": [
+      {
+        "title": "RFC4512, K. Zeilenga / OpenLDAP Foundation, IETF",
+        "url": "https://www.rfc-editor.org/rfc/rfc4512.html",
+        "locator": "§2.1 DIT; §2.3.1 RDN; §2.3.2 Distinguished Names",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-ingles-compreensao-01": [
+      {
+        "title": "Inglês Instrumental, Mauro Luiz Pinheiro, EdUECE, 3ª edição 2015",
+        "url": "https://educapes.capes.gov.br/bitstream/capes/204085/2/Livro_Computacao_Ingles%20Instrumental.pdf",
+        "locator": "cap.1 pp.9–13 e cap.2 pp.15–17: compreensão literal, skimming/scanning, prática de TI",
+        "checkedAt": "2026-10-07"
+      },
+      {
+        "title": "British Council: How to read the text",
+        "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+        "locator": "Skimming, Scanning, Reading for detail / specific information",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-ingles-estrategias-01": [
+      {
+        "title": "British Council: How to read the text",
+        "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+        "locator": "Skimming, Scanning, Reading for detail / specific information",
+        "checkedAt": "2026-10-07"
+      },
+      {
+        "title": "Inglês Instrumental, Mauro Luiz Pinheiro, EdUECE, 3ª edição 2015",
+        "url": "https://educapes.capes.gov.br/bitstream/capes/204085/2/Livro_Computacao_Ingles%20Instrumental.pdf",
+        "locator": "cap.1 pp.9–13 e cap.2 pp.15–17: compreensão literal, skimming/scanning, prática de TI",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-ingles-documentacao-01": [
+      {
+        "title": "MDN Window.setTimeout",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+        "locator": "Parameters / delay: tempo em milliseconds; sintaxe setTimeout",
+        "checkedAt": "2026-10-07"
+      },
+      {
+        "title": "NIST Metric(SI)Prefixes",
+        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+        "locator": "Tabela de prefixos SI: milli(m)=10^-3",
+        "checkedAt": "2026-10-07"
+      }
+    ]
+  },
+  "evidenceByQuestionId": {
+    "q-tcego-expanded-lp-texto-01": "A frase do enunciado é original StudyOS, não extraída da fonte. A resposta e é a única que preserva as duas afirmações: correção da falha e persistência da lentidão. a introduz fato contrário ao verbo corrigiu; b/c negam permaneceu; d inventa causalidade. A fonte apoia o método de localizar informação explícita, não a autoria da frase.",
+    "q-tcego-expanded-lp-morfossintaxe-01": "Gabarito e: foram é auxiliar ser no pretérito perfeito, revisados é particípio plural; Os relatórios é sujeito paciente e pela equipe identifica agente. a não contém reflexividade; b troca paciente/agente; c ignora sujeito expresso; d confunde passiva sintética com locução analítica. A frase original não copia os exemplos da fonte. O diálogo da p.4 da fonte contém formulação confusa; aprovação restrita às regras e exemplos das pp.5–7.",
+    "q-tcego-expanded-lp-sintaxe-redacao-01": "Gabarito c: Ana chama a destinatária, o sujeito do imperativo é subentendido e o relatório é objeto. a prescreve separação indevida sujeito/predicado; b ignora confira expresso; d trata chamamento como oração; e confunde destinatária/objeto. Enunciado original; nenhum exemplo de Cunha/Cintra foi reproduzido.",
+    "q-tcego-expanded-mrl-aritmetica-01": "Derivação independente do problema original: unidade é capacidade TOTAL, logo 3/4−1/3=(9−4)/12=5/12; a correta. b=8/12, c=3/12, d=24/12 e e=6/12 não satisfazem a subtração. Retirada não é um terço do conteúdo atual. Todas as justificativas dos distratores são coerentes.",
+    "q-tcego-expanded-mrl-proporcoes-01": "Derivação independente: x/y=2/3 e x+y=900, portanto x=2k,y=3k,5k=900,k=180,x=360; e correta. a usa 2/3 do total; b reparte igualmente; c só uma parte; d corresponde a y=540. A fonte Stanford ensina modelagem por razão e total; cálculo original não é cópia dos exemplos.",
+    "q-tcego-expanded-mrl-logica-01": "Verificação manual das cinco permutações: a/d posicionam B antes de A; b/c posicionam C antes de B. e=A,B,C satisfaz simultaneamente A<B e B<C. A execução única exclui repetição; a sequência é única. Modelagem deriva das condições originais; fonte apoia consequência lógica e restrições.",
+    "q-tcego-expanded-seguranca-cripto-identidade-01": "Gabarito e: usuário já autenticado exige permissão por recurso/operação. c confunde identidade e permissão; a criptografia não substitui autorização; b compressão e d cor não aplicam a política. Explicações corretas, sem presumir acesso universal após login.",
+    "q-tcego-expanded-seguranca-aplicacoes-continuidade-01": "Gabarito b: parâmetros vinculados tratam valores como dados. a/c não removem concatenação; d amplia impacto; e conserva vulnerabilidade. Aprovação para valores de dados parametrizáveis: nomes dinâmicos de tabela/coluna e ordem SQL precisam allow-list/design próprio. O item não afirma que parâmetros sejam defesa universal contra toda injeção.",
+    "q-tcego-expanded-sistemas-os-shell-01": "Gabarito a=| une saída padrão à entrada padrão do comando seguinte. b é comentário no contexto indicado; c/d redirecionam fluxo para/de arquivo; e sequencia sem unir fluxos. A URL atual do GNU §3.2.3 não abriu nesta sessão; referência efetivamente lida é arquivo oficial histórico, cuja numeração Pipelines é3.2.2. Questão estável sem versão recente exclusiva; não registrar leitura atual bem-sucedida.",
+    "q-tcego-expanded-sistemas-diretorios-01": "Gabarito d: DN concatena o RDN da entrada ao DN do superior imediato e identifica sem ambiguidade a entrada no DIT. a porta, b MAC, c contagem de processos e e tamanho do log não formam nome LDAP. Hierarquia e distinção DN/RDN corretas; sem afirmar que DN permaneça imutável após rename.",
+    "q-tcego-expanded-ingles-compreensao-01": "Passagem original StudyOS. c reproduz a frequência explicitamente dada na segunda frase; b confunde frequência do armazenamento com testes; a/d acrescentam dados ausentes; e contradiz a existência dos testes. Fonte didática apoia localização de informação específica; não apresenta esse procedimento original como recomendação universal de recuperação.",
+    "q-tcego-expanded-ingles-estrategias-01": "Gabarito d: scanning localiza dado específico por termos/números e exige confirmação contextual. a corresponde à ideia geral e não resolve procura específica; b impõe tradução integral desnecessária; c ignora pistas; e inventa resultado. Skimming/scanning não confundidos.",
+    "q-tcego-expanded-ingles-documentacao-01": "Frase original StudyOS; gabarito c: definir timeout como500ms, 500×10^-3s=0,5s. a elimina a limitação sem base; b troca parâmetro por porta; d confunde duração e taxa; e erra a unidade por1000. MDN fornece corpus primário da API com delay em milissegundos; não sustenta garantia de execução exatamente após prazo."
+  },
+  "limitations": [
+    "Aprovação editorial de 13 questões originais; não são provas FCC nem demonstram distribuição/cobertura integral do edital.",
+    "Revisão manual de gabarito, unicidade e cinco explicações por questão. Schema, integração, testes e publicação ficam com Orchestrator.",
+    "A referência GNU atual falhou; numeração da versão histórica lida preservada nas sourceRefs."
+  ]
+}

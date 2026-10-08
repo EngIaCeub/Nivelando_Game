@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root; source/path curation",
+  "reviewedAt": "2026-10-08T18:21:16Z",
+  "status": "partial",
+  "evidence": "Leitura direta de fontes oficiais e didáticas em 2026-10-08. URLs/proveniências individuais, link-only e limites explícitos. Fechamentos são candidatos e dependem de QA independente do hash final. A página Microsoft Entra Lifecycle Workflows exibiu aviso de autenticação; retirada como critério até rechecagem. Percursos novos complementam curadoria de conteúdo, IAM, figuras e semântica; não se confunde acesso público com licença de reprodução. Em 2026-10-08T18:03:22.363Z, três fontes inglesas (Pro Git, Python e GitHub REST) foram movidas para o parecer LANGUAGE_SECURITY por ownership temático e integradas a percurso com fontes separadas.",
+  "sources": [
+    {
+      "id": "expanded-educapes-voices-2023",
+      "title": "Apostila sobre uso das vozes verbais",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/742329/2/11%29%20Vozes%20verbais.pdf",
+      "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/742329/2/11%29%20Vozes%20verbais.pdf",
+      "provider": "CAp-UERJ / eduCAPES",
+      "authors": [
+        "Evertton Alves Galeao Siliprandy",
+        "Adriana Cristina Lopes Gonçalves Mallmann",
+        "Fernanda Moraes D’Olivo"
+      ],
+      "language": "pt-BR",
+      "type": "book",
+      "license": "unknown; repository says Creative Commons but exact license was not exposed in inspected record; link-only",
+      "checkedAt": "2026-10-08T18:24:25Z",
+      "locator": "PDF pp.2–4: active voice, passive analytic/synthetic, reflexive voice; examples and exercises",
+      "evidence": "Leitura direta do PDF de 5 páginas: explicita as três vozes; diferencia passiva sintética com partícula se e passiva analítica com ser + particípio, explica sujeito/agente/paciente e voz reflexiva com exemplos e exercícios. Recurso secundário de ensino médio usado apenas para os conceitos sintáticos delimitados. Repositório identifica material como CC, sem exibir o subtipo na página consultada; não inferir direito de reprodução.",
+      "coverage": [
+        {
+          "unitId": "lp-morfossintaxe-flexoes-vozes-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "pp.2–4: active, passive analytic/synthetic, and reflexive voice"
+        }
+      ],
+      "access": "free",
+      "verification": {
+        "result": "reachable",
+        "method": "browser",
+        "checkedAt": "2026-10-08T18:24:25Z",
+        "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/742329/2/11%29%20Vozes%20verbais.pdf"
+      }
+    },
+    {
+      "id": "expanded-ufersa-aet-2013-discourse-intertext",
+      "title": "Análise e expressão textual",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/203982/2/AN%C3%81LISE%20E%20EXPRESS%C3%83O%20TEXTUAL.pdf",
+      "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/203982/2/AN%C3%81LISE%20E%20EXPRESS%C3%83O%20TEXTUAL.pdf",
+      "provider": "NEaD / Universidade Federal Rural do Semi-Árido (UFERSA)",
+      "authors": [
+        "Cid Ivan da Costa Carvalho"
+      ],
+      "language": "pt-BR",
+      "type": "book",
+      "license": "unknown; PDF informa reprodução somente com autorização escrita; link-only",
+      "checkedAt": "2026-10-08T18:24:25Z",
+      "locator": "Unidade II, pp.35–43: situacionalidade, intertextualidade explícita/implícita e exercícios; pp.38–41: discursos direto, indireto e indireto livre",
+      "evidence": "Leitura direta do PDF institucional de 88 páginas e ficha catalográfica. A unidade II apresenta mecanismos de textualidade, intertextualidade explícita/implícita, exemplos de alusão/paródia/paráfrase com exercícios, e explica/contrasta discurso direto, indireto e indireto livre com transformação de tempos verbais e fragmento literário. O expediente informa copyright EdUFERSA e vedação de reprodução sem autorização; não se incorpora conteúdo ao pack, apenas link. A fonte não cobre sinonímia/antonímia nem é usada para isso.",
+      "coverage": [
+        {
+          "unitId": "lp-texto-semantica-discursos-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "Unidade II, pp.35–43: intertextualidade e os três tipos de discurso"
+        }
+      ],
+      "access": "free",
+      "verification": {
+        "result": "reachable",
+        "method": "browser",
+        "checkedAt": "2026-10-08T18:24:25Z",
+        "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/203982/2/AN%C3%81LISE%20E%20EXPRESS%C3%83O%20TEXTUAL.pdf"
+      }
+    },
+    {
+      "id": "expanded-unb-pellegrin-semantics-2011",
+      "title": "A cobertura da liberdade de imprensa na Venezuela pelo jornal O Estado de S. Paulo: a ideologia no discurso jornalístico",
+      "url": "https://repositorio.unb.br/bitstream/10482/9291/1/2011_FlavioLuisdeSouzaPellegrin.pdf",
+      "finalUrl": "https://repositorio.unb.br/bitstream/10482/9291/1/2011_FlavioLuisdeSouzaPellegrin.pdf",
+      "provider": "Repositório Institucional da Universidade de Brasília",
+      "authors": [
+        "Flávio Luís de Souza Pellegrin"
+      ],
+      "language": "pt-BR",
+      "type": "thesis",
+      "license": "unknown; acesso ao repositório não comprova licença de reprodução; link-only",
+      "checkedAt": "2026-10-08T18:24:25Z",
+      "locator": "Cap.4.3, pp.93–101: definição de semântica, sinonímia, antonímia, denotação e conotação, com discussão contextualizada",
+      "evidence": "Leitura direta do recorte acadêmico no repositório UnB: define semântica contextual; lista sinonímia e antonímia; seleciona essas relações e conotação para análise de corpus jornalístico; pp.98–100 contrastam sentido denotativo/referencial e conotativo/afetivo. É dissertação de Comunicação de 2011, não manual didático de gramática e seu corpus político não é regra normativa; usada como referência analítica complementar, junto à aula aberta CECIERJ, apenas para esse recorte. Licença de reprodução não verificada; link-only.",
+      "coverage": [
+        {
+          "unitId": "lp-texto-semantica-discursos-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "Cap.4.3, pp.93–101: sinonímia/antonímia, sentidos literal e contextual/conotativo"
+        }
+      ],
+      "access": "free",
+      "verification": {
+        "result": "reachable",
+        "method": "browser",
+        "checkedAt": "2026-10-08T18:24:25Z",
+        "finalUrl": "https://repositorio.unb.br/bitstream/10482/9291/1/2011_FlavioLuisdeSouzaPellegrin.pdf"
+      }
+    },
+    {
+      "id": "expanded-educapes-sequencia-trailer-figures-2023",
+      "title": "As contribuições do gênero trailer honesto para as práticas de leitura e produção de texto",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/736984/2/Sequ%C3%AAncia%20Did%C3%A1tica.pdf",
+      "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/736984/2/Sequ%C3%AAncia%20Did%C3%A1tica.pdf",
+      "provider": "eduCAPES / Universidade Estadual Paulista (UNESP)",
+      "authors": [
+        "Gisele Ferreira de Paiva Bormio"
+      ],
+      "language": "pt-BR",
+      "type": "book",
+      "license": "unknown; autorização de reprodução não comprovada; link-only; materiais de terceiros sujeitos a direitos próprios",
+      "checkedAt": "2026-10-08T18:24:25Z",
+      "locator": "PDF pp.40–42: quadro de dez figuras com definições/exemplos e Oficina 5 com atividades para identificar, explicar e usar efeitos irônicos/humorísticos",
+      "evidence": "PDF de 68 páginas aberto, leitura textual e inspeção visual do quadro da p.41. A sequência relaciona comparação, metáfora, catacrese, metonímia, personificação/prosopopeia, hipérbole, sinestesia, antítese, ironia e eufemismo a exemplos; oficinas propõem identificação/interpretação e produção para efeitos irônicos e humorísticos. Material aplicado ao gênero trailer honesto, não taxonomia exaustiva ou curso de todas as figuras; link-only, sem reutilizar quadro/imagens. A fonte do quadro é atribuída no próprio PDF a Escrevendo o Futuro.",
+      "coverage": [
+        {
+          "unitId": "lp-morfossintaxe-figuras-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "PDF pp.40–42: quadro ilustrado e Oficina 5"
+        }
+      ],
+      "access": "free",
+      "verification": {
+        "result": "reachable",
+        "method": "browser",
+        "checkedAt": "2026-10-08T18:24:25Z",
+        "finalUrl": "https://educapes.capes.gov.br/bitstream/capes/736984/2/Sequ%C3%AAncia%20Did%C3%A1tica.pdf"
+      }
+    },
+    {
+      "id": "expanded-azure-regions-availability-zones",
+      "title": "Regions and Availability Zones — Azure Well-Architected Framework",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones",
+      "finalUrl": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones",
+      "provider": "Microsoft Learn",
+      "authors": [
+        "Microsoft"
+      ],
+      "language": "en",
+      "type": "software_documentation",
+      "license": "unknown; public page is not permission to reproduce; link-only",
+      "checkedAt": "2026-10-08",
+      "locator": "Sections regions, availability zones, redundancy and cross-region design tradeoffs",
+      "evidence": "Leitura direta da orientação Microsoft Well-Architected: distingue regiões e zonas fisicamente separadas, redundância zonal/regional, failover e tradeoffs de disponibilidade, latência, custo e operação. Exemplo Azure, não garantia de disponibilidade nem desenho neutro aplicável sem validação a todos os provedores.",
+      "coverage": [
+        {
+          "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "Regions, availability zones, redundancy and cross-region guidance"
+        }
+      ],
+      "access": "free"
+    },
+    {
+      "id": "expanded-azure-monitor-alerts-overview",
+      "title": "Overview of Azure Monitor alerts",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+      "finalUrl": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+      "provider": "Microsoft Learn",
+      "authors": [
+        "Microsoft"
+      ],
+      "language": "en",
+      "type": "software_documentation",
+      "license": "unknown; public page is not permission to reproduce; link-only",
+      "checkedAt": "2026-10-08",
+      "locator": "Alert types, signal sources, conditions, state and actions",
+      "evidence": "Leitura direta da documentação Azure Monitor: descreve alertas por métricas, logs e atividade, regras/condições e estado de disparo/recuperação, com grupos de ações para notificação ou automação. Documentação específica do serviço; não é tutorial genérico de operação nem ensina instrumentação completa.",
+      "coverage": [
+        {
+          "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+          "role": "primary",
+          "extent": "partial",
+          "locator": "Alert types, metric/log/activity signals, rules and actions"
+        }
+      ],
+      "access": "free"
+    }
+  ],
+  "studyPaths": [
+    {
+      "id": "path-agile-scrum-kanban",
+      "unitId": "unit-governanca-modelos-ageis",
+      "title": "Valores ágeis, Scrum e Kanban",
+      "steps": [
+        {
+          "resourceId": "curated-scrum-2020",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Scrum Theory; Scrum Team; Events; Artifacts; integral do documento"
+        },
+        {
+          "resourceId": "legal-agile-principles",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Doze princípios; https://agilemanifesto.org/iso/ptbr/manifesto.html, quatro valores"
+        },
+        {
+          "resourceId": "legal-kanban2025",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Definition; Theory; Practices; Flow Metrics"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:14:07.016Z",
+        "evidence": "Manifesto cobre valores/princípios; Scrum Guide, empirismo, responsabilidades, eventos e artefatos; Kanban Guide, fluxo e métricas. Os métodos permanecem distintos e complementares."
+      }
+    },
+    {
+      "id": "path-protocols-smtp-ftp-ssh-vpn-proxy",
+      "unitId": "redes-protocolos-smtp-ftp-ssh-vpn-proxy-unit",
+      "title": "Finalidades de SMTP, FTP, SSH, VPN e proxy",
+      "steps": [
+        {
+          "resourceId": "expanded-cnp3-smtp-email-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Electronic mail / SMTP, lines 236–305; revisar referências RFC e escopo de port 25"
+        },
+        {
+          "resourceId": "expanded-apache-ftp-introduction-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Overview of the FTP Protocol, §§1–4"
+        },
+        {
+          "resourceId": "expanded-cnp3-ssh-remote-login-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Remote login, linhas 61–77 e seção SSH"
+        },
+        {
+          "resourceId": "expanded-nist-ipsec-vpn-guide-2020",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§§2.4.1–2.4.2, PDF pp.27–30; split tunnel e limites de proteção"
+        },
+        {
+          "resourceId": "expanded-cnp3-http2",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Proxies e reverse proxies"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:14:07.016Z",
+        "evidence": "Cada etapa mantém fonte/URL própria para SMTP, FTP, SSH, VPN/IPsec e proxy. Cobertura conceitual básica; FTP e SMTP base não são recomendação de configuração insegura."
+      }
+    },
+    {
+      "id": "path-wifi-spectrum-security",
+      "unitId": "redes-protocolos-sem-fio-unit",
+      "title": "Wi-Fi: bandas, canais, interferência e autenticação",
+      "steps": [
+        {
+          "resourceId": "expanded-cisco-wireless-rf-reference",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Bandas e canais Wi-Fi 2.4/5/6 GHz; widths, DFS, overlap and regional constraints"
+        },
+        {
+          "resourceId": "expanded-ms-wifi-home-layout-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "bandas, interferência, canalização doméstica e orientação geral de segurança"
+        },
+        {
+          "resourceId": "expanded-anatel-wifi-frequency-rules-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "faixa regulatória brasileira de 6 GHz e requisitos de equipamento; não ensina seleção de canais nem segurança WPA"
+        },
+        {
+          "resourceId": "expanded-wfa-wpa3-announcement-2018",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "descrição oficial geral dos modos WPA3, SAE e PMF"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:14:07.016Z",
+        "evidence": "Cisco e Microsoft tratam rádio/canais/interferência; Anatel trata requisitos brasileiros de 6GHz; Wi-Fi Alliance descreve WPA3/SAE/PMF. URLs preservadas separadamente; anúncio WPA3 é recorte histórico."
+      }
+    },
+    {
+      "id": "path-load-balancing-firewall",
+      "unitId": "nuvem-arquitetura-balanceamento-firewalls-unit",
+      "title": "Balanceamento, health checks, camadas e firewalls",
+      "steps": [
+        {
+          "resourceId": "expanded-cnp3-http2",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Serving content from multiple servers; reverse proxies"
+        },
+        {
+          "resourceId": "expanded-aws-elb-layer-model-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "modelo de balanceador, listeners e distinção AWS entre tipos L3/L4/L7"
+        },
+        {
+          "resourceId": "expanded-aws-alb-healthchecks-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "health checks, thresholds, estado dos destinos e comportamento fail-open"
+        },
+        {
+          "resourceId": "expanded-nist-firewall-guidelines-2009",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "taxonomia, capacidades/limites, políticas e ciclo operacional de firewall"
+        },
+        {
+          "resourceId": "expanded-azure-nsg-filtering-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Inbound/outbound rule evaluation, subnet/NIC and filtering example"
+        },
+        {
+          "resourceId": "expanded-aws-network-firewall-engines-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Stateless/stateful packet and flow inspection model"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:14:07.016Z",
+        "evidence": "A trilha combina distribuição/reverse proxy, camadas e health checks, fundamentos de firewall e exemplos AWS/Azure. Distingue princípios de produtos; NIST 2009 é fonte conceitual/histórica, não guia operacional atual."
+      }
+    },
+    {
+      "id": "path-flexions-tempos-vozes-verbais",
+      "unitId": "lp-morfossintaxe-flexoes-vozes-unit",
+      "title": "Flexões, tempos, modos e vozes verbais",
+      "steps": [
+        {
+          "resourceId": "expanded-cecierj-portugues-iv-volume1-flexion-voices-2014",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Aulas 6–10, pp.85–184; passiva sintética apenas mencionada, não ensinada."
+        },
+        {
+          "resourceId": "expanded-cecierj-portugues-i-volume2-voices-times-2011",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Aulas 16–17 e 24; tempos/modos em texto e passivas, incluindo voz sintética. Não cobre isoladamente toda morfologia da unidade."
+        },
+        {
+          "resourceId": "expanded-educapes-voices-2023",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "pp.2–4: active, passive analytic/synthetic, and reflexive voice"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:15:54.820Z",
+        "evidence": "Trilha composta por: CECIERJ Português IV com flexão nominal/verbal (aulas 6–10), CECIERJ Português I com tempos/modos em texto e voz sintética, e apostila CAp-UERJ com vozes ativa, passivas analítica/sintética e reflexiva, explicação e exercícios. A leitura cruzada satisfaz a unidade sem declarar qualquer fonte isolada como integral; a curadoria não executou prova de aprendizagem."
+      }
+    },
+    {
+      "id": "path-cobit-2019-principles-design-cascade",
+      "unitId": "unit-governanca-modelos-cobit",
+      "title": "COBIT 2019: governança, princípios, objetivos e desenho",
+      "steps": [
+        {
+          "resourceId": "legal-isaca-cobit-assessment",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "introdução e início do método de avaliação;27/07/2020"
+        },
+        {
+          "resourceId": "legal-isaca-design",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "seçõesTailoringGovernance–Conclusion;4/02/2019"
+        },
+        {
+          "resourceId": "legal-isaca-comparison",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Principles/Objectives,Processes,FrameworkPrinciples,PerformanceManagement/DesignFactors,Workflow;27/04/2020"
+        },
+        {
+          "resourceId": "legal-isaca-tips",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Tips3–8;29/04/2019"
+        },
+        {
+          "resourceId": "legal-isaca-cascade",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "UsingCOBIT2019;steps1–9;30/06/2021"
+        },
+        {
+          "resourceId": "legal-isaca-tokyo-cobit2019",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDF pp.5–6,20–22,27–49; subtópicos descritos na evidence"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:16:35.950Z",
+        "evidence": "Leitura sequenciada das fontes ISACA registradas: distinção governança/gestão e framework, sistema dinâmico/princípios de desenho, princípios/objetivos/domínios/medição de desempenho, componentes e níveis de capacidade, cascata de metas, e estudo de caso ilustrado para os princípios/objetivos. Fontes gratuitas com licença de reprodução não presumida; páginas/figuras e candidateExtent continuam sujeitas a revisão independente exata; não declarar certificação/treinamento oficial."
+      }
+    },
+    {
+      "id": "path-itil4-value-svs-chain-practices",
+      "unitId": "unit-governanca-modelos-itil",
+      "title": "ITIL 4: valor, quatro dimensões, princípios, SVS e cadeia",
+      "steps": [
+        {
+          "resourceId": "legal-itil-excellence",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDFp2–4; ITIL4Explained/benefits"
+        },
+        {
+          "resourceId": "legal-atlassian-itil-principles",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Quatro dimensões, sete princípios e componentes SVS"
+        },
+        {
+          "resourceId": "legal-atlassian-axelos-itil4-guide",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "pp.2–14; SVS/princípios/práticas/melhoria"
+        },
+        {
+          "resourceId": "legal-peoplecert-svs",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDFp.14 e17–18:incidentes eSVS"
+        },
+        {
+          "resourceId": "legal-uw-itil4-refresh2019",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDF pp.6,13,26–31,35–36"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:16:35.953Z",
+        "evidence": "Sequência de fontes introdutórias abertas: cocriação/alinhamento/quatro dimensões/SVS, sete princípios, cadeia de valor e melhoria, práticas e referência PeopleCert para componentes de SVS. Tratam-se de textos explicativos com recortes verificáveis; não substituem o manual comercial oficial nem afirmam certificação. Revisão independente deve verificar seis atividades da cadeia e edição ITIL4."
+      }
+    },
+    {
+      "id": "path-icpbrasil-law-tech-validation",
+      "unitId": "unit-legti-normas-tce-certificacao",
+      "title": "ICP-Brasil: certificado, assinatura, efeitos jurídicos e validação",
+      "steps": [
+        {
+          "resourceId": "legal-iti-docicp15-v4",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§§2.1–2.2,4.1/4.4–4.8,6.1–6.6 e6.12–6.14"
+        },
+        {
+          "resourceId": "legal-mp2200",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Arts1–10: cadeia, responsabilidades, controle exclusivo e validade jurídica"
+        },
+        {
+          "resourceId": "legal-lei14063",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Arts2–6 e8: âmbito, níveis, requisitos e AR; arts13–14: saúde"
+        },
+        {
+          "resourceId": "legal-iti-validacao",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "InformaçõesGerais e ValidaçãodeAssinaturas"
+        },
+        {
+          "resourceId": "legal-iti-boaspraticas",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "guia completo; autoria/integridade/repetição/impressão/bloqueio"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:16:35.953Z",
+        "evidence": "Percurso separa fonte técnica oficial DOC-ICP-15 (formatos, cadeia, LCR/OCSP, validação/revogação), regras primárias MP2.200-2 e Lei14.063, e guias/serviço ITI de validação. Não confunde assinatura eletrônica com digital nem substitui a análise jurídica por caso. DOC-ICP-15 foi marcado pending_legal no lote; o candidato só pode fechar após revisão independente do conteúdo e vigência."
+      }
+    },
+    {
+      "id": "path-semantics-discourse-intertext",
+      "unitId": "lp-texto-semantica-discursos-unit",
+      "title": "Semântica contextual, vozes narrativas e intertextualidade",
+      "steps": [
+        {
+          "resourceId": "expanded-unb-pellegrin-semantics-2011",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Cap.4.3, pp.93–101: relações semânticas e denotação/conotação"
+        },
+        {
+          "resourceId": "expanded-cecierj-portugues-i-volume1-context-inference-2012",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Aulas 4 e 14: contextualidade, intertextualidade, literalidade e sentido figurado"
+        },
+        {
+          "resourceId": "expanded-ufersa-aet-2013-discourse-intertext",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Unidade II, pp.35–43: discurso direto, indireto, indireto livre e relações intertextuais"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:21:00.000Z",
+        "evidence": "Percurso combina recorte analítico da dissertação UnB sobre sinonímia, antonímia, denotação/conotação; material didático CECIERJ sobre contexto, leitura literal/figurada e intertextualidade; e livro UFERSA que ensina os três discursos e intertextualidade com exemplos/exercícios. Nenhuma fonte isolada é declarada integral. Corpus da dissertação é antigo/jornalístico e deve ser tratado como exemplo, não norma; conteúdos protegidos permanecem link-only. Sujeito a revisão independente exata."
+      }
+    },
+    {
+      "id": "path-language-figures-effects",
+      "unitId": "lp-morfossintaxe-figuras-unit",
+      "title": "Figuras de linguagem: identificação contextual e efeitos de sentido",
+      "steps": [
+        {
+          "resourceId": "expanded-cecierj-fund-lp3",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Unidade 8 §1.2, pp.26–28: comparação e metáfora em contexto"
+        },
+        {
+          "resourceId": "expanded-educapes-uerj-figuras-linguagem-2019",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDF pp.1–3: exercícios interpretativos de metáfora e efeito irônico/humorístico"
+        },
+        {
+          "resourceId": "expanded-educapes-sequencia-trailer-figures-2023",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "PDF pp.40–42: dez figuras com exemplos e oficina de interpretação/produção"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:21:00.000Z",
+        "evidence": "Trilha de leitura parte de comparação/metáfora, passa por exercícios para explicar efeitos em texto visual e chega a quadro com dez figuras e oficina contextualizada. CECIERJ e UERJ são parciais e a sequência não é taxonomia fechada; juntos oferecem variedade de exemplos e atividades compatível com o objetivo de reconhecer figuras e explicar efeitos, sem copiar textos/imagens. Revisão independente deverá conferir recortes do quadro visual e o caráter aplicado ao gênero trailer."
+      }
+    },
+    {
+      "id": "path-cloud-scale-availability-hybrid-observability",
+      "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+      "title": "Escalabilidade, disponibilidade, nuvem híbrida e observabilidade",
+      "steps": [
+        {
+          "resourceId": "curated-nist800145",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Definição NIST de nuvem e características essenciais; contextualização geral"
+        },
+        {
+          "resourceId": "expanded-azure-scaling-wellarchitected-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Scale-up/scale-out, autoscaling, tradeoffs e monitoração"
+        },
+        {
+          "resourceId": "expanded-azure-regions-availability-zones",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Zonas/regiões, redundância, failover e tradeoffs"
+        },
+        {
+          "resourceId": "expanded-aws-hybrid-guidance-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Planejamento de arquitetura híbrida e integração local/nuvem"
+        },
+        {
+          "resourceId": "curated-otel-signals",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Definição dos sinais traces, métricas e logs"
+        },
+        {
+          "resourceId": "expanded-azure-monitor-alerts-overview",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Alertas de métricas/logs/atividade, regras e ações"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:21:00.000Z",
+        "evidence": "Trilha conecta base conceitual NIST com scaling, zonas/failover, integração híbrida, sinais de observabilidade e alertas operacionais. Microsoft/AWS são exemplos explicitamente identificados de fornecedor; OpenTelemetry define sinais, não estratégia de HA; a sequência pede que o estudante compare tradeoffs sem afirmar teste prático. As seis fontes são recortes parciais e nenhuma, isoladamente, ensina a unidade inteira; QA independente deve verificar os passos e acessibilidade atuais."
+      }
+    },
+    {
+      "id": "path-devsecops-api-container-cloud-controls",
+      "unitId": "seguranca-aplicacoes-continuidade-devsecops-api-container-cloud-unit",
+      "title": "Controles DevSecOps em APIs, containers e cloud",
+      "steps": [
+        {
+          "resourceId": "expanded-owasp-api-top10-2023",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Top 10 API 2023: autenticação/autorização, consumo, configuração e riscos"
+        },
+        {
+          "resourceId": "curated-owasp-sqli",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Prepared statements, validação allow-list e menor privilégio"
+        },
+        {
+          "resourceId": "expanded-owasp-docker-security-cheatsheet",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Hardening, scanning CI/CD, supply chain e controles de runtime container"
+        },
+        {
+          "resourceId": "expanded-github-actions-secure-use",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Princípio de menor privilégio, permissões do token, dependências e OIDC"
+        },
+        {
+          "resourceId": "expanded-aws-shared-responsibility-model",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Responsabilidade do cliente versus provedor em aplicações e cloud"
+        }
+      ],
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path review",
+        "reviewedAt": "2026-10-08T07:21:00.000Z",
+        "evidence": "Sequência usa OWASP para ameaças de APIs e codificação segura, OWASP Docker para privilégios/scanning/supply chain, GitHub como exemplo de CI/CD com token mínimo/OIDC e AWS para fronteira de responsabilidade cloud. Não afirma que essas ferramentas esgotam DevSecOps nem que AWS/GitHub representam todos os provedores. Recortes individuais são parciais, link-only, sem exercícios executados; dependem de QA independente exato."
+      }
+    },
+    {
+      "id": "path-english-technical-reading-corpus",
+      "unitId": "ingles-documentacao-corpus-unit",
+      "title": "Leitura técnica em inglês: instruções, tutoriais e APIs",
+      "steps": [
+        {
+          "resourceId": "expanded-uece-english-2015",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Unidades1–4/6: estratégia de leitura e textos da área de computação"
+        },
+        {
+          "resourceId": "expanded-git-pro-installing-git-en-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Chapter1.5: instrução condicional de instalação por distribuição"
+        },
+        {
+          "resourceId": "expanded-python-control-flow-docs-en-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§§4.1–4.7: instruções, condições e argumentos de range/loops"
+        },
+        {
+          "resourceId": "expanded-github-rest-issues-reference-en-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "List repository issues: parâmetros, defaults, limites, status e exemplo de requisição"
+        },
+        {
+          "resourceId": "expanded-mdn-timeout",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Syntax/Parameters: func/code, delay em milissegundos, default e observação sobre atraso real"
+        }
+      ],
+      "practice": {
+        "title": "Prática guiada de leitura técnica",
+        "reading": "Cenário A — API: `per_page` controla quantos resultados são retornados por página; o padrão é 30, o máximo é 100 e `page` começa em 1.\nCenário B — JavaScript: `setTimeout(callback, delay)` executa a função depois do delay; esse valor é um inteiro não negativo em milissegundos, o padrão é 0 e o intervalo real pode ser maior.\nCenário C — Python: `range(start, stop, step)` gera valores até antes de `stop`.\nCenário D — Instalação: o guia apresenta comandos diferentes para distribuições diferentes; escolha o gerenciador indicado para o sistema descrito.",
+        "questions": [
+          {
+            "id": "api-page-size",
+            "stem": "A pessoa precisa consultar a segunda página com 40 issues por página. Qual conjunto de parâmetros corresponde à instrução?",
+            "options": [
+              "per_page=40 e page=2",
+              "per_page=100 e page=1",
+              "per_page=30 e page=0"
+            ],
+            "correctOptionIndex": 0,
+            "explanation": "`per_page` aceita até 100 e `page` indica qual página buscar; 40 e 2 atendem ao pedido.",
+            "sourceResourceId": "expanded-github-rest-issues-reference-en-2026",
+            "locator": "List repository issues: parâmetros per_page e page"
+          },
+          {
+            "id": "timer-units-and-condition",
+            "stem": "O que significa `delay=2500` no cenário B?",
+            "options": [
+              "Uma espera solicitada de 2.500 segundos, garantida como exata",
+              "Uma espera solicitada de 2.500 milissegundos (2,5 s), que pode ocorrer por mais tempo",
+              "Uma repetição a cada 2.500 chamadas"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "A unidade é milissegundo; a documentação alerta que o atraso efetivo pode ser maior que o solicitado.",
+            "sourceResourceId": "expanded-mdn-timeout",
+            "locator": "Parameters: delay; note about actual delay"
+          },
+          {
+            "id": "python-range-boundary",
+            "stem": "Quais números são gerados por `range(2, 9, 3)`?",
+            "options": [
+              "2, 5, 8",
+              "2, 5, 8, 11",
+              "3, 6, 9"
+            ],
+            "correctOptionIndex": 0,
+            "explanation": "Começa em 2, avança de 3 em 3 e não inclui o limite final 9.",
+            "sourceResourceId": "expanded-python-control-flow-docs-en-2026",
+            "locator": "§4.3 range(): endpoint is never part of the generated sequence"
+          },
+          {
+            "id": "install-distro-condition",
+            "stem": "O trecho descreve uma instalação em Fedora. Qual instrução apresentada no guia corresponde à condição?",
+            "options": [
+              "Usar `apt install git-all`",
+              "Usar `dnf install git-all`",
+              "Compilar o projeto Python com `range()`"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "O exemplo associa `dnf` a Fedora e distribuições RPM relacionadas; `apt` é apresentado para Debian-like.",
+            "sourceResourceId": "expanded-git-pro-installing-git-en-2026",
+            "locator": "Installing on Linux: Fedora/dnf and Debian-based/apt"
+          }
+        ]
+      },
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path and practice review",
+        "reviewedAt": "2026-10-08T07:28:00.000Z",
+        "evidence": "Percurso compõe livro didático de inglês para computação, instrução de instalação, tutorial de software, referência de API e documentação de Web API. Questões e cenário foram redigidos originalmente, não copiados, e exercitam unidades, parâmetros, limites, defaults e condições. Cada gabarito foi conferido nos locators indicados. O livro UECE tem copyright e recursos externos permanecem link-only. O recurso de prática é sem pontuação ou persistência; revisão independente deve validar a língua, a chave de resposta e acessibilidade da UI antes da promoção."
+      }
+    },
+    {
+      "id": "path-logic-reasoning-modalities",
+      "unitId": "mrl-logica-raciocinios-unit",
+      "title": "Raciocínio verbal, numérico, sequencial, espacial e temporal",
+      "steps": [
+        {
+          "resourceId": "expanded-stanford-logic1",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§§1.2–1.5 e exercícios1.1–1.7: hipóteses, modelos e conclusões"
+        },
+        {
+          "resourceId": "expanded-obmep-aritmetica",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§3.5 exercícios20,21,24: cálculo, medidas e tempo"
+        }
+      ],
+      "practice": {
+        "title": "Roteiro original de raciocínio por modalidades",
+        "reading": "Leia as condições antes de calcular. No raciocínio verbal, traduza cada frase para uma regra e derive apenas o que as premissas permitem. No numérico, identifique operações e unidades. Em sequências, compare diferenças ou transformações sucessivas. Em orientação espacial, acompanhe a posição e cada giro na ordem. Em orientação temporal, some durações separando horas e minutos. Para formar conceitos e discriminar elementos, escreva o critério de agrupamento antes de escolher o item que não pertence.",
+        "questions": [
+          {
+            "id": "verbal-negation",
+            "stem": "Premissa: toda solicitação urgente é revisada antes da liberação. O pedido C foi liberado sem revisão. O que decorre necessariamente?",
+            "options": [
+              "C não foi marcado como urgente",
+              "C foi revisado depois da liberação",
+              "Toda solicitação não urgente é liberada"
+            ],
+            "correctOptionIndex": 0,
+            "explanation": "A regra diz que urgência implica revisão prévia; a ausência de revisão permite concluir que C não era urgente. As outras alternativas não são dadas pelas premissas.",
+            "sourceResourceId": "expanded-stanford-logic1",
+            "locator": "§§1.2–1.5: consequências necessárias das premissas"
+          },
+          {
+            "id": "numerical-units",
+            "stem": "Cinco tarefas consomem 6 créditos cada. Quantos créditos são necessários?",
+            "options": [
+              "11",
+              "30",
+              "56"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "Multiplique quantidade de tarefas pela taxa: 5 × 6 = 30 créditos.",
+            "sourceResourceId": "expanded-obmep-aritmetica",
+            "locator": "§3.5: aplicação de operações e unidades em problemas"
+          },
+          {
+            "id": "numeric-sequence",
+            "stem": "Qual é o próximo termo de 4, 7, 10, 13, ...?",
+            "options": [
+              "15",
+              "16",
+              "17"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "A diferença constante é +3; 13 + 3 = 16.",
+            "sourceResourceId": "expanded-obmep-aritmetica",
+            "locator": "§3.5: identificação de regularidade em problema numérico original"
+          },
+          {
+            "id": "spatial-turns",
+            "stem": "Uma pessoa está voltada para o norte. Vira à direita, novamente à direita e depois à esquerda. Para qual direção fica voltada?",
+            "options": [
+              "Norte",
+              "Leste",
+              "Oeste"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "Norte → leste → sul → leste. A ordem dos giros importa.",
+            "sourceResourceId": "expanded-stanford-logic1",
+            "locator": "§1.2–1.5: representação ordenada de condições; item espacial original"
+          },
+          {
+            "id": "temporal-duration",
+            "stem": "Uma reunião começa às 14h35 e dura 1h50. A que horas termina?",
+            "options": [
+              "16h15",
+              "16h25",
+              "15h85"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "14h35 + 1h = 15h35; somando 50 minutos, chega-se a 16h25.",
+            "sourceResourceId": "expanded-obmep-aritmetica",
+            "locator": "§3.5, exercício24: medidas de tempo; item original"
+          },
+          {
+            "id": "concept-criterion",
+            "stem": "Um conjunto usa a regra ‘números divisíveis por 6’. Qual item satisfaz o critério?",
+            "options": [
+              "35",
+              "42",
+              "44"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "42 = 6 × 7. 35 e 44 não são divisíveis por 6.",
+            "sourceResourceId": "expanded-obmep-aritmetica",
+            "locator": "§3.5: divisibilidade em problemas numéricos; critério original"
+          },
+          {
+            "id": "discrimination-rule",
+            "stem": "O grupo contém triângulos vermelhos e quadrados vermelhos. Qual item destoa pelo critério explícito ‘cor vermelha’?",
+            "options": [
+              "Triângulo vermelho",
+              "Quadrado vermelho",
+              "Triângulo azul"
+            ],
+            "correctOptionIndex": 2,
+            "explanation": "Os dois primeiros compartilham a cor vermelha; o triângulo azul não satisfaz o critério. A forma não é o critério escolhido.",
+            "sourceResourceId": "expanded-stanford-logic1",
+            "locator": "§1.2–1.5: declarar premissas/critério antes de inferir; exemplo original"
+          }
+        ]
+      },
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path and practice review",
+        "reviewedAt": "2026-10-08T07:31:00.000Z",
+        "evidence": "A trilha usa Stanford para estrutura de inferência e OBMEP para problemas numéricos, temporais e medidas; o roteiro e sete problemas foram escritos originalmente para cobrir raciocínio verbal, numérico, sequencial, espacial, temporal, formação de conceito e discriminação por critério. Respostas e justificativas foram conferidas passo a passo; exercícios originais não são atribuídos às fontes externas. Revisão independente deve validar cobertura de cada modalidade, ambiguidade e aritmética antes da promoção."
+      }
+    },
+    {
+      "id": "path-security-defenses-and-assessment",
+      "unitId": "seguranca-aplicacoes-continuidade-defesas-testes-unit",
+      "title": "Defesas de rede, detecção e avaliação de segurança",
+      "steps": [
+        {
+          "resourceId": "expanded-cert-cartilha2012",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Seções firewall, antivírus e medidas de proteção; edição 2012, conceitos históricos"
+        },
+        {
+          "resourceId": "expanded-nist-idps-800-94-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Classes IDPS, monitoramento, alertas/prevenção e limitações; SP800-94 final 2007"
+        },
+        {
+          "resourceId": "expanded-nist-security-testing-800-115-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "§§4–5: identificação/varredura de vulnerabilidades versus técnicas de validação, incluindo pentest"
+        },
+        {
+          "resourceId": "expanded-aws-network-firewall-engines-2026",
+          "objectiveIndices": [
+            0
+          ],
+          "locator": "Rules engines: exemplo atual específico de firewall stateful e Suricata/IPS"
+        }
+      ],
+      "practice": {
+        "title": "Comparar função e limite de cada defesa",
+        "reading": "Referência conceitual: firewall aplica política ao tráfego; antivírus procura/prevenir código malicioso nos arquivos ou processos que consegue inspecionar; IDS analisa eventos e alerta; IPS pode atuar no caminho do tráfego para bloquear conforme configuração. Nenhum controle detecta tudo. Varredura/análise de vulnerabilidades procura e caracteriza fraquezas; pentest autorizado tenta validar, dentro de escopo e regras de engajamento, se caminhos de ataque são exploráveis. Os exemplos NIST de IDPS e avaliação são documentos antigos (2007/2008); trate-os como fundamentos e confira recomendações operacionais atuais. A página AWS é apenas um exemplo de produto.",
+        "questions": [
+          {
+            "id": "firewall-vs-av",
+            "stem": "Uma regra permite ou bloqueia tráfego de rede por origem, destino e política. Qual controle corresponde mais diretamente a essa função?",
+            "options": [
+              "Firewall",
+              "Antivírus",
+              "Varredura de vulnerabilidades"
+            ],
+            "correctOptionIndex": 0,
+            "explanation": "Firewall filtra tráfego segundo regras; antivírus atua sobre software malicioso e scanner identifica fraquezas.",
+            "sourceResourceId": "expanded-cert-cartilha2012",
+            "locator": "Seções Firewall e antivírus; conceitos gerais"
+          },
+          {
+            "id": "ids-vs-ips",
+            "stem": "Qual diferença descreve melhor IDS e IPS no modelo didático?",
+            "options": [
+              "IDS observa/alerta; IPS pode prevenir/bloquear conforme a implantação",
+              "IDS sempre criptografa; IPS apenas registra arquivos",
+              "São nomes diferentes para antivírus"
+            ],
+            "correctOptionIndex": 0,
+            "explanation": "NIST descreve classes e ações de IDPS; a capacidade de bloqueio depende da arquitetura e configuração, não é garantia universal.",
+            "sourceResourceId": "expanded-nist-idps-800-94-2026",
+            "locator": "Cap.3: classes, componentes e respostas IDPS"
+          },
+          {
+            "id": "scan-vs-pentest",
+            "stem": "Qual atividade busca evidenciar, dentro de um escopo autorizado, se uma vulnerabilidade pode ser explorada?",
+            "options": [
+              "Somente inventariar versões",
+              "Teste de invasão (pentest)",
+              "Configurar uma regra de firewall"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "SP 800-115 distingue identificação/análise de vulnerabilidades de técnicas de validação, como testes de invasão; ambos precisam de planejamento e autorização.",
+            "sourceResourceId": "expanded-nist-security-testing-800-115-2026",
+            "locator": "§4 target identification/vulnerability analysis; §5 validation techniques/pentest"
+          },
+          {
+            "id": "defense-limits",
+            "stem": "Um IPS foi implantado. Qual afirmação é mais segura?",
+            "options": [
+              "Ele elimina todo risco de intrusão",
+              "Ele pode bloquear eventos detectados segundo regras/configuração, mas não substitui outros controles",
+              "Ele substitui análise de vulnerabilidades e pentest"
+            ],
+            "correctOptionIndex": 1,
+            "explanation": "A cobertura depende de posição, assinaturas/regras, configuração e contexto; não é garantia de ausência de ataques.",
+            "sourceResourceId": "expanded-aws-network-firewall-engines-2026",
+            "locator": "Stateful engine/Suricata example; product-specific behavior"
+          }
+        ]
+      },
+      "editorialReview": {
+        "status": "approved",
+        "reviewer": "/root; supplementary path and practice review",
+        "reviewedAt": "2026-10-08T07:31:00.000Z",
+        "evidence": "Percurso associa distinções de defesa, classes IDPS e avaliação técnica. A atividade foi escrita originalmente com ressalvas de idade para NIST800-94/115, limites de detecção e exemplo AWS não universal. Todas as respostas foram comparadas aos locators e não afirmam pentest executado. Revisão independente deve confirmar que as definições não transformam uma lista de controles em garantia de segurança."
+      }
+    }
+  ],
+  "closedUnitIds": [
+    "seguranca-principios-classificacao-unit",
+    "seguranca-principios-riscos-vulnerabilidades-incidentes-unit",
+    "unit-governanca-modelos-ageis",
+    "redes-protocolos-smtp-ftp-ssh-vpn-proxy-unit",
+    "redes-protocolos-sem-fio-unit",
+    "nuvem-arquitetura-balanceamento-firewalls-unit",
+    "lp-morfossintaxe-flexoes-vozes-unit",
+    "seguranca-aplicacoes-continuidade-backup-bc-dr-unit",
+    "unit-governanca-modelos-cobit",
+    "unit-governanca-modelos-itil",
+    "unit-legti-normas-tce-certificacao",
+    "seguranca-cripto-identidade-iam-unit",
+    "lp-texto-semantica-discursos-unit",
+    "lp-morfossintaxe-figuras-unit",
+    "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+    "seguranca-aplicacoes-continuidade-devsecops-api-container-cloud-unit",
+    "ingles-documentacao-corpus-unit",
+    "mrl-logica-raciocinios-unit",
+    "seguranca-aplicacoes-continuidade-defesas-testes-unit"
+  ],
+  "gaps": [],
+  "decisions": [
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-backup-bc-dr-unit",
+      "decision": "closed_candidate_primary_full",
+      "evidence": "NIST SP800-34 Rev.1 (revisão dos locators conforme descritos na fonte suplementar); teoria e checklist genérico cobrem o objetivo, sem alegar ensaio prático de restauração."
+    },
+    {
+      "unitId": "lp-morfossintaxe-flexoes-vozes-unit",
+      "decision": "closed_candidate_study_path",
+      "evidence": "Percurso composto de três fontes com objetivo mapeado; fontes individuais continuam partial."
+    }
+  ],
+  "proposedUnits": [],
+  "revisionHistory": [
+    {
+      "at": "2026-10-08T18:05:29Z",
+      "sourceId": "expanded-nist60-classification-2026",
+      "reason": "Moved to LANGUAGE_SECURITY_SOURCES_REVIEW.json with the classification study path; source remains individually identified."
+    },
+    {
+      "at": "2026-10-08T18:05:29Z",
+      "pathId": "path-classificacao-impacto-controles",
+      "reason": "Consolidated in LANGUAGE_SECURITY_SOURCES_REVIEW.json with its source records so the candidate validator can assess the route as a unit."
+    },
+    {
+      "at": "2026-10-08T18:16:00Z",
+      "pathId": "path-risk-vulnerability-incident",
+      "reason": "Consolidated with its source records in LANGUAGE_SECURITY_SOURCES_REVIEW.json so the candidate validator evaluates each multi-source path with its sources."
+    },
+    {
+      "at": "2026-10-08T18:16:00Z",
+      "pathId": "path-iam-identity-access-lifecycle",
+      "reason": "Consolidated with its source records in LANGUAGE_SECURITY_SOURCES_REVIEW.json so the candidate validator evaluates each multi-source path with its sources."
+    },
+    {
+      "at": "2026-10-08T18:16:00Z",
+      "sourceIds": [
+        "expanded-nist61r3-incidents-2026",
+        "expanded-nist40r4-patch-management-2026",
+        "expanded-gsi-iam-osic0823",
+        "expanded-ms-entra-provisioning-how-works"
+      ],
+      "reason": "Moved risk/IAM source records to LANGUAGE_SECURITY_SOURCES_REVIEW.json alongside their study paths; retained source-specific URLs and verification."
+    },
+    {
+      "at": "2026-10-08T18:10:00Z",
+      "sourceId": "expanded-nist-contingency34",
+      "pathId": "path-backup-continuity-recovery",
+      "reason": "Moved source record to LANGUAGE_SECURITY_SOURCES_REVIEW.json and created a multi-source study path there so its evidence is checked as a unit."
+    }
+  ],
+  "summary": {
+    "updatedAt": "2026-10-08T18:21:16Z",
+    "note": " Fontes DevSecOps movidas para o parecer LANGUAGE_SECURITY, onde o percurso correspondente pode validar URLs e cobertura em conjunto."
+  }
+}

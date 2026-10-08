@@ -22,7 +22,7 @@ export class LibraryUI {
     const count=coverage.totals;
     const note=PixelPanel({className:'library-coverage',children:[
       PixelBadge(coverage.isComplete?'Escopo e cobertura revisados':coverage.status==='partial'?'Curadoria parcial':'Curadoria em preparação',coverage.isComplete?'success':'warning'),
-      make('p', count ? `${count.coveredUnits} de ${count.units} unidades com recurso primário revisado. ${coverage.legacyResources} referências legadas não contam como cobertura v2.` : 'Este pacote ainda não possui unidades didáticas configuradas.'),
+      make('p', count ? `${count.coveredUnits} de ${count.units} unidades com cobertura primária integral revisada. ${coverage.legacyResources} referências legadas não contam como cobertura v2.` : 'Este pacote ainda não possui unidades didáticas configuradas.'),
       make('p','Cobertura editorial dos materiais; não representa seu aprendizado ou progresso. Links externos precisam de internet.')
     ]});
     this.root.append(intro,note);
@@ -74,8 +74,10 @@ export class LibraryUI {
   }
   updateResults() {
     const resources=this.catalog.filter(this.filters);
+    const paths=this.catalog.filterPaths(this.filters);
     this.results.replaceChildren();this.unitRoot.replaceChildren();
-    this.resultStatus.textContent=resources.length===1?'1 material encontrado.':`${resources.length} materiais encontrados.`;
+    const countLabel=(count,singular,plural)=>`${count} ${count===1?singular:plural}`;
+    this.resultStatus.textContent=[countLabel(resources.length,'material','materiais'),countLabel(paths.length,'percurso','percursos')].join(' · ')+'.';
     const topic=this.catalog.topicById.get(this.filters.topicId);
     if(topic) {
       const panel=PixelPanel({className:'library-unit',children:[make('h3',topic.title),make('p',topic.disciplineTitle+' / '+topic.moduleTitle)]});
@@ -87,7 +89,7 @@ export class LibraryUI {
         const prerequisites=(unit.prerequisiteUnitIds??[]).map(id=>this.catalog.unitById.get(id)?.title??id);
         panel.append(make('p',prerequisites.length?'Pré-requisitos: '+prerequisites.join('; '):'Pré-requisitos não informados.'));
         const covered=this.catalog.coverage.units?.find(row=>row.unitId===unit.id)?.covered;
-        panel.append(PixelBadge(covered?'Recurso primário revisado':'Lacuna: recurso primário revisado pendente',covered?'success':'warning'));
+        panel.append(PixelBadge(covered?'Cobertura primária integral revisada':'Lacuna: cobertura primária integral pendente',covered?'success':'warning'));
         const syllabus=unit.syllabusRefs??[];
         for(const ref of syllabus)panel.append(make('p','Referência do edital: '+ref.source+' · '+ref.locator));
       }
@@ -95,8 +97,53 @@ export class LibraryUI {
       panel.append(PixelButton({label:'Praticar este conteúdo',onClick:()=>this.onPractice(topic.id)}),PixelButton({label:'Revisar flashcards',variant:'secondary',onClick:()=>this.onCards(topic.id)}));
       this.unitRoot.append(panel);
     }
-    if(!resources.length) {this.results.append(PixelPanel({children:[make('h3','Nenhum material neste filtro'),make('p','Ajuste os filtros ou escolha outro conteúdo. A ausência de material é uma lacuna do catálogo, não do seu progresso.')] }));return;}
+    for(const path of paths)this.results.append(this.studyPathCard(path));
+    if(!resources.length&&!paths.length) {this.results.append(PixelPanel({children:[make('h3','Nenhum material neste filtro'),make('p','Ajuste os filtros ou escolha outro conteúdo. A ausência de material é uma lacuna do catálogo, não do seu progresso.')] }));return;}
     for(const resource of resources)this.results.append(this.resourceCard(resource));
+  }
+  studyPathCard(path) {
+    const unit=this.catalog.unitById.get(path.unitId),row=this.catalog.coverage.units?.find(item=>item.unitId===path.unitId);
+    const card=PixelPanel({as:'article',className:'library-resource library-study-path'});
+    const copy=make('div',null,'library-resource__copy');
+    copy.append(PixelBadge(row?.primaryPathIds?.includes(path.id)?'Percurso revisado · objetivos cobertos':'Percurso em revisão',row?.primaryPathIds?.includes(path.id)?'success':'warning'),make('h3',path.title),make('p',unit?.title??'Unidade didática'));
+    const objectives=make('ul');for(const objective of unit?.learningObjectives??[])objectives.append(make('li',objective));
+    copy.append(make('p','Objetivos cobertos pelo percurso, conforme revisão editorial:'),objectives);
+    const steps=make('ol');
+    for(const [index,step] of (path.steps??[]).entries()) {
+      const resource=this.catalog.resourceById.get(step.resourceId),item=make('li');
+      item.append(make('strong',`Etapa ${index+1}: ${resource?.title??step.resourceId}`),make('p',step.locator));
+      if(resource?.url)item.append(linkTo('Abrir esta fonte ↗',resource.url));
+      steps.append(item);
+    }
+    copy.append(make('h4','Sequência de estudo'),steps,make('small','As fontes permanecem independentes, podem ter idiomas diferentes e exigem conexão com a internet.'));
+    if(path.practice)copy.append(this.practicePanel(path));
+    card.append(copy);return card;
+  }
+  practicePanel(path) {
+    const practice=path.practice,panel=PixelPanel({as:'section',className:'library-practice'});
+    panel.append(make('h4',practice.title),make('p','Atividade de leitura · sem pontuação ou registro de progresso.'));
+    const reading=make('pre',practice.reading,'library-practice__reading');
+    panel.append(reading);
+    for(const [index,question] of practice.questions.entries()) {
+      const fieldset=make('fieldset',null,'library-practice__question'),legend=make('legend',`${index+1}. ${question.stem}`);
+      fieldset.append(legend);
+      const name=`practice-${path.id}-${question.id}`;
+      for(const [optionIndex,option] of question.options.entries()) {
+        const label=make('label',null,'library-practice__option'),input=make('input');
+        input.type='radio';input.name=name;input.value=String(optionIndex);
+        label.append(input,document.createTextNode(option));fieldset.append(label);
+      }
+      const feedback=make('p','', 'library-practice__feedback');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');
+      const check=PixelButton({label:'Conferir resposta',variant:'secondary',onClick:()=>{
+        const selected=fieldset.querySelector('input:checked');
+        if(!selected) { feedback.textContent='Escolha uma alternativa antes de conferir.';return; }
+        const correct=Number(selected.value)===question.correctOptionIndex;
+        feedback.textContent=`${correct?'Resposta correta.':'Releia o trecho e compare as condições.'} ${question.explanation}`;
+      }});
+      check.type='button';fieldset.append(check,feedback);
+      panel.append(fieldset);
+    }
+    return panel;
   }
   resourceCard(resource) {
     const v2=resource.libraryVersion===2, status=resource.verification?.result;

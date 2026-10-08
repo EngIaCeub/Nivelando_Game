@@ -29,6 +29,35 @@ for (const directory of await readdir(resolve(root, 'exam-packs'), { withFileTyp
   check(pack.curriculum, 'curriculum.schema.json', `${base}/curriculum`);
   pack.resources.forEach(resource => check(resource, 'resource.schema.json', `${base}/resource/${resource.id}`));
   pack.questions.forEach(question => check(question, 'question.schema.json', `${base}/question/${question.id}`));
+  try {
+    const flashcards = await json(`${base}/flashcards.json`);
+    check(flashcards, 'flashcards.schema.json', `${base}/flashcards`);
+    if (flashcards.examId !== directory.name) throw new Error(`${base}/flashcards: examId não corresponde ao pack`);
+    const ids = new Set();
+    for (const card of flashcards.cards) {
+      if (ids.has(card.id)) throw new Error(`${base}/flashcards: ID duplicado ${card.id}`);
+      ids.add(card.id);
+      for (const topicId of card.topicIds) {
+        if (!pack.curriculum.disciplines.some(discipline => discipline.modules.some(module => module.topics.some(topic => topic.id === topicId)))) {
+          throw new Error(`${base}/flashcards/${card.id}: topicId inexistente ${topicId}`);
+        }
+      }
+    }
+  } catch (error) { if (error.code !== 'ENOENT') throw error; }
+  // A curated pack explicitly retires legacy banks. Old IDs stay readable, never
+  // silently overwritten or reintroduced into the active selection.
+  try {
+    const history = await json(`${base}/content-history.json`);
+    if (history.examId !== directory.name || !Array.isArray(history.questions) || !Array.isArray(history.cards)) throw new Error(`${base}: invalid content history`);
+    const cards = (await json(`${base}/flashcards.json`)).cards;
+    for (const [kind, current, legacy] of [['questions', pack.questions, history.questions], ['cards', cards, history.cards]]) {
+      const ids = new Set(current.map(item => item.id));
+      if (legacy.some(item => ids.has(item.id)) || new Set(legacy.map(item => item.id)).size !== legacy.length) throw new Error(`${base}: reused historical ${kind} IDs`);
+      if (current.some(item => item.reviewStatus !== 'approved' || item.editorialReview?.status !== 'approved' || !item.editorialReview.reviewer || !item.editorialReview.reviewedAt || !item.provenance?.locator)) throw new Error(`${base}: active ${kind} lacks independent review`);
+    }
+    history.questions.forEach(q => check(q, 'question.schema.json', `${base}/history/${q.id}`));
+    check({examId:history.examId,cards:history.cards}, 'flashcards.schema.json', `${base}/history/cards`);
+  } catch (error) { if (error.code !== 'ENOENT') throw error; }
   let library;
   try { library = await json(`${base}/library.json`); } catch (error) { if (error.code !== 'ENOENT') throw error; }
   if (library) {
@@ -43,7 +72,11 @@ for (const directory of await readdir(resolve(root, 'exam-packs'), { withFileTyp
     if (candidates.length && !library) throw new Error(`${base}: candidates require library.json`);
     if (library && candidates.length) {
       const sourceMap = await json(`${base}/source-map.json`);
-      const candidateAudit = auditLibrary({ ...pack, resources: candidates, library: { ...library, status: 'planned' }, sourceMap });
+      // Candidate paths may intentionally reuse already-active resources. Audit
+      // the combined inventory so an unverified candidate is never substituted
+      // for the active catalogue and valid active path steps are not orphaned.
+      const candidateInventory = [...new Map([...candidates, ...pack.resources].map(resource => [resource.id, resource])).values()];
+      const candidateAudit = auditLibrary({ ...pack, resources: candidateInventory, library: { ...library, status: 'planned' }, sourceMap });
       if (candidateAudit.errors.length) throw new Error(`${base}/candidates: ${candidateAudit.errors.join('; ')}`);
     }
   } catch (error) { if (error.code !== 'ENOENT') throw error; }

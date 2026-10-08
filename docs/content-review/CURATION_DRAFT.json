@@ -1,0 +1,3252 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-07T04:34:37.628Z",
+  "curator": "Codex /root",
+  "sources": [
+    {
+      "id": "curated-pg-transactions",
+      "title": "PostgreSQL 18 — transações",
+      "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+      "provider": "PostgreSQL",
+      "authors": [
+        "PostgreSQL Global Development Group"
+      ],
+      "topicIds": [
+        "bd-sql"
+      ],
+      "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK",
+      "evidence": "Leitura dos parágrafos e exemplo bancário: tudo-ou-nada, alterações confirmadas e rollback. Edição 18; não comprova SQL/álgebra/otimização inteiros.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-pg-foreign-keys",
+      "title": "PostgreSQL 18 — chaves estrangeiras",
+      "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+      "provider": "PostgreSQL",
+      "authors": [
+        "PostgreSQL Global Development Group"
+      ],
+      "topicIds": [
+        "bd-modelagem"
+      ],
+      "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL",
+      "evidence": "Leitura do exemplo cities/weather e da restrição de integridade referencial. Não cobre normalização ou desnormalização.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-pg-indexes",
+      "title": "PostgreSQL 18 — índices",
+      "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+      "provider": "PostgreSQL",
+      "authors": [
+        "PostgreSQL Global Development Group"
+      ],
+      "topicIds": [
+        "bd-sql"
+      ],
+      "locator": "§11.1 Introduction, busca e custo de atualização/manutenção",
+      "evidence": "Leitura da introdução e §11.1: benefício de busca e custo de manutenção. Apenas recorte introdutório; tipos detalhados não foram revisados.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-pg-backup",
+      "title": "PostgreSQL 18 — backup e recuperação",
+      "url": "https://www.postgresql.org/docs/18/backup.html",
+      "provider": "PostgreSQL",
+      "authors": [
+        "PostgreSQL Global Development Group"
+      ],
+      "topicIds": [
+        "bd-tecnologias-operacao"
+      ],
+      "locator": "Capítulo 25, introdução e três abordagens",
+      "evidence": "Leitura da distinção SQL dump, filesystem backup e continuous archiving. Não cobre Oracle, NoSQL ou toda operação de banco.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-python-structures",
+      "title": "Python — estruturas de dados",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "provider": "Python",
+      "authors": [
+        "Python Software Foundation"
+      ],
+      "topicIds": [
+        "devsistemas-fundamentos"
+      ],
+      "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos",
+      "evidence": "Leitura dos exemplos de append/pop e deque para fila; conjunto não contém duplicatas. Conceitos básicos, sem afirmar cobertura de OO/funcional.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-mdn-functions",
+      "title": "JavaScript — funções e escopo",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+      "provider": "MDN Web Docs",
+      "authors": [
+        "MDN contributors"
+      ],
+      "topicIds": [
+        "devsistemas-linguagens-web"
+      ],
+      "locator": "Declarando uma função; Chamando funções; Closures",
+      "evidence": "Leitura da definição/return, chamada e acesso de função aninhada ao escopo exterior. Recorte da tradução; não certifica todo guia ou versões atuais.",
+      "language": "pt-BR",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-scrum-2020",
+      "title": "Scrum Guide 2020 — teoria, eventos e artefatos",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "provider": "Scrum Guides",
+      "authors": [
+        "Ken Schwaber",
+        "Jeff Sutherland"
+      ],
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "locator": "Scrum Theory; The Sprint; Scrum Artifacts",
+      "evidence": "Leitura dos três pilares, limite do Sprint e compromissos dos artefatos. Não cobre Kanban, XP, Lean ou todos ciclos.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "CC-BY-SA-4.0",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-progit-control",
+      "title": "Pro Git — controle de versão",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "provider": "Git / Pro Git",
+      "authors": [
+        "Scott Chacon",
+        "Ben Straub"
+      ],
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems",
+      "evidence": "Leitura da recuperação de versões e repositórios distribuídos; não cobre branching/revisão/GitHub/GitLab integralmente.",
+      "language": "en",
+      "type": "book",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-docker-container",
+      "title": "Docker — containers e máquinas virtuais",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "provider": "Docker",
+      "authors": [
+        "Docker documentation contributors"
+      ],
+      "topicIds": [
+        "devops-git-containers",
+        "sistemas-diretorios"
+      ],
+      "locator": "The basics; Containers versus virtual machines",
+      "evidence": "Leitura do processo isolado, kernel compartilhado e diferença de VM. Não cobre AD/LDAP ou Compose.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-k8s-components",
+      "title": "Kubernetes — componentes de cluster",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "provider": "Kubernetes",
+      "authors": [
+        "Kubernetes documentation contributors"
+      ],
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet",
+      "evidence": "Leitura da função dos componentes do plano de controle e dos nós. Recorte de arquitetura, sem certificação de toda operação.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-otel-signals",
+      "title": "OpenTelemetry — sinais de observabilidade",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "provider": "OpenTelemetry",
+      "authors": [
+        "OpenTelemetry contributors"
+      ],
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "locator": "Signals: Traces, Metrics, Logs, Baggage",
+      "evidence": "Leitura das definições dos quatro sinais. Não cobre IaC, configuração ou desenho de alertas.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-github-actions",
+      "title": "GitHub Actions — workflows, jobs e steps",
+      "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "provider": "GitHub Docs",
+      "authors": [
+        "GitHub documentation contributors"
+      ],
+      "topicIds": [
+        "devops-cicd"
+      ],
+      "locator": "Overview; Workflows; Jobs; Runners",
+      "evidence": "Leitura da composição de workflow e jobs, sequência e dependências. Exemplo específico de CI, não toda a disciplina.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-terraform-intro",
+      "title": "Terraform — infraestrutura como código",
+      "url": "https://developer.hashicorp.com/terraform/intro",
+      "provider": "HashiCorp",
+      "authors": [
+        "HashiCorp documentation contributors"
+      ],
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "locator": "What is Terraform?; How does Terraform work?",
+      "evidence": "Leitura das configurações versionáveis e interação por APIs/providers. Não cobre todas ferramentas/configuração.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-rfc6749",
+      "title": "RFC 6749 — OAuth 2.0",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749",
+      "provider": "RFC Editor / IETF",
+      "authors": [
+        "Dick Hardt"
+      ],
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token",
+      "evidence": "Leitura do framework de acesso delegado e quatro papéis. RFC original, não guia suficiente de segurança atual; implementar requer atualização BCP.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-rfc7519",
+      "title": "RFC 7519 — JWT",
+      "url": "https://www.rfc-editor.org/rfc/rfc7519",
+      "provider": "RFC Editor / IETF",
+      "authors": [
+        "Michael B. Jones",
+        "John Bradley",
+        "Nat Sakimura"
+      ],
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT",
+      "evidence": "Leitura das representações JWS/JWE, exp e validação. Base64url não é criptografia; não é guia suficiente de implantação segura.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-oidc-core",
+      "title": "OpenID Connect Core 1.0 — identidade",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "provider": "OpenID Foundation",
+      "authors": [
+        "OpenID Connect Working Group"
+      ],
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "locator": "Abstract; §1 Introduction; §2 ID Token",
+      "evidence": "Leitura da camada de identidade sobre OAuth e do ID Token. Edição com errata 2; não inclui todos perfis e fluxos.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-openapi-311",
+      "title": "OpenAPI 3.1.1 — descrição de APIs HTTP",
+      "url": "https://spec.openapis.org/oas/v3.1.1.html",
+      "provider": "OpenAPI Initiative",
+      "authors": [
+        "OpenAPI Initiative contributors"
+      ],
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "locator": "Introduction; §4.8 Schema, especialmente §4.8.24 Schema Object",
+      "evidence": "Leitura do propósito de descrição de interface e objetos da especificação. Versão fixada 3.1.1, sem afirmar ser latest.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-rfc9110",
+      "title": "RFC 9110 — métodos HTTP seguros e idempotentes",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "provider": "RFC Editor / IETF",
+      "authors": [
+        "Roy Fielding",
+        "Mark Nottingham",
+        "Julian Reschke"
+      ],
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods",
+      "evidence": "Leitura da intenção do cliente, efeitos repetidos e exemplos PUT/DELETE/GET. Não cobre TCP/IP/DNS/VPN ou HTTP/2/3 integralmente.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-nist800145",
+      "title": "NIST SP 800-145 — computação em nuvem",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "provider": "NIST",
+      "authors": [
+        "Peter Mell",
+        "Timothy Grance"
+      ],
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models",
+      "evidence": "Leitura das cinco características, IaaS/PaaS/SaaS e quatro modelos de implantação. Documento de 2011; não cobre serverless, firewall ou balanceamento.",
+      "language": "en",
+      "type": "pdf",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-sklearn-start",
+      "title": "scikit-learn — aprendizado, treino e predição",
+      "url": "https://scikit-learn.org/stable/getting_started.html",
+      "provider": "scikit-learn",
+      "authors": [
+        "scikit-learn developers"
+      ],
+      "topicIds": [
+        "ia-dados-ml"
+      ],
+      "locator": "Fitting and predicting: estimator basics; Pipelines",
+      "evidence": "Leitura de X/y, classificação/regressão e fit/predict. Conceitos de ML, sem cobrir reforço/redes neurais.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-sklearn-leakage",
+      "title": "scikit-learn — vazamento de dados",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "provider": "scikit-learn",
+      "authors": [
+        "scikit-learn developers"
+      ],
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "locator": "§12.2 Data leakage",
+      "evidence": "Leitura da separação treino/teste e aprendizado do preprocessing apenas no treino. Não cobre governança/ética/LGPD/Big Data inteiros.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-rag-paper",
+      "title": "RAG — memória paramétrica e recuperação",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "provider": "arXiv / autores",
+      "authors": [
+        "Patrick Lewis e colaboradores"
+      ],
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp",
+        "ia-dados-rag-etica"
+      ],
+      "locator": "Resumo do artigo, versão v4 de 12/04/2021",
+      "evidence": "Leitura do resumo e desenho de memória não paramétrica/índice vetorial. Apenas referência conceitual; não alegar leitura integral ou cobertura primária completa.",
+      "language": "en",
+      "type": "article",
+      "role": "reference",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-mcp-architecture",
+      "title": "MCP 2025-11-25 — arquitetura",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+      "provider": "Model Context Protocol",
+      "authors": [
+        "MCP contributors"
+      ],
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles",
+      "evidence": "Leitura das responsabilidades e conexão cliente-servidor 1:1. Não cobre todas skills, RAG, avaliação ou direitos.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-agent-workflows",
+      "title": "Sistemas agentivos — workflows, agentes e avaliação",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "provider": "Anthropic",
+      "authors": [
+        "Erik S.",
+        "Barry Zhang"
+      ],
+      "topicIds": [
+        "ia-agentivos-llm",
+        "ia-agentivos-contexto",
+        "ia-agentivos-ciclo-mcp",
+        "ia-dados-generativa"
+      ],
+      "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer",
+      "evidence": "Leitura das definições operacionais e dos padrões com verificações. Referência de engenharia do fornecedor; não norma universal ou promessa de correção.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-owasp-sqli",
+      "title": "OWASP — prevenção de SQL injection",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "provider": "OWASP Cheat Sheet Series",
+      "authors": [
+        "OWASP contributors"
+      ],
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege",
+      "evidence": "Leitura das queries parametrizadas e privilégios. Recurso específico e complementar ao OWASP Top 10 2025, não edição substituta.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-owasp-authz",
+      "title": "OWASP — autorização e privilégio mínimo",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "provider": "OWASP Cheat Sheet Series",
+      "authors": [
+        "OWASP contributors"
+      ],
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request",
+      "evidence": "Leitura da distinção autenticação/autorização e verificação por requisição. Não cobre PKI, criptografia ou assinatura digital.",
+      "language": "en",
+      "type": "docs",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-nist-csf2",
+      "title": "NIST CSF 2.0 — funções de gestão de risco",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "provider": "NIST",
+      "authors": [
+        "National Institute of Standards and Technology"
+      ],
+      "topicIds": [
+        "seguranca-principios",
+        "governanca-alinhamento"
+      ],
+      "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas",
+      "evidence": "Leitura de Govern, Identify, Protect, Detect, Respond, Recover e outcomes. Não cobre COBIT/ITIL/ISO/PMBOK ou toda governança.",
+      "language": "en",
+      "type": "pdf",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-cf-control",
+      "title": "Constituição Federal — controle externo e contas",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "provider": "Presidência da República",
+      "authors": [
+        "Brasil"
+      ],
+      "topicIds": [
+        "leginst-constituicao"
+      ],
+      "locator": "Arts.70 caput/parágrafo único e 71 caput",
+      "evidence": "Leitura dos dispositivos e distinção federal Congresso/TCU. Não inferir competências específicas do TCE-GO ou todo texto constitucional.",
+      "language": "pt-BR",
+      "type": "law",
+      "role": "reference",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-lgpd-principles",
+      "title": "LGPD — definições e necessidade",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "provider": "Presidência da República",
+      "authors": [
+        "Brasil"
+      ],
+      "topicIds": [
+        "legti-lgpd",
+        "ia-dados-rag-etica"
+      ],
+      "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026",
+      "evidence": "Leitura de dados pessoais/anonimizados, necessidade e reversibilidade. Recorte de dispositivos; revisão do consolidado integral ao corte do edital não concluída.",
+      "language": "pt-BR",
+      "type": "law",
+      "role": "reference",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-marco-neutrality",
+      "title": "Marco Civil — neutralidade e registros",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+      "provider": "Presidência da República",
+      "authors": [
+        "Brasil"
+      ],
+      "topicIds": [
+        "legti-marco-civil"
+      ],
+      "locator": "Arts.9 caput/§1, 13 caput e 15 caput",
+      "evidence": "Leitura de neutralidade/exceções legais e prazos com sujeitos distintos. Não cobre todas hipóteses da lei ou jurisprudência.",
+      "language": "pt-BR",
+      "type": "law",
+      "role": "reference",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-openstax-fractions",
+      "title": "Prealgebra 2e — frações",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+      "provider": "OpenStax / Rice University",
+      "authors": [
+        "Lynn Marecek",
+        "MaryAnne Anthony-Smith",
+        "Andrea Honeycutt Mathis"
+      ],
+      "topicIds": [
+        "mrl-aritmetica"
+      ],
+      "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions",
+      "evidence": "Leitura do significado, partes iguais e equivalência. Exercícios são externos; exemplos dos cartões são originais.",
+      "language": "en",
+      "type": "book",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-openstax-proportions",
+      "title": "Prealgebra 2e — proporções e aplicações",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+      "provider": "OpenStax / Rice University",
+      "authors": [
+        "Lynn Marecek",
+        "MaryAnne Anthony-Smith",
+        "Andrea Honeycutt Mathis"
+      ],
+      "topicIds": [
+        "mrl-proporcoes"
+      ],
+      "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions",
+      "evidence": "Leitura da igualdade de razões, produto cruzado e razão percentual. Não cobre toda regra de três inversa/acréscimos/descontos.",
+      "language": "en",
+      "type": "book",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-bc-reading",
+      "title": "British Council — skimming, scanning e leitura detalhada",
+      "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+      "provider": "British Council",
+      "authors": [
+        "British Council"
+      ],
+      "topicIds": [
+        "ingles-estrategias",
+        "ingles-compreensao"
+      ],
+      "locator": "Skimming; Scanning; Reading for detail",
+      "evidence": "Leitura dos objetivos de cada estratégia. Não fornece coleção de textos técnicos TI nem todo vocabulário.",
+      "language": "en",
+      "type": "article",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    },
+    {
+      "id": "curated-funag-comma",
+      "title": "FUNAG — uso da vírgula",
+      "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+      "provider": "Fundação Alexandre de Gusmão",
+      "authors": [
+        "FUNAG"
+      ],
+      "topicIds": [
+        "lp-sintaxe-redacao"
+      ],
+      "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula",
+      "evidence": "Leitura das regras sintáticas e exemplos. Não cobre toda regência/crase/concordância.",
+      "language": "pt-BR",
+      "type": "article",
+      "role": "primary",
+      "checkedAt": "2026-10-07T04:34:37.628Z",
+      "access": "free",
+      "license": "unknown",
+      "limitations": "Recorte parcial da unidade; não substitui todos os subitens do edital. Consulta externa exige internet."
+    }
+  ],
+  "cards": [
+    {
+      "id": "fc-curated-bd-sql-atomicidade",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Qual propriedade de uma transação impede a aplicação de apenas parte de suas alterações?",
+      "back": "Atomicidade: as alterações da transação são confirmadas como uma unidade ou são desfeitas. Não confundir com durabilidade, que trata a persistência após confirmação.",
+      "explanation": "Atomicidade: as alterações da transação são confirmadas como uma unidade ou são desfeitas. Não confundir com durabilidade, que trata a persistência após confirmação.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-transactions",
+        "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+        "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-bd-sql-durabilidade",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "O que a durabilidade exige após o banco confirmar uma transação?",
+      "back": "Que os efeitos confirmados permaneçam registrados mesmo diante de uma falha posterior, sob as garantias e configuração de persistência do banco.",
+      "explanation": "Que os efeitos confirmados permaneçam registrados mesmo diante de uma falha posterior, sob as garantias e configuração de persistência do banco.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-transactions",
+        "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+        "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-bd-sql-rollback",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Qual a diferença entre COMMIT e ROLLBACK em uma transação PostgreSQL?",
+      "back": "COMMIT confirma a transação; ROLLBACK cancela suas alterações ainda não confirmadas. ROLLBACK não desfaz uma transação já confirmada.",
+      "explanation": "COMMIT confirma a transação; ROLLBACK cancela suas alterações ainda não confirmadas. ROLLBACK não desfaz uma transação já confirmada.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-transactions",
+        "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+        "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-bd-sql-indice",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-sql"
+      ],
+      "canonicalConceptIds": [
+        "database.sql",
+        "database.transactions"
+      ],
+      "front": "Criar mais índices sempre melhora o desempenho de um banco?",
+      "back": "Não. Índices podem acelerar buscas, mas acrescentam trabalho de manutenção nas atualizações. A escolha depende das consultas e da carga de escrita.",
+      "explanation": "Não. Índices podem acelerar buscas, mas acrescentam trabalho de manutenção nas atualizações. A escolha depende das consultas e da carga de escrita.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-indexes",
+        "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+        "locator": "§11.1 Introduction, busca e custo de atualização/manutenção",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-indexes",
+          "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+          "locator": "§11.1 Introduction, busca e custo de atualização/manutenção"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-bd-modelagem-chave-estrangeira",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-modelagem"
+      ],
+      "canonicalConceptIds": [
+        "database.modeling",
+        "database.normalization"
+      ],
+      "front": "Para que serve uma chave estrangeira?",
+      "back": "Para manter integridade referencial: os valores referenciados devem corresponder a uma linha da tabela referenciada, observadas as regras de NULL e da restrição. Não normaliza automaticamente o esquema.",
+      "explanation": "Para manter integridade referencial: os valores referenciados devem corresponder a uma linha da tabela referenciada, observadas as regras de NULL e da restrição. Não normaliza automaticamente o esquema.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-foreign-keys",
+        "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+        "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-foreign-keys",
+          "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+          "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL"
+        },
+        {
+          "sourceId": "curated-pg-foreign-keys",
+          "url": "https://www.postgresql.org/docs/18/ddl-constraints.html#DDL-CONSTRAINTS-FK",
+          "locator": "§5.5.5 Foreign Keys, valores NULL",
+          "checkedAt": "2026-10-07T04:34:37.628Z"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-bd-tecnologias-operacao-backup-abordagens",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "bd-tecnologias-operacao"
+      ],
+      "canonicalConceptIds": [
+        "database.relational",
+        "database.nosql",
+        "database.vector",
+        "database.reliability"
+      ],
+      "front": "Quais três abordagens de backup são apresentadas pelo PostgreSQL?",
+      "back": "Dump SQL, cópia em nível de sistema de arquivos e arquivamento contínuo. Elas têm procedimentos e condições de recuperação diferentes; escolher uma exige avaliar o cenário.",
+      "explanation": "Dump SQL, cópia em nível de sistema de arquivos e arquivamento contínuo. Elas têm procedimentos e condições de recuperação diferentes; escolher uma exige avaliar o cenário.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-pg-backup",
+        "url": "https://www.postgresql.org/docs/18/backup.html",
+        "locator": "Capítulo 25, introdução e três abordagens",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-backup",
+          "url": "https://www.postgresql.org/docs/18/backup.html",
+          "locator": "Capítulo 25, introdução e três abordagens"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-fundamentos-pilha",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-fundamentos"
+      ],
+      "canonicalConceptIds": [
+        "programming.algorithms",
+        "programming.data-structures"
+      ],
+      "front": "Como usar uma lista Python como pilha LIFO?",
+      "back": "Adicionar no final com append e remover o último item com pop. O último elemento inserido é o primeiro removido.",
+      "explanation": "Adicionar no final com append e remover o último item com pop. O último elemento inserido é o primeiro removido.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-python-structures",
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-python-structures",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-fundamentos-fila",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-fundamentos"
+      ],
+      "canonicalConceptIds": [
+        "programming.algorithms",
+        "programming.data-structures"
+      ],
+      "front": "Por que collections.deque é adequado a uma fila FIFO em Python?",
+      "back": "Deque permite adicionar e retirar nas extremidades. Para FIFO, append adiciona ao final e popleft remove do início; listas são ineficientes para remoções repetidas no início.",
+      "explanation": "Deque permite adicionar e retirar nas extremidades. Para FIFO, append adiciona ao final e popleft remove do início; listas são ineficientes para remoções repetidas no início.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-python-structures",
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-python-structures",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-linguagens-web-declarar-chamar",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-linguagens-web"
+      ],
+      "canonicalConceptIds": [
+        "programming.languages",
+        "web.frontend"
+      ],
+      "front": "Declarar uma função JavaScript executa seu corpo imediatamente?",
+      "back": "Não. A declaração define a função; uma chamada executa seu corpo com os argumentos fornecidos. Não confundir declaração com uma expressão que também invoque a função.",
+      "explanation": "Não. A declaração define a função; uma chamada executa seu corpo com os argumentos fornecidos. Não confundir declaração com uma expressão que também invoque a função.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-mdn-functions",
+        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+        "locator": "Declarando uma função; Chamando funções; Closures",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mdn-functions",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+          "locator": "Declarando uma função; Chamando funções; Closures"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-linguagens-web-closure",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-linguagens-web"
+      ],
+      "canonicalConceptIds": [
+        "programming.languages",
+        "web.frontend"
+      ],
+      "front": "O que uma closure permite a uma função JavaScript?",
+      "back": "Acessar variáveis do ambiente léxico no qual foi criada, inclusive quando a função é usada fora desse escopo. O escopo externo não ganha acesso às variáveis locais da função interna.",
+      "explanation": "Acessar variáveis do ambiente léxico no qual foi criada, inclusive quando a função é usada fora desse escopo. O escopo externo não ganha acesso às variáveis locais da função interna.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-mdn-functions",
+        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+        "locator": "Declarando uma função; Chamando funções; Closures",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mdn-functions",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+          "locator": "Declarando uma função; Chamando funções; Closures"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-pilares",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "front": "Quais são os três pilares empíricos do Scrum Guide 2020?",
+      "back": "Transparência, inspeção e adaptação. São fundamentos do empirismo no Scrum, distintos dos cinco valores do framework.",
+      "explanation": "Transparência, inspeção e adaptação. São fundamentos do empirismo no Scrum, distintos dos cinco valores do framework.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-scrum-2020",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "locator": "Scrum Theory; The Sprint; Scrum Artifacts",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-sprint",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "front": "Qual a duração máxima de um Sprint no Scrum Guide 2020?",
+      "back": "Um mês. Sprints têm duração fixa de um mês ou menos, e um novo Sprint começa imediatamente após o anterior.",
+      "explanation": "Um mês. Sprints têm duração fixa de um mês ou menos, e um novo Sprint começa imediatamente após o anterior.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-scrum-2020",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "locator": "Scrum Theory; The Sprint; Scrum Artifacts",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-compromissos",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "engsoft-ciclos"
+      ],
+      "canonicalConceptIds": [
+        "software.lifecycle"
+      ],
+      "front": "A quais artefatos do Scrum correspondem Product Goal, Sprint Goal e Definition of Done?",
+      "back": "Product Goal corresponde ao Product Backlog; Sprint Goal ao Sprint Backlog; Definition of Done ao Increment. Cada compromisso dá foco e transparência ao artefato.",
+      "explanation": "Product Goal corresponde ao Product Backlog; Sprint Goal ao Sprint Backlog; Definition of Done ao Increment. Cada compromisso dá foco e transparência ao artefato.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-scrum-2020",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "locator": "Scrum Theory; The Sprint; Scrum Artifacts",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-git-containers-controle-versao",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Qual é a finalidade do controle de versão?",
+      "back": "Registrar alterações de arquivos ao longo do tempo para recuperar e comparar versões específicas. O escopo não se restringe a código-fonte.",
+      "explanation": "Registrar alterações de arquivos ao longo do tempo para recuperar e comparar versões específicas. O escopo não se restringe a código-fonte.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-progit-control",
+        "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+        "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-progit-control",
+          "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+          "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-git-containers-container-vm",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Qual a diferença de kernel entre container e máquina virtual no modelo descrito pelo Docker?",
+      "back": "Uma VM tem seu próprio kernel de sistema operacional. Containers isolam processos e compartilham o kernel do ambiente que os executa, que pode estar dentro de uma VM.",
+      "explanation": "Uma VM tem seu próprio kernel de sistema operacional. Containers isolam processos e compartilham o kernel do ambiente que os executa, que pode estar dentro de uma VM.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-docker-container",
+        "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "locator": "The basics; Containers versus virtual machines",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-docker-container",
+          "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+          "locator": "The basics; Containers versus virtual machines"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-sistemas-diretorios-container-processo",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "sistemas-diretorios"
+      ],
+      "canonicalConceptIds": [
+        "systems.directory-services",
+        "devops.containers"
+      ],
+      "front": "Um container é necessariamente uma máquina virtual completa?",
+      "back": "Não. No modelo Docker, é um processo isolado com os arquivos necessários para executar. Seu isolamento não dispensa controles de segurança do host.",
+      "explanation": "Não. No modelo Docker, é um processo isolado com os arquivos necessários para executar. Seu isolamento não dispensa controles de segurança do host.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-docker-container",
+        "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "locator": "The basics; Containers versus virtual machines",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-docker-container",
+          "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+          "locator": "The basics; Containers versus virtual machines"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-git-containers-scheduler",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Qual a responsabilidade principal do kube-scheduler?",
+      "back": "Encontrar Pods ainda sem nó atribuído e escolher um nó adequado. Executar o Pod no nó é responsabilidade de outros componentes, como o kubelet.",
+      "explanation": "Encontrar Pods ainda sem nó atribuído e escolher um nó adequado. Executar o Pod no nó é responsabilidade de outros componentes, como o kubelet.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-k8s-components",
+        "url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-k8s-components",
+          "url": "https://kubernetes.io/docs/concepts/overview/components/",
+          "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-git-containers-apiserver",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-git-containers"
+      ],
+      "canonicalConceptIds": [
+        "devops.git",
+        "devops.containers",
+        "devops.orchestration"
+      ],
+      "front": "Para que serve o kube-apiserver?",
+      "back": "Expor a API HTTP do Kubernetes, pela qual os componentes e clientes interagem com o plano de controle.",
+      "explanation": "Expor a API HTTP do Kubernetes, pela qual os componentes e clientes interagem com o plano de controle.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-k8s-components",
+        "url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-k8s-components",
+          "url": "https://kubernetes.io/docs/concepts/overview/components/",
+          "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-iac-observabilidade-sinais",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "canonicalConceptIds": [
+        "devops.infrastructure-as-code",
+        "devops.observability"
+      ],
+      "front": "Como distinguir logs, métricas e traces?",
+      "back": "Logs registram eventos; métricas são medições em execução; traces acompanham o percurso de uma requisição. Combinar sinais ajuda a investigar o comportamento do sistema.",
+      "explanation": "Logs registram eventos; métricas são medições em execução; traces acompanham o percurso de uma requisição. Combinar sinais ajuda a investigar o comportamento do sistema.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-otel-signals",
+        "url": "https://opentelemetry.io/docs/concepts/signals/",
+        "locator": "Signals: Traces, Metrics, Logs, Baggage",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-otel-signals",
+          "url": "https://opentelemetry.io/docs/concepts/signals/",
+          "locator": "Signals: Traces, Metrics, Logs, Baggage"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-iac-observabilidade-iac",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-iac-observabilidade"
+      ],
+      "canonicalConceptIds": [
+        "devops.infrastructure-as-code",
+        "devops.observability"
+      ],
+      "front": "O que significa infraestrutura como código no exemplo Terraform?",
+      "back": "Definir recursos em arquivos de configuração legíveis, versionáveis e reutilizáveis, usando um fluxo consistente para provisionar e gerenciar a infraestrutura.",
+      "explanation": "Definir recursos em arquivos de configuração legíveis, versionáveis e reutilizáveis, usando um fluxo consistente para provisionar e gerenciar a infraestrutura.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-terraform-intro",
+        "url": "https://developer.hashicorp.com/terraform/intro",
+        "locator": "What is Terraform?; How does Terraform work?",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-terraform-intro",
+          "url": "https://developer.hashicorp.com/terraform/intro",
+          "locator": "What is Terraform?; How does Terraform work?"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-cicd-workflow-jobs",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-cicd"
+      ],
+      "canonicalConceptIds": [
+        "devops.cicd"
+      ],
+      "front": "Como workflows, jobs e steps se relacionam no GitHub Actions?",
+      "back": "Um workflow contém jobs; cada job contém steps. Jobs podem executar em paralelo ou depender de outros; os steps de um job executam em sequência por padrão.",
+      "explanation": "Um workflow contém jobs; cada job contém steps. Jobs podem executar em paralelo ou depender de outros; os steps de um job executam em sequência por padrão.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-github-actions",
+        "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+        "locator": "Overview; Workflows; Jobs; Runners",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-github-actions",
+          "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+          "locator": "Overview; Workflows; Jobs; Runners"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devops-cicd-feedback",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devops-cicd"
+      ],
+      "canonicalConceptIds": [
+        "devops.cicd"
+      ],
+      "front": "Por que automatizar build e testes ajuda a integração contínua?",
+      "back": "Permite verificar mudanças e obter feedback repetível sobre falhas de build e testes. Não garante ausência de defeitos nem elimina revisão de código.",
+      "explanation": "Permite verificar mudanças e obter feedback repetível sobre falhas de build e testes. Não garante ausência de defeitos nem elimina revisão de código.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-github-actions",
+        "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+        "locator": "Overview; Workflows; Jobs; Runners",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-github-actions",
+          "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+          "locator": "Overview; Workflows; Jobs; Runners"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oauth",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Qual problema principal o OAuth 2.0 resolve?",
+      "back": "Acesso delegado a recursos protegidos: um cliente usa uma autorização concedida e um access token para acessar recursos. OAuth, sozinho, não é um protocolo de identidade do usuário.",
+      "explanation": "Acesso delegado a recursos protegidos: um cliente usa uma autorização concedida e um access token para acessar recursos. OAuth, sozinho, não é um protocolo de identidade do usuário.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc6749",
+        "url": "https://www.rfc-editor.org/rfc/rfc6749",
+        "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc6749",
+          "url": "https://www.rfc-editor.org/rfc/rfc6749",
+          "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oauth-papeis",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Quais quatro papéis são definidos pela RFC 6749?",
+      "back": "Resource owner, resource server, client e authorization server. São papéis lógicos; um mesmo sistema pode desempenhar mais de um.",
+      "explanation": "Resource owner, resource server, client e authorization server. São papéis lógicos; um mesmo sistema pode desempenhar mais de um.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc6749",
+        "url": "https://www.rfc-editor.org/rfc/rfc6749",
+        "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc6749",
+          "url": "https://www.rfc-editor.org/rfc/rfc6749",
+          "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-jwt-cifra",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Um JWT assinado esconde automaticamente seu conteúdo?",
+      "back": "Não. Na representação JWS, header e payload são codificados em base64url, não cifrados. JWT também pode usar JWE para criptografia; assinatura e confidencialidade são propriedades distintas.",
+      "explanation": "Não. Na representação JWS, header e payload são codificados em base64url, não cifrados. JWT também pode usar JWE para criptografia; assinatura e confidencialidade são propriedades distintas.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc7519",
+        "url": "https://www.rfc-editor.org/rfc/rfc7519",
+        "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc7519",
+          "url": "https://www.rfc-editor.org/rfc/rfc7519",
+          "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-jwt-exp",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Para que serve a claim exp de um JWT?",
+      "back": "exp indica o instante a partir do qual o JWT não deve ser aceito (naquele instante ou depois). A implementação pode admitir pequena tolerância para diferença de relógios.",
+      "explanation": "exp indica o instante a partir do qual o JWT não deve ser aceito (naquele instante ou depois). A implementação pode admitir pequena tolerância para diferença de relógios.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc7519",
+        "url": "https://www.rfc-editor.org/rfc/rfc7519",
+        "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc7519",
+          "url": "https://www.rfc-editor.org/rfc/rfc7519",
+          "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oidc",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "O que OpenID Connect acrescenta ao OAuth 2.0?",
+      "back": "Uma camada de identidade que permite ao cliente verificar a identidade do usuário autenticado pelo servidor de autorização e receber informações de perfil. O ID Token é diferente de um access token.",
+      "explanation": "Uma camada de identidade que permite ao cliente verificar a identidade do usuário autenticado pelo servidor de autorização e receber informações de perfil. O ID Token é diferente de um access token.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-oidc-core",
+        "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+        "locator": "Abstract; §1 Introduction; §2 ID Token",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-oidc-core",
+          "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+          "locator": "Abstract; §1 Introduction; §2 ID Token"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-openapi",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "devsistemas-apis-identidade"
+      ],
+      "canonicalConceptIds": [
+        "web.apis",
+        "security.identity",
+        "software.delivery"
+      ],
+      "front": "Qual é a finalidade da especificação OpenAPI?",
+      "back": "Descrever interfaces de APIs HTTP em formato independente de linguagem, incluindo operações, parâmetros e respostas. A descrição não implementa a API nem garante a correção de seu servidor.",
+      "explanation": "Descrever interfaces de APIs HTTP em formato independente de linguagem, incluindo operações, parâmetros e respostas. A descrição não implementa a API nem garante a correção de seu servidor.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-openapi-311",
+        "url": "https://spec.openapis.org/oas/v3.1.1.html",
+        "locator": "Introduction; §4.8 Schema, especialmente §4.8.24 Schema Object",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openapi-311",
+          "url": "https://spec.openapis.org/oas/v3.1.1.html",
+          "locator": "Introduction; §4.8 Schema, especialmente §4.8.24 Schema Object"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-redes-protocolos-idempotencia",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "front": "O que torna um método HTTP idempotente?",
+      "back": "Repetir requisições idênticas produz o mesmo efeito pretendido no servidor que uma única requisição. As respostas e registros de log podem diferir; idempotência não significa ausência de efeitos.",
+      "explanation": "Repetir requisições idênticas produz o mesmo efeito pretendido no servidor que uma única requisição. As respostas e registros de log podem diferir; idempotência não significa ausência de efeitos.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc9110",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc9110",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+          "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-redes-protocolos-seguro",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "redes-protocolos"
+      ],
+      "canonicalConceptIds": [
+        "networking.tcp-ip",
+        "networking.protocols"
+      ],
+      "front": "Qual a diferença entre método HTTP seguro e idempotente?",
+      "back": "Seguro significa que o cliente não solicita mudança de estado. Idempotente significa que repetir tem o mesmo efeito pretendido de executar uma vez. GET é seguro e idempotente; PUT e DELETE são idempotentes, mas não seguros.",
+      "explanation": "Seguro significa que o cliente não solicita mudança de estado. Idempotente significa que repetir tem o mesmo efeito pretendido de executar uma vez. GET é seguro e idempotente; PUT e DELETE são idempotentes, mas não seguros.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rfc9110",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc9110",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+          "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-iaas",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "front": "Qual controle o consumidor tem no modelo IaaS do NIST?",
+      "back": "Pode implantar software, incluindo sistema operacional e aplicações, sobre recursos provisionados. Não gerencia a infraestrutura física de nuvem subjacente.",
+      "explanation": "Pode implantar software, incluindo sistema operacional e aplicações, sobre recursos provisionados. Não gerencia a infraestrutura física de nuvem subjacente.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-nist800145",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+        "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-paas-saas",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "front": "Como PaaS e SaaS diferem para o consumidor?",
+      "back": "PaaS permite implantar suas aplicações sobre a plataforma do provedor; SaaS permite usar as aplicações do provedor. Em ambos, o consumidor não gerencia a infraestrutura subjacente, mas conserva responsabilidades aplicáveis.",
+      "explanation": "PaaS permite implantar suas aplicações sobre a plataforma do provedor; SaaS permite usar as aplicações do provedor. Em ambos, o consumidor não gerencia a infraestrutura subjacente, mas conserva responsabilidades aplicáveis.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-nist800145",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+        "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-elasticidade",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "nuvem-arquitetura"
+      ],
+      "canonicalConceptIds": [
+        "cloud.computing",
+        "cloud.architecture"
+      ],
+      "front": "O que é elasticidade rápida na definição de nuvem do NIST?",
+      "back": "Capacidade de provisionar e liberar recursos para ajustar a capacidade à demanda, em alguns casos automaticamente. Não implica recursos realmente ilimitados nem garante disponibilidade absoluta.",
+      "explanation": "Capacidade de provisionar e liberar recursos para ajustar a capacidade à demanda, em alguns casos automaticamente. Não implica recursos realmente ilimitados nem garante disponibilidade absoluta.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-nist800145",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+        "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-dados-ml-supervisionado",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-ml"
+      ],
+      "canonicalConceptIds": [
+        "ai.machine-learning"
+      ],
+      "front": "Qual o papel de X e y no aprendizado supervisionado exemplificado pelo scikit-learn?",
+      "back": "X reúne as características das amostras; y contém os alvos conhecidos usados no treino. Cada alvo corresponde à amostra da mesma posição.",
+      "explanation": "X reúne as características das amostras; y contém os alvos conhecidos usados no treino. Cada alvo corresponde à amostra da mesma posição.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-sklearn-start",
+        "url": "https://scikit-learn.org/stable/getting_started.html",
+        "locator": "Fitting and predicting: estimator basics; Pipelines",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-start",
+          "url": "https://scikit-learn.org/stable/getting_started.html",
+          "locator": "Fitting and predicting: estimator basics; Pipelines"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-dados-ml-classificacao-regressao",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-ml"
+      ],
+      "canonicalConceptIds": [
+        "ai.machine-learning"
+      ],
+      "front": "Qual a diferença entre classificação e regressão quanto à saída prevista?",
+      "back": "Classificação prevê classes de um conjunto discreto; regressão prevê valores numéricos. O significado do alvo define a tarefa, não apenas a forma numérica usada para representar classes.",
+      "explanation": "Classificação prevê classes de um conjunto discreto; regressão prevê valores numéricos. O significado do alvo define a tarefa, não apenas a forma numérica usada para representar classes.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-sklearn-start",
+        "url": "https://scikit-learn.org/stable/getting_started.html",
+        "locator": "Fitting and predicting: estimator basics; Pipelines",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-start",
+          "url": "https://scikit-learn.org/stable/getting_started.html",
+          "locator": "Fitting and predicting: estimator basics; Pipelines"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-dados-rag-etica-data-leakage",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "front": "Por que não se deve ajustar o preprocessing usando o conjunto de teste?",
+      "back": "Isso permite que informações do teste influenciem o modelo e pode produzir avaliação otimista. Ajuste transformações no treino e aplique-as, sem novo fit, no teste.",
+      "explanation": "Isso permite que informações do teste influenciem o modelo e pode produzir avaliação otimista. Ajuste transformações no treino e aplique-as, sem novo fit, no teste.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-sklearn-leakage",
+        "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "locator": "§12.2 Data leakage",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-leakage",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+          "locator": "§12.2 Data leakage"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-rag",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "O que a recuperação acrescenta ao modelo RAG descrito por Lewis e colaboradores?",
+      "back": "Acesso a uma memória externa não paramétrica: um recuperador consulta um índice de documentos, e o gerador usa passagens recuperadas junto da memória do modelo.",
+      "explanation": "Acesso a uma memória externa não paramétrica: um recuperador consulta um índice de documentos, e o gerador usa passagens recuperadas junto da memória do modelo.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rag-paper",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "locator": "Resumo do artigo, versão v4 de 12/04/2021",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rag-paper",
+          "url": "https://arxiv.org/abs/2005.11401",
+          "locator": "Resumo do artigo, versão v4 de 12/04/2021"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-dados-rag-etica-rag-fonte",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-rag-etica"
+      ],
+      "canonicalConceptIds": [
+        "ai.responsible-ai",
+        "ai.rag",
+        "data-science.fundamentals",
+        "data-science.big-data"
+      ],
+      "front": "Na arquitetura do artigo RAG, memória paramétrica e não paramétrica são a mesma coisa?",
+      "back": "Não. A memória paramétrica está no modelo seq2seq treinado; a não paramétrica é o índice vetorial externo consultado por um recuperador. São componentes com funções diferentes.",
+      "explanation": "Não. A memória paramétrica está no modelo seq2seq treinado; a não paramétrica é o índice vetorial externo consultado por um recuperador. São componentes com funções diferentes.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-rag-paper",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "locator": "Resumo do artigo, versão v4 de 12/04/2021",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rag-paper",
+          "url": "https://arxiv.org/abs/2005.11401",
+          "locator": "Resumo do artigo, versão v4 de 12/04/2021"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-mcp-papeis",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "Como host, cliente e servidor se relacionam no MCP?",
+      "back": "O host coordena os clientes e aplica políticas; cada cliente mantém uma conexão com um servidor; servidores expõem capacidades como ferramentas, recursos e prompts.",
+      "explanation": "O host coordena os clientes e aplica políticas; cada cliente mantém uma conexão com um servidor; servidores expõem capacidades como ferramentas, recursos e prompts.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-mcp-architecture",
+        "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+        "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mcp-architecture",
+          "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+          "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-mcp-limite",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-ciclo-mcp"
+      ],
+      "canonicalConceptIds": [
+        "ai.agentic-workflows",
+        "ai.rag",
+        "ai.mcp",
+        "ai.responsible-ai"
+      ],
+      "front": "Um servidor MCP deve receber automaticamente toda a conversa do usuário?",
+      "back": "Não. O desenho do protocolo mantém o histórico completo no host e fornece ao servidor apenas o contexto necessário, com controles de segurança e autorização.",
+      "explanation": "Não. O desenho do protocolo mantém o histórico completo no host e fornece ao servidor apenas o contexto necessário, com controles de segurança e autorização.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-mcp-architecture",
+        "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+        "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mcp-architecture",
+          "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+          "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-agentivos-llm-workflow-agente",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-llm"
+      ],
+      "canonicalConceptIds": [
+        "ai.llm",
+        "ai.software-development"
+      ],
+      "front": "Como o artigo Building effective agents distingue workflow de agente?",
+      "back": "Workflow segue caminhos definidos pelo código; agente permite ao modelo decidir dinamicamente seu processo e uso de ferramentas. É a distinção operacional do artigo, não uma definição universal de toda IA.",
+      "explanation": "Workflow segue caminhos definidos pelo código; agente permite ao modelo decidir dinamicamente seu processo e uso de ferramentas. É a distinção operacional do artigo, não uma definição universal de toda IA.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-agent-workflows",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-agentivos-contexto-prompt-chaining",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-agentivos-contexto"
+      ],
+      "canonicalConceptIds": [
+        "ai.prompt-engineering",
+        "ai.context-engineering"
+      ],
+      "front": "Qual é a ideia de prompt chaining no artigo da Anthropic?",
+      "back": "Decompor a tarefa em chamadas sequenciais, em que uma usa a saída da anterior. Verificações programáticas entre etapas podem conferir se o fluxo atende aos critérios.",
+      "explanation": "Decompor a tarefa em chamadas sequenciais, em que uma usa a saída da anterior. Verificações programáticas entre etapas podem conferir se o fluxo atende aos critérios.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-agent-workflows",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ia-dados-generativa-avaliador",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ia-dados-generativa"
+      ],
+      "canonicalConceptIds": [
+        "ai.generative",
+        "ai.nlp",
+        "ai.multimodal"
+      ],
+      "front": "Qual o papel do avaliador no padrão evaluator-optimizer?",
+      "back": "Avaliar a saída conforme critérios e fornecer feedback para revisão iterativa. O padrão é útil quando os critérios são claros e o feedback pode melhorar o resultado.",
+      "explanation": "Avaliar a saída conforme critérios e fornecer feedback para revisão iterativa. O padrão é útil quando os critérios são claros e o feedback pode melhorar o resultado.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-agent-workflows",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-seguranca-aplicacoes-continuidade-sqli",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "front": "Por que queries parametrizadas ajudam a prevenir SQL injection?",
+      "back": "Separam a estrutura da instrução dos valores fornecidos, tratando esses valores como dados. Identificadores como nome de tabela exigem abordagem específica, como lista de valores permitidos.",
+      "explanation": "Separam a estrutura da instrução dos valores fornecidos, tratando esses valores como dados. Identificadores como nome de tabela exigem abordagem específica, como lista de valores permitidos.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-owasp-sqli",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-sqli",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+          "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-seguranca-aplicacoes-continuidade-db-minimo",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-aplicacoes-continuidade"
+      ],
+      "canonicalConceptIds": [
+        "security.application",
+        "security.zero-trust",
+        "security.continuity"
+      ],
+      "front": "Por que privilégio mínimo também importa contra SQL injection?",
+      "back": "Limita as operações que a conta da aplicação pode executar e reduz o impacto de uma falha. Não substitui a parametrização nem impede sozinho toda injeção.",
+      "explanation": "Limita as operações que a conta da aplicação pode executar e reduz o impacto de uma falha. Não substitui a parametrização nem impede sozinho toda injeção.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-owasp-sqli",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-sqli",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+          "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-seguranca-cripto-identidade-authn-authz",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "front": "Qual a diferença entre autenticação e autorização?",
+      "back": "Autenticação verifica a identidade apresentada; autorização decide se o acesso ou a ação é permitido. Identidade autenticada não concede automaticamente acesso a todos os recursos.",
+      "explanation": "Autenticação verifica a identidade apresentada; autorização decide se o acesso ou a ação é permitido. Identidade autenticada não concede automaticamente acesso a todos os recursos.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-owasp-authz",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+        "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-authz",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-seguranca-cripto-identidade-least-privilege",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-cripto-identidade"
+      ],
+      "canonicalConceptIds": [
+        "security.cryptography",
+        "security.identity"
+      ],
+      "front": "O que exige o princípio do privilégio mínimo?",
+      "back": "Conceder somente os privilégios necessários para a função ou tarefa. Permissões devem considerar recurso, operação e contexto, e ser verificadas nas requisições aplicáveis.",
+      "explanation": "Conceder somente os privilégios necessários para a função ou tarefa. Permissões devem considerar recurso, operação e contexto, e ser verificadas nas requisições aplicáveis.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-owasp-authz",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+        "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-authz",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-seguranca-principios-csf-funcoes",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "seguranca-principios"
+      ],
+      "canonicalConceptIds": [
+        "security.fundamentals",
+        "security.risk"
+      ],
+      "front": "Quais são as seis funções do NIST CSF 2.0?",
+      "back": "Govern, Identify, Protect, Detect, Respond e Recover. Elas organizam resultados de gestão de riscos de cibersegurança, não uma sequência obrigatória de passos isolados.",
+      "explanation": "Govern, Identify, Protect, Detect, Respond e Recover. Elas organizam resultados de gestão de riscos de cibersegurança, não uma sequência obrigatória de passos isolados.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-nist-csf2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+        "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist-csf2",
+          "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+          "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-governanca-alinhamento-csf-govern",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "governanca-alinhamento"
+      ],
+      "canonicalConceptIds": [
+        "it-governance.alignment"
+      ],
+      "front": "Qual a função de Govern no CSF 2.0?",
+      "back": "Estabelecer, comunicar e monitorar estratégia, expectativas e políticas de gestão de riscos de cibersegurança, considerando o contexto e objetivos da organização.",
+      "explanation": "Estabelecer, comunicar e monitorar estratégia, expectativas e políticas de gestão de riscos de cibersegurança, considerando o contexto e objetivos da organização.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-nist-csf2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+        "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist-csf2",
+          "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+          "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-leginst-constituicao-controle-federal",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-constituicao"
+      ],
+      "canonicalConceptIds": [
+        "public-law.constitutional.control"
+      ],
+      "front": "No âmbito federal, quem exerce o controle externo e com qual auxílio?",
+      "back": "O Congresso Nacional exerce o controle externo com auxílio do Tribunal de Contas da União, conforme o art.71 da Constituição.",
+      "explanation": "O Congresso Nacional exerce o controle externo com auxílio do Tribunal de Contas da União, conforme o art.71 da Constituição.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-cf-control",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+        "locator": "Arts.70 caput/parágrafo único e 71 caput",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-cf-control",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+          "locator": "Arts.70 caput/parágrafo único e 71 caput"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-leginst-constituicao-prestar-contas",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "leginst-constituicao"
+      ],
+      "canonicalConceptIds": [
+        "public-law.constitutional.control"
+      ],
+      "front": "O dever constitucional de prestar contas alcança somente entidades públicas?",
+      "back": "Não. O art.70, parágrafo único, inclui pessoas físicas ou jurídicas, públicas ou privadas, que utilizem, arrecadem, guardem, gerenciem ou administrem os recursos públicos ali descritos.",
+      "explanation": "Não. O art.70, parágrafo único, inclui pessoas físicas ou jurídicas, públicas ou privadas, que utilizem, arrecadem, guardem, gerenciem ou administrem os recursos públicos ali descritos.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-cf-control",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+        "locator": "Arts.70 caput/parágrafo único e 71 caput",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-cf-control",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+          "locator": "Arts.70 caput/parágrafo único e 71 caput"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-legti-lgpd-necessidade",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Qual o nome do princípio da LGPD associado à minimização de dados?",
+      "back": "Necessidade: limitar o tratamento aos dados pertinentes, proporcionais e não excessivos para a finalidade. Minimização é uma prática associada ao princípio, não uma base legal autônoma.",
+      "explanation": "Necessidade: limitar o tratamento aos dados pertinentes, proporcionais e não excessivos para a finalidade. Minimização é uma prática associada ao princípio, não uma base legal autônoma.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-lgpd-principles",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+        "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-legti-lgpd-dado-pessoal",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Qual informação é dado pessoal para a LGPD?",
+      "back": "Informação relacionada a uma pessoa natural identificada ou identificável. Não se limita a nome ou CPF; a identificação indireta também conta.",
+      "explanation": "Informação relacionada a uma pessoa natural identificada ou identificável. Não se limita a nome ou CPF; a identificação indireta também conta.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-lgpd-principles",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+        "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-legti-lgpd-anonimizacao",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-lgpd"
+      ],
+      "canonicalConceptIds": [
+        "law.data-protection",
+        "privacy.privacy-by-design"
+      ],
+      "front": "Dados aparentemente anonimizados estão sempre fora da LGPD?",
+      "back": "Não. O art.12 prevê exceção quando a anonimização for revertida por meios próprios ou puder ser revertida com esforços razoáveis, avaliados conforme fatores objetivos.",
+      "explanation": "Não. O art.12 prevê exceção quando a anonimização for revertida por meios próprios ou puder ser revertida com esforços razoáveis, avaliados conforme fatores objetivos.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-lgpd-principles",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+        "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-legti-marco-civil-neutralidade",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-marco-civil"
+      ],
+      "canonicalConceptIds": [
+        "law.internet"
+      ],
+      "front": "O art.9 do Marco Civil proíbe toda diferenciação de tráfego sem exceção?",
+      "back": "Não. O caput exige tratamento isonômico, e o §1 admite discriminação ou degradação somente por requisitos técnicos indispensáveis ou priorização de emergência, conforme regulamentação.",
+      "explanation": "Não. O caput exige tratamento isonômico, e o §1 admite discriminação ou degradação somente por requisitos técnicos indispensáveis ou priorização de emergência, conforme regulamentação.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-marco-neutrality",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+        "locator": "Arts.9 caput/§1, 13 caput e 15 caput",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-marco-neutrality",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+          "locator": "Arts.9 caput/§1, 13 caput e 15 caput"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-legti-marco-civil-registros",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "legti-marco-civil"
+      ],
+      "canonicalConceptIds": [
+        "law.internet"
+      ],
+      "front": "Os prazos gerais dos arts.13 e 15 do Marco Civil são iguais?",
+      "back": "Não. Art.13: registros de conexão por um ano para o administrador de sistema autônomo na provisão de conexão. Art.15: registros de acesso a aplicações por seis meses para a pessoa jurídica que as provê de forma organizada, profissional e econômica. Há regras específicas além desses caputs.",
+      "explanation": "Não. Art.13: registros de conexão por um ano para o administrador de sistema autônomo na provisão de conexão. Art.15: registros de acesso a aplicações por seis meses para a pessoa jurídica que as provê de forma organizada, profissional e econômica. Há regras específicas além desses caputs.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-marco-neutrality",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+        "locator": "Arts.9 caput/§1, 13 caput e 15 caput",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-marco-neutrality",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+          "locator": "Arts.9 caput/§1, 13 caput e 15 caput"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-mrl-aritmetica-fracao",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-aritmetica"
+      ],
+      "canonicalConceptIds": [
+        "math.arithmetic"
+      ],
+      "front": "O que numerador e denominador representam no modelo de uma fração de um todo?",
+      "back": "O denominador indica em quantas partes iguais o todo foi dividido; o numerador indica quantas dessas partes foram consideradas. O denominador não pode ser zero.",
+      "explanation": "O denominador indica em quantas partes iguais o todo foi dividido; o numerador indica quantas dessas partes foram consideradas. O denominador não pode ser zero.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-openstax-fractions",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+        "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-fractions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+          "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-mrl-aritmetica-equivalencia",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-aritmetica"
+      ],
+      "canonicalConceptIds": [
+        "math.arithmetic"
+      ],
+      "front": "Por que 2/3 e 4/6 representam o mesmo número?",
+      "back": "Multiplicar numerador e denominador por um mesmo número não nulo mantém o valor. Nesse caso, multiplicar ambos por 2 transforma 2/3 em 4/6.",
+      "explanation": "Multiplicar numerador e denominador por um mesmo número não nulo mantém o valor. Nesse caso, multiplicar ambos por 2 transforma 2/3 em 4/6.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-openstax-fractions",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+        "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-fractions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+          "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-mrl-proporcoes-produto-cruzado",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-proporcoes"
+      ],
+      "canonicalConceptIds": [
+        "math.proportionality"
+      ],
+      "front": "Como verificar uma proporção a/b = c/d?",
+      "back": "Com b e d não nulos, a igualdade equivale a a×d = b×c. É necessário respeitar a ordem das grandezas e das unidades ao montar as razões.",
+      "explanation": "Com b e d não nulos, a igualdade equivale a a×d = b×c. É necessário respeitar a ordem das grandezas e das unidades ao montar as razões.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-openstax-proportions",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+        "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-proportions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+          "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-mrl-proporcoes-percentual",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "mrl-proporcoes"
+      ],
+      "canonicalConceptIds": [
+        "math.proportionality"
+      ],
+      "front": "Se x é 15% de 80, qual proporção e resultado correspondem ao problema?",
+      "back": "x/80 = 15/100; portanto x = 12. A base é 80 e o percentual representa uma razão de denominador 100.",
+      "explanation": "x/80 = 15/100; portanto x = 12. A base é 80 e o percentual representa uma razão de denominador 100.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-openstax-proportions",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+        "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-proportions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+          "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ingles-estrategias-skimming",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-estrategias"
+      ],
+      "canonicalConceptIds": [
+        "language.reading.strategies"
+      ],
+      "front": "Para qual objetivo usar skimming na leitura em inglês?",
+      "back": "Obter rapidamente uma ideia geral do assunto e da organização do texto. Não basta, sozinho, para confirmar todos os detalhes de uma resposta.",
+      "explanation": "Obter rapidamente uma ideia geral do assunto e da organização do texto. Não basta, sozinho, para confirmar todos os detalhes de uma resposta.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-bc-reading",
+        "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+        "locator": "Skimming; Scanning; Reading for detail",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-bc-reading",
+          "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+          "locator": "Skimming; Scanning; Reading for detail"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-ingles-compreensao-scanning",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "ingles-compreensao"
+      ],
+      "canonicalConceptIds": [
+        "language.english.technical-reading"
+      ],
+      "front": "Quando scanning é útil na leitura em inglês?",
+      "back": "Quando se busca uma informação específica, como data, nome ou número. Depois de localizar o trecho, a leitura cuidadosa confere seu sentido e contexto.",
+      "explanation": "Quando se busca uma informação específica, como data, nome ou número. Depois de localizar o trecho, a leitura cuidadosa confere seu sentido e contexto.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-bc-reading",
+        "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+        "locator": "Skimming; Scanning; Reading for detail",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-bc-reading",
+          "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+          "locator": "Skimming; Scanning; Reading for detail"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-lp-sintaxe-redacao-sujeito-verbo",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-sintaxe-redacao"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.syntax",
+        "language.portuguese.writing"
+      ],
+      "front": "Em ordem direta, usa-se vírgula apenas para separar o sujeito de seu verbo?",
+      "back": "Não. A vírgula não separa o sujeito de seu verbo apenas por haver pausa de leitura. Intercalações podem exigir vírgulas em par, o que é outra construção.",
+      "explanation": "Não. A vírgula não separa o sujeito de seu verbo apenas por haver pausa de leitura. Intercalações podem exigir vírgulas em par, o que é outra construção.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-funag-comma",
+        "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+        "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-funag-comma",
+          "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+          "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    },
+    {
+      "id": "fc-curated-lp-sintaxe-redacao-vocativo",
+      "type": "concept_card",
+      "examId": "tce-go-ti-2026",
+      "topicIds": [
+        "lp-sintaxe-redacao"
+      ],
+      "canonicalConceptIds": [
+        "language.portuguese.syntax",
+        "language.portuguese.writing"
+      ],
+      "front": "Como a vírgula marca um vocativo?",
+      "back": "Isola a expressão usada para chamar o interlocutor: em “Ana, confira o relatório”, Ana é vocativo. Não é o sujeito da oração “confira o relatório”.",
+      "explanation": "Isola a expressão usada para chamar o interlocutor: em “Ana, confira o relatório”, Ana é vocativo. Não é o sujeito da oração “confira o relatório”.",
+      "status": "draft",
+      "contentVersion": 1,
+      "reviewStatus": "pending_review",
+      "validAsOf": "2026-10-07",
+      "provenance": {
+        "status": "derived",
+        "source": "curated-funag-comma",
+        "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+        "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula",
+        "license": "Redação original StudyOS; fatos consultados nas fontes referenciadas; material externo apenas por link."
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "curated-funag-comma",
+          "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+          "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula"
+        }
+      ],
+      "editorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": "Aguardando parecer independente da proposta efetiva."
+      }
+    }
+  ]
+}

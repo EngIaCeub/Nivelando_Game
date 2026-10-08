@@ -160,6 +160,81 @@
         ],
         "additionalProperties": false
       }
+    },
+    "studyPaths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "unitId": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "steps": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "resourceId": { "type": "string", "minLength": 1 },
+                "objectiveIndices": {
+                  "type": "array",
+                  "items": { "type": "integer", "minimum": 0 },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "locator": { "type": "string", "minLength": 1 }
+              },
+              "required": ["resourceId", "objectiveIndices", "locator"],
+              "additionalProperties": false
+            }
+          },
+          "practice": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string", "minLength": 1 },
+              "reading": { "type": "string", "minLength": 1 },
+              "questions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "minLength": 1 },
+                    "stem": { "type": "string", "minLength": 1 },
+                    "options": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+                    "correctOptionIndex": { "type": "integer", "minimum": 0 },
+                    "explanation": { "type": "string", "minLength": 1 },
+                    "sourceResourceId": { "type": "string", "minLength": 1 },
+                    "locator": { "type": "string", "minLength": 1 }
+                  },
+                  "required": ["id", "stem", "options", "correctOptionIndex", "explanation", "sourceResourceId", "locator"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["title", "reading", "questions"],
+            "additionalProperties": false
+          },
+          "editorialReview": {
+            "type": "object",
+            "properties": {
+              "status": { "enum": ["pending", "approved", "rejected"] },
+              "reviewer": { "type": ["string", "null"] },
+              "reviewedAt": {
+                "anyOf": [
+                  { "type": "string", "format": "date-time" },
+                  { "type": "null" }
+                ]
+              },
+              "evidence": { "type": "string" }
+            },
+            "required": ["status", "reviewer", "reviewedAt", "evidence"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["id", "unitId", "title", "steps", "editorialReview"],
+        "additionalProperties": false
+      }
     }
   },
   "required": [

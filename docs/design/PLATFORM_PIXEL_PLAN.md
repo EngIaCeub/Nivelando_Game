@@ -1,17 +1,23 @@
 # Pixel art de plataforma — direção e plano V2
 
-Data: 2026-10-06. Status: **camada de apresentação integrada localmente; aceite de release V6 pendente**.
+Data: 2026-10-06. Atualização: 2026-10-07. Camada publicada; evidências e limites do release estão em `PLATFORM_IMPLEMENTATION_REPORT.md`.
 Checkout canônico do site publicado: `C:/CodexProjects/Nivelando_Game`.
 Esta direção complementa PIXEL_UI_SYSTEM, UX_RULES, COMPONENTS e MIGRATION_PLAN.
 Não substitui contratos de produto, score, persistência ou a arquitetura da biblioteca.
+
+Evolução solicitada em 2026-10-07: tema escuro único, uma tela ativa por rota,
+validação factual de conteúdo e contas por pessoa. Plano de implementação em
+`../CONTENT_DARK_VIEWS_ACCOUNTS_PLAN.md`; preserva a arte original e os tokens/primitives.
+A nova evolução é planejamento e não representa mudança já publicada.
 
 ## Implementação atual
 
 V1–V5 receberam integração no runtime standalone: tokens compartilhados, três cenários
 originais, Hoje com ação prioritária, navegação nativa agrupada, regiões das matérias,
-catálogo da Biblioteca e superfícies de estudo. Os gates de aceite de cada fase não são
-considerados automaticamente aprovados pela presença do código. V6/publicação aguarda
-regressão completa, offline, restore e aceite independente.
+catálogo da Biblioteca e superfícies de estudo. V6 foi publicada após os gates
+automatizados e a revisão independente descritos em `PLATFORM_IMPLEMENTATION_REPORT.md`.
+O relatório distingue esses resultados do smoke interativo em perfil remoto limpo,
+que permanece pendente. A nova evolução de 2026-10-07 possui gates próprios.
 
 A parte runtime de B5 foi implementada com os dados disponíveis, exibindo lacunas reais.
 B2–B4 (escopo e curadoria factual), B6 (cobertura integral) e B7 (manutenção editorial)
@@ -44,7 +50,8 @@ paisagens em camadas, terreno modular, cores vivas controladas, ícones de silhu
 mascote de livro explorador e trilhas que representam a organização do currículo.
 
 A nostalgia aparece nas cenas e na geometria. Perguntas, explicações, fontes e apostilas
-usam superfícies claras, tipografia de leitura e hierarquia acadêmica explícita.
+usam superfícies uniformes, tipografia de leitura e hierarquia acadêmica explícita.
+A evolução de 2026-10-07 substitui a paleta clara por tema escuro único.
 
 ### Referências pesquisadas
 

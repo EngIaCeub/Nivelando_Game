@@ -31,7 +31,8 @@ test('O4 study browser: onboarding, persisted diagnostic/quiz/flashcards/simulat
   });
   await new Promise(done => server.listen(0, '127.0.0.1', done));
   const edge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
-  const browser = await chromium.launch({ headless: true, ...(existsSync(edge) ? { executablePath: edge } : {}) });
+  const executablePath = process.env.STUDYOS_CHROMIUM_EXECUTABLE ?? (existsSync(edge) ? edge : undefined);
+  const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
   const context = await browser.newContext({ acceptDownloads: true, serviceWorkers: 'allow' });
   const page = await context.newPage(); const errors = []; page.on('pageerror', error => errors.push(error.message));
   page.on('dialog', dialog => dialog.type() === 'confirm' ? dialog.accept() : dialog.dismiss());
@@ -54,6 +55,13 @@ test('O4 study browser: onboarding, persisted diagnostic/quiz/flashcards/simulat
   };
   try {
     await page.goto(base); await ready();
+    assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
+    assert.equal(await page.locator('main > section[id]:not([hidden])').count(), 1, 'only the active view is exposed');
+    for (const route of ['plan', 'subjects', 'library', 'questions', 'reviews', 'diagnostic', 'flashcards', 'simulations', 'progress', 'settings', 'login', 'register', 'recover']) {
+      await page.goto(base + '#' + route);
+      await page.waitForFunction(id => document.querySelectorAll('main > section[id]:not([hidden])').length === 1 && document.querySelector('main > section:not([hidden])').id === id, route);
+    }
+    await page.goto(base + '#today'); await ready();
     await page.getByRole('button', { name: 'Pular e estudar agora', exact: true }).click(); await page.reload(); await ready();
     assert.equal(await page.getByRole('button', { name: 'Pular e estudar agora', exact: true }).count(), 0);
     await page.locator('#study-onboarding input').fill('90'); await page.getByRole('button', { name: 'Salvar meta diária', exact: true }).click();
@@ -81,6 +89,8 @@ test('O4 study browser: onboarding, persisted diagnostic/quiz/flashcards/simulat
     await page.getByRole('button', { name: 'Escolher simulado', exact: true }).click(); await page.locator('#simulations-panel button').first().click();
     while (await quiz.getByRole('button', { name: 'Pausar e continuar depois', exact: true }).count()) { await answer(quiz); await quiz.getByRole('button', { name: 'Continuar', exact: true }).click(); }
     await quiz.getByRole('button', { name: 'Finalizar sessão', exact: true }).click(); await page.locator('#simulations-panel').getByRole('button', { name: 'Rever respostas / retentativa', exact: true }).waitFor();
+    await page.goto(base + '#settings');
+    await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor();
     const downloadPromise = page.waitForEvent('download'); await page.getByRole('button', { name: 'Exportar meus dados', exact: true }).click();
     const download = await downloadPromise; const payload = JSON.parse(await readFile(await download.path(), 'utf8')); assert.ok(payload.globalData); assert.equal(payload.settings.dailyMinutes, 90);
     const beforeRestore = await rows(); await page.locator('#production-settings input[type=file]').setInputFiles({ name: 'backup.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(payload)) });

@@ -1,0 +1,16 @@
+{
+  "promotedAt": "2026-10-08T18:37:33.086Z",
+  "stagedSha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+  "reviewer": "/root/integration_qa; independent integration QA",
+  "status": "complete",
+  "totals": {
+    "topics": 45,
+    "units": 209,
+    "coveredUnits": 209,
+    "coveredTopics": 45,
+    "v2Resources": 309
+  },
+  "uncoveredUnitIds": [],
+  "gaps": [],
+  "historyFile": "exam-packs/tce-go-ti-2026/library-history.json"
+}

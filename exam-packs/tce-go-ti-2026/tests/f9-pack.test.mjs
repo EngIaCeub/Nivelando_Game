@@ -60,7 +60,7 @@ test('F9 resources are checked and questions are original, sourced and deduplica
   assert.ok(resources.length >= 10);
   assert.ok(resources.every((resource) => resource.verified === true && resource.verifiedAt && resource.source && resource.topicIds.length > 0));
   assert.equal(new Set(questions.map((question) => question.fingerprint)).size, questions.length);
-  assert.ok(questions.every((question) => question.board === 'FCC' && question.year === 2026 && question.provenance.status === 'derived' && question.provenance.license.includes('original StudyOS')));
+  assert.ok(questions.every((question) => !question.board && !question.year && question.origin === 'generated_original' && question.reviewStatus === 'approved' && question.provenance.status === 'derived' && question.provenance.license.includes('original StudyOS')));
   assert.ok(questions.every((question) => question.options.some((option) => option.id === question.correctOptionId)));
 });
 
@@ -90,7 +90,7 @@ test('F9 standalone demo references only relative assets and includes the pack p
   assert.equal(JSON.parse(distManifest).examId, 'tce-go-ti-2026');
 });
 
-test('NEW_EXAM_ACCEPTANCE: pack is release-ready without Core-specific changes', async () => {
+test('NEW_EXAM_ACCEPTANCE: pack is structurally valid without Core-specific changes', async () => {
   const manifest = await load('manifest.json');
   const facts = await load('facts.json');
   const curriculum = await load('curriculum.json');

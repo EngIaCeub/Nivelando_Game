@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 const dist = new URL('../dist/', import.meta.url);
 const read = (file) => readFile(new URL(file, dist), 'utf8');
+const readSource = (file) => readFile(new URL(`../../../exam-packs/tce-go-ti-2026/${file}`, import.meta.url), 'utf8');
 test('O4 production build exposes versioned metadata and no preview markers', async () => {
   const metadata = JSON.parse(await read('build-meta.json'));
   const html = await read('index.html');
@@ -29,15 +30,17 @@ test('O4 production build includes backup, reset and update UX', async () => {
   assert.match(coreApp, /Nova versão disponível/);
 });
 
-test('O4 content integrity remains the O3 baseline', async () => {
+test('O4 content integrity matches the current approved source pack', async () => {
   const questions = JSON.parse(await read('exam-pack/questions.json'));
   const cards = JSON.parse(await read('exam-pack/flashcards.json'));
   const simulations = JSON.parse(await read('exam-pack/simulations.json'));
   const resources = JSON.parse(await read('exam-pack/resources.json'));
   const coverage = JSON.parse(await read('exam-pack/content-coverage.json'));
-  assert.equal(questions.length, 289);
-  assert.equal(cards.cards.length, 102);
-  assert.equal(simulations.simulations.length, 16);
-  assert.equal(resources.length, 20);
+  assert.deepEqual(questions, JSON.parse(await readSource('questions.json')));
+  assert.deepEqual(cards, JSON.parse(await readSource('flashcards.json')));
+  assert.deepEqual(simulations, JSON.parse(await readSource('simulations.json')));
+  assert.deepEqual(resources, JSON.parse(await readSource('resources.json')));
+  assert.deepEqual(coverage, JSON.parse(await readSource('content-coverage.json')));
+  assert.ok(questions.length > 0 && cards.cards.length > 0 && simulations.simulations.length > 0);
   assert.equal(coverage.topics.length, 45);
 });

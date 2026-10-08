@@ -1,6 +1,6 @@
 {
   "examId": "tce-go-ti-2026",
-  "generatedAt": "2026-10-02",
+  "generatedAt": "2026-10-08T18:37:33.050Z",
   "sourceRefs": [
     "official-edital-01-2026"
   ],
@@ -18,21 +18,19 @@
       "priority": "P4",
       "priorityScore": 1.3,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 6,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-lingua-portuguesa",
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "lp-morfossintaxe",
@@ -45,21 +43,19 @@
       "priority": "P4",
       "priorityScore": 1.2,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 8,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-lingua-portuguesa",
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "lp-sintaxe-redacao",
@@ -73,20 +69,19 @@
       "priority": "P4",
       "priorityScore": 1.4,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "mrl-aritmetica",
@@ -99,21 +94,19 @@
       "priority": "P4",
       "priorityScore": 1.2,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 3,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-matematica-raciocinio-logico",
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "mrl-proporcoes",
@@ -126,20 +119,19 @@
       "priority": "P4",
       "priorityScore": 1.3,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-matematica-raciocinio-logico",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "mrl-logica",
@@ -152,19 +144,19 @@
       "priority": "P4",
       "priorityScore": 1.4,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "leginst-constituicao",
@@ -179,18 +171,17 @@
       "weight": 1,
       "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-legislacao-institucional",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "leginst-tce",
@@ -203,20 +194,19 @@
       "priority": "P4",
       "priorityScore": 1.5,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 3,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-legislacao-institucional",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "leginst-servidor",
@@ -229,19 +219,19 @@
       "priority": "P4",
       "priorityScore": 1.2,
       "weight": 1,
-      "resourceCount": 1,
+      "resourceCount": 27,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "engsoft-ciclos",
@@ -254,20 +244,19 @@
       "priority": "P2",
       "priorityScore": 2.2,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 3,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-engenharia-de-software",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "engsoft-requisitos-arquitetura",
@@ -281,20 +270,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 6,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
-      "flashcardCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "engsoft-modelagem-qualidade",
@@ -309,20 +298,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 8,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
-      "flashcardCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devsistemas-fundamentos",
@@ -336,20 +325,19 @@
       "priority": "P2",
       "priorityScore": 2.3,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-desenvolvimento-de-sistemas",
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devsistemas-linguagens-web",
@@ -363,19 +351,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 5,
-      "videoCount": 1,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
+      "resourceCount": 10,
+      "videoCount": 0,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-full-tce-go-ti-2026"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devsistemas-apis-identidade",
@@ -390,20 +378,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 17,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
-      "flashcardCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 6,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3",
-        "sim-full-tce-go-ti-2026"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-agentivos-llm",
@@ -417,19 +405,19 @@
       "priority": "P3",
       "priorityScore": 2.1,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 3,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-ia-assistida-e-sistemas-agentivos"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-agentivos-contexto",
@@ -443,19 +431,19 @@
       "priority": "P2",
       "priorityScore": 2.3,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-ia-assistida-e-sistemas-agentivos"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-agentivos-ciclo-mcp",
@@ -471,19 +459,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 12,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 3,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devops-cicd",
@@ -496,20 +485,20 @@
       "priority": "P2",
       "priorityScore": 2.3,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 7,
-      "originalQuestionCount": 7,
-      "reviewQuestionCount": 7,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-devops-plataforma-entrega",
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devops-iac-observabilidade",
@@ -523,17 +512,19 @@
       "priority": "P2",
       "priorityScore": 2.2,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "devops-git-containers",
@@ -548,17 +539,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 4,
+      "resourceCount": 14,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 4,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "bd-modelagem",
@@ -572,19 +565,19 @@
       "priority": "P2",
       "priorityScore": 2.2,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-banco-de-dados"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "bd-sql",
@@ -598,19 +591,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 7,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
-      "flashcardCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 4,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "bd-tecnologias-operacao",
@@ -626,17 +620,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 10,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-dados-ml",
@@ -649,19 +645,19 @@
       "priority": "P2",
       "priorityScore": 2.3,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-ia-ciencia-dados-automacao"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-dados-generativa",
@@ -676,17 +672,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 4,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ia-dados-rag-etica",
@@ -702,17 +700,19 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 14,
       "videoCount": 0,
-      "questionCount": 10,
-      "originalQuestionCount": 10,
-      "reviewQuestionCount": 10,
-      "flashcardCount": 3,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "seguranca-principios",
@@ -726,20 +726,20 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 11,
       "videoCount": 0,
-      "questionCount": 7,
-      "originalQuestionCount": 7,
-      "reviewQuestionCount": 7,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-seguranca-da-informacao",
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "seguranca-cripto-identidade",
@@ -753,17 +753,19 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 6,
       "videoCount": 0,
-      "questionCount": 10,
-      "originalQuestionCount": 10,
-      "reviewQuestionCount": 10,
-      "flashcardCount": 3,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "seguranca-aplicacoes-continuidade",
@@ -778,17 +780,19 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 3,
+      "resourceCount": 24,
       "videoCount": 0,
-      "questionCount": 10,
-      "originalQuestionCount": 10,
-      "reviewQuestionCount": 10,
-      "flashcardCount": 3,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 2,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "sistemas-os-shell",
@@ -802,19 +806,19 @@
       "priority": "P2",
       "priorityScore": 2.3,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 14,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-sistemas-redes-nuvem"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "sistemas-diretorios",
@@ -828,19 +832,19 @@
       "priority": "P2",
       "priorityScore": 2.2,
       "weight": 2,
-      "resourceCount": 3,
+      "resourceCount": 6,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-sistemas-redes-nuvem"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "redes-protocolos",
@@ -854,19 +858,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 12,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
-      "flashcardCount": 3,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 2,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "nuvem-arquitetura",
@@ -880,19 +885,20 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 15,
       "videoCount": 0,
-      "questionCount": 7,
-      "originalQuestionCount": 7,
-      "reviewQuestionCount": 7,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 3,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "governanca-alinhamento",
@@ -905,19 +911,19 @@
       "priority": "P2",
       "priorityScore": 2.2,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-governanca-de-ti"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "governanca-servicos",
@@ -931,19 +937,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 9,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-governanca-de-ti"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "governanca-modelos",
@@ -958,17 +964,19 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 17,
       "videoCount": 0,
-      "questionCount": 10,
-      "originalQuestionCount": 10,
-      "reviewQuestionCount": 10,
-      "flashcardCount": 3,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "governanca-publica",
@@ -982,17 +990,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 3,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "legti-lgpd",
@@ -1006,20 +1016,20 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 2,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 11,
-      "originalQuestionCount": 11,
-      "reviewQuestionCount": 11,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 3,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-legislacao-aplicada-ti",
-        "sim-mini-mixed-o3"
+        "practice-curated-r2",
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "legti-marco-civil",
@@ -1034,15 +1044,17 @@
       "weight": 2,
       "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
       "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "legti-normas-tce",
@@ -1056,17 +1068,19 @@
       "priority": "P1",
       "priorityScore": 2.5,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 10,
       "videoCount": 0,
-      "questionCount": 10,
-      "originalQuestionCount": 10,
-      "reviewQuestionCount": 10,
-      "flashcardCount": 3,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "legti-pdti",
@@ -1080,17 +1094,19 @@
       "priority": "P2",
       "priorityScore": 2.4,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 6,
-      "originalQuestionCount": 6,
-      "reviewQuestionCount": 6,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ingles-compreensao",
@@ -1105,17 +1121,17 @@
       "weight": 2,
       "resourceCount": 1,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-lingua-inglesa-tecnica"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ingles-estrategias",
@@ -1128,19 +1144,19 @@
       "priority": "P3",
       "priorityScore": 1.8,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 2,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 1,
       "presentInSimulation": true,
       "simulationIds": [
-        "sim-discipline-lingua-inglesa-tecnica"
+        "practice-expanded-45"
       ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     },
     {
       "topicId": "ingles-documentacao",
@@ -1153,17 +1169,20 @@
       "priority": "P3",
       "priorityScore": 1.9,
       "weight": 2,
-      "resourceCount": 1,
+      "resourceCount": 5,
       "videoCount": 0,
-      "questionCount": 3,
-      "originalQuestionCount": 3,
-      "reviewQuestionCount": 3,
-      "flashcardCount": 2,
-      "presentInSimulation": false,
-      "simulationIds": [],
+      "questionCount": 1,
+      "originalQuestionCount": 1,
+      "reviewQuestionCount": 1,
+      "flashcardCount": 0,
+      "presentInSimulation": true,
+      "simulationIds": [
+        "practice-expanded-45"
+      ],
       "explanationPresent": true,
-      "coverageStatus": "MEDIUM",
-      "exception": "Meta progressiva inicial; ampliar em lote posterior sem duplicar questões."
+      "coverageStatus": "LOW",
+      "exception": "Cobertura parcial do banco: há questão aprovada; cobertura da biblioteca é auditada por unidade, separadamente do progresso e do score."
     }
-  ]
+  ],
+  "coverageMethod": "Contagem de itens aprovados disponíveis; não mede cobertura integral, mastery, XP ou score. LOW indica recortes parciais."
 }

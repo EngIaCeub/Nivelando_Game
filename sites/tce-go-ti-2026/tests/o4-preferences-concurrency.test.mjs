@@ -31,7 +31,8 @@ test('O4 backup round-trip preserves the latest preferences across open tabs', {
   let browser;
   try {
     const edge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
-    browser = await playwright.chromium.launch({ headless: true, ...(process.platform === 'win32' && existsSync(edge) ? { executablePath: edge } : {}) });
+    const executablePath = process.env.STUDYOS_CHROMIUM_EXECUTABLE ?? (process.platform === 'win32' && existsSync(edge) ? edge : undefined);
+    browser = await playwright.chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
     const context = await browser.newContext({ acceptDownloads: true });
     const first = await context.newPage(), second = await context.newPage();
     const url = `http://127.0.0.1:${server.address().port}/Nivelando_Game/`;
@@ -52,7 +53,10 @@ test('O4 backup round-trip preserves the latest preferences across open tabs', {
     await second.waitForFunction(() => document.querySelector('#today-dashboard').textContent.includes('Meta diária: 90'));
     assert.equal((await persistedSettings(first)).dailyMinutes, 90);
 
-    const downloading = first.waitForEvent('download');
+    first.setDefaultTimeout(5000);
+    await first.goto(url + '#settings');
+    await first.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor();
+    const downloading = first.waitForEvent('download', { timeout: 5000 });
     await first.getByRole('button', { name: 'Exportar meus dados', exact: true }).click();
     const download = await downloading;
     const payload = JSON.parse(await readFile(await download.path(), 'utf8'));
@@ -63,7 +67,8 @@ test('O4 backup round-trip preserves the latest preferences across open tabs', {
     await first.locator('#production-settings input[type=file]').setInputFiles({ name: 'backup.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(payload)) });
     const reloading = first.waitForEvent('load');
     await first.getByRole('button', { name: 'Importar backup', exact: true }).click();
-    await reloading; await ready(first);
+    await reloading;
+    await first.getByRole('button', { name: 'Exportar meus dados', exact: true }).waitFor();
     assert.equal((await persistedSettings(first)).dailyMinutes, 90);
     await context.close();
   } finally {

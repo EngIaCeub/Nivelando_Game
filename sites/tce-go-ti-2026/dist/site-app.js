@@ -4,10 +4,16 @@ import { StudySession, StudyUI, action, node, safeResourceLink, lazyQuestions, s
 import { runMutation } from './core/src/mutation-context.js';
 import { LibraryUI } from './core/src/library-ui.js';
 import { PixelWorldTile } from './core/src/pixel-ui.js';
+import { ownerStorageName } from './core/src/identity.js';
+import { createSupabaseWorkspaceSync } from './supabase-sync.js';
+import { createSupabaseAuth } from './supabase-auth.js';
+import { withHistoricalContent } from './content-bank.js';
 
 const examId = 'tce-go-ti-2026';
-const preferenceKey = 'studyos-daily-minutes:' + examId;
-const settingsKey = 'studyos-settings:' + examId;
+const SYNC_NAMESPACE = '__studyos_sync__';
+let ownerId = null;
+let preferenceKey = 'studyos-daily-minutes:' + examId;
+let settingsKey = 'studyos-settings:' + examId;
 const status = document.querySelector('#pack-status');
 const notice = document.querySelector('#session-status');
 const questionsRoot = document.querySelector('#questions');
@@ -19,6 +25,7 @@ const simulationsRoot = document.querySelector('#simulations-panel');
 const today = () => { const d = new Date(); return [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-'); };
 let storage, session, plans, masteryStore, events, gamification, pack, metadata, settings;
 let diagnosticUI, quizUI, flashcardUI, libraryUI;
+let authClient, authConfig, authSession, workspaceSync, guestMode = false;
 document.documentElement.dataset.studyActive = 'false';
 
 function report(error) {
@@ -37,6 +44,10 @@ async function fetchJson(path) {
 }
 const ensureQuestions = lazyQuestions(async () => { pack.questions = await fetchJson('./exam-pack/questions.json'); return pack.questions; });
 const ensureCards = lazyQuestions(async () => (await fetchJson('./exam-pack/flashcards.json')).cards);
+let historyPromise;
+const ensureHistory = () => historyPromise ??= fetchJson('./exam-pack/content-history.json').catch(error => { historyPromise = undefined; throw error; });
+const ensureHistoricalQuestions = lazyQuestions(async () => withHistoricalContent(await ensureQuestions(), (await ensureHistory()).questions));
+const ensureHistoricalCards = lazyQuestions(async () => withHistoricalContent(await ensureCards(), (await ensureHistory()).cards));
 let simulationsPromise;
 const ensureSimulations = () => simulationsPromise ??= fetchJson('./exam-pack/simulations.json').then(data => data.simulations).catch(error => { simulationsPromise = undefined; throw error; });
 function downloadJson(filename, payload) {
@@ -102,7 +113,7 @@ async function loadPack() {
   const topicTitles = new Map(flattenTopics(curriculum).map(topic => [topic.id, topic.title]));
   document.title = 'StudyOS — ' + manifest.title;
   status.textContent = manifest.title + ' · prova prevista em ' + manifest.examDate + ' · versão ' + metadata.appVersion + '.';
-  storage = new IndexedDbStore({ name: 'studyos-tce-go-ti-2026-v2', version: 2 });
+  storage = new IndexedDbStore({ name: ownerStorageName(examId, ownerId), version: 2 });
   await storage.query(examId, 'user-settings'); // Probe before announcing any successful save.
   plans = new TodayPlanEngine(storage); masteryStore = new MasteryStore(storage);
   events = new EventLog(storage); gamification = new GamificationEngine(storage);
@@ -118,10 +129,12 @@ async function loadPack() {
       await runMutation(storage, undefined, async ctx => { await saveSettings({ diagnosticCompleted: true }, ctx); await regeneratePlan(ctx); });
     }
     await refreshPanels();
+    if (authSession) void syncWorkspace({ manual: false }).catch(error => syncStatus(error.message, 'alert'));
   };
-  diagnosticUI = new StudyUI({ root: diagnosticRoot, session, ensureQuestions, ensureCards, report, onComplete });
-  quizUI = new StudyUI({ root: questionsRoot, session, ensureQuestions, ensureCards, report, onComplete });
-  flashcardUI = new StudyUI({ root: flashcardsRoot, session, ensureQuestions, ensureCards, report, onComplete, topicTitleFor: topicId => topicTitles.get(topicId) ?? topicId });
+  const historicalBanks = { ensureQuestions: ensureHistoricalQuestions, ensureCards: ensureHistoricalCards };
+  diagnosticUI = new StudyUI({ root: diagnosticRoot, session, ...historicalBanks, report, onComplete });
+  quizUI = new StudyUI({ root: questionsRoot, session, ...historicalBanks, report, onComplete });
+  flashcardUI = new StudyUI({ root: flashcardsRoot, session, ...historicalBanks, report, onComplete, topicTitleFor: topicId => topicTitles.get(topicId) ?? topicId });
   const oldStart = document.querySelector('#start-button');
   const start = button('Começar sessão', async () => {
     const current = await plans.get(examId, today());
@@ -183,6 +196,9 @@ async function openSession(ui, run) {
   const destination = ui.root.closest('section[id]');
   if (destination) location.hash = '#' + destination.id;
   await ui.open(run.id);
+  const active = run.kind === 'flashcards' ? await ensureCards() : await ensureQuestions();
+  const ids = run.kind === 'flashcards' ? run.cardIds : run.questionIds;
+  if (ids?.some(id => !active.some(item => item.id === id))) ui.root.prepend(node('p', 'Sessão da versão anterior: conteúdo retirado da seleção atual pela revisão editorial. Textos e primeiras respostas foram preservados.'));
 }
 async function startQuiz({ questions, title = 'Questões', kind = 'quiz', id, activity = null, date = null }) {
   requirePaused();
@@ -201,6 +217,12 @@ async function startActivity(activity, date = today()) {
   if (['questions', 'review', 'error_review'].includes(activity.type)) {
     const bank = await ensureQuestions();
     const ids = activity.questionIds?.length ? activity.questionIds : bank.filter(question => question.topicIds?.includes(activity.topicId)).slice(0, 8).map(question => question.id);
+    const existingRun = await session.get('today-' + date + '-' + activity.activityId);
+    if (existingRun) { await openSession(quizUI, existingRun); return; }
+    if (ids.some(id => !bank.some(q => q.id === id)) || !ids.length) {
+      notice.textContent = 'Esta atividade usa conteúdo retirado pela revisão editorial ou um tópico ainda sem questões aprovadas. Gere uma nova agenda ou escolha outro tópico; seu histórico foi preservado.';
+      return;
+    }
     await startQuiz({ questions: ids.map(id => bank.find(q => q.id === id)).filter(Boolean), title: activity.reason, id: 'today-' + date + '-' + activity.activityId, activity, date });
   } else await showTheory(activity, date);
 }
@@ -272,12 +294,15 @@ async function practiceTopic(topicId) {
   if (!topic) throw new Error('Conteúdo não encontrado neste pacote.');
   const questions = (await ensureQuestions()).filter(item => item.topicIds?.includes(topic.id));
   const existing = (await session.list()).find(run => run.kind === 'quiz' && run.title === topic.title && run.status !== 'completed');
-  if (existing) await openSession(quizUI, existing); else await startQuiz({ questions, title: topic.title });
+  if (existing) await openSession(quizUI, existing);
+  else if (!questions.length) notice.textContent = 'Este tópico ainda não tem questões aprovadas. Consulte a biblioteca; a lacuna está registrada na curadoria.';
+  else await startQuiz({ questions, title: topic.title });
 }
 async function startCards(topicId = null) {
   requirePaused(); const cards = (await ensureCards()).filter(card => !topicId || card.topicIds?.includes(topicId));
   const title = topicId ? 'Flashcards — ' + (flattenTopics(pack.curriculum).find(topic => topic.id === topicId)?.title ?? topicId) : 'Flashcards';
   const existing = (await session.list()).find(run => run.kind === 'flashcards' && run.title === title && run.status !== 'completed');
+  if (!existing && !cards.length) { notice.textContent = 'Este tópico ainda não tem flashcards aprovados. Consulte os recursos e as lacunas da biblioteca.'; return; }
   const run = existing ?? await session.start({ kind: 'flashcards', cards, title, contentVersion: metadata.examPackVersion });
   await openSession(flashcardUI, run);
 }
@@ -367,19 +392,20 @@ async function refreshPanels() {
 }
 async function showSettings() {
   const overview = node('div', undefined, 'pixel-panel settings-overview');
-  overview.append(node('h3', 'Nivelando Game'), node('p', 'StudyOS Engine · versão ' + metadata.appVersion + ' · dados armazenados neste dispositivo.'), node('p', 'Escolha a meta diária, faça o diagnóstico e siga Hoje. Questões, flashcards e simulados usam conteúdo local; links externos precisam de internet. Exporte backups para manter uma cópia fora deste navegador.'));
+  overview.append(node('h3', 'Nivelando Game'), node('p', 'StudyOS Engine · versão ' + metadata.appVersion + (authSession ? ' · conta: ' + (authSession.user.email ?? 'autenticada') : ' · dados deste dispositivo') + '.'), node('p', 'Escolha a meta diária, faça o diagnóstico e siga Hoje. Questões, flashcards e simulados usam conteúdo local; links externos precisam de internet. Exporte backups para manter uma cópia fora deste navegador.'));
   settingsRoot.replaceChildren(overview);
   const actions = node('div', undefined, 'pixel-panel settings-actions');
   const file = node('input'); file.type = 'file'; file.accept = 'application/json,.json'; file.setAttribute('aria-label', 'Selecionar backup JSON');
   const message = node('p', '', 'status settings-message'); message.setAttribute('role', 'status');
   const recoveryNote = node('p', 'Snapshot bruto de recuperação: dados não validados, apenas para análise ou suporte. Este arquivo não pode ser importado como backup normal.', 'status settings-recovery-note');
   recoveryNote.setAttribute('role', 'note');
-  actions.append(button('Exportar meus dados', async () => { requirePaused(); downloadJson('studyos-backup-' + examId + '.json', await exportProductionBackup(storage, examId, metadata, settings)); message.textContent = 'Backup completo preparado para download.'; }), file, button('Importar backup', async () => {
+  actions.append(button('Exportar meus dados', async () => { requirePaused(); downloadJson('studyos-backup-' + examId + '.json', await exportProductionBackup(storage, examId, metadata, settings, ownerId ?? undefined)); message.textContent = 'Backup completo preparado para download' + (ownerId ? ' para esta conta.' : '.'); }), file, button('Importar backup', async () => {
     requirePaused(); if (!file.files?.[0]) throw new Error('Selecione um arquivo JSON.');
     if (file.files[0].size > 25 * 1024 * 1024) throw new Error('Arquivo grande demais para importar (máximo 25 MB).');
     const payload = JSON.parse(await file.files[0].text()); validateBackupPayload(payload, { examId, metadata, requireComplete: true });
     const count = Object.values(payload.data.collections ?? {}).reduce((sum, records) => sum + records.length, 0);
-    message.textContent = 'Backup de ' + payload.exportedAt + ': ' + count + ' registros; versão ' + payload.appVersion + '. Inclui mastery global e preferências.';
+    const ownerNote = ownerId && payload.ownerId && payload.ownerId !== ownerId ? ' Este backup pertence a outra conta; a importação transfere seu conteúdo explicitamente.' : ownerId && !payload.ownerId ? ' Este backup legado não registra conta; confirme que deseja transferi-lo para a conta atual.' : '';
+    message.textContent = 'Backup de ' + payload.exportedAt + ': ' + count + ' registros; versão ' + payload.appVersion + '. Inclui mastery global e preferências.' + ownerNote;
     if (!window.confirm(message.textContent + '\nRestaurar e substituir os dados deste concurso e o domínio global? Uma cópia automática de recuperação será criada antes.')) return;
     await runMutation(storage, undefined, async ctx => {
       const result = await restoreProductionBackup(storage, payload, { examId, metadata, currentSettings: settings }, ctx);
@@ -398,6 +424,16 @@ async function showSettings() {
     message.textContent = 'Snapshot bruto baixado. Não foi validado e não pode ser importado como backup normal.';
   }));
   settingsRoot.append(actions, recoveryNote, message);
+  if (authClient?.configured) {
+    const syncPanel = node('div', undefined, 'pixel-panel settings-sync');
+    syncPanel.append(node('h3', 'Sincronização da conta'));
+    const syncStatus = node('p', authSession ? 'Progresso da conta fica neste dispositivo até sincronizar.' : 'Entre em uma conta para sincronizar o progresso.', 'status');
+    syncStatus.id = 'workspace-sync-status'; syncStatus.setAttribute('role', 'status');
+    syncPanel.append(syncStatus);
+    if (authSession) syncPanel.append(button('Sincronizar agora', () => syncWorkspace({ manual: true })));
+    const conflict = node('div', undefined, 'settings-sync-conflict'); conflict.id = 'workspace-sync-conflict';
+    syncPanel.append(conflict); settingsRoot.append(syncPanel);
+  }
   const legacy = node('details', undefined, 'pixel-panel settings-disclosure'); legacy.append(node('summary', 'Recuperar diagnóstico do staging anterior'), node('p', 'Importa somente registros ausentes. Preserva o banco legado e os dados atuais.'), button('Importar diagnóstico legado', importLegacyDiagnostic)); settingsRoot.append(legacy);
   const danger = node('details', undefined, 'pixel-panel settings-disclosure settings-danger danger-zone'); danger.append(node('summary', 'Área de risco: resetar dados'), node('p', 'Remove os dados deste concurso e o domínio global, afetando mastery de outros packs. Os históricos dos outros concursos e o banco legado são preservados.'), button('Resetar meus dados', async () => {
     requirePaused(); if (window.prompt('Remove os dados deste concurso e mastery GLOBAL, inclusive domínio usado em outros packs. Para confirmar, digite RESETAR') !== 'RESETAR') { message.textContent = 'Reset cancelado.'; return; }
@@ -409,6 +445,115 @@ async function showSettings() {
   })); settingsRoot.append(danger);
   const technical = node('details', undefined, 'pixel-panel settings-disclosure settings-technical'); technical.append(node('summary', 'Detalhes técnicos'), node('p', 'buildId ' + metadata.buildId + ' · commit ' + metadata.commitSha + ' · canal ' + metadata.channel + ' · pack ' + metadata.examPackVersion + ' · storage ' + metadata.storageVersion)); settingsRoot.append(technical);
 }
+function syncRevisionKey() { return `studyos-sync-revision:${ownerId}`; }
+function syncStatus(message, role = 'status') {
+  const output = document.querySelector('#workspace-sync-status');
+  if (output) { output.textContent = message; output.setAttribute('role', role); }
+}
+function showSyncConflict(localBackup, remotePayload, message) {
+  const root = document.querySelector('#workspace-sync-conflict');
+  if (!root) { syncStatus(message, 'alert'); return; }
+  root.replaceChildren(node('p', message));
+  if (localBackup) root.append(button('Baixar backup local', () => downloadJson(`studyos-local-conflict-${examId}.json`, localBackup)));
+  if (remotePayload) root.append(button('Baixar cópia remota para reconciliação', () => downloadJson('studyos-remote-workspace-conflict.json', remotePayload)));
+}
+async function localWorkspaceSnapshot() {
+  const backup = await exportProductionBackup(storage, examId, metadata, settings, ownerId);
+  const { globalData, ...examSnapshot } = backup;
+  return { backup, payload: { schemaVersion: 1, exams: { [examId]: examSnapshot }, globalData: await masteryStore.export() } };
+}
+function hasLocalStudyData(backup) {
+  const collections = Object.entries(backup.data.collections ?? {}).filter(([name]) => name !== 'user-settings');
+  return collections.some(([, records]) => records.length > 0) || (backup.globalData?.collections?.mastery?.length ?? 0) > 0;
+}
+function workspaceGlobalExport(mastery) {
+  const records = (mastery?.records ?? []).map(record => ({ id: record.canonicalConceptId, value: record }));
+  return { version: 1, examId: '__studyos_global__', records: [], events: [], collections: { mastery: records } };
+}
+async function applyRemoteWorkspace(payload) {
+  if (!payload || payload.schemaVersion !== 1 || !payload.exams || typeof payload.exams !== 'object') throw new Error('Workspace remoto inválido.');
+  const examSnapshot = payload.exams[examId];
+  const globalData = workspaceGlobalExport(payload.globalData);
+  if (examSnapshot) {
+    const result = await restoreProductionBackup(storage, { ...examSnapshot, globalData }, { examId, metadata, currentSettings: settings });
+    await storage.put(examId, 'user-settings', 'preferences', result.settings);
+    applyLocalSettings(result.settings); settings = result.settings;
+  } else if (payload.globalData?.records?.length) await masteryStore.import(payload.globalData);
+  await refreshPanels();
+}
+async function syncWorkspace({ manual = true } = {}) {
+  requirePaused();
+  if (!authSession || !workspaceSync) throw new Error('Entre em uma conta para sincronizar.');
+  syncStatus(manual ? 'Preparando sincronização…' : 'Sincronização em andamento…');
+  const resumed = await authClient.resume();
+  if (!resumed) throw new Error('Entre novamente para sincronizar esta conta.');
+  authSession = resumed;
+  const pending = await storage.query(SYNC_NAMESPACE, 'outbox');
+  if (pending.length) {
+    const operation = pending[0];
+    try {
+      const result = await workspaceSync.commit(operation);
+      const revision = Number(result?.revision);
+      if (!Number.isSafeInteger(revision) || revision < 1) throw new Error('Resposta de revisão remota inválida.');
+      await storage.delete(SYNC_NAMESPACE, 'outbox', operation.operationId);
+      localStorage.setItem(syncRevisionKey(), String(revision));
+      syncStatus('Progresso sincronizado. Revisão ' + revision + '.');
+      document.querySelector('#workspace-sync-conflict')?.replaceChildren();
+      return;
+    } catch (error) {
+      if (error.payload?.code === '40001' || error.payload?.code === '23514') {
+        const remote = await workspaceSync.load().catch(() => null);
+        const local = await localWorkspaceSnapshot().catch(() => null);
+        showSyncConflict(local?.backup, remote?.payload, 'Há alterações concorrentes. As duas versões foram preservadas; baixe-as e reconcilie antes de sincronizar de novo.');
+      } else syncStatus('Progresso local salvo; a sincronização ficou pendente e tentará novamente depois.', 'alert');
+      return;
+    }
+  }
+
+  const [remote, local] = await Promise.all([workspaceSync.load(), localWorkspaceSnapshot()]);
+  const baselineValue = localStorage.getItem(syncRevisionKey());
+  const baseline = baselineValue === null ? null : Number(baselineValue);
+  if (remote && baseline === null) {
+    if (!hasLocalStudyData(local.backup)) {
+      await applyRemoteWorkspace(remote.payload);
+      localStorage.setItem(syncRevisionKey(), String(remote.revision));
+      syncStatus('Progresso da conta restaurado neste dispositivo. Revisão ' + remote.revision + '.');
+    } else showSyncConflict(local.backup, remote.payload, 'Este dispositivo e a conta já têm progresso. Nada foi sobrescrito. Baixe as duas versões para reconciliar.');
+    return;
+  }
+  if (remote && baseline !== Number(remote.revision)) {
+    showSyncConflict(local.backup, remote.payload, 'A conta mudou desde a última sincronização. Nada foi sobrescrito. Baixe as duas versões para reconciliar.');
+    return;
+  }
+  if (!remote && baseline !== null) {
+    showSyncConflict(local.backup, null, 'A cópia remota não está disponível, mas o dispositivo já registrou uma revisão. O envio foi bloqueado para proteger o progresso.');
+    return;
+  }
+
+  const payload = {
+    schemaVersion: 1,
+    exams: { ...(remote?.payload?.exams ?? {}), [examId]: local.payload.exams[examId] },
+    globalData: local.payload.globalData
+  };
+  const operationId = crypto.randomUUID();
+  const operation = { expectedRevision: Number(remote?.revision ?? 0), operationId, payload };
+  await storage.put(SYNC_NAMESPACE, 'outbox', operationId, operation);
+  try {
+    const result = await workspaceSync.commit(operation);
+    const revision = Number(result?.revision);
+    if (!Number.isSafeInteger(revision) || revision < 1) throw new Error('Resposta de revisão remota inválida.');
+    await storage.delete(SYNC_NAMESPACE, 'outbox', operationId);
+    localStorage.setItem(syncRevisionKey(), String(revision));
+    syncStatus('Progresso sincronizado. Revisão ' + revision + '.');
+    document.querySelector('#workspace-sync-conflict')?.replaceChildren();
+  } catch (error) {
+    if (error.payload?.code === '40001' || error.payload?.code === '23514') {
+      const latest = await workspaceSync.load().catch(() => null);
+      showSyncConflict(local.backup, latest?.payload, 'A conta mudou durante o envio. As versões foram preservadas; baixe-as e reconcilie antes de sincronizar de novo.');
+    } else syncStatus('Progresso local salvo; a sincronização ficou pendente e tentará novamente depois.', 'alert');
+  }
+}
+
 async function importLegacyDiagnostic() {
   requirePaused();
   const legacyName = 'studyos-staging-tce-go-ti-2026-v1';
@@ -421,4 +566,85 @@ async function importLegacyDiagnostic() {
   notice.textContent = 'Diagnóstico legado importado; origem preservada.'; await refreshPanels();
 }
 
-loadPack().catch(error => { report(error); status.textContent = 'Não foi possível iniciar o estudo. Verifique a conexão e o armazenamento do navegador. Nenhum salvamento foi confirmado.'; });
+function showAuthMessage(message, role = 'status') {
+  const output = document.querySelector('#auth-status');
+  if (output) { output.textContent = message; output.setAttribute('role', role); }
+}
+function bindAccountForms() {
+  const accountAction = handler => async event => {
+    event.preventDefault();
+    try { await handler(event); }
+    catch (error) { showAuthMessage(error.message, 'alert'); }
+  };
+  const login = document.querySelector('#login-form');
+  login?.addEventListener('submit', accountAction(async () => {
+    const session = await authClient.signIn({ email: login.elements.email.value.trim().toLowerCase(), password: login.elements.password.value });
+    await startAccount(session);
+  }));
+  const register = document.querySelector('#register-form');
+  register?.addEventListener('submit', accountAction(async () => {
+    const result = await authClient.register({ email: register.elements.email.value.trim().toLowerCase(), password: register.elements.password.value, displayName: register.elements.displayName.value.trim() });
+    if (result.access_token && result.user?.id) await startAccount(authClient.current());
+    else showAuthMessage('Conta criada. Confirme o e-mail antes de entrar.');
+  }));
+  const recover = document.querySelector('#recover-form');
+  recover?.addEventListener('submit', accountAction(async () => {
+    await authClient.recover(recover.elements.email.value.trim().toLowerCase());
+    showAuthMessage('Se o e-mail estiver cadastrado, você receberá um link de recuperação.');
+  }));
+  const reset = document.querySelector('#reset-form');
+  reset?.addEventListener('submit', accountAction(async () => {
+    await authClient.updatePassword(reset.elements.password.value);
+    reset.reset(); reset.hidden = true; recover.hidden = false;
+    showAuthMessage('Senha atualizada. Entre com sua nova senha.'); location.hash = '#login';
+  }));
+  document.querySelector('#guest-button')?.addEventListener('click', async () => {
+    guestMode = true; ownerId = null; preferenceKey = 'studyos-daily-minutes:' + examId; settingsKey = 'studyos-settings:' + examId;
+    location.hash = '#today'; await loadPack();
+  });
+  document.querySelector('#logout-button')?.addEventListener('click', guarded(async () => {
+    requirePaused(); await authClient.signOut(); authSession = null; guestMode = false; location.reload();
+  }));
+}
+async function startAccount(session) {
+  requirePaused();
+  authSession = session; ownerId = session.user.id; guestMode = false;
+  workspaceSync = createSupabaseWorkspaceSync({ config: authConfig, userId: ownerId, accessToken: () => authClient.current()?.access_token });
+  preferenceKey = `studyos-daily-minutes:${ownerId}:${examId}`;
+  settingsKey = `studyos-settings:${ownerId}:${examId}`;
+  document.querySelector('#account-link').textContent = session.user.email ?? 'Minha conta';
+  document.querySelector('#account-link').href = '#settings';
+  document.querySelector('#logout-button').hidden = false;
+  location.hash = '#today'; await loadPack();
+}
+async function bootStudyOS() {
+  try {
+    authConfig = await fetchJson('./auth-config.json');
+    authClient = createSupabaseAuth(authConfig);
+  } catch { authConfig = {}; authClient = createSupabaseAuth(authConfig); }
+  bindAccountForms();
+  if (!authClient.configured) {
+    showAuthMessage('Login por conta ainda não está configurado neste site. O progresso continua salvo localmente neste navegador.');
+    await loadPack(); return;
+  }
+  document.querySelector('#guest-button').hidden = false;
+  showAuthMessage('Entre ou crie sua conta. Os dados locais antigos permanecem disponíveis pelo acesso deste dispositivo e podem ser exportados como backup.');
+  const resetForm = document.querySelector('#reset-form');
+  const recoverForm = document.querySelector('#recover-form');
+  try {
+    const callback = await authClient.consumeRedirect();
+    if (callback?.type === 'recovery') { resetForm.hidden = false; recoverForm.hidden = true; location.hash = '#recover'; return; }
+    const session = callback?.session ?? await authClient.resume();
+    if (session) { await startAccount(session); return; }
+  } catch (error) { showAuthMessage(error.message, 'alert'); }
+  if (!location.hash || !['#login', '#register', '#recover'].includes(location.hash)) location.hash = '#login';
+}
+window.addEventListener('hashchange', () => {
+  const accountRoute = ['#login', '#register', '#recover'].includes(location.hash);
+  if (authClient?.configured && !authSession && !guestMode && !accountRoute) location.hash = '#login';
+  if ((authSession || guestMode) && accountRoute) location.hash = '#today';
+});
+window.addEventListener('studyos:session-paused', () => {
+  if (authSession) void syncWorkspace({ manual: false }).catch(error => syncStatus(error.message, 'alert'));
+});
+bootStudyOS().catch(error => { report(error); status.textContent = 'Não foi possível iniciar o estudo. Verifique a conexão e o armazenamento do navegador. Nenhum salvamento foi confirmado.'; });

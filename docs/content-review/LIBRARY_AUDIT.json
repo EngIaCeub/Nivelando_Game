@@ -1,0 +1,3057 @@
+{
+  "examId": "tce-go-ti-2026",
+  "checkedAt": "2026-10-08T15:26:40.819Z",
+  "configured": true,
+  "status": "partial",
+  "scopeReviewed": true,
+  "isComplete": false,
+  "errors": [],
+  "warnings": [],
+  "legacyResources": 0,
+  "totals": {
+    "topics": 45,
+    "units": 209,
+    "coveredUnits": 119,
+    "coveredTopics": 12,
+    "v2Resources": 167
+  },
+  "disciplines": [
+    {
+      "disciplineId": "lingua-portuguesa",
+      "title": "Língua Portuguesa",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "matematica-raciocinio-logico",
+      "title": "Matemática e Raciocínio Lógico",
+      "topics": 3,
+      "coveredTopics": 2
+    },
+    {
+      "disciplineId": "legislacao-institucional",
+      "title": "Legislação Institucional",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "engenharia-de-software",
+      "title": "Engenharia de Software",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "title": "Desenvolvimento de Sistemas",
+      "topics": 3,
+      "coveredTopics": 1
+    },
+    {
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "title": "Engenharia de Software Assistida por Inteligência Artificial e Sistemas Agentivos",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "devops-plataforma-entrega",
+      "title": "DevOps, Plataforma de Desenvolvimento e Engenharia de Entrega",
+      "topics": 3,
+      "coveredTopics": 2
+    },
+    {
+      "disciplineId": "banco-de-dados",
+      "title": "Banco de Dados",
+      "topics": 3,
+      "coveredTopics": 1
+    },
+    {
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "title": "Inteligência Artificial, Ciência de Dados e Automação",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "seguranca-da-informacao",
+      "title": "Segurança da Informação",
+      "topics": 3,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "sistemas-redes-nuvem",
+      "title": "Sistemas Operacionais, Redes e Computação em Nuvem",
+      "topics": 4,
+      "coveredTopics": 0
+    },
+    {
+      "disciplineId": "governanca-de-ti",
+      "title": "Governança de Tecnologia da Informação",
+      "topics": 4,
+      "coveredTopics": 1
+    },
+    {
+      "disciplineId": "legislacao-aplicada-ti",
+      "title": "Legislação Aplicada à Tecnologia da Informação",
+      "topics": 4,
+      "coveredTopics": 3
+    },
+    {
+      "disciplineId": "lingua-inglesa-tecnica",
+      "title": "Língua Inglesa (Leitura Técnica)",
+      "topics": 3,
+      "coveredTopics": 2
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "lp-texto",
+      "disciplineId": "lingua-portuguesa",
+      "units": 4,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "lp-morfossintaxe",
+      "disciplineId": "lingua-portuguesa",
+      "units": 4,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "lp-sintaxe-redacao",
+      "disciplineId": "lingua-portuguesa",
+      "units": 5,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "mrl-aritmetica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 3,
+      "coveredUnits": 3,
+      "covered": true
+    },
+    {
+      "topicId": "mrl-proporcoes",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 2,
+      "coveredUnits": 2,
+      "covered": true
+    },
+    {
+      "topicId": "mrl-logica",
+      "disciplineId": "matematica-raciocinio-logico",
+      "units": 2,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-constituicao",
+      "disciplineId": "legislacao-institucional",
+      "units": 3,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-tce",
+      "disciplineId": "legislacao-institucional",
+      "units": 3,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "leginst-servidor",
+      "disciplineId": "legislacao-institucional",
+      "units": 10,
+      "coveredUnits": 8,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-ciclos",
+      "disciplineId": "engenharia-de-software",
+      "units": 6,
+      "coveredUnits": 5,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-requisitos-arquitetura",
+      "disciplineId": "engenharia-de-software",
+      "units": 9,
+      "coveredUnits": 8,
+      "covered": false
+    },
+    {
+      "topicId": "engsoft-modelagem-qualidade",
+      "disciplineId": "engenharia-de-software",
+      "units": 7,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "devsistemas-fundamentos",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 4,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "devsistemas-linguagens-web",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 9,
+      "coveredUnits": 9,
+      "covered": true
+    },
+    {
+      "topicId": "devsistemas-apis-identidade",
+      "disciplineId": "desenvolvimento-de-sistemas",
+      "units": 10,
+      "coveredUnits": 8,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-llm",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 3,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-contexto",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 2,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "disciplineId": "ia-assistida-e-sistemas-agentivos",
+      "units": 7,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "devops-cicd",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 4,
+      "coveredUnits": 4,
+      "covered": true
+    },
+    {
+      "topicId": "devops-iac-observabilidade",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 5,
+      "coveredUnits": 5,
+      "covered": true
+    },
+    {
+      "topicId": "devops-git-containers",
+      "disciplineId": "devops-plataforma-entrega",
+      "units": 7,
+      "coveredUnits": 4,
+      "covered": false
+    },
+    {
+      "topicId": "bd-modelagem",
+      "disciplineId": "banco-de-dados",
+      "units": 3,
+      "coveredUnits": 3,
+      "covered": true
+    },
+    {
+      "topicId": "bd-sql",
+      "disciplineId": "banco-de-dados",
+      "units": 7,
+      "coveredUnits": 6,
+      "covered": false
+    },
+    {
+      "topicId": "bd-tecnologias-operacao",
+      "disciplineId": "banco-de-dados",
+      "units": 10,
+      "coveredUnits": 7,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-ml",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 5,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-generativa",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 5,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "ia-dados-rag-etica",
+      "disciplineId": "ia-ciencia-dados-automacao",
+      "units": 9,
+      "coveredUnits": 4,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-principios",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 3,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-cripto-identidade",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 3,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "disciplineId": "seguranca-da-informacao",
+      "units": 7,
+      "coveredUnits": 3,
+      "covered": false
+    },
+    {
+      "topicId": "sistemas-os-shell",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 3,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "sistemas-diretorios",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 2,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "redes-protocolos",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 4,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "nuvem-arquitetura",
+      "disciplineId": "sistemas-redes-nuvem",
+      "units": 3,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-alinhamento",
+      "disciplineId": "governanca-de-ti",
+      "units": 1,
+      "coveredUnits": 1,
+      "covered": true
+    },
+    {
+      "topicId": "governanca-servicos",
+      "disciplineId": "governanca-de-ti",
+      "units": 8,
+      "coveredUnits": 5,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-modelos",
+      "disciplineId": "governanca-de-ti",
+      "units": 5,
+      "coveredUnits": 0,
+      "covered": false
+    },
+    {
+      "topicId": "governanca-publica",
+      "disciplineId": "governanca-de-ti",
+      "units": 3,
+      "coveredUnits": 2,
+      "covered": false
+    },
+    {
+      "topicId": "legti-lgpd",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 4,
+      "coveredUnits": 4,
+      "covered": true
+    },
+    {
+      "topicId": "legti-marco-civil",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 3,
+      "coveredUnits": 3,
+      "covered": true
+    },
+    {
+      "topicId": "legti-normas-tce",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 3,
+      "coveredUnits": 1,
+      "covered": false
+    },
+    {
+      "topicId": "legti-pdti",
+      "disciplineId": "legislacao-aplicada-ti",
+      "units": 5,
+      "coveredUnits": 5,
+      "covered": true
+    },
+    {
+      "topicId": "ingles-compreensao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 1,
+      "coveredUnits": 1,
+      "covered": true
+    },
+    {
+      "topicId": "ingles-estrategias",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 1,
+      "coveredUnits": 1,
+      "covered": true
+    },
+    {
+      "topicId": "ingles-documentacao",
+      "disciplineId": "lingua-inglesa-tecnica",
+      "units": 2,
+      "coveredUnits": 1,
+      "covered": false
+    }
+  ],
+  "units": [
+    {
+      "unitId": "unit-leginst-constituicao-administracao",
+      "topicId": "leginst-constituicao",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-cf-control"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-constituicao-fiscalizacao",
+      "topicId": "leginst-constituicao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-constituicao-controles",
+      "topicId": "leginst-constituicao",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-cf-control"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-tce-constituicao-go",
+      "topicId": "leginst-tce",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-constit-go"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-tce-lei-organica",
+      "topicId": "leginst-tce",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-tce-regimento",
+      "topicId": "leginst-tce",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-carreira",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-lei15122-carreira"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-regime",
+      "topicId": "leginst-servidor",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-etica",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra6-etica"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-governanca",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra14-governanca"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-pessoas",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra5-pessoas"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-seguranca",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra17-seguranca"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-riscos",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-rn6-riscos"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-dados",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-rn5-dados"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-organizacao",
+      "topicId": "leginst-servidor",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-leginst-servidor-planejamento",
+      "topicId": "leginst-servidor",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra15-planejamento"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-alinhamento-estrategia",
+      "topicId": "governanca-alinhamento",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra15-planejamento",
+        "legal-pdti2025"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-catalogo",
+      "topicId": "governanca-servicos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-atlassian-catalogo"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-incidentes",
+      "topicId": "governanca-servicos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-problemas",
+      "topicId": "governanca-servicos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-mudancas",
+      "topicId": "governanca-servicos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-atlassian-mudancas"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-configuracao",
+      "topicId": "governanca-servicos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-atlassian-configuracao"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-portfolio",
+      "topicId": "governanca-servicos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-pdti2025"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-ativos",
+      "topicId": "governanca-servicos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-servicos-continuidade",
+      "topicId": "governanca-servicos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-atlassian-continuidade"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-modelos-cobit",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-modelos-itil",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-modelos-iso38500",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-modelos-pmbok8",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-modelos-ageis",
+      "topicId": "governanca-modelos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-publica-contratacao",
+      "topicId": "governanca-publica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-publica-governo-digital",
+      "topicId": "governanca-publica",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-lei14129"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-governanca-publica-engd",
+      "topicId": "governanca-publica",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-decreto-engd"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-lgpd-design-default",
+      "topicId": "legti-lgpd",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-oasis-privacy"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-lgpd-minimizacao",
+      "topicId": "legti-lgpd",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-oasis-privacy"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-lgpd-anonimizacao",
+      "topicId": "legti-lgpd",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-anpd-anon-tecnico"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-lgpd-pseudonimizacao",
+      "topicId": "legti-lgpd",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-renouv-lgpd"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-marco-civil-neutralidade",
+      "topicId": "legti-marco-civil",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-decreto-mci"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-marco-civil-protecao",
+      "topicId": "legti-marco-civil",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-marco-neutrality"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-marco-civil-registros",
+      "topicId": "legti-marco-civil",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-marco-neutrality"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-normas-tce-seguranca-contratacoes",
+      "topicId": "legti-normas-tce",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-normas-tce-certificacao",
+      "topicId": "legti-normas-tce",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-normas-tce-lc205",
+      "topicId": "legti-normas-tce",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-lc205"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-pdti-ceti",
+      "topicId": "legti-pdti",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-rn13-ceti"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-pdti-governanca",
+      "topicId": "legti-pdti",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra14-governanca"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-pdti-seguranca",
+      "topicId": "legti-pdti",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra17-seguranca"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-pdti-dti",
+      "topicId": "legti-pdti",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-ra14-estrutura-dti"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "unit-legti-pdti-plano",
+      "topicId": "legti-pdti",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-pdti2025"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-fundamentos-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-ciclos-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-scrum-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-scrum-2020"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-kanban-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": true,
+      "primaryResourceIds": [
+        "legal-kanban2025"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-lean-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-lean-poppendieck"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-ciclos-xp-unit",
+      "topicId": "engsoft-ciclos",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-xp-agilealliance"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-requisitos-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-historias-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-casos-uso-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-camadas-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ms-ntier"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-soa-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ibm-soa"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-microsservicos-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ms-micro"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-eventos-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ms-events"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-principios-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-requisitos-arquitetura-coesao-acoplamento-unit",
+      "topicId": "engsoft-requisitos-arquitetura",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-uml-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-bpmn-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-patterns-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-atributos-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-testes-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-swebok-v4a"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-revisao-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "engsoft-modelagem-qualidade-refatoracao-unit",
+      "topicId": "engsoft-modelagem-qualidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-fundamentos-logica-unit",
+      "topicId": "devsistemas-fundamentos",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-python-scripts"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-fundamentos-estruturas-unit",
+      "topicId": "devsistemas-fundamentos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-fundamentos-oo-unit",
+      "topicId": "devsistemas-fundamentos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-fundamentos-funcional-unit",
+      "topicId": "devsistemas-fundamentos",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-python-functional"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-java-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-java-basics"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-javascript-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mdn-javascript"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-node-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-node-intro"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-react-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-react-learn"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-python-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-python-scripts"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-python-backend-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-flask-quickstart"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-html-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mdn-html"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-css-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mdn-css"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-linguagens-web-typescript-unit",
+      "topicId": "devsistemas-linguagens-web",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-typescript-everyday"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-rest-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-rest-fielding"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-graphql-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-graphql-learn"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-websocket-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-rfc6455"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-json-xml-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-json-xml"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-oauth-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-rfc6749"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-oidc-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-oidc-core"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-jwt-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-rfc7519"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-openapi-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-openapi-311"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-git-basico-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devsistemas-apis-identidade-pacotes-unit",
+      "topicId": "devsistemas-apis-identidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-llm-llm-unit",
+      "topicId": "ia-agentivos-llm",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-llm-intencao-unit",
+      "topicId": "ia-agentivos-llm",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-llm-assistencia-unit",
+      "topicId": "ia-agentivos-llm",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-contexto-prompts-unit",
+      "topicId": "ia-agentivos-contexto",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-contexto-contexto-unit",
+      "topicId": "ia-agentivos-contexto",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-cli-ide-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-ciclo-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-agent-workflows"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-rag-vetores-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-mcp-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mcp-architecture-2025-06-18"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-skills-tools-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-validacao-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-agentivos-ciclo-mcp-riscos-unit",
+      "topicId": "ia-agentivos-ciclo-mcp",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-cicd-conceitos-unit",
+      "topicId": "devops-cicd",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-aws-cicd"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-cicd-actions-unit",
+      "topicId": "devops-cicd",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-actions"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-cicd-gitlab-ci-unit",
+      "topicId": "devops-cicd",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-gitlab-ci"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-cicd-jenkins-unit",
+      "topicId": "devops-cicd",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-jenkins-pipeline"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-iac-unit",
+      "topicId": "devops-iac-observabilidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-terraform-intro"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-configuracao-unit",
+      "topicId": "devops-iac-observabilidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ansible-playbooks"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-sinais-unit",
+      "topicId": "devops-iac-observabilidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-otel-signals"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-instrumentacao-unit",
+      "topicId": "devops-iac-observabilidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-otel-signals"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-iac-observabilidade-alertas-unit",
+      "topicId": "devops-iac-observabilidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-prometheus-alerts"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-git-distribuido-unit",
+      "topicId": "devops-git-containers",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-branching-unit",
+      "topicId": "devops-git-containers",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-pr-mr-unit",
+      "topicId": "devops-git-containers",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-github-gitlab-reviews"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-docker-unit",
+      "topicId": "devops-git-containers",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-docker-build-runtime"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-compose-unit",
+      "topicId": "devops-git-containers",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-docker-compose"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-kubernetes-unit",
+      "topicId": "devops-git-containers",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-k8s-components"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "devops-git-containers-ambientes-unit",
+      "topicId": "devops-git-containers",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-modelagem-er-unit",
+      "topicId": "bd-modelagem",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-bc-er"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-modelagem-normalizacao-unit",
+      "topicId": "bd-modelagem",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-uow-normalization"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-modelagem-desnormalizacao-unit",
+      "topicId": "bd-modelagem",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mongodb-denormal"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-sql-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-sql-tutorial"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-algebra-unit",
+      "topicId": "bd-sql",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-acid-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-transactions"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-indices-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-index-plans"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-procedures-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-procedures"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-triggers-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-triggers"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-sql-views-unit",
+      "topicId": "bd-sql",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-views"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-postgres-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-oracle-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-documentos-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-mongodb-model-crud"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-chave-valor-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-redis-types-ttl"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-wide-column-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-cassandra-model"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-grafos-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-neo4j-graph"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-vetoriais-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-qdrant-vectors"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-replicacao-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-ha-replication"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-backup-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-pg-pitr"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "bd-tecnologias-operacao-seguranca-governanca-unit",
+      "topicId": "bd-tecnologias-operacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-fundamentos-unit",
+      "topicId": "ia-dados-ml",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-supervisionado-unit",
+      "topicId": "ia-dados-ml",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-sklearn-start"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-nao-supervisionado-unit",
+      "topicId": "ia-dados-ml",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-reforco-unit",
+      "topicId": "ia-dados-ml",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-ml-redes-deep-unit",
+      "topicId": "ia-dados-ml",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-pln-unit",
+      "topicId": "ia-dados-generativa",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-generativa-unit",
+      "topicId": "ia-dados-generativa",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-agentes-unit",
+      "topicId": "ia-dados-generativa",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-multimodal-unit",
+      "topicId": "ia-dados-generativa",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-generativa-automacao-unit",
+      "topicId": "ia-dados-generativa",
+      "covered": true,
+      "primaryResourceIds": [
+        "curated-agent-workflows"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-prompts-contexto-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-rag-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-responsavel-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ebia-mcti"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-lgpd-ia-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-preparacao-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-estatistica-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-nist-statistics"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-avaliacao-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-bigdata-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-nist-bigdata"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ia-dados-rag-etica-ebia-unit",
+      "topicId": "ia-dados-rag-etica",
+      "covered": true,
+      "primaryResourceIds": [
+        "tech-ebia-mcti"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-texto-redacao-oficial-unit",
+      "topicId": "lp-texto",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-presidencia-manual2018"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-texto-ortografia-acentuacao-unit",
+      "topicId": "lp-texto",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-texto-leitura-generos-contexto-unit",
+      "topicId": "lp-texto",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-texto-semantica-discursos-unit",
+      "topicId": "lp-texto",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-morfossintaxe-estrutura-palavras-unit",
+      "topicId": "lp-morfossintaxe",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-morfossintaxe-pronomes-unit",
+      "topicId": "lp-morfossintaxe",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-morfossintaxe-flexoes-vozes-unit",
+      "topicId": "lp-morfossintaxe",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-morfossintaxe-figuras-unit",
+      "topicId": "lp-morfossintaxe",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-pontuacao-unit",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-presidencia-manual2018"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-concordancia-unit",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-presidencia-manual2018"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-regencia-crase-unit",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-periodos-conectivos-unit",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "lp-sintaxe-redacao-reescrita-unit",
+      "topicId": "lp-sintaxe-redacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-aritmetica-inteiros-racionais-unit",
+      "topicId": "mrl-aritmetica",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-openstax-integers-rationals"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-aritmetica-multiplos-divisores-unit",
+      "topicId": "mrl-aritmetica",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-obmep-aritmetica"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-aritmetica-fracoes-unit",
+      "topicId": "mrl-aritmetica",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-openstax-fracoes-reading"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-proporcoes-razoes-divisao-regra-unit",
+      "topicId": "mrl-proporcoes",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-obmep-proporcionalidade"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-proporcoes-porcentagens-unit",
+      "topicId": "mrl-proporcoes",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-openstax-percent62",
+        "expanded-obmep-percent"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-logica-relacoes-deducao-unit",
+      "topicId": "mrl-logica",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-stanford-logic1"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "mrl-logica-raciocinios-unit",
+      "topicId": "mrl-logica",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-principios-atributos-unit",
+      "topicId": "seguranca-principios",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-principios-riscos-vulnerabilidades-incidentes-unit",
+      "topicId": "seguranca-principios",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-principios-classificacao-unit",
+      "topicId": "seguranca-principios",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-cripto-identidade-iam-unit",
+      "topicId": "seguranca-cripto-identidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-cripto-identidade-criptografia-unit",
+      "topicId": "seguranca-cripto-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-nist-crypto175"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-cripto-identidade-pki-certificados-assinatura-unit",
+      "topicId": "seguranca-cripto-identidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-nist-crypto175"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-owasp2025-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-owasp-top10-2025-complete"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-devsecops-api-container-cloud-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-backup-bc-dr-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-malware-engenharia-social-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-cert-malware-golpes-reading"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-defesas-testes-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-zero-trust-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-nist207"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "seguranca-aplicacoes-continuidade-iso27000-unit",
+      "topicId": "seguranca-aplicacoes-continuidade",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "sistemas-os-shell-windows-unit",
+      "topicId": "sistemas-os-shell",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "sistemas-os-shell-linux-unit",
+      "topicId": "sistemas-os-shell",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "sistemas-os-shell-shell-powershell-unit",
+      "topicId": "sistemas-os-shell",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "sistemas-diretorios-ad-ldap-unit",
+      "topicId": "sistemas-diretorios",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+      "topicId": "sistemas-diretorios",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+      "topicId": "redes-protocolos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "redes-protocolos-http-https-unit",
+      "topicId": "redes-protocolos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "redes-protocolos-smtp-ftp-ssh-vpn-proxy-unit",
+      "topicId": "redes-protocolos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "redes-protocolos-sem-fio-unit",
+      "topicId": "redes-protocolos",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "nuvem-arquitetura-balanceamento-firewalls-unit",
+      "topicId": "nuvem-arquitetura",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "nuvem-arquitetura-modelos-serverless-unit",
+      "topicId": "nuvem-arquitetura",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+      "topicId": "nuvem-arquitetura",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ingles-compreensao-leitura-tecnica-unit",
+      "topicId": "ingles-compreensao",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-uece-english-2015"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ingles-estrategias-leitura-unit",
+      "topicId": "ingles-estrategias",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-uece-english-2015"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ingles-documentacao-vocabulario-unit",
+      "topicId": "ingles-documentacao",
+      "covered": true,
+      "primaryResourceIds": [
+        "expanded-uece-english-2015"
+      ],
+      "primaryPathIds": []
+    },
+    {
+      "unitId": "ingles-documentacao-corpus-unit",
+      "topicId": "ingles-documentacao",
+      "covered": false,
+      "primaryResourceIds": [],
+      "primaryPathIds": []
+    }
+  ],
+  "resourceResults": [
+    {
+      "id": "legal-ra5-pessoas",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-rn6-riscos",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra17-seguranca",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-rn5-dados",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra15-planejamento",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra14-estrutura-dti",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-rn13-ceti",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-isaca-cobit-assessment",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-problem",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-peoplecert-svs",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lc205",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra6-etica",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra14-governanca",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-decreto-engd",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-anpd-anon-tecnico",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-renouv-lgpd",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-cgm-privacy-processos",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-cf-control",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ec139",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-constit-go",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-marco-neutrality",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-pdti2025",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-oasis-privacy",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ipc-privacy",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-lgpd-principles",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-decreto-mci",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-isaca-design",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-isaca-comparison",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-isaca-tips",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-isaca-cascade",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-itil-excellence",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-iti-conceitos",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-iti-faq",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-iti-validacao",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-iti-boaspraticas",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-catalogo",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-mudancas",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-continuidade",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-configuracao",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-incidentes",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-ativos",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-atlassian-problemas-processo",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lei15122-carreira",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lei14129",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lei16168",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lei20756",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ri22",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-scrum-2020",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-agile-principles",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-kanban2025",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-lei14063",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-mp2200",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-iso38500-catalogue",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-pmbok8-catalogue",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra10-controle",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-ra13-integridade",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-agu-mgi-tic",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "legal-tcu-competencias",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-python-structures",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mdn-closures",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-agent-workflows",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-otel-traces",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-docker-container",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-constraints",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-pitr",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-rag-lewis-v4",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-sklearn-start",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-sklearn-leakage",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-node-intro",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-react-learn",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-typescript-everyday",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-swebok-v4a",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-lean-poppendieck",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-xp-agilealliance",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-procedures",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-triggers",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-views",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-cassandra-model",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-neo4j-graph",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-uow-normalization",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-bc-er",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-java-basics",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-flask-quickstart",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-python-scripts",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-python-functional",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-python-classes",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ms-ntier",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ms-micro",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ms-events",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ibm-soa",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-terraform-intro",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-actions",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-gitlab-ci",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-jenkins-pipeline",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-aws-cicd",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ansible-playbooks",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-otel-signals",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-prometheus-alerts",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-docker-build-runtime",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-docker-compose",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-k8s-components",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-rest-fielding",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-rfc6455",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-rfc6749",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-oidc-core",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-rfc7519",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-graphql-learn",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-json-xml",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-openapi-311",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-ebia-mcti",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mdn-html",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mdn-css",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mdn-javascript",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-nist-statistics",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-nist-bigdata",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-sql-tutorial",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-transactions",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-index-plans",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-pg-ha-replication",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mongodb-model-crud",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mongodb-denormal",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-redis-types-ttl",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-qdrant-vectors",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-github-gitlab-reviews",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "tech-mcp-architecture-2025-06-18",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-uece-english-2015",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-bc-reading",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-sedu-passiva",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-funag-comma",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-openstax-fractions45",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-openstax-proportions",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-stanford-logic1",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-owasp-authz",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-owasp-sqli",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-gnu-bash-stable",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-rfc4512",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-mdn-timeout",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-nist207",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-ms-ad-overview",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-ms-processes",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-ms-ps-pipelines",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "curated-nist800145",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-iso27000-edition",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-presidencia-manual2018",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-nist-risk30",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-nist-contingency34",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cnp3-dns",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cnp3-http2",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cnp3-wifi",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-owasp-top10-2025-a05",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-nist-crypto175",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-nist-intro12",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cecierj-fund-lp3",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-openstax-percent62",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-obmep-percent",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-obmep-aritmetica",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-obmep-fracoes",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-obmep-regra3",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-owasp-top10-2025-complete",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cert-cartilha2012",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cert-malware2023",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cert-golpes2026",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cert-malware-golpes-reading",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-cecierj-lp-unidade2",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-obmep-proporcionalidade",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-openstax-fracoes-reading",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "expanded-openstax-integers-rationals",
+      "eligible": true,
+      "reasons": []
+    }
+  ],
+  "pathResults": [],
+  "missingUnitTopics": [],
+  "uncoveredUnitIds": [
+    "unit-leginst-constituicao-fiscalizacao",
+    "unit-leginst-tce-lei-organica",
+    "unit-leginst-tce-regimento",
+    "unit-leginst-servidor-regime",
+    "unit-leginst-servidor-organizacao",
+    "unit-governanca-servicos-incidentes",
+    "unit-governanca-servicos-problemas",
+    "unit-governanca-servicos-ativos",
+    "unit-governanca-modelos-cobit",
+    "unit-governanca-modelos-itil",
+    "unit-governanca-modelos-iso38500",
+    "unit-governanca-modelos-pmbok8",
+    "unit-governanca-modelos-ageis",
+    "unit-governanca-publica-contratacao",
+    "unit-legti-normas-tce-seguranca-contratacoes",
+    "unit-legti-normas-tce-certificacao",
+    "engsoft-ciclos-fundamentos-unit",
+    "engsoft-requisitos-arquitetura-principios-unit",
+    "engsoft-modelagem-qualidade-uml-unit",
+    "engsoft-modelagem-qualidade-bpmn-unit",
+    "engsoft-modelagem-qualidade-patterns-unit",
+    "engsoft-modelagem-qualidade-atributos-unit",
+    "engsoft-modelagem-qualidade-revisao-unit",
+    "engsoft-modelagem-qualidade-refatoracao-unit",
+    "devsistemas-fundamentos-estruturas-unit",
+    "devsistemas-fundamentos-oo-unit",
+    "devsistemas-apis-identidade-git-basico-unit",
+    "devsistemas-apis-identidade-pacotes-unit",
+    "ia-agentivos-llm-llm-unit",
+    "ia-agentivos-llm-intencao-unit",
+    "ia-agentivos-llm-assistencia-unit",
+    "ia-agentivos-contexto-prompts-unit",
+    "ia-agentivos-contexto-contexto-unit",
+    "ia-agentivos-ciclo-mcp-cli-ide-unit",
+    "ia-agentivos-ciclo-mcp-rag-vetores-unit",
+    "ia-agentivos-ciclo-mcp-skills-tools-unit",
+    "ia-agentivos-ciclo-mcp-validacao-unit",
+    "ia-agentivos-ciclo-mcp-riscos-unit",
+    "devops-git-containers-git-distribuido-unit",
+    "devops-git-containers-branching-unit",
+    "devops-git-containers-ambientes-unit",
+    "bd-sql-algebra-unit",
+    "bd-tecnologias-operacao-postgres-unit",
+    "bd-tecnologias-operacao-oracle-unit",
+    "bd-tecnologias-operacao-seguranca-governanca-unit",
+    "ia-dados-ml-fundamentos-unit",
+    "ia-dados-ml-nao-supervisionado-unit",
+    "ia-dados-ml-reforco-unit",
+    "ia-dados-ml-redes-deep-unit",
+    "ia-dados-generativa-pln-unit",
+    "ia-dados-generativa-generativa-unit",
+    "ia-dados-generativa-agentes-unit",
+    "ia-dados-generativa-multimodal-unit",
+    "ia-dados-rag-etica-prompts-contexto-unit",
+    "ia-dados-rag-etica-rag-unit",
+    "ia-dados-rag-etica-lgpd-ia-unit",
+    "ia-dados-rag-etica-preparacao-unit",
+    "ia-dados-rag-etica-avaliacao-unit",
+    "lp-texto-ortografia-acentuacao-unit",
+    "lp-texto-leitura-generos-contexto-unit",
+    "lp-texto-semantica-discursos-unit",
+    "lp-morfossintaxe-estrutura-palavras-unit",
+    "lp-morfossintaxe-pronomes-unit",
+    "lp-morfossintaxe-flexoes-vozes-unit",
+    "lp-morfossintaxe-figuras-unit",
+    "lp-sintaxe-redacao-regencia-crase-unit",
+    "lp-sintaxe-redacao-periodos-conectivos-unit",
+    "lp-sintaxe-redacao-reescrita-unit",
+    "mrl-logica-raciocinios-unit",
+    "seguranca-principios-atributos-unit",
+    "seguranca-principios-riscos-vulnerabilidades-incidentes-unit",
+    "seguranca-principios-classificacao-unit",
+    "seguranca-cripto-identidade-iam-unit",
+    "seguranca-aplicacoes-continuidade-devsecops-api-container-cloud-unit",
+    "seguranca-aplicacoes-continuidade-backup-bc-dr-unit",
+    "seguranca-aplicacoes-continuidade-defesas-testes-unit",
+    "seguranca-aplicacoes-continuidade-iso27000-unit",
+    "sistemas-os-shell-windows-unit",
+    "sistemas-os-shell-linux-unit",
+    "sistemas-os-shell-shell-powershell-unit",
+    "sistemas-diretorios-ad-ldap-unit",
+    "sistemas-diretorios-virtualizacao-containers-unit",
+    "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+    "redes-protocolos-http-https-unit",
+    "redes-protocolos-smtp-ftp-ssh-vpn-proxy-unit",
+    "redes-protocolos-sem-fio-unit",
+    "nuvem-arquitetura-balanceamento-firewalls-unit",
+    "nuvem-arquitetura-modelos-serverless-unit",
+    "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+    "ingles-documentacao-corpus-unit"
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "status": "approved",
+  "reviewer": "/root/integration_qa; independent integration QA",
+  "reviewedAt": "2026-10-08T18:36:00Z",
+  "stagedSha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+  "completeApproved": true,
+  "evidence": "Independent read-only QA confirmed this exact SHA. validatePack and AJV passed library, 309 active resources, 56 isolated candidates, and 45 questions. auditLibrary confirmed complete/isComplete, 209/209 units, 45/45 topics, zero gaps/uncovered units, 0 ineligible resources and 43/43 eligible study paths, each covering all declared objectives; no duplicate/orphan resource references. The 45 questions exactly match active, preserve 10 baseline plus 35 approved additions, and match the draft hash. Append-only/idempotent history helper archives the replaced active catalog. ISO path uses distinct resources and ABNT 27000:2026 adoption is not claimed; catalog cutoff snapshot caveat and link-only rights remain explicit. No files changed by QA.",
+  "checks": {
+    "candidateStatus": "complete",
+    "units": 209,
+    "coveredUnits": 209,
+    "uncoveredUnits": 0,
+    "documentedGaps": 0,
+    "resources": 309,
+    "studyPaths": 43,
+    "questions": 45,
+    "topics": 45,
+    "coveredTopics": 45,
+    "ineligibleResources": 0,
+    "resourceCandidates": 56,
+    "ineligiblePaths": 0,
+    "questionsMatchActive": true,
+    "completeApproved": true
+  },
+  "priorApprovals": [
+    {
+      "status": "approved",
+      "reviewer": "/root/integration_qa; GPT-6.1 Sol/high; independent integration QA",
+      "reviewedAt": "2026-10-08T07:00:00.000Z",
+      "stagedSha256": "3b980b5a365caa1d54ec2bcf138f157dc3194d8f3f40716bc9b18cf32d896566",
+      "completeApproved": false,
+      "evidence": "Independent QA approved the exact staged candidate present at review time. The requested SHA 9cf2a441... is the separate QUESTIONS_DRAFT hash, not the staged-pack hash; the real STAGED_PACK SHA-256 is 3b980b5a365caa1d54ec2bcf138f157dc3194d8f3f40716bc9b18cf32d896566. validatePack and independent AJV validation of library, 279 v2 resources and 45 questions report no error. auditLibrary returns partial, 209 units, 186 primary/full covered, 33 complete topics and 23 uncovered units; an independent recomputation confirms the 23 unique documented gap IDs exactly equal uncoveredUnitIds. All 279 resources are eligible. studyPaths is a valid empty array; no unit closure relies on a multi-source path. OMG UML 2.5.1 is a single free/link-only normative PDF with explicit locators for classes, state machines, activities, sequence and use cases. Its examples and notation support the narrow objective of reading those five diagram types; it is English and technical, not an introductory course, and the record does not claim all UML was read. The 45 staged questions exactly equal the active questions, preserve all 10 baseline questions and 35 approved additions, and the draft hash matches QUESTIONS_DRAFT. This approves only partial promotion of this exact SHA; all 23 documented gaps remain and complete is not approved."
+    },
+    {
+      "status": "approved",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": "2026-10-08T17:04:08.000Z",
+      "stagedSha256": "451157d6a75094274cb296ed65a6501644d00dcef8a6d5acf89eb7cec15656a3",
+      "completeApproved": false,
+      "evidence": "Independent read-only QA approved this exact candidate for partial promotion only. Factory/schema validation passed; 101 active resources are verified/reachable/eligible, 221 unknown resources remain isolated as unverified candidates, 116 uncovered unit IDs exactly match the gap ledger, one eligible study path has no orphan references, and the 45 questions are unchanged. A helper simulation confirmed append-only preservation of legacy history and idempotency. Sampled URL checks and 9 resources only; this is not a complete factual/editorial audit, not approval of all resources/candidates/questions/cards, and not UI/offline/deploy approval. completeApproved=false."
+    },
+    {
+      "status": "approved",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": "2026-10-08",
+      "stagedSha256": "7d0b663ea92c3e6350b676f494e4bd54dac22f94e2130a18240837252db33bb8",
+      "completeApproved": false,
+      "evidence": "Independent read-only QA approved this exact SHA for partial promotion only. Factory/schema valid; 113 active resources eligible; 209 unknown candidates isolated; 107/209 covered and 102 uncovered IDs match the ledger; one eligible path without orphan references; questions and curriculum identical to active; history 289 questions/102 cards preserved; archive helper simulation passed. legal-lei16168 and legal-ri22 were opened as official sources and are now active with browser/reachable; their coverage/editorial evidence did not change. No complete source/question/card/UI/offline/deploy audit was performed. completeApproved=false."
+    }
+  ],
+  "priorReviews": [
+    {
+      "status": "rejected",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": null,
+      "stagedSha256": "d22ef5dd855a6f23dda7beaecbdd2dac768c63854448589dcf8fefb43bbe3de8",
+      "completeApproved": false,
+      "evidence": "Historical independent verdict retained from the carried review: reject for complete promotion. Findings included composite primary/full mappings attributed to a single URL, fabricated reachable/GET verification, stale sourceMap locators/URL, Lei 20.756 scope gaps, PMBOK 8 principles/tailoring mismatch, and partial/full conflicts. See INTEGRATION_QA.md for details. This review does not decide the current candidate."
+    },
+    {
+      "status": "rejected",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": "2026-10-08T17:04:08.000Z",
+      "stagedSha256": "5a62eef752d5e786ea61e81afc7d8ce615c27e4ed88887f4ea065c48ee36f44c",
+      "completeApproved": false,
+      "evidence": "Historical rejection: the factory rejected 221 verified=false resources, and the promoter archived only BASELINE_PACK (45 units/34 resources), risking loss of subsequently active IDs. Corrected in candidate 451157d6...; this verdict does not decide the current candidate."
+    },
+    {
+      "status": "approved",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": "2026-10-08T17:04:08.000Z",
+      "stagedSha256": "451157d6a75094274cb296ed65a6501644d00dcef8a6d5acf89eb7cec15656a3",
+      "completeApproved": false,
+      "evidence": "Independent read-only QA approved this exact candidate for partial promotion only. Factory/schema validation passed; 101 active resources are verified/reachable/eligible, 221 unknown resources remain isolated as unverified candidates, 116 uncovered unit IDs exactly match the gap ledger, one eligible study path has no orphan references, and the 45 questions are unchanged. A helper simulation confirmed append-only preservation of legacy history and idempotency. Sampled URL checks and 9 resources only; this is not a complete factual/editorial audit, not approval of all resources/candidates/questions/cards, and not UI/offline/deploy approval. completeApproved=false."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "9c1c065208cb2635c3063066a9721717ac5906b6cf7f5da7de3743317b31732a",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "approved",
+      "reviewer": "/root/library_final_qa; independent integration QA",
+      "reviewedAt": "2026-10-08",
+      "stagedSha256": "7d0b663ea92c3e6350b676f494e4bd54dac22f94e2130a18240837252db33bb8",
+      "completeApproved": false,
+      "evidence": "Independent read-only QA approved this exact SHA for partial promotion only. Factory/schema valid; 113 active resources eligible; 209 unknown candidates isolated; 107/209 covered and 102 uncovered IDs match the ledger; one eligible path without orphan references; questions and curriculum identical to active; history 289 questions/102 cards preserved; archive helper simulation passed. legal-lei16168 and legal-ri22 were opened as official sources and are now active with browser/reachable; their coverage/editorial evidence did not change. No complete source/question/card/UI/offline/deploy audit was performed. completeApproved=false."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "d7ef5d2e33a26b14851839da5c7294e9fec7cb731341d18c9572fb95335704f1",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "88e56aeeb0c57cf4de072f67587f3da3ab86b074a56dd0d114aa8def8956327e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "0fb972d2cc19fb2093172bda68833e0ea3799c4a6ec9ed2c8c2ed3359414f177",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "9670975f12e5eaa48096741fd9c131e60d1b45c2338648e74c4bf47ccdf1eaaf",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "3498397638473f0f93ad2a52edd38c0885958f5f3f9eac8e7de97a3ed93c2a4e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "64cb8dd5bad8e140695a54804979779ded9c5e943850cb129e31a2f29f3e4a3e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "50029d3cc567ac247a7eccafe6ae206b1f8ca701a5e41abfe890045a905ae39e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "b11c9527002487a381754b62cf960b8e3269d80913786507ca0ef732b047e6b7",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "fe85381bbc417680919ea12b930599df9e03d2846210e2902be727ee1246daf5",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "532708c23056f592ec4a0756539f40157eac91ce4167e8454e0cac824425f9fb",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "828630ece1a373f6bdc83415666312144e49f938f0e597fd27cb0e3903c159d3",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "54f3aa88f52da55738f43fd7784b36ec497b2d9e1a4f73cb9f58ebee3f874783",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "547fac9b5a5b2a350640eb77c515cabccc59e2c535197b2f22833c6249f0ffb5",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "ed5a480c514e4428c93ea0df4ecf8ec93cb78d48335c59bca1be4589a2c364ab",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "2b4746cee317c011919c919d3b6d184d21783ea41e48bb0a6c7f3bc5450d1990",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "e09f74cbcbfdcec89ea051e23d3a8e11a612b82d44b57e7aa323e975de142544",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "243bd7e66b576ca068efaeec5c3f544ec2e55715a6b1e00116d13aec20d00341",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "d36b4a09353147b52eb7d2be6f027b0b1fe1cc74ea42d35617667d370b8d6131",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "9ad8163cb9598649e1a4f596836a8fffb2ad391dc95934dec2c5448123b55df6",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "a7666ec403690aea8301f9348b5e52a45bcfb12e29249b75fa54ac839ced1f56",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "a795ecec38d96eec3d862bcd48115d4873d06a6589687ecb776ae48105d5ff55",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "2daf9a6c13b62deafbd6ab3aaf10804a6446e7c99788c1609cb7fc61c4c2e6ae",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "ac873f07a8e8592375f08c989722b123cc8850ac4ee1663deb732eb5226888c2",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "55066332bd07b61d14e0106b7115742aad3b03685cb247dceb7b3afc9979fbfd",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "92eb20d1b3df54bbd2b9b1c64aa088dff3123542322e76056680de717dea828f",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "08ab71ec0e60d723fb9d3cae79b2478f404190ae53282cfeb657fe0226b1001d",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "4964daedcda9a9a084ba3aae04e99361ad535357e8b02c9217c01c09a9eaf655",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "2744d3b43579562b5644cb0106cbf3d622a0b9bb65c7677e66d02d033320080c",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "1edc6a8f0490fbd16fd1ee0e78b0a0119d1461023725e49c505cca56e7602b58",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "a13a5ddaec7e8b471bcc42c3d3ab7d997c3260682284ac1a8a7b29af334deb7e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "7796cc5f78921e0c4f48d9fdc3a989703bfdbad74c20cee641ca04e83d11cdef",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "c221e9dac496bad7ec9c1ff5509789a6dc01c96af1695c7fd4eeff0ba211c8b8",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "6bf4393a9c7e58fcbe121bd82382f0a1fcd1c4f74bee84b3de4e0e96948d1d0e",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "e995cd5003be3aa5f6bab4044b3a8923c6543d5637552dc2c06348f0240e9482",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "8d316fce94a0bcd8ef0339df833ed096ea954e91e3afd3037fa75158d220d56d",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "16153f384f00422a2fc7e06044b71a5e854bc85a045102533028426cc3b76eea",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    },
+    {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "stagedSha256": "a16a2e28d3eac7e443e7dafdce7c238a98183d44b0af467867dd2d9df060505a",
+      "completeApproved": false,
+      "evidence": "Candidate regenerated from reviewed domain-source inputs. Structural validation is recorded separately. Independent integration QA of this exact SHA-256 has not been performed; do not promote or treat the candidate as release-approved."
+    }
+  ],
+  "independentAudit": {
+    "verifiedSha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+    "reviewer": "/root/integration_qa; independent integration QA",
+    "decision": "approved",
+    "completeApproved": true,
+    "readOnly": true
+  }
+}

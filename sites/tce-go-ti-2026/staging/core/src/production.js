@@ -366,16 +366,21 @@ export function createBuildMetadata(input = {}) {
   return Object.freeze({ metadataVersion: BUILD_METADATA_VERSION, ...input });
 }
 
-export function createBackupPayload({ examId, exported, metadata, globalExported, settings, exportedAt = new Date().toISOString() } = {}) {
+export function createBackupPayload({ examId, exported, metadata, globalExported, settings, ownerId, exportedAt = new Date().toISOString() } = {}) {
   if (!examId || !exported || exported.examId !== examId) throw new TypeError('backup requires a matching examId and export');
   const payload = { backupVersion: BACKUP_VERSION, exportedAt, appVersion: metadata?.appVersion ?? 'unknown', storageVersion: metadata?.storageVersion ?? 'unknown', examId, data: structuredClone(exported) };
   if (globalExported !== undefined) payload.globalData = structuredClone(globalExported);
   if (settings !== undefined) payload.settings = structuredClone(settings);
+  if (ownerId !== undefined) {
+    if (typeof ownerId !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(ownerId)) invalid('backup contém ownerId inválido');
+    payload.ownerId = ownerId;
+  }
   return payload;
 }
 
 export function validateBackupPayload(payload, { examId, metadata, requireComplete = false } = {}) {
   if (!object(payload) || payload.backupVersion !== BACKUP_VERSION) invalid();
+  if (payload.ownerId !== undefined && (typeof payload.ownerId !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(payload.ownerId))) invalid('backup contém ownerId inválido');
   if (examId && payload.examId !== examId) throw new Error('backup pertence a outro Exam Pack');
   validateExport(payload.data, payload.examId);
   if (!text(payload.examId) || payload.examId.includes('::') || [GLOBAL_NAMESPACE, BACKUP_NAMESPACE].includes(payload.examId) || !date(payload.exportedAt) ||
@@ -391,10 +396,10 @@ export function validateBackupPayload(payload, { examId, metadata, requireComple
 // Prefer the settings captured in the same namespace snapshot. The caller's
 // settings are only a fallback for legacy/external preferences not persisted in
 // the Exam Pack namespace; this keeps the backup envelope consistent with data.
-export async function exportProductionBackup(store, examId, metadata, settings) {
+export async function exportProductionBackup(store, examId, metadata, settings, ownerId) {
   const [exported, globalExported] = await store.exportNamespaces([examId, GLOBAL_NAMESPACE]);
   const storedSettings = exported.collections?.['user-settings']?.find(row => row.id === 'preferences')?.value;
-  const payload = createBackupPayload({ examId, exported, globalExported, metadata, settings: storedSettings ?? settings });
+  const payload = createBackupPayload({ examId, exported, globalExported, metadata, settings: storedSettings ?? settings, ownerId });
   validateBackupPayload(payload, { examId, metadata, requireComplete: true });
   return payload;
 }

@@ -1,1 +1,3511 @@
-[]
+[
+  {
+    "id": "legal-atlassian-problem",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "What is the aim of problem management?",
+    "type": "docs",
+    "url": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-aim-of-problem-management/",
+    "source": "Atlassian",
+    "provider": "Atlassian",
+    "authors": [
+      "Atlassian"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; somente link; acesso público gratuito não prova licença de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-aim-of-problem-management/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Leitura real distingue restauração rápida de serviço e causas/prevenção. Não explica integralmente identificação/registro/erros/workarounds nem todos os passos de incidentes. Produto e conceito estão delimitados. Não presume versãoITIL4."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-servicos-incidentes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "corpo do artigo,parágrafos1–4"
+      },
+      {
+        "unitId": "unit-governanca-servicos-problemas",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "corpo do artigo,parágrafos1–4"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "What is the aim of problem management?",
+      "url": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-aim-of-problem-management/",
+      "retrievedAt": "2026-10-07",
+      "locator": "corpo do artigo,parágrafos1–4"
+    }
+  },
+  {
+    "id": "legal-peoplecert-svs",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "ITIL Maturity Model — apresentação PeopleCert",
+    "type": "docs",
+    "url": "https://www.peoplecert.org/-/media/2244094fd4364faab8b1e22b35278bd9.ashx",
+    "source": "PeopleCert",
+    "provider": "PeopleCert",
+    "authors": [
+      "PeopleCert"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos",
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; somente link; acesso público gratuito não prova licença de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.peoplecert.org/-/media/2244094fd4364faab8b1e22b35278bd9.ashx",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos critérios de capacidade de incidentes e definição/componentesSVS. Modelo de maturidade é distinto do guiaFoundation. Trechos cobrem conceitoSVS e exemplos, não todas as dimensões/princípios/cadeia/práticas. Edição4 referida; copyrightPeopleCert preservado, entrega link."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-itil",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDFp.14 e17–18:incidentes eSVS"
+      },
+      {
+        "unitId": "unit-governanca-servicos-incidentes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDFp.14 e17–18:incidentes eSVS"
+      }
+    ],
+    "provenance": {
+      "sourceType": "guide",
+      "title": "ITIL Maturity Model — apresentação PeopleCert",
+      "url": "https://www.peoplecert.org/-/media/2244094fd4364faab8b1e22b35278bd9.ashx",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDFp.14 e17–18:incidentes eSVS"
+    }
+  },
+  {
+    "id": "legal-cgm-privacy-processos",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Adequação de Processos no Contexto da Proteção de Dados Pessoais — Controle20, v1 dezembro2025",
+    "type": "docs",
+    "url": "https://prefeitura.sp.gov.br/documents/d/controladoria_geral/manual-controle-20-_v2-pdf",
+    "source": "Controladoria Geral do Município de São Paulo",
+    "provider": "Controladoria Geral do Município de São Paulo",
+    "authors": [
+      "Fábio Fernandes Libonati",
+      "Thiago Ryuichi Hirata"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "legti-lgpd"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; link-only",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://prefeitura.sp.gov.br/documents/d/controladoria_geral/manual-controle-20-_v2-pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "AnexoII lido por inteiro: distingue concepção/padrão, sete princípios, prevenção, segurança em todo ciclo, transparência e foco no titular. Método lido descreve alteração de processos e acompanhamento. Não ensina configuração concreta de sistema; precisa complemento para objetivo de projetar opções protetivas."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-legti-lgpd-design-default",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "AnexoII p.31–32; seções3–4 p.9–18"
+      }
+    ],
+    "provenance": {
+      "sourceType": "guide",
+      "title": "Adequação de Processos no Contexto da Proteção de Dados Pessoais — Controle20, v1 dezembro2025",
+      "url": "https://prefeitura.sp.gov.br/documents/d/controladoria_geral/manual-controle-20-_v2-pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "AnexoII p.31–32; seções3–4 p.9–18"
+    }
+  },
+  {
+    "id": "legal-ec139",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Emenda Constitucional139/2026",
+    "type": "law",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc139.htm",
+    "source": "Presidência da República",
+    "provider": "Presidência da República",
+    "authors": [
+      "Presidência da República"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-constituicao"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; somente link; acesso gratuito não demonstra permissão de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc139.htm",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido texto completo. Promulgada5/05/2026, publicada6/05/2026: anterior ao corte25/08/2026."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-constituicao-controles",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "art1, nova redação art75"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "Emenda Constitucional139/2026",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc139.htm",
+      "retrievedAt": "2026-10-07",
+      "locator": "arts.1–2"
+    }
+  },
+  {
+    "id": "legal-ipc-privacy",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Privacy by Design — sete princípios explicados",
+    "type": "docs",
+    "url": "https://www.ipc.on.ca/en/media/3001/download?attachment=",
+    "source": "Information and Privacy Commissioner of Ontario",
+    "provider": "Information and Privacy Commissioner of Ontario",
+    "authors": [
+      "IPC Ontario"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "legti-lgpd"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; somente link; acesso público gratuito não prova licença de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.ipc.on.ca/en/media/3001/download?attachment=",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido documento completo. Explica privacidade por padrão sem ação do usuário e incorporação arquitetural anterior à implementação. Não é lei brasileira; complementar OASIS e LGPD46."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-legti-lgpd-design-default",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "PDF2p; janeiro2018"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Privacy by Design — sete princípios explicados",
+      "url": "https://www.ipc.on.ca/en/media/3001/download?attachment=",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF2p; janeiro2018"
+    }
+  },
+  {
+    "id": "legal-itil-excellence",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Building IT and Digital Excellence with ITIL4",
+    "type": "pdf",
+    "url": "https://peoplecert.jp/doc/Building-IT-and-Digital-Excellence-with-ITIL-4.pdf",
+    "source": "AXELOS / PeopleCert",
+    "provider": "AXELOS / PeopleCert",
+    "authors": [
+      "AXELOS"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; somente link; acesso público gratuito não prova licença de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://peoplecert.jp/doc/Building-IT-and-Digital-Excellence-with-ITIL-4.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido corpo textual completo5p. Explica cocriação, alinhamento, quatro dimensões e componentes SVS,34práticas e integração com Agile/DevOps. Material introdutório não explica separadamente sete princípios nem seis atividades cadeia; parcial."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-itil",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "PDFp2–4; ITIL4Explained/benefits"
+      }
+    ],
+    "provenance": {
+      "sourceType": "document",
+      "title": "Building IT and Digital Excellence with ITIL4",
+      "url": "https://peoplecert.jp/doc/Building-IT-and-Digital-Excellence-with-ITIL-4.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDFp2–4; ITIL4Explained/benefits"
+    }
+  },
+  {
+    "id": "legal-atlassian-incidentes",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Incident Management: Processes, Best Practices & Tools",
+    "type": "docs",
+    "url": "https://www.atlassian.com/incident-management",
+    "source": "Atlassian",
+    "provider": "Atlassian",
+    "authors": [
+      "Atlassian"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.atlassian.com/incident-management",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos definição, detecção/origens, registro, categorização, impacto/SLA/prioridade, diagnóstico/escalonamento/comunicação/restauração/fechamento e rastreio/tendências. O recorte não ensina indicadores quantitativos suficientes para declarar full da medição."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-servicos-incidentes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Etapas de identificação/registro, priorização e resposta; rastreio e análise de tendências"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Incident Management: Processes, Best Practices & Tools",
+      "url": "https://www.atlassian.com/incident-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Definição; IT incident management process; Steps; DevOps/SRE; tools"
+    }
+  },
+  {
+    "id": "legal-atlassian-ativos",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "What is IT asset management (ITAM)?",
+    "type": "docs",
+    "url": "https://www.atlassian.com/itsm/it-asset-management",
+    "source": "Atlassian",
+    "provider": "Atlassian",
+    "authors": [
+      "Atlassian"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.atlassian.com/itsm/it-asset-management",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido corpo de definição até funcionalidades: localização/utilizador, inventário, custo do ciclo, manutenção, descarte, licenças, conformidade, risco e orçamento. Propriedade/responsabilidade pelo ativo não é ensinada além de identificação do utilizador; permanece partial."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-servicos-ativos",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Lifecycle; tipos; inventário/custos/monitoramento/manutenção/planejamento; licenças e riscos"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "What is IT asset management (ITAM)?",
+      "url": "https://www.atlassian.com/itsm/it-asset-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Lifecycle; Types; Benefits; Process; Key features"
+    }
+  },
+  {
+    "id": "legal-atlassian-problemas-processo",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "What is problem management?",
+    "type": "docs",
+    "url": "https://www.atlassian.com/itsm/problem-management",
+    "source": "Atlassian",
+    "provider": "Atlassian",
+    "authors": [
+      "Atlassian"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.atlassian.com/itsm/problem-management",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido corpo até conclusão: causas contribuintes, detecção proativa, priorização, investigação, workaround, correção e acompanhamento. A definição de erro conhecido requer causa documentada e workaround, formulação tradicional que não comprova a definição ITIL4; não promover full sem fonte da edição."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-servicos-problemas",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Relações; seis etapas; causas múltiplas e prevenção; ressalva de erro conhecido"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "What is problem management?",
+      "url": "https://www.atlassian.com/itsm/problem-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Relações com incidentes/mudanças; seis etapas; boas práticas"
+    }
+  },
+  {
+    "id": "legal-agile-principles",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Manifesto Ágil e seus doze princípios",
+    "type": "docs",
+    "url": "https://agilemanifesto.org/iso/ptbr/principles.html",
+    "source": "Agile Manifesto",
+    "provider": "Agile Manifesto",
+    "authors": [
+      "Autores signatários do Manifesto Ágil; tradução brasileira identificada na página"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://agilemanifesto.org/iso/ptbr/principles.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos os quatro valores do manifesto e os doze princípios na fonte dos autores, com texto de tradução e signatários. Não confundir valorização relativa com eliminação de documentação/contratos. Não cobre os eventos/artefatos Scrum e o fluxo Kanban."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-ageis",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Doze princípios; https://agilemanifesto.org/iso/ptbr/manifesto.html, quatro valores"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Manifesto Ágil e seus doze princípios",
+      "url": "https://agilemanifesto.org/iso/ptbr/principles.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Doze princípios completos; manifesto na página irmã"
+    }
+  },
+  {
+    "id": "legal-iso38500-catalogue",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "ISO/IEC38500:2024 — Registro oficial da edição",
+    "type": "other",
+    "url": "https://www.iso.org/standard/81684.html",
+    "source": "ISO",
+    "provider": "ISO",
+    "authors": [
+      "ISO"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.iso.org/standard/81684.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido registro oficial que confirma edição, finalidade, audiência e escopo. Abstract/preço/21páginas não ensinam os princípios e sua orientação de aplicação; apenas referência de edição, sem cobertura pedagógica integral. OBP retorna interface JavaScript, sem corpo recuperável na leitura realizada."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-iso38500",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Abstract e metadados; não é corpo da norma"
+      }
+    ],
+    "provenance": {
+      "sourceType": "other",
+      "title": "ISO/IEC38500:2024 — Registro oficial da edição",
+      "url": "https://www.iso.org/standard/81684.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Abstract; General information; edição3 de fevereiro2024"
+    }
+  },
+  {
+    "id": "legal-pmbok8-catalogue",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "PMBOK Guide — Eighth Edition, apresentação oficial",
+    "type": "other",
+    "url": "https://www.pmi.org/standards/pmbok",
+    "source": "PMI",
+    "provider": "PMI",
+    "authors": [
+      "PMI"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.pmi.org/standards/pmbok",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos apresentação e índice oficial da8ªedição. Confirmam a versão, mas nomes de princípios/domínios e anúncio de tailoring não ensinam sua aplicação. Livro/member benefit e StandardsPlus não são primary/free; sem compra ou cópia de terceiros."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-pmbok8",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Apresentação e TOC; não são texto didático integral da edição"
+      }
+    ],
+    "provenance": {
+      "sourceType": "other",
+      "title": "PMBOK Guide — Eighth Edition, apresentação oficial",
+      "url": "https://www.pmi.org/standards/pmbok",
+      "retrievedAt": "2026-10-07",
+      "locator": "Apresentação da8ªedição; lista de seis princípios e sete domínios; índice oficial"
+    }
+  },
+  {
+    "id": "legal-agu-mgi-tic",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Instrumento de Padronização dos Procedimentos de Contratação de TIC — AGU/MGI, 2024",
+    "type": "pdf",
+    "url": "https://www.gov.br/agu/pt-br/comunicacao/noticias/agu-lanca-guia-para-facilitar-contratacoes-na-area-de-tecnologia-da-informacao/Instrumento_de_Padronizao_AGU_TIC_Digital_reduzido.pdf/@@download/file",
+    "source": "AGU e MGI/SGD",
+    "provider": "AGU e MGI/SGD",
+    "authors": [
+      "AGU e MGI/SGD"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-publica",
+      "legti-normas-tce"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.gov.br/agu/pt-br/comunicacao/noticias/agu-lanca-guia-para-facilitar-contratacoes-na-area-de-tecnologia-da-informacao/Instrumento_de_Padronizao_AGU_TIC_Digital_reduzido.pdf/@@download/file",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Leitura direta de PDF oficial gratuito de 142 páginas após recusa por tamanho no leitor web. Lidos identificação/sumário/apresentação, ETP (necessidade, viabilidade, alternativas, requisitos, quantidades e TCO) e TR (solução integral, requisitos, segurança/privacidade, execução, comunicação, responsabilidades, aceitação e gestão por indicadores). Não lidos integralmente análise de riscos, edital/seleção, nem execução contratual. Orientação federal SISP: não presumir aplicabilidade automática de IN federal ao TCE-GO."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-publica-contratacao",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDF p. 36–41 e 91–97; ETP e partes do TR"
+      },
+      {
+        "unitId": "unit-legti-normas-tce-seguranca-contratacoes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDF p. 94–97; requisitos de segurança/privacidade, responsabilidades e aceitação"
+      }
+    ],
+    "provenance": {
+      "sourceType": "pdf",
+      "title": "Instrumento de Padronização dos Procedimentos de Contratação de TIC — AGU/MGI, 2024",
+      "url": "https://www.gov.br/agu/pt-br/comunicacao/noticias/agu-lanca-guia-para-facilitar-contratacoes-na-area-de-tecnologia-da-informacao/Instrumento_de_Padronizao_AGU_TIC_Digital_reduzido.pdf/@@download/file",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF p. 1–8, 36–41 e 91–97; correspondem às p. impressas 34–39 e 89–95 nos recortes de ETP/TR"
+    }
+  },
+  {
+    "id": "legal-tcu-competencias",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Competências do TCU",
+    "type": "article",
+    "url": "https://portal.tcu.gov.br/conheca-o-tcu/competencias-do-tcu",
+    "source": "TCU",
+    "provider": "TCU",
+    "authors": [
+      "TCU"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-constituicao"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://portal.tcu.gov.br/conheca-o-tcu/competencias-do-tcu",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos os recortes sobre auditorias e inspeções e suas finalidades financeira/operacional, desempenho e apuração de dúvidas/denúncias. Não oferece explicação didática suficiente da distinção das cinco modalidades de fiscalização do art. 70 e seus critérios."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-constituicao-fiscalizacao",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Recortes de auditorias/inspeções"
+      }
+    ],
+    "provenance": {
+      "sourceType": "article",
+      "title": "Competências do TCU",
+      "url": "https://portal.tcu.gov.br/conheca-o-tcu/competencias-do-tcu",
+      "retrievedAt": "2026-10-07",
+      "locator": "Seções realizar inspeções e auditorias e prestar informações ao Congresso Nacional"
+    }
+  },
+  {
+    "id": "legal-atlassian-axelos-itil4-guide",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "The future of ITSM is agile — Atlassian/AXELOS",
+    "type": "docs",
+    "url": "https://pages.eml.atlassian.com/rs/594-ATC-127/images/Atlassian_Axelos_ITIL4_Guide.pdf",
+    "source": "Atlassian / AXELOS",
+    "provider": "Atlassian / AXELOS",
+    "authors": [
+      "Akshay Anand",
+      "Paul Buffington",
+      "Ian Buchanan",
+      "Teresa Fok"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos",
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://pages.eml.atlassian.com/rs/594-ATC-127/images/Atlassian_Axelos_ITIL4_Guide.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lidos valor/fluxos, princípios/valores ágeis, práticas, melhoria e retrospectivas, projetos incrementais/Kanban/WIP, conhecimento, service desk, incidentes/postmortems, mudanças/deploy e DevOps. Figuras pp.6–7 e25 não inspecionadas. Não explica todas as finalidades das seis atividades da cadeia nem todos os papéis/eventos/artefatos Scrum; coverage partial. PDF livre entregue pelo publisher, licença de reprodução não demonstrada."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-itil",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.2–14; SVS/princípios/práticas/melhoria"
+      },
+      {
+        "unitId": "unit-governanca-modelos-ageis",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.8–9,12–17,33–34; valores/retrospectivas/incrementos/Kanban"
+      },
+      {
+        "unitId": "unit-governanca-servicos-incidentes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.23–24,26; resposta e postmortem"
+      }
+    ],
+    "provenance": {
+      "sourceType": "guide",
+      "title": "The future of ITSM is agile — Atlassian/AXELOS",
+      "url": "https://pages.eml.atlassian.com/rs/594-ATC-127/images/Atlassian_Axelos_ITIL4_Guide.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF pp.2–24,26–34; autoria confirmada na landing oficial /whitepapers/itil4"
+    }
+  },
+  {
+    "id": "legal-atlassian-incident-kpis",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Incident management KPIs",
+    "type": "docs",
+    "url": "https://www.atlassian.com/incident-management/kpis",
+    "source": "Atlassian",
+    "provider": "Atlassian",
+    "authors": [
+      "Atlassian"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-servicos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito; somente delivery:link; sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://www.atlassian.com/incident-management/kpis",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Lido corpo didático de indicadores e diagnóstico comparativo, diferenças de MTTR e metas. Artigo sozinho não cobre todo o fluxo de resposta; complementar ao manual2019 primary/full. Não atribuir fórmulas ausentes ao artigo."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-servicos-incidentes",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Corpo integral de KPIs"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Incident management KPIs",
+      "url": "https://www.atlassian.com/incident-management/kpis",
+      "retrievedAt": "2026-10-07",
+      "locator": "Corpo: escolha de KPIs, alerts/incidents over time, MTBF/MTTA/MTTD/MTTR, workload e SLA"
+    }
+  },
+  {
+    "id": "legal-rn2-multa2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "RN2/2026 — atualização da multa art.112",
+    "type": "law",
+    "url": "https://dec.tce.go.gov.br/ConsultaDiario/CarregaDocumento?documento=331291042352261",
+    "source": "TCE-GO",
+    "provider": "TCE-GO",
+    "authors": [
+      "Tribunal de Contas do Estado de Goiás"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-tce"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://dec.tce.go.gov.br/ConsultaDiario/CarregaDocumento?documento=331291042352261",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Corpo integral do ato lido. Aprovado22/01/2026; publicado27/01/2026; tetoR$139.030,46 no exercício2026; vigência na publicação. Histórico anterior ao corte, checkedAt posterior."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-tce-lei-organica",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "DEC27/01/2026,p.3,arts.1–4"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "RN2/2026 — atualização da multa art.112",
+      "url": "https://dec.tce.go.gov.br/ConsultaDiario/CarregaDocumento?documento=331291042352261",
+      "retrievedAt": "2026-10-07",
+      "locator": "DEC27/01/2026,p.3,arts.1–4"
+    }
+  },
+  {
+    "id": "legal-rn3-alcada2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "RN3/2026 — alçada art.63",
+    "type": "law",
+    "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=26478",
+    "source": "TCE-GO",
+    "provider": "TCE-GO",
+    "authors": [
+      "Tribunal de Contas do Estado de Goiás"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-tce"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito verificado; somente delivery:link",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=26478",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Corpo integral lido; aprovado12/02/2026 e DEC31 de20/02/2026, anterior ao corte; alçadaR$69.000,00 no exercício2026. Não confundir RN3 com Resolução3/2026 de setembro que altera Regimento."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-tce-lei-organica",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Arts.1–3; rodapépublicação20/02/2026"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "RN3/2026 — alçada art.63",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=26478",
+      "retrievedAt": "2026-10-07",
+      "locator": "Arts.1–3; rodapépublicação20/02/2026"
+    }
+  },
+  {
+    "id": "legal-rn2-sessao-virtual2020",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "RN2/2020 — julgamento em sessão virtual do TCE-GO",
+    "type": "law",
+    "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=12304",
+    "source": "TCE-GO",
+    "provider": "TCE-GO",
+    "authors": [
+      "Tribunal de Contas do Estado de Goiás"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-tce"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso gratuito verificado; somente delivery:link",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=12304",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Presença/autenticação e votos por certificação digital; pauta3dias úteis; relatórios/votos/duração por Presidência; alteração de divergência e novo voto; retirada e transferência ao presencial; encerramento/quórum/assinaturas; acesso para interessados. Remissões a portarias211/2020 e159/2022 ainda não usadas como prova de conteúdo."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-tce-regimento",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Arts.1–7"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "RN2/2020 — julgamento em sessão virtual do TCE-GO",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=12304",
+      "retrievedAt": "2026-10-07",
+      "locator": "Arts.1–7, corpo integral; publicaçãoDEC19/03/2020"
+    }
+  },
+  {
+    "id": "legal-ra14-2025-structure-current",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Resolução Administrativa 14/2025 — estrutura organizacional vigente",
+    "type": "law",
+    "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/25999?compilado=True",
+    "source": "TCE-GO",
+    "provider": "TCE-GO",
+    "authors": [
+      "Tribunal de Contas do Estado de Goiás"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-servidor"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito; somente link, sem autorização de reprodução",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/25999?compilado=True",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "O texto compilado define que a estrutura vigente e anexos I–II estão neste ato, enumera grupos institucionais e revoga explicitamente quatro atos anteriores. O portal institucional confirma que a RA14/2025, de 03/10/2025, rege a estrutura e aponta para o organograma vigente. O ato e o índice são fontes oficiais, não material pedagógico autoral. A leitura atual verificou o escopo estrutural e as cláusulas de vigência/revogação; não foi feita leitura integral de todas as competências dos anexos nem auditoria de cada ato residual relacionado, portanto a cobertura permanece parcial e a lacuna não é fechada."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-servidor-organizacao",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "arts.1–2 e revogações expressas; anexos I–II declarados integrantes; texto compilado"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "Resolução Administrativa 14/2025 — estrutura organizacional vigente",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/25999?compilado=True",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–2 e texto compilado; título e arts.1–2 lidos diretamente; revoga expressamente RA19/2022, RA15/2023, RA23/2024 e RA6/2025; anexos I–II integram o ato"
+    }
+  },
+  {
+    "id": "legal-tcego-integrity-framework-current-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Política de Integridade e atos de implementação vigentes — TCE-GO",
+    "type": "pdf",
+    "url": "https://portal.tce.go.gov.br/pilar-iv-gestao-da-integridade",
+    "source": "TCE-GO",
+    "provider": "TCE-GO",
+    "authors": [
+      "Tribunal de Contas do Estado de Goiás"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "leginst-servidor"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; acesso público gratuito; somente link",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://portal.tce.go.gov.br/pilar-iv-gestao-da-integridade",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "O índice oficial de Gestão da Integridade lista RA13/2024, Portaria58/2025 e Código de Ética alterado pela RA6/2026, além de materiais adicionais. A página não é por si só prova de conteúdo integral nem de acesso público ao Manual; este exige área interna e não foi usado como recurso. Novos atos foram identificados, mas falta conciliar a Portaria348/2026 com a política e inventariar as alterações atuais da Portaria58/2025; cobertura parcial e link-only."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-leginst-servidor-organizacao",
+        "role": "reference",
+        "extent": "partial",
+        "locator": "Tabela de normas e diretrizes da gestão de integridade"
+      }
+    ],
+    "provenance": {
+      "sourceType": "document",
+      "title": "Política de Integridade e atos de implementação vigentes — TCE-GO",
+      "url": "https://portal.tce.go.gov.br/pilar-iv-gestao-da-integridade",
+      "retrievedAt": "2026-10-08",
+      "locator": "índice oficial de normas: RA13/2024, Portaria58/2025, Manual, declaração antissuborno, RA6/2026 e cartilha"
+    }
+  },
+  {
+    "id": "legal-isaca-tokyo-cobit2019",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "COBIT 2019の概要 — visão geral do COBIT2019",
+    "type": "pdf",
+    "url": "https://www.isaca.gr.jp/standard/img/cobit_20191028.pdf",
+    "source": "ISACA Tokyo Chapter — Standards Committee",
+    "provider": "ISACA Tokyo Chapter — Standards Committee",
+    "authors": [
+      "Hiroyuki Tanaka (田中 浩之), CISA"
+    ],
+    "language": "ja",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "governanca-modelos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; apresentação pública oficial; somente link; não autoriza reprodução/tradução integral",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://www.isaca.gr.jp/standard/img/cobit_20191028.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Aula original do membro do comitê de normas, edição2019 explícita. Explica governança/gestão (p.5), seis princípios e implicações (20,27,33,38,42,44), sete componentes (28–32), cascata (21–22), cinco grupos/40 objetivos e mudanças (39–41), desenho adaptável (34–37,42–43,48–49) e CPM/capacidade0–5 (46–47). Algumas tabelas de mapeamento são figuras não inspecionadas; não se afirma ensino de cada prática dos40 objetivos nem equivalência ao livro integral. Candidato ao objetivo introdutório preservado, aguardando QA independente do mesmo hash; não contabilizado full."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-governanca-modelos-cobit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDF pp.5–6,20–22,27–49; subtópicos descritos na evidence"
+      }
+    ],
+    "provenance": {
+      "sourceType": "document",
+      "title": "COBIT 2019の概要 — visão geral do COBIT2019",
+      "url": "https://www.isaca.gr.jp/standard/img/cobit_20191028.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.5–6,20–22,27–49; corpo textual lido, sem inspeção visual das figuras"
+    }
+  },
+  {
+    "id": "legal-iti-docicp15-v4",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "DOC-ICP-15 v4.0 — Visão Geral sobre Assinaturas Digitais na ICP-Brasil",
+    "type": "law",
+    "url": "https://repositorio.iti.gov.br/resolucoes/Resolucao182_DOC-ICP-15.htm",
+    "source": "ITI / Comitê Gestor da ICP-Brasil",
+    "provider": "ITI / Comitê Gestor da ICP-Brasil",
+    "authors": [
+      "Comitê Gestor da ICP-Brasil"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "legti-normas-tce"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; documento normativo público; somente link",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://repositorio.iti.gov.br/resolucoes/Resolucao182_DOC-ICP-15.htm",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:01:52.000Z",
+      "evidence": "Corpo completo recuperado diretamente via HTML após falha do leitor web por tamanho; PDF gov.br retornou502 e não foi declarado lido. Ensina cadeia, certificados, assinatura, políticas, formatos, ciclo de validação/revalidação, LCR/OCSP e validade versus revogação, com Tdec/Tref e carimbo do tempo. Índices oficiais consultados08/10 listam Res182 em vigor e DOC15v4.0; texto estático2021, distinguido do checkedAt. Não cobre integralmente classificações/aceitação da Lei14.063 ou presunção/exceções do art.10 da MP2.200-2 em sistemas. Termo técnico advanced de6.4.1.1 não equivale à classificação legal brasileira. Candidato parcial; revisão legal independente pendente."
+    },
+    "coverage": [
+      {
+        "unitId": "unit-legti-normas-tce-certificacao",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§§2.1–2.2,4.1/4.4–4.8,6.1–6.6 e6.12–6.14"
+      }
+    ],
+    "provenance": {
+      "sourceType": "law",
+      "title": "DOC-ICP-15 v4.0 — Visão Geral sobre Assinaturas Digitais na ICP-Brasil",
+      "url": "https://repositorio.iti.gov.br/resolucoes/Resolucao182_DOC-ICP-15.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "HTML oficial: §§1–6.14 completos; sobretudo2.1–2.2,4.1/4.4–4.8,6.1–6.6 e6.12–6.14; paginação original pp.24–26 em6.12"
+    }
+  },
+  {
+    "id": "tech-rag-lewis-v4",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (v4)",
+    "type": "article",
+    "url": "https://arxiv.org/abs/2005.11401v4",
+    "source": "arXiv",
+    "provider": "arXiv",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandra Piktus",
+      "Fabio Petroni",
+      "Vladimir Karpukhin",
+      "Naman Goyal",
+      "Heinrich Küttler",
+      "Mike Lewis",
+      "Wen-tau Yih",
+      "Tim Rocktäschel",
+      "Sebastian Riedel",
+      "Douwe Kiela"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "ia-dados-rag-etica",
+      "ia-agentivos-ciclo-mcp"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T08:46:08.000Z",
+      "finalUrl": "https://arxiv.org/abs/2005.11401v4",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; reabertura de lacunas após QA independente",
+      "reviewedAt": "2026-10-08T18:17:33.000Z",
+      "evidence": "Resumo lido combina seq2seq paramétrico, índice vetorial denso Wikipedia e neural retriever; distingue passagens por sequência/token. Não aprova tutorial de implementação nem arquitetura universal de RAG."
+    },
+    "coverage": [
+      {
+        "unitId": "ia-dados-rag-etica-rag-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Abstract v4, 12/04/2021"
+      },
+      {
+        "unitId": "ia-agentivos-ciclo-mcp-rag-vetores-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Abstract v4, 12/04/2021"
+      }
+    ],
+    "provenance": {
+      "sourceType": "paper",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (v4)",
+      "url": "https://arxiv.org/abs/2005.11401v4",
+      "retrievedAt": "2026-10-07",
+      "locator": "Abstract v4, 12/04/2021"
+    }
+  },
+  {
+    "id": "tech-python-classes",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Python3.13: Classes",
+    "type": "docs",
+    "url": "https://docs.python.org/3.13/tutorial/classes.html",
+    "source": "Python Software Foundation",
+    "provider": "Python Software Foundation",
+    "authors": [
+      "Python documentation contributors"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "devsistemas-fundamentos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "Licença de reprodução específica não verificada nesta leitura; link externo",
+      "delivery": "link",
+      "evidenceUrl": "https://docs.python.org/3.13/tutorial/classes.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T08:59:42.819Z",
+      "finalUrl": "https://docs.python.org/3.13/tutorial/classes.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; reabertura de lacunas após QA independente",
+      "reviewedAt": "2026-10-08T18:17:33.000Z",
+      "evidence": "Classes/instâncias/métodos, herança e override polimórfico, convenção nonpublic e mangling lidos. Composição requer complemento explícito."
+    },
+    "coverage": [
+      {
+        "unitId": "devsistemas-fundamentos-oo-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§9.3, §9.5–9.6"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Python3.13: Classes",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "§9.3, §9.5–9.6"
+    }
+  },
+  {
+    "id": "expanded-sedu-passiva",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "RPE Língua Portuguesa 8º ano, quinzena12/2025: voz passiva",
+    "type": "course",
+    "url": "https://curriculo.sedu.es.gov.br/curriculo/wp-content/uploads/2025/06/RPE_LP_8_Q_12_08_05_25.pdf",
+    "source": "Secretaria da Educação do Espírito Santo",
+    "provider": "Secretaria da Educação do Espírito Santo",
+    "authors": [
+      "SEDU-ES"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "lp-morfossintaxe",
+      "lp-texto"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://curriculo.sedu.es.gov.br/curriculo/wp-content/uploads/2025/06/RPE_LP_8_Q_12_08_05_25.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura das regras analítica/sintética, auxiliar/particípio/agente e exemplos. P.4 diálogo atribui inadequadamente recepção da ação aos estudantes; excluído do recorte aprovado. Tópico inclui também flexão/correlação de tempos e voz reflexiva, não completos neste recurso. Apenas link; crédito de fontes incluídas preservado."
+    },
+    "coverage": [
+      {
+        "unitId": "lp-morfossintaxe-flexoes-vozes-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.5–8 explicação e exemplos de passiva; pp.10–14 atividades; p.11 D021_P"
+      },
+      {
+        "unitId": "lp-texto-leitura-generos-contexto-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.5–8 explicação e exemplos de passiva; pp.10–14 atividades; p.11 D021_P"
+      }
+    ],
+    "provenance": {
+      "sourceType": "lesson",
+      "title": "RPE Língua Portuguesa 8º ano, quinzena12/2025: voz passiva",
+      "url": "https://curriculo.sedu.es.gov.br/curriculo/wp-content/uploads/2025/06/RPE_LP_8_Q_12_08_05_25.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "pp.5–8 explicação e exemplos de passiva; pp.10–14 atividades; p.11 D021_P"
+    }
+  },
+  {
+    "id": "expanded-openstax-fractions45",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Prealgebra 2e: Add and Subtract Fractions with Different Denominators",
+    "type": "book",
+    "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators",
+    "source": "OpenStax / Rice University",
+    "provider": "OpenStax / Rice University",
+    "authors": [
+      "Lynn Marecek",
+      "MaryAnne Anthony-Smith",
+      "Andrea Honeycutt Mathis"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "mrl-aritmetica"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Texto/equações e exemplos lidos. Ensina conversão para denominador comum e resumo de quatro operações; ainda não conferidos integralmente outros capítulos sobre representação/simplificação."
+    },
+    "coverage": [
+      {
+        "unitId": "mrl-aritmetica-fracoes-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§4.5: LCD, equivalent fractions, summary of four operations, examples4.63–4.74"
+      },
+      {
+        "unitId": "mrl-aritmetica-multiplos-divisores-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§4.5: LCD, equivalent fractions, summary of four operations, examples4.63–4.74"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Prealgebra 2e: Add and Subtract Fractions with Different Denominators",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators",
+      "retrievedAt": "2026-10-07",
+      "locator": "§4.5: LCD, equivalent fractions, summary of four operations, examples4.63–4.74"
+    }
+  },
+  {
+    "id": "expanded-gnu-bash-stable",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "GNU Bash Reference Manual 5.3 — Basic Shell Features",
+    "type": "docs",
+    "url": "https://www.gnu.org/s/bash/manual/bash.html",
+    "source": "GNU Project / Free Software Foundation",
+    "provider": "GNU Project / Free Software Foundation",
+    "authors": [
+      "Chet Ramey and GNU Bash maintainers"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-os-shell"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "GNU Free Documentation License; link-only; no content reproduced",
+      "delivery": "link",
+      "evidenceUrl": "https://www.gnu.org/s/bash/manual/bash.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://www.gnu.org/s/bash/manual/bash.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "The official GNU manual landing page identifies edition 5.3, dated 18 May 2025. Targeted queries against the official GNU section pages returned the body of §3.6 (stdin/stdout/stderr, file-descriptor duplication, redirection order and examples), §§3.2.5.1–2 (for/while/until, if/case, break/continue), §3.8 shell scripts, and §3.4 positional/special parameters. Direct page fetch and PDF fetch timed out in this environment; the page is free and official, but the content-check method is recorded as indexed section text plus verified manual TOC, not a successful full-page HTTP read. Covers Bash portion only; must pair with PowerShell source."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-os-shell-shell-powershell-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "GNU Bash Reference Manual 5.3, §§3.2.2–3.2.5,3.4–3.6,3.8"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "GNU Bash Reference Manual 5.3 — Basic Shell Features",
+      "url": "https://www.gnu.org/s/bash/manual/bash.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Edition 5.3 (18/05/2025): §§3.2.2–3.2.5 commands/pipelines/conditions/loops; §§3.4–3.5 shell parameters/variables; §3.6 redirections; §3.8 shell scripts"
+    }
+  },
+  {
+    "id": "expanded-cnp3-dns",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Computer Networking: Principles, Protocols and Practice — DNS",
+    "type": "book",
+    "url": "https://beta.computer-networking.info/syllabus/default/protocols/dns.html",
+    "source": "CNP3 / Université catholique de Louvain",
+    "provider": "CNP3 / Université catholique de Louvain",
+    "authors": [
+      "Olivier Bonaventure",
+      "Quentin De Coninck",
+      "colaboradores CNP3"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-3.0 (preface)",
+      "delivery": "link",
+      "evidenceUrl": "https://beta.computer-networking.info/syllabus/default/protocols/dns.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://beta.computer-networking.info/syllabus/default/protocols/dns.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Recorte lido ensina DNS e exemplos de registros; não cobre conjuntamente pilha TCP/IP, subnetting ou DHCP. Dados históricos de exemplos não servem como consultas DNS atuais."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "DNS: campos QR/AA/RD/RA, TTL, A/AAAA/CNAME/PTR"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — DNS",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/dns.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "DNS: mensagens/campos, autoridade/recursão, TTL e registros A/AAAA/CNAME/PTR"
+    }
+  },
+  {
+    "id": "expanded-cnp3-http2",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Computer Networking: Principles, Protocols and Practice — Making HTTP faster",
+    "type": "book",
+    "url": "https://beta.computer-networking.info/syllabus/default/protocols/http2.html",
+    "source": "CNP3 / Université catholique de Louvain",
+    "provider": "CNP3 / Université catholique de Louvain",
+    "authors": [
+      "Olivier Bonaventure",
+      "Quentin De Coninck",
+      "colaboradores CNP3"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos",
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-3.0 (preface)",
+      "delivery": "link",
+      "evidenceUrl": "https://beta.computer-networking.info/syllabus/default/protocols/http2.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://beta.computer-networking.info/syllabus/default/protocols/http2.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Recortes lidos ensinam cache/proxy e multiplexação; estatísticas antigas e mecanismos herdados não aprovados como estado atual. Não cobre HTTP/3, TLS integral, health checks ou firewalls."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-http-https-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "HTTP/2 frames, streams e multiplexação"
+      },
+      {
+        "unitId": "redes-protocolos-smtp-ftp-ssh-vpn-proxy-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Proxies e reverse proxies"
+      },
+      {
+        "unitId": "nuvem-arquitetura-balanceamento-firewalls-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Serving content from multiple servers; reverse proxies"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — Making HTTP faster",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/http2.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Caches/proxies/reverse proxies e distribuição; HTTP/2 frames/streams/settings"
+    }
+  },
+  {
+    "id": "expanded-obmep-fracoes",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Frações e Suas Operações — 6º ano",
+    "type": "book",
+    "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/8adw8gkagd8gk.pdf",
+    "source": "IMPA / OBMEP",
+    "provider": "IMPA / OBMEP",
+    "authors": [
+      "Francisco Bruno Holanda",
+      "Antonio Caminha Muniz Neto (revisão)"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "mrl-aritmetica"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/8adw8gkagd8gk.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Lidas todas as 6 páginas. §§1–4 ensinam fração como parte de total, numerador/denominador, equivalência, simplificação pelo MDC, adição/subtração com denominadores iguais/diferentes, multiplicação/divisão pelo inverso e exemplos resolvidos; contextualização por pizza/bombons. Escopo de frações positivas do texto: divisão somente por fração não nula. Excluir frase que chama N de conjunto dos inteiros; a definição inicial usa naturais. História/conjecturas §5 não são evidência de vigência matemática atual. Partial isoladamente: restringe operações a frações positivas e subtrações sem resultado negativo; o objetivo original não foi reduzido. OpenStax §§4.1,4.2,4.5 cobre também sinais e restrições da divisão."
+    },
+    "coverage": [
+      {
+        "unitId": "mrl-aritmetica-fracoes-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§§1–4; excluir frase incorreta sobre N"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Frações e Suas Operações — 6º ano",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/8adw8gkagd8gk.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF integral de 6 páginas; §§1–4"
+    }
+  },
+  {
+    "id": "expanded-obmep-regra3",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Regra de Três Simples e Composta (25/02/2025)",
+    "type": "book",
+    "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/d9k71v53ba8k0.pdf",
+    "source": "IMPA / OBMEP",
+    "provider": "IMPA / OBMEP",
+    "authors": [
+      "Francisco Bruno Holanda",
+      "Antonio Caminha Muniz Neto (revisão)"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "mrl-proporcoes"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/d9k71v53ba8k0.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Lidas todas as 9 páginas: relações direta/inversa e esquemas de regra de três simples/composta. Excluir exemplo 2: cálculo 12,5 dias, mas conclusão verbal diz treze dias e meio. Partial porque não ensina repartir um total em partes diretamente proporcionais; não reduzir esse objetivo original."
+    },
+    "coverage": [
+      {
+        "unitId": "mrl-proporcoes-razoes-divisao-regra-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§1 exemplo 1 e §2 exemplos 3–4; excluir exemplo 2"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Regra de Três Simples e Composta (25/02/2025)",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/d9k71v53ba8k0.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF integral de 9 páginas; §§1–2, exemplos 1,3,4"
+    }
+  },
+  {
+    "id": "expanded-cert-cartilha2012",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Cartilha de Segurança para Internet — versão 4.0, 2ª edição (2012)",
+    "type": "docs",
+    "url": "https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf",
+    "source": "CERT.br / NIC.br / CGI.br",
+    "provider": "CERT.br / NIC.br / CGI.br",
+    "authors": [
+      "Equipe CERT.br"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "seguranca-aplicacoes-continuidade"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-NC-ND-3.0-BR — PDF pp.2 e7; distinta da licença atual dos fascículos",
+      "delivery": "link",
+      "evidenceUrl": "https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "PDF temporário lido nos recortes indicados, incluindo continuação dos parágrafos. Ensina engenharia social/phishing, vetores, tipos, prevenção, limites antimalware e resposta inicial. Partial isoladamente: ransomware não está nesse capítulo histórico, IDS/IPS e pentest não cobertos. Excluir lista de fornecedores/sites, prevalência de vetores em2012, configurações genéricas allow-all saída e garantias de firewall contra malware; não usar procedimentos antigos como política universal atual."
+    },
+    "coverage": [
+      {
+        "unitId": "seguranca-aplicacoes-continuidade-malware-engenharia-social-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Cap.2,cap.4,§7.2,§12.2"
+      },
+      {
+        "unitId": "seguranca-aplicacoes-continuidade-defesas-testes-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§§7.7–7.8"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Cartilha de Segurança para Internet — versão 4.0, 2ª edição (2012)",
+      "url": "https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "Cap.2 pp.5–16; cap.4 pp.23–30; §§7.2,7.7–7.8 pp.50–51,55–57; §12.2 pp.99–100 (páginas impressas)"
+    }
+  },
+  {
+    "id": "expanded-cecierj-lp-unidade2",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "CEJA Língua Portuguesa e Literatura — Unidade2, Linguagem, cultura e variação linguística (edição revisada2016)",
+    "type": "book",
+    "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_2.pdf",
+    "source": "Fundação CECIERJ / Rede CEJA",
+    "provider": "Fundação CECIERJ / Rede CEJA",
+    "authors": [
+      "Alvana Boff",
+      "Ana Lucia Buogo",
+      "Edna Maria Santana Magalhães",
+      "Julia Fernandes Lopes",
+      "Maria Antonieta Antunes Cunha"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "lp-texto",
+      "lp-morfossintaxe",
+      "lp-sintaxe-redacao"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_2.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "PDF público baixado/lido sem matrícula; as instruções de login na introdução referem-se ao AVA, não ao acesso ao PDF. Recorte ensina adequação de registro, localização de informação literal, sintaxe de frase/oração/período, ordem dos constituintes, sujeito/predicado e exercícios. Partial: não ler cobertura integral de gêneros/contexto, morfemas/formação, classificação de coordenação/subordinação ou reescrita equivalente apenas desses exemplos."
+    },
+    "coverage": [
+      {
+        "unitId": "lp-texto-leitura-generos-contexto-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.52–53 texto Norma Culta e atividades"
+      },
+      {
+        "unitId": "lp-morfossintaxe-estrutura-palavras-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§4 pp.54–58 sujeito/predicado"
+      },
+      {
+        "unitId": "lp-sintaxe-redacao-periodos-conectivos-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.55–56 frase/oração/período; não classifica relações entre orações"
+      },
+      {
+        "unitId": "lp-sintaxe-redacao-reescrita-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "pp.54–55 alteração da ordem dos constituintes"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "CEJA Língua Portuguesa e Literatura — Unidade2, Linguagem, cultura e variação linguística (edição revisada2016)",
+      "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_2.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "pp.52–58 impressas (PDF22–28): norma/registro; informação textual; §4 frase/oração/período/sujeito/predicado e atividades"
+    }
+  },
+  {
+    "id": "expanded-cecierj-fasciculo10-conectores",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Língua Portuguesa — Fascículo10, Unidade24: conjunções coordenativas (recorte parcial)",
+    "type": "book",
+    "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/fundamental/lingua_portuguesa/ceja_fundamental_lingua_portuguesa_fasciculo_10.pdf",
+    "source": "Fundação CECIERJ / Rede CEJA",
+    "provider": "Fundação CECIERJ / Rede CEJA",
+    "authors": [
+      "Amadeu da Silva Ferreira",
+      "Claudia Miranda",
+      "Livia Salomão"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "lp-sintaxe-redacao"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; copyright e reprodução mediante autorização escrita",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/fundamental/lingua_portuguesa/ceja_fundamental_lingua_portuguesa_fasciculo_10.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root/integration_qa (independent content review)",
+      "reviewedAt": "2026-10-07T00:00:00.000Z",
+      "evidence": "Leitura direta do PDF e revisão independente. O recorte restrito cobre somente três tipos coordenativos com exemplos. O restante da unidade contém classificações inadequadas: 'por fim' como conclusiva, 'na verdade' como explicativa, exemplo causal com porque listado como explicativo e gabarito que chama quando de atemporal. A página de direitos exige autorização escrita para reprodução; somente link externo."
+    },
+    "coverage": [
+      {
+        "unitId": "lp-sintaxe-redacao-periodos-conectivos-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Unidade24 p.52 impressa/PDF p.51 até o início da p.53: conjunções aditivas, adversativas e alternativas, efeitos e exemplos; não usar categorias posteriores do fascículo."
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Língua Portuguesa — Fascículo10, Unidade24: conjunções coordenativas (recorte parcial)",
+      "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/fundamental/lingua_portuguesa/ceja_fundamental_lingua_portuguesa_fasciculo_10.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "Unidade24, p.52 impressa (PDF p.51) até o início da p.53: conjunções coordenativas aditivas, adversativas e alternativas, efeitos semânticos e exemplos. Excluir as classificações de p.53 em diante; QA identificou erros em outras categorias."
+    }
+  },
+  {
+    "id": "expanded-cecierj-lp-unidade23-pronomes",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Língua Portuguesa e Literatura — Fascículo 9, Unidade 23: classes de palavras e morfossintaxe (edição revisada 2016)",
+    "type": "book",
+    "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_23.pdf",
+    "source": "Fundação CECIERJ / Rede CEJA",
+    "provider": "Fundação CECIERJ / Rede CEJA",
+    "authors": [
+      "Edna Maria Santana Magalhães",
+      "Julia Fernandes Lopes",
+      "Marco Antonio Casanova",
+      "Monica P. Casanova",
+      "Silvana dos Santos Ambrosoli"
+    ],
+    "language": "pt-BR",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "lp-morfossintaxe"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-07T00:00:00.000Z",
+      "finalUrl": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_23.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root/integration_qa (independent content review)",
+      "reviewedAt": "2026-10-07T00:00:00.000Z",
+      "evidence": "Leitura direta do PDF de46 páginas, sem login; o front matter identifica Fundação CECIERJ, autores e edição revisada2016. QA independente: exemplos pontuais (sua/ela, nós, eles/minha/meu) e distinção entre pronome substitutivo e pronome junto ao substantivo, seguida de uso como sujeito/adjunto adnominal. Não apresenta classificação sistemática das classes/referentes nem emprego contextual abrangente; portanto somente referência partial para o objetivo de pronomes. Sem identificação de licença de reprodução nesta inspeção; apenas link externo. Não ensina morfemas, afixos ou processos de formação de palavras e não cobre a unidade de estrutura vocabular."
+    },
+    "coverage": [
+      {
+        "unitId": "lp-morfossintaxe-pronomes-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "PDF pp.20–23 impressas21–24; PDF p.29 impressa30"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Língua Portuguesa e Literatura — Fascículo 9, Unidade 23: classes de palavras e morfossintaxe (edição revisada 2016)",
+      "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_23.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "Unidade23: PDF pp.20–23 impressas21–24 (classes e exercícios de identificação pronominal); PDF p.29 impressa30 (função sintática de pronomes substitutivos/adjuntos adnominais); edição revisada2016, PDF p.1"
+    }
+  },
+  {
+    "id": "expanded-textbookoflinux-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Textbook of Linux: kernel, shell, filesystem, accounts, processes and observability",
+    "type": "book",
+    "url": "https://www.textbookoflinux.com/",
+    "source": "Textbook of Linux (author-published open-access textbook)",
+    "provider": "Textbook of Linux (author-published open-access textbook)",
+    "authors": [
+      "Chris Paton"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-os-shell"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://www.textbookoflinux.com/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura direta dos capítulos focalizados: arquitetura/kernel e função introdutória de memória; FHS, shell, arquivos/diretórios, usuários/grupos, modos de permissão, processos, sinais e job control; cap.19 ensina leitura de free/top/vmstat e /proc/meminfo. A página oferece texto aberto sem login, identifica Dr Chris Paton e lista 92 referências. Ainda é candidato parcial: capítulo 3 reduz memória virtual a visão geral; cap.19 é principalmente diagnóstico; uma afirmação sobre si/so como sinal de falta de RAM e simplificações de kernel requerem revisão técnica. O perfil acadêmico público do autor é de informática em saúde, não de engenharia do kernel. Licença do livro não identificada; apenas link. Sem QA independente."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-os-shell-linux-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Ch.3 §§What a Kernel Does/User Space and Kernel Space; Ch.4; Ch.5–6; Ch.9–10; Ch.19 §Memory: free, vmstat, /proc/meminfo"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Textbook of Linux: kernel, shell, filesystem, accounts, processes and observability",
+      "url": "https://www.textbookoflinux.com/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Ch.3 The Linux Kernel §§What a Kernel Does, User Space/Kernel Space, Boot Process and /proc; Ch.4 Filesystem Hierarchy; Ch.5 The Shell; Ch.6 Files, Directories and Pathnames; Ch.9 Users, Groups and Permissions; Ch.10 Processes and Job Control; Ch.19 Performance and Observability §§Memory: free, vmstat, /proc/meminfo"
+    }
+  },
+  {
+    "id": "expanded-openstax-memory-files-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Introduction to Computer Science: Memory Management and File Systems",
+    "type": "other",
+    "url": "https://openstax.org/books/introduction-computer-science/pages/6-4-memory-management",
+    "source": "OpenStax / Rice University",
+    "provider": "OpenStax / Rice University",
+    "authors": [
+      "Jean-Claude Franchitti"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-os-shell"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-NC-SA-4.0",
+      "delivery": "link",
+      "evidenceUrl": "https://openstax.org/books/introduction-computer-science/pages/6-4-memory-management"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://openstax.org/books/introduction-computer-science/pages/6-4-memory-management",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura direta: §6.4 apresenta objetivos, isolamento, memória virtual/física, mapeamento por páginas, demanda, page faults, page replacement, swap e thrashing; §6.5 apresenta arquivos/diretórios, hierarquia, inodes, dispositivos e interface do sistema de arquivos com exemplos Linux/Unix. Livro publicado em 2024 e acesso gratuito; licença CC BY-NC-SA confirmada na própria página. Serve como apoio conceitual de memória e arquivos, não ensina administração operacional Linux, processos/comandos nem permissões. Revisão técnica necessária: §6.4 define page fault de modo estreito como referência a página no backing store, embora page fault também possa ocorrer por página válida ausente ou outras condições; além disso, usa heap no sentido de estrutura de dados em trecho sobre alocação dinâmica. Link externo; não incorporar ou redistribuir sem cumprir CC BY-NC-SA e checar limites de uso."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-os-shell-linux-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§§6.4 (virtual memory, demand paging, page replacement, swap, thrashing) and 6.5 (Linux/Unix files, directories, inodes, filesystem interface)"
+      }
+    ],
+    "provenance": {
+      "sourceType": "textbook",
+      "title": "Introduction to Computer Science: Memory Management and File Systems",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/6-4-memory-management",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction to Computer Science, §§6.4 (memory management) and 6.5 (file systems)"
+    }
+  },
+  {
+    "id": "expanded-ms-server-admin-storage-perf-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Windows Server administration: performance and file server/storage learning paths",
+    "type": "docs",
+    "url": "https://learn.microsoft.com/en-us/training/paths/windows-server-file-servers-storage-management/",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-os-shell"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/paths/windows-server-file-servers-storage-management/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Percurso oficial gratuito Microsoft Learn sobre funções de servidor de arquivos, NTFS/ReFS, permissões/configuração e gerenciamento de armazenamento; módulo de desempenho ensina PerfMon, Resource Monitor e análise de CPU/memória/disco/processos. Nível intermediário com pré-requisitos, orientado a Windows Server; não cobre sozinho todos os objetivos introdutórios da unidade."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-os-shell-windows-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Manage Windows Server file servers (NTFS/ReFS, FSRM, SMB, VSS); Monitor Windows Server performance (Performance Monitor, Resource Monitor, baselines)"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Windows Server administration: performance and file server/storage learning paths",
+      "url": "https://learn.microsoft.com/en-us/training/paths/windows-server-file-servers-storage-management/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Manage Windows Server file servers (NTFS/ReFS, FSRM, SMB, VSS); Monitor Windows Server performance (Performance Monitor, Resource Monitor, baselines)"
+    }
+  },
+  {
+    "id": "expanded-wfa-wifi-certified-wpa3-sample-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Wi-Fi CERTIFIED public certificate, variant 133585",
+    "type": "other",
+    "url": "https://api.cert.wi-fi.org/api/certificate/download/public?variantId=133585",
+    "source": "Wi-Fi Alliance certification database",
+    "provider": "Wi-Fi Alliance certification database",
+    "authors": [
+      "Wi-Fi Alliance"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://api.cert.wi-fi.org/api/certificate/download/public?variantId=133585",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Public certification record confirms this specific device is certified with WPA3-Personal 2022-06, WPA3-Enterprise 2022-12, PMF and 6 GHz support. It demonstrates implementation/certification capability, not a universal standard, full conformance requirements, or conceptual teaching. Candidate supporting evidence only; link externally and do not reproduce without rights review."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-sem-fio-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "product-specific WPA3/PMF/6 GHz feature list"
+      }
+    ],
+    "provenance": {
+      "sourceType": "technical-reference",
+      "title": "Wi-Fi CERTIFIED public certificate, variant 133585",
+      "url": "https://api.cert.wi-fi.org/api/certificate/download/public?variantId=133585",
+      "retrievedAt": "2026-10-08",
+      "locator": "Certificate downloaded 2026-05-07; WPA3-Personal 2022-06, WPA3-Enterprise 2022-12, Protected Management Frames and 6 GHz capabilities"
+    }
+  },
+  {
+    "id": "expanded-cnp3-reference-models-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Computer Networking: Principles, Protocols and Practice — Reference models",
+    "type": "book",
+    "url": "https://beta.computer-networking.info/syllabus/default/principles/referencemodels.html",
+    "source": "CNP3 / Université catholique de Louvain",
+    "provider": "CNP3 / Université catholique de Louvain",
+    "authors": [
+      "Olivier Bonaventure",
+      "Quentin De Coninck",
+      "colaboradores CNP3"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-3.0 (preface)",
+      "delivery": "link",
+      "evidenceUrl": "https://beta.computer-networking.info/syllabus/default/principles/referencemodels.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://beta.computer-networking.info/syllabus/default/principles/referencemodels.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura direta: explica cinco camadas para fins pedagógicos e explicita que o modelo TCP/IP indicado pelo RFC 1122 contém Application, Transport, Internet e Link (agregando funções de físico/enlace no modelo de cinco camadas). Dá definições do que cada camada transporta (bits, frames, packets, segments, SDUs). Livro didático; cobre a pilha conceitualmente, mas não endereços/sub-redes/DNS/DHCP. CC BY 3.0 no prefácio; link externo."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "The five layers reference model / The TCP/IP reference model"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — Reference models",
+      "url": "https://beta.computer-networking.info/syllabus/default/principles/referencemodels.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "The five layers reference model and The TCP/IP reference model; bits/frames/packets/segments and four-layer TCP/IP mapping"
+    }
+  },
+  {
+    "id": "expanded-cnp3-ipv6-addressing-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Computer Networking: Principles, Protocols and Practice — IPv6 addressing and subnet",
+    "type": "book",
+    "url": "https://beta.computer-networking.info/syllabus/default/protocols/ipv6.html",
+    "source": "CNP3 / Université catholique de Louvain",
+    "provider": "CNP3 / Université catholique de Louvain",
+    "authors": [
+      "Olivier Bonaventure",
+      "Quentin De Coninck",
+      "colaboradores CNP3"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "CC-BY-3.0 (preface)",
+      "delivery": "link",
+      "evidenceUrl": "https://beta.computer-networking.info/syllabus/default/protocols/ipv6.html"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://beta.computer-networking.info/syllabus/default/protocols/ipv6.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura direta: explica IPv6 de 128 bits, escrita hexadecimal/compressão ::, prefixos address/length, hierarquia global/subnet/interface e divisão de prefixos em subnets. Limites factuais: texto generaliza o uso de /64 e derivação via MAC, cita RFCs obsoletos (RFC 3315/3736/6106) e descreve incorretamente detalhes do DHCPv6 (como máscara IPv4); não usar essas partes como estado atual. O recorte inscrito cobre apenas representação/prefixos e subnetting conceitual; exige revisão técnica antes de uso editorial."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "IPv6 addressing architecture, prefix notation and subnet examples; excludes DHCPv6 material"
+      }
+    ],
+    "provenance": {
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — IPv6 addressing and subnet",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/ipv6.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "IPv6 address representation/prefix notation and hierarchical subnet allocation; exclude DHCPv6 paragraphs at lines 533–537 pending correction/review"
+    }
+  },
+  {
+    "id": "expanded-ms-dhcp-overview-2025",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "What is Dynamic Host Configuration Protocol (DHCP) Server in Windows Server?",
+    "type": "docs",
+    "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; curadoria corretiva após QA independente",
+      "reviewedAt": "2026-10-08T18:31:49.000Z",
+      "evidence": "Leitura direta de documentação aplicável a Windows Server 2016/2019/2022/2025: define DHCP como cliente-servidor; explica leases, pools/exclusions/reservations, opções de gateway e DNS, relay e integração DHCPv4/v6. É orientação Windows Server; não aprofunda o ciclo DHCPDISCOVER/OFFER/REQUEST/ACK nem mecanismos stateful/stateless do DHCPv6. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "DHCP purpose, lease/pool/options, relay and versions"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "What is Dynamic Host Configuration Protocol (DHCP) Server in Windows Server?",
+      "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+      "retrievedAt": "2026-10-08",
+      "locator": "Last updated 2025-05-13; lines 33–53 DHCP purpose, client/server, leases, address pools and assigned options; lines 69–84 relay and dual-stack integration"
+    }
+  },
+  {
+    "id": "expanded-ms-hyperv-architecture-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Hyper-V Architecture",
+    "type": "docs",
+    "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/architecture",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/architecture",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: define o hypervisor como camada entre hardware e sistemas operacionais, responsável por criar ambientes isolados e arbitrar o acesso ao hardware. Explica partições raiz/filhas, SOs convidados, recursos virtuais e mediação de acesso a memória/dispositivos. É arquitetura específica do Hyper-V; não generalizar os detalhes como implementação universal de todos os hipervisores. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Hypervisor glossary; root/child partitions; interrupt and memory handling"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Hyper-V Architecture",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/architecture",
+      "retrievedAt": "2026-10-08",
+      "locator": "Hypervisor glossary; root and child partitions; interrupt and memory handling; applies to Windows Server 2016–2025 and Windows 10/11"
+    }
+  },
+  {
+    "id": "expanded-docker-engine-security-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Docker Engine security",
+    "type": "docs",
+    "url": "https://docs.docker.com/engine/security/",
+    "source": "Docker Documentation",
+    "provider": "Docker Documentation",
+    "authors": [
+      "Docker documentation team"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://docs.docker.com/engine/security/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: execução de container cria namespaces e control groups; namespaces isolam visibilidade de processos e pilhas de rede. A documentação adverte que capabilities e mounts padrão/configurados podem fornecer isolamento incompleto, por si ou em combinação com vulnerabilidades do kernel. Fonte específica de Docker/Linux, não ensina por si só todos os mecanismos do kernel nem assegura isolamento absoluto. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Kernel namespaces, cgroups, process/network isolation and configuration/kernel risk"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Docker Engine security",
+      "url": "https://docs.docker.com/engine/security/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Security areas; Kernel namespaces; capability risk and configuration; lines 30–39 and 78–80 in checked rendering"
+    }
+  },
+  {
+    "id": "expanded-ms-containers-vms-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Containers vs. virtual machines",
+    "type": "docs",
+    "url": "https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: compara VM com sistema operacional completo/kernel próprio e container executando a porção user-mode sobre kernel do host; indica containers como isolamento mais leve e, em regra, fronteira de segurança menos forte que VM, com opção de Hyper-V isolation. Trata de Windows containers; seus pormenores de compatibilidade são específicos da plataforma. A formulação “complete isolation” da tabela deve ser ensinada como comparação arquitetural da fonte, sem prometer invulnerabilidade. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "VM/container architecture and isolation comparison; Windows-specific context"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Containers vs. virtual machines",
+      "url": "https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Virtual machine architecture; Containers vs. virtual machines comparison table, especially isolation and operating-system rows"
+    }
+  },
+  {
+    "id": "expanded-nist-container-security-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "SP 800-190, Application Container Security Guide",
+    "type": "other",
+    "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+    "source": "NIST Computer Security Resource Center",
+    "provider": "NIST Computer Security Resource Center",
+    "authors": [
+      "Murugiah Souppaya",
+      "John Morello",
+      "Karen Scarfone"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura da página oficial e resumo: define containers como virtualização de sistema operacional combinada ao empacotamento de aplicações e anuncia análise de preocupações de segurança e recomendações. A página consultada não foi suficiente para validar recortes específicos de ameaças; registrar apenas como enquadramento de segurança, sem atribuir ao NIST uma frase detalhada sobre kernel compartilhado neste registro. Publicação técnica de 2017; conferir idade/escopo na revisão. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Abstract: OS virtualization, packaging, security concerns and recommendations"
+      }
+    ],
+    "provenance": {
+      "sourceType": "government_guide",
+      "title": "SP 800-190, Application Container Security Guide",
+      "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "retrievedAt": "2026-10-08",
+      "locator": "Final publication page, abstract and document history; publication dated September 2017"
+    }
+  },
+  {
+    "id": "expanded-nist-full-virtualization-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "SP 800-125, Guide to Security for Full Virtualization Technologies",
+    "type": "other",
+    "url": "https://csrc.nist.gov/pubs/sp/800/125/final",
+    "source": "NIST Computer Security Resource Center",
+    "provider": "NIST Computer Security Resource Center",
+    "authors": [
+      "Karen Scarfone",
+      "Murugiah Souppaya",
+      "Paul Hoffman"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "sistemas-diretorios"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://csrc.nist.gov/pubs/sp/800/125/final",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura da página oficial: descreve virtualização completa como execução de um ou mais sistemas operacionais/aplicações sobre hardware virtual e delimita guia de riscos e recomendações de segurança. A publicação é de 2011; usar apenas para fundamentos conceituais após revisão contra documentos mais recentes, sem tratar suas recomendações operacionais como atuais por padrão. Página consultada não permite afirmar que todo o conteúdo do PDF foi revisado nesta etapa. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "sistemas-diretorios-virtualizacao-containers-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Abstract: guest OS/application on virtual hardware; security scope"
+      }
+    ],
+    "provenance": {
+      "sourceType": "government_guide",
+      "title": "SP 800-125, Guide to Security for Full Virtualization Technologies",
+      "url": "https://csrc.nist.gov/pubs/sp/800/125/final",
+      "retrievedAt": "2026-10-08",
+      "locator": "Final publication page and abstract; January 2011; related publications SP 800-125A Rev.1 and SP 800-125B"
+    }
+  },
+  {
+    "id": "expanded-aws-serverless-concepts-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "What is Serverless Computing?",
+    "type": "docs",
+    "url": "https://aws.amazon.com/what-is/serverless-computing/",
+    "source": "Amazon Web Services",
+    "provider": "Amazon Web Services",
+    "authors": [
+      "Amazon Web Services"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://aws.amazon.com/what-is/serverless-computing/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: descreve infraestrutura gerenciada pelo provedor e tarefas rotineiras abstraídas; caracteriza arquitetura orientada a eventos com serviços desacoplados que publicam/consomem/roteiam mensagens; distingue FaaS (código próprio acionado por função) e BaaS (backend acessado por APIs) e enuncia modelo compartilhado de segurança. Fonte conceitual oficial AWS, com exemplos e serviços próprios; não generalizar detalhes, preços ou comportamento de escala como universais. Não há atividade executada nesta etapa. Link externo, licença de reprodução não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "nuvem-arquitetura-modelos-serverless-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Definition; event-driven architecture; FaaS/BaaS; shared security model"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "What is Serverless Computing?",
+      "url": "https://aws.amazon.com/what-is/serverless-computing/",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is serverless computing?; How does serverless architecture work?; FaaS/BaaS; shared security model; lines 46–53, 84–90, 103–115 and 130–135 in checked rendering"
+    }
+  },
+  {
+    "id": "expanded-rfc4632-cidr-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "RFC 4632: Classless Inter-domain Routing (CIDR): The Internet Address Assignment and Aggregation Plan",
+    "type": "other",
+    "url": "https://www.rfc-editor.org/info/rfc4632/",
+    "source": "IETF / RFC Editor",
+    "provider": "IETF / RFC Editor",
+    "authors": [
+      "Vince Fuller",
+      "Tony Li"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "RFC 78 rights and restrictions; link-only",
+      "delivery": "link",
+      "evidenceUrl": "https://www.rfc-editor.org/info/rfc4632/"
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://www.rfc-editor.org/info/rfc4632/",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: BCP 122 formaliza prefixos CIDR para IPv4 32-bit, separação dos bits de prefixo/host e notação decimal /0–/32; RFC declara que classe A/B/C foi substituída por endereçamento classless e explica agregação. Documento normativo/informativo técnico, não tutorial de cálculo de sub-rede ou de intervalos de hosts; texto de 2006, usar sua definição estável, não estatísticas históricas. Direitos regidos por BCP 78; link-only."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "§3.1 prefix notation and CIDR examples"
+      }
+    ],
+    "provenance": {
+      "sourceType": "standard",
+      "title": "RFC 4632: Classless Inter-domain Routing (CIDR): The Internet Address Assignment and Aggregation Plan",
+      "url": "https://www.rfc-editor.org/info/rfc4632/",
+      "retrievedAt": "2026-10-08",
+      "locator": "§3 Classless Addressing as a Solution; §3.1 Basic Concept and Prefix Notation, printed pp.4–6; examples /16 and /24"
+    }
+  },
+  {
+    "id": "expanded-cisco-ipv4-subnet-vlsm-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Configure IP Addresses and Unique Subnets for New Users",
+    "type": "other",
+    "url": "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html",
+    "source": "Cisco Support",
+    "provider": "Cisco Support",
+    "authors": [
+      "Cisco documentation team"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta de exemplos de desenho de sub-redes: identifica requisito por hosts, compara máscaras e mostra VLSM com prefixos /28, /27 e /30. O material usa linguagem “Class C” e é histórico (página de suporte sem data atual clara); aproveitáveis apenas os exemplos algorítmicos validados contra CIDR/RFC e nunca a classificação classful como modelo vigente. Licença de reprodução não confirmada; link-only."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Sample Exercise 2 and VLSM Example; exclude obsolete classful framing"
+      }
+    ],
+    "provenance": {
+      "sourceType": "tutorial",
+      "title": "Configure IP Addresses and Unique Subnets for New Users",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sample Exercise 2; VLSM Example, lines 222–268 in checked rendering"
+    }
+  },
+  {
+    "id": "expanded-ms-ipv4-subnet-basics-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Understand TCP/IP addressing and subnetting basics",
+    "type": "docs",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "redes-protocolos"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source recut reviewed directly",
+      "reviewedAt": "2026-10-08T03:59:04.000Z",
+      "evidence": "Leitura direta: explica máscara como separação dos bits de rede/host, demonstra bits binários, 4 sub-redes /26 em um bloco /24 e intervalos de hosts para exemplo, além de efeitos de máscara incorreta. O artigo mantém terminologia classful obsoleta e regras gerais de endereços de rede/broadcast sem ressalvas suficientes para todos os prefixos (por exemplo /31); usar somente exemplos gerais revisados e descartar explicação por classes e regra absoluta. Fonte de suporte Windows antiga, não tutorial atual completo. Link-only, licença não confirmada."
+    },
+    "coverage": [
+      {
+        "unitId": "redes-protocolos-tcpip-ip-dns-dhcp-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Subnet mask binary explanation and /26 example; explicitly exclude classful framing and blanket host rules"
+      }
+    ],
+    "provenance": {
+      "sourceType": "documentation",
+      "title": "Understand TCP/IP addressing and subnetting basics",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting",
+      "retrievedAt": "2026-10-08",
+      "locator": "Subnet mask bit explanation; subnetting example with 255.255.255.192; troubleshooting; exclude class-based address assumptions"
+    }
+  },
+  {
+    "id": "expanded-cncf-serverless-overview-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "CNCF Serverless Whitepaper v1.0",
+    "type": "article",
+    "url": "https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/cncf_serverless_whitepaper_v1.0.pdf",
+    "source": "Cloud Native Computing Foundation (CNCF) Serverless Working Group",
+    "provider": "Cloud Native Computing Foundation (CNCF) Serverless Working Group",
+    "authors": [
+      "Sarah Allen",
+      "Chris Aniszczyk",
+      "Chad Arimura",
+      "Ben Browning",
+      "Lee Calcote",
+      "Amir Chaudhry",
+      "Doug Davis",
+      "Louis Fourie",
+      "Antonio Gulli",
+      "Yaron Haviv",
+      "Daniel Krook",
+      "Orit Nissan-Messing",
+      "Chris Munns",
+      "Ken Owens",
+      "Mark Peek",
+      "Cathy Zhang"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/cncf_serverless_whitepaper_v1.0.pdf",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; leitura factual direta",
+      "reviewedAt": "2026-10-08T04:09:00.000Z",
+      "evidence": "Leitura direta do README do repositório oficial e inspeção do texto integral renderizado do whitepaper v1.0. Explica abstração operacional serverless, FaaS acionado por eventos/HTTP, fontes e associação evento-função, e compara CaaS/PaaS/FaaS quanto a responsabilidades e trade-offs. A própria apresentação afirma que não prescreve um padrão. Não apresenta SaaS nem matriz completa IaaS/PaaS/SaaS e é uma versão conceitual antiga; complementa NIST SP 800-145 (IaaS/PaaS/SaaS) e não fecha sozinho a unidade. Exemplos e promessas de escala/custo não devem ser universalizados. O PDF é gratuito para consulta no GitHub; licença de reprodução do whitepaper não foi confirmada, portanto link externo apenas. Revisão factual direta, sem alegação de QA independente."
+    },
+    "coverage": [
+      {
+        "unitId": "nuvem-arquitetura-modelos-serverless-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Seções acima; especialmente definição de FaaS, fontes de eventos e comparação de modelos de implantação."
+      }
+    ],
+    "provenance": {
+      "sourceType": "paper",
+      "title": "CNCF Serverless Whitepaper v1.0",
+      "url": "https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/cncf_serverless_whitepaper_v1.0.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Whitepaper v1.0: “What is serverless computing?”; “Serverless vs. Other Cloud Native Technologies”; “Functions-as-a-Service (FaaS)”; “Event Source to Function Association”; “Event Sources”; “Function Requirements”."
+    }
+  },
+  {
+    "id": "expanded-google-cloud-models-serverless-2026",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Cloud service models and serverless computing (Google Cloud)",
+    "type": "article",
+    "url": "https://cloud.google.com/discover/types-of-cloud-computing",
+    "source": "Google Cloud",
+    "provider": "Google Cloud",
+    "authors": [
+      "Google Cloud"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; consultation gratuita; link-only.",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T05:47:22.000Z",
+      "finalUrl": "https://cloud.google.com/discover/types-of-cloud-computing",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root (leitura factual direta)",
+      "reviewedAt": "2026-10-08T05:47:22.000Z",
+      "evidence": "Leitura direta do artigo sobre modelos de serviço em nuvem: IaaS, PaaS, SaaS e visão introdutória de serverless/FaaS. O artigo dedicado a serverless foi separado."
+    },
+    "coverage": [
+      {
+        "unitId": "nuvem-arquitetura-modelos-serverless-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "https://cloud.google.com/discover/types-of-cloud-computing (IaaS/PaaS/SaaS/FaaS, responsabilidades e analogia); https://cloud.google.com/discover/what-is-serverless-computing (FaaS/BaaS, eventos, provisão/escala pelo provedor e comparação de modelos)."
+      }
+    ],
+    "provenance": {
+      "sourceType": "article",
+      "title": "Cloud service models and serverless computing (Google Cloud)",
+      "url": "https://cloud.google.com/discover/types-of-cloud-computing",
+      "retrievedAt": "2026-10-08",
+      "locator": "Google Cloud, Types of cloud computing: IaaS/PaaS/SaaS/serverless and model differences."
+    }
+  },
+  {
+    "id": "expanded-azure-regions-availability-zones",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Regions and Availability Zones — Azure Well-Architected Framework",
+    "type": "other",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; public page is not permission to reproduce; link-only",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source/path curation",
+      "reviewedAt": "2026-10-08T18:21:16.000Z",
+      "evidence": "Leitura direta da orientação Microsoft Well-Architected: distingue regiões e zonas fisicamente separadas, redundância zonal/regional, failover e tradeoffs de disponibilidade, latência, custo e operação. Exemplo Azure, não garantia de disponibilidade nem desenho neutro aplicável sem validação a todos os provedores."
+    },
+    "coverage": [
+      {
+        "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Regions, availability zones, redundancy and cross-region guidance"
+      }
+    ],
+    "provenance": {
+      "sourceType": "software_documentation",
+      "title": "Regions and Availability Zones — Azure Well-Architected Framework",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections regions, availability zones, redundancy and cross-region design tradeoffs"
+    }
+  },
+  {
+    "id": "expanded-azure-monitor-alerts-overview",
+    "examId": "tce-go-ti-2026",
+    "libraryVersion": 2,
+    "title": "Overview of Azure Monitor alerts",
+    "type": "other",
+    "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+    "source": "Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "authors": [
+      "Microsoft"
+    ],
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedMinutes": null,
+    "topicIds": [
+      "nuvem-arquitetura"
+    ],
+    "status": "active",
+    "verified": false,
+    "verifiedAt": null,
+    "free": true,
+    "access": {
+      "mode": "free",
+      "requiresRegistration": false,
+      "notes": "Consulta externa requer internet; cobertura delimitada aos objetivos e recortes apresentados."
+    },
+    "rights": {
+      "license": "unknown; public page is not permission to reproduce; link-only",
+      "delivery": "link",
+      "evidenceUrl": null
+    },
+    "verification": {
+      "result": "unknown",
+      "checkedAt": "2026-10-08T00:00:00.000Z",
+      "finalUrl": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+      "method": "unknown"
+    },
+    "editorialReview": {
+      "status": "approved",
+      "reviewer": "/root; source/path curation",
+      "reviewedAt": "2026-10-08T18:21:16.000Z",
+      "evidence": "Leitura direta da documentação Azure Monitor: descreve alertas por métricas, logs e atividade, regras/condições e estado de disparo/recuperação, com grupos de ações para notificação ou automação. Documentação específica do serviço; não é tutorial genérico de operação nem ensina instrumentação completa."
+    },
+    "coverage": [
+      {
+        "unitId": "nuvem-arquitetura-escala-ha-hibrido-monitoramento-unit",
+        "role": "primary",
+        "extent": "partial",
+        "locator": "Alert types, metric/log/activity signals, rules and actions"
+      }
+    ],
+    "provenance": {
+      "sourceType": "software_documentation",
+      "title": "Overview of Azure Monitor alerts",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+      "retrievedAt": "2026-10-08",
+      "locator": "Alert types, signal sources, conditions, state and actions"
+    }
+  }
+]

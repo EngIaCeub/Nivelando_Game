@@ -75,3 +75,11 @@ RF26 biblioteca complete exige cobertura primária revisada de todo o edital e s
 Contrato: `contracts/DIDACTIC_LIBRARY.md`; execução: `docs/DIDACTIC_LIBRARY_PLAN.md`.
 Biblioteca é opcional para packs legados. Conteúdo público pode ser referenciado;
 incorporação exige direitos. Ingestão/curadoria ocorre antes do build, sem IA obrigatória.
+
+## Evolução solicitada — planejamento em 2026-10-07
+
+Plano: `docs/CONTENT_DARK_VIEWS_ACCOUNTS_PLAN.md`; ADR 005 proposta.
+Evolução em andamento: revisão factual de conteúdos/flashcards, tema escuro único,
+uma tela ativa por rota e login com workspace por pessoa, migração do progresso local
+e persistência remota isolada. Login/sync deixam de ser não objetivos para esta evolução;
+a limitação acima descreve a V1. Registro do avanço e dos gates pendentes em `docs/STATUS.md`.

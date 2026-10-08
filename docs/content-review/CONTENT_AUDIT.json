@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T15:26:40.677Z",
+  "kind": "content-audit",
+  "packs": [
+    {
+      "examId": "tce-go-ti-2026",
+      "cardCount": 64,
+      "flaggedCount": 0,
+      "cards": [],
+      "questionCount": 45,
+      "questionFlaggedCount": 0,
+      "questions": [],
+      "resourceCount": 167,
+      "resourceFlaggedCount": 0,
+      "resources": []
+    },
+    {
+      "examId": "tjto-tecnico-administrativo-2022",
+      "cardCount": 0,
+      "flaggedCount": 0,
+      "cards": [],
+      "questionCount": 3,
+      "questionFlaggedCount": 3,
+      "questions": [
+        {
+          "id": "q-tjto-001",
+          "board": "FGV",
+          "year": 2022,
+          "source": "official-tjto-edital-01-2022-retificado",
+          "reasons": [
+            "banca_ano_sem_identificacao_de_prova",
+            "fonte_sem_locator",
+            "sem_aprovacao_editorial_registrada"
+          ]
+        },
+        {
+          "id": "q-tjto-002",
+          "board": "FGV",
+          "year": 2022,
+          "source": "official-tjto-edital-01-2022-retificado",
+          "reasons": [
+            "banca_ano_sem_identificacao_de_prova",
+            "fonte_sem_locator",
+            "sem_aprovacao_editorial_registrada"
+          ]
+        },
+        {
+          "id": "q-tjto-003",
+          "board": "FGV",
+          "year": 2022,
+          "source": "official-tjto-edital-01-2022-retificado",
+          "reasons": [
+            "banca_ano_sem_identificacao_de_prova",
+            "fonte_sem_locator",
+            "sem_aprovacao_editorial_registrada"
+          ]
+        }
+      ],
+      "resourceCount": 2,
+      "resourceFlaggedCount": 2,
+      "resources": [
+        {
+          "id": "tjto-resource-edital",
+          "reasons": [
+            "fonte_sem_locator_didatico",
+            "sem_revisao_editorial_registrada"
+          ]
+        },
+        {
+          "id": "tjto-resource-concurso",
+          "reasons": [
+            "fonte_sem_locator_didatico",
+            "sem_revisao_editorial_registrada"
+          ]
+        }
+      ]
+    },
+    {
+      "examId": "_template",
+      "cardCount": 0,
+      "flaggedCount": 0,
+      "cards": [],
+      "questionCount": 0,
+      "questionFlaggedCount": 0,
+      "questions": [],
+      "resourceCount": 0,
+      "resourceFlaggedCount": 0,
+      "resources": []
+    }
+  ]
+}

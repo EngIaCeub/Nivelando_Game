@@ -19,6 +19,12 @@ O schema B1 permite apenas delivery:link e exige primário gratuito. Entrega loc
 embed serão extensões B5 com localização/integridade e autorização específica;
 o auditor rejeita essas operações antes dessa implementação.
 Fontes primárias gratuitas e avaliação editorial sustentam a afirmação de cobertura.
+Uma unidade pode ser ensinada por um único recurso primary/full ou por um percurso
+didático explícito: no mínimo duas fontes gratuitas distintas, cada URL/proveniência
+mantida em seu registro próprio, locators e objetivos vinculados por etapa, todos os
+objetivos cobertos e parecer editorial aprovado. Os recursos individuais conservam
+seu extent real; um percurso não transforma partes em uma fonte fictícia nem aprova
+um link apenas por estar acessível.
 
 ## Alternativas
 Fragmentar IDs de currículo agora exigiria migração de progresso. Hospedar todos os

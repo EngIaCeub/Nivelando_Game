@@ -136,6 +136,9 @@ test('F11: SECOND_EXAM_DRY_RUN e NEW_EXAM_ACCEPTANCE', async () => {
   assert.equal(validatePack(pack).valid, true);
   assert.ok(pack.manifest.sourceRefs.length > 0);
   assert.ok(pack.curriculum.disciplines.every((discipline) => discipline.modules.every((module) => module.topics.every((topic) => topic.canonicalConceptIds.length > 0))));
-  assert.ok(pack.questions.every((question) => question.provenance?.source && question.board && question.year));
-  assert.ok(pack.resources.every((resource) => resource.url.startsWith('https://')));
+  assert.ok(pack.questions.every((question) => question.provenance?.source && question.provenance?.locator && question.reviewStatus === 'approved'));
+  // These are original StudyOS items derived from the public syllabus, not past FGV questions.
+  assert.ok(pack.questions.every((question) => question.provenance.status === 'derived' && !question.board && !question.year));
+  assert.equal((await readFile(new URL('../content-history.json', import.meta.url), 'utf8')).includes('question-revision'), true);
+  assert.ok(pack.resources.every((resource) => resource.url.startsWith('https://') && resource.provenance?.locator && resource.reviewStatus === 'approved'));
 });

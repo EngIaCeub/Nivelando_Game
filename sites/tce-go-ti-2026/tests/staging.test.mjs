@@ -14,6 +14,15 @@ test('O1.5 staging build has metadata, relative base path and preview identifica
   for (const route of ['#today','#curriculum','#diagnostic','#questions','#reviews','#progress','#settings']) assert.match(html, new RegExp(`href=["']${route}`));
 });
 
+test('O1.5 staging preview uses the production dark-only theme', async () => {
+  const html = await text('index.html');
+  const styles = await text('styles.css');
+  assert.match(html, /name="theme-color" content="#101827"/);
+  assert.match(styles, /color-scheme:\s*dark/);
+  assert.match(styles, /--surface-base:\s*#101827/);
+  assert.doesNotMatch(styles, /color-scheme:\s*light|--surface-base:\s*#f4f7f9|#f0fdf4|#fff1f2/);
+});
+
 test('O1.5 manifest and service worker are scoped relatively', async () => {
   const manifest = JSON.parse(await text('manifest.webmanifest'));
   const sw = await text('sw.js');

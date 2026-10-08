@@ -16,6 +16,14 @@ Candidatos pendentes/rejeitados ficam em library-candidates.json; promover para
 resources.json apenas após checagem e revisão, mantendo id estável e sem duplicatas.
 Não promover fonte institucional genérica como primary/full sem conteúdo pedagógico.
 
+Uma unidade pode ser coberta por `library.studyPaths` quando nenhum recurso sozinho
+ensina todos os objetivos: use pelo menos duas fontes v2 distintas, mantenha URLs,
+proveniência e cobertura parcial em registros independentes e ordene as etapas. Cada
+etapa deve declarar locator e `objectiveIndices`; a união cobre todos os objetivos.
+Todos os recursos devem estar ativos, gratuitos segundo a política, acessíveis e
+editorialmente aprovados. O percurso registra por que a sequência ensina a unidade.
+Nunca agrupe URLs num único recurso nem marque as fontes parciais como full.
+
 Nesta versão registrar delivery:link. Embed/bundle depende da entrega B5 e do
 contrato de autorização/checagem local; não promover tais candidatos agora.
 Preservar histórico de troca, reviewedAt e verification.checkedAt reais; não inventar

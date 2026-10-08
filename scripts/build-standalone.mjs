@@ -164,6 +164,10 @@ export async function buildStandalone(options = {}) {
   if (metadata.examId !== examId) throw new Error('pack manifest examId mismatch');
   validateBuildMetadata(metadata, JSON.parse(await readFile(resolve(repository, 'schemas/build-metadata.schema.json'), 'utf8')));
   await emit('build-meta.json', `${JSON.stringify(metadata, null, 2)}\n`);
+  const authUrl = process.env.STUDYOS_SUPABASE_URL ?? '';
+  const authKey = process.env.STUDYOS_SUPABASE_PUBLISHABLE_KEY ?? process.env.STUDYOS_SUPABASE_ANON_KEY ?? '';
+  if (authUrl && !/^https:\/\/[a-z0-9.-]+(?::\d+)?$/i.test(authUrl)) throw new TypeError('STUDYOS_SUPABASE_URL must be an HTTPS origin');
+  await emit('auth-config.json', `${JSON.stringify({ url: authUrl, publishableKey: authKey, confirmationRedirect: options.confirmationRedirect ?? '', recoveryRedirect: options.recoveryRedirect ?? '' }, null, 2)}\n`);
   await emit('update.html', legacyUpdatePage);
   let index = await readFile(resolve(dist, 'index.html'), 'utf8');
   const versionedApp = `./site-app.js?v=${encodeURIComponent(buildId)}`;

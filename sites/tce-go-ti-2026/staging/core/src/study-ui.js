@@ -459,6 +459,7 @@ export class StudyUI {
     this.root.append(this.button('Pausar e continuar depois', async () => {
       this.run = await this.session.pause(run.id); this.retake = false;
       document.documentElement.dataset.studyActive = 'false';
+      window.dispatchEvent(new CustomEvent('studyos:session-paused', { detail: { runId: run.id, kind: run.kind } }));
       this.root.replaceChildren(node('h2', 'Sessão pausada'), node('p', 'Progresso salvo neste dispositivo.'), this.button('Retomar sessão', () => this.open(run.id)));
     }));
   }

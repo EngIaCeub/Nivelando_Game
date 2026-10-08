@@ -10,6 +10,7 @@
     "appVersion": {"type": "string", "minLength": 1},
     "storageVersion": {"enum": [1, 2]},
     "examId": {"type": "string", "minLength": 1, "pattern": "^[^:]+$", "not": {"enum": ["__studyos_global__", "__studyos_backups__"]}},
+    "ownerId": {"type": "string", "format": "uuid"},
     "data": {"$ref": "#/$defs/export"},
     "globalData": {"allOf": [{"$ref": "#/$defs/export"}, {"properties": {"examId": {"const": "__studyos_global__"}}}]},
     "settings": {"$ref": "#/$defs/settings"}

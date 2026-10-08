@@ -1,0 +1,2477 @@
+{
+  "reviewedAt": "2026-10-07T04:47:52.109Z",
+  "archive": "exam-packs/tce-go-ti-2026/content-history.json",
+  "archiveSha256": "852aa107947867b85fec2c1aa1156ddcdb158b77845ac34a2cafffc0614e8471",
+  "questions": [
+    {
+      "id": "q-tcego-b02-001",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-002",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-003",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-004",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-005",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-006",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-007",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-008",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-009",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-b02-010",
+      "decision": "superseded",
+      "reason": "Nova revisão factual e documental r2; texto histórico preservado.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-texto-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-texto-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-texto-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-morfossintaxe-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-morfossintaxe-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-morfossintaxe-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-sintaxe-redacao-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-sintaxe-redacao-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-lp-sintaxe-redacao-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-aritmetica-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-aritmetica-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-aritmetica-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-proporcoes-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-proporcoes-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-proporcoes-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-logica-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-logica-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-mrl-logica-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-constituicao-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-constituicao-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-constituicao-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-tce-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-tce-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-tce-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-servidor-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-servidor-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-leginst-servidor-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-ciclos-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-requisitos-arquitetura-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-engsoft-modelagem-qualidade-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-fundamentos-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-linguagens-web-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devsistemas-apis-identidade-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-llm-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-llm-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-llm-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-contexto-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-agentivos-ciclo-mcp-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-cicd-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-iac-observabilidade-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-devops-git-containers-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-modelagem-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-sql-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-bd-tecnologias-operacao-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-ml-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-generativa-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ia-dados-rag-etica-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-principios-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-cripto-identidade-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-seguranca-aplicacoes-continuidade-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-os-shell-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-sistemas-diretorios-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-redes-protocolos-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-nuvem-arquitetura-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-alinhamento-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-servicos-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-modelos-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-governanca-publica-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-lgpd-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-marco-civil-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-07",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-08",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-09",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-normas-tce-10",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-04",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-05",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-legti-pdti-06",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-compreensao-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-compreensao-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-compreensao-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-estrategias-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-estrategias-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-estrategias-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-documentacao-01",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-documentacao-02",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "q-tcego-o3-ingles-documentacao-03",
+      "decision": "rejected",
+      "reason": "Template sem problema disciplinar; identificador interno na resposta; distratores invariantes.",
+      "evidence": "docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md"
+    }
+  ],
+  "cards": [
+    {
+      "id": "fc-lp-texto-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade? / Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade deve ser estudado por meio de language.portuguese.orthography, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-lp-texto-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Redação oficial, ortografia, acentuação, compreensão, interpretação, gêneros e intertextualidade / Explique language.portuguese.orthography com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-lp-morfossintaxe-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem? / Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem deve ser estudado por meio de language.portuguese.morphosyntax, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-lp-morfossintaxe-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Morfossintaxe, formação de palavras, pronomes, vozes, flexões e figuras de linguagem / Explique language.portuguese.morphosyntax com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-lp-sintaxe-redacao-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural? / Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural deve ser estudado por meio de language.portuguese.syntax, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-lp-sintaxe-redacao-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Pontuação, concordância, regência, crase, coordenação, subordinação, conectivos e redação estrutural / Explique language.portuguese.syntax com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-mrl-aritmetica-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Números, operações, expressões, múltiplos, divisores, frações e problemas? / Números, operações, expressões, múltiplos, divisores, frações e problemas deve ser estudado por meio de math.arithmetic, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-mrl-aritmetica-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Números, operações, expressões, múltiplos, divisores, frações e problemas / Explique math.arithmetic com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-mrl-proporcoes-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Razões, proporções, regra de três, porcentagens, acréscimos e descontos? / Razões, proporções, regra de três, porcentagens, acréscimos e descontos deve ser estudado por meio de math.proportionality, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-mrl-proporcoes-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Razões, proporções, regra de três, porcentagens, acréscimos e descontos / Explique math.proportionality com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-mrl-logica-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo? / Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo deve ser estudado por meio de logic.deduction, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-mrl-logica-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Raciocínio verbal, matemático, sequencial, espacial, temporal e dedutivo / Explique logic.deduction com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-leginst-constituicao-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Constituição Federal, Administração Pública, fiscalização, controle interno e externo? / Constituição Federal, Administração Pública, fiscalização, controle interno e externo deve ser estudado por meio de public-law.constitutional.control, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-leginst-constituicao-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Constituição Federal, Administração Pública, fiscalização, controle interno e externo / Explique public-law.constitutional.control com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-leginst-tce-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal? / Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal deve ser estudado por meio de public-law.audit-courts, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-leginst-tce-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Constituição de Goiás, Lei Orgânica, Regimento Interno e competências do Tribunal / Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-leginst-servidor-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Plano de cargos, regime jurídico, ética e políticas institucionais? / Plano de cargos, regime jurídico, ética e políticas institucionais deve ser estudado por meio de public-law.public-service, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-leginst-servidor-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Plano de cargos, regime jurídico, ética e políticas institucionais / Explique public-law.public-service com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-engsoft-ciclos-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Ciclos de vida, Scrum, Kanban, Lean e XP? / Ciclos de vida, Scrum, Kanban, Lean e XP deve ser estudado por meio de software.lifecycle, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-engsoft-ciclos-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Ciclos de vida, Scrum, Kanban, Lean e XP / Explique software.lifecycle com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI? / Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI deve ser estudado por meio de software.requirements, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI / Explique software.requirements com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-engsoft-requisitos-arquitetura-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Requisitos, histórias, casos de uso, critérios de aceite, arquitetura, SOLID, DRY, KISS e YAGNI / Explique software.requirements com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica? / UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica deve ser estudado por meio de software.modeling, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica / Explique software.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-engsoft-modelagem-qualidade-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: UML, BPMN, padrões de projeto, qualidade, testes, revisão, refatoração e dívida técnica / Explique software.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devsistemas-fundamentos-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional? / Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional deve ser estudado por meio de programming.algorithms, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devsistemas-fundamentos-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Algoritmos, lógica, estruturas de dados, orientação a objetos e programação funcional / Explique programming.algorithms com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devsistemas-linguagens-web-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript? / Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript deve ser estudado por meio de programming.languages, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devsistemas-linguagens-web-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Java, JavaScript, Node.js, Python, React, HTML5, CSS3 e TypeScript / Explique programming.languages com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação? / APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação deve ser estudado por meio de web.apis, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação / Explique web.apis com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devsistemas-apis-identidade-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: APIs REST, GraphQL, WebSockets, JSON, XML, OAuth2, OIDC, JWT, Git, OpenAPI e publicação / Explique web.apis com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-agentivos-llm-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção? / IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção deve ser estudado por meio de ai.llm, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-agentivos-llm-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: IA aplicada ao desenvolvimento, LLMs e programação baseada em intenção / Explique ai.llm com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-agentivos-contexto-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Engenharia de contexto e prompts no desenvolvimento de software? / Engenharia de contexto e prompts no desenvolvimento de software deve ser estudado por meio de ai.prompt-engineering, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-agentivos-contexto-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Engenharia de contexto e prompts no desenvolvimento de software / Explique ai.prompt-engineering com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual? / Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual deve ser estudado por meio de ai.agentic-workflows, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual / Explique ai.agentic-workflows com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-agentivos-ciclo-mcp-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Ciclo agentivo, memória, RAG, bancos vetoriais, MCP, skills, avaliação, segurança e propriedade intelectual / Explique ai.agentic-workflows com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devops-cicd-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de CI/CD, pipelines de desenvolvimento, automação de build e testes? / CI/CD, pipelines de desenvolvimento, automação de build e testes deve ser estudado por meio de devops.cicd, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devops-cicd-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: CI/CD, pipelines de desenvolvimento, automação de build e testes / Explique devops.cicd com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devops-iac-observabilidade-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas? / Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas deve ser estudado por meio de devops.infrastructure-as-code, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devops-iac-observabilidade-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Infraestrutura como código, configuração, métricas, logs, traces, telemetria e alertas / Explique devops.infrastructure-as-code com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-devops-git-containers-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes? / Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes deve ser estudado por meio de devops.git, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-devops-git-containers-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Git, GitHub, GitLab, branching, revisão, Docker, Compose, Kubernetes e ambientes / Explique devops.git com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-bd-modelagem-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Modelo entidade-relacionamento, normalização e desnormalização? / Modelo entidade-relacionamento, normalização e desnormalização deve ser estudado por meio de database.modeling, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-bd-modelagem-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Modelo entidade-relacionamento, normalização e desnormalização / Explique database.modeling com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-bd-sql-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de SQL, álgebra relacional, transações, ACID, índices e otimização? / SQL, álgebra relacional, transações, ACID, índices e otimização deve ser estudado por meio de database.sql, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-bd-sql-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: SQL, álgebra relacional, transações, ACID, índices e otimização / Explique database.sql com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-bd-sql-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: SQL, álgebra relacional, transações, ACID, índices e otimização / Explique database.sql com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-bd-tecnologias-operacao-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança? / PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança deve ser estudado por meio de database.relational, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-bd-tecnologias-operacao-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: PostgreSQL, Oracle, NoSQL, MongoDB, Redis, vetores, replicação, backup, recuperação, segurança e governança / Explique database.relational com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-dados-ml-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais? / IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais deve ser estudado por meio de ai.machine-learning, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-dados-ml-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: IA, aprendizado supervisionado, não supervisionado, por reforço e redes neurais / Explique ai.machine-learning com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-dados-generativa-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de PLN, IA generativa, agentes inteligentes e modelos multimodais? / PLN, IA generativa, agentes inteligentes e modelos multimodais deve ser estudado por meio de ai.generative, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-dados-generativa-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: PLN, IA generativa, agentes inteligentes e modelos multimodais / Explique ai.generative com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data? / Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data deve ser estudado por meio de ai.responsible-ai, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data / Explique ai.responsible-ai com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ia-dados-rag-etica-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Prompts, contexto, RAG, aplicações, IA responsável, explicabilidade, governança, LGPD, ciência de dados e Big Data / Explique ai.responsible-ai com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-seguranca-principios-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades? / Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades deve ser estudado por meio de security.fundamentals, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-seguranca-principios-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Confidencialidade, integridade, disponibilidade, autenticidade, não repúdio, riscos e vulnerabilidades / Explique security.fundamentals com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital? / Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital deve ser estudado por meio de security.cryptography, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital / Explique security.cryptography com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-seguranca-cripto-identidade-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Controle de acesso, IAM, criptografia, PKI, certificados e assinatura digital / Explique security.cryptography com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000? / OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000 deve ser estudado por meio de security.application, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000 / Explique security.application com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-seguranca-aplicacoes-continuidade-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: OWASP, DevSecOps, APIs, containers, nuvem, Zero Trust, backup, continuidade, incidentes e ISO 27000 / Explique security.application com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-sistemas-os-shell-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Windows, Linux, processos, memória, arquivos, shell e PowerShell? / Windows, Linux, processos, memória, arquivos, shell e PowerShell deve ser estudado por meio de systems.operating-systems, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-sistemas-os-shell-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Windows, Linux, processos, memória, arquivos, shell e PowerShell / Explique systems.operating-systems com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-sistemas-diretorios-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Active Directory, LDAP, virtualização e containers? / Active Directory, LDAP, virtualização e containers deve ser estudado por meio de systems.directory-services, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-sistemas-diretorios-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Active Directory, LDAP, virtualização e containers / Explique systems.directory-services com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-redes-protocolos-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies? / TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies deve ser estudado por meio de networking.tcp-ip, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-redes-protocolos-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies / Explique networking.tcp-ip com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-redes-protocolos-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: TCP/IP, IPv4, IPv6, DNS, DHCP, HTTP/2, HTTP/3, HTTPS, SMTP, FTP, SSH, VPN e proxies / Explique networking.tcp-ip com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-nuvem-arquitetura-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento? / Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento deve ser estudado por meio de cloud.computing, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-nuvem-arquitetura-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Balanceamento, firewalls, IaaS, PaaS, SaaS, serverless, escalabilidade, disponibilidade e monitoramento / Explique cloud.computing com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-governanca-alinhamento-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Estratégia de TI e alinhamento aos objetivos institucionais? / Estratégia de TI e alinhamento aos objetivos institucionais deve ser estudado por meio de it-governance.alignment, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-governanca-alinhamento-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Estratégia de TI e alinhamento aos objetivos institucionais / Explique it-governance.alignment com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-governanca-servicos-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade? / Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade deve ser estudado por meio de it-service-management.itil, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-governanca-servicos-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Catálogo, incidentes, problemas, mudanças, configuração, portfólio, ativos e continuidade / Explique it-service-management.itil com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-governanca-modelos-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis? / COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis deve ser estudado por meio de it-governance.cobit, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-governanca-modelos-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis / Explique it-governance.cobit com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-governanca-modelos-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: COBIT 2019, ITIL v4, ISO/IEC 38500:2024, PMBOK 8ª edição e métodos ágeis / Explique it-governance.cobit com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-governanca-publica-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital? / Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital deve ser estudado por meio de public-sector.digital-government, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-governanca-publica-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Contratações de TIC, governo digital e Estratégia Nacional de Governo Digital / Explique public-sector.digital-government com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-lgpd-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de LGPD, privacy by design, minimização, anonimização e pseudonimização? / LGPD, privacy by design, minimização, anonimização e pseudonimização deve ser estudado por meio de law.data-protection, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-legti-lgpd-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: LGPD, privacy by design, minimização, anonimização e pseudonimização / Explique law.data-protection com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-lgpd-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: LGPD, privacy by design, minimização, anonimização e pseudonimização / Explique law.data-protection com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-marco-civil-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros? / Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros deve ser estudado por meio de law.internet, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-legti-marco-civil-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Marco Civil da Internet, neutralidade, proteção de dados e guarda de registros / Explique law.internet com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-normas-tce-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI? / Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI deve ser estudado por meio de public-law.audit-courts, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-legti-normas-tce-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI / Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-normas-tce-review-2",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Lei Complementar estadual nº 205/2025 e normativos institucionais de governança e segurança de TI / Explique public-law.audit-courts com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-legti-pdti-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026? / CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026 deve ser estudado por meio de it-governance.planning, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-legti-pdti-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: CETI, Política de Governança, Política de Segurança, DTI e PDTI 2025–2026 / Explique it-governance.planning com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ingles-compreensao-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Compreensão de textos técnicos e científicos de Tecnologia da Informação? / Compreensão de textos técnicos e científicos de Tecnologia da Informação deve ser estudado por meio de language.english.technical-reading, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ingles-compreensao-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Compreensão de textos técnicos e científicos de Tecnologia da Informação / Explique language.english.technical-reading com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ingles-estrategias-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Ideia principal, localização de informações e estratégias de leitura? / Ideia principal, localização de informações e estratégias de leitura deve ser estudado por meio de language.reading.strategies, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ingles-estrategias-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Ideia principal, localização de informações e estratégias de leitura / Explique language.reading.strategies com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    },
+    {
+      "id": "fc-ingles-documentacao-concept",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Qual é a ideia central de Vocabulário técnico, manuais, documentação de software, artigos e APIs? / Vocabulário técnico, manuais, documentação de software, artigos e APIs deve ser estudado por meio de language.english.it-vocabulary, sua finalidade, limites, dependências e aplicação em cenário."
+    },
+    {
+      "id": "fc-ingles-documentacao-review-1",
+      "decision": "rejected",
+      "reason": "Resposta instrucional genérica, sem definição atômica verificável; edital não demonstra a resposta.",
+      "evidence": "Revisão rápida: Vocabulário técnico, manuais, documentação de software, artigos e APIs / Explique language.english.it-vocabulary com um exemplo, um risco de confusão e um critério para verificar a resposta."
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource-edital-oficial",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-tce-concursos",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-fcc",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-mdn-javascript",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-owasp-top10",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-postgresql",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-python",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-docker",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-openapi",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-git",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-powershell",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-official-edital-programa-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-planalto-constituicao-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-planalto-lgpd-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-planalto-marco-civil-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-w3c-html-css-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-scrum-guide-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-nist-csf-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-kubernetes-docs-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "id": "resource-python-video-o3",
+      "decision": "retired_from_active_selection",
+      "reason": "Recurso legado sem mapeamento v2 e parecer; consultar classificação individual e novos recortes.",
+      "evidence": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md"
+    }
+  ]
+}

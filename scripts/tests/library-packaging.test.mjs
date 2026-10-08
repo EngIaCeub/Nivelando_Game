@@ -15,6 +15,13 @@ test('standalone omits library candidates from payload and service worker cache'
     await access(join(dist, 'exam-pack', 'resources.json'));
     await assert.rejects(access(join(dist, 'exam-pack', 'library-candidates.json')), { code: 'ENOENT' });
     assert.ok(!(await readFile(join(dist, 'sw.js'), 'utf8')).includes('library-candidates.json'));
+    const history = JSON.parse(await readFile(join(dist, 'exam-pack', 'content-history.json'), 'utf8'));
+    const active = JSON.parse(await readFile(join(dist, 'exam-pack', 'questions.json'), 'utf8'));
+    assert.ok(history.questions.length > active.length);
+    assert.ok(active.every(q => q.reviewStatus === 'approved'));
+    assert.ok((await readFile(join(dist, 'sw.js'), 'utf8')).includes('exam-pack/content-history.json'));
+    assert.ok((await readFile(join(dist, 'sw.js'), 'utf8')).includes('content-bank.js'));
+    assert.ok(!(await readFile(join(dist, 'sw.js'), 'utf8')).includes('CURATION_DRAFT'));
   } finally {
     assert.ok(dist.startsWith(join(tmpdir(), 'studyos-library-package-')));
     await rm(dist, { recursive: true, force: true });

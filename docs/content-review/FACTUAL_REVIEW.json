@@ -1,0 +1,1513 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/factual_review — revisão factual independente",
+  "reviewedAt": "2026-10-07T04:44:49.2299189Z",
+  "questionsDraftSha256": "68cce9b32590cf407d5a7cfecee82e2ce2dd8d2f4daf8b2c764d166c2006b3bc",
+  "curationDraftSha256": "a9b6d69b6eec0d47c517f3bb81f11d72a67a1874dec49f901603b14dc8f62902",
+  "approvedQuestionIds": [
+    "q-tcego-b02-001-r2",
+    "q-tcego-b02-002-r2",
+    "q-tcego-b02-003-r2",
+    "q-tcego-b02-004-r2",
+    "q-tcego-b02-005-r2",
+    "q-tcego-b02-006-r2",
+    "q-tcego-b02-007-r2",
+    "q-tcego-b02-008-r2",
+    "q-tcego-b02-009-r2",
+    "q-tcego-b02-010-r2"
+  ],
+  "approvedCardIds": [
+    "fc-curated-bd-sql-atomicidade",
+    "fc-curated-bd-sql-durabilidade",
+    "fc-curated-bd-sql-rollback",
+    "fc-curated-bd-sql-indice",
+    "fc-curated-bd-modelagem-chave-estrangeira",
+    "fc-curated-bd-tecnologias-operacao-backup-abordagens",
+    "fc-curated-devsistemas-fundamentos-pilha",
+    "fc-curated-devsistemas-fundamentos-fila",
+    "fc-curated-devsistemas-linguagens-web-declarar-chamar",
+    "fc-curated-devsistemas-linguagens-web-closure",
+    "fc-curated-engsoft-ciclos-pilares",
+    "fc-curated-engsoft-ciclos-sprint",
+    "fc-curated-engsoft-ciclos-compromissos",
+    "fc-curated-devops-git-containers-controle-versao",
+    "fc-curated-devops-git-containers-container-vm",
+    "fc-curated-sistemas-diretorios-container-processo",
+    "fc-curated-devops-git-containers-scheduler",
+    "fc-curated-devops-git-containers-apiserver",
+    "fc-curated-devops-iac-observabilidade-sinais",
+    "fc-curated-devops-iac-observabilidade-iac",
+    "fc-curated-devops-cicd-workflow-jobs",
+    "fc-curated-devops-cicd-feedback",
+    "fc-curated-devsistemas-apis-identidade-oauth",
+    "fc-curated-devsistemas-apis-identidade-oauth-papeis",
+    "fc-curated-devsistemas-apis-identidade-jwt-cifra",
+    "fc-curated-devsistemas-apis-identidade-jwt-exp",
+    "fc-curated-devsistemas-apis-identidade-oidc",
+    "fc-curated-devsistemas-apis-identidade-openapi",
+    "fc-curated-redes-protocolos-idempotencia",
+    "fc-curated-redes-protocolos-seguro",
+    "fc-curated-nuvem-arquitetura-iaas",
+    "fc-curated-nuvem-arquitetura-paas-saas",
+    "fc-curated-nuvem-arquitetura-elasticidade",
+    "fc-curated-ia-dados-ml-supervisionado",
+    "fc-curated-ia-dados-ml-classificacao-regressao",
+    "fc-curated-ia-dados-rag-etica-data-leakage",
+    "fc-curated-ia-agentivos-ciclo-mcp-rag",
+    "fc-curated-ia-dados-rag-etica-rag-fonte",
+    "fc-curated-ia-agentivos-ciclo-mcp-mcp-papeis",
+    "fc-curated-ia-agentivos-ciclo-mcp-mcp-limite",
+    "fc-curated-ia-agentivos-llm-workflow-agente",
+    "fc-curated-ia-agentivos-contexto-prompt-chaining",
+    "fc-curated-ia-dados-generativa-avaliador",
+    "fc-curated-seguranca-aplicacoes-continuidade-sqli",
+    "fc-curated-seguranca-aplicacoes-continuidade-db-minimo",
+    "fc-curated-seguranca-cripto-identidade-authn-authz",
+    "fc-curated-seguranca-cripto-identidade-least-privilege",
+    "fc-curated-seguranca-principios-csf-funcoes",
+    "fc-curated-governanca-alinhamento-csf-govern",
+    "fc-curated-leginst-constituicao-controle-federal",
+    "fc-curated-leginst-constituicao-prestar-contas",
+    "fc-curated-legti-lgpd-necessidade",
+    "fc-curated-legti-lgpd-dado-pessoal",
+    "fc-curated-legti-lgpd-anonimizacao",
+    "fc-curated-legti-marco-civil-neutralidade",
+    "fc-curated-legti-marco-civil-registros",
+    "fc-curated-mrl-aritmetica-fracao",
+    "fc-curated-mrl-aritmetica-equivalencia",
+    "fc-curated-mrl-proporcoes-produto-cruzado",
+    "fc-curated-mrl-proporcoes-percentual",
+    "fc-curated-ingles-estrategias-skimming",
+    "fc-curated-ingles-compreensao-scanning",
+    "fc-curated-lp-sintaxe-redacao-sujeito-verbo",
+    "fc-curated-lp-sintaxe-redacao-vocativo"
+  ],
+  "rejected": [],
+  "decision": "Proposições factuais delimitadas dos drafts aprovadas após correções; sem promoção automática de status no pack.",
+  "scopeLimits": [
+    "Somente 10 revisões r2 e 64 cartões originais lidos integralmente; aprovação não se estende às versões históricas.",
+    "Os 279 templates antigos permanecem rejeitados editorialmente no parecer QUESTIONS_INDEPENDENT_REVIEW.md.",
+    "Nenhuma questão aprovada é atribuída a prova passada FCC; autoria generated_original e proveniência derived.",
+    "Aprovação não declara cobertura integral da biblioteca, validade psicométrica, eficácia longitudinal, licença de reprodução ou release do runtime.",
+    "Corte legal 25/08/2026 conferido somente nos dispositivos CF70/71, LGPD5/6/12 e Marco Civil9/13/15 usados. Sem revisão integral das leis ou jurisprudência.",
+    "RAG: aprovação limitada ao abstract v4, sem validação do texto integral, benchmarks ou garantia de factualidade.",
+    "Versões delimitadas: PostgreSQL18, Scrum2020, MCP2025-11-25, OpenAPI3.1.1, CSF2.0, SP800-145. Conteúdo não afirma que todas são versões mais recentes.",
+    "Após qualquer alteração dos drafts, os hashes deixam de corresponder e o trecho alterado exige nova revisão."
+  ],
+  "reviewedQuestionItems": [
+    {
+      "id": "q-tcego-b02-001-r2",
+      "supersedes": "q-tcego-b02-001",
+      "decision": "approved",
+      "correctOptionId": "b",
+      "stem": "Em uma arquitetura orientada a eventos, qual característica descreve melhor o acoplamento entre produtor e consumidor?",
+      "correctAnswer": "O produtor publica eventos e o consumidor reage a eles por meio de um contrato.",
+      "sourceRefs": [
+        {
+          "title": "Microsoft — Event-driven architecture",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+          "locator": "Architecture; Benefits; Event schema evolution",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "Microsoft, Architecture/Benefits/Event schema evolution: produtores e consumidores desacoplados por eventos, com dependência do contrato/esquema; distratores não são requisitos da arquitetura."
+    },
+    {
+      "id": "q-tcego-b02-002-r2",
+      "supersedes": "q-tcego-b02-002",
+      "decision": "approved",
+      "correctOptionId": "d",
+      "stem": "Qual propriedade de uma transação indica que suas alterações persistem após a confirmação, mesmo diante de uma falha posterior?",
+      "correctAnswer": "Durabilidade",
+      "sourceRefs": [
+        {
+          "title": "PostgreSQL 18 — Transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "§3.4, permanently recorded; COMMIT",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "PostgreSQL §3.4: persistência após confirmação fundamenta durabilidade, distinguindo-a de atomicidade e isolamento; ressalva de configuração evita garantia incondicional."
+    },
+    {
+      "id": "q-tcego-b02-003-r2",
+      "supersedes": "q-tcego-b02-003",
+      "decision": "approved",
+      "correctOptionId": "b",
+      "stem": "Na análise técnica da responsabilidade compartilhada, qual informação é essencial para identificar a divisão de controles entre provedor e cliente?",
+      "correctAnswer": "O serviço utilizado, seu modelo e a divisão de responsabilidades documentada pelo provedor, observadas as obrigações aplicáveis.",
+      "sourceRefs": [
+        {
+          "title": "AWS — Shared Responsibility Model",
+          "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+          "locator": "Customer responsibility; Applying the model in practice",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "AWS shared responsibility model: responsabilidades variam por serviço, uso, configuração e obrigações; NIST SP800-145 delimita modelos. Não pressupõe divisão única para toda nuvem."
+    },
+    {
+      "id": "q-tcego-b02-004-r2",
+      "supersedes": "q-tcego-b02-004",
+      "decision": "approved",
+      "correctOptionId": "a",
+      "stem": "Qual prática reduz a exposição de dados pessoais ao coletar somente os dados necessários para uma finalidade definida?",
+      "correctAnswer": "Minimização de dados",
+      "sourceRefs": [
+        {
+          "title": "LGPD",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Art.6º III, necessidade; dispositivo vigente no corte 25/08/2026",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "LGPD art.6 III: necessidade limita tratamento ao mínimo pertinente/proporcional/não excessivo; minimização não é base legal. Explicações corrigidas distinguem replicação, desnormalização, port scanning e balanceamento."
+    },
+    {
+      "id": "q-tcego-b02-005-r2",
+      "supersedes": "q-tcego-b02-005",
+      "decision": "approved",
+      "correctOptionId": "b",
+      "stem": "Em segurança da informação, qual objetivo é diretamente associado à garantia de que uma mensagem não foi alterada sem autorização?",
+      "correctAnswer": "Integridade",
+      "sourceRefs": [
+        {
+          "title": "NIST — Integrity",
+          "url": "https://csrc.nist.gov/glossary/term/integrity",
+          "locator": "Data integrity, definição vinculada a NIST SP 800-152",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "NIST Integrity: prevenção de modificação não autorizada; questão identifica objetivo de segurança sem prometer eficácia absoluta de mecanismo."
+    },
+    {
+      "id": "q-tcego-b02-006-r2",
+      "supersedes": "q-tcego-b02-006",
+      "decision": "approved",
+      "correctOptionId": "b",
+      "stem": "Qual é a finalidade principal de um pipeline de integração contínua?",
+      "correctAnswer": "Integrar alterações frequentemente e verificar o produto por meio de automação.",
+      "sourceRefs": [
+        {
+          "title": "GitHub — Understanding GitHub Actions",
+          "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+          "locator": "Overview; Jobs",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "GitHub Actions Overview: CI automatiza build/testes e integração fornece feedback; alternativas a/e foram relidas após correção e agora correspondem a seus textos."
+    },
+    {
+      "id": "q-tcego-b02-007-r2",
+      "supersedes": "q-tcego-b02-007",
+      "decision": "approved",
+      "correctOptionId": "a",
+      "stem": "Em um fluxo agentivo com critérios de aceite explícitos, qual atividade avalia o resultado usando evidências antes de concluir a tarefa?",
+      "correctAnswer": "Verificar o resultado em relação aos critérios e, se necessário, corrigir e repetir a avaliação.",
+      "sourceRefs": [
+        {
+          "title": "Anthropic — Building effective agents",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "Workflow: Evaluator-optimizer; Agents",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "Anthropic evaluator-optimizer: critérios claros e avaliação mensurável permitem feedback e iteração. Enunciado delimita o fluxo, sem afirmar etapa obrigatória universal de agentes."
+    },
+    {
+      "id": "q-tcego-b02-008-r2",
+      "supersedes": "q-tcego-b02-008",
+      "decision": "approved",
+      "correctOptionId": "a",
+      "stem": "Qual protocolo é associado à resolução de nomes de domínio em redes TCP/IP?",
+      "correctAnswer": "DNS",
+      "sourceRefs": [
+        {
+          "title": "RFC 1034",
+          "url": "https://www.rfc-editor.org/rfc/rfc1034.html#section-2.4",
+          "locator": "§2.4 Elements of the DNS",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "RFC1034 §2.4: resolução envolve nomes, registros e resolvers; resposta DNS confere sem reduzir todos os registros a endereços."
+    },
+    {
+      "id": "q-tcego-b02-009-r2",
+      "supersedes": "q-tcego-b02-009",
+      "decision": "approved",
+      "correctOptionId": "a",
+      "stem": "Em uma API, a autenticação identifica o sujeito; a autorização determina principalmente o quê?",
+      "correctAnswer": "Quais recursos e operações o sujeito pode acessar.",
+      "sourceRefs": [
+        {
+          "title": "RFC 6749",
+          "url": "https://www.rfc-editor.org/rfc/rfc6749.html#section-1.1",
+          "locator": "§1.1 Roles; §1.2 Protocol Flow",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        },
+        {
+          "title": "OWASP Authorization Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "locator": "Introduction, distinção autenticação/autorização e acesso público de usuário não autenticado",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "RFC6749 descreve acesso autorizado a recursos; OWASP Authorization Introduction distingue identidade/permissão e admite recursos públicos a não autenticados. Fonte complementar explícita adicionada e verificada."
+    },
+    {
+      "id": "q-tcego-b02-010-r2",
+      "supersedes": "q-tcego-b02-010",
+      "decision": "approved",
+      "correctOptionId": "a",
+      "stem": "Uma métrica de cobertura de código representa, de forma mais direta, qual relação?",
+      "correctAnswer": "Código ou caminhos exercitados pelos testes em relação ao universo medido.",
+      "sourceRefs": [
+        {
+          "title": "Coverage.py 7.10.7 — Branch coverage",
+          "url": "https://coverage.readthedocs.io/en/7.10.7/branch.html",
+          "locator": "How to measure branch coverage; How it works",
+          "checkedAt": "2026-10-07T04:41:35.087Z"
+        }
+      ],
+      "evidence": "Coverage 7.10.7 branch documentation: linhas/decisões executadas comparadas ao universo medido; 100% de linhas não garante todas as branches, bons asserts ou ausência de defeitos."
+    }
+  ],
+  "reviewedCardItems": [
+    {
+      "id": "fc-curated-bd-sql-atomicidade",
+      "decision": "approved",
+      "front": "Qual propriedade de uma transação impede a aplicação de apenas parte de suas alterações?",
+      "verifiedProposition": "Atomicidade: as alterações da transação são confirmadas como uma unidade ou são desfeitas. Não confundir com durabilidade, que trata a persistência após confirmação.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "evidence": [
+        "§3.4: transação como operação tudo-ou-nada; confirmação torna alterações permanentes sob as garantias de persistência; COMMIT confirma e ROLLBACK desfaz alterações ainda não confirmadas."
+      ]
+    },
+    {
+      "id": "fc-curated-bd-sql-durabilidade",
+      "decision": "approved",
+      "front": "O que a durabilidade exige após o banco confirmar uma transação?",
+      "verifiedProposition": "Que os efeitos confirmados permaneçam registrados mesmo diante de uma falha posterior, sob as garantias e configuração de persistência do banco.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "evidence": [
+        "§3.4: transação como operação tudo-ou-nada; confirmação torna alterações permanentes sob as garantias de persistência; COMMIT confirma e ROLLBACK desfaz alterações ainda não confirmadas."
+      ]
+    },
+    {
+      "id": "fc-curated-bd-sql-rollback",
+      "decision": "approved",
+      "front": "Qual a diferença entre COMMIT e ROLLBACK em uma transação PostgreSQL?",
+      "verifiedProposition": "COMMIT confirma a transação; ROLLBACK cancela suas alterações ainda não confirmadas. ROLLBACK não desfaz uma transação já confirmada.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-transactions",
+          "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+          "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+        }
+      ],
+      "evidence": [
+        "§3.4: transação como operação tudo-ou-nada; confirmação torna alterações permanentes sob as garantias de persistência; COMMIT confirma e ROLLBACK desfaz alterações ainda não confirmadas."
+      ]
+    },
+    {
+      "id": "fc-curated-bd-sql-indice",
+      "decision": "approved",
+      "front": "Criar mais índices sempre melhora o desempenho de um banco?",
+      "verifiedProposition": "Não. Índices podem acelerar buscas, mas acrescentam trabalho de manutenção nas atualizações. A escolha depende das consultas e da carga de escrita.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-indexes",
+          "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+          "locator": "§11.1 Introduction, busca e custo de atualização/manutenção"
+        }
+      ],
+      "evidence": [
+        "§11.1: índices aceleram busca e impõem sincronização/manutenção nas atualizações. O planner pode deixar de usar o índice. A revisão final limita a resposta a esses efeitos."
+      ]
+    },
+    {
+      "id": "fc-curated-bd-modelagem-chave-estrangeira",
+      "decision": "approved",
+      "front": "Para que serve uma chave estrangeira?",
+      "verifiedProposition": "Para manter integridade referencial: os valores referenciados devem corresponder a uma linha da tabela referenciada, observadas as regras de NULL e da restrição. Não normaliza automaticamente o esquema.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-foreign-keys",
+          "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+          "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL"
+        },
+        {
+          "sourceId": "curated-pg-foreign-keys",
+          "url": "https://www.postgresql.org/docs/18/ddl-constraints.html#DDL-CONSTRAINTS-FK",
+          "locator": "§5.5.5 Foreign Keys, valores NULL",
+          "checkedAt": "2026-10-07T04:34:37.628Z"
+        }
+      ],
+      "evidence": [
+        "§3.3: integridade referencial; §5.5.5 complementa correspondência, NULL e restrições. A formulação conserva a ressalva NULL e não confunde FK com normalização."
+      ]
+    },
+    {
+      "id": "fc-curated-bd-tecnologias-operacao-backup-abordagens",
+      "decision": "approved",
+      "front": "Quais três abordagens de backup são apresentadas pelo PostgreSQL?",
+      "verifiedProposition": "Dump SQL, cópia em nível de sistema de arquivos e arquivamento contínuo. Elas têm procedimentos e condições de recuperação diferentes; escolher uma exige avaliar o cenário.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-pg-backup",
+          "url": "https://www.postgresql.org/docs/18/backup.html",
+          "locator": "Capítulo 25, introdução e três abordagens"
+        }
+      ],
+      "evidence": [
+        "Introdução do capítulo 25 enumera SQL dump, cópia do sistema de arquivos e arquivamento contínuo; não presume equivalência operacional."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-fundamentos-pilha",
+      "decision": "approved",
+      "front": "Como usar uma lista Python como pilha LIFO?",
+      "verifiedProposition": "Adicionar no final com append e remover o último item com pop. O último elemento inserido é o primeiro removido.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-python-structures",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos"
+        }
+      ],
+      "evidence": [
+        "§5.1.1: append/pop implementam pilha LIFO; §5.1.2: deque append/popleft implementam fila FIFO e a remoção no começo de list tem custo maior."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-fundamentos-fila",
+      "decision": "approved",
+      "front": "Por que collections.deque é adequado a uma fila FIFO em Python?",
+      "verifiedProposition": "Deque permite adicionar e retirar nas extremidades. Para FIFO, append adiciona ao final e popleft remove do início; listas são ineficientes para remoções repetidas no início.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-python-structures",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos"
+        }
+      ],
+      "evidence": [
+        "§5.1.1: append/pop implementam pilha LIFO; §5.1.2: deque append/popleft implementam fila FIFO e a remoção no começo de list tem custo maior."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-linguagens-web-declarar-chamar",
+      "decision": "approved",
+      "front": "Declarar uma função JavaScript executa seu corpo imediatamente?",
+      "verifiedProposition": "Não. A declaração define a função; uma chamada executa seu corpo com os argumentos fornecidos. Não confundir declaração com uma expressão que também invoque a função.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mdn-functions",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+          "locator": "Declarando uma função; Chamando funções; Closures"
+        }
+      ],
+      "evidence": [
+        "Declaração de função não a executa; chamada executa. Seções closures e preservação de escopo fundamentam captura lexical sem tornar escopo interno acessível externamente."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-linguagens-web-closure",
+      "decision": "approved",
+      "front": "O que uma closure permite a uma função JavaScript?",
+      "verifiedProposition": "Acessar variáveis do ambiente léxico no qual foi criada, inclusive quando a função é usada fora desse escopo. O escopo externo não ganha acesso às variáveis locais da função interna.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mdn-functions",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+          "locator": "Declarando uma função; Chamando funções; Closures"
+        }
+      ],
+      "evidence": [
+        "Declaração de função não a executa; chamada executa. Seções closures e preservação de escopo fundamentam captura lexical sem tornar escopo interno acessível externamente."
+      ]
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-pilares",
+      "decision": "approved",
+      "front": "Quais são os três pilares empíricos do Scrum Guide 2020?",
+      "verifiedProposition": "Transparência, inspeção e adaptação. São fundamentos do empirismo no Scrum, distintos dos cinco valores do framework.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "evidence": [
+        "Scrum Guide 2020: transparência, inspeção e adaptação; Sprint tem duração fixa de um mês ou menos; Product Goal, Sprint Goal e Definition of Done vinculam os três artefatos."
+      ]
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-sprint",
+      "decision": "approved",
+      "front": "Qual a duração máxima de um Sprint no Scrum Guide 2020?",
+      "verifiedProposition": "Um mês. Sprints têm duração fixa de um mês ou menos, e um novo Sprint começa imediatamente após o anterior.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "evidence": [
+        "Scrum Guide 2020: transparência, inspeção e adaptação; Sprint tem duração fixa de um mês ou menos; Product Goal, Sprint Goal e Definition of Done vinculam os três artefatos."
+      ]
+    },
+    {
+      "id": "fc-curated-engsoft-ciclos-compromissos",
+      "decision": "approved",
+      "front": "A quais artefatos do Scrum correspondem Product Goal, Sprint Goal e Definition of Done?",
+      "verifiedProposition": "Product Goal corresponde ao Product Backlog; Sprint Goal ao Sprint Backlog; Definition of Done ao Increment. Cada compromisso dá foco e transparência ao artefato.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-scrum-2020",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "locator": "Scrum Theory; The Sprint; Scrum Artifacts"
+        }
+      ],
+      "evidence": [
+        "Scrum Guide 2020: transparência, inspeção e adaptação; Sprint tem duração fixa de um mês ou menos; Product Goal, Sprint Goal e Definition of Done vinculam os três artefatos."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-git-containers-controle-versao",
+      "decision": "approved",
+      "front": "Qual é a finalidade do controle de versão?",
+      "verifiedProposition": "Registrar alterações de arquivos ao longo do tempo para recuperar e comparar versões específicas. O escopo não se restringe a código-fonte.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-progit-control",
+          "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+          "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems"
+        }
+      ],
+      "evidence": [
+        "§1.1: controle de versão registra mudanças em arquivos e permite recuperar versões; escopo não se limita ao código-fonte."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-git-containers-container-vm",
+      "decision": "approved",
+      "front": "Qual a diferença de kernel entre container e máquina virtual no modelo descrito pelo Docker?",
+      "verifiedProposition": "Uma VM tem seu próprio kernel de sistema operacional. Containers isolam processos e compartilham o kernel do ambiente que os executa, que pode estar dentro de uma VM.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-docker-container",
+          "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+          "locator": "The basics; Containers versus virtual machines"
+        }
+      ],
+      "evidence": [
+        "Container é processo isolado; VM contém kernel próprio e containers compartilham o kernel do host, inclusive quando esse host é uma VM. Isolamento não dispensa controles de segurança."
+      ]
+    },
+    {
+      "id": "fc-curated-sistemas-diretorios-container-processo",
+      "decision": "approved",
+      "front": "Um container é necessariamente uma máquina virtual completa?",
+      "verifiedProposition": "Não. No modelo Docker, é um processo isolado com os arquivos necessários para executar. Seu isolamento não dispensa controles de segurança do host.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-docker-container",
+          "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+          "locator": "The basics; Containers versus virtual machines"
+        }
+      ],
+      "evidence": [
+        "Container é processo isolado; VM contém kernel próprio e containers compartilham o kernel do host, inclusive quando esse host é uma VM. Isolamento não dispensa controles de segurança."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-git-containers-scheduler",
+      "decision": "approved",
+      "front": "Qual a responsabilidade principal do kube-scheduler?",
+      "verifiedProposition": "Encontrar Pods ainda sem nó atribuído e escolher um nó adequado. Executar o Pod no nó é responsabilidade de outros componentes, como o kubelet.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-k8s-components",
+          "url": "https://kubernetes.io/docs/concepts/overview/components/",
+          "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet"
+        }
+      ],
+      "evidence": [
+        "Core components: kube-apiserver expõe API HTTP, scheduler escolhe nó para Pod sem nó atribuído e kubelet assegura execução no nó."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-git-containers-apiserver",
+      "decision": "approved",
+      "front": "Para que serve o kube-apiserver?",
+      "verifiedProposition": "Expor a API HTTP do Kubernetes, pela qual os componentes e clientes interagem com o plano de controle.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-k8s-components",
+          "url": "https://kubernetes.io/docs/concepts/overview/components/",
+          "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet"
+        }
+      ],
+      "evidence": [
+        "Core components: kube-apiserver expõe API HTTP, scheduler escolhe nó para Pod sem nó atribuído e kubelet assegura execução no nó."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-iac-observabilidade-sinais",
+      "decision": "approved",
+      "front": "Como distinguir logs, métricas e traces?",
+      "verifiedProposition": "Logs registram eventos; métricas são medições em execução; traces acompanham o percurso de uma requisição. Combinar sinais ajuda a investigar o comportamento do sistema.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-otel-signals",
+          "url": "https://opentelemetry.io/docs/concepts/signals/",
+          "locator": "Signals: Traces, Metrics, Logs, Baggage"
+        }
+      ],
+      "evidence": [
+        "Signals: traces acompanham caminho de requisição, métricas medem sistema em execução, logs registram eventos. Aprovação dessas distinções introdutórias."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-iac-observabilidade-iac",
+      "decision": "approved",
+      "front": "O que significa infraestrutura como código no exemplo Terraform?",
+      "verifiedProposition": "Definir recursos em arquivos de configuração legíveis, versionáveis e reutilizáveis, usando um fluxo consistente para provisionar e gerenciar a infraestrutura.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-terraform-intro",
+          "url": "https://developer.hashicorp.com/terraform/intro",
+          "locator": "What is Terraform?; How does Terraform work?"
+        }
+      ],
+      "evidence": [
+        "Terraform usa configurações legíveis/versionáveis, reutilizáveis e compartilháveis para gerenciar infraestrutura ao longo do ciclo de vida."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-cicd-workflow-jobs",
+      "decision": "approved",
+      "front": "Como workflows, jobs e steps se relacionam no GitHub Actions?",
+      "verifiedProposition": "Um workflow contém jobs; cada job contém steps. Jobs podem executar em paralelo ou depender de outros; os steps de um job executam em sequência por padrão.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-github-actions",
+          "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+          "locator": "Overview; Workflows; Jobs; Runners"
+        }
+      ],
+      "evidence": [
+        "Overview e componentes: CI/CD pode automatizar build e testes; workflows contêm jobs com dependências ou paralelismo, jobs contêm steps sequenciais."
+      ]
+    },
+    {
+      "id": "fc-curated-devops-cicd-feedback",
+      "decision": "approved",
+      "front": "Por que automatizar build e testes ajuda a integração contínua?",
+      "verifiedProposition": "Permite verificar mudanças e obter feedback repetível sobre falhas de build e testes. Não garante ausência de defeitos nem elimina revisão de código.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-github-actions",
+          "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+          "locator": "Overview; Workflows; Jobs; Runners"
+        }
+      ],
+      "evidence": [
+        "Overview e componentes: CI/CD pode automatizar build e testes; workflows contêm jobs com dependências ou paralelismo, jobs contêm steps sequenciais."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oauth",
+      "decision": "approved",
+      "front": "Qual problema principal o OAuth 2.0 resolve?",
+      "verifiedProposition": "Acesso delegado a recursos protegidos: um cliente usa uma autorização concedida e um access token para acessar recursos. OAuth, sozinho, não é um protocolo de identidade do usuário.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc6749",
+          "url": "https://www.rfc-editor.org/rfc/rfc6749",
+          "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token"
+        }
+      ],
+      "evidence": [
+        "Introdução e §§1.1/1.4: acesso delegado a recursos protegidos e quatro papéis lógicos. OAuth isolado não constitui protocolo de identidade do usuário."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oauth-papeis",
+      "decision": "approved",
+      "front": "Quais quatro papéis são definidos pela RFC 6749?",
+      "verifiedProposition": "Resource owner, resource server, client e authorization server. São papéis lógicos; um mesmo sistema pode desempenhar mais de um.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc6749",
+          "url": "https://www.rfc-editor.org/rfc/rfc6749",
+          "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token"
+        }
+      ],
+      "evidence": [
+        "Introdução e §§1.1/1.4: acesso delegado a recursos protegidos e quatro papéis lógicos. OAuth isolado não constitui protocolo de identidade do usuário."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-jwt-cifra",
+      "decision": "approved",
+      "front": "Um JWT assinado esconde automaticamente seu conteúdo?",
+      "verifiedProposition": "Não. Na representação JWS, header e payload são codificados em base64url, não cifrados. JWT também pode usar JWE para criptografia; assinatura e confidencialidade são propriedades distintas.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc7519",
+          "url": "https://www.rfc-editor.org/rfc/rfc7519",
+          "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT"
+        }
+      ],
+      "evidence": [
+        "§3 distingue representação JWS e JWE; base64url de JWS não cifra. §4.1.4: exp impede aceitação no instante ou depois, podendo haver pequena tolerância de relógio."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-jwt-exp",
+      "decision": "approved",
+      "front": "Para que serve a claim exp de um JWT?",
+      "verifiedProposition": "exp indica o instante a partir do qual o JWT não deve ser aceito (naquele instante ou depois). A implementação pode admitir pequena tolerância para diferença de relógios.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc7519",
+          "url": "https://www.rfc-editor.org/rfc/rfc7519",
+          "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT"
+        }
+      ],
+      "evidence": [
+        "§3 distingue representação JWS e JWE; base64url de JWS não cifra. §4.1.4: exp impede aceitação no instante ou depois, podendo haver pequena tolerância de relógio."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-oidc",
+      "decision": "approved",
+      "front": "O que OpenID Connect acrescenta ao OAuth 2.0?",
+      "verifiedProposition": "Uma camada de identidade que permite ao cliente verificar a identidade do usuário autenticado pelo servidor de autorização e receber informações de perfil. O ID Token é diferente de um access token.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-oidc-core",
+          "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+          "locator": "Abstract; §1 Introduction; §2 ID Token"
+        }
+      ],
+      "evidence": [
+        "Abstract, §1 e §2: camada de identidade sobre OAuth 2.0 e ID Token, distinguido de access token."
+      ]
+    },
+    {
+      "id": "fc-curated-devsistemas-apis-identidade-openapi",
+      "decision": "approved",
+      "front": "Qual é a finalidade da especificação OpenAPI?",
+      "verifiedProposition": "Descrever interfaces de APIs HTTP em formato independente de linguagem, incluindo operações, parâmetros e respostas. A descrição não implementa a API nem garante a correção de seu servidor.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openapi-311",
+          "url": "https://spec.openapis.org/oas/v3.1.1.html",
+          "locator": "Introduction; §4.8 Schema, especialmente §4.8.24 Schema Object"
+        }
+      ],
+      "evidence": [
+        "OpenAPI 3.1.1 §2 e §4.8.24: descrição de interface HTTP e Schema Object; especificação não implementa nem garante o comportamento do serviço."
+      ]
+    },
+    {
+      "id": "fc-curated-redes-protocolos-idempotencia",
+      "decision": "approved",
+      "front": "O que torna um método HTTP idempotente?",
+      "verifiedProposition": "Repetir requisições idênticas produz o mesmo efeito pretendido no servidor que uma única requisição. As respostas e registros de log podem diferir; idempotência não significa ausência de efeitos.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc9110",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+          "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods"
+        }
+      ],
+      "evidence": [
+        "§9.2.1/9.2.2: safe e idempotent são propriedades do efeito pretendido; GET é ambos, PUT/DELETE são idempotentes e não safe; logs e respostas podem variar."
+      ]
+    },
+    {
+      "id": "fc-curated-redes-protocolos-seguro",
+      "decision": "approved",
+      "front": "Qual a diferença entre método HTTP seguro e idempotente?",
+      "verifiedProposition": "Seguro significa que o cliente não solicita mudança de estado. Idempotente significa que repetir tem o mesmo efeito pretendido de executar uma vez. GET é seguro e idempotente; PUT e DELETE são idempotentes, mas não seguros.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rfc9110",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+          "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods"
+        }
+      ],
+      "evidence": [
+        "§9.2.1/9.2.2: safe e idempotent são propriedades do efeito pretendido; GET é ambos, PUT/DELETE são idempotentes e não safe; logs e respostas podem variar."
+      ]
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-iaas",
+      "decision": "approved",
+      "front": "Qual controle o consumidor tem no modelo IaaS do NIST?",
+      "verifiedProposition": "Pode implantar software, incluindo sistema operacional e aplicações, sobre recursos provisionados. Não gerencia a infraestrutura física de nuvem subjacente.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "evidence": [
+        "SP800-145 §2, páginas impressas 2–3: IaaS/PaaS/SaaS delimitam controles de infraestrutura/app; elasticidade provisiona/libera conforme demanda, com ressalvas de automação e responsabilidade."
+      ]
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-paas-saas",
+      "decision": "approved",
+      "front": "Como PaaS e SaaS diferem para o consumidor?",
+      "verifiedProposition": "PaaS permite implantar suas aplicações sobre a plataforma do provedor; SaaS permite usar as aplicações do provedor. Em ambos, o consumidor não gerencia a infraestrutura subjacente, mas conserva responsabilidades aplicáveis.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "evidence": [
+        "SP800-145 §2, páginas impressas 2–3: IaaS/PaaS/SaaS delimitam controles de infraestrutura/app; elasticidade provisiona/libera conforme demanda, com ressalvas de automação e responsabilidade."
+      ]
+    },
+    {
+      "id": "fc-curated-nuvem-arquitetura-elasticidade",
+      "decision": "approved",
+      "front": "O que é elasticidade rápida na definição de nuvem do NIST?",
+      "verifiedProposition": "Capacidade de provisionar e liberar recursos para ajustar a capacidade à demanda, em alguns casos automaticamente. Não implica recursos realmente ilimitados nem garante disponibilidade absoluta.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist800145",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+          "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models"
+        }
+      ],
+      "evidence": [
+        "SP800-145 §2, páginas impressas 2–3: IaaS/PaaS/SaaS delimitam controles de infraestrutura/app; elasticidade provisiona/libera conforme demanda, com ressalvas de automação e responsabilidade."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-dados-ml-supervisionado",
+      "decision": "approved",
+      "front": "Qual o papel de X e y no aprendizado supervisionado exemplificado pelo scikit-learn?",
+      "verifiedProposition": "X reúne as características das amostras; y contém os alvos conhecidos usados no treino. Cada alvo corresponde à amostra da mesma posição.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-start",
+          "url": "https://scikit-learn.org/stable/getting_started.html",
+          "locator": "Fitting and predicting: estimator basics; Pipelines"
+        }
+      ],
+      "evidence": [
+        "Fitting and predicting: X contém amostras/características; y contém alvos por amostra, discretos em classificação e numéricos em regressão. Codificar classe com número não muda sua natureza."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-dados-ml-classificacao-regressao",
+      "decision": "approved",
+      "front": "Qual a diferença entre classificação e regressão quanto à saída prevista?",
+      "verifiedProposition": "Classificação prevê classes de um conjunto discreto; regressão prevê valores numéricos. O significado do alvo define a tarefa, não apenas a forma numérica usada para representar classes.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-start",
+          "url": "https://scikit-learn.org/stable/getting_started.html",
+          "locator": "Fitting and predicting: estimator basics; Pipelines"
+        }
+      ],
+      "evidence": [
+        "Fitting and predicting: X contém amostras/características; y contém alvos por amostra, discretos em classificação e numéricos em regressão. Codificar classe com número não muda sua natureza."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-dados-rag-etica-data-leakage",
+      "decision": "approved",
+      "front": "Por que não se deve ajustar o preprocessing usando o conjunto de teste?",
+      "verifiedProposition": "Isso permite que informações do teste influenciem o modelo e pode produzir avaliação otimista. Ajuste transformações no treino e aplique-as, sem novo fit, no teste.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-sklearn-leakage",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+          "locator": "§12.2 Data leakage"
+        }
+      ],
+      "evidence": [
+        "Common pitfalls §12.2: fit de pré-processamento somente no treino; transform no teste sem aprender dele. Data leakage produz estimativas otimistas e pipelines ajudam a evitá-lo."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-rag",
+      "decision": "approved",
+      "front": "O que a recuperação acrescenta ao modelo RAG descrito por Lewis e colaboradores?",
+      "verifiedProposition": "Acesso a uma memória externa não paramétrica: um recuperador consulta um índice de documentos, e o gerador usa passagens recuperadas junto da memória do modelo.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rag-paper",
+          "url": "https://arxiv.org/abs/2005.11401",
+          "locator": "Resumo do artigo, versão v4 de 12/04/2021"
+        }
+      ],
+      "evidence": [
+        "Somente abstract v4 de Lewis et al. (12/04/2021): memória paramétrica seq2seq e não paramétrica via índice vetorial de passagens/recuperador. Nenhuma aprovação de benchmarks ou garantia factual."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-dados-rag-etica-rag-fonte",
+      "decision": "approved",
+      "front": "Na arquitetura do artigo RAG, memória paramétrica e não paramétrica são a mesma coisa?",
+      "verifiedProposition": "Não. A memória paramétrica está no modelo seq2seq treinado; a não paramétrica é o índice vetorial externo consultado por um recuperador. São componentes com funções diferentes.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-rag-paper",
+          "url": "https://arxiv.org/abs/2005.11401",
+          "locator": "Resumo do artigo, versão v4 de 12/04/2021"
+        }
+      ],
+      "evidence": [
+        "Somente abstract v4 de Lewis et al. (12/04/2021): memória paramétrica seq2seq e não paramétrica via índice vetorial de passagens/recuperador. Nenhuma aprovação de benchmarks ou garantia factual."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-mcp-papeis",
+      "decision": "approved",
+      "front": "Como host, cliente e servidor se relacionam no MCP?",
+      "verifiedProposition": "O host coordena os clientes e aplica políticas; cada cliente mantém uma conexão com um servidor; servidores expõem capacidades como ferramentas, recursos e prompts.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mcp-architecture",
+          "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+          "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles"
+        }
+      ],
+      "evidence": [
+        "Versão 2025-11-25, Core components e Design principles: host gerencia permissões/clientes, vínculo cliente-servidor 1:1, servidores oferecem tools/resources/prompts, contexto necessário versus histórico completo no host."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-agentivos-ciclo-mcp-mcp-limite",
+      "decision": "approved",
+      "front": "Um servidor MCP deve receber automaticamente toda a conversa do usuário?",
+      "verifiedProposition": "Não. O desenho do protocolo mantém o histórico completo no host e fornece ao servidor apenas o contexto necessário, com controles de segurança e autorização.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-mcp-architecture",
+          "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+          "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles"
+        }
+      ],
+      "evidence": [
+        "Versão 2025-11-25, Core components e Design principles: host gerencia permissões/clientes, vínculo cliente-servidor 1:1, servidores oferecem tools/resources/prompts, contexto necessário versus histórico completo no host."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-agentivos-llm-workflow-agente",
+      "decision": "approved",
+      "front": "Como o artigo Building effective agents distingue workflow de agente?",
+      "verifiedProposition": "Workflow segue caminhos definidos pelo código; agente permite ao modelo decidir dinamicamente seu processo e uso de ferramentas. É a distinção operacional do artigo, não uma definição universal de toda IA.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "evidence": [
+        "Definição operacional Anthropic: workflows usam caminhos codificados, agentes dirigem processo com modelo; prompt chaining pode ter gates; evaluator-optimizer requer critérios claros e feedback iterativo."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-agentivos-contexto-prompt-chaining",
+      "decision": "approved",
+      "front": "Qual é a ideia de prompt chaining no artigo da Anthropic?",
+      "verifiedProposition": "Decompor a tarefa em chamadas sequenciais, em que uma usa a saída da anterior. Verificações programáticas entre etapas podem conferir se o fluxo atende aos critérios.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "evidence": [
+        "Definição operacional Anthropic: workflows usam caminhos codificados, agentes dirigem processo com modelo; prompt chaining pode ter gates; evaluator-optimizer requer critérios claros e feedback iterativo."
+      ]
+    },
+    {
+      "id": "fc-curated-ia-dados-generativa-avaliador",
+      "decision": "approved",
+      "front": "Qual o papel do avaliador no padrão evaluator-optimizer?",
+      "verifiedProposition": "Avaliar a saída conforme critérios e fornecer feedback para revisão iterativa. O padrão é útil quando os critérios são claros e o feedback pode melhorar o resultado.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-agent-workflows",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer"
+        }
+      ],
+      "evidence": [
+        "Definição operacional Anthropic: workflows usam caminhos codificados, agentes dirigem processo com modelo; prompt chaining pode ter gates; evaluator-optimizer requer critérios claros e feedback iterativo."
+      ]
+    },
+    {
+      "id": "fc-curated-seguranca-aplicacoes-continuidade-sqli",
+      "decision": "approved",
+      "front": "Por que queries parametrizadas ajudam a prevenir SQL injection?",
+      "verifiedProposition": "Separam a estrutura da instrução dos valores fornecidos, tratando esses valores como dados. Identificadores como nome de tabela exigem abordagem específica, como lista de valores permitidos.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-sqli",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+          "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege"
+        }
+      ],
+      "evidence": [
+        "Prepared statements vinculam valores após definir SQL; identificadores exigem validação/allowlist. Menor privilégio reduz impacto e não substitui parametrização."
+      ]
+    },
+    {
+      "id": "fc-curated-seguranca-aplicacoes-continuidade-db-minimo",
+      "decision": "approved",
+      "front": "Por que privilégio mínimo também importa contra SQL injection?",
+      "verifiedProposition": "Limita as operações que a conta da aplicação pode executar e reduz o impacto de uma falha. Não substitui a parametrização nem impede sozinho toda injeção.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-sqli",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+          "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege"
+        }
+      ],
+      "evidence": [
+        "Prepared statements vinculam valores após definir SQL; identificadores exigem validação/allowlist. Menor privilégio reduz impacto e não substitui parametrização."
+      ]
+    },
+    {
+      "id": "fc-curated-seguranca-cripto-identidade-authn-authz",
+      "decision": "approved",
+      "front": "Qual a diferença entre autenticação e autorização?",
+      "verifiedProposition": "Autenticação verifica a identidade apresentada; autorização decide se o acesso ou a ação é permitido. Identidade autenticada não concede automaticamente acesso a todos os recursos.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-authz",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request"
+        }
+      ],
+      "evidence": [
+        "Introduction diferencia autenticação e autorização e admite recursos públicos para não autenticados; Least Privilege e Validate Permissions on Every Request sustentam acesso mínimo e por requisição."
+      ]
+    },
+    {
+      "id": "fc-curated-seguranca-cripto-identidade-least-privilege",
+      "decision": "approved",
+      "front": "O que exige o princípio do privilégio mínimo?",
+      "verifiedProposition": "Conceder somente os privilégios necessários para a função ou tarefa. Permissões devem considerar recurso, operação e contexto, e ser verificadas nas requisições aplicáveis.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-owasp-authz",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request"
+        }
+      ],
+      "evidence": [
+        "Introduction diferencia autenticação e autorização e admite recursos públicos para não autenticados; Least Privilege e Validate Permissions on Every Request sustentam acesso mínimo e por requisição."
+      ]
+    },
+    {
+      "id": "fc-curated-seguranca-principios-csf-funcoes",
+      "decision": "approved",
+      "front": "Quais são as seis funções do NIST CSF 2.0?",
+      "verifiedProposition": "Govern, Identify, Protect, Detect, Respond e Recover. Elas organizam resultados de gestão de riscos de cibersegurança, não uma sequência obrigatória de passos isolados.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist-csf2",
+          "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+          "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas"
+        }
+      ],
+      "evidence": [
+        "CSF 2.0 §2, páginas impressas 3–5: Govern, Identify, Protect, Detect, Respond, Recover; funções não são sequência obrigatória. Govern estabelece/comunica/monitora estratégia, expectativas e política de risco."
+      ]
+    },
+    {
+      "id": "fc-curated-governanca-alinhamento-csf-govern",
+      "decision": "approved",
+      "front": "Qual a função de Govern no CSF 2.0?",
+      "verifiedProposition": "Estabelecer, comunicar e monitorar estratégia, expectativas e políticas de gestão de riscos de cibersegurança, considerando o contexto e objetivos da organização.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-nist-csf2",
+          "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+          "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas"
+        }
+      ],
+      "evidence": [
+        "CSF 2.0 §2, páginas impressas 3–5: Govern, Identify, Protect, Detect, Respond, Recover; funções não são sequência obrigatória. Govern estabelece/comunica/monitora estratégia, expectativas e política de risco."
+      ]
+    },
+    {
+      "id": "fc-curated-leginst-constituicao-controle-federal",
+      "decision": "approved",
+      "front": "No âmbito federal, quem exerce o controle externo e com qual auxílio?",
+      "verifiedProposition": "O Congresso Nacional exerce o controle externo com auxílio do Tribunal de Contas da União, conforme o art.71 da Constituição.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-cf-control",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+          "locator": "Arts.70 caput/parágrafo único e 71 caput"
+        }
+      ],
+      "evidence": [
+        "CF art.70 parágrafo único (EC19/1998): prestação de contas por pessoas públicas/privadas no âmbito indicado. Art.71 caput: controle externo do Congresso com auxílio do TCU. Redações específicas anteriores a 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-leginst-constituicao-prestar-contas",
+      "decision": "approved",
+      "front": "O dever constitucional de prestar contas alcança somente entidades públicas?",
+      "verifiedProposition": "Não. O art.70, parágrafo único, inclui pessoas físicas ou jurídicas, públicas ou privadas, que utilizem, arrecadem, guardem, gerenciem ou administrem os recursos públicos ali descritos.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-cf-control",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+          "locator": "Arts.70 caput/parágrafo único e 71 caput"
+        }
+      ],
+      "evidence": [
+        "CF art.70 parágrafo único (EC19/1998): prestação de contas por pessoas públicas/privadas no âmbito indicado. Art.71 caput: controle externo do Congresso com auxílio do TCU. Redações específicas anteriores a 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-legti-lgpd-necessidade",
+      "decision": "approved",
+      "front": "Qual o nome do princípio da LGPD associado à minimização de dados?",
+      "verifiedProposition": "Necessidade: limitar o tratamento aos dados pertinentes, proporcionais e não excessivos para a finalidade. Minimização é uma prática associada ao princípio, não uma base legal autônoma.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "evidence": [
+        "LGPD art.5 I/III/V, art.6 III e art.12 caput/§1: pessoa natural identificada/identificável, necessidade mínima pertinente/proporcional, anonimização e reversibilidade razoável. Dispositivos delimitados anteriores ao corte 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-legti-lgpd-dado-pessoal",
+      "decision": "approved",
+      "front": "Qual informação é dado pessoal para a LGPD?",
+      "verifiedProposition": "Informação relacionada a uma pessoa natural identificada ou identificável. Não se limita a nome ou CPF; a identificação indireta também conta.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "evidence": [
+        "LGPD art.5 I/III/V, art.6 III e art.12 caput/§1: pessoa natural identificada/identificável, necessidade mínima pertinente/proporcional, anonimização e reversibilidade razoável. Dispositivos delimitados anteriores ao corte 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-legti-lgpd-anonimizacao",
+      "decision": "approved",
+      "front": "Dados aparentemente anonimizados estão sempre fora da LGPD?",
+      "verifiedProposition": "Não. O art.12 prevê exceção quando a anonimização for revertida por meios próprios ou puder ser revertida com esforços razoáveis, avaliados conforme fatores objetivos.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-lgpd-principles",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026"
+        }
+      ],
+      "evidence": [
+        "LGPD art.5 I/III/V, art.6 III e art.12 caput/§1: pessoa natural identificada/identificável, necessidade mínima pertinente/proporcional, anonimização e reversibilidade razoável. Dispositivos delimitados anteriores ao corte 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-legti-marco-civil-neutralidade",
+      "decision": "approved",
+      "front": "O art.9 do Marco Civil proíbe toda diferenciação de tráfego sem exceção?",
+      "verifiedProposition": "Não. O caput exige tratamento isonômico, e o §1 admite discriminação ou degradação somente por requisitos técnicos indispensáveis ou priorização de emergência, conforme regulamentação.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-marco-neutrality",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+          "locator": "Arts.9 caput/§1, 13 caput e 15 caput"
+        }
+      ],
+      "evidence": [
+        "Marco Civil art.9 caput/§1 I-II: isonomia e exceções técnicas indispensáveis/emergência na regulação; art.13 caput: conexão, um ano; art.15 caput: aplicação, seis meses no sujeito qualificado descrito. Recorte 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-legti-marco-civil-registros",
+      "decision": "approved",
+      "front": "Os prazos gerais dos arts.13 e 15 do Marco Civil são iguais?",
+      "verifiedProposition": "Não. Art.13: registros de conexão por um ano para o administrador de sistema autônomo na provisão de conexão. Art.15: registros de acesso a aplicações por seis meses para a pessoa jurídica que as provê de forma organizada, profissional e econômica. Há regras específicas além desses caputs.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-marco-neutrality",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+          "locator": "Arts.9 caput/§1, 13 caput e 15 caput"
+        }
+      ],
+      "evidence": [
+        "Marco Civil art.9 caput/§1 I-II: isonomia e exceções técnicas indispensáveis/emergência na regulação; art.13 caput: conexão, um ano; art.15 caput: aplicação, seis meses no sujeito qualificado descrito. Recorte 25/08/2026."
+      ]
+    },
+    {
+      "id": "fc-curated-mrl-aritmetica-fracao",
+      "decision": "approved",
+      "front": "O que numerador e denominador representam no modelo de uma fração de um todo?",
+      "verifiedProposition": "O denominador indica em quantas partes iguais o todo foi dividido; o numerador indica quantas dessas partes foram consideradas. O denominador não pode ser zero.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-fractions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+          "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions"
+        }
+      ],
+      "evidence": [
+        "§4.1: denominador não zero determina partes iguais e numerador conta partes; multiplicar ambos por mesmo número não zero gera fração equivalente."
+      ]
+    },
+    {
+      "id": "fc-curated-mrl-aritmetica-equivalencia",
+      "decision": "approved",
+      "front": "Por que 2/3 e 4/6 representam o mesmo número?",
+      "verifiedProposition": "Multiplicar numerador e denominador por um mesmo número não nulo mantém o valor. Nesse caso, multiplicar ambos por 2 transforma 2/3 em 4/6.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-fractions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+          "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions"
+        }
+      ],
+      "evidence": [
+        "§4.1: denominador não zero determina partes iguais e numerador conta partes; multiplicar ambos por mesmo número não zero gera fração equivalente."
+      ]
+    },
+    {
+      "id": "fc-curated-mrl-proporcoes-produto-cruzado",
+      "decision": "approved",
+      "front": "Como verificar uma proporção a/b = c/d?",
+      "verifiedProposition": "Com b e d não nulos, a igualdade equivale a a×d = b×c. É necessário respeitar a ordem das grandezas e das unidades ao montar as razões.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-proportions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+          "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions"
+        }
+      ],
+      "evidence": [
+        "§6.5: proporções equivalem a produtos cruzados com denominadores não zero; exercício original 15% de 80 confere x/80=15/100, x=12."
+      ]
+    },
+    {
+      "id": "fc-curated-mrl-proporcoes-percentual",
+      "decision": "approved",
+      "front": "Se x é 15% de 80, qual proporção e resultado correspondem ao problema?",
+      "verifiedProposition": "x/80 = 15/100; portanto x = 12. A base é 80 e o percentual representa uma razão de denominador 100.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-openstax-proportions",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+          "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions"
+        }
+      ],
+      "evidence": [
+        "§6.5: proporções equivalem a produtos cruzados com denominadores não zero; exercício original 15% de 80 confere x/80=15/100, x=12."
+      ]
+    },
+    {
+      "id": "fc-curated-ingles-estrategias-skimming",
+      "decision": "approved",
+      "front": "Para qual objetivo usar skimming na leitura em inglês?",
+      "verifiedProposition": "Obter rapidamente uma ideia geral do assunto e da organização do texto. Não basta, sozinho, para confirmar todos os detalhes de uma resposta.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-bc-reading",
+          "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+          "locator": "Skimming; Scanning; Reading for detail"
+        }
+      ],
+      "evidence": [
+        "How to read the text: skimming identifica assunto/estrutura geral; scanning localiza nomes, datas e números; leitura detalhada subsequente interpreta o contexto."
+      ]
+    },
+    {
+      "id": "fc-curated-ingles-compreensao-scanning",
+      "decision": "approved",
+      "front": "Quando scanning é útil na leitura em inglês?",
+      "verifiedProposition": "Quando se busca uma informação específica, como data, nome ou número. Depois de localizar o trecho, a leitura cuidadosa confere seu sentido e contexto.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-bc-reading",
+          "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+          "locator": "Skimming; Scanning; Reading for detail"
+        }
+      ],
+      "evidence": [
+        "How to read the text: skimming identifica assunto/estrutura geral; scanning localiza nomes, datas e números; leitura detalhada subsequente interpreta o contexto."
+      ]
+    },
+    {
+      "id": "fc-curated-lp-sintaxe-redacao-sujeito-verbo",
+      "decision": "approved",
+      "front": "Em ordem direta, usa-se vírgula apenas para separar o sujeito de seu verbo?",
+      "verifiedProposition": "Não. A vírgula não separa o sujeito de seu verbo apenas por haver pausa de leitura. Intercalações podem exigir vírgulas em par, o que é outra construção.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-funag-comma",
+          "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+          "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula"
+        }
+      ],
+      "evidence": [
+        "Manual FUNAG, I.2.b: isolamento de vocativo; observações b: ligação de sujeito e verbo não recebe vírgula por simples pausa. Intercalações isoladas têm função distinta."
+      ]
+    },
+    {
+      "id": "fc-curated-lp-sintaxe-redacao-vocativo",
+      "decision": "approved",
+      "front": "Como a vírgula marca um vocativo?",
+      "verifiedProposition": "Isola a expressão usada para chamar o interlocutor: em “Ana, confira o relatório”, Ana é vocativo. Não é o sujeito da oração “confira o relatório”.",
+      "sourceRefs": [
+        {
+          "sourceId": "curated-funag-comma",
+          "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+          "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula"
+        }
+      ],
+      "evidence": [
+        "Manual FUNAG, I.2.b: isolamento de vocativo; observações b: ligação de sujeito e verbo não recebe vírgula por simples pausa. Intercalações isoladas têm função distinta."
+      ]
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "sourceId": "curated-pg-transactions",
+      "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+      "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK",
+      "reviewedEvidence": "§3.4: transação como operação tudo-ou-nada; confirmação torna alterações permanentes sob as garantias de persistência; COMMIT confirma e ROLLBACK desfaz alterações ainda não confirmadas."
+    },
+    {
+      "sourceId": "curated-pg-foreign-keys",
+      "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+      "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL",
+      "reviewedEvidence": "§3.3: integridade referencial; §5.5.5 complementa correspondência, NULL e restrições. A formulação conserva a ressalva NULL e não confunde FK com normalização."
+    },
+    {
+      "sourceId": "curated-pg-indexes",
+      "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+      "locator": "§11.1 Introduction, busca e custo de atualização/manutenção",
+      "reviewedEvidence": "§11.1: índices aceleram busca e impõem sincronização/manutenção nas atualizações. O planner pode deixar de usar o índice. A revisão final limita a resposta a esses efeitos."
+    },
+    {
+      "sourceId": "curated-pg-backup",
+      "url": "https://www.postgresql.org/docs/18/backup.html",
+      "locator": "Capítulo 25, introdução e três abordagens",
+      "reviewedEvidence": "Introdução do capítulo 25 enumera SQL dump, cópia do sistema de arquivos e arquivamento contínuo; não presume equivalência operacional."
+    },
+    {
+      "sourceId": "curated-python-structures",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos",
+      "reviewedEvidence": "§5.1.1: append/pop implementam pilha LIFO; §5.1.2: deque append/popleft implementam fila FIFO e a remoção no começo de list tem custo maior."
+    },
+    {
+      "sourceId": "curated-mdn-functions",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+      "locator": "Declarando uma função; Chamando funções; Closures",
+      "reviewedEvidence": "Declaração de função não a executa; chamada executa. Seções closures e preservação de escopo fundamentam captura lexical sem tornar escopo interno acessível externamente."
+    },
+    {
+      "sourceId": "curated-scrum-2020",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "locator": "Scrum Theory; The Sprint; Scrum Artifacts",
+      "reviewedEvidence": "Scrum Guide 2020: transparência, inspeção e adaptação; Sprint tem duração fixa de um mês ou menos; Product Goal, Sprint Goal e Definition of Done vinculam os três artefatos."
+    },
+    {
+      "sourceId": "curated-progit-control",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems",
+      "reviewedEvidence": "§1.1: controle de versão registra mudanças em arquivos e permite recuperar versões; escopo não se limita ao código-fonte."
+    },
+    {
+      "sourceId": "curated-docker-container",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "locator": "The basics; Containers versus virtual machines",
+      "reviewedEvidence": "Container é processo isolado; VM contém kernel próprio e containers compartilham o kernel do host, inclusive quando esse host é uma VM. Isolamento não dispensa controles de segurança."
+    },
+    {
+      "sourceId": "curated-k8s-components",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "locator": "Core Components; kube-apiserver, etcd, kube-scheduler, kubelet",
+      "reviewedEvidence": "Core components: kube-apiserver expõe API HTTP, scheduler escolhe nó para Pod sem nó atribuído e kubelet assegura execução no nó."
+    },
+    {
+      "sourceId": "curated-otel-signals",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "locator": "Signals: Traces, Metrics, Logs, Baggage",
+      "reviewedEvidence": "Signals: traces acompanham caminho de requisição, métricas medem sistema em execução, logs registram eventos. Aprovação dessas distinções introdutórias."
+    },
+    {
+      "sourceId": "curated-github-actions",
+      "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "locator": "Overview; Workflows; Jobs; Runners",
+      "reviewedEvidence": "Overview e componentes: CI/CD pode automatizar build e testes; workflows contêm jobs com dependências ou paralelismo, jobs contêm steps sequenciais."
+    },
+    {
+      "sourceId": "curated-terraform-intro",
+      "url": "https://developer.hashicorp.com/terraform/intro",
+      "locator": "What is Terraform?; How does Terraform work?",
+      "reviewedEvidence": "Terraform usa configurações legíveis/versionáveis, reutilizáveis e compartilháveis para gerenciar infraestrutura ao longo do ciclo de vida."
+    },
+    {
+      "sourceId": "curated-rfc6749",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749",
+      "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token",
+      "reviewedEvidence": "Introdução e §§1.1/1.4: acesso delegado a recursos protegidos e quatro papéis lógicos. OAuth isolado não constitui protocolo de identidade do usuário."
+    },
+    {
+      "sourceId": "curated-rfc7519",
+      "url": "https://www.rfc-editor.org/rfc/rfc7519",
+      "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT",
+      "reviewedEvidence": "§3 distingue representação JWS e JWE; base64url de JWS não cifra. §4.1.4: exp impede aceitação no instante ou depois, podendo haver pequena tolerância de relógio."
+    },
+    {
+      "sourceId": "curated-oidc-core",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "locator": "Abstract; §1 Introduction; §2 ID Token",
+      "reviewedEvidence": "Abstract, §1 e §2: camada de identidade sobre OAuth 2.0 e ID Token, distinguido de access token."
+    },
+    {
+      "sourceId": "curated-openapi-311",
+      "url": "https://spec.openapis.org/oas/v3.1.1.html",
+      "locator": "Introduction; §4.8 Schema, especialmente §4.8.24 Schema Object",
+      "reviewedEvidence": "OpenAPI 3.1.1 §2 e §4.8.24: descrição de interface HTTP e Schema Object; especificação não implementa nem garante o comportamento do serviço."
+    },
+    {
+      "sourceId": "curated-rfc9110",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "locator": "§9.2.1 Safe Methods; §9.2.2 Idempotent Methods",
+      "reviewedEvidence": "§9.2.1/9.2.2: safe e idempotent são propriedades do efeito pretendido; GET é ambos, PUT/DELETE são idempotentes e não safe; logs e respostas podem variar."
+    },
+    {
+      "sourceId": "curated-nist800145",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "locator": "§2, pp.2–3 impressas: Essential Characteristics, Service Models, Deployment Models",
+      "reviewedEvidence": "SP800-145 §2, páginas impressas 2–3: IaaS/PaaS/SaaS delimitam controles de infraestrutura/app; elasticidade provisiona/libera conforme demanda, com ressalvas de automação e responsabilidade."
+    },
+    {
+      "sourceId": "curated-sklearn-start",
+      "url": "https://scikit-learn.org/stable/getting_started.html",
+      "locator": "Fitting and predicting: estimator basics; Pipelines",
+      "reviewedEvidence": "Fitting and predicting: X contém amostras/características; y contém alvos por amostra, discretos em classificação e numéricos em regressão. Codificar classe com número não muda sua natureza."
+    },
+    {
+      "sourceId": "curated-sklearn-leakage",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "locator": "§12.2 Data leakage",
+      "reviewedEvidence": "Common pitfalls §12.2: fit de pré-processamento somente no treino; transform no teste sem aprender dele. Data leakage produz estimativas otimistas e pipelines ajudam a evitá-lo."
+    },
+    {
+      "sourceId": "curated-rag-paper",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "locator": "Resumo do artigo, versão v4 de 12/04/2021",
+      "reviewedEvidence": "Somente abstract v4 de Lewis et al. (12/04/2021): memória paramétrica seq2seq e não paramétrica via índice vetorial de passagens/recuperador. Nenhuma aprovação de benchmarks ou garantia factual."
+    },
+    {
+      "sourceId": "curated-mcp-architecture",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+      "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles",
+      "reviewedEvidence": "Versão 2025-11-25, Core components e Design principles: host gerencia permissões/clientes, vínculo cliente-servidor 1:1, servidores oferecem tools/resources/prompts, contexto necessário versus histórico completo no host."
+    },
+    {
+      "sourceId": "curated-agent-workflows",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "locator": "What are agents?; Building block: augmented LLM; Prompt chaining; Evaluator-optimizer",
+      "reviewedEvidence": "Definição operacional Anthropic: workflows usam caminhos codificados, agentes dirigem processo com modelo; prompt chaining pode ter gates; evaluator-optimizer requer critérios claros e feedback iterativo."
+    },
+    {
+      "sourceId": "curated-owasp-sqli",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "locator": "Primary Defenses; Option 1 Prepared Statements; Least Privilege",
+      "reviewedEvidence": "Prepared statements vinculam valores após definir SQL; identificadores exigem validação/allowlist. Menor privilégio reduz impacto e não substitui parametrização."
+    },
+    {
+      "sourceId": "curated-owasp-authz",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "locator": "Introduction; Enforce Least Privileges; Deny by Default; Validate Permissions on Every Request",
+      "reviewedEvidence": "Introduction diferencia autenticação e autorização e admite recursos públicos para não autenticados; Least Privilege e Validate Permissions on Every Request sustentam acesso mínimo e por requisição."
+    },
+    {
+      "sourceId": "curated-nist-csf2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas",
+      "reviewedEvidence": "CSF 2.0 §2, páginas impressas 3–5: Govern, Identify, Protect, Detect, Respond, Recover; funções não são sequência obrigatória. Govern estabelece/comunica/monitora estratégia, expectativas e política de risco."
+    },
+    {
+      "sourceId": "curated-cf-control",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "locator": "Arts.70 caput/parágrafo único e 71 caput",
+      "reviewedEvidence": "CF art.70 parágrafo único (EC19/1998): prestação de contas por pessoas públicas/privadas no âmbito indicado. Art.71 caput: controle externo do Congresso com auxílio do TCU. Redações específicas anteriores a 25/08/2026."
+    },
+    {
+      "sourceId": "curated-lgpd-principles",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "locator": "Arts.5 I/III/V, 6 III e 12; recorte legal, corte do edital 25/08/2026",
+      "reviewedEvidence": "LGPD art.5 I/III/V, art.6 III e art.12 caput/§1: pessoa natural identificada/identificável, necessidade mínima pertinente/proporcional, anonimização e reversibilidade razoável. Dispositivos delimitados anteriores ao corte 25/08/2026."
+    },
+    {
+      "sourceId": "curated-marco-neutrality",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+      "locator": "Arts.9 caput/§1, 13 caput e 15 caput",
+      "reviewedEvidence": "Marco Civil art.9 caput/§1 I-II: isonomia e exceções técnicas indispensáveis/emergência na regulação; art.13 caput: conexão, um ano; art.15 caput: aplicação, seis meses no sujeito qualificado descrito. Recorte 25/08/2026."
+    },
+    {
+      "sourceId": "curated-openstax-fractions",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+      "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions",
+      "reviewedEvidence": "§4.1: denominador não zero determina partes iguais e numerador conta partes; multiplicar ambos por mesmo número não zero gera fração equivalente."
+    },
+    {
+      "sourceId": "curated-openstax-proportions",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+      "locator": "§6.5 Definition of Proportion; Cross Products; Percent Proportions",
+      "reviewedEvidence": "§6.5: proporções equivalem a produtos cruzados com denominadores não zero; exercício original 15% de 80 confere x/80=15/100, x=12."
+    },
+    {
+      "sourceId": "curated-bc-reading",
+      "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+      "locator": "Skimming; Scanning; Reading for detail",
+      "reviewedEvidence": "How to read the text: skimming identifica assunto/estrutura geral; scanning localiza nomes, datas e números; leitura detalhada subsequente interpreta o contexto."
+    },
+    {
+      "sourceId": "curated-funag-comma",
+      "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+      "locator": "Manual de Revisão: Vírgula; casos de uso e casos sem vírgula",
+      "reviewedEvidence": "Manual FUNAG, I.2.b: isolamento de vocativo; observações b: ligação de sujeito e verbo não recebe vírgula por simples pausa. Intercalações isoladas têm função distinta."
+    }
+  ]
+}

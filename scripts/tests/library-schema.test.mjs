@@ -31,3 +31,8 @@ test('resource schema rejects unsupported delivery, unsafe URL, bad date and mis
   ];
   for (const edit of edits) { const value = resource(); edit(value); assert.equal(validate(value), false); }
 });
+test('resource schema records unknown reachability without inventing a method or final URL', () => {
+  const value = resource();
+  value.verification = { result: 'unknown', checkedAt: null, finalUrl: null, method: 'unknown' };
+  assert.equal(validate(value), true);
+});

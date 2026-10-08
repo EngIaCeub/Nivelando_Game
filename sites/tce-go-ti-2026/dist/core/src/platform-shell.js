@@ -1,4 +1,5 @@
 import { PixelIcon, PixelScene } from './pixel-ui.js';
+import { resolveViewRoute, showActiveView } from './view-router.js';
 
 // Presentation only: native hashes/history remain the navigation mechanism.
 export function setupPlatformShell() {
@@ -27,21 +28,30 @@ export function setupPlatformShell() {
     const target = document.getElementById(id);
     if (target) target.tabIndex = -1;
   }
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const viewIds = sections.map(section => section.id);
+  const routeForHash = hash => resolveViewRoute(hash, viewIds);
   const sync = (moveFocus = false) => {
     const hash = location.hash || '#today';
+    const activeRoute = routeForHash(hash);
+    showActiveView(sections, activeRoute);
     for (const link of nav?.querySelectorAll('a') ?? []) {
-      if (link.hash === hash) link.setAttribute('aria-current', 'location');
+      if (routeForHash(link.hash) === activeRoute) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     }
-    if (moveFocus) document.getElementById(hash.slice(1))?.focus({ preventScroll: true });
+    if (moveFocus) {
+      const destination = document.getElementById((hash.slice(1).split('?')[0]));
+      const section = document.getElementById(activeRoute);
+      const focusTarget = destination?.closest('section') === section ? destination : section;
+      focusTarget?.focus({ preventScroll: true });
+    }
   };
   nav?.addEventListener('click', event => {
     const link = event.target.closest('a');
     if (!link) return;
     nav.classList.remove('is-open'); toggle?.setAttribute('aria-expanded', 'false');
     for (const group of nav.querySelectorAll('details')) group.open = false;
-    // The anchor performs scrolling/history; focus follows without another navigation.
-    document.getElementById(link.hash.slice(1))?.focus({ preventScroll: true });
+    // Native hash/history remains the router; hashchange reveals and focuses the destination.
   });
   nav?.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;

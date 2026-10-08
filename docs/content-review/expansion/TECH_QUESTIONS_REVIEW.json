@@ -1,0 +1,138 @@
+{
+  "reviewer": "/root/tech_completion, GPT-6.1 Sol/high; independent factual reviewer",
+  "reviewedAt": "2026-10-07T08:46:08Z",
+  "draftSha256": "9cf2a441f767479d5e901bc5140bbfac98b978c2af024605904dcd1a61b7405e",
+  "status": "approved",
+  "approvedQuestionIds": [
+    "q-tcego-expanded-engsoft-ciclos-01",
+    "q-tcego-expanded-devsistemas-fundamentos-01",
+    "q-tcego-expanded-devsistemas-linguagens-web-01",
+    "q-tcego-expanded-ia-agentivos-llm-01",
+    "q-tcego-expanded-ia-agentivos-contexto-01",
+    "q-tcego-expanded-devops-iac-observabilidade-01",
+    "q-tcego-expanded-devops-git-containers-01",
+    "q-tcego-expanded-bd-modelagem-01",
+    "q-tcego-expanded-bd-tecnologias-operacao-01",
+    "q-tcego-expanded-ia-dados-ml-01",
+    "q-tcego-expanded-ia-dados-generativa-01",
+    "q-tcego-expanded-ia-dados-rag-etica-01"
+  ],
+  "rejected": [],
+  "sourceRefsByQuestionId": {
+    "q-tcego-expanded-engsoft-ciclos-01": [
+      {
+        "title": "Scrum Guide 2020",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "locator": "Scrum Artifacts; Sprint Backlog; Commitment: Sprint Goal",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-devsistemas-fundamentos-01": [
+      {
+        "title": "Python 3.13 tutorial",
+        "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "locator": "5.1.1 Using Lists as Stacks",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-devsistemas-linguagens-web-01": [
+      {
+        "title": "MDN Closures",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures",
+        "locator": "Introdução; Lexical scoping; Closure; makeFunc/makeAdder",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-ia-agentivos-llm-01": [
+      {
+        "title": "Building effective agents",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "locator": "What are agents?; Agents",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-ia-agentivos-contexto-01": [
+      {
+        "title": "Building effective agents",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "locator": "Workflow: Prompt chaining",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-devops-iac-observabilidade-01": [
+      {
+        "title": "OpenTelemetry Traces",
+        "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+        "locator": "Traces; JSON hello/hello-greetings/hello-salutations; Context Propagation; Spans",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-devops-git-containers-01": [
+      {
+        "title": "Docker: What is a container?",
+        "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "locator": "Explanation; Containers versus virtual machines; Using VMs and containers together",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-bd-modelagem-01": [
+      {
+        "title": "PostgreSQL 17 Constraints",
+        "url": "https://www.postgresql.org/docs/17/ddl-constraints.html",
+        "locator": "5.5.5 Foreign Keys; exemplo products/orders e parágrafo MATCH FULL/NOT NULL",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-bd-tecnologias-operacao-01": [
+      {
+        "title": "PostgreSQL 17 Continuous Archiving and PITR",
+        "url": "https://www.postgresql.org/docs/17/continuous-archiving.html",
+        "locator": "25.3 introdução; 25.3.1; 25.3.2; 25.3.5",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-ia-dados-ml-01": [
+      {
+        "title": "Scikit-learn Getting Started",
+        "url": "https://scikit-learn.org/stable/getting_started.html",
+        "locator": "Fitting and predicting: estimator.fit(X,y); categorical target classes",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-ia-dados-generativa-01": [
+      {
+        "title": "Lewis et al. RAG, arXiv v4",
+        "url": "https://arxiv.org/abs/2005.11401v4",
+        "locator": "Abstract v4, submetido 12/04/2021: dense vector index of Wikipedia, neural retriever",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ],
+    "q-tcego-expanded-ia-dados-rag-etica-01": [
+      {
+        "title": "Scikit-learn Common pitfalls",
+        "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "locator": "12.2 Data leakage; 12.2.1 How to avoid data leakage; exemplo de normalização pela média",
+        "checkedAt": "2026-10-07T08:46:08Z"
+      }
+    ]
+  },
+  "evidenceByQuestionId": {
+    "q-tcego-expanded-engsoft-ciclos-01": "D é a única resposta correta. Product Backlog/Product Goal, Sprint Backlog/Sprint Goal e Increment/Definition of Done foram confrontados no guia. As explicações dos quatro distratores preservam essa associação.",
+    "q-tcego-expanded-devsistemas-fundamentos-01": "B (30) segue LIFO após 10,20,30. Pop remove topo; push/append insere. Distratores FIFO, remoção integral e valor intermediário são incompatíveis com a sequência.",
+    "q-tcego-expanded-devsistemas-linguagens-web-01": "E. A definição e os exemplos associam função e ambiente léxico. Hoisting, coerção, DOM e coleta de lixo não designam esse mecanismo; explicações verificadas.",
+    "q-tcego-expanded-ia-agentivos-llm-01": "C dentro da distinção explicitamente atribuída à Anthropic no enunciado. Workflows também usam LLMs; agentes podem usar tools. Autonomia não garante verdade nem acesso irrestrito.",
+    "q-tcego-expanded-ia-agentivos-contexto-01": "D. O recorte descreve passos sequenciais e checks programáticos intermediários. A pergunta não afirma garantia universal de êxito nem elimina contexto, critérios ou permissões.",
+    "q-tcego-expanded-devops-iac-observabilidade-01": "B. Mesmo trace_id e parent_id correlacionam spans e o caminho da requisição. Métrica agregada, inventário, IaC e imagem sem instrumentação não descrevem operações vinculadas.",
+    "q-tcego-expanded-devops-git-containers-01": "E. Processos isolados compartilham kernel do ambiente que os executa; VM pode ser esse ambiente. Enunciado e explicação evitam afirmar que Docker Desktop compartilha diretamente kernel físico de qualquer SO.",
+    "q-tcego-expanded-bd-modelagem-01": "A. Exemplo impede product_no não nulo sem linha correspondente; NULL é ressalvado no enunciado. Índice não exclusivo, SELECT e ordenação não criam integridade referencial.",
+    "q-tcego-expanded-bd-tecnologias-operacao-01": "D. Backup físico/base + sequência contínua arquivada de WAL permite replay interrompido no ponto escolhido. pg_dump não suporta replay WAL; manutenção da sequência é requisito, não garantia implícita de recuperação.",
+    "q-tcego-expanded-ia-dados-ml-01": "D. Alvo com categorias fraude/não fraude define classificação supervisionada. Nenhuma recompensa sequencial nem alvo contínuo foi informado; explicações e alternativas são coerentes.",
+    "q-tcego-expanded-ia-dados-generativa-01": "D estritamente para a arquitetura descrita no resumo v4 efetivamente lido. Memória paramétrica é seq2seq; a não paramétrica é índice denso de documentos Wikipedia. Não aprova afirmações sobre implementação de outros sistemas RAG ou verdade garantida.",
+    "q-tcego-expanded-ia-dados-rag-etica-01": "D. Normalização aprendida sobre treino+teste deixa o teste influenciar construção do modelo. Fit somente treino; transform ambos. Não confundir com anonimização ou mudança para reforço."
+  },
+  "limitations": [
+    "12 questões técnicas presentes no draft foram examinadas; a solicitação de 14 não corresponde ao inventário atual.",
+    "Parecer factual de itens originais. Não é prova FCC, amostra suficiente do edital ou aprovação pedagógica de cobertura integral.",
+    "Hash corresponde aos bytes do draft completo de 35 itens; qualquer alteração exige rechecagem."
+  ]
+}

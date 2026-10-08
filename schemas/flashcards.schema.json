@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "flashcards.schema.json",
+  "title": "StudyOS flashcard collection",
+  "type": "object",
+  "required": ["examId", "cards"],
+  "properties": {
+    "examId": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date" },
+    "cards": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/card" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "card": {
+      "type": "object",
+      "required": ["id", "type", "examId", "topicIds", "front", "back", "provenance", "status"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "examId": { "type": "string", "minLength": 1 },
+        "topicIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "canonicalConceptIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "front": { "type": "string", "minLength": 1 },
+        "back": { "type": "string", "minLength": 1 },
+        "explanation": { "type": "string" },
+        "provenance": {
+          "type": "object",
+          "required": ["status", "source"],
+          "properties": {
+            "status": { "enum": ["verified_fact", "derived", "assumption"] },
+            "source": { "type": "string", "minLength": 1 },
+            "url": { "type": "string", "minLength": 1 },
+            "locator": { "type": "string", "minLength": 1 },
+            "license": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+        "status": { "type": "string", "minLength": 1 },
+        "contentVersion": { "type": "integer", "minimum": 1 },
+        "reviewStatus": { "enum": ["pending_review", "approved", "rejected"] },
+        "sourceRefs": { "type": "array", "items": { "type": "object" } },
+        "editorialReview": { "type": "object" },
+        "validAsOf": { "type": "string", "format": "date" },
+        "supersedes": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    }
+  }
+}

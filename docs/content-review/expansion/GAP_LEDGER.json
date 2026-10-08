@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "candidateSha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+  "generatedAt": "2026-10-08T18:35:55.897Z",
+  "coveredUnits": 209,
+  "totalUnits": 209,
+  "count": 0,
+  "openCount": 0,
+  "entries": [],
+  "priorSnapshot": {
+    "candidateSha256": "a16a2e28d3eac7e443e7dafdce7c238a98183d44b0af467867dd2d9df060505a",
+    "generatedAt": "2026-10-08T18:35:00.003Z",
+    "openCount": 0,
+    "entries": []
+  }
+}

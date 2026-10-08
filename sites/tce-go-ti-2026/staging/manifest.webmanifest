@@ -3,8 +3,8 @@
   "short_name": "StudyOS STAGING",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f4f7f9",
-  "theme_color": "#16324f",
+  "background_color": "#101827",
+  "theme_color": "#101827",
   "description": "Motor de estudo gamificado baseado em Exam Packs",
   "icons": [
     {

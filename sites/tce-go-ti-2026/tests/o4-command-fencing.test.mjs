@@ -46,15 +46,20 @@ test('O4 public command fencing with native IndexedDB and Web Locks', {
     'manifest.json': { examId: uiExamId, title: 'Synthetic UI Pack', examDate: '2027-01-01' },
     'curriculum.json': { examId: uiExamId, disciplines: [{ id: 'd', title: 'Discipline', modules: [{ id: 'm', title: 'Module',
       topics: [{ id: 'topic', title: 'Topic', canonicalConceptIds: ['concept'], estimatedMinutes: 30 }] }] }] },
-    'questions.json': [uiQuestion], 'resources.json': [], 'flashcards.json': { cards: [] }, 'simulations.json': { simulations: [] }
+    'questions.json': [uiQuestion], 'resources.json': [], 'flashcards.json': { cards: [] }, 'simulations.json': { simulations: [] },
+    'content-history.json': { questions: [], cards: [] }
   };
   const server = createServer(async (request, response) => {
     if (request.url === '/') { response.end('<!doctype html><title>O4 command fencing</title>'); return; }
     if (request.url === '/ui/') {
       response.end(`<!doctype html><title>O4 source UI</title><main><p id="pack-status"></p><p id="session-status"></p>
-        <button id="start-button">Start</button>${['questions', 'production-settings', 'study-onboarding', 'diagnostic-panel',
-        'flashcards-panel', 'simulations-panel', 'today-dashboard', 'subjects', 'study-resume', 'reviews', 'progress']
-        .map(id => `<section id="${id}"></section>`).join('')}</main><script type="module" src="./site-app.js"></script>`);
+        <button id="start-button">Start</button>${['questions', 'diagnostic-panel', 'flashcards-panel', 'subjects', 'study-resume', 'reviews', 'progress']
+        .map(id => `<section id="${id}"></section>`).join('')}
+        <section id="today"><div id="today-dashboard"></div><div id="study-onboarding"></div></section>
+        <section id="simulations"><div id="simulations-panel"></div></section>
+        <section id="settings"><div id="production-settings"></div></section>
+        </main><script type="module" src="./core/src/platform-shell.js"></script>
+        <script type="module" src="./site-app.js"></script>`);
       return;
     }
     if (request.url === '/ui/build-meta.json' || request.url.startsWith('/ui/exam-pack/')) {
@@ -64,12 +69,17 @@ test('O4 public command fencing with native IndexedDB and Web Locks', {
       if (!value) { response.writeHead(404).end(); return; }
       response.setHeader('Content-Type', 'application/json'); response.end(JSON.stringify(value)); return;
     }
-    if (request.url !== '/ui/site-app.js' && !/^\/(?:ui\/)?core\/src\/[a-z-]+\.js$/.test(request.url)) { response.writeHead(404).end(); return; }
+    const siteModule = {
+      '/ui/content-bank.js': new URL('../content-bank.js', import.meta.url),
+      '/ui/supabase-auth.js': new URL('../supabase-auth.js', import.meta.url),
+      '/ui/supabase-sync.js': new URL('../supabase-sync.js', import.meta.url)
+    }[request.url];
+    if (request.url !== '/ui/site-app.js' && !siteModule && !/^\/(?:ui\/)?core\/src\/[a-z-]+\.js$/.test(request.url)) { response.writeHead(404).end(); return; }
     try {
       response.setHeader('Content-Type', 'text/javascript');
       response.end(await readFile(request.url === '/ui/site-app.js'
         ? new URL('../site-app.js', import.meta.url)
-        : new URL(`../../../core/src/${request.url.split('/').at(-1)}`, import.meta.url)));
+        : siteModule ?? new URL(`../../../core/src/${request.url.split('/').at(-1)}`, import.meta.url)));
     } catch { response.writeHead(404).end(); }
   });
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -374,7 +384,9 @@ test('O4 public command fencing with native IndexedDB and Web Locks', {
           await new TodayPlanEngine(store).generate({ examId, date, curriculum, availableMinutes: 120 });
           await store.update(examId, 'today-plans', date, plan => { plan.activities[0].type = 'reading'; return plan; });
         }, { examId: uiExamId, q: uiQuestion, curriculum: uiContent['curriculum.json'] });
-        await ui.goto(`http://127.0.0.1:${server.address().port}/ui/`);
+        await ui.goto(`http://127.0.0.1:${server.address().port}/ui/#simulations`);
+        ui.setDefaultTimeout(5000);
+        await ui.waitForFunction(() => document.querySelector('#simulations-panel')?.textContent.includes('Synthetic simulation'));
         await ui.getByRole('button', { name: 'Rever respostas / retentativa', exact: true }).waitFor();
         await ui.evaluate(async examId => {
           const { IndexedDbStore } = await import('/ui/core/src/storage.js');
@@ -394,6 +406,7 @@ test('O4 public command fencing with native IndexedDB and Web Locks', {
         assert.equal(updated.responses.length, 2); assert.equal(updated.cursor, 0); assert.equal(updated.status, 'completed');
         await ui.getByRole('button', { name: 'Pausar e continuar depois', exact: true }).click();
         await ui.locator('html[data-study-active="false"]').waitFor();
+        await ui.goto(`http://127.0.0.1:${server.address().port}/ui/#today`);
         await ui.getByRole('button', { name: 'COMEÇAR', exact: true }).click();
         await ui.getByRole('button', { name: 'Concluir leitura', exact: true }).waitFor();
         const restored = await ui.evaluate(async examId => {
@@ -413,6 +426,7 @@ test('O4 public command fencing with native IndexedDB and Web Locks', {
         }, uiExamId);
         assert.deepEqual(afterReading, restored);
         await ui.reload();
+        await ui.goto(`http://127.0.0.1:${server.address().port}/ui/#today`);
         await ui.getByRole('button', { name: 'Salvar meta diária', exact: true }).waitFor();
         const preferencesBefore = await ui.evaluate(async examId => {
           const { IndexedDbStore } = await import('/ui/core/src/storage.js');

@@ -194,21 +194,27 @@
                 ]
               },
               "checkedAt": {
-                "type": "string",
+                "type": [
+                  "string",
+                  "null"
+                ],
                 "format": "date-time"
               },
               "finalUrl": {
-                "type": "string",
-                "minLength": 1,
-                "format": "uri",
-                "pattern": "^https?://"
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "format": "uri",
+                    "pattern": "^https?://"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               },
               "method": {
-                "enum": [
-                  "HEAD",
-                  "GET",
-                  "browser"
-                ]
+                "enum": ["HEAD", "GET", "browser", "unknown"]
               }
             },
             "required": [

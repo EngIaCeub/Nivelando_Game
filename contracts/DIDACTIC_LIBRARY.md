@@ -4,7 +4,7 @@
 A biblioteca pertence ao Exam Pack. Core interpreta dados genéricos; nomes de matérias,
 fontes, recortes normativos e recomendações ficam em exam-packs/<exam-id>/.
 resources.json continua sendo o catálogo consumido pelo app. library.json declara
-unidades didáticas, política de acesso e revisão de escopo. library-candidates.json
+unidades didáticas, percursos editoriais, política de acesso e revisão de escopo. library-candidates.json
 contém candidatos e rejeições; não é payload de estudo nem deve ser incluído no build.
 Relatórios são derivados, nunca fonte de verdade. Não alterar IDs de tópicos para
 refinar conteúdo: cada unidade tem id estável e topicId de um tópico existente.
@@ -38,6 +38,13 @@ Sem revisão do escopo, o relatório é um diagnóstico provisório.
 Uma unidade é coberta quando possui pelo menos um recurso primary/full:
 ativo, aprovado editorialmente, acessível na verificação recente e gratuito
 (access.mode:free ou registration quando a política permitir cadastro).
+A alternativa é um percurso didático aprovado em `library.studyPaths`: pelo menos
+duas fontes v2 distintas, cada uma preservada como recurso separado; cada etapa
+declara seu locator e os índices dos objetivos que ensina; a união deve cobrir todos
+os objetivos da unidade. Todos os recursos precisam ser elegíveis pelas mesmas regras
+de acesso, disponibilidade e revisão. O parecer do percurso deve explicar a ordem e
+como cada recorte ensina seus objetivos. O percurso é uma unidade editorial composta,
+nunca uma fonte ou URL composta. Recursos parciais continuam parciais no catálogo.
 A versão atual exige freePrimaryRequired:true; material pago é complementar.
 Material complementar, portal da banca e edital não substituem explicação didática.
 Vídeo e texto são formatos alternativos; não exigir vídeo para assuntos sem boa aula.
@@ -48,7 +55,8 @@ Conteúdo normativo deve indicar versão/data de corte e a fonte oficial corresp
 ## Completa, parcial e pendências
 Status planned/partial permite liberar conteúdo útil com lacunas visíveis.
 Status complete exige escopo revisado, referências válidas, unidades para todos os
-tópicos, cobertura primária gratuita atual de todas as unidades e QA independente.
+tópicos, cobertura primária gratuita atual de todas as unidades por recurso individual
+ou percurso elegível e QA independente.
 library-audit verifica as condições mensuráveis; aprovação editorial e aderência ao
 edital exigem leitura real com evidência. A saída do script não substitui esse parecer.
 A cobertura da biblioteca mede oferta de materiais; não é mastery, cobertura estudada

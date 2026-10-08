@@ -3,8 +3,8 @@
   "short_name": "Nivelando Game",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f4eddd",
-  "theme_color": "#203640",
+  "background_color": "#101827",
+  "theme_color": "#101827",
   "description": "Motor de estudo gamificado baseado em Exam Packs",
   "icons": [
     {

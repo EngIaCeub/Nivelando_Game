@@ -144,8 +144,22 @@ Para alterações visuais relevantes, inspecione a renderização em desktop e v
 - Biblioteca fica no Exam Pack: `library.json`, recursos v2 e candidatos não publicados.
 - Refine unidades mantendo topicIds estáveis; revisão do escopo cobre todos os itens do edital.
 - Um link verificado não demonstra cobertura pedagógica; exigir recorte e revisão editorial.
+- Cobertura completa aceita um recurso primary/full ou `library.studyPaths`: duas ou mais fontes distintas, preservadas individualmente, com locator e mapeamento de todos os objetivos; o percurso exige parecer editorial e elegibilidade de cada etapa.
 - Acesso gratuito e licença de reprodução são campos distintos; licença desconhecida só permite link.
 - Legado válido não recebe cobertura v2 presumida. Status partial/planned expõe lacunas.
 - Declare complete somente após auditoria integral e parecer independente conforme runbook.
 - Cobertura da biblioteca não equivale a progresso, mastery, XP ou score do aluno.
 - Mudanças runtime seguem os milestones B2–B7; catalogue offline e conteúdo externo exigem tratamento próprio.
+
+## Próxima evolução — conteúdo, tema, telas e contas
+
+Consulte `docs/CONTENT_DARK_VIEWS_ACCOUNTS_PLAN.md` e a ADR 005 proposta.
+Para revisão factual, aplique `contracts/CONTENT_VALIDATION.md` e
+`skills/question-ingestion/SKILL.md`; `node scripts/content-audit.mjs` é heurístico e não
+aprova conteúdo. O schema de flashcards e as referências de tópico já são validados.
+Validação de schema não aprova respostas factualmente; não promover flashcards genéricos
+por status legado validated. Tema escuro único reutiliza tokens existentes. Modularização
+usa uma view por rota e preserva sessão/hash/history. Login/owner/sync são COMPLEX:
+isolamento inclui mastery global, backup, filas e conexões; não atribuir legado ao primeiro
+login automaticamente nem usar senha local como autenticação real. O plano não é aceite
+de implementação; cada fase exige as evidências previstas antes da publicação.

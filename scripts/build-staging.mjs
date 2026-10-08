@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const source = resolve(root, 'sites/tce-go-ti-2026/dist');
@@ -8,7 +9,8 @@ const staging = resolve(root, 'sites/tce-go-ti-2026/staging');
 const repository = process.env.GITHUB_REPOSITORY?.split('/').at(-1) ?? '';
 const commitSha = process.env.GITHUB_SHA ?? 'unavailable-local-snapshot';
 const buildTimestamp = process.env.STAGING_BUILD_TIMESTAMP ?? new Date().toISOString();
-const cacheName = `studyos-tce-go-staging-v1-${commitSha.slice(0, 12).replace(/[^a-zA-Z0-9-]/g, 'local')}`;
+const cacheRevision = createHash('sha256').update(`${commitSha}\n${buildTimestamp}`).digest('hex').slice(0, 12);
+const cacheName = `studyos-tce-go-staging-v1-${cacheRevision}`;
 await rm(staging, { recursive: true, force: true });
 await mkdir(staging, { recursive: true });
 await cp(source, staging, { recursive: true });

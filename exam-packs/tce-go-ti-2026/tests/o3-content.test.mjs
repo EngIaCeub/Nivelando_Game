@@ -10,20 +10,22 @@ const resources = await load('resources.json');
 const questions = await load('questions.json');
 const flashcards = await load('flashcards.json');
 const simulationsPack = await load('simulations.json');
+const history = await load('content-history.json');
 
 const topics = curriculum.disciplines.flatMap((discipline) => discipline.modules.flatMap((module) => module.topics.map((topic) => ({ ...topic, disciplineId: discipline.id }))));
 
-test('O3: todos os 45 tópicos têm cobertura operacional e prioridade', () => {
+test('Curadoria: 45 tópicos expõem contagens reais e lacunas', () => {
   assert.equal(topics.length, 45);
   assert.equal(coverage.topics.length, topics.length);
   for (const row of coverage.topics) {
     assert.ok(['P1', 'P2', 'P3', 'P4'].includes(row.priority));
     assert.ok(['EMPTY', 'LOW', 'MEDIUM', 'GOOD', 'STRONG'].includes(row.coverageStatus));
-    assert.notEqual(row.coverageStatus, 'EMPTY');
-    assert.ok(row.resourceCount >= 1);
-    assert.ok(row.questionCount >= 1);
-    assert.ok(row.flashcardCount >= 1);
-    assert.equal(row.explanationPresent, true);
+    assert.equal(row.resourceCount, resources.filter(r => r.topicIds.includes(row.topicId)).length);
+    assert.equal(row.questionCount, questions.filter(q => q.topicIds.includes(row.topicId)).length);
+    assert.equal(row.flashcardCount, flashcards.cards.filter(c => c.topicIds.includes(row.topicId)).length);
+    assert.equal(row.coverageStatus, row.resourceCount + row.questionCount + row.flashcardCount ? 'LOW' : 'EMPTY');
+    assert.match(row.exception, /parcial/i);
+    if (!row.questionCount) assert.match(row.exception, /Sem questões/);
     assert.ok(row.canonicalConceptIds.length > 0);
   }
 });
@@ -41,12 +43,18 @@ test('O3: recursos têm URL, proveniência, verificação e status de operação
     assert.ok(resource.provenance?.sourceType);
     assert.ok(resource.provider);
     assert.ok(Array.isArray(resource.topicIds) && resource.topicIds.length > 0);
+    assert.equal(resource.libraryVersion, 2);
+    assert.equal(resource.editorialReview.status, 'approved');
+    assert.ok(resource.editorialReview.reviewer && resource.editorialReview.reviewedAt);
+    assert.ok(resource.coverage.every(c => ['partial', 'full'].includes(c.extent) && c.locator));
+    assert.equal(resource.rights.delivery, 'link');
   }
 });
 
 test('O3: vídeos verificados têm metadados de curadoria', () => {
   const videos = resources.filter((resource) => resource.type === 'video');
-  assert.ok(videos.length >= 1);
+  // No verified video was viewed in this review. Candidate metadata is not approval.
+  assert.equal(videos.length, 0);
   for (const video of videos) {
     assert.equal(video.verified, true);
     assert.ok(video.videoChannel);
@@ -77,6 +85,11 @@ test('O3: questões passam os gates de unicidade, resposta, explicação e prove
     assert.equal(question.status, 'validated');
     assert.ok(question.provenance?.source);
     assert.ok(question.origin === 'generated_original' || question.provenance?.license);
+    assert.equal(question.reviewStatus, 'approved');
+    assert.equal(question.board, undefined);
+    assert.equal(question.year, undefined);
+    assert.ok(question.provenance.locator && question.sourceRefs.length);
+    if (question.supersedes) assert.ok(history.questions.some(q => q.id === question.supersedes));
   }
 });
 
@@ -87,24 +100,27 @@ test('O3: flashcards derivam conceitos sem substituir o banco de questões', () 
     assert.ok(['concept_card', 'question_card', 'error_card', 'definition_card', 'comparison_card'].includes(card.type));
     assert.ok(card.front && card.back);
     assert.ok(card.topicIds.every((topicId) => topicIds.has(topicId)));
-    assert.equal(card.provenance.source, 'StudyOS original generator');
+    assert.equal(card.reviewStatus, 'approved');
+    assert.ok(card.provenance.locator && card.sourceRefs.length);
+    assert.doesNotMatch(card.back, /deve ser estudado por meio de|^Explique /i);
+    assert.ok(!history.cards.some(c => c.id === card.id));
   }
 });
 
-test('O3: simulados usam pools, seed determinística e a distribuição oficial', () => {
+test('Curadoria: treino declara tamanho real e não oferece simulado completo sem conteúdo', () => {
   const ids = new Set(questions.map((question) => question.id));
-  assert.equal(simulationsPack.simulations.length, 16);
+  assert.ok(simulationsPack.simulations.length >= 1);
   const full = simulationsPack.simulations.find((simulation) => simulation.type === 'full-simulation');
-  assert.ok(full);
-  assert.equal(full.questionIds.length, 70);
-  assert.deepEqual(full.distribution, { generalQuestions: 25, specificQuestions: 45, generalWeight: 1, specificWeight: 2 });
-  assert.equal(full.durationMinutes, 270);
-  assert.ok(full.questionIds.every((questionId) => ids.has(questionId)));
-  assert.equal(new Set(full.questionIds).size, full.questionIds.length);
+  assert.equal(full, undefined);
+  assert.ok(simulationsPack.gaps.length);
+  assert.equal(history.simulations.simulations.length, 16);
   for (const simulation of simulationsPack.simulations) {
     assert.ok(simulation.pool);
     assert.ok(simulation.selection?.seed);
     assert.equal(simulation.status, 'validated');
+    assert.equal(simulation.questionCount, simulation.questionIds.length);
+    assert.ok(simulation.questionIds.every(id => ids.has(id)));
+    assert.equal(new Set(simulation.questionIds).size, simulation.questionIds.length);
   }
 });
 

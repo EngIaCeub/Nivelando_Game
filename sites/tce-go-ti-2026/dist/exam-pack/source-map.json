@@ -1,11 +1,3221 @@
 {
   "examId": "tce-go-ti-2026",
   "sources": [
-    {"id":"official-edital-01-2026","sourceType":"official-edital","title":"Edital nº 01/2026 — Abertura de Inscrições","url":"https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306","file":"edital-01-2026-oficial.pdf","retrievedAt":"2026-10-02","locator":"Documento completo, 25 páginas","sha256":"20FF3CBC8E0684E6B3D43D2F5B726FC5110F503087EF86E140ED8E8AB72F2B01"},
-    {"id":"official-tce-news-2026","sourceType":"official-news","title":"TCE-GO abre concurso público para Técnico de Controle Externo","url":"https://portal.tce.go.gov.br/-/tce-go-abre-concurso-publico-para-tecnico-de-controle-externo","file":null,"retrievedAt":"2026-10-02","locator":"notícia publicada em 25/08/2026 e atualizada em 02/09/2026"}
+    {
+      "id": "official-edital-01-2026",
+      "sourceType": "official-edital",
+      "title": "Edital nº 01/2026 — Abertura de Inscrições",
+      "url": "https://portal.tce.go.gov.br/documents/20181/1541044/EDITAL%20N%C2%BA%2001%202026%20-%20ABERTURA%20DE%20INSCRI%C3%87%C3%95ES.pdf/ec3ecccd-39d9-4785-aefd-18109214b306",
+      "file": "edital-01-2026-oficial.pdf",
+      "retrievedAt": "2026-10-02",
+      "locator": "Documento completo, 25 páginas",
+      "sha256": "20FF3CBC8E0684E6B3D43D2F5B726FC5110F503087EF86E140ED8E8AB72F2B01"
+    },
+    {
+      "id": "official-tce-news-2026",
+      "sourceType": "official-news",
+      "title": "TCE-GO abre concurso público para Técnico de Controle Externo",
+      "url": "https://portal.tce.go.gov.br/-/tce-go-abre-concurso-publico-para-tecnico-de-controle-externo",
+      "file": null,
+      "retrievedAt": "2026-10-02",
+      "locator": "notícia publicada em 25/08/2026 e atualizada em 02/09/2026"
+    },
+    {
+      "id": "curated-pg-transactions",
+      "sourceType": "docs",
+      "title": "PostgreSQL 18 — transações",
+      "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Tutorial §3.4, Transactions: atomicidade, persistência, BEGIN/COMMIT/ROLLBACK"
+    },
+    {
+      "id": "curated-pg-foreign-keys",
+      "sourceType": "docs",
+      "title": "PostgreSQL 18 — chaves estrangeiras",
+      "url": "https://www.postgresql.org/docs/18/tutorial-fk.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Tutorial §3.3 Foreign Keys; complemento §5.5.5 Foreign Keys para NULL"
+    },
+    {
+      "id": "curated-pg-indexes",
+      "sourceType": "docs",
+      "title": "PostgreSQL 18 — índices",
+      "url": "https://www.postgresql.org/docs/18/indexes-intro.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§11.1 Introduction, busca e custo de atualização/manutenção"
+    },
+    {
+      "id": "curated-pg-backup",
+      "sourceType": "docs",
+      "title": "PostgreSQL 18 — backup e recuperação",
+      "url": "https://www.postgresql.org/docs/18/backup.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Capítulo 25, introdução e três abordagens"
+    },
+    {
+      "id": "curated-python-structures",
+      "sourceType": "docs",
+      "title": "Python — estruturas de dados",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Tutorial §5.1.1–5.1.2, listas como pilhas e filas; §5.4, conjuntos"
+    },
+    {
+      "id": "curated-mdn-functions",
+      "sourceType": "docs",
+      "title": "JavaScript — funções e escopo",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Declarando uma função; Chamando funções; Closures"
+    },
+    {
+      "id": "curated-progit-control",
+      "sourceType": "book",
+      "title": "Pro Git — controle de versão",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Pro Git 2ª ed., §1.1 About Version Control, Distributed Version Control Systems"
+    },
+    {
+      "id": "curated-github-actions",
+      "sourceType": "docs",
+      "title": "GitHub Actions — workflows, jobs e steps",
+      "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Overview; Workflows; Jobs; Runners"
+    },
+    {
+      "id": "curated-rfc6749",
+      "sourceType": "docs",
+      "title": "RFC 6749 — OAuth 2.0",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§1 Introduction; §1.1 Roles; §1.4 Access Token"
+    },
+    {
+      "id": "curated-rfc7519",
+      "sourceType": "docs",
+      "title": "RFC 7519 — JWT",
+      "url": "https://www.rfc-editor.org/rfc/rfc7519",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§3 JWT Overview; §4.1.4 exp; §7.2 Validating a JWT"
+    },
+    {
+      "id": "curated-rag-paper",
+      "sourceType": "article",
+      "title": "RAG — memória paramétrica e recuperação",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Resumo do artigo, versão v4 de 12/04/2021"
+    },
+    {
+      "id": "curated-mcp-architecture",
+      "sourceType": "docs",
+      "title": "MCP 2025-11-25 — arquitetura",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/architecture",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Architecture; Core Components: Host, Clients, Servers; Design Principles"
+    },
+    {
+      "id": "curated-nist-csf2",
+      "sourceType": "pdf",
+      "title": "NIST CSF 2.0 — funções de gestão de risco",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§2 Introduction to the CSF Core, pp.3–5 impressas"
+    },
+    {
+      "id": "curated-openstax-fractions",
+      "sourceType": "book",
+      "title": "Prealgebra 2e — frações",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§4.1 Understand the Meaning of Fractions; Find Equivalent Fractions"
+    },
+    {
+      "id": "legal-atlassian-problem",
+      "sourceType": "documentation",
+      "title": "What is the aim of problem management?",
+      "url": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-aim-of-problem-management/",
+      "retrievedAt": "2026-10-07",
+      "locator": "corpo do artigo,parágrafos1–4",
+      "file": null
+    },
+    {
+      "id": "legal-peoplecert-svs",
+      "sourceType": "guide",
+      "title": "ITIL Maturity Model — apresentação PeopleCert",
+      "url": "https://www.peoplecert.org/-/media/2244094fd4364faab8b1e22b35278bd9.ashx",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDFp.14 e17–18:incidentes eSVS",
+      "file": null
+    },
+    {
+      "id": "legal-cgm-privacy-processos",
+      "sourceType": "guide",
+      "title": "Adequação de Processos no Contexto da Proteção de Dados Pessoais — Controle20, v1 dezembro2025",
+      "url": "https://prefeitura.sp.gov.br/documents/d/controladoria_geral/manual-controle-20-_v2-pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "AnexoII p.31–32; seções3–4 p.9–18",
+      "file": null
+    },
+    {
+      "id": "legal-ec139",
+      "sourceType": "law",
+      "title": "Emenda Constitucional139/2026",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc139.htm",
+      "retrievedAt": "2026-10-07",
+      "locator": "arts.1–2",
+      "file": null
+    },
+    {
+      "id": "legal-ipc-privacy",
+      "sourceType": "documentation",
+      "title": "Privacy by Design — sete princípios explicados",
+      "url": "https://www.ipc.on.ca/en/media/3001/download?attachment=",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF2p; janeiro2018",
+      "file": null
+    },
+    {
+      "id": "legal-itil-excellence",
+      "sourceType": "document",
+      "title": "Building IT and Digital Excellence with ITIL4",
+      "url": "https://peoplecert.jp/doc/Building-IT-and-Digital-Excellence-with-ITIL-4.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDFp2–4; ITIL4Explained/benefits",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-incidentes",
+      "sourceType": "documentation",
+      "title": "Incident Management: Processes, Best Practices & Tools",
+      "url": "https://www.atlassian.com/incident-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Definição; IT incident management process; Steps; DevOps/SRE; tools",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-ativos",
+      "sourceType": "documentation",
+      "title": "What is IT asset management (ITAM)?",
+      "url": "https://www.atlassian.com/itsm/it-asset-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Lifecycle; Types; Benefits; Process; Key features",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-problemas-processo",
+      "sourceType": "documentation",
+      "title": "What is problem management?",
+      "url": "https://www.atlassian.com/itsm/problem-management",
+      "retrievedAt": "2026-10-07",
+      "locator": "Relações com incidentes/mudanças; seis etapas; boas práticas",
+      "file": null
+    },
+    {
+      "id": "legal-agile-principles",
+      "sourceType": "documentation",
+      "title": "Manifesto Ágil e seus doze princípios",
+      "url": "https://agilemanifesto.org/iso/ptbr/principles.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Doze princípios completos; manifesto na página irmã",
+      "file": null
+    },
+    {
+      "id": "legal-iso38500-catalogue",
+      "sourceType": "other",
+      "title": "ISO/IEC38500:2024 — Registro oficial da edição",
+      "url": "https://www.iso.org/standard/81684.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Abstract; General information; edição3 de fevereiro2024",
+      "file": null
+    },
+    {
+      "id": "legal-pmbok8-catalogue",
+      "sourceType": "other",
+      "title": "PMBOK Guide — Eighth Edition, apresentação oficial",
+      "url": "https://www.pmi.org/standards/pmbok",
+      "retrievedAt": "2026-10-07",
+      "locator": "Apresentação da8ªedição; lista de seis princípios e sete domínios; índice oficial",
+      "file": null
+    },
+    {
+      "id": "legal-agu-mgi-tic",
+      "sourceType": "pdf",
+      "title": "Instrumento de Padronização dos Procedimentos de Contratação de TIC — AGU/MGI, 2024",
+      "url": "https://www.gov.br/agu/pt-br/comunicacao/noticias/agu-lanca-guia-para-facilitar-contratacoes-na-area-de-tecnologia-da-informacao/Instrumento_de_Padronizao_AGU_TIC_Digital_reduzido.pdf/@@download/file",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF p. 1–8, 36–41 e 91–97; correspondem às p. impressas 34–39 e 89–95 nos recortes de ETP/TR",
+      "file": null
+    },
+    {
+      "id": "legal-tcu-competencias",
+      "sourceType": "article",
+      "title": "Competências do TCU",
+      "url": "https://portal.tcu.gov.br/conheca-o-tcu/competencias-do-tcu",
+      "retrievedAt": "2026-10-07",
+      "locator": "Seções realizar inspeções e auditorias e prestar informações ao Congresso Nacional",
+      "file": null
+    },
+    {
+      "id": "tech-rag-lewis-v4",
+      "sourceType": "paper",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (v4)",
+      "url": "https://arxiv.org/abs/2005.11401v4",
+      "retrievedAt": "2026-10-07",
+      "locator": "Abstract v4, 12/04/2021",
+      "file": null
+    },
+    {
+      "id": "tech-python-classes",
+      "sourceType": "documentation",
+      "title": "Python3.13: Classes",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "§9.3, §9.5–9.6",
+      "file": null
+    },
+    {
+      "id": "tech-rest-fielding",
+      "sourceType": "documentation",
+      "title": "REST: dissertation chapter5 and HTTP references",
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "retrievedAt": "2026-10-07",
+      "locator": "§5.1.2–5.1.8 e §5.2.1; MDN /en-US/docs/Web/HTTP/Reference/Methods completo e /Status introdução/1xx–3xx",
+      "file": null
+    },
+    {
+      "id": "tech-github-gitlab-reviews",
+      "sourceType": "documentation",
+      "title": "GitHub pull requests and GitLab merge requests",
+      "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+      "retrievedAt": "2026-10-07",
+      "locator": "GitHub pull-requests/reference/pull-requests: Working with pull requests/Draft/Collaborative development models corpo integral; GitLab user/project/merge_requests: introdução/View/Assignees and reviewers.",
+      "file": null
+    },
+    {
+      "id": "expanded-sedu-passiva",
+      "sourceType": "lesson",
+      "title": "RPE Língua Portuguesa 8º ano, quinzena12/2025: voz passiva",
+      "url": "https://curriculo.sedu.es.gov.br/curriculo/wp-content/uploads/2025/06/RPE_LP_8_Q_12_08_05_25.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "pp.5–8 explicação e exemplos de passiva; pp.10–14 atividades; p.11 D021_P",
+      "file": null
+    },
+    {
+      "id": "expanded-openstax-fractions45",
+      "sourceType": "book",
+      "title": "Prealgebra 2e: Add and Subtract Fractions with Different Denominators",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators",
+      "retrievedAt": "2026-10-07",
+      "locator": "§4.5: LCD, equivalent fractions, summary of four operations, examples4.63–4.74",
+      "file": null
+    },
+    {
+      "id": "expanded-gnu-bash-stable",
+      "sourceType": "documentation",
+      "title": "GNU Bash Reference Manual: Basic Shell Features (arquivo histórico)",
+      "url": "https://ftp.gnu.org/old-gnu/Manuals/bash/html_chapter/bashref_3.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "§§3.1.3,3.2.2,3.2.3,3.2.4,3.2.5,3.6",
+      "file": null
+    },
+    {
+      "id": "expanded-cnp3-dns",
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — DNS",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/dns.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "DNS: mensagens/campos, autoridade/recursão, TTL e registros A/AAAA/CNAME/PTR",
+      "file": null
+    },
+    {
+      "id": "expanded-cnp3-http2",
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — Making HTTP faster",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/http2.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "Caches/proxies/reverse proxies e distribuição; HTTP/2 frames/streams/settings",
+      "file": null
+    },
+    {
+      "id": "expanded-obmep-fracoes",
+      "sourceType": "book",
+      "title": "Frações e Suas Operações — 6º ano",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/8adw8gkagd8gk.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF integral de 6 páginas; §§1–4",
+      "file": null
+    },
+    {
+      "id": "expanded-obmep-regra3",
+      "sourceType": "book",
+      "title": "Regra de Três Simples e Composta (25/02/2025)",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/d9k71v53ba8k0.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "PDF integral de 9 páginas; §§1–2, exemplos 1,3,4",
+      "file": null
+    },
+    {
+      "id": "expanded-cert-cartilha2012",
+      "sourceType": "documentation",
+      "title": "Cartilha de Segurança para Internet — versão 4.0, 2ª edição (2012)",
+      "url": "https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "Cap.2 pp.5–16; cap.4 pp.23–30; §§7.2,7.7–7.8 pp.50–51,55–57; §12.2 pp.99–100 (páginas impressas)",
+      "file": null
+    },
+    {
+      "id": "expanded-cert-malware-golpes-reading",
+      "sourceType": "documentation",
+      "title": "Leitura orientada CERT.br — malware, phishing/engenharia social e resposta inicial",
+      "url": "https://cartilha.cert.br/fasciculos/",
+      "retrievedAt": "2026-10-07",
+      "locator": "Recorte composto obrigatório: https://cartilha.cert.br/livro/cartilha-seguranca-internet.pdf cap.2 pp.5–16 e cap.4 pp.23–30; https://cartilha.cert.br/fasciculos/codigos-maliciosos/fasciculo-codigos-maliciosos.pdf pp.4–12,14–27; https://cartilha.cert.br/fasciculos/golpes-o-que-fazer/fasciculo-golpes-o-que-fazer.pdf pp.4–5,9–14",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-lp-unidade2",
+      "sourceType": "book",
+      "title": "CEJA Língua Portuguesa e Literatura — Unidade2, Linguagem, cultura e variação linguística (edição revisada2016)",
+      "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/lingua_portuguesa/ceja_lingua_portuguesa_unidade_2.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "pp.52–58 impressas (PDF22–28): norma/registro; informação textual; §4 frase/oração/período/sujeito/predicado e atividades",
+      "file": null
+    },
+    {
+      "id": "legal-ra5-pessoas",
+      "sourceType": "law",
+      "title": "Política de Gestão de Pessoas — RA5/2024",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=20784",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–9; texto oficial completo",
+      "file": null
+    },
+    {
+      "id": "legal-rn6-riscos",
+      "sourceType": "law",
+      "title": "Política de Gestão de Riscos — RN6/2020",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=12528",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–10; texto oficial completo",
+      "file": null
+    },
+    {
+      "id": "legal-ra17-seguranca",
+      "sourceType": "law",
+      "title": "Política de Segurança da Informação — RA17/2024",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/22924",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–21; texto completo",
+      "file": null
+    },
+    {
+      "id": "legal-rn5-dados",
+      "sourceType": "law",
+      "title": "Proteção de dados no TCE-GO — RN5/2024",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=21125",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–23; texto completo e errata28/05/2024",
+      "file": null
+    },
+    {
+      "id": "legal-ra15-planejamento",
+      "sourceType": "law",
+      "title": "Sistema de Planejamento e Gestão — RA15/2024",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=22389",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–23; texto integral",
+      "file": null
+    },
+    {
+      "id": "legal-ra14-estrutura-dti",
+      "sourceType": "law",
+      "title": "Estrutura organizacional — RA14/2025",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/25999",
+      "retrievedAt": "2026-10-08",
+      "locator": "Resolução completa, arts. 1–113; arts. 2–110 para composição, competências e obrigações; art. 112 revoga expressamente RA 19/2022, RA 15/2023, RA 23/2024 e RA 6/2025; art. 113 vigência",
+      "file": null
+    },
+    {
+      "id": "legal-rn13-ceti",
+      "sourceType": "law",
+      "title": "CETI — RN13/2016 com revogações",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=10121",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–20; capítuloII revogado porRA19/2022",
+      "file": null
+    },
+    {
+      "id": "legal-isaca-cobit-assessment",
+      "sourceType": "article",
+      "title": "Effective Capability and Maturity Assessment Using COBIT2019",
+      "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2020/effective-capability-and-maturity-assessment-using-cobit-2019",
+      "retrievedAt": "2026-10-08",
+      "locator": "introdução e início do método de avaliação;27/07/2020",
+      "file": null
+    },
+    {
+      "id": "legal-lc205",
+      "sourceType": "law",
+      "title": "Lei Complementar205/2025",
+      "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/110694/pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts1–79, PDF p1–29; redações anteriores à LC215/2026 expressamente exibidas nos arts20,21,26§1,27,29I/II/IV,50§1 e52; corte25/08/2026.",
+      "file": null
+    },
+    {
+      "id": "legal-ra6-etica",
+      "sourceType": "law",
+      "title": "Código de Ética dos Servidores — RA 6/2026",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=26496",
+      "retrievedAt": "2026-10-08",
+      "locator": "Anexo II, arts.1–55; publicação 10/03/2026",
+      "file": null
+    },
+    {
+      "id": "legal-ra14-governanca",
+      "sourceType": "law",
+      "title": "Política de Governança — RA 14/2024",
+      "url": "https://portal.tce.go.gov.br/documents/117455/0/RA%2Bn%C2%BA%2B14%2B-%2BPolitica%2Bde%2BGovernan%C3%A7a/905914f0-afed-4366-ad4d-297627428130",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–23, PDF p.1–10",
+      "file": null
+    },
+    {
+      "id": "legal-decreto-engd",
+      "sourceType": "law",
+      "title": "Estratégia Nacional de Governo Digital 2024–2027 — Decreto 12.069/2024",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12069.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–24; especialmente arts.4,7–10,11–17",
+      "file": null
+    },
+    {
+      "id": "legal-anpd-anon-tecnico",
+      "sourceType": "guide",
+      "title": "Anonimização na LGPD: processo baseado em risco e técnicas computacionais — v1.0, novembro2023",
+      "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/documentos-tecnicos-orientativos/estudo_tecnico_sobre_anonimizacao_de_dados_na_lgpd_uma_visao_de_processo_baseado_em_risco_e_tecnicas_computacionais.pdf/@@display-file/file",
+      "retrievedAt": "2026-10-08",
+      "locator": "seções1–3, p.4–17; Apêndice I p.20–26; glossário p.27–28",
+      "file": null
+    },
+    {
+      "id": "legal-renouv-lgpd",
+      "sourceType": "guide",
+      "title": "Guia de Boas Práticas da LGPD nas Ouvidorias Públicas — 2ªedição, 21/11/2024",
+      "url": "https://www.gov.br/ouvidorias/pt-br/central-de-conteudos/produtos_da_renouv/guiadeboaspraticasdalgpd2ed.pdf/@@display-file/file",
+      "retrievedAt": "2026-10-08",
+      "locator": "cap.3 p.16–18; cap.7 p.34–36; cap.11.2 p.60–61,65–66,77–78",
+      "file": null
+    },
+    {
+      "id": "curated-cf-control",
+      "sourceType": "law",
+      "title": "Constituição Federal — administração e controle",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "arts.37–41 e70–75"
+    },
+    {
+      "id": "legal-constit-go",
+      "sourceType": "law",
+      "title": "Constituição estadual consolidada — controle externo",
+      "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/103152/pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.25–30; PDFp14–16",
+      "file": null
+    },
+    {
+      "id": "curated-marco-neutrality",
+      "sourceType": "law",
+      "title": "Marco Civil da Internet — Lei12.965/2014",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "arts.7–17 e22–23"
+    },
+    {
+      "id": "legal-pdti2025",
+      "sourceType": "document",
+      "title": "PDTI2025–2026 — OS001/2025-CETI",
+      "url": "https://portal.tce.go.gov.br/documents/117455/0/PDTI%2B-%2B2025-2026/f5fde162-a537-4105-ba2e-d80b86f5a096",
+      "retrievedAt": "2026-10-07",
+      "locator": "OSarts1–3 PDFp1; Anexoseções1–12 PDFp2–30",
+      "file": null
+    },
+    {
+      "id": "legal-oasis-privacy",
+      "sourceType": "documentation",
+      "title": "Annex Guide to Privacy by Design Documentation for Software Engineers v1.0",
+      "url": "https://docs.oasis-open.org/pbd-se/pbd-se-annex/v1.0/cnd01/pbd-se-annex-v1.0-cnd01.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "seções2.1–2.7 e4.1–4.2.1; 25/06/2014",
+      "file": null
+    },
+    {
+      "id": "curated-lgpd-principles",
+      "sourceType": "law",
+      "title": "LGPD — princípios, anonimização, segurança e retenção",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "arts5–6,12–13,15–16,46–49"
+    },
+    {
+      "id": "legal-decreto-mci",
+      "sourceType": "law",
+      "title": "Regulamento do Marco Civil — neutralidade",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8771.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts2–10",
+      "file": null
+    },
+    {
+      "id": "legal-isaca-design",
+      "sourceType": "article",
+      "title": "COBIT2019: Design Factors",
+      "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2019/cobit-design-factors",
+      "retrievedAt": "2026-10-08",
+      "locator": "seçõesTailoringGovernance–Conclusion;4/02/2019",
+      "file": null
+    },
+    {
+      "id": "legal-isaca-comparison",
+      "sourceType": "article",
+      "title": "COBIT2019 and COBIT5 Comparison",
+      "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2020/cobit-2019-and-cobit-5-comparison",
+      "retrievedAt": "2026-10-08",
+      "locator": "Principles/Objectives,Processes,FrameworkPrinciples,PerformanceManagement/DesignFactors,Workflow;27/04/2020",
+      "file": null
+    },
+    {
+      "id": "legal-isaca-tips",
+      "sourceType": "article",
+      "title": "Tips for Implementing COBIT in a Continuously Changing Environment",
+      "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2019/tips-for-implementing-cobit-in-a-continuously-changing-environment",
+      "retrievedAt": "2026-10-08",
+      "locator": "Tips3–8;29/04/2019",
+      "file": null
+    },
+    {
+      "id": "legal-isaca-cascade",
+      "sourceType": "article",
+      "title": "Achieving Application Rationalization Using COBIT2019",
+      "url": "https://www.isaca.org/resources/news-and-trends/newsletters/atisaca/2021/volume-19/achieving-application-rationalization-using-cobit-2019",
+      "retrievedAt": "2026-10-08",
+      "locator": "UsingCOBIT2019;steps1–9;30/06/2021",
+      "file": null
+    },
+    {
+      "id": "legal-iti-conceitos",
+      "sourceType": "documentation",
+      "title": "Guia de Conceitos — certificação ICP-Brasil",
+      "url": "https://validar.iti.gov.br/conceitos.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "verbetesAssinaturas,AC/ACRaiz/AR,Cadeia,Hierarquia,ICP-Brasil,ParDeChaves,Revogação",
+      "file": null
+    },
+    {
+      "id": "legal-iti-faq",
+      "sourceType": "documentation",
+      "title": "Certificação Digital — perguntas frequentes ITI",
+      "url": "https://www.gov.br/iti/pt-br/acesso-a-informacao/perguntas-frequentes/certificacao-digital",
+      "retrievedAt": "2026-10-08",
+      "locator": "itens1–4,10–22; atualização6/03/2026",
+      "file": null
+    },
+    {
+      "id": "legal-iti-validacao",
+      "sourceType": "documentation",
+      "title": "VALIDAR — dúvidas sobre validação de assinaturas",
+      "url": "https://validar.iti.gov.br/duvidas.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "InformaçõesGerais e ValidaçãodeAssinaturas",
+      "file": null
+    },
+    {
+      "id": "legal-iti-boaspraticas",
+      "sourceType": "documentation",
+      "title": "Guia de Boas Práticas de assinatura eletrônica",
+      "url": "https://validar.iti.gov.br/guia.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "guia completo; autoria/integridade/repetição/impressão/bloqueio",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-catalogo",
+      "sourceType": "documentation",
+      "title": "Exploring IT Service Catalogs",
+      "url": "https://www.atlassian.com/itsm/service-request-management/service-catalog",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is an IT service catalog?; Differences; What is included?; Service catalog management; Best practices",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-mudancas",
+      "sourceType": "documentation",
+      "title": "What is IT change management",
+      "url": "https://www.atlassian.com/itsm/change-management",
+      "retrievedAt": "2026-10-08",
+      "locator": "Defining change management; Types of changes; CAB; The change management process",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-continuidade",
+      "sourceType": "documentation",
+      "title": "How to create a disaster recovery plan in 7 steps",
+      "url": "https://www.atlassian.com/incident-management/itsm/disaster-recovery",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is disaster recovery?; ameaças; Steps1–7; recovery strategies",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-configuracao",
+      "sourceType": "documentation",
+      "title": "What is a configuration management database (CMDB)?",
+      "url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+      "retrievedAt": "2026-10-08",
+      "locator": "Definição; ITAM versus configuration management; Characteristics of a CMDB",
+      "file": null
+    },
+    {
+      "id": "legal-lei15122-carreira",
+      "sourceType": "law",
+      "title": "Lei 15.122/2005 — quadro e carreira dos servidores do TCE-GO",
+      "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/80023/pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–16-K e 24–31; estrutura/evolução/remuneração e anexos I–VII; art. 2º, § 2º, redação da Lei 23.500/2025 para aplicação subsidiária da Lei 20.756 aos cargos efetivos de Auditor e Técnico",
+      "file": null
+    },
+    {
+      "id": "legal-lei14129",
+      "sourceType": "law",
+      "title": "Lei14.129/2021 — Governo Digital",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts1–49; especialmente1–4,14–27,29–41 e44–49",
+      "file": null
+    },
+    {
+      "id": "legal-lei16168",
+      "sourceType": "law",
+      "title": "Lei16.168/2007 — Lei Orgânica do TCE-GO",
+      "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/86708/pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts.1–16G,17–55,55A–84,85–129,129A–148; PDF pp.1–58; redações atuais discriminadas de redações revogadas; art.105 revogado, PDFp.44",
+      "file": null
+    },
+    {
+      "id": "legal-lei20756",
+      "sourceType": "law",
+      "title": "Lei20.756/2020 — Regime jurídico dos servidores de Goiás",
+      "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/100979/pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Lei consolidada, versão oficial consultada em PDF; recortes dirigidos dos arts. 5–87 (provimento, remoção/disposição/cessão, jornada e frequência), 88–190 (direitos/vantagens), 192–262-D (regime/processo disciplinar), 263–267 (seguridade) e 268–282 (disposições gerais/finais/autonomia/remissões); corte 25/08/2026.",
+      "file": null
+    },
+    {
+      "id": "legal-ri22",
+      "sourceType": "law",
+      "title": "Resolução22/2008 — Regimento Interno do TCE-GO",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=9544",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts.9–29,52–75,99–171,238–255,328–350;351 caput/§§1–3; art.247 redações históricas anteriores à Resolução03/2026",
+      "file": null
+    },
+    {
+      "id": "curated-scrum-2020",
+      "sourceType": "documentation",
+      "title": "The2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Documento HTML integral, novembro2020"
+    },
+    {
+      "id": "legal-kanban2025",
+      "sourceType": "documentation",
+      "title": "The Kanban Guide — May2025",
+      "url": "https://kanbanguides.org/the-kanban-guide/2025.5/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Documento integral, versão2025.5; Kanban practices e Flow Metrics",
+      "file": null
+    },
+    {
+      "id": "legal-lei14063",
+      "sourceType": "law",
+      "title": "Lei14.063/2020 — Assinaturas eletrônicas",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14063.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts1–6,8,13–14",
+      "file": null
+    },
+    {
+      "id": "legal-mp2200",
+      "sourceType": "law",
+      "title": "MP2.200-2/2001 — ICP-Brasil",
+      "url": "https://www.planalto.gov.br/ccivil_03/mpv/antigas_2001/2200-2.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts1–20 lidos; recorte substantivo1–10",
+      "file": null
+    },
+    {
+      "id": "legal-ra10-controle",
+      "sourceType": "law",
+      "title": "Resolução Administrativa 10/2019 — Controle interno",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=10033",
+      "retrievedAt": "2026-10-07",
+      "locator": "Arts. 1–16; aprovação 05/06/2019, publicação 07/06/2019",
+      "file": null
+    },
+    {
+      "id": "legal-ra13-integridade",
+      "sourceType": "law",
+      "title": "Resolução Administrativa 13/2024 — Política de integridade",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=22384",
+      "retrievedAt": "2026-10-07",
+      "locator": "Arts. 1–11; publicação 27/08/2024",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-incident-handbook",
+      "sourceType": "guide",
+      "title": "Incident Management Handbook (2019)",
+      "url": "https://pages.eml.atlassian.com/rs/594-ATC-127/images/Atlassian-incident-management-handbook-.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.20–37 e68–70; cobertura de direitos autorais p.2",
+      "file": null
+    },
+    {
+      "id": "legal-mtur-gestao-ativos2025",
+      "sourceType": "law",
+      "title": "Portaria SE/MTur12/2025 — Política de Gestão de Ativos",
+      "url": "https://www.gov.br/turismo/pt-br/publicacoes/atos-normativos-2/2025/portaria-se-mtur-no-12-de-24-de-novembro-de-2025",
+      "retrievedAt": "2026-10-08",
+      "locator": "Anexo I arts.1–9 e16–23",
+      "file": null
+    },
+    {
+      "id": "legal-pmi-germany-pmbok8",
+      "sourceType": "slides",
+      "title": "Study Group — Deep Dive PMBOK Guide8th Edition / PMP ECO2026 (fevereiro2026)",
+      "url": "https://www.pmi-gc.de/en/download/12-downloads/29-meetings?download=447:2026-02-study-group-deep-dive-pmbok-r-guide-8th-edition-neue-pmp-r-eco-2026-helmut-schneider",
+      "retrievedAt": "2026-10-08",
+      "locator": "Texto PDFpp.5–8,10–20,22–24,26–36; autoria p.54; inspeção visual efetiva pp.21,25–30,32–33.",
+      "file": null
+    },
+    {
+      "id": "legal-atlassian-itil-principles",
+      "sourceType": "documentation",
+      "title": "What is ITIL? Understanding the ITIL framework",
+      "url": "https://www.atlassian.com/itsm/itil",
+      "retrievedAt": "2026-10-08",
+      "locator": "Corpo: definição, quatro dimensões, sete princípios, SVS, cadeia, categorias de práticas",
+      "file": null
+    },
+    {
+      "id": "legal-in94-tic2022",
+      "sourceType": "law",
+      "title": "IN SGD/ME94/2022 — contratação de soluções TIC sob Lei14.133",
+      "url": "https://www.gov.br/governodigital/pt-br/contratacoes-de-tic/instrucao-normativa-sgd-me-no-94-de-23-de-dezembro-de-2022",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–45; destaque2,8–19,23,25–38; AnexoI item7",
+      "file": null
+    },
+    {
+      "id": "legal-sgd-requisitos-sip32",
+      "sourceType": "guide",
+      "title": "Guia de Requisitos e Obrigações Quanto à Privacidade e Segurança da Informação — v3.2 (novembro2024)",
+      "url": "https://tce.pb.gov.br/wp-content/uploads/2025/09/13guia_requisitos_obrigacoes.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.6–23, seções1–6; AnexoI pp.26–27 recorte",
+      "file": null
+    },
+    {
+      "id": "legal-usp-rosilho-fiscalizacao",
+      "sourceType": "book",
+      "title": "Controle da Administração Pública pelo TCU — tese USP2016, André Rosilho",
+      "url": "https://sites.tcu.gov.br/recursos/trabalhos-pos-graduacao/pdfs/Controle%20da%20Administra%C3%A7%C3%A3o%20P%C3%BAblica%20pelo%20Tribunal%20de%20Contas%20da%20Uni%C3%A3o.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Cap.2,§1,pp.112–117 (PDF); objetos pp.113–114,parâmetros pp.115–117; pp.166–167 para aplicação no julgamento",
+      "file": null
+    },
+    {
+      "id": "legal-klotz-iso38500-2024",
+      "sourceType": "article",
+      "title": "IT-Governance genormt – die neue ISO/IEC 38500 (revolutions)",
+      "url": "https://www.assets.dpunkt.de/openbooks/IT_Gov39_ISOIEC38500.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Artigo pp.19–24 da revista (PDF pp.3–8), §§2–7; corpo diretamente lido, não inspeção visual das figuras",
+      "file": null
+    },
+    {
+      "id": "legal-splunk-problemas-itil4",
+      "sourceType": "article",
+      "title": "IT/ITIL Problem Management",
+      "url": "https://www.splunk.com/en_us/blog/learn/problem-management.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Corpo completo, seções What is problem management/Phase1–3/Prioritizing; web linhas0–113",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-structure-norm-index-2026",
+      "sourceType": "document",
+      "title": "Normatização da estrutura organizacional — índice oficial TCE-GO",
+      "url": "https://portal.tce.go.gov.br/normatizacao",
+      "retrievedAt": "2026-10-08",
+      "locator": "Seção “Legislações/Resoluções”; itens RA 14/2025, RA 06/2025, RA 23/2024, RA 15/2023, RA 19/2022, RA 03/2021, RN 11/2016, RN 13/2016, RN 9/2016 e Lei 16.168; conciliar com atos primários vigentes",
+      "file": null
+    },
+    {
+      "id": "legal-portaria-58-2025-integrity-compiled",
+      "sourceType": "law",
+      "title": "Portaria 58/2025-GPRES compilada — Comitê de Integridade Corporativa",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/24313?compilado=True",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–4; versão compilada e anotações de Portarias113/2025,254/2025,287/2025 e455/2026",
+      "file": null
+    },
+    {
+      "id": "legal-portaria-348-2026-committees",
+      "sourceType": "law",
+      "title": "Portaria 348/2026-GPRES — coordenação de comissões e comitês",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=26659",
+      "retrievedAt": "2026-10-08",
+      "locator": "arts.1–2; coordenação do CIC e lista de atos instituidores",
+      "file": null
+    },
+    {
+      "id": "legal-uw-itil4-refresh2019",
+      "sourceType": "document",
+      "title": "Service Management ITIL Refresh: ITIL4 framework supports our IT reality",
+      "url": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/149/2019/09/26233555/Tech-Talk-ITIL-August-2019.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.6,13,26–31,35–36; corpo textual diretamente lido, sem inspeção visual de figuras",
+      "file": null
+    },
+    {
+      "id": "expanded-preppilot-pmbok8-domains-processes-2026",
+      "sourceType": "guide",
+      "title": "PMBOK 8th Edition: All 7 Performance Domains & 40 Processes",
+      "url": "https://mypreppilot.com/pmp/learn/pmbok-8th-edition-performance-domains",
+      "retrievedAt": "2026-10-08",
+      "locator": "Performance domains, Focus Areas and process mapping on this page; the page notes six principles and tailoring but does not teach the principles or tailoring.",
+      "file": null
+    },
+    {
+      "id": "expanded-pmi-pmbok8-toc-domain-interactions",
+      "sourceType": "pdf",
+      "title": "PMBOK Guide Eighth Edition — official Table of Contents",
+      "url": "https://www.pmi.org/-/media/pmi/documents/public/pdf/publications/pmbok-guide-eighth-edition_table-of-contents.pdf?rev=cfeb1db5eff8420bbe8b1d95866750f6",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.xiii–xv; Guide pp.7–102: seven domain headings, each domain's processes/tailoring/interactions/check-results sections, plus Focus Areas",
+      "file": null
+    },
+    {
+      "id": "expanded-pmi-pmbok8-publication-40-processes-2025",
+      "sourceType": "article",
+      "title": "PMI launches the PMBOK Guide Eighth Edition",
+      "url": "https://www.projectmanagement.com/articles/1134510/pmi-launches-the-pmbok--guide---eighth-edition",
+      "retrievedAt": "2026-10-08",
+      "locator": "Public search excerpt, publication date 13/11/2025; list of changes",
+      "file": null
+    },
+    {
+      "id": "legal-cge-regime-disciplinary-overview",
+      "sourceType": "lesson",
+      "title": "Regime disciplinar — trilha didática da Secretaria da Economia de Goiás",
+      "url": "https://espacocolaborador.economia.go.gov.br/Paginas/RegimeDisciplinar.aspx",
+      "retrievedAt": "2026-10-08",
+      "locator": "Página inicial e páginas vinculadas: deveres, proibições, penalidades, TAC e instrumentos de apuração",
+      "file": null
+    },
+    {
+      "id": "legal-cge-server-duties",
+      "sourceType": "lesson",
+      "title": "Deveres do servidor — Secretaria da Economia de Goiás",
+      "url": "https://espacocolaborador.economia.go.gov.br/Paginas/Dos-Deveres.aspx",
+      "retrievedAt": "2026-10-08",
+      "locator": "Art. 192 da Lei 20.756/2020; lista didática dos deveres",
+      "file": null
+    },
+    {
+      "id": "legal-cge-server-prohibitions",
+      "sourceType": "lesson",
+      "title": "Proibições e transgressões — Secretaria da Economia de Goiás",
+      "url": "https://espacocolaborador.economia.go.gov.br/Paginas/Das-Proibi%C3%A7%C3%B5es.aspx",
+      "retrievedAt": "2026-10-08",
+      "locator": "Art. 202: 74 incisos; arquivo de transgressões e penalidades vinculado na página",
+      "file": null
+    },
+    {
+      "id": "legal-cge-server-penalties",
+      "sourceType": "lesson",
+      "title": "Penalidades disciplinares — Secretaria da Economia de Goiás",
+      "url": "https://espacocolaborador.economia.go.gov.br/Paginas/Das-Penalidades.aspx",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 193–199: espécies, parâmetros, cancelamento e inabilitação",
+      "file": null
+    },
+    {
+      "id": "legal-cge-server-disciplinary-instruments",
+      "sourceType": "lesson",
+      "title": "Instrumentos de apuração disciplinar — Secretaria da Economia de Goiás",
+      "url": "https://espacocolaborador.economia.go.gov.br/Paginas/Instrumentos-de-Apura%C3%A7%C3%A3o.aspx",
+      "retrievedAt": "2026-10-08",
+      "locator": "Art. 212 e Título VI: notícia de irregularidade, sindicância, sindicância patrimonial e PAD",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-ra13-2025-capacitacao",
+      "sourceType": "law",
+      "title": "RA 13/2025 — licença-capacitação e GIF no TCE-GO",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=25877",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–23 e anexo único; redação do anexo atualizada pela Portaria 853/2026, de 13/08/2026",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-organogram-current-2026",
+      "sourceType": "document",
+      "title": "Organograma vigente do TCE-GO",
+      "url": "https://portal.tce.go.gov.br/organograma",
+      "retrievedAt": "2026-10-08",
+      "locator": "Organograma oficial; página declara a RA 14/2025 como norma da estrutura vigente",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-ra11-2025-escoex-structure",
+      "sourceType": "law",
+      "title": "RA 11/2025 — nova estrutura organizacional da ESCOEX",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=25689",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–6 e anexo; estrutura aprovada em 2025",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-ra16-2025-escoex-regulation",
+      "sourceType": "law",
+      "title": "RA 16/2025 — Regulamento vigente da ESCOEX",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/26239",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–3 e Regulamento da ESCOEX; art. 2 revoga expressamente a RA 03/2021",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-rn11-2016-monitoring-decisions",
+      "sourceType": "pdf",
+      "title": "RN 11/2016 — monitoramento das decisões do TCE-GO",
+      "url": "https://portal.tce.go.gov.br/documents/20181/104564/Resolu%C3%A7%C3%A3o%20Normativa%20-%20011-2016/5f438964-32ac-43d8-b7aa-6f880280b451",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–21 e alterações indicadas de 2017 e 2018; procedimentos de monitoramento, não norma geral da estrutura atual",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-rn13-2016-ceti",
+      "sourceType": "pdf",
+      "title": "RN 13/2016 — Comitê Estratégico de Tecnologia da Informação",
+      "url": "https://portal.tce.go.gov.br/documents/20181/79021/Resolu%C3%A7%C3%A3o%20Normativa%20-%20013-2016/1bed9d89-fd76-48e0-aac5-450b5c618238",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–9 e alterações indicadas; instituição e competências do CETI",
+      "file": null
+    },
+    {
+      "id": "legal-tcego-rn09-2016-lrf-documents",
+      "sourceType": "law",
+      "title": "RN 9/2016 — remessa de relatórios da Lei de Responsabilidade Fiscal",
+      "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado?id=9975",
+      "retrievedAt": "2026-10-08",
+      "locator": "Arts. 1–3 no texto compilado, com RN 4/2023; remessa de RREO/RGF e assinatura digital",
+      "file": null
+    },
+    {
+      "id": "expanded-agile-manifesto-values",
+      "sourceType": "article",
+      "title": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Manifesto: quatro valores, linhas 2–11; princípios acessíveis no link oficial associado",
+      "file": null
+    },
+    {
+      "id": "expanded-agile-manifesto-principles",
+      "sourceType": "article",
+      "title": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles",
+      "retrievedAt": "2026-10-08",
+      "locator": "Doze princípios: entrega frequente de valor, mudança, colaboração, ritmo sustentável, excelência técnica e reflexão/adaptação",
+      "file": null
+    },
+    {
+      "id": "expanded-cobit-isaca-seven-key-features-2023",
+      "sourceType": "article",
+      "title": "Seven Key Features Lessons and Tips from a COBIT Journey of 27 Years",
+      "url": "https://www.isaca.org/resources/news-and-trends/newsletters/atisaca/2023/volume-46/seven-key-features-lessons-and-tips-from-a-cobit-journey-of-27-years",
+      "retrievedAt": "2026-10-08",
+      "locator": "Seven Key Features of COBIT, itens 1–7: princípios do sistema, domínios, objetivos, cascata, componentes e medição",
+      "file": null
+    },
+    {
+      "id": "legal-iti-docicp1501-v4-pdf",
+      "sourceType": "law",
+      "title": "DOC-ICP-15.01 v4.0 — Requisitos para geração e verificação de assinaturas digitais",
+      "url": "https://www.gov.br/iti/pt-br/assuntos/legislacao/instrucoes-normativas/IN012021_DOC_15.01_assinada.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "IN ITI nº 01/2021 e DOC-ICP-15.01 v4.0; §§2.2.2–2.2.3, PDF pp.12–16: geração, dados obrigatórios de validação, cadeia de certificados, política e status de revogação; vigência a confirmar pelo índice normativo atual",
+      "file": null
+    },
+    {
+      "id": "tech-python-structures",
+      "sourceType": "documentation",
+      "title": "Python 3.13: Data Structures",
+      "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "5.1–5.8, especialmente 5.1.1/5.1.2",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-closures",
+      "sourceType": "documentation",
+      "title": "MDN Closures",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction; Lexical scoping; Closure; makeFunc/makeAdder",
+      "file": null
+    },
+    {
+      "id": "curated-agent-workflows",
+      "sourceType": "documentation",
+      "title": "Building effective agents",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "What are agents?; augmented LLM; prompt chaining; Agents; Appendix coding agents"
+    },
+    {
+      "id": "tech-otel-traces",
+      "sourceType": "documentation",
+      "title": "OpenTelemetry: Traces",
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Traces; Tracer Provider; Tracer; Exporters; Context Propagation; Spans",
+      "file": null
+    },
+    {
+      "id": "curated-docker-container",
+      "sourceType": "documentation",
+      "title": "Docker: What is a container?",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "Explanation; Containers versus VMs; Using VMs and containers together; Try it out"
+    },
+    {
+      "id": "tech-pg-constraints",
+      "sourceType": "documentation",
+      "title": "PostgreSQL 17: Constraints",
+      "url": "https://www.postgresql.org/docs/17/ddl-constraints.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "5.5.3–5.5.5; primary/foreign key; MATCH FULL/NOT NULL",
+      "file": null
+    },
+    {
+      "id": "tech-pg-pitr",
+      "sourceType": "documentation",
+      "title": "PostgreSQL 17: Continuous Archiving and PITR",
+      "url": "https://www.postgresql.org/docs/17/continuous-archiving.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "25.3 introduction; 25.3.1 WAL; 25.3.2 Base backup; 25.3.5 Recovery; backup.html introdução; backup-dump.html §25.1/25.1.1; backup-file.html §25.2 integral; continuous-archiving.html §25.3.5 integral até Timelines",
+      "file": null
+    },
+    {
+      "id": "curated-sklearn-start",
+      "sourceType": "documentation",
+      "title": "Scikit-learn: Getting Started",
+      "url": "https://scikit-learn.org/stable/getting_started.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "Fitting and predicting: estimator basics; model evaluation; preprocessing"
+    },
+    {
+      "id": "curated-sklearn-leakage",
+      "sourceType": "documentation",
+      "title": "Scikit-learn: Common pitfalls",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "§12.1 inconsistent preprocessing; §12.2–12.2.2 data leakage and pipelines"
+    },
+    {
+      "id": "tech-node-intro",
+      "sourceType": "documentation",
+      "title": "Introduction to Node.js",
+      "url": "https://nodejs.org/learn/getting-started/introduction-to-nodejs",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction; An Example Node.js Application (CJS/ESM)",
+      "file": null
+    },
+    {
+      "id": "tech-react-learn",
+      "sourceType": "documentation",
+      "title": "React Learn: UI, interactivity, managing state",
+      "url": "https://react.dev/learn/describing-the-ui",
+      "retrievedAt": "2026-10-08",
+      "locator": "Describing the UI; https://react.dev/learn/adding-interactivity; https://react.dev/learn/managing-state (Sharing state between components)",
+      "file": null
+    },
+    {
+      "id": "tech-typescript-everyday",
+      "sourceType": "documentation",
+      "title": "TypeScript Handbook: Everyday Types",
+      "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "The primitives; Functions; Object Types; Union Types/Working with Union Types",
+      "file": null
+    },
+    {
+      "id": "tech-swebok-v4a",
+      "sourceType": "book",
+      "title": "Guide to SWEBOK v4.0a (August 2026)",
+      "url": "https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Chapter 1 pp.1-1–1-17; Chapter 3 §1.4 pp.3-3–3-4; Chapter 5 pp.5-7–5-9; Chapter 10 pp.10-3–10-7 (PDF pages 43–59,85–86,123–125,223–227)",
+      "file": null
+    },
+    {
+      "id": "tech-lean-poppendieck",
+      "sourceType": "pdf",
+      "title": "Lean Software Development: Introduction, Guided Tour",
+      "url": "https://ptgmedia.pearsoncmg.com/images/0321150783/samplechapter/poppendieckch.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction pp.xxv–xxvii, PDF5–7",
+      "file": null
+    },
+    {
+      "id": "tech-xp-agilealliance",
+      "sourceType": "article",
+      "title": "Extreme Programming (XP)",
+      "url": "https://agilealliance.org/glossary/xp/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Definition, Values, Practices",
+      "file": null
+    },
+    {
+      "id": "tech-pg-procedures",
+      "sourceType": "documentation",
+      "title": "PostgreSQL 17: User-Defined Procedures / CREATE PROCEDURE",
+      "url": "https://www.postgresql.org/docs/17/xproc.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "36.4 e https://www.postgresql.org/docs/17/sql-createprocedure.html: Synopsis, Description, Examples",
+      "file": null
+    },
+    {
+      "id": "tech-pg-triggers",
+      "sourceType": "documentation",
+      "title": "PostgreSQL 17: Overview of Trigger Behavior",
+      "url": "https://www.postgresql.org/docs/17/trigger-definition.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "37.1: eventos INSERT/UPDATE/DELETE/TRUNCATE; BEFORE/AFTER/INSTEAD OF; ROW/STATEMENT; OLD/NEW",
+      "file": null
+    },
+    {
+      "id": "tech-pg-views",
+      "sourceType": "documentation",
+      "title": "PostgreSQL 17: CREATE VIEW and Materialized Views",
+      "url": "https://www.postgresql.org/docs/17/sql-createview.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Description, Updatable Views, Examples; https://www.postgresql.org/docs/17/rules-materializedviews.html §39.3",
+      "file": null
+    },
+    {
+      "id": "tech-cassandra-model",
+      "sourceType": "documentation",
+      "title": "Cassandra: Data modeling introduction",
+      "url": "https://cassandra.apache.org/doc/latest/cassandra/developing/data-modeling/intro.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Query-driven design, Partitioning, Primary Key, Clustering Order, example magazine database",
+      "file": null
+    },
+    {
+      "id": "tech-neo4j-graph",
+      "sourceType": "documentation",
+      "title": "Neo4j: Graph database concepts",
+      "url": "https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Nodes, Labels, Relationships, Properties, Traversals, Paths, Schema",
+      "file": null
+    },
+    {
+      "id": "tech-uow-normalization",
+      "sourceType": "lecture",
+      "title": "CSCI235: Database normalization",
+      "url": "https://documents.uow.edu.au/~jrg/235/slides/03databasenormalization/03databasenormalization.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "First normal form; Functional dependencies; Full/partial dependencies; Second normal form; Third normal form (até LOCATION example)",
+      "file": null
+    },
+    {
+      "id": "tech-bc-er",
+      "sourceType": "book",
+      "title": "Database Design 2nd Edition: Entity Relationship Data Model",
+      "url": "https://opentextbc.ca/dbdesign01/chapter/chapter-8-entity-relationship-model/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Entity/Entity Set/Entity Type; Attributes; Candidate/Primary keys; Relationships 1:M/1:1/M:N e exercícios7–10; FK usar PostgreSQL17 §5.5.5",
+      "file": null
+    },
+    {
+      "id": "tech-java-basics",
+      "sourceType": "documentation",
+      "title": "Java Tutorials: Language Basics and Classes (JDK8)",
+      "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "variables.html, datatypes.html, opsummary.html, flowsummary.html; ../javaOO/classes.html",
+      "file": null
+    },
+    {
+      "id": "tech-flask-quickstart",
+      "sourceType": "documentation",
+      "title": "Flask 3.1 Quickstart",
+      "url": "https://flask.palletsprojects.com/en/stable/quickstart/",
+      "retrievedAt": "2026-10-08",
+      "locator": "A Minimal Application; Routing/Variable Rules/HTTP Methods; About Responses/APIs with JSON",
+      "file": null
+    },
+    {
+      "id": "tech-python-scripts",
+      "sourceType": "documentation",
+      "title": "Python3.13: control flow, files, exceptions and subprocesses",
+      "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Tutorial §4.1–4.8; inputoutput.html §7.2–7.2.1; errors.html §8.3; ../library/subprocess.html Using the subprocess Module/run",
+      "file": null
+    },
+    {
+      "id": "tech-python-functional",
+      "sourceType": "documentation",
+      "title": "Python3.13: Functional Programming HOWTO",
+      "url": "https://docs.python.org/3.13/howto/functional.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction, Modularity, Composability, Iterators; trecho inicial até Generator expressions; Built-in functions: map/filter, enumerate, sorted, any/all, zip; itertools Calling functions on elements",
+      "file": null
+    },
+    {
+      "id": "tech-ms-ntier",
+      "sourceType": "documentation",
+      "title": "N-tier architecture style",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introdução até Challenges",
+      "file": null
+    },
+    {
+      "id": "tech-ms-micro",
+      "sourceType": "documentation",
+      "title": "Microservices architecture style",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices",
+      "retrievedAt": "2026-10-08",
+      "locator": "What are microservices; Components; Benefits; Challenges",
+      "file": null
+    },
+    {
+      "id": "tech-ms-events",
+      "sourceType": "documentation",
+      "title": "Event-driven architecture style",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+      "retrievedAt": "2026-10-08",
+      "locator": "Architecture até payload/contratos e Broker/Mediator topology",
+      "file": null
+    },
+    {
+      "id": "tech-ibm-soa",
+      "sourceType": "documentation",
+      "title": "Service-oriented architecture",
+      "url": "https://www.ibm.com/think/topics/soa",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is SOA; primeiro parágrafo What is an ESB; Benefits",
+      "file": null
+    },
+    {
+      "id": "curated-terraform-intro",
+      "sourceType": "documentation",
+      "title": "What is Terraform?",
+      "url": "https://developer.hashicorp.com/terraform/intro",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "How does Terraform work; Track your infrastructure; Automate changes; Collaborate"
+    },
+    {
+      "id": "tech-actions",
+      "sourceType": "documentation",
+      "title": "Understanding GitHub Actions / Quickstart",
+      "url": "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions",
+      "retrievedAt": "2026-10-08",
+      "locator": "Understanding (completo); https://docs.github.com/en/actions/get-started/quickstart: Creating your first workflow",
+      "file": null
+    },
+    {
+      "id": "tech-gitlab-ci",
+      "sourceType": "documentation",
+      "title": "Create and run your first GitLab CI/CD pipeline",
+      "url": "https://docs.gitlab.com/ci/quick_start/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Página completa incluindo .gitlab-ci.yml tips",
+      "file": null
+    },
+    {
+      "id": "tech-jenkins-pipeline",
+      "sourceType": "documentation",
+      "title": "Jenkins Pipeline",
+      "url": "https://www.jenkins.io/doc/book/pipeline/",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is Jenkins Pipeline; Pipeline concepts; Syntax overview; Pipeline example",
+      "file": null
+    },
+    {
+      "id": "tech-aws-cicd",
+      "sourceType": "documentation",
+      "title": "Continuous Delivery and Continuous Integration",
+      "url": "https://aws.amazon.com/devops/continuous-delivery/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Delivery completo; https://aws.amazon.com/devops/continuous-integration/ Overview/How does CI work",
+      "file": null
+    },
+    {
+      "id": "tech-ansible-playbooks",
+      "sourceType": "documentation",
+      "title": "Ansible playbooks / Inventory",
+      "url": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Playbook syntax/execution/Desired state and idempotency; https://docs.ansible.com/projects/ansible/latest/inventory_guide/intro_inventory.html introdução/host variables/environment examples",
+      "file": null
+    },
+    {
+      "id": "tech-otel-signals",
+      "sourceType": "documentation",
+      "title": "OpenTelemetry: Metrics, Logs and Traces",
+      "url": "https://opentelemetry.io/docs/concepts/signals/metrics/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Metrics até Views; logs/ introdução/collector/correlação/application/Structured logs; traces/ previamente lido",
+      "file": null
+    },
+    {
+      "id": "tech-prometheus-alerts",
+      "sourceType": "documentation",
+      "title": "Prometheus: Alerting rules",
+      "url": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Defining alerting rules; Inspecting alerts; Sending notifications",
+      "file": null
+    },
+    {
+      "id": "tech-docker-build-runtime",
+      "sourceType": "documentation",
+      "title": "Docker: image build, network and volumes",
+      "url": "https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Writing a Dockerfile completo; /engine/network/ introdução/User-defined networks/Drivers; /engine/storage/volumes/ introdução/Lifecycle/Syntax; /compose/gettingstarted/ Steps1–3",
+      "file": null
+    },
+    {
+      "id": "tech-docker-compose",
+      "sourceType": "documentation",
+      "title": "Docker Compose Quickstart",
+      "url": "https://docs.docker.com/compose/gettingstarted/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Steps1–3: Flask/Redis, Dockerfile/.env/compose.yaml/up/down/healthcheck",
+      "file": null
+    },
+    {
+      "id": "curated-k8s-components",
+      "sourceType": "documentation",
+      "title": "Kubernetes: Components and workload/service basics",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "Components completo; /concepts/workloads/pods/ introdução/Using Pods/Workload resources; /concepts/workloads/controllers/deployment/ introdução/Use Case/Creating a Deployment; /concepts/services-networking/service/ introdução/Services"
+    },
+    {
+      "id": "tech-fielding-rest",
+      "sourceType": "documentation",
+      "title": "Roy Fielding — REST architectural style",
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Dissertation §§5.1.2–5.1.8 and §5.2.1",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-http-methods",
+      "sourceType": "documentation",
+      "title": "MDN — HTTP request methods",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods",
+      "retrievedAt": "2026-10-08",
+      "locator": "Method semantics and safety/idempotence/cacheability table",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-http-status",
+      "sourceType": "documentation",
+      "title": "MDN — HTTP response status codes",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
+      "retrievedAt": "2026-10-08",
+      "locator": "Status classes and common 2xx/3xx/4xx/5xx codes",
+      "file": null
+    },
+    {
+      "id": "tech-rfc6455",
+      "sourceType": "specification",
+      "title": "RFC6455: The WebSocket Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc6455.txt",
+      "retrievedAt": "2026-10-08",
+      "locator": "§1.1–1.3 pp4–6: Background/Protocol Overview/Opening Handshake",
+      "file": null
+    },
+    {
+      "id": "tech-rfc6749",
+      "sourceType": "specification",
+      "title": "RFC6749: OAuth2 Authorization Framework",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.txt",
+      "retrievedAt": "2026-10-08",
+      "locator": "§1.1–1.5 pp6–10; distinção autenticação complementada OIDC Core §1",
+      "file": null
+    },
+    {
+      "id": "curated-oidc-core",
+      "sourceType": "specification",
+      "title": "OpenID Connect Core1.0",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "§1 Introduction (corpo após TOC), §2 ID Token (The primary extension...)"
+    },
+    {
+      "id": "tech-rfc7519",
+      "sourceType": "specification",
+      "title": "RFC7519: JSON Web Token",
+      "url": "https://www.rfc-editor.org/rfc/rfc7519.txt",
+      "retrievedAt": "2026-10-08",
+      "locator": "§3 Overview/§3.1 example; §4.1.1–4.1.7 Registered Claim Names",
+      "file": null
+    },
+    {
+      "id": "tech-graphql-learn",
+      "sourceType": "documentation",
+      "title": "GraphQL: Queries, Mutations and Schema",
+      "url": "https://graphql.org/learn/queries/",
+      "retrievedAt": "2026-10-08",
+      "locator": "queries/ Fields/Arguments/Operation type; mutations/ introdução/Add new data/Update existing; schema/ Type language/Object types/Arguments/Root types/Scalar types",
+      "file": null
+    },
+    {
+      "id": "tech-json-xml",
+      "sourceType": "specification",
+      "title": "JSON and XML normative syntax",
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.txt",
+      "retrievedAt": "2026-10-08",
+      "locator": "RFC8259 §§2–6; JSON objects, arrays, strings, numbers and literals.",
+      "file": null
+    },
+    {
+      "id": "curated-openapi-311",
+      "sourceType": "specification",
+      "title": "OpenAPI Specification3.1.1",
+      "url": "https://spec.openapis.org/oas/v3.1.1.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "§4.8.8 Paths; §4.8.9 Path Item; §4.8.10 Operation; §4.8.12 Parameter; §4.8.16 Responses; §4.8.24 Schema"
+    },
+    {
+      "id": "tech-ebia-mcti",
+      "sourceType": "policy",
+      "title": "Estratégia Brasileira de Inteligência Artificial (EBIA)",
+      "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/ebia.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "Objetivos p7 (PDF8); eixos/ações p17–50 (PDF18–51): ações pp23,26,28,31,34–35,38,42,46,50; governança pp24–26; perspectivas p51. Recortes e listas de ações lidos integralmente.",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-html",
+      "sourceType": "tutorial",
+      "title": "MDN: Basic HTML syntax and Structuring documents",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is HTML até Anatomy of an HTML document; Structuring_documents: Basic sections/HTML for structuring/Exploring code",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-css",
+      "sourceType": "tutorial",
+      "title": "MDN: CSS syntax, conflicts, box model and layout",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS",
+      "retrievedAt": "2026-10-08",
+      "locator": "What_is_CSS completo; Handling_conflicts: cascade/specificity/inheritance; Box_model: Parts/Standard/Alternative/Examples; /Core/CSS_layout/Introduction Normal flow/example/Overriding",
+      "file": null
+    },
+    {
+      "id": "tech-mdn-javascript",
+      "sourceType": "tutorial",
+      "title": "MDN JavaScript Guide: types, control, functions, objects and promises",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "retrievedAt": "2026-10-08",
+      "locator": "Guide/Grammar_and_types: Data structures and types; Control_flow_and_error_handling: Conditional statements e throw/try/catch/finally; Loops_and_iteration: for/do/while; Functions: Defining functions e scope/closures; Working_with_objects: Objects and properties; Using_promises: Chaining/catch/async",
+      "file": null
+    },
+    {
+      "id": "tech-nist-statistics",
+      "sourceType": "book",
+      "title": "NIST/SEMATECH e-Handbook: descriptive statistics, sampling and inference",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "EDA §§1.3.5.1 (eda351), 1.3.5.6 (eda356), 1.3.6.1 (eda361), 1.3.5.2 (eda352), 1.3.5.3 (eda353); PPC §§3.1.3.4 (ppc134), 3.3.3.2 (ppc332), 3.3.3.3 (ppc333); corpos integrais dessas páginas lidos.",
+      "file": null
+    },
+    {
+      "id": "tech-nist-bigdata",
+      "sourceType": "book",
+      "title": "NIST SP1500-1r2: Big Data Interoperability Framework Volume1 Definitions, Version3 (2019)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1r2.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§3.1–3.2.4 pp9–11 (PDF19–21); §3.3.2 p13 (PDF23); §§4.1–4.1.3 pp17–18 (PDF27–28).",
+      "file": null
+    },
+    {
+      "id": "tech-pg-sql-tutorial",
+      "sourceType": "documentation",
+      "title": "PostgreSQL17: SQL tutorial",
+      "url": "https://www.postgresql.org/docs/17/tutorial-select.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§2.4–2.9: tutorial-populate/select/join/agg/update/delete.html; corpos integrais lidos.",
+      "file": null
+    },
+    {
+      "id": "tech-pg-transactions",
+      "sourceType": "documentation",
+      "title": "PostgreSQL17: Transactions and integrity constraints",
+      "url": "https://www.postgresql.org/docs/17/tutorial-transactions.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§3.4 integral; §5.5 constraints (NOT NULL/UNIQUE/PK/FK/CHECK), previamente lido em tech-pg-constraints.",
+      "file": null
+    },
+    {
+      "id": "tech-pg-index-plans",
+      "sourceType": "documentation",
+      "title": "PostgreSQL17: indexes and EXPLAIN",
+      "url": "https://www.postgresql.org/docs/17/indexes-intro.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§11.1 e11.2 integrais; §14.1.1 EXPLAIN Basics até exemplo LIMIT/Index Scan (primeiros12000caracteres de corpo).",
+      "file": null
+    },
+    {
+      "id": "tech-pg-ha-replication",
+      "sourceType": "documentation",
+      "title": "PostgreSQL17: high availability, standby and failover",
+      "url": "https://www.postgresql.org/docs/17/high-availability.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introdução capítulo26 integral; warm-standby.html introdução e§§26.2.1–26.2.5 início; warm-standby-failover.html §26.3 integral.",
+      "file": null
+    },
+    {
+      "id": "tech-mongodb-model-crud",
+      "sourceType": "documentation",
+      "title": "MongoDB: document model, linking data and CRUD",
+      "url": "https://www.mongodb.com/docs/manual/core/data-modeling-introduction/",
+      "retrievedAt": "2026-10-08",
+      "locator": "data-modeling: introdução/Document Relationships; data-modeling/best-practices: Link Related Data/Duplicate Data/Enforce Data Consistency/Atomicity; crud: Create/Read/Update/Delete corpos lidos.",
+      "file": null
+    },
+    {
+      "id": "tech-mongodb-denormal",
+      "sourceType": "documentation",
+      "title": "MongoDB: intentional duplication and consistency tradeoffs",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/best-practices/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Duplicate Data, Enforce Data Consistency, Additional Considerations/Atomicity; tabelas e parágrafos integrais desses recortes.",
+      "file": null
+    },
+    {
+      "id": "tech-redis-types-ttl",
+      "sourceType": "documentation",
+      "title": "Redis: data structures, string keys and expiration",
+      "url": "https://redis.io/docs/latest/develop/data-types/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Data types: Strings/Hashes/Lists/Sets/Sorted sets/Streams; data-types/strings introdução e SET/GET bike exemplo; commands/expire parágrafos timeout e exemplo Python SET/EXPIRE/TTL.",
+      "file": null
+    },
+    {
+      "id": "tech-qdrant-vectors",
+      "sourceType": "documentation",
+      "title": "Qdrant: vectors, metrics and HNSW indexes",
+      "url": "https://qdrant.tech/documentation/concepts/vectors/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Vectors introdução/Dense/Sparse; concepts/collections (final manage-data/collections): Distance metrics; concepts/indexing (final manage-data/indexing): Vector Index/HNSW primeiros2500caracteres.",
+      "file": null
+    },
+    {
+      "id": "tech-github-pull-requests",
+      "sourceType": "documentation",
+      "title": "GitHub Docs — Pull requests",
+      "url": "https://docs.github.com/en/pull-requests/reference/pull-requests",
+      "retrievedAt": "2026-10-08",
+      "locator": "Working with pull requests, conversation/reviews/checks/changed files and merge blockers; draft status.",
+      "file": null
+    },
+    {
+      "id": "tech-mcp-architecture-2025-06-18",
+      "sourceType": "specification",
+      "title": "Model Context Protocol Specification — Architecture (2025-06-18)",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "retrievedAt": "2026-10-08",
+      "locator": "Architecture: client-host-server e componentes centrais, linhas21–68; isolamento, linhas75–97; capability negotiation, linhas102–114.",
+      "file": null
+    },
+    {
+      "id": "tech-pytorch-deep-learning",
+      "sourceType": "documentation",
+      "title": "PyTorch — Build the Neural Network, Automatic Differentiation e Optimization",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Build Model: NeuralNetwork/Model Layers/Model Parameters, linhas293–465; autogradqs_tutorial.html: Computing Gradients/More on Computational Graphs, linhas297–390; optimization_tutorial.html: Hyperparameters/Loss Function/Optimizer/Full Implementation, linhas363–462.",
+      "file": null
+    },
+    {
+      "id": "tech-claude-skills",
+      "sourceType": "documentation",
+      "title": "Claude Code Docs — skills and specialized instructions",
+      "url": "https://code.claude.com/docs/en/skills",
+      "retrievedAt": "2026-10-08",
+      "locator": "Skill files, reusable instructions, activation, organization and invocation.",
+      "file": null
+    },
+    {
+      "id": "tech-claude-permissions",
+      "sourceType": "documentation",
+      "title": "Claude Code Docs — tool permissions",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "retrievedAt": "2026-10-08",
+      "locator": "Permission modes, rules, allow/deny/ask, tool authorization and policy precedence.",
+      "file": null
+    },
+    {
+      "id": "tech-mcp-tools-spec",
+      "sourceType": "documentation",
+      "title": "Model Context Protocol — server tools specification",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+      "retrievedAt": "2026-10-08",
+      "locator": "tools/list, tools/call, input schemas and user consent/security considerations.",
+      "file": null
+    },
+    {
+      "id": "tech-google-code-review",
+      "sourceType": "documentation",
+      "title": "Google Engineering Practices — What to look for in a code review",
+      "url": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Corpo integral: Design, Functionality, Complexity, Tests, Naming, Comments, Style, Consistency, Documentation, Every Line, Context e Summary.",
+      "file": null
+    },
+    {
+      "id": "tech-fowler-refactoring-definition",
+      "sourceType": "documentation",
+      "title": "Martin Fowler — Definition of Refactoring",
+      "url": "https://martinfowler.com/bliki/DefinitionOfRefactoring.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Defining paragraphs: refactoring as restructuring without changing observable behavior.",
+      "file": null
+    },
+    {
+      "id": "tech-progit-basics-remotes",
+      "sourceType": "documentation",
+      "title": "Pro Git 2nd edition — Recording Changes, Basic Branching e Working with Remotes",
+      "url": "https://raw.githubusercontent.com/progit/progit2/main/book/02-git-basics/sections/recording-changes.asc",
+      "retrievedAt": "2026-10-08",
+      "locator": "Recording Changes: status/tracked/untracked/staging/git add/diff e Committing Your Changes/Skipping the Staging Area; https://raw.githubusercontent.com/progit/progit2/main/book/03-git-branching/sections/basic-branching-and-merging.asc: Basic Branching até reintegração hotfix; https://raw.githubusercontent.com/progit/progit2/main/book/02-git-basics/sections/remotes.asc: corpo integral.",
+      "file": null
+    },
+    {
+      "id": "tech-hf-pln-generativa",
+      "sourceType": "documentation",
+      "title": "Hugging Face LLM Course — Pipelines, Transformers, Tokenizers e Bias",
+      "url": "https://huggingface.co/learn/llm-course/chapter1/3",
+      "retrievedAt": "2026-10-08",
+      "locator": "chapter1/3: Working with pipelines, Zero-shot classification, Text generation, Mask filling, Named entity recognition, Question answering, Summarization, Translation e Conclusion; chapter2/4: Word/Character/Subword, Encoding/Tokenization/Input IDs/Decoding; chapter1/4: language modeling, encoder/decoder e attention; chapter1/9: corpo integral.",
+      "file": null
+    },
+    {
+      "id": "tech-hf-multimodal",
+      "sourceType": "documentation",
+      "title": "Transformers — Multimodal chat templates",
+      "url": "https://huggingface.co/docs/transformers/main/en/chat_templating_multimodal",
+      "retrievedAt": "2026-10-08",
+      "locator": "Corpo integral: ImageTextToTextPipeline, Using apply_chat_template, Video inputs e Passing decoded video objects.",
+      "file": null
+    },
+    {
+      "id": "tech-sklearn-unsupervised",
+      "sourceType": "documentation",
+      "title": "scikit-learn User Guide — Clustering e Principal Component Analysis",
+      "url": "https://scikit-learn.org/stable/modules/clustering.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§2.3 introdução, §2.3.1 overview e §2.3.2 K-means; https://scikit-learn.org/stable/modules/decomposition.html §§2.5.1.1–2.5.1.3.",
+      "file": null
+    },
+    {
+      "id": "tech-spinningup-rl",
+      "sourceType": "documentation",
+      "title": "Spinning Up — Key Concepts in Reinforcement Learning",
+      "url": "https://spinningup.openai.com/en/latest/spinningup/rl_intro.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction linhas14–19; Key Concepts and Terminology28–105; Trajectories/Reward and Return/RL Problem127–180.",
+      "file": null
+    },
+    {
+      "id": "tech-anthropic-context-prompts",
+      "sourceType": "documentation",
+      "title": "Anthropic — Effective context engineering for AI agents",
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "retrievedAt": "2026-10-08",
+      "locator": "29 Sep2025: Context engineering vs. prompt engineering linhas18–35, Anatomy of effective context36–50, Context retrieval51–65, long-horizon/Compaction/Structured note-taking66–81; complementar https://code.claude.com/docs/en/best-practices: critérios/exemplos67–82, prompts146–171, memória184–210, especificação352–362.",
+      "file": null
+    },
+    {
+      "id": "tech-claude-coding-workflows",
+      "sourceType": "documentation",
+      "title": "Claude Code — Common workflows e Best practices para tarefas de software",
+      "url": "https://code.claude.com/docs/en/common-workflows",
+      "retrievedAt": "2026-10-08",
+      "locator": "Common workflows: overview/find relevant code53–129, bugs136–164, refactor171–206, tests213–244, PR251–277, documentation282–317; https://code.claude.com/docs/en/best-practices: critérios67–82, explore/plan/implement88–127, contexto146–171, security reviewer299–315 e interview/spec352–362.",
+      "file": null
+    },
+    {
+      "id": "tech-claude-terminal-ide",
+      "sourceType": "documentation",
+      "title": "Claude Code — Arquitetura e terminal versus extensão VS Code",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "retrievedAt": "2026-10-08",
+      "locator": "How works: ciclo31–35, Models/Tools40–64, acesso69–78, interfaces83–104; https://code.claude.com/docs/en/vs-code: apresentação74–86, prompt/seleção123–138, comparação563–572, CLI integrado588–597.",
+      "file": null
+    },
+    {
+      "id": "tech-hf-llm-inference",
+      "sourceType": "documentation",
+      "title": "Hugging Face LLM Course — inference, tokens, context and limits",
+      "url": "https://huggingface.co/learn/llm-course/chapter1/8",
+      "retrievedAt": "2026-10-08",
+      "locator": "Inference basics, next-token probability; context length; prefill/tokenization; decode; hardware, memory and context constraints.",
+      "file": null
+    },
+    {
+      "id": "tech-github-copilot-agent-validation",
+      "sourceType": "documentation",
+      "title": "GitHub Docs — responsible use of Copilot agents",
+      "url": "https://docs.github.com/en/copilot/responsible-use/agents",
+      "retrievedAt": "2026-10-08",
+      "locator": "Agent limitations; review outputs, testing and security practices.",
+      "file": null
+    },
+    {
+      "id": "tech-claude-best-practices-validation",
+      "sourceType": "documentation",
+      "title": "Claude Code Docs — best practices",
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "retrievedAt": "2026-10-08",
+      "locator": "Review changes and use tests to validate generated code.",
+      "file": null
+    },
+    {
+      "id": "tech-postgres-administration",
+      "sourceType": "documentation",
+      "title": "PostgreSQL17 — Configuração, roles, manutenção e monitoramento",
+      "url": "https://www.postgresql.org/docs/17/config-setting.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§19.1.1–19.1.3; https://www.postgresql.org/docs/17/database-roles.html §21.1 integral e role-membership.html §21.3 integral; routine-vacuuming.html intro/§24.1.1–2 e §24.1.3 integral; monitoring-stats.html §§27.2.1–2 (conceitos/coleta/cache) e §27.2.3 tabela27.3 e nota state/wait_event.",
+      "file": null
+    },
+    {
+      "id": "tech-poole-mackworth-agents",
+      "sourceType": "documentation",
+      "title": "Artificial Intelligence: Foundations of Computational Agents 3E — agentes e ambientes",
+      "url": "https://artint.info/3e/html/ArtInt3e.Ch2.S1.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§2.1 integral, exemplos2.1–2.3, §§2.1.1–2.1.3; https://artint.info/3e/html/ArtInt3e.Ch1.S1.html definição inicial de AI/agentes/limitações e inteligência orientada a objetivos.; §1.3 integral em https://artint.info/3e/html/ArtInt3e.Ch1.S3.html confirma autonomia/semi-autonomia; §1.5.3 representação estados/features e §1.5.5 aprendizagem em https://artint.info/3e/html/ArtInt3e.Ch1.S5.html; §1.6.2 Tasks linhas43–87 em https://artint.info/3e/html/ArtInt3e.Ch1.S6.html.",
+      "file": null
+    },
+    {
+      "id": "tech-rag-lewis-v4-method",
+      "sourceType": "documentation",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks — v4 método",
+      "url": "https://arxiv.org/pdf/2005.11401v4",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF19p, arXivv4 12 Apr2021: §1 pp1–2, Fig1p2, §§2–2.5 pp2–4, §3intro p4, §§4.2–4.3 p6, efeitoK/trocaíndice p8 e §6 p9.",
+      "file": null
+    },
+    {
+      "id": "tech-pandas-sklearn-preparation",
+      "sourceType": "documentation",
+      "title": "How do I read and write tabular data? — pandas getting-started tutorial",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/02_read_write.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "pandas getting-started tutorial: read_csv and supported read_* inputs; head/tail, info(), dtypes, non-null counts and source-data inspection",
+      "file": null
+    },
+    {
+      "id": "tech-sklearn-model-evaluation",
+      "sourceType": "documentation",
+      "title": "scikit-learn — escolha de métricas e cross-validation",
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§3.4.1 Which scoring function should I use? completo com exemplo quantil99%; §3.4.4.4 Balanced accuracy; §3.4.4.9 intro/Binary classification; §§3.4.6.2–3 MAE/MSE/RMSE; https://scikit-learn.org/stable/modules/cross_validation.html introdução, §3.1.1 e Data transformation with held-out data.",
+      "file": null
+    },
+    {
+      "id": "tech-driessen-gitflow",
+      "sourceType": "documentation",
+      "title": "Vincent Driessen — A successful Git branching model",
+      "url": "https://nvie.com/posts/a-successful-git-branching-model/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Main/supporting branches; feature, release and hotfix creation/merge; author reflection.",
+      "file": null
+    },
+    {
+      "id": "tech-ms-environments",
+      "sourceType": "documentation",
+      "title": "Microsoft Learn — deployment environments",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/environments",
+      "retrievedAt": "2026-10-08",
+      "locator": "Environment types and development/test/staging/UAT/production distinctions",
+      "file": null
+    },
+    {
+      "id": "tech-twelvefactor-config",
+      "sourceType": "documentation",
+      "title": "Twelve-Factor App — configuration",
+      "url": "https://12factor.net/config",
+      "retrievedAt": "2026-10-08",
+      "locator": "Config stored separately from code",
+      "file": null
+    },
+    {
+      "id": "tech-twelvefactor-build-release-run",
+      "sourceType": "documentation",
+      "title": "Twelve-Factor App — build, release, run",
+      "url": "https://12factor.net/build-release-run",
+      "retrievedAt": "2026-10-08",
+      "locator": "Build/release/run stages and immutable releases",
+      "file": null
+    },
+    {
+      "id": "tech-twelvefactor-dev-prod-parity",
+      "sourceType": "documentation",
+      "title": "Twelve-Factor App — dev/prod parity",
+      "url": "https://12factor.net/dev-prod-parity",
+      "retrievedAt": "2026-10-08",
+      "locator": "Development/production parity and drift",
+      "file": null
+    },
+    {
+      "id": "tech-google-deployment-methodology",
+      "sourceType": "documentation",
+      "title": "Google Cloud — deployment methodology",
+      "url": "https://docs.cloud.google.com/architecture/blueprints/enterprise-application-blueprint/deployment-methodology",
+      "retrievedAt": "2026-10-08",
+      "locator": "Application CI/CD pipeline, continuous integration and deployment",
+      "file": null
+    },
+    {
+      "id": "tech-npm-packages",
+      "sourceType": "documentation",
+      "title": "npm CLI v10 — package.json manifest",
+      "url": "https://docs.npmjs.com/cli/v10/configuring-npm/package-json/",
+      "retrievedAt": "2026-10-08",
+      "locator": "package.json: required name/version; dependencies/devDependencies; scripts; package fields.",
+      "file": null
+    },
+    {
+      "id": "tech-npm-lockfile",
+      "sourceType": "documentation",
+      "title": "npm CLI v10 — package-lock.json",
+      "url": "https://docs.npmjs.com/cli/v10/configuring-npm/package-lock-json/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Description; lockfile purpose and reproducible dependency tree.",
+      "file": null
+    },
+    {
+      "id": "tech-npm-publish",
+      "sourceType": "documentation",
+      "title": "npm CLI v10 — npm publish",
+      "url": "https://docs.npmjs.com/cli/v10/commands/npm-publish/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Description; Files included in package; publish command.",
+      "file": null
+    },
+    {
+      "id": "tech-semver-package-versioning",
+      "sourceType": "documentation",
+      "title": "Semantic Versioning 2.0.0",
+      "url": "https://semver.org/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Summary; Specification §§1–11; Why Use Semantic Versioning.",
+      "file": null
+    },
+    {
+      "id": "tech-owasp-llm01-prompt-injection",
+      "sourceType": "documentation",
+      "title": "OWASP LLM01:2025 — Prompt Injection",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Direct/indirect prompt injection, attack scenarios and mitigations.",
+      "file": null
+    },
+    {
+      "id": "tech-owasp-llm02-sensitive-disclosure",
+      "sourceType": "documentation",
+      "title": "OWASP LLM02:2025 — Sensitive Information Disclosure",
+      "url": "https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sensitive information exposure and access-control mitigations.",
+      "file": null
+    },
+    {
+      "id": "tech-wisconsin-relational-algebra",
+      "sourceType": "presentation",
+      "title": "Database Management Systems, 3rd edition: Chapter4 PartA, Relational Algebra",
+      "url": "https://pages.cs.wisc.edu/~dbbook/openAccess/thirdEdition/slides/slides3ed-english/Ch4_Algebra.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF7p, Ch.4A: pp.2–4 slides4–12 (closure, selection/projection, union compatibility, difference/union, product, theta/equi/natural joins); pp.6–7 slides16–19 (composed Sailors/Reserves/Boats examples).",
+      "file": null
+    },
+    {
+      "id": "tech-refactoringguru-patterns",
+      "sourceType": "article",
+      "title": "Refactoring.Guru: design patterns catalog and original teaching examples",
+      "url": "https://refactoring.guru/design-patterns/catalog",
+      "retrievedAt": "2026-10-08",
+      "locator": "Catálogo §§Creational/Structural/Behavioral; /design-patterns/factory-method §§Intent–Pseudocode/ProsCons; /design-patterns/adapter §§Intent–Pseudocode/ProsCons; /design-patterns/strategy §§Intent–Pseudocode/ProsCons.",
+      "file": null
+    },
+    {
+      "id": "tech-runestone-structures-oo",
+      "sourceType": "book",
+      "title": "Problem Solving with Algorithms and Data Structures, 3e",
+      "url": "https://runestone.academy/ns/books/published/pythonds3/index.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "3e, §§1.5 encapsulation/data abstraction;1.8.2 lists/dictionaries;1.13.1 Fraction/instances/behavior;1.13.2 LogicGate/AndGate/Connector inheritance vs has-a;3.2 linear structures;3.4 Stack ADT;3.11 Queue ADT;3.20 UnorderedList ADT;6.6 NodesandReferences;6.8 TreeTraversals Listing2–4/6;6.19 Map comparison;7.3 Graph ADT;7.4 AdjacencyMatrix;7.5 AdjacencyList. Base de recortes: https://runestone.academy/ns/books/published/pythonds3/ .",
+      "file": null
+    },
+    {
+      "id": "tech-oracle-2day-dba19",
+      "sourceType": "book",
+      "title": "Oracle Database 2 Day DBA, Release19c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/toc.htm",
+      "retrievedAt": "2026-10-08",
+      "locator": "Ch.5 https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/managing-the-oracle-instance.html §§5.1–5.1.5,5.2.1,5.3; Ch.10 https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/monitoring-and-tuning-the-database.html §§10.3.2–10.3.3,10.3.6.",
+      "file": null
+    },
+    {
+      "id": "tech-camunda-bpmn-symbol-reference",
+      "sourceType": "guide",
+      "title": "BPMN 2.0 Symbol Reference",
+      "url": "https://camunda.com/bpmn/reference/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Participants: Pool/Lane, page sections 63–137; Activities: Task/Subprocess, 140–204; Gateways: XOR/AND/OR/event-based, 291–370; Events: type index 34–61 and behavior/examples 373–576.",
+      "file": null
+    },
+    {
+      "id": "expanded-rheinwerk-solid-principles-2026",
+      "sourceType": "book",
+      "title": "Java ist auch eine Insel — DRY, KISS, YAGNI e SOLID",
+      "url": "https://openbook.rheinwerk-verlag.de/javainsel/14_001.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Cap.14 §§14.1.1–14.1.2: DRY/KISS/YAGNI e SRP/OCP/LSP/ISP/DIP.",
+      "file": null
+    },
+    {
+      "id": "tech-anpd-voto11-2024-lgpd-ia",
+      "sourceType": "pdf",
+      "title": "Voto nº11/2024/DIR-MW/CD — aplicação da LGPD ao treinamento de IA generativa",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-determina-suspensao-cautelar-do-tratamento-de-dados-pessoais-para-treinamento-da-ia-da-meta/SEI_0130047_Voto_11.pdf/@@display-file/file",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF24p, §§4.21–4.25 pp.8–10 (bases arts.7/11 e princípios); §§4.26–4.32 pp.10–11 (expectativa, finalidade, necessidade e aplicação ao treino); §§4.33–4.36 p.12 (transparência); §§4.53–4.59 pp.17–18 (salvaguardas/riscos); assinatura p.24, 01/07/2024.",
+      "file": null
+    },
+    {
+      "id": "tech-sei-2026-quality-attributes",
+      "sourceType": "pdf",
+      "title": "Managing Architectural Risk During Agile Development",
+      "url": "https://sei.cmu.edu/documents/6469/Managing_Architectural_Risk_During_Agile_Development.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Relatório17/03/2026, PDF60p: Apêndice2 pp.24–25/PDF33–34 (métricas, desempenho, manutenção); Apêndice3 tabela4 p.28/PDF37 (exemplos de propriedades, lida visualmente); Apêndice4 tabela6 p.31/PDF40 (manutenibilidade/desempenho/confiabilidade) e tabela9 p.36/PDF45 (disponibilidade/escalabilidade/modificabilidade). Licença PDFp.2.",
+      "file": null
+    },
+    {
+      "id": "tech-databricks-unity-catalog-governance",
+      "sourceType": "docs",
+      "title": "Databricks on AWS documentation — Unity Catalog governance and access control",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Manual Databricks AWS: /data-governance/unity-catalog/ §§Object model/Capabilities; /access-control/ §§Models/Mechanisms; /access-control/permissions-concepts §§Securable objects/Privileges/Usage privileges/BROWSE/Ownership (linhas13–152); /manage-privileges/admin-privileges §§Admin roles at a glance/Workspace catalog privileges (linhas9–44,100–108); /manage-privileges/ §§Show/Grant/Revoke (linhas29–154); /admin/system-tables/audit-logs §§Considerations/Schema/Identity metadata (linhas17–97); /catalog-explorer/ §§Functions (linhas10–20). Páginas de conceitos atualizadas11/09/2026; audit05/10/2026.",
+      "file": null
+    },
+    {
+      "id": "tech-omg-uml251-notation-examples",
+      "sourceType": "pdf",
+      "title": "OMG Unified Modeling Language (OMG UML), Version2.5.1 — Notation and Examples",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "retrievedAt": "2026-10-08",
+      "locator": "formal/2017-12-05, dezembro2017, PDF796p. Classes: §§11.4.4–5 pp.195–196 e §§11.5.4–5 pp.201–204 (PDF237–238,243–246), Figs11.16/17/27/28. Estados: §14.2.4.1–4 pp.319–320, §14.2.4.8 p.331, §14.2.5 pp.335–336 (PDF361–362,373,377–378), Fig14.36. Atividades: §§15.2.4–5 pp.379–383 e §§15.3.4–5 pp.391–392 (PDF421–425,433–434), Figs15.12/13. Sequência: §§17.2.4 pp.568–569,17.3.3–5 pp.572–573,17.4.4–5 pp.576–578 e17.8 pp.595–599 (PDF610–611,614–615,618–620,637–641), Fig17.25. Casos de uso: §§18.1.4–5 pp.641–643 (PDF683–685), Figs18.2/3; definição include/extend pp.641–642.",
+      "file": null
+    },
+    {
+      "id": "tech-w3c-xml-10",
+      "sourceType": "specification",
+      "title": "Extensible Markup Language (XML) 1.0, Fifth Edition",
+      "url": "https://www.w3.org/TR/xml/",
+      "retrievedAt": "2026-10-08",
+      "locator": "XML 1.0 §2.1 well-formed documents and §3.1 start-tags, end-tags, empty-element tags and attributes.",
+      "file": null
+    },
+    {
+      "id": "tech-w3c-xml-namespaces",
+      "sourceType": "specification",
+      "title": "Namespaces in XML 1.0, Third Edition",
+      "url": "https://www.w3.org/TR/xml-names/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Namespaces in XML §§1–3: URI references, prefixes, namespace declarations and expanded names.",
+      "file": null
+    },
+    {
+      "id": "tech-fowler-technical-debt",
+      "sourceType": "documentation",
+      "title": "Martin Fowler — Technical Debt",
+      "url": "https://martinfowler.com/bliki/TechnicalDebt.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Deficiencies in internal quality, interest on debt, cleanup principal, costs and trade-offs.",
+      "file": null
+    },
+    {
+      "id": "tech-gitlab-merge-requests",
+      "sourceType": "documentation",
+      "title": "GitLab Docs — Merge requests",
+      "url": "https://docs.gitlab.com/user/project/merge_requests/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Merge request review, discussion, CI/CD status, mergeability, assignees and reviewers.",
+      "file": null
+    },
+    {
+      "id": "tech-dora-trunk-based-development",
+      "sourceType": "documentation",
+      "title": "DORA — Trunk-based development",
+      "url": "https://dora.dev/capabilities/trunk-based-development/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Short-lived branches, frequent trunk integration, release snapshots, practices and pitfalls.",
+      "file": null
+    },
+    {
+      "id": "tech-pandas-missing-values-2026",
+      "sourceType": "documentation",
+      "title": "Working with missing data — pandas user guide",
+      "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Values considered missing; isna/notna; dropna; fillna; dtype and conversion considerations",
+      "file": null
+    },
+    {
+      "id": "tech-pandas-drop-duplicates-2026",
+      "sourceType": "documentation",
+      "title": "pandas.DataFrame.drop_duplicates reference",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Parameters subset/keep/inplace/ignore_index; return behavior; examples",
+      "file": null
+    },
+    {
+      "id": "tech-pandas-summary-statistics-2026",
+      "sourceType": "lesson",
+      "title": "How to calculate summary statistics — pandas getting-started tutorial",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Tutorial body: descriptive/aggregate statistics and grouping examples",
+      "file": null
+    },
+    {
+      "id": "tech-sklearn-preprocessing-2026",
+      "sourceType": "documentation",
+      "title": "Preprocessing data — scikit-learn user guide",
+      "url": "https://scikit-learn.org/stable/modules/preprocessing.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§6.3 preprocessing data: scaling/normalization, encoding categorical features and transformations",
+      "file": null
+    },
+    {
+      "id": "tech-sklearn-train-test-split-2026",
+      "sourceType": "documentation",
+      "title": "train_test_split — scikit-learn API reference",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "API signature and parameters: test_size, train_size, random_state, shuffle, stratify; return order",
+      "file": null
+    },
+    {
+      "id": "expanded-uece-english-2015",
+      "sourceType": "book",
+      "title": "Inglês Instrumental, Computação, 3ª edição, 2015",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/204085/2/Livro_Computacao_Ingles%20Instrumental.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "cap.1 pp.9–13; cap.2 pp.15–17; cap.3 pp.21–22; cap.4 pp.23–24; copyright PDFp.3",
+      "file": null
+    },
+    {
+      "id": "curated-bc-reading",
+      "sourceType": "article",
+      "title": "How to read the text",
+      "url": "https://learnenglishteens.britishcouncil.org/exams/reading-exams/how-read-text",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "Skimming; Scanning; Reading for detail/specific information"
+    },
+    {
+      "id": "curated-funag-comma",
+      "sourceType": "article",
+      "title": "Manual de Revisão da FUNAG: Vírgula",
+      "url": "https://funag.gov.br/manual/index.php?title=V%C3%ADrgula",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "I.2.b vocativo; conclusão sobre termos essenciais/integrantes"
+    },
+    {
+      "id": "curated-openstax-proportions",
+      "sourceType": "book",
+      "title": "Prealgebra 2e: Solve Proportions and their Applications",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications",
+      "file": null,
+      "retrievedAt": "2026-10-07",
+      "locator": "§6.5: definition, cross products, solve proportions and applications"
+    },
+    {
+      "id": "expanded-stanford-logic1",
+      "sourceType": "book",
+      "title": "Introduction to Logic: Chapter1",
+      "url": "https://logical.stanford.edu/intrologic/chapters/chapter_01.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§1.2–1.5 e exercícios1.1–1.7",
+      "file": null
+    },
+    {
+      "id": "curated-owasp-authz",
+      "sourceType": "article",
+      "title": "Authorization Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction; Least Privileges; Deny by Default; Validate permissions on every request"
+    },
+    {
+      "id": "curated-owasp-sqli",
+      "sourceType": "article",
+      "title": "SQL Injection Prevention Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "OWASP SQL Injection Prevention Cheat Sheet: definition/anatomy; prepared statements; stored procedure caveats; allow-list; least privilege"
+    },
+    {
+      "id": "expanded-rfc4512",
+      "sourceType": "documentation",
+      "title": "LDAP Directory Information Models (RFC4512)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4512.html",
+      "retrievedAt": "2026-10-07",
+      "locator": "§§2.1,2.2,2.3.1–2.3.2",
+      "file": null
+    },
+    {
+      "id": "expanded-mdn-timeout",
+      "sourceType": "documentation",
+      "title": "Window.setTimeout(): parameters and asynchronous timer",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+      "retrievedAt": "2026-10-08",
+      "locator": "Syntax; Parameters/delay; asynchronous functions",
+      "file": null
+    },
+    {
+      "id": "expanded-nist207",
+      "sourceType": "book",
+      "title": "NIST SP800-207: Zero Trust Architecture (2020)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Abstract; §2 pp.4–6 impressas (PDF13–15); §2.1 tenets1–3",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-ad-overview",
+      "sourceType": "documentation",
+      "title": "Active Directory Domain Services overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+      "retrievedAt": "2026-10-07",
+      "locator": "In this article: directory, security, schema, global catalog, replication",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-processes",
+      "sourceType": "documentation",
+      "title": "Processes and Threads (Win32)",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/processes-and-threads",
+      "retrievedAt": "2026-10-07",
+      "locator": "In this article: distinção entre processo e thread; jobs e thread pools como contexto",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-ps-pipelines",
+      "sourceType": "lesson",
+      "title": "One-liners and the pipeline — PowerShell101",
+      "url": "https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/04-pipelines?view=powershell-7.6",
+      "retrievedAt": "2026-10-08",
+      "locator": "PowerShell 101 chapter 4: pipeline, filtering, object pipeline and parameter binding",
+      "file": null
+    },
+    {
+      "id": "curated-nist800145",
+      "sourceType": "book",
+      "title": "NIST SP800-145: The NIST Definition of Cloud Computing (2011)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "§2 pp.2–3 impressas (PDF5–6)"
+    },
+    {
+      "id": "expanded-iso27000-edition",
+      "sourceType": "documentation",
+      "title": "ISO/IEC27000:2026 — Overview (catalogue official)",
+      "url": "https://www.iso.org/standard/27000",
+      "retrievedAt": "2026-10-08",
+      "locator": "General information; Life cycle; FAQ",
+      "file": null
+    },
+    {
+      "id": "expanded-presidencia-manual2018",
+      "sourceType": "book",
+      "title": "Manual de Redação da Presidência da República — 3ª edição (2018)",
+      "url": "https://www.ifac.edu.br/o-ifac/comunicacao/cerimonial-e-eventos/manual-de-redacao-da-presidencia-da-republica/manual-de-redacao-da-presidencia-da-republica_2018.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§1–3 pp.16–21; §5 pp.27–35; §11.7 pp.66–73; §11.9 pp.78–81; recortes §§11.1–11.2,11.6,11.8,11.10,12",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-risk30",
+      "sourceType": "book",
+      "title": "Guide for Conducting Risk Assessments — NIST SP 800-30 Rev.1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§2.1 pp.4–5; §2.3.1 pp.8–9",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-contingency34",
+      "sourceType": "book",
+      "title": "Contingency Planning Guide for Federal Information Systems — NIST SP 800-34 Rev.1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§3.2, 3.4.1–3.4.2, 3.5.1, 4.3 and 5.1.2; printed pp.15–29, 39–45 (PDF pp.29–41, 48–54); BIA, RTO/RPO, full/incremental/differential, testing and recovery validation",
+      "file": null
+    },
+    {
+      "id": "expanded-cnp3-wifi",
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — 802.11 wireless networks",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/lan.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§ IEEE 802.11 wireless networks: infrastructure/BSS, AP, frame exchange, association, SSID and RTS/CTS; only these sections are included",
+      "file": null
+    },
+    {
+      "id": "expanded-owasp-top10-2025-a05",
+      "sourceType": "article",
+      "title": "OWASP Top 10:2025 — lista e A05 Injection",
+      "url": "https://top10.owasp.org/2025/A05_2025-Injection/",
+      "retrievedAt": "2026-10-08",
+      "locator": "OWASP Top 10:2025, A05 Injection: risk definition, attack surface and prevention references",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-crypto175",
+      "sourceType": "book",
+      "title": "Guideline for Using Cryptographic Standards: Cryptographic Mechanisms — NIST SP800-175B Rev.1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-175Br1.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§3.2–3.3 pp.22–27; §4.5 pp.40–41; §4.2.3 pp.36–37; §5.2.3 pp.46–49",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-intro12",
+      "sourceType": "book",
+      "title": "An Introduction to Information Security — NIST SP800-12 Rev.1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
+      "retrievedAt": "2026-10-07",
+      "locator": "§1.4 pp.2–3; §2.3 p.8; §3.4 p.14; §§6.1–6.2 pp.36–37; §§10.1,10.7 pp.59,62–63",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-fund-lp3",
+      "sourceType": "book",
+      "title": "Língua Portuguesa — Ensino Fundamental II, Fascículo3 unidades7–8 (2019)",
+      "url": "https://cejarj.cecierj.edu.br/ava_arquivos/material_impresso/fundamental/lingua_portuguesa/ceja_fundamental_lingua_portuguesa_fasciculo_3.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Unidade8 §§1.2 e2 pp.26–32; ficha/copyright p.2",
+      "file": null
+    },
+    {
+      "id": "expanded-openstax-percent62",
+      "sourceType": "book",
+      "title": "Prealgebra2e — porcentagens, aumentos e descontos (§§6.1–6.3)",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent",
+      "retrievedAt": "2026-10-08",
+      "locator": "§6.1 definição/conversões; §6.2 exemplos6.14–6.24; §6.3 desconto e markup",
+      "file": null
+    },
+    {
+      "id": "expanded-obmep-percent",
+      "sourceType": "book",
+      "title": "Introdução à Porcentagem — 7º ano",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/5h3krwas7mo0o.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF integral de 5 páginas; §§1–2 e exercícios 1–3,5–7,9",
+      "file": null
+    },
+    {
+      "id": "expanded-obmep-aritmetica",
+      "sourceType": "book",
+      "title": "Encontros de Aritmética (2015)",
+      "url": "https://www.obmep.org.br/docs/aritmetica.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§2.4–2.5 pp.45–54 impressas; §§3.1–3.5 pp.63–87 impressas (PDF73–97)",
+      "file": null
+    },
+    {
+      "id": "expanded-owasp-top10-2025-complete",
+      "sourceType": "documentation",
+      "title": "OWASP Top 10:2025 — dez categorias, causas e prevenção",
+      "url": "https://top10.owasp.org/2025/",
+      "retrievedAt": "2026-10-08",
+      "locator": "https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A02_2025-Security_Misconfiguration/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A03_2025-Software_Supply_Chain_Failures/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A04_2025-Cryptographic_Failures/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A05_2025-Injection/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A06_2025-Insecure_Design/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A07_2025-Authentication_Failures/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A08_2025-Software_or_Data_Integrity_Failures/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A09_2025-Security_Logging_and_Alerting_Failures/ — Description / How to prevent / Example attack scenarios; https://top10.owasp.org/2025/A10_2025-Mishandling_of_Exceptional_Conditions/ — Description / How to prevent / Example attack scenarios",
+      "file": null
+    },
+    {
+      "id": "expanded-cert-malware2023",
+      "sourceType": "documentation",
+      "title": "Fascículo Códigos Maliciosos (julho2023)",
+      "url": "https://cartilha.cert.br/fasciculos/codigos-maliciosos/fasciculo-codigos-maliciosos.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.2–8 (prevenção e vetores); pp.10–11 (suspeita e resposta); pp.13–27 (tipos, incluindo ransomware, spyware, trojan, worm, botnet e scareware); p.29 (edição/produtores)",
+      "file": null
+    },
+    {
+      "id": "expanded-cert-golpes2026",
+      "sourceType": "documentation",
+      "title": "Fascículo Golpes: Caiu? Veja o que Fazer (maio2026)",
+      "url": "https://cartilha.cert.br/fasciculos/golpes-o-que-fazer/fasciculo-golpes-o-que-fazer.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.2–5 (ações imediatas, corte de contato, senha/sessões); pp.8–14 (guardar evidências, denunciar e suspeita de dispositivo comprometido); p.19 (edição/produtores)",
+      "file": null
+    },
+    {
+      "id": "expanded-obmep-proporcionalidade",
+      "sourceType": "book",
+      "title": "Números Diretamente e Inversamente Proporcionais — 7º ano",
+      "url": "https://cdnportaldaobmep.impa.br/portaldaobmep/uploads/material_teorico/c89zmw0n6cgks.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF4 páginas integralmente lidas; §1 definição1,exemplo1,exercícios2–3; definição2,exemplo4,exercício5",
+      "file": null
+    },
+    {
+      "id": "expanded-openstax-fracoes-reading",
+      "sourceType": "book",
+      "title": "Prealgebra2e — representação, simplificação e operações com frações (§§4.1,4.2,4.5)",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions",
+      "retrievedAt": "2026-10-08",
+      "locator": "§4.1 https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions: Meaning/Examples4.1–4.13; §4.2: Simplify/Multiply/Reciprocals/Divide atéexemplo4.35; §4.5 https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators: LCD,Examples4.63–4.74 eFourOperationsSummary",
+      "file": null
+    },
+    {
+      "id": "expanded-openstax-integers-rationals",
+      "sourceType": "book",
+      "title": "Prealgebra 2e — Integers, Rational Numbers and Integer Exponents",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers",
+      "retrievedAt": "2026-10-08",
+      "locator": "Recorte conjunto: §§3.1–3.4 (https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers; páginas 3.2–3.4 do mesmo livro), Ch.3 Key Concepts (https://openstax.org/books/prealgebra-2e/pages/3-key-concepts); §§4.1–4.6 e Ch.4 Key Concepts (https://openstax.org/books/prealgebra-2e/pages/4-key-concepts); §9.1 (https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy); §10.4 (https://openstax.org/books/prealgebra-2e/pages/10-4-divide-monomials); §10.5 (https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation).",
+      "file": null
+    },
+    {
+      "id": "expanded-ufpa-sintaxe-coord-subord",
+      "sourceType": "book",
+      "title": "Sintaxe — Atividades 12 e 13: coordenação e subordinação",
+      "url": "https://livroaberto.ufpa.br/bitstream/prefix/850/1/Livro_Sintaxe.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Atividade 12, pp.149–152 impressas (PDF pp.148–151); Atividade 13, pp.155–160 impressas (PDF pp.154–159), especialmente pp.156–157 impressas sobre encadeamento/hierarquização e efeitos de conectivos.",
+      "file": null
+    },
+    {
+      "id": "expanded-cisco-wireless-rf-reference",
+      "sourceType": "documentation",
+      "title": "Wireless RF Reference Guide",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/technical-reference/wireless-rf-reference-guide.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections Wi-Fi radio bands/frequencies, 2.4/5/6-GHz overview, channel widths/overlap, DFS and RF basics; U.S. examples explicitly not generalized to Brazil",
+      "file": null
+    },
+    {
+      "id": "expanded-mdn-http2-http3-tls-2026",
+      "sourceType": "documentation",
+      "title": "MDN Web Docs: HTTP messaging, HTTP/2, HTTP/3/QUIC and TLS/HTTPS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages",
+      "retrievedAt": "2026-10-08",
+      "locator": "HTTP messages: HTTP/1.x vs HTTP/2 multiplexing and HTTP/3/QUIC comparison (conclusion); Evolution of HTTP: HTTP/2 and HTTP/3; TLS: HTTPS, confidentiality, integrity, server authentication, certificate and handshake",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-virtual-memory-storage-2026",
+      "sourceType": "documentation",
+      "title": "Virtual Address Space and Physical Storage",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space-and-physical-storage",
+      "retrievedAt": "2026-10-08",
+      "locator": "Virtual address space, working set, pages, physical storage and paging file",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-task-manager-processes-2026",
+      "sourceType": "documentation",
+      "title": "Troubleshoot processes by using Task Manager",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/support-tools-task-manager",
+      "retrievedAt": "2026-10-08",
+      "locator": "Summary; tabs Processes, Performance, Users, Details, Services; process troubleshooting",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-access-control-2026",
+      "sourceType": "documentation",
+      "title": "Access Control Overview",
+      "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/access-control",
+      "retrievedAt": "2026-10-08",
+      "locator": "Permissions, ownership, inheritance, user rights and object auditing",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-local-accounts-2026",
+      "sourceType": "documentation",
+      "title": "Local accounts",
+      "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/local-accounts",
+      "retrievedAt": "2026-10-08",
+      "locator": "Default local user accounts; Computer Management; Administrators group and least privilege",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-powershell101-control-2026",
+      "sourceType": "lesson",
+      "title": "The Help system — PowerShell 101",
+      "url": "https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/02-help-system?view=powershell-7.6",
+      "retrievedAt": "2026-10-08",
+      "locator": "PowerShell 101, chapter 2: finding commands, Get-Help, help examples and updating help",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-ad-ds-foundations-2026",
+      "sourceType": "course",
+      "title": "Introduction to AD DS and Understanding the Active Directory Logical Model",
+      "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-ad-ds/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction to AD DS, 8 units: AD DS, users/groups/computers, forests/domains, OUs, object management; complemented by Understanding the Active Directory Logical Model §§forest/domain/OUs and domain controller roles/replication",
+      "file": null
+    },
+    {
+      "id": "expanded-openldap-admin-guide-26-2026",
+      "sourceType": "book",
+      "title": "OpenLDAP Software 2.6 Administrator’s Guide: directory model and LDAP operations",
+      "url": "https://www.openldap.net/doc/admin26/OpenLDAP-Admin-Guide.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Preface and scope pp.xii–xiii; ch.1 §§1.2, 1.5 pp.16–20; DIT, entry, DN/RDN, search filters and add/delete/modify/rename/search operations; appendix K/L pp.266–269 for copyright/license",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-wifi-home-layout-2026",
+      "sourceType": "documentation",
+      "title": "Wi-Fi e Layout da sua Página Inicial",
+      "url": "https://support.microsoft.com/pt-br/windows/experience/connectivity-networking/wi-fi-and-your-home-layout",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections on band selection, channel choice, channel width, security and placement; consumer/home context only",
+      "file": null
+    },
+    {
+      "id": "expanded-anatel-wifi-frequency-rules-2026",
+      "sourceType": "regulation",
+      "title": "Ato Anatel nº 14.448/2017 — requisitos técnicos consolidados para 6 GHz",
+      "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14451",
+      "retrievedAt": "2026-10-08",
+      "locator": "Consolidated Anatel Act No. 14,448/2017, definitions and item 11.7 for 5.925–7.125 GHz device classes/conditions; not a complete channel plan",
+      "file": null
+    },
+    {
+      "id": "expanded-wfa-wpa3-announcement-2018",
+      "sourceType": "documentation",
+      "title": "Wi-Fi Alliance introduces Wi-Fi CERTIFIED WPA3 security",
+      "url": "https://www.globenewswire.com/news-release/2018/06/26/1529297/0/en/Wi-Fi-Alliance-introduces-Wi-Fi-CERTIFIED-WPA3-security.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "2018 launch description: WPA3-Personal/Enterprise, SAE, Protected Management Frames and enterprise 192-bit mode; announcement, not full specification",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-elb-layer-model-2026",
+      "sourceType": "documentation",
+      "title": "What is Elastic Load Balancing? — AWS User Guide",
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Overview: traffic distribution across targets, availability zones, health checks and automatic capacity scaling",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-alb-healthchecks-2026",
+      "sourceType": "documentation",
+      "title": "Health checks for Application Load Balancer target groups",
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "ALB target group health-check protocol/path, intervals, thresholds, response codes and fail-open caveat",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-firewall-guidelines-2009",
+      "sourceType": "guideline",
+      "title": "NIST SP 800-41 Rev. 1: Guidelines on Firewalls and Firewall Policy",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "NIST SP 800-41 Rev.1 (September 2009), §§2.1.1–2.1.10 firewall technology types, §2.3 inspection limits and §5.3 testing; historical U.S. federal guidance",
+      "file": null
+    },
+    {
+      "id": "expanded-cnp3-smtp-email-2026",
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — Electronic mail and SMTP",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/email.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections Electronic mail and The Simple Mail Transfer Protocol; RFC 5321 reference; process roles MUA/MSA/MTA/MDA, SMTP command/reply model and example exchange",
+      "file": null
+    },
+    {
+      "id": "expanded-cnp3-ssh-remote-login-2026",
+      "sourceType": "book",
+      "title": "Computer Networking: Principles, Protocols and Practice — Remote login (SSH)",
+      "url": "https://beta.computer-networking.info/syllabus/default/protocols/ssh.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Section The secure shell (SSH): remote login vs. Telnet, client/server exchange and negotiation/key exchange examples",
+      "file": null
+    },
+    {
+      "id": "expanded-apache-ftp-introduction-2026",
+      "sourceType": "documentation",
+      "title": "Introduction to the FTP Protocol — Apache HTTP Server 2.4",
+      "url": "https://httpd.apache.org/mod_ftp/ftp/ftp_intro.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Overview of the FTP Protocol, paragraphs 1–4: purpose, stateful session, control/data connections, port 21 and active mode interactions with firewalls/NAT",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-ipsec-vpn-guide-2020",
+      "sourceType": "guideline",
+      "title": "NIST SP 800-77 Rev. 1: Guide to IPsec VPNs",
+      "url": "https://csrc.nist.gov/pubs/sp/800/77/r1/final",
+      "retrievedAt": "2026-10-08",
+      "locator": "SP 800-77 Rev.1 (June 2020), §§2.4.1–2.4.2 (gateway-to-gateway and remote access), PDF pp.27–30; §2.4 remote-access and split-tunnel limits; abstract for IPsec/IKE scope",
+      "file": null
+    },
+    {
+      "id": "expanded-azure-scaling-wellarchitected-2026",
+      "sourceType": "documentation",
+      "title": "Architecture strategies for designing a reliable scaling strategy",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/scaling",
+      "retrievedAt": "2026-10-08",
+      "locator": "Definitions of vertical/horizontal scaling/autoscaling; RE:06; load patterns; tradeoffs; monitor scaling operations",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-hybrid-guidance-2026",
+      "sourceType": "documentation",
+      "title": "Best practices for building a hybrid cloud architecture with AWS services",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/introduction.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Introduction: workload placement reasons and hybrid strategy; operational/management framework",
+      "file": null
+    },
+    {
+      "id": "curated-otel-signals",
+      "sourceType": "documentation",
+      "title": "Signals",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "Signal categories; current support; traces, metrics, logs and baggage definitions; page modified 2026-03-10"
+    },
+    {
+      "id": "expanded-nist-idps-800-94-2026",
+      "sourceType": "government_guide",
+      "title": "SP 800-94, Guide to Intrusion Detection and Prevention Systems (IDPS)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-94.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "NIST SP 800-94 (February 2007), §§2.1–2.5 and 3.2–3.3: IDS/IPS functions, detection/prevention capabilities, architectures and operating limits; historical federal guidance",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-security-testing-800-115-2026",
+      "sourceType": "government_guide",
+      "title": "SP 800-115, Technical Guide to Information Security Testing and Assessment",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "NIST SP 800-115 (September 2008), §§4.3 vulnerability scanning and 5.2 penetration testing; scope/authorization and risk caveats",
+      "file": null
+    },
+    {
+      "id": "expanded-azure-nsg-filtering-2026",
+      "sourceType": "documentation",
+      "title": "How network security groups filter network traffic",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works",
+      "retrievedAt": "2026-10-08",
+      "locator": "Azure Network Security Groups: source/destination, protocol/port, inbound/outbound, and rule evaluation; product-specific",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-network-firewall-engines-2026",
+      "sourceType": "documentation",
+      "title": "Network Firewall stateless and stateful rules engines",
+      "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-rules-engines.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "AWS Network Firewall stateless packet and stateful flow engines; rule actions/order; product-specific example, not all firewall designs",
+      "file": null
+    },
+    {
+      "id": "expanded-redhat-linux-containers-vms-2026",
+      "sourceType": "article",
+      "title": "What is a Linux container?",
+      "url": "https://www.redhat.com/en/topics/containers/whats-a-linux-container",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections “What is a Linux container?”, “Containers vs. virtual machines” and “Serverless architectures and containers”; published 2026-02-10.",
+      "file": null
+    },
+    {
+      "id": "expanded-dordal-networking-tcpip-ipv6-dns-dhcp-2026",
+      "sourceType": "book",
+      "title": "An Introduction to Computer Networks, 2nd edition",
+      "url": "https://intronetworks.cs.luc.edu/current2/html/",
+      "retrievedAt": "2026-10-08",
+      "locator": "Ed.2.0.11: cap.1 §1.1 (camadas TCP/IP); cap.9 §§9.1–9.6 (IPv4, prefixos e sub-redes); cap.10 §§10.1 e 10.3 (DNS e DHCP); cap.11 §§11.2–11.3 e cap.12 §12.3 (endereços/prefixos/sub-redes IPv6).",
+      "file": null
+    },
+    {
+      "id": "expanded-freecodecamp-linux-intro-2026",
+      "sourceType": "course",
+      "title": "Introduction to Linux (curso texto e vídeo baseado no LFS101)",
+      "url": "https://www.freecodecamp.org/news/introduction-to-linux",
+      "retrievedAt": "2026-10-08",
+      "locator": "Curso completo: cap.3 Linux Basics and System Startup; cap.9 Processes; cap.10 File Operations; cap.12 User Environment; cap.18 Local Security Principles.",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-powershell-redirection-2026",
+      "sourceType": "documentation",
+      "title": "about_Redirection and output streams — PowerShell",
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_redirection?view=powershell-7.6",
+      "retrievedAt": "2026-10-08",
+      "locator": "Redirectable streams 1–6, >, >>, n>&1, *> and examples; note PS7.4 native stdout binary behavior",
+      "file": null
+    },
+    {
+      "id": "expanded-uece-portugues-instrumental-crase-candidate-2026",
+      "sourceType": "book",
+      "title": "Português Instrumental: leitura, produção de textos e análise linguística — 3ª ed.",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/560665/2/Livro%20%20Portugu%C3%AAs%20Inst.%20leitura_%20produ%C3%A7%C3%A3o%20de%20textos%20e%20an%C3%A1lise%20lingu%C3%ADstica.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "3ª ed. (2015): cap.4, pp.41–48 (ambiguidade, não-contradição e atividades de reescrita); cap.5, pp.51–54 (paralelismo sintático/semântico, correção e exercícios); cap.7 pp.75–78 (regência verbal/nominal); cap.8 pp.81–85 (crase, usos, não usos, locuções, opcionais e exercícios); cap.9 pp.87–95 (acentuação, hiatos, exceções do AOLP, ortografia e exercícios de revisão em textos).",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-portugues-iv-volume2-morphology-2017",
+      "sourceType": "book",
+      "title": "Português IV: Volume 2 — morfologia, flexões verbais, classes gramaticais e formações lexicais",
+      "url": "https://canal.cecierj.edu.br/082018/864b3190d799ea9a1d4ae31f1cbbfacc.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Aula13 pp.59–85 (elementos mórficos e morfemas); Aulas14–15 pp.87–132 (composição, derivação e processos secundários); Aulas16–17 pp.135–178 (critérios morfológico, sintático e semântico; classes de palavras e usos; pronomes pessoais, oblíquos, possessivos, demonstrativos, indefinidos, interrogativos e relativos)",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-portugues-iv-volume1-flexion-voices-2014",
+      "sourceType": "book",
+      "title": "Português IV: Volume 1 — flexão nominal e verbal, formas e vozes",
+      "url": "https://canal.cecierj.edu.br/012016/6b8590922935afbb47b1d438bd6de511.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Aulas 6–7, pp.85–115: flexão nominal (gênero e número); Aulas 8–9, pp.117–164: categorias, modos, tempos e paradigmas de flexão verbal ativa; Aula 10, pp.165–184: formas nominais, distinção entre verbo pronominal e voz reflexiva, vozes ativa/passiva e paradigmas simples/compostos. A própria introdução da Aula 10 menciona concordância na passiva sintética como assunto não desenvolvido.",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-portugues-i-volume2-voices-times-2011",
+      "sourceType": "book",
+      "title": "Português I: Volume 2 — tempos e modos em articulações textuais; vozes verbais",
+      "url": "https://canal.cecierj.edu.br/062020/982985fc3f5a30d51f82764f531f23c9.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Aulas 16–17, pp.7–36: semântica de tempos e modos em articulações textuais; Aula 24, pp.166–178: voz ativa, passivas analítica/sintética, reflexiva e impessoalização; atividades de transformação e respostas comentadas.",
+      "file": null
+    },
+    {
+      "id": "expanded-educapes-uerj-figuras-linguagem-2019",
+      "sourceType": "pdf",
+      "title": "Apostila Figuras de linguagem",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/726817/2/APOSTILA%20Figuras%20de%20linguagem.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.1–3: atividade de interpretação de textos visuais sobre figuras e efeitos irônicos/humorísticos; metáfora e sua interpretação contextual.",
+      "file": null
+    },
+    {
+      "id": "expanded-cecierj-portugues-i-volume1-context-inference-2012",
+      "sourceType": "book",
+      "title": "Português I: Volume 1",
+      "url": "https://canal.cecierj.edu.br/012016/90de8ec4d507f1d1d8e2eedd0646291a.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Volume 1 (2012): Aula 1 pp.7–27 (texto, gêneros e contexto discursivo/histórico); Aula 3 pp.43–58 (intencionalidade/finalidade e interpretação); Aula 4 pp.59–76 (situacionalidade, contexto e intertextualidade); Aula 12 pp.201–216 (pressupostos/inferências); Aula 14 pp.235–253 (compreensão, interpretação, sentido denotado/conotado e efeitos de sentido).",
+      "file": null
+    },
+    {
+      "id": "expanded-advisera-iso27001-2022-clause-guide",
+      "sourceType": "guide",
+      "title": "Clause-by-clause explanation of ISO 27001:2022",
+      "url": "https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/Clause_by_clause_explanation_of_ISO_27001_EN.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.2–4 and 7–21: purpose/terms, process approach, clauses 4–10, risk assessment/treatment and Statement of Applicability, Annex A controls A.5–A.8",
+      "file": null
+    },
+    {
+      "id": "expanded-iso-family-overview-current",
+      "sourceType": "documentation",
+      "title": "ISO/IEC 27000 family — Information security management",
+      "url": "https://www.iso.org/standard/iso-iec-27000-family",
+      "retrievedAt": "2026-10-08",
+      "locator": "Overview and Highlights from our store; ISO/IEC 27001, 27002 and 27000 family descriptions",
+      "file": null
+    },
+    {
+      "id": "expanded-abnt-27001-edition-record-2026",
+      "sourceType": "catalogue",
+      "title": "ABNT NBR ISO/IEC 27001:2022 Versão Corrigida:2023 — catálogo oficial",
+      "url": "https://www.abntcatalogo.com.br/sebrae/norma.aspx?Q=WXV0VDkwSGkvd0dDeU1hYXFtRWlKaTBwVnBZRVdob2x2SEoyQkR6NEFqcz0%3D",
+      "retrievedAt": "2026-10-08",
+      "locator": "Record fields Status, Data de Publicação, Nota de Título, Origem, Objetivo; amendment/errata record ABNT NBR ISO/IEC 27001:2022 Emenda 1:2024",
+      "file": null
+    },
+    {
+      "id": "expanded-abnt-27002-edition-record-2026",
+      "sourceType": "catalogue",
+      "title": "ABNT NBR ISO/IEC 27002:2022 — catálogo oficial",
+      "url": "https://www.abntcatalogo.com.br/sebrae/norma.aspx?Q=T2JVQ1FZQkZsejBsR1lWbGRWTWNIck1wQUp3ZksxZ1pQRXFmSHJ3My9aWT0%3D",
+      "retrievedAt": "2026-10-08",
+      "locator": "Record fields Status, Data de Publicação, Título, Origem and Objetivo",
+      "file": null
+    },
+    {
+      "id": "expanded-abnt-27000-2018-cancellation-record-2026",
+      "sourceType": "catalogue",
+      "title": "ISO/IEC 27000:2018 — catálogo ABNT/Sebrae e cancelamento",
+      "url": "https://www.abntcatalogo.com.br/sebrae/norma.aspx?Q=azh4bE5RZHA5TUozdmhsdG12aGoybmp6Q0ZzbjVBN3M4STh6Q1p4STZ2OD0%3D",
+      "retrievedAt": "2026-10-08",
+      "locator": "Record fields Status, Data de Cancelamento, Motivo de Cancelamento and Objetivo",
+      "file": null
+    },
+    {
+      "id": "expanded-google-cloud-serverless-article-2026",
+      "sourceType": "article",
+      "title": "What is serverless computing? (Google Cloud)",
+      "url": "https://cloud.google.com/discover/what-is-serverless-computing",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is serverless computing: types, how it works, and serverless versus other models; page updated 2026-07-13.",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-csrc-nonrepudiation-2026",
+      "sourceType": "book",
+      "title": "NIST CSRC Glossary — Non-repudiation",
+      "url": "https://csrc.nist.gov/glossary/term/non_repudiation",
+      "retrievedAt": "2026-10-08",
+      "locator": "NIST CSRC Glossary, entry Non-repudiation and referenced definitions.",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-csrc-digital-signature-2026",
+      "sourceType": "book",
+      "title": "NIST CSRC Glossary — Digital signature",
+      "url": "https://csrc.nist.gov/glossary/term/digital_signature",
+      "retrievedAt": "2026-10-08",
+      "locator": "NIST CSRC Glossary, entry Digital signature and referenced definitions.",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-sp1800-26a-2026",
+      "sourceType": "book",
+      "title": "NIST SP 1800-26A — Data Integrity Executive Summary",
+      "url": "https://www.nccoe.nist.gov/publication/1800-26/VolA/index.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Executive Summary: CIA definitions and data-integrity event scope.",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-lambda-event-driven-docs",
+      "sourceType": "documentation",
+      "title": "AWS Lambda — serverless compute and event-driven architecture",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "What is AWS Lambda? and Creating event-driven architectures with Lambda: triggers, events, event source mappings and managed infrastructure.",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-local-file-systems-2026",
+      "sourceType": "documentation",
+      "title": "Local file systems",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/file-systems",
+      "retrievedAt": "2026-10-08",
+      "locator": "In this article: hierarchical file structure; volumes, directories and files",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-ntfs-overview-2026",
+      "sourceType": "documentation",
+      "title": "NTFS overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview",
+      "retrievedAt": "2026-10-08",
+      "locator": "Overview; Increased reliability; Increased security; applicable Windows editions",
+      "file": null
+    },
+    {
+      "id": "expanded-git-pro-installing-git-en-2026",
+      "sourceType": "book",
+      "title": "Pro Git — Installing Git",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git",
+      "retrievedAt": "2026-10-08",
+      "locator": "Chapter 1.5, Installing Git; Linux distribution instructions and version note",
+      "file": null
+    },
+    {
+      "id": "expanded-python-control-flow-docs-en-2026",
+      "sourceType": "software_documentation",
+      "title": "The Python Tutorial — More Control Flow Tools",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§4.1–4.7, especially if/elif, for, range, break/continue and else clauses",
+      "file": null
+    },
+    {
+      "id": "expanded-github-rest-issues-reference-en-2026",
+      "sourceType": "software_documentation",
+      "title": "REST API endpoints for issues — List repository issues",
+      "url": "https://docs.github.com/en/rest/issues/issues#list-repository-issues",
+      "retrievedAt": "2026-10-08",
+      "locator": "List repository issues endpoint: description, path/query parameter table, status codes and request example",
+      "file": null
+    },
+    {
+      "id": "expanded-nist60-classification-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-60 Vol. I Rev. 1 — Guide for Mapping Types of Information and Information Systems to Security Categories",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§3.1–3.2 and 4.1–4.6, printed pp.9–33 (PDF pp.13–37); provisional impact assignment, context review/adjustment, system high-water mark, documentation and uses of categorization",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-fips199-classification-2026",
+      "sourceType": "standard",
+      "title": "FIPS 199 — Standards for Security Categorization of Federal Information and Information Systems",
+      "url": "https://csrc.nist.gov/files/pubs/fips/199/final/docs/fips-pub-199-final.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§§2–3, printed pp.1–6 (PDF pp.4–9); CIA, low/moderate/high impact definitions, security category vector, and system high-water mark",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-53b-baselines-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-53B — Control Baselines for Information Systems and Organizations",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final",
+      "retrievedAt": "2026-10-08",
+      "locator": "Official publication abstract and planning note dated 2025-08-27: low/moderate/high system impact baselines, privacy baseline, tailoring, and Release 5.2.0 note",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-rmf-categorize-roles-2026",
+      "sourceType": "documentation",
+      "title": "NIST Risk Management Framework — Categorize Step",
+      "url": "https://csrc.nist.gov/Projects/risk-management/about-rmf/categorize-step",
+      "retrievedAt": "2026-10-08",
+      "locator": "Categorize Step: purpose and outcomes; system characteristics documented; categorization completed; decision reviewed/approved by authorizing official; supporting publications FIPS 199 and SP 800-60",
+      "file": null
+    },
+    {
+      "id": "expanded-nist61r3-incidents-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§1.1–2.1 pp.3–5; §3 CSF 2.0 response profile",
+      "file": null
+    },
+    {
+      "id": "expanded-nist40r4-patch-management-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-40 Rev. 4 — Enterprise Patch Management Planning",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-40r4.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Executive Summary and §1; process steps and risk-reduction framing",
+      "file": null
+    },
+    {
+      "id": "expanded-gsi-iam-osic0823",
+      "sourceType": "government_guide",
+      "title": "OSIC 08/2023 — Identidade e Gestão de Acesso (IAM)",
+      "url": "https://www.gov.br/gsi/pt-br/seguranca-da-informacao-e-cibernetica/osic/osic-08-23",
+      "retrievedAt": "2026-10-08",
+      "locator": "Seções 3–5 (IAM/PAM/PIM, contas, ciclo de vida e privilégio mínimo); página oficial atualizada em 28/02/2025",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-entra-provisioning-how-works",
+      "sourceType": "software_documentation",
+      "title": "How Application Provisioning Works in Microsoft Entra ID",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/how-provisioning-works",
+      "retrievedAt": "2026-10-08",
+      "locator": "Automatic provisioning and SCIM 2.0 §§ opening; Mapping attributes; Scoping; Initial/incremental cycles; Deprovisioning",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-63b4-authenticator-management-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management",
+      "url": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final",
+      "retrievedAt": "2026-10-08",
+      "locator": "Official page abstract/document history: authentication of subscribers, authenticator management and assurance levels; final July 2025 supersedes 800-63B (2020)",
+      "file": null
+    },
+    {
+      "id": "expanded-nist-184-cyber-recovery-2026",
+      "sourceType": "government_guide",
+      "title": "NIST SP 800-184 — Guide for Cybersecurity Event Recovery",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-184.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "§3.1, printed pp.15–17 (PDF pp.22–24): objectives, roles, recovery testing, record results, improve plans; publication abstract and history (final 2016)",
+      "file": null
+    },
+    {
+      "id": "expanded-azure-backup-restore-files-tutorial-2026",
+      "sourceType": "documentation",
+      "title": "Restore files to a virtual machine with Azure Backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/tutorial-restore-files",
+      "retrievedAt": "2026-10-08",
+      "locator": "Sections Prerequisites; Generate file recovery script; Restore file to your VM; Next steps; last updated 2025-09-09",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-powershell101-flow-control-2026",
+      "sourceType": "documentation",
+      "title": "Flow control — PowerShell 101",
+      "url": "https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/06-flow-control?view=powershell-7.6",
+      "retrievedAt": "2026-10-08",
+      "locator": "PowerShell 101 chapter 6: if/switch, for/foreach/while/do loops, break/continue and scripts",
+      "file": null
+    },
+    {
+      "id": "expanded-ms-powershell-about-variables-2026",
+      "sourceType": "documentation",
+      "title": "about_Variables — PowerShell",
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.6",
+      "retrievedAt": "2026-10-08",
+      "locator": "Variable names and assignment; scope; types and variable providers",
+      "file": null
+    },
+    {
+      "id": "expanded-bash1-man7-reference-2026",
+      "sourceType": "documentation",
+      "title": "bash(1) — Linux manual page",
+      "url": "https://man7.org/linux/man-pages/man1/bash.1.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "SHELL GRAMMAR (pipelines and control structures); PARAMETERS; REDIRECTION; INVOCATION; SHELL BUILTIN COMMANDS",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-alb-introduction-2026",
+      "sourceType": "documentation",
+      "title": "What is an Application Load Balancer? — AWS User Guide",
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Application layer model; listener priority and HTTP host/header, method, query and source-IP routing; product-specific.",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-nlb-introduction-2026",
+      "sourceType": "documentation",
+      "title": "What is a Network Load Balancer? — AWS User Guide",
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "Network Load Balancer overview §§ components and overview; L4 model and TCP/UDP distribution; product-specific.",
+      "file": null
+    },
+    {
+      "id": "expanded-owasp-api-top10-2023",
+      "sourceType": "guide",
+      "title": "OWASP API Security Top 10 — Introduction (2023)",
+      "url": "https://api-security.owasp.org/editions/2023/en/0x03-introduction/",
+      "retrievedAt": "2026-10-08",
+      "locator": "OWASP API Security Top 10 2023: introduction, API-specific risks API1–API10 and linked risk chapters",
+      "file": null
+    },
+    {
+      "id": "expanded-owasp-docker-security-cheatsheet",
+      "sourceType": "guide",
+      "title": "Docker Security Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html",
+      "retrievedAt": "2026-10-08",
+      "locator": "OWASP Docker Security Cheat Sheet: controls 0–13, least privilege, image/runtime, secrets, network and supply chain",
+      "file": null
+    },
+    {
+      "id": "expanded-github-actions-secure-use",
+      "sourceType": "software_documentation",
+      "title": "Secure use reference — GitHub Actions",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "retrievedAt": "2026-10-08",
+      "locator": "GitHub Actions secure use reference: token permissions, untrusted input, third-party actions, secrets and OIDC",
+      "file": null
+    },
+    {
+      "id": "expanded-aws-shared-responsibility-model",
+      "sourceType": "guide",
+      "title": "Shared Responsibility Model",
+      "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "retrievedAt": "2026-10-08",
+      "locator": "AWS Shared Responsibility Model: security of the cloud versus security in the cloud; customer duties by service abstraction",
+      "file": null
+    },
+    {
+      "id": "expanded-azure-availability-zones-2026",
+      "sourceType": "documentation",
+      "title": "Using Availability Zones and Regions — Azure Well-Architected",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/resiliency/regions-availability-zones",
+      "retrievedAt": "2026-10-08",
+      "locator": "Terms for region and availability zones; zone-redundant and multi-region deployment approaches; resilience, failover, data replication, cost and service-support tradeoffs",
+      "file": null
+    },
+    {
+      "id": "expanded-azure-monitoring-reliability-2026",
+      "sourceType": "documentation",
+      "title": "Architecture strategies for monitoring workload reliability",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/monitoring",
+      "retrievedAt": "2026-10-08",
+      "locator": "Availability, throughput, response-time SLO/SLA targets; health models; service-health and threshold alerts; correlated infrastructure/workload signals and historical trends",
+      "file": null
+    },
+    {
+      "id": "curated-rfc9110",
+      "sourceType": "specification",
+      "title": "RFC 9110: HTTP Semantics — intermediaries and proxies",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "file": null,
+      "retrievedAt": "2026-10-08",
+      "locator": "§3.7 (intermediaries: proxy, gateway/reverse proxy and tunnel), §§7.6–7.7 (message forwarding and transformations)"
+    },
+    {
+      "id": "expanded-abnt-27001-amendment-2024",
+      "sourceType": "catalogue",
+      "title": "ABNT NBR ISO/IEC 27001:2022 Emenda 1:2024 — catálogo oficial",
+      "url": "https://abntcatalogo.com.br/sebrae/norma.aspx?Q=QnhkdGd6MkRacm9rOS90eElTeVFCd1pjV3hLWWY0L1BJYmJqQmtnaUpzYz0%3D",
+      "retrievedAt": "2026-10-08",
+      "locator": "Ficha da Emenda 1:2024: situação Em Vigor; data de publicação 12/06/2024; uma página",
+      "file": null
+    },
+    {
+      "id": "expanded-educapes-voices-2023",
+      "sourceType": "book",
+      "title": "Apostila sobre uso das vozes verbais",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/742329/2/11%29%20Vozes%20verbais.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.2–4: active voice, passive analytic/synthetic, reflexive voice; examples and exercises",
+      "file": null
+    },
+    {
+      "id": "expanded-ufersa-aet-2013-discourse-intertext",
+      "sourceType": "book",
+      "title": "Análise e expressão textual",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/203982/2/AN%C3%81LISE%20E%20EXPRESS%C3%83O%20TEXTUAL.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Unidade II, pp.35–43: situacionalidade, intertextualidade explícita/implícita e exercícios; pp.38–41: discursos direto, indireto e indireto livre",
+      "file": null
+    },
+    {
+      "id": "expanded-unb-pellegrin-semantics-2011",
+      "sourceType": "thesis",
+      "title": "A cobertura da liberdade de imprensa na Venezuela pelo jornal O Estado de S. Paulo: a ideologia no discurso jornalístico",
+      "url": "https://repositorio.unb.br/bitstream/10482/9291/1/2011_FlavioLuisdeSouzaPellegrin.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "Cap.4.3, pp.93–101: definição de semântica, sinonímia, antonímia, denotação e conotação, com discussão contextualizada",
+      "file": null
+    },
+    {
+      "id": "expanded-educapes-sequencia-trailer-figures-2023",
+      "sourceType": "book",
+      "title": "As contribuições do gênero trailer honesto para as práticas de leitura e produção de texto",
+      "url": "https://educapes.capes.gov.br/bitstream/capes/736984/2/Sequ%C3%AAncia%20Did%C3%A1tica.pdf",
+      "retrievedAt": "2026-10-08",
+      "locator": "PDF pp.40–42: quadro de dez figuras com definições/exemplos e Oficina 5 com atividades para identificar, explicar e usar efeitos irônicos/humorísticos",
+      "file": null
+    }
   ],
   "mappings": [
-    {"factIds":["organization","cargo","specialty","option_code","board","education","vacancies_total","vacancies_general","vacancies_disability","vacancies_black_candidates","salary","application_fee","registration_period","payment_deadline","exam_city","exam_date","objective_structure","objective_duration","objective_approval","case_study","case_study_approval","final_score","critical_content_cutoff"],"sourceId":"official-edital-01-2026"},
-    {"factIds":["known_content"],"sourceId":null,"status":"assumption","note":"Não fornecido pelo usuário."}
+    {
+      "factIds": [
+        "organization",
+        "cargo",
+        "specialty",
+        "option_code",
+        "board",
+        "education",
+        "vacancies_total",
+        "vacancies_general",
+        "vacancies_disability",
+        "vacancies_black_candidates",
+        "salary",
+        "application_fee",
+        "registration_period",
+        "payment_deadline",
+        "exam_city",
+        "exam_date",
+        "objective_structure",
+        "objective_duration",
+        "objective_approval",
+        "case_study",
+        "case_study_approval",
+        "final_score",
+        "critical_content_cutoff"
+      ],
+      "sourceId": "official-edital-01-2026"
+    },
+    {
+      "factIds": [
+        "known_content"
+      ],
+      "sourceId": null,
+      "status": "assumption",
+      "note": "Não fornecido pelo usuário."
+    }
   ]
 }

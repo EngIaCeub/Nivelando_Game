@@ -78,10 +78,63 @@ export function auditLibrary(pack, { now = new Date() } = {}) {
     return { id: resource.id, eligible: reasons.length === 0, reasons };
   });
   const eligible = new Set(resourceResults.filter(r => r.eligible).map(r => r.id));
+  const resourceById = new Map(resources.map(resource => [resource.id, resource]));
+  const studyPaths = library.studyPaths ?? [];
+  const duplicatePathIds = new Set(duplicateIds(studyPaths.map(path => path.id)));
+  for (const id of duplicatePathIds) errors.push('Duplicate study path: ' + id);
+  const pathResults = studyPaths.map(path => {
+    const reasons = [];
+    let structurallyValid = true;
+    const unit = unitMap.get(path.unitId);
+    if (!unit) { errors.push('Unknown unit for study path ' + path.id + ': ' + path.unitId); structurallyValid = false; }
+    if (duplicatePathIds.has(path.id)) { reasons.push('duplicate-path-id'); structurallyValid = false; }
+    if (!Array.isArray(path.steps) || path.steps.length < 2 || new Set((path.steps ?? []).map(step => step.resourceId)).size < 2) {
+      errors.push('Study path must sequence at least two distinct resources: ' + path.id);
+      reasons.push('invalid-sequence'); structurallyValid = false;
+    }
+    const objectives = new Set();
+    for (const step of path.steps ?? []) {
+      const resource = resourceById.get(step.resourceId);
+      if (!resource) { errors.push('Unknown resource for study path ' + path.id + ': ' + step.resourceId); structurallyValid = false; continue; }
+      if (!(resource.coverage ?? []).some(mapping => mapping.unitId === path.unitId)) {
+        errors.push('Study path resource does not map to its unit: ' + path.id + '/' + step.resourceId);
+        structurallyValid = false;
+      }
+      if (!nonempty(step.locator)) { errors.push('Study path step lacks locator: ' + path.id + '/' + step.resourceId); structurallyValid = false; }
+      if (!Array.isArray(step.objectiveIndices) || !step.objectiveIndices.length) { errors.push('Study path step lacks objective mapping: ' + path.id + '/' + step.resourceId); structurallyValid = false; }
+      for (const index of step.objectiveIndices ?? []) {
+        if (!Number.isInteger(index) || index < 0 || index >= (unit?.learningObjectives?.length ?? 0)) {
+          errors.push('Invalid learning objective index in study path: ' + path.id + '/' + index); structurallyValid = false;
+        } else objectives.add(index);
+      }
+      if (!eligible.has(step.resourceId)) reasons.push('resource-ineligible:' + step.resourceId);
+    }
+    if (!structurallyValid) reasons.push('invalid-path-structure');
+    if (unit && objectives.size !== unit.learningObjectives.length) reasons.push('learning-objectives-incomplete');
+    if (path.practice !== undefined) {
+      const practiceIds = new Set();
+      for (const question of path.practice?.questions ?? []) {
+        if (practiceIds.has(question.id)) errors.push('Duplicate practice question in study path: ' + path.id + '/' + question.id);
+        practiceIds.add(question.id);
+        if (!Array.isArray(question.options) || question.correctOptionIndex < 0 || question.correctOptionIndex >= question.options.length) {
+          errors.push('Invalid practice answer index in study path: ' + path.id + '/' + question.id);
+        }
+        if (!(path.steps ?? []).some(step => step.resourceId === question.sourceResourceId)) {
+          errors.push('Practice source is not in study path: ' + path.id + '/' + question.id);
+        }
+      }
+    }
+    const review = path.editorialReview;
+    if (review?.status !== 'approved' || !nonempty(review?.reviewer) || !nonempty(review?.evidence)) reasons.push('editorial-review-pending');
+    if (!freshness(review?.reviewedAt)) reasons.push('editorial-review-stale-or-undated');
+    return { id: path.id, unitId: path.unitId, eligible: reasons.length === 0, reasons,
+      coveredObjectiveCount: objectives.size, objectiveCount: unit?.learningObjectives?.length ?? 0 };
+  });
   const coveredUnits = units.map(unit => {
     const primaryResourceIds = resources.filter(r => eligible.has(r.id) &&
       (r.coverage ?? []).some(c => c.unitId === unit.id && c.role === 'primary' && c.extent === 'full')).map(r => r.id);
-    return { unitId: unit.id, topicId: unit.topicId, covered: primaryResourceIds.length > 0, primaryResourceIds };
+    const primaryPathIds = pathResults.filter(path => path.eligible && path.unitId === unit.id).map(path => path.id);
+    return { unitId: unit.id, topicId: unit.topicId, covered: primaryResourceIds.length > 0 || primaryPathIds.length > 0, primaryResourceIds, primaryPathIds };
   });
   const topicsReport = topics.map(topic => {
     const subset = coveredUnits.filter(u => u.topicId === topic.id);
@@ -105,7 +158,7 @@ export function auditLibrary(pack, { now = new Date() } = {}) {
     scopeReviewed, isComplete: completeConditions && errors.length === 0, errors, warnings, legacyResources,
     totals: { topics: topics.length, units: units.length, coveredUnits: coveredUnits.filter(u => u.covered).length,
       coveredTopics: topicsReport.filter(t => t.covered).length, v2Resources: resourceResults.length },
-    disciplines, topics: topicsReport, units: coveredUnits, resourceResults,
+    disciplines, topics: topicsReport, units: coveredUnits, resourceResults, pathResults,
     missingUnitTopics: topicsReport.filter(t => !t.units).map(t => t.topicId),
     uncoveredUnitIds: coveredUnits.filter(u => !u.covered).map(u => u.unitId)
   };

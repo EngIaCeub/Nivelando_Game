@@ -49,3 +49,15 @@ Não alegar que um livro inteiro foi lido quando só o capítulo usado foi confe
 `node scripts/validate-content.mjs` valida schemas e referências onde disponível.
 Consultar docs/runbooks/DIDACTIC_LIBRARY_ACCEPTANCE.md antes de declarar B6.
 Estes milestones complementam a V1; não criam gates Fxx nem reabrem gates aprovados.
+
+## Atualização de arquitetura: percursos didáticos
+
+O schema de `library.json` agora admite `studyPaths` para unidades cujo escopo exige
+mais de uma obra. Cada percurso referencia dois ou mais recursos v2 distintos, sem
+fundir URLs ou proveniências. Cada etapa registra o locator e os índices dos objetivos
+ensinados; todos os objetivos precisam estar cobertos por fontes elegíveis e o percurso
+precisa de revisão editorial recente. `library-audit` e a UI contabilizam/exibem o
+percurso como uma unidade didática revisada, sem alterar o extent parcial das fontes.
+Casos parciais, pagos, sem locators, com objetivos ausentes, fontes inelegíveis ou
+revisão vencida continuam lacunas. As mudanças passaram testes específicos de auditoria
+e filtros do catálogo; B6 depende de curadoria factual e QA independente do SHA final.

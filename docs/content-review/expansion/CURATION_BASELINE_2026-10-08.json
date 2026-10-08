@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-08T18:37:43.865Z",
+  "examId": "tce-go-ti-2026",
+  "candidate": {
+    "file": "STAGED_PACK.json",
+    "sha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+    "status": "complete",
+    "coveredUnits": 209,
+    "totalUnits": 209,
+    "gaps": 0,
+    "resources": 309,
+    "questions": 45,
+    "studyPaths": 43
+  },
+  "active": {
+    "librarySha256": "d258a0564dd5824871c7618ce1074517873074ab4b8bbe10fcd09458125f5cf7",
+    "resourcesSha256": "ba2288ddbfa249f115bf084aeb9c03727038093155dc8284381cd1cdf7065015",
+    "questionsSha256": "4e047ef0f33d5ffdb86e5d7e59cff69319e106c07e28174469c4043c5494d034",
+    "flashcardsSha256": "c331ef9cb19b8fb14eb7e656f885b85a5912e84fd9c35e162564218bcdc875c0",
+    "libraryStatus": "complete",
+    "questionCount": 45,
+    "flashcardCount": 64,
+    "resourceCount": 309
+  },
+  "qa": {
+    "status": "approved",
+    "candidateSha256": "4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639",
+    "completeApproved": true,
+    "reviewer": "/root/integration_qa; independent integration QA"
+  },
+  "sourceReviewHashes": {
+    "LEGAL": "af164d5d58fd8a02199d5794644cb47ef2daad8c5d12ba81ebb457b1efb36d8c",
+    "TECH": "15f48418162924e2ff35b32633741863eda204804ffe6728d0efe22c2871b4fd",
+    "LANGUAGE_SECURITY": "b6bf72f1b83d5c1f950456bf1a1c26c608ee2bda4ea42751c15caca9454524fd"
+  },
+  "priorSnapshot": {
+    "candidateSha256": "a16a2e28d3eac7e443e7dafdce7c238a98183d44b0af467867dd2d9df060505a",
+    "coveredUnits": 209,
+    "gaps": 0,
+    "resources": 309,
+    "capturedAt": "2026-10-08T18:35:00.003Z"
+  }
+}

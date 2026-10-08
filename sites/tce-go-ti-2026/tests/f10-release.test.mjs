@@ -53,8 +53,12 @@ test('F10: recursos externos verificados e questões têm proveniência', async 
   for (const question of questions) {
     assert.equal(question.provenance.status, 'derived');
     assert.ok(question.provenance.source);
-    assert.ok(question.year);
-    assert.ok(question.board);
+    assert.equal(question.origin, 'generated_original');
+    assert.equal(question.reviewStatus, 'approved');
+    assert.ok(question.provenance.locator);
+    // These items are original practice questions, not attributed to a past FCC exam.
+    assert.equal(question.year, undefined);
+    assert.equal(question.board, undefined);
   }
 });
 

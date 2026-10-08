@@ -8,6 +8,19 @@ Fase atual: StudyOS V1 — Operationalization
 Resumo operacional atual (2026-10-06): O1–O4 aprovados; O4 publicado e marcado `v1.0.0`.
 O5 hardening automatizado concluído no escopo sintético, com revisão independente aprovada.
 
+## Biblioteca didática — retomada 2026-10-08
+
+- Candidato em `docs/content-review/expansion/STAGED_PACK.json`: 188/209 unidades
+  cobertas, 21 lacunas, 220 recursos e 19 percursos elegíveis; estado `partial`.
+- Curadoria desta retomada fechou no candidato os percursos de regime funcional,
+  organização/controle no TCE-GO, PMBOK 8 e valores ágeis/Scrum/Kanban. Pack ativo
+  não foi promovido nem alterado por esse staging.
+- QA independente do SHA `d36b4a09353147b52eb7d2be6f027b0b1fe1cc74ea42d35617667d370b8d6131`
+  permanece pendente. Testes focados: 17/17; validação de conteúdo: 3 packs aprovados;
+  auditoria mantém 5 alertas conhecidos do segundo pack (TJTO).
+- Permanecem abertas as lacunas listadas em `docs/content-review/expansion/GAP_LEDGER.json`,
+  revisão factual integral de questões/cartões, QA independente e gates B5–B7.
+
 ## Bootstrap F0
 
 - `AGENTS.md`, Product Spec, Factory Workflow, Model Routing, contratos, schemas e papéis
@@ -645,3 +658,244 @@ e novo parecer independente Astra; O5 aguarda O4 aprovado.
 - URL: https://engiaceub.github.io/Nivelando_Game/. Metadado público `build-meta.json` confirmou o SHA. HTML, bundle, shell, cenas e estilos novos conferidos por HTTP com cache-bust.
 - A aba de inspeção manteve um service worker antigo já instalado; dados locais não foram limpos nem atualização forçada. Smoke interativo em perfil limpo fica pendente de ambiente sem estado antigo.
 - Relatório: `docs/design/PLATFORM_IMPLEMENTATION_REPORT.md`.
+
+## Planejamento — conteúdo, escuro, telas e contas — 2026-10-07
+
+- Plano em `docs/CONTENT_DARK_VIEWS_ACCOUNTS_PLAN.md`; ADR 005 proposta.
+- Inventário local: 102 flashcards TCE-GO, todos em padrões de resposta genérica e com
+  status legado validated; não há schema/validação específica de flashcards no validador.
+  Não constitui revisão factual dos 102 itens. Questões: 279 originais do gerador e dez
+  com fonte do edital; origem não comprova gabarito nem caracteriza prova anterior FCC.
+- Biblioteca: 20 legados, 45 unidades e zero recursos v2 revisados; curadoria pendente.
+- Plano de implementação em andamento: auditoria editorial integral, tema escuro único,
+  router por hash/view e contas com Supabase Auth, owner local e sync remoto RLS/RPC.
+- Migração de progresso é explícita, sem atribuição automática a conta nem mistura de
+  mastery global. Sessões/score/retakes/XP/backup/offline entram nos gates de regressão.
+
+### Implementação faseada iniciada — 2026-10-07
+
+- Schema de flashcards e validação opcional por pack adicionados; referências a tópicos
+  são conferidas com o currículo. `scripts/content-audit.mjs` identifica templates,
+  respostas genéricas, falta de recorte e ausência de parecer por ID.
+- Auditoria local: 102/102 flashcards sinalizados para revisão; nenhum foi promovido e
+  nenhum gabarito foi declarado validado por heurística.
+- A auditoria ampliada sinaliza 289/289 questões com pendências, incluindo metadados
+  FCC/ano sem prova identificada, e 20/20 recursos sem revisão editorial/recorte completo.
+  Não significa erro comprovado de todos os gabaritos nem indisponibilidade dos links.
+- Tema escuro aplicado aos tokens/estados principais; meta theme-color e manifest PWA
+  atualizados. Shell mostra uma seção por vez nas rotas hash existentes.
+- Cadastro/login/recuperação Supabase e logout implementados no adapter do site. UUID
+  separa o IndexedDB e as preferências locais; backup novo identifica owner. Actions
+  lê duas variáveis públicas de configuração; nenhuma está configurada neste ambiente.
+- Adapter de sync remoto, migration SQL com RLS/RPC, outbox idempotente, detecção de
+  conflito e preservação de primeira tentativa foram implementados. Testes unitários
+  mockados cobrem o contrato HTTP; a migration ainda não foi aplicada em projeto real,
+  portanto autorização/transação permanecem sem validação de integração.
+- Revisão factual dos itens e migração assistida de dados ainda não concluídas. Sem
+  projeto Supabase e variáveis públicas de build, auth/sync em produção permanecem
+  desativados; progresso fica local e separado por UUID no dispositivo autenticado.
+- Validação dos 3 packs passou. Suíte completa teve falhas conhecidas de IndexedDB/Edge
+  no sandbox Windows; o navegador não iniciou para inspeção visual nem fluxo integrado.
+  Testes de auth, namespaces, arquitetura e backup passaram. Deploy desta fase pendente.
+- Nenhum deploy desta fase. Conteúdo factual permanece pendente e não há claim de
+  inspeção visual em navegador ainda. Sem variáveis, build gera `auth-config.json`
+  sem provider e conserva o modo local.
+
+### Revisão factual e curadoria TCE-GO integrada — 2026-10-07
+
+- Revisão integral do legado: 289 questões, 102 cartões e 20 recursos. Pareceres
+  independentes em `docs/content-review/QUESTIONS_INDEPENDENT_REVIEW.md` e
+  `LIBRARY_INDEPENDENT_REVIEW.md`; decisões por ID em `LEGACY_REVIEW.json`.
+- 279 templates rejeitados editorialmente; 102 cartões instrucionais retirados da
+  seleção nova. Dez questões substantivas ganharam revisão r2, fonte do gabarito,
+  locator e explicações específicas das alternativas; FCC/ano removidos da autoria.
+- Banco ativo aprovado: 10 questões originais, 64 novos flashcards e 34 recursos v2,
+  com recortes/idiomas/direitos e revisão independente. Drafts e pareceres vinculados
+  por SHA-256; nenhuma promoção por heurística. Fonte pública é entregue por link.
+- Biblioteca partial: 45 tópicos auditados contra Anexo II pp.19–22, referências
+  de escopo incorporadas; decomposição dos objetivos e novo parecer de escopo
+  pendentes. Zero unidades com primary/full; 12 tópicos sem item ativo, 35 sem
+  questões, 14 sem recursos e 14 sem cartões. A matriz registra os subitens faltantes.
+- Normas limitadas aos dispositivos revisados no corte 25/08/2026, publicação
+  reportada pela notícia oficial TCE-GO. Não houve auditoria histórica integral de
+  normas estaduais, jurisprudência ou consolidados. RAG foi lido somente no resumo.
+- Nenhum vídeo aprovado; simulados com templates retirados. Há um treino parcial
+  de dez questões, sem claim de prova FCC ou simulado completo de 70 questões.
+- `content-history.json` preserva textos/IDs antigos e 16 pools legados. A UI resolve
+  IDs de sessões antigas pelo histórico; agenda e sessões novas usam o banco ativo.
+  Primeiras tentativas/score/XP não foram reescritos. Tópicos vazios mostram a lacuna.
+- 43 testes direcionados passaram: 25 Core/sessões/cobertura, 18 pack/curadoria/
+  histórico/empacotamento. Incluem retomada legada, primeira tentativa imutável e
+  export/import. Os três packs passaram schemas/factory; audit TCE-GO ativo 0 alertas;
+  library-audit 0 erros e complete=false. Scanner de segredos e diff-check passaram.
+- Build temporário inclui conteúdo ativo e histórico no cache e exclui candidatos;
+  não equivale a offline real em navegador. Não houve inspeção visual ou deploy
+  deste lote. TJTO permanece com 3 questões/2 recursos pendentes de revisão factual.
+- QA independente da integração parcial aprovado após reinspeção dos artefatos:
+  34 recursos/42 associações parciais, 45 unidades e histórico preservado. Ajustadas
+  autoria FUNAG, URLs finais RFC e mensagens que distinguem revisão de cobertura
+  integral. Hashes registrados no apêndice do parecer da biblioteca.
+
+### Expansão das questões e biblioteca — 2026-10-07
+
+- Os três pareceres independentes aprovaram 35 questões originais novas, uma por
+  tópico anteriormente vazio. Integração ativa: 45 questões, 45 tópicos com questão,
+  dois treinos parciais (10 e 45 questões). Nenhuma autoria FCC presumida; não há
+  claim de cobertura de todos os subitens ou simulado integral de 70 questões.
+- Draft, pareceres por ID, hash e baseline congelado em
+  `docs/content-review/expansion/`. As dez questões anteriores permanecem idênticas;
+  histórico de sessões/primeiras tentativas e score preservado.
+- 44 testes direcionados passaram; os três packs passaram schemas/factory.
+  Auditoria heurística das 45 questões: zero alertas, complementando os pareceres.
+- Biblioteca em expansão: a proposta inicial de 209 unidades preservou os 45
+  topicIds. A promoção parcial posterior está registrada abaixo; a revisão de
+  fontes segue em andamento e não há declaração `complete`. Integração integral
+  continua exigindo auditoria e parecer independente final.
+- Relatório: `docs/content-review/expansion/INTEGRATION_REPORT.md`.
+  Não houve deploy deste lote ou validação visual/offline real em navegador.
+
+### Biblioteca didática parcial promovida — 2026-10-07
+
+- Biblioteca ativa refinada para 209 unidades nos 45 tópicos, com 167 recursos
+  v2. Auditoria: 119 unidades cobertas por recurso primary/full; 90 lacunas
+  documentadas; 12 tópicos inteiramente cobertos. Status `partial`, sem claim
+  de cobertura integral ou de progresso do estudante.
+- Os três pareceres de domínio e a QA independente da integração estão em
+  `docs/content-review/expansion/`. A primeira QA rejeitou inconsistência de
+  schema e divergência de proveniência; o staging foi corrigido e o candidato
+  regenerado foi aprovado para promoção parcial. Parecer não aprova complete.
+- `library-history.json` mantém a estrutura e recursos v2 anteriores como
+  arquivados. Questões ativas, histórico de conteúdo, sessões, primeiras
+  tentativas, score e XP não foram reescritos.
+- Pós-promoção: schemas/factory dos três packs válidos; library-audit sem erros,
+  `isComplete=false`; content-audit do TCE-GO sem alertas para 45 questões,
+  64 flashcards e 167 recursos ativos. Nenhum deploy ou teste de navegador.
+
+### Fechamento de curadoria da biblioteca — 2026-10-08 (em andamento)
+
+- Plano de execução e gates: `docs/content-review/expansion/CLOSURE_PLAN.md`; baseline/ledger de hash e lacunas em `CURATION_BASELINE_2026-10-08.json` e `GAP_LEDGER.json`.
+- Candidato não promovido: `STAGED_PACK.json`, SHA-256 `331e2b5f8657457c3b63eb5612ab6599b581465adb291b8b921dd0080d3a2f58`; 169/209 unidades com cobertura `primary/full`, 40 lacunas, 257 recursos; status `partial`.
+- A revisão factual acrescentou o OpenBook da Rheinwerk para SOLID/DRY/KISS/YAGNI com idioma alemão, versão 16/Java17, link-only e sem exercícios avaliativos. O status independente continua pendente para o SHA atual.
+- B2: 45 tópicos/209 unidades e referências estruturais conferidos; parecer independente item a item ainda não registrado. B3: Desenvolvimento de Sistemas 23/23 e Português 4/13 no piloto configurado.
+- Banco ativo e hashes preservados: 45 questões, 64 flashcards e 167 recursos; biblioteca ativa 119/209. Não houve promoção, commit ou publicação nesta etapa.
+- Schema/factory/auditoria do candidato e `scripts/validate-content.mjs` passaram; auditoria do candidato permanece parcial. `node --test` ficou em 162/177: 15 testes browser não iniciaram por Chromium Playwright ausente e falhas de inicialização do Edge no ambiente.
+- Próximos gates: fechar 40 lacunas com fontes e revisão, obter QA independente do SHA final, repetir browser QA, concluir B5/B6 e dry run factual do segundo pack; só então B7/P1 conforme os runbooks.
+
+### Curadoria candidata — atualização 2026-10-08 05:45 UTC
+
+- O candidato em `docs/content-review/expansion/STAGED_PACK.json` foi atualizado após leitura do curso introdutório Linux LFS101/freeCodeCamp: 171/209 unidades `primary/full`, 38 lacunas e 259 recursos; status continua `partial` e o candidato não foi promovido.
+- O curso declara acesso gratuito e licença CC BY 4.0; está em inglês, permanece link-only e traz limitações de conteúdo introdutório/histórico registradas no parecer.
+- O ledger e os hashes em `CURATION_BASELINE_2026-10-08.json` foram reconciliados. Recursos/questões ativos e flashcards não foram alterados; QA independente do SHA final segue pendente.
+
+### Curadoria candidata — atualização 2026-10-08 05:47 UTC
+
+- O candidato em `docs/content-review/expansion/STAGED_PACK.json` registra 172/209 unidades `primary/full`, 37 lacunas e 260 recursos; status `partial`, não promovido. SHA-256 atualizado no ledger/baseline de `docs/content-review/expansion/`.
+- Foram incorporadas evidências de curso de Linux e guia de modelos cloud/serverless. Idiomas, licença desconhecida no recurso Google Cloud e recortes foram registrados; conteúdo segue link-only.
+- Banco ativo e estado do estudante preservados. O candidato exato continua aguardando QA independente.
+
+### Reconciliacao da curadoria em andamento — 2026-10-08
+
+- Hash do candidato atual: `1ec1656fd6cd4490b21120304fa160fa7543252ba26c400100fe9d17e0789d81`. Ele esta `partial` com 172/209 unidades `primary/full`, 37 unidades abertas, 260 recursos e 45 questoes.
+- As fontes Linux e Google Cloud foram adicionadas somente no candidato. Auditoria ativa continua com 119/209 unidades e 167 recursos; nenhum conteudo do aluno, banco ativo ou publicacao foi alterado.
+- As validacoes de schema/factory/auditoria do candidato passaram. QA independente para o SHA atual e browser QA continuam pendentes; revisao factual prossegue antes desses gates.
+
+### Candidato completo da biblioteca — 2026-10-08 15:25 UTC
+
+- Curadoria do candidato `STAGED_PACK.json`: 209/209 unidades cobertas em 45 tópicos,
+  317 recursos link-only, 22 percursos elegíveis e zero lacunas. SHA-256
+  `d22ef5dd855a6f23dda7beaecbdd2dac768c63854448589dcf8fefb43bbe3de8`.
+- Corrigida a evidência da Lei 20.756: a consolidação PDF consultada tem 218 páginas;
+  o parecer delimita os recortes efetivamente lidos e distingue a aplicação subsidiária
+  ao TCE-GO das competências do Poder Executivo. A Lei 15.122, art. 2º, §2º, confirma
+  a subsidiariedade na redação da Lei 23.500/2025. Fontes oficiais linkadas no candidato.
+- Validação automatizada local: schema/factory sem erros; 209 unidades
+  cobertas; 22/22 percursos elegíveis; 45 questões idênticas ao banco ativo; histórico
+  legado de 289 questões e 102 cartões presente. `scripts/validate-content.mjs` passou
+  para os três packs. `scripts/content-audit.mjs`: TCE-GO com zero alertas para 45
+  questões, 64 flashcards e 167 recursos ativos.
+- Suíte integral executada com Chromium do Playwright e fora do perfil temporário
+  restrito: **202/202 passaram**, incluindo IndexedDB, export/import, score/retentativas,
+  concorrência e PWA offline. A execução padrão no sandbox não é equivalente: o perfil
+  bloqueia criação dos dados do Edge/IndexedDB necessários aos testes de navegador.
+- `GAP_LEDGER.json` reconciliado para zero lacunas; `CURATION_BASELINE_2026-10-08.json`
+  contém hashes atuais do candidato e do pack ativo. O pack ativo permanece inalterado
+  (biblioteca `partial`, 119/209 unidades, 167 recursos); nenhuma promoção ou deploy.
+- **QA final independente do SHA atual está pendente**: a aprovação anterior cobre outro
+  hash e apenas a promoção parcial. Portanto o candidato não foi promovido. B6/B7 e P1
+  seguem condicionados aos aceites do plano, incluindo segunda edição, auditoria de links
+  e QA de release. Evidências em `docs/content-review/expansion/`.
+
+### Retomada das lacunas da biblioteca — 2026-10-08 17:11 UTC (reconciliada)
+
+- Estado observado após novas verificações diretas: candidato `STAGED_PACK.json` SHA-256 `d7ef5d2e33a26b14851839da5c7294e9fec7cb731341d18c9572fb95335704f1`, 118/209 unidades cobertas, 91 gaps; 124 recursos ativos elegíveis e 198 links com disponibilidade desconhecida isolados em candidatos.
+- A QA independente aprovou somente promoção parcial do hash anterior `7d0b663e…`; a reinspeção para o hash atual está pendente. `completeApproved=false`; não houve promoção. O pack ativo, as 45 questões, 64 flashcards e os dados do estudante permanecem intactos.
+- `validate-staged.mjs` passou factory/schema com zero erros. Testes focados nesta atualização: 16/16; a suíte completa segue pendente por falha ambiental de navegador ao acessar localhost (`ERR_NETWORK_ACCESS_DENIED`), mesmo com Chromium autorizado.
+- Ainda não estão fechadas: curadoria das 116 unidades, revisão factual completa de questões/cartões, UI/browser B5, auditoria factual do TJTO, manutenção B7 e release/publicação. A biblioteca não pode ser marcada `complete`.
+
+### Atualização de curadoria candidata — 2026-10-08 17:19 UTC
+
+- O candidato da biblioteca está em `docs/content-review/expansion/STAGED_PACK.json`, SHA-256 `3498397638473f0f93ad2a52edd38c0885958f5f3f9eac8e7de97a3ed93c2a4e`: 164/209 unidades cobertas, 45 lacunas, 156 recursos ativos e 2 percursos elegíveis. A unidade de pacotes/publicação recebeu um percurso com quatro fontes atribuídas separadamente.
+- Schema/factory passaram; testes direcionados 16/16; os três packs passaram `validate-content.mjs`. A revisão independente do SHA continua pendente. O pack ativo permanece inalterado e `partial`; nenhuma promoção, publicação ou deploy foi feita.
+- Permanecem pendentes revisão completa das 45 questões e 64 cartões, 45 lacunas restantes, QA independente do SHA congelado, B5 (UI/browser), B6 (segundo pack), B7 (manutenção) e P1 (release/auth real).
+
+### Atualização de curadoria candidata — 2026-10-08 17:21 UTC
+
+- O candidato `STAGED_PACK.json`, SHA-256 `50029d3cc567ac247a7eccafe6ae206b1f8ca701a5e41abfe890045a905ae39e`, registra 168/209 unidades cobertas, 41 lacunas, 164 recursos e 6 percursos de estudo elegíveis. Novos percursos mantêm publicações e fornecedores em registros distintos.
+- `validate-staged.mjs` passou com factory/schema válidos, sem recursos ou percursos inelegíveis, com as 45 questões e o histórico preservados. `validate-content.mjs` passou nos três Exam Packs; testes direcionados: 16/16.
+- QA independente do hash atual continua pendente. A biblioteca ativa permanece `partial` sem alteração; não houve promoção, commit, deploy ou publicação. Restam 41 lacunas editoriais e gates B5/B6/B7/P1.
+
+### Correção do gerador de percursos — 2026-10-08 17:22 UTC
+
+- Corrigido `docs/content-review/expansion/stage-expansion.mjs` para reconciliar IDs dos pareceres com IDs canônicos já existentes no Exam Pack ao gerar referências dos percursos. A regression test em `staging-metadata.test.mjs` cobre esse caso.
+- O candidato atual é `fe85381bbc417680919ea12b930599df9e03d2846210e2902be727ee1246daf5`: `partial`, 169/209 unidades cobertas, 40 lacunas, 164 recursos e 7 percursos elegíveis. `validate-staged.mjs`, os schemas/factory dos três packs e 17 testes focados passaram.
+- QA independente do hash atual pendente; pack ativo e estado de progresso preservados; nenhuma promoção, commit ou publicação realizada.
+
+### Curadoria de REST e ambientes — 2026-10-08 17:24 UTC
+
+- Novas sequências candidatas em `TECH_SOURCES_REVIEW.json` separam a dissertação de Fielding e as referências HTTP MDN; Microsoft, Twelve-Factor e Google Cloud também mantêm URLs/licenças individuais. O candidato ficou com 171/209 unidades cobertas, 38 lacunas e 9 percursos elegíveis (SHA-256 `532708c23056f592ec4a0756539f40157eac91ce4167e8454e0cac824425f9fb`).
+- Staging, factory/schema e 17 testes focados passaram; o pack ativo segue sem alteração. QA independente do SHA atual continua pendente; ainda não promover ou publicar como biblioteca completa.
+
+### Curadoria candidata de IA/agentivos — 2026-10-08 17:25 UTC
+
+- A candidata `STAGED_PACK.json` está em `partial`, SHA-256 `828630ece1a373f6bdc83415666312144e49f938f0e597fd27cb0e3903c159d3`: 175/209 cobertas, 34 lacunas, 180 recursos e 12 percursos elegíveis. Fontes de skills/MCP, validação, riscos e LLM foram individualizadas e conferidas em páginas públicas.
+- `validate-staged.mjs` passou com schema/factory válidos e questões/histórico preservados; 17 testes direcionados passaram. QA independente deste SHA está pendente e nenhum pack ativo foi promovido ou publicado.
+
+### Curadoria candidata Windows — 2026-10-08 17:28 UTC
+
+- A candidata tem 176/209 unidades cobertas, 33 lacunas abertas, 187 recursos ativos elegíveis e 13 percursos de estudo. A unidade Windows foi fechada no candidato por sete fontes separadas e locators específicos; a disponibilidade humana das páginas Learn permanece ressalvada devido ao banner de autorização observado pelo extrator.
+- SHA-256 `54f3aa88f52da55738f43fd7784b36ec497b2d9e1a4f73cb9f58ebee3f874783`; QA independente pendente e `completeApproved=false`. Nenhuma promoção foi feita; o pack ativo permanece `partial`.
+- Validação: factory/schema e 17 testes focados passaram; os três packs passaram `validate-content.mjs`. TJTO mantém 3 questões e 2 recursos com alertas editoriais/proveniência conhecidos.
+
+### Curadoria candidata — rotas AD DS/LDAP e segurança — 2026-10-08 17:28 UTC
+
+- Após registrar as URLs revisadas das rotas Windows, AD DS/LDAP e atributos de segurança NIST, o candidato chegou a 178/209 unidades cobertas, 31 lacunas, 192 recursos ativos e 15 percursos elegíveis.
+- SHA-256 `547fac9b5a5b2a350640eb77c515cabccc59e2c535197b2f22833c6249f0ffb5`; validação de staging/factory/schema passou sem erros; `completeApproved=false`, QA independente pendente. O pack ativo continua intacto e `partial`.
+
+### Fechamento de cobertura curricular candidata — 2026-10-08 18:34 UTC
+
+- Candidato em `docs/content-review/expansion/STAGED_PACK.json`: 209/209 unidades cobertas, 0 lacunas, 309 recursos elegíveis, 43 percursos elegíveis, 56 recursos com disponibilidade desconhecida isolados como candidatos. SHA-256 `16153f384f00422a2fc7e06044b71a5e854bc85a045102533028426cc3b76eea`; status de biblioteca candidata `complete`.
+- O fechamento da unidade ISO/IEC 27000 usa fichas ABNT e ISO consultadas diretamente e guia didático separado. A nota editorial ressalva que não há captura arquivada das fichas no corte exato de 25/08/2026, e não presume adoção brasileira da edição ISO 27000:2026.
+- Validação do staging/schema/factory passou; banco candidato preserva 45 questões ativas e histórico de 289 questões/102 cartões. `validate-content.mjs` passou nos três packs. Testes focados: 20/20. Suíte completa: 177/190; 13 falhas de ambiente Chromium/Edge/IndexedDB, a repetir em runtime de browser funcional. TCE-GO sem alertas de conteúdo; TJTO retém cinco alertas documentados.
+- Estado ativo permanece `partial` (167 recursos) e intacto. QA independente do SHA atual está pendente; nenhuma promoção, commit ou publicação ocorreu. O status de cobertura não autoriza release nem substitui B5–B7/P1.
+
+### Hash congelado após correção do locator oficial — 2026-10-08 18:35 UTC
+
+A URL da ficha ABNT da Emenda 1:2024 foi ajustada para o endereço efetivamente aberto no navegador. Isso gerou o SHA FINAL `a16a2e28d3eac7e443e7dafdce7c238a98183d44b0af467867dd2d9df060505a`. O último candidato estruturalmente validado segue com 209/209 unidades, 0 lacunas, 309 recursos e 43 percursos elegíveis; 45 questões iguais ao pack ativo e histórico legado preservado. Os 20 testes focados e a validação dos três packs passaram. A QA independente exata foi reiniciada como pendente para este hash. Os 13 casos ambientais da suíte integral (177/190) seguem para repetição quando Chromium/Edge/IndexedDB estiverem disponíveis.
+
+### Correção final de proveniência — 2026-10-08 18:36 UTC
+
+Retificação: a variante `www` não corresponde ao endereço da aba que foi aberta. O parecer e o candidato foram regenerados usando a URL efetivamente observada sem `www`. SHA vigente: `4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639`; 209/209 unidades, 0 lacunas, validação estrutural válida. QA independente exata pendente; nenhum conteúdo promovido.
+
+### Promoção da biblioteca local — 2026-10-08 18:38 UTC
+
+A QA independente aprovou `complete` no SHA `4597f81f942cbf205f7ec3dbfca8349f89d684a41ea44a72ba2b7ef11140f639`; a biblioteca local foi promovida pelo runbook. Estado ativo: 209/209 unidades, 45/45 tópicos, 309 recursos, zero lacunas. O catálogo anterior foi arquivado em `library-history.json`; questões (45), cartões (64) e progresso do estudante permanecem preservados. `library-audit --require-complete`, validação de conteúdo e auditoria TCE-GO passaram. O validador de candidatos foi corrigido para auditar recursos ativos e candidatos juntos. O build standalone local foi regenerado. Suíte integral: 177/190, com 13 falhas ambientais de Chromium/Edge/IndexedDB. Nenhum commit, push, deploy ou publicação. A auditoria TJTO (3 questões, 2 recursos), B5, B6 e B7 continuam em etapas próprias; veja `CLOSURE_PROGRESS.md`.
+
+### Atualização final da rodada — 2026-10-08 18:42 UTC
+
+B4 e promoção local passaram; B6 factual subgate TJTO passou QA independente e validações (7/7 testes F11, 3 packs válidos, zero alertas TCE-GO/TJTO). B7 já tem runbook com ciclos de 30/90 dias e rollback editorial; falta indicar pessoa nominal. A inspeção B5 do build local não foi possível: a política do navegador recusou file:// e proibiu contorno por servidor/execução indireta. Para prosseguir B5 é necessária uma URL HTTPS de staging autorizada. P1/publicação não foi executado.
+
+## Situação no encerramento desta rodada — 2026-10-08 18:45 UTC
+
+A biblioteca TCE-GO foi curada, aprovada independentemente e promovida localmente como `complete` (209 unidades, 45 tópicos, 309 recursos, 43 percursos). O subgate factual TJTO também fechou seus cinco alertas com QA independente e auditoria zero. O teste F11 do TJTO passou 7/7; os três packs validam; TCE-GO/TJTO têm zero alertas no content audit. `library-audit --require-complete` passou. A suíte integral marcou 177/190: os 13 casos restantes não iniciam Chromium/Edge/IndexedDB no ambiente atual.
+
+Pendências para concluir o plano integral: B5 precisa de URL HTTPS autorizada para smoke visual e offline (o browser-use bloqueou file:// e vedou workaround local); B6 integrado depende de B5 e de validar persistência/navegação no segundo pack; B7 precisa nomear indivíduo mantenedor. P1, commit, push e publicação não foram executados nesta rodada. A decisão completa de cobertura não deve ser confundida com release do site.

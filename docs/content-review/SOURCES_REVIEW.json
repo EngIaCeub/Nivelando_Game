@@ -1,0 +1,88 @@
+{
+  "approvedSourceIds": [
+    "curated-pg-transactions",
+    "curated-pg-foreign-keys",
+    "curated-pg-indexes",
+    "curated-pg-backup",
+    "curated-python-structures",
+    "curated-mdn-functions",
+    "curated-scrum-2020",
+    "curated-progit-control",
+    "curated-docker-container",
+    "curated-k8s-components",
+    "curated-otel-signals",
+    "curated-github-actions",
+    "curated-terraform-intro",
+    "curated-rfc6749",
+    "curated-rfc7519",
+    "curated-oidc-core",
+    "curated-openapi-311",
+    "curated-rfc9110",
+    "curated-nist800145",
+    "curated-sklearn-start",
+    "curated-sklearn-leakage",
+    "curated-rag-paper",
+    "curated-mcp-architecture",
+    "curated-agent-workflows",
+    "curated-owasp-sqli",
+    "curated-owasp-authz",
+    "curated-nist-csf2",
+    "curated-cf-control",
+    "curated-lgpd-principles",
+    "curated-marco-neutrality",
+    "curated-openstax-fractions",
+    "curated-openstax-proportions",
+    "curated-bc-reading",
+    "curated-funag-comma"
+  ],
+  "rejected": [],
+  "reviewer": "Codex independent /root/library_review (gpt-6.1-sol/high)",
+  "reviewedAt": "2026-10-07T04:42:22Z",
+  "draftSha256": "A9B6D69B6EEC0D47C517F3BB81F11D72A67A1874DEC49F901603B14DC8F62902",
+  "reportPath": "docs/content-review/LIBRARY_INDEPENDENT_REVIEW.md",
+  "scope": "34 fontes e recortes lidos, somente links externos e cobertura partial. Não certifica leitura integral dos sites/artigos, cartões, mapeamentos finais, reprodução, duração, implementação runtime ou biblioteca complete.",
+  "legalCutoff": {
+    "date": "2026-08-25",
+    "basis": "Anexo II p.19 do edital local e notícia oficial TCE-GO que relata publicação no Diário Oficial nessa data. Exemplar do Diário não lido.",
+    "publicationReportUrl": "https://portal.tce.go.gov.br/-/tce-go-abre-concurso-publico-para-tecnico-de-controle-externo",
+    "reviewedLocators": [
+      "CF art.70 caput/parágrafo único e art.71 caput; parágrafo único com redação EC19/1998",
+      "LGPD arts.5 I/III/V, 6 III e 12; redações originais no recorte lido",
+      "Marco Civil arts.9 caput/§1, 13 caput e 15 caput; redações originais no recorte lido"
+    ],
+    "limitation": "Nenhuma alteração posterior indicada nos dispositivos selecionados. Consolidações legais inteiras, jurisprudência e normas estaduais/institucionais não receberam certificação histórica."
+  },
+  "restrictions": [
+    "Todas as coberturas devem permanecer partial; nenhuma fonte aprova a biblioteca complete.",
+    "RAG é reference, com leitura somente do resumo v4 de 12/04/2021.",
+    "Scrum Guide 2020 confirma CC-BY-SA-4.0 no rodapé; unknown é conservador nas demais fontes, com entrega somente link.",
+    "RFC6749 aprovada para conceitos §§1,1.1,1.4, sem recomendar fluxos históricos implicit/password como prática de segurança atual.",
+    "FK exige proveniência adicional PostgreSQL18 §5.5.5 para NULL/MATCH FULL; índices §11.1 cobre busca/manutenção e não custos de espaço/reconstrução como fato literal desse recorte.",
+    "Não confundir datas/versões móveis Python3, scikit-learn stable e portais com snapshots imutáveis.",
+    "FUNAG publica compilação que credita Cunha/Cintra, Nova gramática do português contemporâneo, 2003 pp.644–650; não afirmar autoria exclusiva nem reproduzir texto do livro."
+  ],
+  "advisoryMetadata": [
+    {
+      "id": "curated-funag-comma",
+      "field": "evidence",
+      "recommendedValue": "Manual FUNAG, compilação que credita Celso Cunha e Luís F. Cintra, Nova gramática do português contemporâneo, 3ª ed., 2003 pp.644–650. Recortes I.2b (vocativo) e Conclusão a/b (termos explicativos/essenciais/integrantes). Revisão oldid490 de 22/04/2020.",
+      "blocking": false
+    },
+    {
+      "id": "curated-openapi-311",
+      "field": "license",
+      "observedValue": "Apache-2.0",
+      "locator": "Cabeçalho da especificação v3.1.1, License",
+      "blocking": false,
+      "note": "unknown pode permanecer por política conservadora somente-link; mudança não amplia autorização de reprodução."
+    },
+    {
+      "id": "curated-nist800145",
+      "field": "rightsNote",
+      "observedValue": "Documento declara não estar sujeito a copyright e solicita atribuição.",
+      "locator": "Front matter do PDF, antes de §1",
+      "blocking": false,
+      "note": "Não converter automaticamente em licença SPDX de todo portal NIST."
+    }
+  ]
+}

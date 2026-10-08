@@ -1,0 +1,117 @@
+{
+  "reviewer": "/root/legal_completion; GPT-6.1 Sol/high; COMPLEX independent content review",
+  "reviewedAt": "2026-10-07",
+  "draftSha256": "9cf2a441f767479d5e901bc5140bbfac98b978c2af024605904dcd1a61b7405e",
+  "approvedQuestionIds": [
+    "q-tcego-expanded-leginst-constituicao-01",
+    "q-tcego-expanded-leginst-tce-01",
+    "q-tcego-expanded-leginst-servidor-01",
+    "q-tcego-expanded-governanca-alinhamento-01",
+    "q-tcego-expanded-governanca-servicos-01",
+    "q-tcego-expanded-governanca-modelos-01",
+    "q-tcego-expanded-governanca-publica-01",
+    "q-tcego-expanded-legti-marco-civil-01",
+    "q-tcego-expanded-legti-normas-tce-01",
+    "q-tcego-expanded-legti-pdti-01"
+  ],
+  "rejected": [],
+  "sourceRefsByQuestionId": {
+    "q-tcego-expanded-leginst-constituicao-01": [
+      {
+        "title": "Constituição da República de1988",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+        "locator": "art.71 caput",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-leginst-tce-01": [
+      {
+        "title": "Lei16.168/2007",
+        "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/86708/pdf",
+        "locator": "arts.1,XV–XVII e §§3;86, p.2–4 e35",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-leginst-servidor-01": [
+      {
+        "title": "Lei20.756/2020",
+        "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/100979/pdf",
+        "locator": "arts.52–53, PDF p.26",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-governanca-alinhamento-01": [
+      {
+        "title": "PDTI2025–2026 do TCE-GO",
+        "url": "https://portal.tce.go.gov.br/documents/117455/0/PDTI%2B-%2B2025-2026/f5fde162-a537-4105-ba2e-d80b86f5a096",
+        "locator": "seção12, Portfólio de Indicadores, PDF p.30",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-governanca-servicos-01": [
+      {
+        "title": "What is the aim of problem management?",
+        "url": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-aim-of-problem-management/",
+        "locator": "corpo do artigo, parágrafos1–4",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-governanca-modelos-01": [
+      {
+        "title": "Effective Capability and Maturity Assessment Using COBIT2019",
+        "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2020/effective-capability-and-maturity-assessment-using-cobit-2019",
+        "locator": "introdução, Governance ensures e Management plans; Emeka Elue,27/07/2020",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-governanca-publica-01": [
+      {
+        "title": "Lei14.133/2021",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+        "locator": "art.6º,XX",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-legti-marco-civil-01": [
+      {
+        "title": "Lei12.965/2014",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+        "locator": "arts.13 e15 caput",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-legti-normas-tce-01": [
+      {
+        "title": "Lei Complementar205/2025",
+        "url": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/110694/pdf",
+        "locator": "art.46, PDF p.18–19; redação de19/05/2025, corte25/08/2026",
+        "checkedAt": "2026-10-07"
+      }
+    ],
+    "q-tcego-expanded-legti-pdti-01": [
+      {
+        "title": "Resolução Administrativa17/2024",
+        "url": "https://gnoi.tce.go.gov.br/atoNormativo/Publicado/22924",
+        "locator": "art.5º; texto oficial com remissões anteriores ao corte",
+        "checkedAt": "2026-10-07"
+      }
+    ]
+  },
+  "evidenceByQuestionId": {
+    "q-tcego-expanded-leginst-constituicao-01": "Gabarito c. O caput distribui o controle externo federal ao Congresso, auxiliado pelo TCU. As demais alternativas transferem titularidade ou criam subordinação/delegação inexistentes. Recorte sem alteração posterior indicada no texto lido.",
+    "q-tcego-expanded-leginst-tce-01": "Gabarito e. Os dispositivos estabelecem solicitações, informações, pareceres e relatórios à Assembleia Legislativa de Goiás. Os distratores atribuem relações a órgãos federais/municipais sem apoio. Complementar com Constituição GO art26 no recurso didático.",
+    "q-tcego-expanded-leginst-servidor-01": "Gabarito e. Art52 define reinvestidura por invalidação administrativa ou judicial da demissão. Art53 distingue recondução e arts46–51 reversão. O caso estável proposto é válido embora o art52 não restrinja sua redação à estabilidade. Não presumir leitura integral do estatuto.",
+    "q-tcego-expanded-governanca-alinhamento-01": "Gabarito c. A questão é inferência aplicada: vincular iniciativa e resultado com indicador permite acompanhar contribuição ao objetivo. O plano exemplifica indicadores de suporte, inovação e incidentes, fórmulas e metas. Distratores são contagens de atividade, estética e escolha de ferramenta desvinculadas de resultado.",
+    "q-tcego-expanded-governanca-servicos-01": "Gabarito a. O fornecedor documenta restauração rápida por incidentes e análise de causas/prevenção por problemas. A distinção é explícita e não depende de detalhes comerciais da ferramenta. Distratores atribuem finalidades de compras/licenciamento/visual sem relação com o caso.",
+    "q-tcego-expanded-governanca-modelos-01": "Gabarito c. Artigo oficial da ISACA trata expressamente COBIT2019: necessidades/opções são avaliadas; direção por priorização; desempenho/conformidade monitorados; gestão planeja/constrói/executa/monitora alinhada à direção. Distratores apagam a distinção, invertem responsabilidades ou impõem padronização universal. Evidência aprova essa distinção, não o framework inteiro.",
+    "q-tcego-expanded-governanca-publica-01": "Gabarito c. Definição legal do ETP confirma primeira etapa, interesse público, melhor solução e base posterior quando viável. Demais documentos das opções são posteriores ou não constituem planejamento. O dispositivo não tem alteração posterior indicada no texto lido.",
+    "q-tcego-expanded-legti-marco-civil-01": "Gabarito c. Art15 delimita provedor pessoa jurídica, atividade organizada/profissional/econômica e seis meses com sigilo/ambiente controlado. Prazo ordinário está corretamente distinguido de extensão cautelar/judicial. Art13 exige um ano para registros de conexão e não se transfere à aplicação.",
+    "q-tcego-expanded-legti-normas-tce-01": "Gabarito e. Art46 define IA integrada a dispositivos físicos/eletrônicos com operação local sem comunicação contínua/conexão permanente à nuvem. Demais alternativas negam integração/localidade ou confundem licitação. O art46 lido não tem marca de alteração. O PDF tem LC215 de10/09/2026 em outros dispositivos, portanto não usar sua consolidação inteira como vigente no corte.",
+    "q-tcego-expanded-legti-pdti-01": "Gabarito a. Art5 abrange ambiente informatizado e meios convencionais de processamento/comunicação/armazenamento. Art4 delimita usuários, ambientes e processos institucionais. Distratores excluem suporte/processos ou restringem usuários contra a norma. RA17 é subitem explícito no tópico; não afirmar que a questão avalia PDTI."
+  },
+  "notes": [
+    "Parecer factual das10questões atribuídas; não equivale a cobertura de todos os objetivos.",
+    "Questões deliberadamente introdutórias; distratores muitos pouco plausíveis, mas unívocos. CognitiveLevel application é excessivo em itens de reconhecimento literal; coordenador deve usar remember/understand conforme schema permitido.",
+    "Normas aprovadas no corte25/08/2026; validAsOf global2026-10-07 não redefine corte da prova. Nenhuma questão LGPD deste domínio foi atribuída no draft35."
+  ]
+}

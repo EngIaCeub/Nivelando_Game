@@ -8,7 +8,7 @@ function fixture() {
     curriculum: { disciplines: [{ id: 'd', title: 'Sample subject', modules: [{ topics: [{ id: 't', title: 'Topic' }] }] }] },
     library: { examId: 'sample-exam', status: 'partial', scopeReview: { status: 'reviewed', reviewer: 'editor', reviewedAt: now, evidence: 'All syllabus items checked' },
       policy: { reviewIntervalDays: 90, freePrimaryRequired: true, allowRegistration: true },
-      units: [{ id: 'u', topicId: 't', syllabusRefs: [{ source: 'sample-syllabus', locator: 'Section 1' }], prerequisiteUnitIds: [] }] },
+      units: [{ id: 'u', topicId: 't', learningObjectives: ['Objective A', 'Objective B'], syllabusRefs: [{ source: 'sample-syllabus', locator: 'Section 1' }], prerequisiteUnitIds: [] }], studyPaths: [] },
     resources: [{ id: 'r', libraryVersion: 2, examId: 'sample-exam', status: 'active', verified: true,
       url: 'https://example.org/book', topicIds: ['t'], access: { mode: 'free', requiresRegistration: false },
       rights: { delivery: 'link', license: 'unknown', evidenceUrl: null },
@@ -31,9 +31,18 @@ test('partial, paid-only, stale, future and inaccessible resources leave coverag
     r => r.coverage[0].extent = 'partial', r => r.access.mode = 'paid',
     r => r.verification.checkedAt = '2020-01-01T00:00:00Z',
     r => r.verification.checkedAt = '2030-01-01T00:00:00Z',
-    r => r.verification.result = 'blocked', r => r.editorialReview.reviewedAt = '2020-01-01T00:00:00Z'
+    r => r.verification.result = 'blocked', r => r.verification.result = 'unknown', r => r.editorialReview.reviewedAt = '2020-01-01T00:00:00Z'
   ];
   for (const edit of edits) { const pack = fixture(); edit(pack.resources[0]); assert.equal(auditLibrary(pack, { now }).isComplete, false); }
+});
+test('unknown availability is never eligible as a covered source', () => {
+  const pack = fixture();
+  pack.resources[0].verified = false;
+  pack.resources[0].verifiedAt = null;
+  pack.resources[0].verification = { result: 'unknown', checkedAt: null, finalUrl: null, method: 'unknown' };
+  const report = auditLibrary(pack, { now });
+  assert.equal(report.resourceResults[0].eligible, false);
+  assert.deepEqual(report.units.map(unit => unit.covered), [false]);
 });
 test('cross references, cycles, reuse rights and unsafe URLs are validation errors', () => {
   const edits = [
@@ -72,5 +81,83 @@ test('free requirement and pilot disciplines are enforced, embed/bundle are defe
   for (const delivery of ['embed', 'bundle']) {
     const local = fixture(); local.resources[0].rights = { delivery, license: 'CC-BY', evidenceUrl: 'https://example.org/license' };
     assert.ok(auditLibrary(local, { now }).errors.some(error => error.includes('deferred')));
+  }
+});
+test('a reviewed multi-resource study path covers every explicit objective without merging source provenance', () => {
+  const pack = fixture();
+  const second = structuredClone(pack.resources[0]);
+  second.id = 'r2'; second.url = 'https://example.org/second';
+  second.coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 2' };
+  pack.resources[0].coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 1' };
+  pack.resources.push(second);
+  pack.library.studyPaths = [{
+    id: 'u-path', unitId: 'u', title: 'Two-source sequence',
+    steps: [
+      { resourceId: 'r', objectiveIndices: [0], locator: 'Chapter 1, section 2' },
+      { resourceId: 'r2', objectiveIndices: [1], locator: 'Chapter 2, section 1' }
+    ],
+    editorialReview: { status: 'approved', reviewer: 'independent editor', reviewedAt: now, evidence: 'Both objectives matched to the separate readings' }
+  }];
+  const report = auditLibrary(pack, { now });
+  assert.equal(report.errors.length, 0);
+  assert.equal(report.pathResults[0].eligible, true);
+  assert.deepEqual(report.units[0].primaryPathIds, ['u-path']);
+  assert.equal(report.totals.coveredUnits, 1);
+  assert.equal(report.isComplete, true);
+  assert.equal(pack.resources[0].url, 'https://example.org/book');
+  assert.equal(pack.resources[0].coverage[0].extent, 'partial');
+});
+test('study-path practice validates answer bounds and source provenance', () => {
+  const pack = fixture();
+  const second = structuredClone(pack.resources[0]);
+  second.id = 'r2'; second.url = 'https://example.org/second';
+  second.coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 2' };
+  pack.resources[0].coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 1' };
+  pack.resources.push(second);
+  pack.library.studyPaths = [{
+    id: 'u-path', unitId: 'u', title: 'Two-source sequence',
+    steps: [
+      { resourceId: 'r', objectiveIndices: [0, 1], locator: 'Chapter 1' },
+      { resourceId: 'r2', objectiveIndices: [0, 1], locator: 'Chapter 2' }
+    ],
+    practice: { title: 'Read carefully', reading: 'Original example text.', questions: [{ id: 'q1', stem: 'What applies?', options: ['A', 'B'], correctOptionIndex: 1, explanation: 'The text states B.', sourceResourceId: 'r2', locator: 'Chapter 2' }] },
+    editorialReview: { status: 'approved', reviewer: 'independent editor', reviewedAt: now, evidence: 'Mapped reading and answer to source' }
+  }];
+  assert.equal(auditLibrary(pack, { now }).errors.length, 0);
+  pack.library.studyPaths[0].practice.questions[0].correctOptionIndex = 2;
+  assert.ok(auditLibrary(pack, { now }).errors.some(error => error.includes('Invalid practice answer index')));
+  pack.library.studyPaths[0].practice.questions[0].correctOptionIndex = 1;
+  pack.library.studyPaths[0].practice.questions[0].sourceResourceId = 'missing';
+  assert.ok(auditLibrary(pack, { now }).errors.some(error => error.includes('Practice source is not in study path')));
+});
+test('study paths do not close gaps for missing objectives, nonfree steps, stale reviews or malformed references', () => {
+  const create = () => {
+    const pack = fixture();
+    const second = structuredClone(pack.resources[0]);
+    second.id = 'r2'; second.url = 'https://example.org/second';
+    second.coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 2' };
+    pack.resources[0].coverage[0] = { unitId: 'u', role: 'primary', extent: 'partial', locator: 'Chapter 1' };
+    pack.resources.push(second);
+    pack.library.studyPaths = [{
+      id: 'u-path', unitId: 'u', title: 'Two-source sequence',
+      steps: [
+        { resourceId: 'r', objectiveIndices: [0], locator: 'Chapter 1' },
+        { resourceId: 'r2', objectiveIndices: [1], locator: 'Chapter 2' }
+      ],
+      editorialReview: { status: 'approved', reviewer: 'independent editor', reviewedAt: now, evidence: 'Both objectives matched' }
+    }];
+    return pack;
+  };
+  const edits = [
+    pack => { pack.library.studyPaths[0].steps[1].objectiveIndices = []; },
+    pack => { pack.resources[1].access.mode = 'paid'; },
+    pack => { pack.library.studyPaths[0].editorialReview.reviewedAt = '2020-01-01T00:00:00Z'; },
+    pack => { pack.library.studyPaths[0].steps[1].resourceId = 'missing'; },
+    pack => { pack.library.studyPaths[0].steps[1].resourceId = 'r'; }
+  ];
+  for (const edit of edits) {
+    const pack = create(); edit(pack);
+    const report = auditLibrary(pack, { now });
+    assert.equal(report.units[0].covered, false);
   }
 });
